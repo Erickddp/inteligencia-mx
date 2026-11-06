@@ -5,3 +5,4 @@
 *.txt text eol=lf
 *.json text eol=lf
 *.zip binary
+fuentes/evidencia/** -text
