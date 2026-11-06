@@ -112,6 +112,22 @@ reglas:
         fecha: "2026-10-31"
         entradas: {gravadas_16: "800000.00", gravadas_0: "200000.00", exentas: "300000.00", no_objeto: "200000.00", iva_indistinto: "30000.00"}
         esperado: "20000.00"
+      - nombre: "Solo gravadas al 16% y exentas: 60% (600 mil de 1 millón); IVA indistinto 12,500"
+        fecha: "2026-10-31"
+        entradas: {gravadas_16: "600000.00", gravadas_0: "0.00", exentas: "400000.00", no_objeto: "0.00", iva_indistinto: "12500.00"}
+        esperado: "7500.00"
+      - nombre: "Límite: sin exentas ni no objeto es 100% y se acredita todo"
+        fecha: "2026-10-31"
+        entradas: {gravadas_16: "500000.00", gravadas_0: "0.00", exentas: "0.00", no_objeto: "0.00", iva_indistinto: "9999.99"}
+        esperado: "9999.99"
+      - nombre: "Redondeo: un tercio de 10,000 es 3,333.33"
+        fecha: "2026-10-31"
+        entradas: {gravadas_16: "1000000.00", gravadas_0: "0.00", exentas: "2000000.00", no_objeto: "0.00", iva_indistinto: "10000.00"}
+        esperado: "3333.33"
+      - nombre: "Los actos no objeto (art. 4-A) entran al denominador: 400 mil gravadas de 1 millón"
+        fecha: "2026-10-31"
+        entradas: {gravadas_16: "400000.00", gravadas_0: "0.00", exentas: "0.00", no_objeto: "600000.00", iva_indistinto: "5000.00"}
+        esperado: "2000.00"
   - id: R-18
     nombre: Saldo a favor solicitado en devolución vs acreditado
     estado: OK
