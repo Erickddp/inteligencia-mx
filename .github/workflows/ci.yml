@@ -1,0 +1,79 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  pruebas:
+    name: Pruebas (Python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+      - name: Instalar
+        run: pip install -e ".[test]"
+      - name: timbra-reglas probar
+        run: timbra-reglas probar
+      - name: pytest
+        run: python -m pytest -q
+      - name: Reglas de oro
+        run: python scripts/validar_oro.py
+
+  diferencias:
+    name: Diferencias contra main
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install pyyaml
+      - name: Calcular diferencias
+        id: dif
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/anterior"
+          for f in parametros.yaml reglas.yaml; do
+            git show "origin/$BASE_REF:base/$f" > "$RUNNER_TEMP/anterior/$f" 2>/dev/null || { echo "main aún no tiene base/; sin comparación"; echo "hay=no" >> "$GITHUB_OUTPUT"; exit 0; }
+          done
+          python scripts/diff_pr.py --anterior "$RUNNER_TEMP/anterior" > "$RUNNER_TEMP/diff.md"
+          cat "$RUNNER_TEMP/diff.md" >> "$GITHUB_STEP_SUMMARY"
+          echo "hay=si" >> "$GITHUB_OUTPUT"
+      # Un PR desde un fork recibe un token de solo lectura: el comentario falla, pero el resumen del job queda.
+      - name: Comentar en el PR
+        if: steps.dif.outputs.hay == 'si'
+        continue-on-error: true
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync(process.env.RUNNER_TEMP + '/diff.md', 'utf8');
+            const marca = '<!-- timbra-reglas-diff -->';
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+            const comentarios = await github.paginate(github.rest.issues.listComments, { owner, repo, issue_number });
+            const previo = comentarios.find(c => c.user.type === 'Bot' && c.body.includes(marca));
+            if (previo) {
+              await github.rest.issues.updateComment({ owner, repo, comment_id: previo.id, body });
+            } else {
+              await github.rest.issues.createComment({ owner, repo, issue_number, body });
+            }

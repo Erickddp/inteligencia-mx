@@ -97,8 +97,9 @@ def main():
          "=== HUELLAS (verifica con sha256sum ANTES de cargar; si una no coincide, no cargues nada) ===", huellas, "",
          "=== CÓMO CARGAR ===",
          f"1) Verifica las huellas. 2) Revisa version_base \"{v}\" y VERSION_MOTOR \"{v}\".",
-         "3) Renombra sin el sufijo de versión dentro de app/reglas/ y carga con la skill reglas-fiscales.",
-         f"4) Resultado esperado de timbra-reglas probar: {resumen}", ""]
+         "3) Quita el sufijo de versión, copia los 4 archivos a app/reglas/ y vuelve a fijar VERSION.json (tag, commit y huellas).",
+         "4) Corre el CI de Timbra: su revisión sin red compara con VERSION.json y la de red con los assets de este release.",
+         f"5) Resultado esperado de timbra-reglas probar: {resumen}", ""]
     if dif:
         def bloque(titulo, items):
             L.append(f"--- {titulo} ({len(items)}) ---")
@@ -126,7 +127,7 @@ def main():
     print(f"PUBLICADA v{v}: {resumen}\n{z}\n")
     print("MENSAJE PARA CLAUDE CODE:\n"
           f"Va la v{v}. Las huellas vienen dentro de ORDEN_CAMBIO_v{v}.txt (y en SHA256_v{v}.txt). "
-          f"Verifica, renombra sin sufijo, carga con la skill y aplica la orden. Debe salir: {resumen}")
+          f"Verifica, quita el sufijo, copia a app/reglas/, fija VERSION.json y aplica la orden. Debe salir: {resumen}")
 
 
 if __name__ == "__main__":

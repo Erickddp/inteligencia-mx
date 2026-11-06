@@ -1,0 +1,59 @@
+name: Release
+
+# Se dispara al subir un tag vX.Y.Z. Si el tag no coincide con version_base, falla y no publica nada.
+on:
+  push:
+    tags: ["v[0-9]+.[0-9]+.[0-9]+"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: ${{ github.ref_name }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -e ".[test]"
+      - name: El tag debe coincidir con version_base
+        run: python scripts/verificar_tag.py "$TAG"
+      - name: Pruebas
+        run: |
+          timbra-reglas probar
+          python -m pytest -q
+          python scripts/validar_oro.py
+      - name: Bajar la versión anterior (para las diferencias)
+        run: |
+          PREV=$(git tag --list 'v[0-9]*.[0-9]*.[0-9]*' --sort=-v:refname | grep -vx "$TAG" | head -1 || true)
+          mkdir -p "$RUNNER_TEMP/anterior"
+          if [ -n "$PREV" ]; then
+            gh release download "$PREV" --dir "$RUNNER_TEMP/anterior" --pattern 'parametros_*.yaml' --pattern 'reglas_*.yaml'
+            mv "$RUNNER_TEMP"/anterior/parametros_*.yaml "$RUNNER_TEMP/anterior/parametros.yaml"
+            mv "$RUNNER_TEMP"/anterior/reglas_*.yaml "$RUNNER_TEMP/anterior/reglas.yaml"
+            echo "ANTERIOR=$RUNNER_TEMP/anterior" >> "$GITHUB_ENV"
+            echo "Comparando contra $PREV"
+          else
+            echo "No hay release anterior: sin diferencias."
+          fi
+      - name: Armar el paquete (zip, archivos sueltos, SHA256 y ORDEN_CAMBIO)
+        run: |
+          V="${TAG#v}"
+          if [ -n "${ANTERIOR:-}" ]; then
+            python scripts/release.py --raiz . --version "$V" --anterior "$ANTERIOR" --out "$RUNNER_TEMP/salida"
+          else
+            python scripts/release.py --raiz . --version "$V" --out "$RUNNER_TEMP/salida"
+          fi
+          # release.py no debe haber tocado nada versionado: el tag ya traía la versión correcta
+          git diff --exit-code
+      - name: Publicar el GitHub Release
+        run: |
+          V="${TAG#v}"
+          gh release create "$TAG" "$RUNNER_TEMP"/salida/* --title "$TAG" --notes-file "$RUNNER_TEMP/salida/ORDEN_CAMBIO_v$V.txt" --verify-tag
