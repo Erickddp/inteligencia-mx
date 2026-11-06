@@ -20,7 +20,7 @@ Corte: 6-nov-2026. Base vigente: **v0.4.1** (90 casos). `main` en `79a9ee9`. Tag
 2. **Mirar la pestaña Actions**: es la primera corrida de `ci.yml`. Avisar si algo falla.
 3. **Activar la protección** de `docs/PROTECCION_DE_MAIN.md` (ruleset de rama, ruleset de tags, merge commits, secret scanning) y crear los labels `cambio-de-ley`, `error-calculo`, `serie-automatica`, `esperando-firma`.
 4. **Crear la GitHub App** `timbra-reglas-bot` (Contents, Pull requests, Issues: lectura y escritura; instalada solo en este repo) y guardar su `.pem` en n8n.
-5. **Revisar 3 RFC** de `base/reglas.yaml` (`GOMA850317H23`, `ABC970528UHA`, `XOJI740911U48`): si alguno es real, cambiarlo por uno genérico.
+5. **Revisar 3 RFC** de los casos de R-27 en `base/reglas.yaml` (la lista exacta está en `scripts/deuda_oro.json`): si alguno es real, cambiarlo por uno genérico.
 6. **Mover el repo fuera de Drive** (por ejemplo `C:\dev\timbra-reglas`): Drive mete `desktop.ini` en `.git/refs` y rompe `fetch`.
 7. Para D: tokens de **Banxico (SIE)** e **INEGI (API INPC)**, guardados como variables de entorno locales, nunca en el repo.
 8. Para E: bot de **Telegram** (token y `chat_id`) en las credenciales de n8n.
