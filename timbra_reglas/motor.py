@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Motor de la base de reglas fiscales de Timbra (v0.4.1).
 
-Uso:
+Uso (también: timbra-reglas <comando> o python -m timbra_reglas <comando>):
   python motor.py probar                                  corre los casos de reglas.yaml
   python motor.py valor UMA_MENSUAL 2026-03-15            valor + estado (vigente / arrastrado / por_confirmar / sin firma)
   python motor.py impacto IVA_TASA_GENERAL                qué parámetros y reglas dependen de él
@@ -13,6 +13,7 @@ Requisito: PyYAML. Todo importe y tasa es Decimal; nunca float.
 """
 import ast
 import json
+import os
 import sys
 import datetime as dt
 from decimal import Decimal as D, ROUND_HALF_UP
@@ -21,6 +22,17 @@ from pathlib import Path
 import yaml
 
 AQUI = Path(__file__).parent
+
+
+def dir_base() -> Path:
+    """Carpeta con parametros.yaml y reglas.yaml: TIMBRA_REGLAS_BASE, junto al motor (paquete plano de un
+    release), ./base (instalado con pip) o ../base (repo clonado)."""
+    env = os.environ.get("TIMBRA_REGLAS_BASE")
+    candidatas = ([Path(env)] if env else []) + [AQUI, AQUI / "base", AQUI.parent / "base"]
+    for c in candidatas:
+        if (c / "parametros.yaml").is_file() and (c / "reglas.yaml").is_file():
+            return c
+    raise FileNotFoundError("No encontré parametros.yaml y reglas.yaml: " + ", ".join(str(c) for c in candidatas))
 VERSION_MOTOR = "0.4.1"
 
 # Estados de un tramo. Los NO_APLICABLES nunca se usan salvo en simulación.
@@ -38,9 +50,10 @@ def red(x, n=2):
 
 
 class Base:
-    def __init__(self, propuestas=False, simular=None):
-        self.p = yaml.safe_load((AQUI / "parametros.yaml").read_text(encoding="utf-8"))["parametros"]
-        self.r = yaml.safe_load((AQUI / "reglas.yaml").read_text(encoding="utf-8"))["reglas"]
+    def __init__(self, propuestas=False, simular=None, base_dir=None):
+        base = Path(base_dir) if base_dir else dir_base()
+        self.p = yaml.safe_load((base / "parametros.yaml").read_text(encoding="utf-8"))["parametros"]
+        self.r = yaml.safe_load((base / "reglas.yaml").read_text(encoding="utf-8"))["reglas"]
         self.propuestas = propuestas
         self.simular = {k: D(v) for k, v in (simular or {}).items()}
         self.validar()
@@ -531,6 +544,8 @@ def a_json(x):
         return str(x)
     if isinstance(x, list):
         return [a_json(i) for i in x]
+    if isinstance(x, dict):
+        return {k: a_json(v) for k, v in x.items()}
     return x
 
 
@@ -554,6 +569,9 @@ def exportar(b, desde, hasta):
 
 
 def main(args):
+    for flujo in (sys.stdout, sys.stderr):  # la consola de Windows (cp1252) no imprime «→»
+        if hasattr(flujo, "reconfigure"):
+            flujo.reconfigure(encoding="utf-8")
     if not args or args[0] == "probar":
         sys.exit(0 if probar(Base()) else 1)
     cmd = args[0]
@@ -582,5 +600,10 @@ def main(args):
         print(__doc__)
 
 
-if __name__ == "__main__":
+def cli():
+    """Comando `timbra-reglas`: probar | valor | impacto | vigencias | simular | exportar."""
     main(sys.argv[1:])
+
+
+if __name__ == "__main__":
+    cli()
