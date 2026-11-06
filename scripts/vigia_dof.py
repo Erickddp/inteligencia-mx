@@ -153,6 +153,20 @@ def vigila(dia: dt.date, doc: str, todas: bool = False, bajas: bool = False) -> 
     return out
 
 
+def lee_dia(dia: dt.date, html_local: str | None, todas: bool = False, bajas: bool = False, espera: float = 3.0) -> dict:
+    """Lee y clasifica un día. Una respuesta incompleta del servidor se ve igual que un cambio de formato (edición sin notas): se
+    reintenta una vez con la página bajada de nuevo antes de dar la alarma. Con --html no hay reintento (el archivo es el mismo)."""
+    if html_local:
+        return vigila(dia, open(html_local, encoding="utf-8", errors="replace").read(), todas, bajas)
+    try:
+        return vigila(dia, descarga(dia), todas, bajas)
+    except SystemExit as e:
+        if "cero notas" not in str(e):
+            raise
+        time.sleep(espera)
+        return vigila(dia, descarga(dia), todas, bajas)  # si vuelve a fallar, la alarma es real
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--fecha")
@@ -166,8 +180,7 @@ def main():
     d1 = dt.date.fromisoformat(a.hasta or a.fecha or d0.isoformat())
     res, d = [], d0
     while d <= d1:
-        doc = open(a.html, encoding="utf-8", errors="replace").read() if a.html else descarga(d)
-        res.append(vigila(d, doc, a.todas, a.bajas))
+        res.append(lee_dia(d, a.html, a.todas, a.bajas))
         d += dt.timedelta(days=1)
         if not a.html and d <= d1:
             time.sleep(1.5)  # cortesía con el servidor

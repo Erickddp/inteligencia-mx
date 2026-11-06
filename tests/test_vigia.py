@@ -68,3 +68,18 @@ def test_dia_sin_edicion_no_es_error():
     assert r["sin_edicion"] and r["posibles_cambios"] == []
     assert "alerta" not in r  # sábado
     assert "alerta" in vigia.vigila(dt.date(2026, 10, 14), "<html></html>")  # día hábil: avisa
+
+
+def test_una_respuesta_incompleta_se_reintenta_una_vez(monkeypatch):
+    malo = "<html><body>Fecha: 05/11/2026 - Edición Matutina <p>cortado</p></body></html>"
+    paginas = iter([malo, HTML])
+    monkeypatch.setattr(vigia, "descarga", lambda dia, intentos=3: next(paginas))
+    r = vigia.lee_dia(dt.date(2026, 11, 5), None, espera=0)
+    assert r["notas_leidas"] == 11  # el segundo intento sí leyó la página
+
+
+def test_si_el_reintento_tambien_falla_la_alarma_es_real(monkeypatch):
+    malo = "<html><body>Fecha: 05/11/2026 - Edición Matutina <p>cortado</p></body></html>"
+    monkeypatch.setattr(vigia, "descarga", lambda dia, intentos=3: malo)
+    with pytest.raises(SystemExit):
+        vigia.lee_dia(dt.date(2026, 11, 5), None, espera=0)
