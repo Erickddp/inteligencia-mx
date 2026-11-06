@@ -31,7 +31,7 @@ Cada fila es una categoría del trinquete. «Archivos» son los que el trinquete
 | Salario mínimo | `SM_GENERAL_DIARIO`, `SM_ZLFN_DIARIO` | R-81 | `nomina_params.py` (4) | 5 |
 | Subsidio para el empleo | `SUBSIDIO_EMPLEO_PCT_UMA`, `SUBSIDIO_EMPLEO_MENSUAL`, `SUBSIDIO_EMPLEO_LIMITE_INGRESO` | R-82, R-131 | `nomina_params.py` (8) | 5 |
 | Prima de riesgo | `PRIMA_RIESGO_INICIAL_POR_CLASE`, `PRIMA_RIESGO_MINIMA`, `PRIMA_RIESGO_MAXIMA` | R-84 | `nomina_calculo.py` (2); front: `nomina-calculo.tsx` | 5 |
-| 30.4 días | **Sin ID propio** (hueco, ver sección 4) | R-82, R-128, R-140 | `nomina_calculo.py` (7), `nomina_params.py` (3), `estados_balance.py` | 5 |
+| 30.4 días | `DIAS_POR_MES_SM` (en la base desde la próxima versión; ver sección 4) | R-82, R-128, R-140 | `nomina_calculo.py` (7), `nomina_params.py` (3), `estados_balance.py` | 5 |
 
 ## 3. Lo que la app aún no usa y sí tiene ID
 
@@ -51,7 +51,7 @@ Cada fila es una categoría del trinquete. «Archivos» son los que el trinquete
 
 No tienen ID y la app los escribe a mano:
 
-1. **Divisor de 30.4 días** de nómina y estados. Hoy vive dentro de la fórmula de `UMA_MENSUAL` y en el texto de R-128 y R-140. Propuesta: `DIAS_POR_MES_SM` (importe, 30.4) con fuente (Ley de la UMA, art. 4, y LFT para salario). No lleva año. Entra con ORDEN_CAMBIO_05.
+1. **Divisor de 30.4 días** de nómina y estados. Hoy vive dentro de la fórmula de `UMA_MENSUAL` y en el texto de R-128 y R-140. Ya agregado como `DIAS_POR_MES_SM` (30.4, tipo número) en `base/parametros.yaml`, ligado a R-82 con dos casos. Sale publicado con la próxima versión de la base; hasta entonces la app lo sigue escribiendo a mano. No se cambió la fórmula de `UMA_MENSUAL` para no soltar su firma en Timbra. Pendiente de Rick: confirmar que SM = SD × 30.4 es práctica y no artículo.
 2. **Calendario de vacaciones del SAT y festivos del CFF 12** (serie). Sin ID.
 3. **Retención de plataformas a persona moral.** Sin ID (por confirmar).
 4. **`nivel` A/B por regla.** `base/niveles.yaml` aún no existe; la app propone un mapa `cálculo → [R-xx]` y bandas Experimental / Estimación / normal. Decide Rick; CODEOWNERS exige su firma.

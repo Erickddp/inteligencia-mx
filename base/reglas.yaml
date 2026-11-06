@@ -299,12 +299,14 @@ reglas:
     nombre: ISR de nómina y subsidio para el empleo
     estado: OK
     fase: 1
-    parametros: [ISR_TARIFA_MENSUAL, SUBSIDIO_EMPLEO_MENSUAL, SUBSIDIO_EMPLEO_LIMITE_INGRESO]
+    parametros: [ISR_TARIFA_MENSUAL, SUBSIDIO_EMPLEO_MENSUAL, SUBSIDIO_EMPLEO_LIMITE_INGRESO, DIAS_POR_MES_SM]
     calculadora: parametro
     hallazgo: "Enero 2026 usa 15.59% sobre UMA 2025; febrero-diciembre 15.02% sobre UMA 2026. El motor lo resuelve por fecha de pago. La semilla del repo dice 536.22 para enero: sale de un considerando del decreto; el artículo que obliga manda la fórmula y da 536.21."
     casos:
       - {nombre: "Subsidio enero 2026", fecha: "2026-01-15", entradas: {id: SUBSIDIO_EMPLEO_MENSUAL}, esperado: "536.21"}
       - {nombre: "Subsidio junio 2026", fecha: "2026-06-15", entradas: {id: SUBSIDIO_EMPLEO_MENSUAL}, esperado: "535.65"}
+      - {nombre: "Divisor de días por mes, 2026", fecha: "2026-06-15", entradas: {id: DIAS_POR_MES_SM}, esperado: "30.4"}
+      - {nombre: "Divisor de días por mes, límite de vigencia confirmada", fecha: "2027-12-31", entradas: {id: DIAS_POR_MES_SM}, esperado: "30.4"}
   - id: R-83
     nombre: Exentos de aguinaldo, prima vacacional y PTU
     estado: OK

@@ -53,6 +53,19 @@ parametros:
     decimales: 2
     fuente: "Ley para Determinar el Valor de la UMA, art. 4 fr. III"
 
+  DIAS_POR_MES_SM:
+    nombre: Días por mes para convertir salario diario a mensual y prorratear (30.4)
+    tipo: numero
+    valores:
+      - valor: "30.4"
+        desde: "2016-01-01"
+        hasta: null
+        confirmado_hasta: "2027-12-31"
+        fuente: "Ley para Determinar el Valor de la UMA, art. 4 fr. II (UMA mensual = diaria × 30.4); Decreto del subsidio para el empleo, DOF 31-dic-2025 (prorrateo por días con 30.4)"
+    nota: "Mismo divisor que usa UMA_MENSUAL dentro de su fórmula; esa fórmula NO se cambia aquí (cambiarla suelta la firma de UMA_MENSUAL en Timbra). Para nómina se usa en salario mensual = SD × 30.4 y en el prorrateo del subsidio (R-82, R-126, R-128, R-140). El uso SM = SD × 30.4 es práctica del cálculo, no cita de artículo: Rick confirma antes de firmar."
+    revisar_antes: "2027-12-01"
+    firma: {validado: false, por: null, fecha: null}
+
   SM_GENERAL_DIARIO:
     nombre: Salario mínimo general diario
     tipo: importe
