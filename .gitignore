@@ -1,0 +1,8 @@
+desktop.ini
+Desktop.ini
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+out/
+anterior/

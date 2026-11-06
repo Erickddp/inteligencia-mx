@@ -1,0 +1,586 @@
+#!/usr/bin/env python3
+"""Motor de la base de reglas fiscales de Timbra (v0.4.1).
+
+Uso:
+  python motor.py probar                                  corre los casos de reglas.yaml
+  python motor.py valor UMA_MENSUAL 2026-03-15            valor + estado (vigente / arrastrado / por_confirmar / sin firma)
+  python motor.py impacto IVA_TASA_GENERAL                qué parámetros y reglas dependen de él
+  python motor.py vigencias 2027-01-01                    qué vence, qué se arrastra y qué revisar
+  python motor.py simular IVA_TASA_GENERAL=10 2027-01-01  "¿y si el IVA baja a 10%?"
+  python motor.py exportar 2026-01 2026-12                JSON mes por mes con valor, fuente, firma y estado
+
+Requisito: PyYAML. Todo importe y tasa es Decimal; nunca float.
+"""
+import ast
+import json
+import sys
+import datetime as dt
+from decimal import Decimal as D, ROUND_HALF_UP
+from pathlib import Path
+
+import yaml
+
+AQUI = Path(__file__).parent
+VERSION_MOTOR = "0.4.1"
+
+# Estados de un tramo. Los NO_APLICABLES nunca se usan salvo en simulación.
+ESTADOS_APLICABLES = {"vigente", "por_confirmar"}
+ESTADOS_NO_APLICABLES = {"propuesta", "aprobado_congreso_pendiente_dof"}
+ESTADOS_VALIDOS = ESTADOS_APLICABLES | ESTADOS_NO_APLICABLES
+
+
+class SinValor(Exception):
+    """No hay valor vigente (o solo hay propuesta) para esa fecha: la app debe AVISAR, no inventar."""
+
+
+def red(x, n=2):
+    return x.quantize(D(1).scaleb(-n), rounding=ROUND_HALF_UP)
+
+
+class Base:
+    def __init__(self, propuestas=False, simular=None):
+        self.p = yaml.safe_load((AQUI / "parametros.yaml").read_text(encoding="utf-8"))["parametros"]
+        self.r = yaml.safe_load((AQUI / "reglas.yaml").read_text(encoding="utf-8"))["reglas"]
+        self.propuestas = propuestas
+        self.simular = {k: D(v) for k, v in (simular or {}).items()}
+        self.validar()
+
+    # ---------- integridad (esto debe correr en CI antes de desplegar) ----------
+    def validar(self):
+        e = []
+        for pid, p in self.p.items():
+            if "formula" in p:
+                e += [f"{pid}: la fórmula usa {d}, que no existe" for d in self.dependencias(pid) if d not in self.p]
+                continue
+            vals = p.get("valores", [])
+            e += [f"{pid} {v.get('desde')}: valor sin fuente" for v in vals if not v.get("fuente")]
+            e += [f"{pid} {v.get('desde')}: estado desconocido '{v.get('estado')}'" for v in vals
+                  if v.get("estado", "vigente") not in ESTADOS_VALIDOS]
+            reales = sorted([v for v in vals if v.get("estado", "vigente") in ESTADOS_APLICABLES], key=lambda v: v["desde"])
+            for a, b in zip(reales, reales[1:]):
+                if a.get("hasta") is None or a["hasta"] >= b["desde"]:
+                    e.append(f"{pid}: vigencias encimadas {a['desde']} / {b['desde']}")
+                elif (dt.date.fromisoformat(b["desde"]) - dt.date.fromisoformat(a["hasta"])).days != 1:
+                    e.append(f"{pid}: hueco entre {a['hasta']} y {b['desde']}")
+            if p.get("tipo") in ("tabla", "tabla_por_mes") and p.get("columnas", [None, None])[:2] == ["limite_inferior", "limite_superior"]:
+                for v in vals:
+                    grupos = v["valor"].items() if p["tipo"] == "tabla_por_mes" else [("", v["valor"])]
+                    for g, filas in grupos:
+                        for f1, f2 in zip(filas, filas[1:]):
+                            if D(f1[1]) + D("0.01") != D(f2[0]):
+                                e.append(f"{pid} {v['desde']} {g}: renglones no contiguos {f1[1]} → {f2[0]}")
+        ids = [r["id"] for r in self.r]
+        e += [f"regla {i} repetida" for i in sorted({i for i in ids if ids.count(i) > 1})]
+        for r in self.r:
+            e += [f"{r['id']}: usa {pid}, que no existe" for pid in r.get("parametros", []) if pid not in self.p]
+            if r.get("casos") and r.get("calculadora") not in CALC:
+                e.append(f"{r['id']}: calculadora '{r.get('calculadora')}' no existe")
+        if e:
+            raise ValueError("Base inconsistente:\n  " + "\n  ".join(e))
+
+    # ---------- resolución por fecha ----------
+    def tramo(self, pid, fecha):
+        ok = [v for v in self.p[pid].get("valores", [])
+              if v["desde"] <= fecha and (v.get("hasta") is None or fecha <= v["hasta"])
+              and (v.get("estado", "vigente") in ESTADOS_APLICABLES or self.propuestas)]
+        if not ok:
+            pend = [v for v in self.p[pid].get("valores", []) if v.get("estado") in ESTADOS_NO_APLICABLES
+                    and v["desde"] <= fecha and (v.get("hasta") is None or fecha <= v["hasta"])]
+            extra = f" (hay {pend[-1]['estado']}: {pend[-1]['valor']}; no se aplica sin DOF)" if pend else ""
+            raise SinValor(f"{pid}: no hay valor vigente al {fecha}{extra}")
+        return max(ok, key=lambda v: v["desde"])
+
+    def detalle(self, pid, fecha):
+        """Valor + todo lo que la pantalla necesita para decir si es firme o estimación."""
+        p = self.p[pid]
+        if pid in self.simular:
+            return {"valor": self.simular[pid], "estado": "simulado", "fuente": "simulación", "validado": False}
+        if "formula" in p:
+            deps = {d: self.detalle(d, fecha) for d in self.dependencias(pid)}
+            valor = red(self._eval(ast.parse(p["formula"], mode="eval").body, fecha), p.get("decimales", 2))
+            estados = {x["estado"] for x in deps.values()}
+            estado = next((s for s in ("simulado", "propuesta", "arrastrado", "por_confirmar") if s in estados), "vigente")
+            return {"valor": valor, "estado": estado, "fuente": p.get("fuente"),
+                    "validado": all(x["validado"] for x in deps.values()), "formula": p["formula"]}
+        t = self.tramo(pid, fecha)
+        v = t["valor"]
+        conv = lambda fila: [None if c is None else (D(str(c)) if str(c).replace(".", "").isdigit() else c) for c in fila]
+        if p["tipo"] == "tabla":
+            v = [conv(fila) for fila in v]
+        elif p["tipo"] == "tabla_por_mes":
+            v = {str(k): [conv(fila) for fila in filas] for k, filas in v.items()}
+        elif p["tipo"] not in ("texto", "lista", "tabla_por_mes"):
+            v = D(str(v))
+        estado = t.get("estado", "vigente")
+        if estado in ESTADOS_APLICABLES and t.get("confirmado_hasta") and fecha > t["confirmado_hasta"]:
+            estado = "arrastrado"
+        firma = p.get("firma") or {}
+        pend = [x for x in p.get("valores", []) if x.get("estado") in ESTADOS_NO_APLICABLES
+                and x["desde"] <= fecha and (x.get("hasta") is None or fecha <= x["hasta"])]
+        out = {"valor": v, "estado": estado, "fuente": t["fuente"], "validado": bool(firma.get("validado")),
+               "desde": t["desde"], "hasta": t.get("hasta"), "confirmado_hasta": t.get("confirmado_hasta")}
+        if pend and not self.propuestas:
+            out["reforma_pendiente"] = {"valor": str(pend[-1]["valor"]), "estado": pend[-1]["estado"], "fuente": pend[-1]["fuente"]}
+        return out
+
+    def valor(self, pid, fecha):
+        return self.detalle(pid, fecha)["valor"]
+
+    def _eval(self, n, fecha):
+        if isinstance(n, ast.BinOp):
+            a, b = self._eval(n.left, fecha), self._eval(n.right, fecha)
+            ops = {ast.Add: lambda: a + b, ast.Sub: lambda: a - b, ast.Mult: lambda: a * b, ast.Div: lambda: a / b}
+            if type(n.op) in ops:
+                return ops[type(n.op)]()
+        if isinstance(n, ast.Constant):
+            return D(str(n.value))
+        if isinstance(n, ast.Name):
+            return self.valor(n.id, fecha)
+        raise ValueError(f"Fórmula no permitida: {ast.dump(n)}")
+
+    # ---------- conexiones ----------
+    def dependencias(self, pid):
+        f = self.p[pid].get("formula")
+        return {n.id for n in ast.walk(ast.parse(f, mode="eval")) if isinstance(n, ast.Name)} if f else set()
+
+    def impacto(self, pid):
+        afectados, cola = set(), [pid]
+        while cola:
+            x = cola.pop()
+            for otro in self.p:
+                if x in self.dependencias(otro) and otro not in afectados:
+                    afectados.add(otro)
+                    cola.append(otro)
+        todos = afectados | {pid}
+        reglas = [f"{r['id']} {r['nombre']}" for r in self.r if todos & set(r.get("parametros", []))]
+        return sorted(afectados), reglas
+
+
+# ---------- calculadoras (una por regla con número) ----------
+def isr_tarifa(base, tabla):
+    for li, _ls, cuota, pct in reversed(tabla):
+        if base >= li:
+            return red(cuota + (base - li) * pct / 100)
+    return D("0.00")
+
+
+def calc_isr_art96_mensual(b, f, base):
+    return isr_tarifa(D(base), b.valor("ISR_TARIFA_MENSUAL", f))
+
+
+def tabla_106(b, f, meses):
+    """Art. 106 con las tablas OFICIALES del Anexo 8: enero = mensual, feb-nov = acumulada, diciembre = anual."""
+    m = int(meses)
+    if m == 1:
+        return b.valor("ISR_TARIFA_MENSUAL", f)
+    if m == 12:
+        return b.valor("ISR_TARIFA_ANUAL", f)
+    return b.valor("ISR_TARIFA_ACUMULADA_106", f)[f"{m:02d}"]
+
+
+def calc_isr_art96_acumulada(b, f, base, meses):
+    return isr_tarifa(D(base), tabla_106(b, f, meses))
+
+
+def calc_tarifa_periodica_es_diaria_por_dias(b, f, tabla, dias):
+    """Así arma el SAT las tarifas de 7, 10 y 15 días: límites y cuotas = tarifa diaria × días.
+    Por eso sus cuotas NO encadenan al centavo; la prueba correcta es esta, no el encadenamiento."""
+    diaria, otra = b.valor("ISR_TARIFA_DIARIA", f), b.valor(tabla, f)
+    n = D(dias)
+    for (li, ls, c, p), (li2, ls2, c2, p2) in zip(diaria, otra):
+        if (ls is None) != (ls2 is None) or (ls is not None and red(ls * n) != ls2) or red(c * n) != c2 or p != p2:
+            return f"difiere en el renglón que inicia en {li2}"
+    return "ok"
+
+
+def calc_resico_pf_mensual(b, f, ingreso):
+    ingreso = D(ingreso)
+    for hasta, tasa in b.valor("RESICO_PF_TABLA", f):
+        if ingreso <= hasta:
+            return red(ingreso * tasa / 100)
+    raise SinValor("Ingreso del mes rebasa la tabla de RESICO PF")
+
+
+def calc_parametro(b, f, id):
+    return b.valor(id, f)
+
+
+def calc_estado_parametro(b, f, id):
+    return b.detalle(id, f)["estado"]
+
+
+def calc_retencion_iva(b, f, subtotal, parametro):
+    return red(D(subtotal) * b.valor(parametro, f) / 100)
+
+
+def calc_tope_deducciones_personales(b, f, ingreso_total):
+    por_uma = red(b.valor("DED_PERS_VECES_UMA_ANUAL", f) * b.valor("UMA_ANUAL", f))
+    por_pct = red(D(ingreso_total) * b.valor("DED_PERS_PCT_INGRESO", f) / 100)
+    return min(por_uma, por_pct)
+
+
+def calc_exento_veces_uma(b, f, parametro):
+    return red(b.valor(parametro, f) * b.valor("UMA_DIARIA", f))
+
+
+def calc_iva_mes(b, f, trasladado, retenido_a_mi, acreditable, saldo_favor_anterior, saldo_en_devolucion="0.00"):
+    """LIVA arts. 5-D y 6: el saldo a favor se aplica en meses siguientes hasta agotarlo (no muere en diciembre).
+    Lo que se pidió en devolución ya no se acredita: se resta del saldo disponible."""
+    neto = D(trasladado) - D(retenido_a_mi) - D(acreditable)
+    saldo = D(saldo_favor_anterior) - D(saldo_en_devolucion)
+    if saldo < 0:
+        raise ValueError("Se pidió en devolución más de lo que había a favor")
+    if neto <= 0:
+        return {"a_pagar": "0.00", "saldo_favor_remanente": str(red(saldo)), "saldo_favor_del_mes": str(red(-neto))}
+    aplicado = min(neto, saldo)
+    return {"a_pagar": str(red(neto - aplicado)), "saldo_favor_remanente": str(red(saldo - aplicado)),
+            "saldo_favor_del_mes": "0.00"}
+
+
+def calc_dias_extra_sexto_digito(b, f, rfc):
+    """Decreto DOF 26-dic-2013 art. 5.1: se cuentan solo los dígitos del RFC; el sexto es el último de la fecha."""
+    digitos = [c for c in rfc[:10] if c.isdigit()]
+    if len(digitos) < 6:
+        raise ValueError("RFC sin seis dígitos de fecha")
+    tabla = {str(d): n for d, n in b.valor("DIAS_EXTRA_SEXTO_DIGITO", f)}
+    return D(tabla[digitos[5]])
+
+
+def calc_proporcion_iva(b, f, gravadas_16, gravadas_0, exentas, no_objeto, iva_indistinto):
+    """LIVA art. 5 fr. V incisos c) y d): (16% + 0%) / (16% + 0% + exentas + no objeto computables), sin lo del art. 5-C."""
+    num = D(gravadas_16) + D(gravadas_0)
+    den = num + D(exentas) + D(no_objeto)
+    if den == 0:
+        raise ValueError("Sin actividades en el periodo")
+    return red(D(iva_indistinto) * num / den)
+
+
+def calc_actualizacion(b, f, monto, inpc_reciente, inpc_antiguo):
+    """CFF 17-A: factor = INPC del mes anterior al más reciente / INPC del mes anterior al más antiguo; si < 1, es 1."""
+    dec = int(b.valor("ACTUALIZACION_FACTOR_DECIMALES", f))
+    factor = red(max(D(inpc_reciente) / D(inpc_antiguo), D(1)), dec)
+    return {"factor": str(factor), "actualizacion": str(red(D(monto) * factor - D(monto)))}
+
+
+def _mas_meses(fecha, n):
+    y, m = fecha.year + (fecha.month - 1 + n) // 12, (fecha.month - 1 + n) % 12 + 1
+    ultimo = (dt.date(y + m // 12, m % 12 + 1, 1) - dt.timedelta(days=1)).day
+    return dt.date(y, m, min(fecha.day, ultimo))
+
+
+def calc_recargos(b, f, monto_actualizado, vencimiento, pago):
+    """CFF 21: por cada mes o fracción desde el vencimiento, con la tasa de mora vigente en cada mes."""
+    v, p = dt.date.fromisoformat(vencimiento), dt.date.fromisoformat(pago)
+    if p <= v:
+        return {"meses": "0", "tasa_total": "0.00", "recargos": "0.00"}
+    meses = (p.year - v.year) * 12 + p.month - v.month + (1 if p.day > v.day else 0)
+    tasa = sum(b.valor("RECARGOS_MORA_MENSUAL", (_mas_meses(v, i) + dt.timedelta(days=1)).isoformat()) for i in range(meses))
+    return {"meses": str(meses), "tasa_total": str(tasa), "recargos": str(red(D(monto_actualizado) * tasa / 100))}
+
+
+def calc_ajuste_pesos(b, f, monto):
+    """CFF 20: en el pago, de 1 a 50 centavos baja al peso; de 51 a 99 sube."""
+    m = D(monto)
+    entero, cent = divmod(m, 1)
+    return str(entero + (1 if cent > D("0.50") else 0))
+
+
+def calc_diot_renglon(b, f, **campos):
+    """Arma un renglón de la DIOT con el orden oficial; regresa cuántos campos tiene (deben ser 54)."""
+    layout = b.valor("DIOT_LAYOUT_2025", f)
+    extra = set(campos) - set(layout)
+    if extra:
+        raise ValueError(f"Campos que no existen en el layout: {extra}")
+    renglon = "|".join(str(campos.get(c, "")) for c in layout)
+    return str(len(renglon.split("|")))
+
+
+def tarifa_raw(base, tabla):
+    for li, _ls, cuota, pct in reversed(tabla):
+        if base >= li:
+            return cuota + (base - li) * pct / 100
+    return D(0)
+
+
+def calc_isr_tarifa(b, f, tabla, base):
+    """Cualquier tarifa del art. 96/152 por ID: ISR_TARIFA_MENSUAL, _QUINCENAL, _SEMANAL, _DECENAL, _DIARIA, _ANUAL."""
+    return red(tarifa_raw(D(base), b.valor(tabla, f)))
+
+
+def calc_isr_periodo_con_subsidio(b, f, tabla, base, dias):
+    """Retención del periodo menos subsidio prorrateado (mensual / 30.4 × días) si el ingreso mensualizado no pasa el límite."""
+    isr = red(tarifa_raw(D(base), b.valor(tabla, f)))
+    mensualizado = D(base) / D(dias) * D("30.4")
+    sub = D("0.00")
+    if mensualizado <= b.valor("SUBSIDIO_EMPLEO_LIMITE_INGRESO", f):
+        sub = red(b.valor("SUBSIDIO_EMPLEO_MENSUAL", f) / D("30.4") * D(dias))
+    return {"isr": str(isr), "subsidio": str(sub), "retencion": str(max(isr - sub, D("0.00")))}
+
+
+def calc_aguinaldo_monto(b, f, sd, ingreso, fin, dias_aguinaldo=None):
+    """LFT 87: proporcional por días naturales desde max(ingreso, 1-ene), contando el día de ingreso."""
+    fin_d = dt.date.fromisoformat(fin)
+    ini = max(dt.date.fromisoformat(ingreso), dt.date(fin_d.year, 1, 1))
+    dias_anio = 366 if (fin_d.year % 4 == 0 and (fin_d.year % 100 != 0 or fin_d.year % 400 == 0)) else 365
+    dias_lab = (fin_d - ini).days + 1
+    dag = D(dias_aguinaldo) if dias_aguinaldo is not None else b.valor("LFT_AGUINALDO_DIAS", f)
+    return red(D(sd) * dag * D(dias_lab) / D(dias_anio)) if dias_lab < dias_anio else red(D(sd) * dag)
+
+
+def calc_isr_aguinaldo(b, f, sd, aguinaldo):
+    """LISR 93-XIV y 96; RLISR 174 (optativo). Sin redondeo intermedio; round2 al final."""
+    ag = D(aguinaldo)
+    exento = min(ag, b.valor("EXENTO_AGUINALDO_IMPORTE", f))
+    grav = ag - exento
+    tabla = b.valor("ISR_TARIFA_MENSUAL", f)
+    sm = D(sd) * D("30.4")
+    if grav == 0:
+        return {"exento": str(red(exento)), "gravado": "0.00", "isr_174": "0.00", "isr_ordinario": "0.00"}
+    ordinario = red(tarifa_raw(sm + grav, tabla) - tarifa_raw(sm, tabla))
+    prop = grav / D(365) * D("30.4")
+    tasa = (tarifa_raw(sm + prop, tabla) - tarifa_raw(sm, tabla)) / prop
+    return {"exento": str(red(exento)), "gravado": str(red(grav)), "isr_174": str(red(grav * tasa)),
+            "isr_ordinario": str(ordinario)}
+
+
+def calc_isr_606(b, f, ingresos, predial="0.00", ciega=True, retencion_pm="0.00", trimestral=False):
+    ing = D(ingresos)
+    ded = red(ing * b.valor("ARREND_DEDUCCION_CIEGA_PCT", f) / 100) + D(predial) if ciega else D(predial)
+    tabla = b.valor("ISR_TARIFA_TRIMESTRAL_ARRENDAMIENTO" if trimestral else "ISR_TARIFA_MENSUAL", f)
+    isr = red(tarifa_raw(max(D(0), ing - ded), tabla))
+    return str(max(D("0.00"), isr - D(retencion_pm)))
+
+
+def calc_resico_pm_provisional(b, f, cobrado, pagado, ptu="0", perdidas="0", pagos_previos="0", retenciones="0"):
+    base = max(D(0), D(cobrado) - D(pagado) - D(ptu) - D(perdidas))
+    return str(max(D("0.00"), red(base * b.valor("ISR_PM_TASA", f) / 100) - D(pagos_previos) - D(retenciones)))
+
+
+def calc_pm_coeficiente_provisional(b, f, cu, ingresos, mes, ptu="0", perdidas="0", pagos_previos="0", retenciones="0"):
+    """LISR 14: UF = CU × ingresos − PTU/8 × (mes − 4) desde mayo − pérdidas."""
+    m = int(mes)
+    ptu_mes = red(D(ptu) / 8 * (m - 4)) if m >= 5 else D(0)
+    uf = red(D(cu) * D(ingresos)) - ptu_mes - D(perdidas)
+    isr = red(max(D(0), uf) * b.valor("ISR_PM_TASA", f) / 100)
+    return str(max(D("0.00"), isr - D(pagos_previos) - D(retenciones)))
+
+
+def calc_estimulo_frontera_isr(b, f, isr, proporcion_region):
+    prop = D(proporcion_region)
+    if prop * 100 < b.valor("FRONTERA_ISR_PROPORCION_MIN", f):
+        return "0.00"
+    return str(red(D(isr) * prop / b.valor("FRONTERA_ISR_DIVISOR", f)))
+
+
+def calc_tope_donativos(b, f, base_anio_anterior):
+    return str(red(D(base_anio_anterior) * b.valor("DONATIVOS_DEDUCIBLE_PCT", f) / 100))
+
+
+def calc_retencion_plataforma(b, f, actividad, base, iva):
+    tasas = {a: t for a, t in b.valor("PLATAFORMAS_ISR_TABLA", f)}
+    pct_iva = D(100) if actividad == "sin_rfc" else b.valor("PLATAFORMAS_IVA_RET_PCT", f)
+    return {"isr": str(red(D(base) * tasas[actividad] / 100)), "iva": str(red(D(iva) * pct_iva / 100))}
+
+
+def calc_depreciacion(b, f, moi, tipo_bien, meses, factor="1"):
+    tasas = {t: x for t, x in b.valor("DEPRECIACION_TASAS_ART34", f)}
+    moi = D(moi)
+    if tipo_bien == "automoviles":
+        moi = min(moi, b.valor("AUTO_TOPE_DEDUCCION", f))
+    return str(red(moi * tasas[tipo_bien] / 100 * D(meses) / 12 * max(D(factor), D(1))))
+
+
+def _vacaciones(b, f, anio):
+    for hasta, dias in b.valor("LFT_VACACIONES_TABLA", f):
+        if D(anio) <= hasta:
+            return dias
+    return b.valor("LFT_VACACIONES_TABLA", f)[-1][1]
+
+
+def calc_vacaciones_dias(b, f, anio_servicio):
+    return str(_vacaciones(b, f, anio_servicio))
+
+
+def calc_sbc(b, f, sd, anio_servicio, variables_diarias="0"):
+    """LSS 27: SD × factor (4 decimales) + variables; tope 25 UMA."""
+    vac = _vacaciones(b, f, anio_servicio)
+    factor = red(1 + (b.valor("LFT_AGUINALDO_DIAS", f) + vac * b.valor("LFT_PRIMA_VACACIONAL_PCT", f) / 100) / 365, 4)
+    return str(min(red(D(sd) * factor) + D(variables_diarias), b.valor("SBC_TOPE_IMPORTE", f)))
+
+
+def _ceav_tasa(b, f, sbc):
+    uma, sm = b.valor("UMA_DIARIA", f), b.valor("SM_GENERAL_DIARIO", f)
+    veces = red(sbc / uma, 2)
+    for hasta, tasa in b.valor("IMSS_CEAV_PATRON_TABLA", f):
+        if hasta == "SM":
+            if sbc <= sm:
+                return tasa
+            continue
+        if hasta is None or veces <= hasta:
+            return tasa
+
+
+def calc_imss_cuotas(b, f, sbc, dias, prima_rt):
+    """Cuotas del periodo; cada ramo se redondea por separado. Retiro, CEAV e Infonavit son bimestrales: aquí por días."""
+    v = lambda k: b.valor(k, f)
+    s = min(D(sbc), v("SBC_TOPE_IMPORTE"))
+    d = D(dias)
+    uma = v("UMA_DIARIA")
+    exc = max(D(0), s - v("IMSS_EYM_EXCEDENTE_UMA") * uma) * d
+    base = s * d
+    pat = {
+        "cuota_fija": red(uma * d * v("IMSS_EYM_CUOTA_FIJA_PATRON") / 100),
+        "excedente": red(exc * v("IMSS_EYM_EXCEDENTE_PATRON") / 100),
+        "prest_dinero": red(base * v("IMSS_PD_PATRON") / 100),
+        "gmp": red(base * v("IMSS_GMP_PATRON") / 100),
+        "invalidez_vida": red(base * v("IMSS_IV_PATRON") / 100),
+        "guarderias": red(base * v("IMSS_GUARDERIAS_PATRON") / 100),
+        "riesgo_trabajo": red(base * D(prima_rt) / 100),
+        "retiro": red(base * v("IMSS_RETIRO_PATRON") / 100),
+        "ceav": red(base * _ceav_tasa(b, f, s) / 100),
+    }
+    obr = {
+        "excedente": red(exc * v("IMSS_EYM_EXCEDENTE_OBRERO") / 100),
+        "prest_dinero": red(base * v("IMSS_PD_OBRERO") / 100),
+        "gmp": red(base * v("IMSS_GMP_OBRERO") / 100),
+        "invalidez_vida": red(base * v("IMSS_IV_OBRERO") / 100),
+        "ceav": red(base * v("IMSS_CEAV_OBRERO") / 100),
+    }
+    return {"patron": str(sum(pat.values())), "obrero": str(sum(obr.values())),
+            "infonavit": str(red(base * v("INFONAVIT_APORTACION_PATRON") / 100)), "ceav_patron": str(pat["ceav"])}
+
+
+def calc_ptu_tope(b, f, salario_mensual, promedio_3_anios):
+    return str(max(red(D(salario_mensual) * b.valor("PTU_TOPE_MESES_SALARIO", f)), red(D(promedio_3_anios))))
+
+
+def calc_separacion_isr(b, f, sd, total, anios, meses_fraccion=0):
+    """LISR 93-XIII y 96 último párrafo: gravado × (ISR del último sueldo mensual / ese sueldo)."""
+    anios_ex = int(anios) + (1 if int(meses_fraccion) > 6 else 0)
+    exento = min(D(total), b.valor("EXENTO_SEPARACION_IMPORTE_ANUAL", f) * anios_ex)
+    grav = D(total) - exento
+    sm = D(sd) * D("30.4")
+    tasa = tarifa_raw(sm, b.valor("ISR_TARIFA_MENSUAL", f)) / sm
+    return {"exento": str(red(exento)), "gravado": str(red(grav)), "isr": str(red(grav * tasa))}
+
+
+def calc_isn(b, f, entidad, remuneraciones):
+    tabla = {e: t for e, t, _c in b.valor("ISN_TASA_TABLA", f)}
+    if entidad not in tabla:
+        raise SinValor(f"ISN: entidad {entidad} sin tasa cargada")
+    return str(red(D(remuneraciones) * tabla[entidad] / 100))
+
+
+def calc_rep_fecha_limite(b, f, fecha_pago):
+    p = dt.date.fromisoformat(fecha_pago)
+    y, m = (p.year + 1, 1) if p.month == 12 else (p.year, p.month + 1)
+    return dt.date(y, m, int(b.valor("REP_DIA_LIMITE", f))).isoformat()
+
+
+def calc_reforma_pendiente(b, f, id):
+    return b.detalle(id, f).get("reforma_pendiente", {}).get("valor", "ninguna")
+
+
+CALC = {k[5:]: v for k, v in globals().items() if k.startswith("calc_")}
+
+
+# ---------- comandos ----------
+def probar(b):
+    ok = falla = pendiente = 0
+    for r in b.r:
+        for c in r.get("casos", []):
+            etiqueta = f"{r['id']} · {c['nombre']}"
+            try:
+                res = CALC[c.get("calculadora", r.get("calculadora"))](b, c["fecha"], **c.get("entradas", {}))
+                res = {k: str(v) for k, v in res.items()} if isinstance(res, dict) else str(res)
+                bien = "espera_error" not in c and res == c.get("esperado")
+            except SinValor as e:
+                res, bien = f"SinValor ({e})", c.get("espera_error") == "SinValor"
+            if bien:
+                ok += 1
+                marca = "PASA*    " if c.get("confirmado") is False else "PASA     "
+                print(f"  {marca}{etiqueta} → {res}")
+            elif c.get("confirmado") is False:
+                pendiente += 1
+                print(f"  PENDIENTE {etiqueta} → {res} (esperado {c.get('esperado')})")
+            else:
+                falla += 1
+                print(f"  FALLA    {etiqueta} → {res} (esperado {c.get('esperado', c.get('espera_error'))})")
+    print(f"\n{ok} pasan · {falla} fallan · {pendiente} pendientes   (* = pasa contra un esperado aún no confirmado)")
+    return falla == 0
+
+
+def vigencias(b, fecha):
+    hoy = dt.date.today().isoformat()
+    sin, arr = [], []
+    for pid, p in b.p.items():
+        try:
+            if b.detalle(pid, fecha)["estado"] == "arrastrado":
+                arr.append(pid)
+        except SinValor:
+            prop = [v for v in p.get("valores", []) if v.get("estado") in ESTADOS_NO_APLICABLES]
+            sin.append(f"{pid}: {p['nombre']}" + (f"  · reforma pendiente ({prop[0]['estado']}): {prop[0]['valor']}" if prop else ""))
+    print(f"VENCEN al {fecha} (la app avisa y no calcula):\n  - " + "\n  - ".join(sin or ["nada"]))
+    print(f"\nSe ARRASTRAN al {fecha} (se calcula como estimación hasta cargar el valor nuevo):\n  - " + "\n  - ".join(arr or ["nada"]))
+    rev = [f"{pid} (desde {p['revisar_antes']})" for pid, p in b.p.items() if p.get("revisar_antes") and p["revisar_antes"] <= hoy]
+    print(f"\nPOR REVISAR hoy ({hoy}):\n  - " + "\n  - ".join(rev or ["nada"]))
+
+
+def a_json(x):
+    if isinstance(x, D):
+        return str(x)
+    if isinstance(x, list):
+        return [a_json(i) for i in x]
+    return x
+
+
+def exportar(b, desde, hasta):
+    """Un bloque por mes (fecha = último día del mes). Es lo que debe regresar GET /api/fiscal/parametros."""
+    y, m = map(int, desde.split("-"))
+    y2, m2 = map(int, hasta.split("-"))
+    out = {"version_motor": VERSION_MOTOR, "meses": {}}
+    while (y, m) <= (y2, m2):
+        fin = (dt.date(y + m // 12, m % 12 + 1, 1) - dt.timedelta(days=1)).isoformat()
+        mes = {}
+        for pid in b.p:
+            try:
+                d = b.detalle(pid, fin)
+                mes[pid] = {k: a_json(v) for k, v in d.items() if v is not None}
+            except SinValor:
+                mes[pid] = {"estado": "sin_valor"}
+        out["meses"][f"{y:04d}-{m:02d}"] = mes
+        y, m = (y + 1, 1) if m == 12 else (y, m + 1)
+    print(json.dumps(out, ensure_ascii=False, indent=1))
+
+
+def main(args):
+    if not args or args[0] == "probar":
+        sys.exit(0 if probar(Base()) else 1)
+    cmd = args[0]
+    if cmd == "valor":
+        d = Base().detalle(args[1], args[2])
+        print(json.dumps({k: a_json(v) for k, v in d.items()}, ensure_ascii=False, indent=1))
+    elif cmd == "impacto":
+        params, reglas = Base().impacto(args[1])
+        print("Parámetros que cambian solos:", ", ".join(params) or "ninguno")
+        print("Reglas a re-probar:\n  " + "\n  ".join(reglas))
+    elif cmd == "vigencias":
+        vigencias(Base(), args[1])
+    elif cmd == "simular":
+        cambios, fecha = dict(a.split("=") for a in args[1:-1]), args[-1]
+        real, sim = Base(), Base(simular=cambios, propuestas=True)
+        print(f"Simulación al {fecha} con {cambios}:")
+        for pid in sorted({d for c in cambios for d in real.impacto(c)[0]} | set(cambios)):
+            try:
+                antes = real.valor(pid, fecha)
+            except SinValor:
+                antes = "sin valor"
+            print(f"  {pid}: {antes} → {sim.valor(pid, fecha)}")
+    elif cmd == "exportar":
+        exportar(Base(), args[1], args[2] if len(args) > 2 else args[1])
+    else:
+        print(__doc__)
+
+
+if __name__ == "__main__":
+    main(sys.argv[1:])

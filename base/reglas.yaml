@@ -1,0 +1,644 @@
+# TIMBRA · CATÁLOGO DE REGLAS (conectado a parametros.yaml)
+# Cada regla dice QUÉ parámetros usa. Así el motor sabe qué se rompe si cambia uno:
+#   python motor.py impacto IVA_TASA_GENERAL
+# estado: OK | REVISAR | CORREGIR | FALTA | NUEVA | LISTO_FIRMA (investigado; espera firma de Rick o una prueba real) | CRITERIO (no es ley: lo define Rick con fichas)
+# fase: en qué fase se termina de investigar
+# casos: los corre "python motor.py probar". confirmado:false = no cuenta como falla (espera firma o dato oficial)
+
+version_base: "0.4.1"
+
+reglas:
+
+  # ───────────── A. Qué cuenta y en qué mes ─────────────
+  - id: R-01
+    nombre: Montos sin IVA, menos descuento, en pesos
+    estado: OK
+    fase: 1
+  - id: R-02
+    nombre: Solo CFDI vigentes; REP no suma a ingresos ni gastos
+    estado: OK
+    fase: 1
+  - id: R-03
+    nombre: Mes del CFDI y de la factura global (InformacionGlobal)
+    estado: CORREGIR
+    fase: 2
+    parametros: [CFDI_GLOBAL_HORAS_MAX]
+    fuente: "RMF 2026 regla 2.7.1.21"
+    hallazgo: "La global se timbra dentro de las 24 horas siguientes al cierre del periodo; el ingreso es del periodo amparado aunque se timbre tarde (eso es infracción, no cambio de mes). Bimestral (13-18) solo con facilidad expresa: bloquear si el emisor no la tiene. Quitar el 'máximo 12 meses atrás': no tiene fundamento; poner AVISO de extemporánea cuando pasen las 24 h."
+  - id: R-04
+    nombre: Facturado a cuenta de terceros no es ingreso del mandatario
+    estado: OK
+    fase: 1
+  - id: R-05
+    nombre: Sin obligación antes de la constitución ni en meses futuros
+    estado: OK
+    fase: 1
+
+  # ───────────── B. IVA ─────────────
+  - id: R-10
+    nombre: IVA a flujo (PUE al emitir; PPD con REP)
+    estado: CORREGIR
+    fase: 2
+    fuente: "LIVA arts. 1-B y 5 fr. III; LISR art. 102 (PF acumulan al cobrar)"
+    hallazgo: "El cobro cuenta en el mes de la FECHA DE PAGO del REP, no en el de su emisión. Hoy Fiscal y DIOT usan emisión y el Inicio usa FechaPago: tres pantallas, dos criterios. Aplica a IVA de todos y a ISR de regímenes de flujo (612, 606, 626 PF/PM). La PM del 601 acumula ISR al emitir (LISR art. 17): ahí el REP no mueve ISR, solo IVA."
+  - id: R-11
+    nombre: IVA acreditable
+    estado: OK
+    fase: 2
+    parametros: [DEDUCCION_EFECTIVO_TOPE]
+    hallazgo: "Falta el IVA que TÚ retuviste: es acreditable solo en el mes en que lo enteras (LIVA art. 5 fr. IV). Requisitos completos: deducible para ISR, trasladado en CFDI, efectivamente pagado, retenciones enteradas."
+  - id: R-12
+    nombre: No deducible / no acreditable
+    estado: OK
+    fase: 2
+    parametros: [DEDUCCION_EFECTIVO_TOPE]
+    hallazgo: "Usos D01-D10 no son 'no deducibles' en una PF: son deducciones personales para la anual (art. 151). Clasificarlas aparte, no tirarlas."
+  - id: R-13
+    nombre: IVA a cargo del mes
+    estado: CORREGIR
+    fase: 1
+    calculadora: iva_mes
+    hallazgo: "Fórmula: trasladado cobrado - retenido a mí - acreditable (incluye lo que yo retuve y enteré) - saldo a favor anterior. Ver R-14."
+    casos:
+      - nombre: "Saldo a favor de diciembre se usa en enero del año siguiente"
+        fecha: "2027-01-31"
+        entradas: {trasladado: "5000.00", retenido_a_mi: "0.00", acreditable: "2000.00", saldo_favor_anterior: "5000.00"}
+        esperado: {a_pagar: "0.00", saldo_favor_remanente: "2000.00", saldo_favor_del_mes: "0.00"}
+      - nombre: "Mes con más acreditable que trasladado genera saldo nuevo"
+        fecha: "2026-10-31"
+        entradas: {trasladado: "1000.00", retenido_a_mi: "0.00", acreditable: "3000.00", saldo_favor_anterior: "500.00"}
+        esperado: {a_pagar: "0.00", saldo_favor_remanente: "500.00", saldo_favor_del_mes: "2000.00"}
+  - id: R-14
+    nombre: Saldo a favor de IVA
+    estado: CORREGIR
+    fase: 2
+    fuente: "LIVA art. 6"
+    calculadora: iva_mes
+    casos:
+      - nombre: "Saldo pedido en devolución ya no se acredita"
+        fecha: "2027-01-31"
+        entradas: {trasladado: "5000.00", retenido_a_mi: "0.00", acreditable: "2000.00", saldo_favor_anterior: "5000.00", saldo_en_devolucion: "5000.00"}
+        esperado: {a_pagar: "3000.00", saldo_favor_remanente: "0.00", saldo_favor_del_mes: "0.00"}
+    hallazgo: "ESTABA MAL: el saldo a favor NO muere al cerrar el año. Se acredita en los meses siguientes hasta agotarlo, o se pide en devolución el TOTAL. Lo pedido en devolución ya no se acredita. Unir con R-18 y perilla P12; guardar cada saldo con su mes de origen y destino (acreditado | devolución)."
+  - id: R-15
+    nombre: Tasas de IVA (16, 8 frontera, 0, exento)
+    estado: LISTO_FIRMA
+    fase: 1
+    parametros: [IVA_TASA_GENERAL, IVA_TASA_FRONTERA_NORTE]
+    calculadora: parametro
+    hallazgo: "El 8% es un ESTÍMULO con vigencia hasta 31-dic-2026, no una tasa de ley. Desde el 1-ene-2027 el motor ya no lo da si no se carga la prórroga publicada. Esto es justo tu ejemplo de 'el IVA cambia el próximo año'."
+    casos:
+      - {nombre: "8% vigente hoy", fecha: "2026-11-04", entradas: {id: IVA_TASA_FRONTERA_NORTE}, esperado: "8"}
+      - {nombre: "8% sin prórroga en 2027 → aviso", fecha: "2027-01-15", entradas: {id: IVA_TASA_FRONTERA_NORTE}, espera_error: SinValor}
+  - id: R-16
+    nombre: Retenciones de IVA
+    estado: OK
+    fase: 1
+    parametros: [IVA_RET_DOS_TERCIOS, IVA_RET_SERV_ESPECIALIZADOS, IVA_RET_AUTOTRANSPORTE]
+    calculadora: retencion_iva
+    hallazgo: "La de 2/3 ya no es un número fijo: se calcula de la tasa general. Si el IVA cambia, la retención cambia sola."
+    casos:
+      - {nombre: "Honorarios 10,000 a una moral", fecha: "2026-11-04", entradas: {subtotal: "10000.00", parametro: IVA_RET_DOS_TERCIOS}, esperado: "1066.67"}
+      - {nombre: "Servicios especializados 10,000", fecha: "2026-11-04", entradas: {subtotal: "10000.00", parametro: IVA_RET_SERV_ESPECIALIZADOS}, esperado: "600.00"}
+  - id: R-17
+    nombre: Proporción de IVA acreditable con actividades exentas o no objeto
+    estado: NUEVA
+    fase: 2
+    calculadora: proporcion_iva
+    fuente: "LIVA art. 5 fr. V incisos c) y d), 4-A, 5-B y 5-C"
+    hallazgo: "Gasto solo para gravadas (16% o 0%): 100%. Solo para exentas o no objeto: 0%. Indistinto: (16% + 0%) / (16% + 0% + exentas + no objeto). Desde 2022 los actos no objeto entran al denominador. Fuera del cálculo, lo del art. 5-C (ventas de activo fijo, intereses, acciones, moneda, etc.). Opción 5-B: usar la proporción del año anterior por 60 meses (perilla P8 = 'mensual' o '5-B' + proporción). Se necesita clasificar cada gasto: gravada / exenta / indistinto."
+    casos:
+      - nombre: "800 mil al 16%, 200 mil al 0%, 300 mil exentas, 200 mil no objeto; IVA indistinto 30 mil"
+        fecha: "2026-10-31"
+        entradas: {gravadas_16: "800000.00", gravadas_0: "200000.00", exentas: "300000.00", no_objeto: "200000.00", iva_indistinto: "30000.00"}
+        esperado: "20000.00"
+  - id: R-18
+    nombre: Saldo a favor solicitado en devolución vs acreditado
+    estado: OK
+    fase: 2
+    hallazgo: "Resuelto en R-14: cada saldo guarda mes de origen y destino (acreditar | devolución, siempre por el total). Lo pedido en devolución sale del arrastre."
+  - id: R-19
+    nombre: IVA de importaciones (pedimentos)
+    estado: NUEVA
+    fase: 2
+    hallazgo: "El IVA pagado en aduana es acreditable en el mes en que se pagó, con el pedimento como comprobante (no hay CFDI del proveedor); el CFDI del agente aduanal ampara solo sus honorarios. Va en la DIOT en los campos de importación de tangibles (pos. 14-15, 24-25, 40-43). Captura: número de pedimento, fecha de pago, IVA pagado y DTA aparte (el DTA no causa IVA acreditable)."
+
+  # ───────────── C. ISR por régimen ─────────────
+  - id: R-20
+    nombre: Provisional 612 con tarifa acumulada oficial
+    estado: OK
+    fase: 3
+    parametros: [ISR_TARIFA_MENSUAL, ISR_TARIFA_ACUMULADA_106, ISR_TARIFA_ANUAL]
+    calculadora: isr_art96_acumulada
+    fuente: "LISR art. 106; Anexo 8 RMF 2026 apartado B fr. VI (PDF oficial)"
+    hallazgo: "Resuelto con el PDF oficial: enero = mensual, febrero a noviembre = tablas acumuladas publicadas, diciembre = anual. Derivar multiplicando daba 1 centavo menos (el SAT usa límite superior × meses; febrero inicia en 283,761.33 y su cuota es 74,019.38)."
+    casos:
+      - {nombre: "Febrero, base 300,000 (tabla oficial)", fecha: "2026-02-28", entradas: {base: "300000.00", meses: 2}, esperado: "79540.53"}
+      - {nombre: "Junio, base 120,000", fecha: "2026-06-30", entradas: {base: "120000.00", meses: 6}, esperado: "14301.92"}
+      - {nombre: "Diciembre = tarifa anual", fecha: "2026-12-31", entradas: {base: "470000.00", meses: 12}, esperado: "78717.86"}
+  - id: R-21
+    nombre: Provisional 606 arrendamiento
+    estado: CORREGIR
+    fase: 3
+    parametros: [ARREND_DEDUCCION_CIEGA_PCT, ARREND_TRIMESTRAL_VECES_UMA, ISR_RET_ARRENDAMIENTO_PM, ISR_TARIFA_MENSUAL, UMA_MENSUAL]
+    hallazgo: "Falta: predial en la ciega (35% + predial) y la opción de pagos trimestrales cuando las rentas del mes no pasan de 10 UMA mensuales (art. 116)."
+  - id: R-22
+    nombre: RESICO PF pago mensual
+    estado: OK
+    fase: 1
+    parametros: [RESICO_PF_TABLA, RESICO_PF_TOPE_ANUAL, RESICO_PF_RETENCION_PM]
+    calculadora: resico_pf_mensual
+    hallazgo: "Tasas verificadas (art. 113-E). Son pagos definitivos; la RMF 2026 releva de la anual si cumple. En 2027 viene propuesta de tope 5 M e IVA opcional 7%: ya están cargados como 'propuesta' y NO se aplican hasta el DOF."
+    casos:
+      - {nombre: "20,000", fecha: "2026-06-30", entradas: {ingreso: "20000.00"}, esperado: "200.00"}
+      - {nombre: "Límite exacto 25,000", fecha: "2026-06-30", entradas: {ingreso: "25000.00"}, esperado: "250.00"}
+      - {nombre: "Un centavo arriba: brinca a 1.10% sobre TODO", fecha: "2026-06-30", entradas: {ingreso: "25000.01"}, esperado: "275.00"}
+      - {nombre: "300,000 en el mes", fecha: "2026-06-30", entradas: {ingreso: "300000.00"}, esperado: "7500.00"}
+  - id: R-23
+    nombre: RESICO PM provisional
+    estado: REVISAR
+    fase: 3
+    parametros: [ISR_PM_TASA, RESICO_PM_TOPE_ANUAL]
+    hallazgo: "Faltan PTU pagada y pérdidas por amortizar (perilla P10)."
+  - id: R-24
+    nombre: 601 provisional con coeficiente de utilidad
+    estado: REVISAR
+    fase: 3
+    parametros: [ISR_PM_TASA]
+    hallazgo: "El coeficiente (P9) debe guardarse en servidor por ejercicio, no en el navegador."
+  - id: R-25
+    nombre: 605 / deducciones personales
+    estado: OK
+    fase: 1
+    parametros: [DED_PERS_VECES_UMA_ANUAL, DED_PERS_PCT_INGRESO, UMA_ANUAL]
+    calculadora: tope_deducciones_personales
+    casos:
+      - {nombre: "Ingreso 1,000,000: manda el 15%", fecha: "2026-12-31", entradas: {ingreso_total: "1000000.00"}, esperado: "150000.00"}
+      - {nombre: "Ingreso 2,000,000: manda 5 UMA anuales", fecha: "2026-12-31", entradas: {ingreso_total: "2000000.00"}, esperado: "213973.20"}
+  - id: R-26
+    nombre: Tarifa art. 96 y UMA 2026
+    estado: CORREGIR
+    fase: 1
+    parametros: [ISR_TARIFA_MENSUAL, UMA_DIARIA, UMA_MENSUAL, UMA_ANUAL]
+    calculadora: isr_art96_mensual
+    hallazgo: "Tu catálogo traía límites y tasas SIN cuotas fijas. Ya está completa del Anexo 8 RMF 2026, más la de 2023-2025. La UMA nueva rige desde 1-feb: el repo busca la UMA por AÑO (tarifas.uma, umaDe) y en enero de 2026 usó la de 2026: error. Siempre por fecha."
+    casos:
+      - {nombre: "Base 15,000 en 2025 (tarifa 2023-2025)", fecha: "2025-06-30", entradas: {base: "15000.00"}, esperado: "1552.78"}
+      - {nombre: "Tarifa en enero 2027 sin Anexo 8 nuevo → estimación", fecha: "2027-01-31", calculadora: estado_parametro, entradas: {id: ISR_TARIFA_MENSUAL}, esperado: "arrastrado"}
+      - {nombre: "Base 15,000", fecha: "2026-03-31", entradas: {base: "15000.00"}, esperado: "1402.82"}
+      - {nombre: "Base 25,000", fecha: "2026-03-31", entradas: {base: "25000.00"}, esperado: "3451.65"}
+      - {nombre: "Base 120,000", fecha: "2026-03-31", entradas: {base: "120000.00"}, esperado: "30007.87"}
+      - {nombre: "Frontera entre renglón 1 y 2 (sin brinco)", fecha: "2026-03-31", entradas: {base: "844.59"}, esperado: "16.22"}
+  - id: R-27
+    nombre: Vencimiento día 17 y días extra por sexto dígito del RFC
+    estado: LISTO_FIRMA
+    fase: 2
+    parametros: [DIA_VENCIMIENTO_MENSUAL, DIAS_EXTRA_SEXTO_DIGITO]
+    calculadora: dias_extra_sexto_digito
+    hallazgo: "Fundamento: Decreto DOF 26-dic-2013 art. 5.1, de 1 a 5 días HÁBILES después del 17 (contando desde el 17 ya recorrido por CFF 12). No aplica a grandes contribuyentes ni a quien dictamina. Requiere el calendario de días hábiles que ya tiene el repo (es_habil). Guardar en el perfil si el cliente está excluido."
+    casos:
+      - {nombre: "PF GOMA850317H23: sexto dígito 7", fecha: "2026-11-04", entradas: {rfc: "GOMA850317H23"}, esperado: "4"}
+      - {nombre: "PM ABC970528UHA: sexto dígito 8", fecha: "2026-11-04", entradas: {rfc: "ABC970528UHA"}, esperado: "4"}
+      - {nombre: "PF con fecha terminada en 1", fecha: "2026-11-04", entradas: {rfc: "XOJI740911U48"}, esperado: "1"}
+  - id: R-28
+    nombre: 625 plataformas y 621
+    estado: REVISAR
+    fase: 3
+    hallazgo: "2026 cambió: retenciones de plataformas ya alcanzan a personas morales y hay nuevos supuestos de retención 100% de IVA (LIVA 18-J). Investigar tasas LIF 2026."
+
+  # ───────────── D. DIOT ─────────────
+  - id: R-30
+    nombre: "DIOT: layout y criterio de pagado"
+    estado: LISTO_FIRMA
+    fase: 2
+    parametros: [DIOT_NUM_CAMPOS, DIOT_LAYOUT_2025]
+    calculadora: diot_renglon
+    hallazgo: "Layout oficial cargado campo por campo (54) del instructivo del SAT de enero 2025: 7 del tercero, 10 de valor de actos (norte, sur, 16%, importación tangibles, importación intangibles, cada uno con devoluciones), 10 de IVA acreditable (exclusivo y con proporción), 20 de IVA no acreditable (proporción, no cumple requisitos, exentas, no objeto), 6 adicionales y el manifiesto 01/02. Montos enteros. El 8% de frontera va en su propio grupo (pos. 8-9, 18-19, 28-31), no revuelto con el 16%. Único pendiente: confirmar sin pipe final con una carga real."
+    casos:
+      - nombre: "Proveedor nacional con 10,000 al 16% arma 54 campos"
+        fecha: "2026-10-31"
+        entradas: {tipo_tercero: "04", tipo_operacion: "85", rfc: "AAA010101AAA", valor_16: "10000", iva_acred_excl_16: "1600", manifiesto_efectos: "01"}
+        esperado: "54"
+  - {id: R-31, nombre: "DIOT: no acreditable y 69-B", estado: OK, fase: 1}
+  - id: R-32
+    nombre: "DIOT: tipo de tercero y tipo de operación"
+    estado: CORREGIR
+    fase: 2
+    hallazgo: "Ya no 'todo como nacional': 04 nacional (operaciones 02, 03, 06, 08, 85), 05 extranjero (02, 03, 07; con número de identificación fiscal, nombre y país), 15 global con XAXX010101000 y operación 87. Los extranjeros sin RFC NO se sacan con aviso: se declaran como 05."
+
+  # ───────────── E-F. Gastos y bancos ─────────────
+  - {id: R-40, nombre: "Sugerencia de deducible", estado: CRITERIO, fase: 2}
+  - {id: R-41, nombre: "EFOS 69-B", estado: OK, fase: 1}
+  - {id: R-50, nombre: "Conciliar 1 movimiento ↔ 1 CFDI", estado: OK, fase: 1}
+  - {id: R-51, nombre: "Cuadre de saldos del estado de cuenta", estado: OK, fase: 1}
+  - id: R-52
+    nombre: Dólares y tipo de cambio
+    estado: CORREGIR
+    fase: 2
+    parametros: [TIPO_CAMBIO_REGLA]
+    hallazgo: "CFF 20: el tipo de cambio que Banxico publica en el DOF el día ANTERIOR a la operación (no el FIX determinado el día anterior: son un día distintos). Para el CFDI manda el TipoCambio que trae el comprobante; para pagos en dólares el del REP (TipoCambioP). La perilla P14 'dof_anterior' debe leer la serie por fecha de publicación. Diferencias entre TC de factura y de pago = ganancia o pérdida cambiaria (resultado), no ingreso por ventas."
+  - id: R-53
+    nombre: Depósito sin CFDI / pago sin CFDI
+    estado: OK
+    fase: 2
+    hallazgo: "Depósitos en cuenta no registrados en contabilidad se presumen ingresos (CFF 59 fr. III); en PF además está la discrepancia fiscal (LISR 91). Pago sin CFDI: no deducible ni acreditable (LISR 27 fr. XVIII; LIVA 5 fr. II). Avisar, no reclasificar solo."
+  - id: R-54
+    nombre: Clasificación de movimientos por cliente
+    estado: CRITERIO
+    fase: 2
+    hallazgo: "No es ley: es criterio del contador por cliente. Se resuelve con la FICHA DE CLASIFICACIÓN (perilla P21) guardada por RFC, con prioridad sobre lo aprendido; cada regla con quién la firmó."
+
+  # ───────────── G-H. Contabilidad y estados ─────────────
+  - id: R-60
+    nombre: Póliza de diario por CFDI
+    estado: OK
+    fase: 2
+    hallazgo: "Correcto como pre-contabilidad. Para contabilidad electrónica cada partida que venga de un CFDI lleva el nodo de comprobante nacional (UUID, RFC y monto) del Anexo 24."
+  - id: R-61
+    nombre: Pólizas Ig/Eg por banco
+    estado: OK
+    fase: 2
+    hallazgo: "La reclasificación del IVA de pendiente a efectivamente cobrado o pagado usa la FECHA DE PAGO (R-10). Los pagos por transferencia llevan el nodo de transferencia (banco, cuenta, beneficiario) del Anexo 24."
+  - {id: R-62, nombre: "Efectivo a Caja", estado: OK, fase: 1}
+  - {id: R-63, nombre: "Póliza cuadra y lleva UUID/RFC", estado: OK, fase: 1}
+  - id: R-64
+    nombre: Catálogo con código agrupador SAT
+    estado: CRITERIO
+    fase: 2
+    hallazgo: "Amarrar con R-101: el catálogo XML va con el código agrupador del SAT en cada cuenta y se envía la primera vez y en cada cambio. El catálogo del cliente (su COI) manda; el código agrupador se mapea, no se impone."
+  - {id: R-65, nombre: "Saldos iniciales, depreciación, provisión de impuestos", estado: FALTA, fase: 3}
+  - {id: R-70, nombre: "Estado de resultados", estado: REVISAR, fase: 3}
+  - {id: R-71, nombre: "Flujo de efectivo", estado: OK, fase: 1}
+  - {id: R-72, nombre: "Balance", estado: REVISAR, fase: 3}
+  - id: R-73
+    nombre: Depreciación
+    estado: REVISAR
+    fase: 3
+    parametros: [AUTO_TOPE_DEDUCCION]
+  - {id: R-74, nombre: "Inventarios y costo de ventas", estado: REVISAR, fase: 3}
+  - id: R-75
+    nombre: ISR estimado PM en estados financieros
+    estado: CORREGIR
+    fase: 1
+    parametros: [ISR_PM_TASA]
+    hallazgo: "Etiquetarlo como PROVISIÓN CONTABLE. El pago provisional real de la PM general es con coeficiente (R-24); si se muestran juntos, alguien va a pagar lo que no es."
+  - {id: R-76, nombre: "Listo para presentar", estado: OK, fase: 1}
+
+  # ───────────── I. Nómina ─────────────
+  - {id: R-80, nombre: "Parámetros de nómina con vigencia por fecha de pago", estado: REVISAR, fase: 4}
+  - id: R-81
+    nombre: SDI y factor de integración
+    estado: OK
+    fase: 1
+    parametros: [FACTOR_INTEGRACION_PRIMER_ANIO, SBC_TOPE_VECES_UMA, UMA_DIARIA]
+    calculadora: parametro
+    hallazgo: "El factor ya no es un número fijo: sale de días de aguinaldo, vacaciones y prima. Si cambia la LFT (ej. 40 horas o más vacaciones), cambia solo."
+    casos:
+      - {nombre: "Factor primer año", fecha: "2026-11-04", entradas: {id: FACTOR_INTEGRACION_PRIMER_ANIO}, esperado: "1.0493"}
+  - id: R-82
+    nombre: ISR de nómina y subsidio para el empleo
+    estado: OK
+    fase: 1
+    parametros: [ISR_TARIFA_MENSUAL, SUBSIDIO_EMPLEO_MENSUAL, SUBSIDIO_EMPLEO_LIMITE_INGRESO]
+    calculadora: parametro
+    hallazgo: "Enero 2026 usa 15.59% sobre UMA 2025; febrero-diciembre 15.02% sobre UMA 2026. El motor lo resuelve por fecha de pago. La semilla del repo dice 536.22 para enero: sale de un considerando del decreto; el artículo que obliga manda la fórmula y da 536.21."
+    casos:
+      - {nombre: "Subsidio enero 2026", fecha: "2026-01-15", entradas: {id: SUBSIDIO_EMPLEO_MENSUAL}, esperado: "536.21"}
+      - {nombre: "Subsidio junio 2026", fecha: "2026-06-15", entradas: {id: SUBSIDIO_EMPLEO_MENSUAL}, esperado: "535.65"}
+  - id: R-83
+    nombre: Exentos de aguinaldo, prima vacacional y PTU
+    estado: OK
+    fase: 1
+    parametros: [EXENTO_AGUINALDO_VECES_UMA, EXENTO_PRIMA_VAC_VECES_UMA, EXENTO_PTU_VECES_UMA, UMA_DIARIA]
+    calculadora: exento_veces_uma
+    casos:
+      - {nombre: "Aguinaldo exento dic-2026", fecha: "2026-12-15", entradas: {parametro: EXENTO_AGUINALDO_VECES_UMA}, esperado: "3519.30"}
+  - id: R-84
+    nombre: Cuotas IMSS obrero-patronales
+    estado: CORREGIR
+    fase: 4
+    parametros: [PRIMA_RIESGO_INICIAL_POR_CLASE, PRIMA_RIESGO_MINIMA, PRIMA_RIESGO_MAXIMA]
+    hallazgo: "nomina_calculo.py:361 usa 0.54355 'como mínima'. No es la mínima: es la prima media de la clase I (LSS art. 73). La mínima es 0.5% y la máxima 15% (art. 74). Si falta la prima del patrón, NO calcular: pedir la clase o la prima de su última determinación anual."
+  - {id: R-85, nombre: "Infonavit", estado: REVISAR, fase: 4}
+  - {id: R-86, nombre: "Asimilados", estado: OK, fase: 1}
+  - {id: R-87, nombre: "Ajuste anual, finiquito, SUA/IDSE, ISN, póliza de nómina", estado: FALTA, fase: 4}
+
+  # ───────────── J. CFDI ─────────────
+  - id: R-90
+    nombre: Validaciones antes de timbrar y cancelación
+    estado: LISTO_FIRMA
+    fase: 2
+    parametros: [CFDI_CANCELACION_MES_LIMITE_PM, CFDI_CANCELACION_MES_LIMITE_PF, RESICO_PF_RETENCION_PM, REP_DIA_LIMITE, CFDI_EMISION_HORAS_MAX]
+    hallazgo: "Desde 2026 el plazo de cancelación está en ley (CFF 29-A): hasta el mes de la anual del ejercicio de emisión (PM marzo, PF abril del año siguiente). Fuera de plazo: no cancelar, emitir egreso; cancelar fuera de plazo es infracción (CFF 81 fr. XLVI). REP: a más tardar el día 5 natural del mes siguiente al pago (regla 2.7.1.32). Los números de revision_cfdi.py:75 (día 5) y validacion.py:20 (72 h) pasan a parámetros."
+
+  # ───────────── NUEVAS (no estaban en tu catálogo) ─────────────
+  - id: R-100
+    nombre: Actualización y recargos por pago tardío
+    estado: NUEVA
+    fase: 2
+    calculadora: parametro
+    parametros: [RECARGOS_MORA_MENSUAL, RECARGOS_PRORROGA_MENSUAL, RECARGOS_PARCIALIDADES_12M, RECARGOS_PARCIALIDADES_24M, RECARGOS_PARCIALIDADES_MAS24M, ACTUALIZACION_FACTOR_DECIMALES]
+    hallazgo: "Calculadoras listas: actualización (CFF 17-A, factor mínimo 1) y recargos (CFF 21, por mes o fracción, con la tasa de mora de cada mes). Falta solo conectar la serie del INPC desde la API del INEGI. Los INPC de las pruebas son FICTICIOS."
+    casos:
+      - nombre: "Actualización con INPC ficticios"
+        fecha: "2026-11-05"
+        calculadora: actualizacion
+        entradas: {monto: "10000.00", inpc_reciente: "146.0750", inpc_antiguo: "140.0000"}
+        esperado: {factor: "1.0434", actualizacion: "434.00"}
+      - nombre: "Si el INPC bajó, el factor es 1"
+        fecha: "2026-11-05"
+        calculadora: actualizacion
+        entradas: {monto: "10000.00", inpc_reciente: "139.0000", inpc_antiguo: "140.0000"}
+        esperado: {factor: "1.0000", actualizacion: "0.00"}
+      - nombre: "Recargos: vence 19-ene, paga 20-abr-2026 = 4 meses × 2.07%"
+        fecha: "2026-04-20"
+        calculadora: recargos
+        entradas: {monto_actualizado: "10000.00", vencimiento: "2026-01-19", pago: "2026-04-20"}
+        esperado: {meses: "4", tasa_total: "8.28", recargos: "828.00"}
+      - nombre: "Recargos que cruzan de año: 1.47 + 1.47 + 2.07"
+        fecha: "2026-01-20"
+        calculadora: recargos
+        entradas: {monto_actualizado: "10000.00", vencimiento: "2025-11-17", pago: "2026-01-20"}
+        esperado: {meses: "3", tasa_total: "5.01", recargos: "501.00"}
+        confirmado: false
+        nota: "Confirmar que cada mes de atraso toma la tasa del mes en que empieza."
+      - {nombre: "Mora 2026", fecha: "2026-06-01", entradas: {id: RECARGOS_MORA_MENSUAL}, esperado: "2.07"}
+      - {nombre: "Mora 2025", fecha: "2025-06-01", entradas: {id: RECARGOS_MORA_MENSUAL}, esperado: "1.47"}
+  - id: R-101
+    nombre: Contabilidad electrónica (Anexo 24)
+    estado: NUEVA
+    fase: 2
+    parametros: [CONTA_ELEC_DIA_ENVIO_PM, CONTA_ELEC_DIA_ENVIO_PF, CONTA_ELEC_BALANZA_AJUSTADA_PM, CONTA_ELEC_BALANZA_AJUSTADA_PF, CONTA_ELEC_RELEVO_PF_INGRESOS]
+    hallazgo: "Se envían catálogo (primera vez y cada cambio) y balanza mensual: PM a más tardar el día 3 y PF el día 5 del SEGUNDO mes posterior; balanza ajustada PM 20 de abril, PF 22 de mayo. Pólizas y auxiliares solo a requerimiento o al pedir devolución/compensación, pero deben existir con UUID por partida (R-63). Relevadas de ENVIAR: RESICO PF, RESICO PM (regla de RESICO en el capítulo 3.13; las PM sí deben LLEVARLA) y ciertas PF de hasta 4 M (regla 2.8.1.17). Diseño seguro: Timbra genera siempre los 3 XML; lo único que cambia por régimen es si sale el aviso 'debes enviarla el día X'."
+  - {id: R-104, nombre: "Declaraciones anuales PF y PM", estado: NUEVA, fase: 3}
+  - {id: R-105, nombre: "PTU (10%, topes por trabajador)", estado: NUEVA, fase: 4}
+  - id: R-107
+    nombre: Resolución por FECHA, nunca por año
+    estado: NUEVA
+    fase: 2
+    parametros: [UMA_DIARIA]
+    calculadora: parametro
+    hallazgo: "Error destapado en el repo: UMA y tarifas buscadas por año. Esta prueba vigila que enero use la UMA anterior."
+    casos:
+      - {nombre: "UMA diaria el 15-ene-2026", fecha: "2026-01-15", entradas: {id: UMA_DIARIA}, esperado: "113.14"}
+      - {nombre: "UMA diaria el 1-feb-2026", fecha: "2026-02-01", entradas: {id: UMA_DIARIA}, esperado: "117.31"}
+  - id: R-108
+    nombre: Ajuste a pesos en el pago
+    estado: NUEVA
+    fase: 2
+    calculadora: ajuste_pesos
+    fuente: "CFF art. 20"
+    hallazgo: "Las declaraciones se pagan en pesos: de 1 a 50 centavos baja, de 51 a 99 sube. Se aplica al final de cada impuesto, no a cada renglón."
+    casos:
+      - {nombre: "1,234.50 baja", fecha: "2026-11-05", entradas: {monto: "1234.50"}, esperado: "1234"}
+      - {nombre: "1,234.51 sube", fecha: "2026-11-05", entradas: {monto: "1234.51"}, esperado: "1235"}
+  - id: R-106
+    nombre: Alertas de vigencia y propuestas de ley
+    estado: NUEVA
+    fase: 1
+    parametros: [RESICO_PF_TOPE_ANUAL, IVA_RESICO_PF_OPCION_TASA, RESICO_PM_TOPE_ANUAL, INTERESES_NETOS_LIMITE_PCT, ISR_RET_INTERESES]
+    calculadora: parametro
+    hallazgo: "Los estados 'propuesta' y 'aprobado_congreso_pendiente_dof' nunca se aplican fuera de simulación; el motor devuelve el valor vigente y un aviso 'reforma_pendiente'. Un estado desconocido frena la carga."
+    casos:
+      - {nombre: "Tope RESICO 2027 sin DOF: sigue 3.5 M", fecha: "2027-01-15", entradas: {id: RESICO_PF_TOPE_ANUAL}, esperado: "3500000.00"}
+      - {nombre: "…y avisa la reforma pendiente", fecha: "2027-01-15", calculadora: reforma_pendiente, entradas: {id: RESICO_PF_TOPE_ANUAL}, esperado: "5000000.00"}
+      - {nombre: "IVA 7% RESICO sin DOF no aplica", fecha: "2027-01-15", entradas: {id: IVA_RESICO_PF_OPCION_TASA}, espera_error: SinValor}
+
+  # ═════════════════════════ v0.4.0 · FASES 3 Y 4 (casos validados contra el código de Timbra) ═════════════════════════
+  - id: R-109
+    nombre: Matriz régimen × obligación
+    estado: NUEVA
+    fase: 3
+    parametros: [CONTA_ELEC_RELEVO_PF_INGRESOS, ARREND_TRIMESTRAL_VECES_UMA, UMA_MENSUAL]
+    hallazgo: "601 provisional con CU (devengado), 603 informativa 15-feb, 606 mensual o trimestral (≤10 UMA mensuales), 612 acumulada, 621 bimestral residual, 625 retención, 626 PF definitivo, 626 PM flujo × 30%, 616 solo receptor. 606/612 con ingresos ≤4 M del año anterior: sin contabilidad electrónica ni DIOT (2.8.1.17). RESICO PM: relevado en 2026 (regla 3.13.x POR CONFIRMAR). Si falta el ingreso del año anterior: sin relevo + aviso."
+
+  - id: R-110
+    nombre: Provisional 612 (enero = tarifa mensual)
+    estado: NUEVA
+    fase: 3
+    parametros: [ISR_TARIFA_MENSUAL]
+    calculadora: isr_tarifa
+    hallazgo: "Base = cobrado acumulado − deducciones pagadas − depreciación proporcional − PTU pagada − pérdidas. Febrero a noviembre: tabla acumulada OFICIAL del Anexo 8 (R-20), no la mensual × meses."
+    casos:
+      - {nombre: "Enero, base 20,000", fecha: "2026-01-31", entradas: {tabla: ISR_TARIFA_MENSUAL, base: "20000.00"}, esperado: "2383.65"}
+      - {nombre: "Enero, base en el límite 844.59", fecha: "2026-01-31", entradas: {tabla: ISR_TARIFA_MENSUAL, base: "844.59"}, esperado: "16.22"}
+
+  - id: R-111
+    nombre: Provisional 606 con ciega y predial
+    estado: NUEVA
+    fase: 3
+    parametros: [ARREND_DEDUCCION_CIEGA_PCT, ISR_TARIFA_MENSUAL]
+    calculadora: isr_606
+    hallazgo: "Mensual: tarifa MENSUAL (no acumulada). Trimestral: tarifa oficial ISR_TARIFA_TRIMESTRAL_ARRENDAMIENTO (Anexo 8 2026)."
+    casos:
+      - {nombre: "Trimestre: rentas 60,000 ciega", fecha: "2026-03-31", entradas: {ingresos: "60000.00", trimestral: true}, esperado: "3227.99"}
+      - {nombre: "Renta 20,000 ciega", fecha: "2026-03-31", entradas: {ingresos: "20000.00"}, esperado: "1076.00"}
+      - {nombre: "Renta 20,000 ciega + predial 1,200", fecha: "2026-03-31", entradas: {ingresos: "20000.00", predial: "1200.00"}, esperado: "924.86"}
+
+  - id: R-113
+    nombre: Provisional RESICO PM
+    estado: NUEVA
+    fase: 3
+    parametros: [ISR_PM_TASA, RESICO_PM_TOPE_ANUAL]
+    calculadora: resico_pm_provisional
+    casos:
+      - {nombre: "1 M cobrado − 700 mil pagado", fecha: "2026-06-30", entradas: {cobrado: "1000000", pagado: "700000"}, esperado: "90000.00"}
+      - {nombre: "Base negativa", fecha: "2026-06-30", entradas: {cobrado: "500000", pagado: "700000"}, esperado: "0.00"}
+
+  - id: R-114
+    nombre: Provisional 601 con coeficiente y PTU de mayo a diciembre
+    estado: NUEVA
+    fase: 3
+    parametros: [ISR_PM_TASA]
+    calculadora: pm_coeficiente_provisional
+    hallazgo: "CU con 4 decimales (criterio; POR CONFIRMAR). Sin pagos provisionales en el ejercicio de inicio. Si el último ejercicio no tuvo utilidad, el último con utilidad hasta 5 años atrás."
+    casos:
+      - {nombre: "CU 0.12, junio, ingresos 6 M, PTU 160 mil, previos 150 mil", fecha: "2026-06-30", entradas: {cu: "0.1200", ingresos: "6000000", mes: 6, ptu: "160000", pagos_previos: "150000"}, esperado: "54000.00"}
+      - {nombre: "Abril: no resta PTU", fecha: "2026-04-30", entradas: {cu: "0.1200", ingresos: "4000000", mes: 4, ptu: "160000"}, esperado: "144000.00"}
+
+  - id: R-103
+    nombre: Estímulo ISR región fronteriza (ampliada)
+    estado: NUEVA
+    fase: 3
+    parametros: [FRONTERA_ISR_DIVISOR, FRONTERA_ISR_PROPORCION_MIN]
+    calculadora: estimulo_frontera_isr
+    hallazgo: "Vence 31-dic-2026; sin decreto 2027 publicado. Requiere aviso al padrón."
+    casos:
+      - {nombre: "100% en la región", fecha: "2026-12-31", entradas: {isr: "30000", proporcion_region: "1"}, esperado: "10000.00"}
+      - {nombre: "89.99% en la región", fecha: "2026-12-31", entradas: {isr: "30000", proporcion_region: "0.8999"}, esperado: "0.00"}
+      - {nombre: "Enero 2027 sin decreto", fecha: "2027-01-31", entradas: {isr: "30000", proporcion_region: "1"}, espera_error: SinValor}
+
+  - id: R-117
+    nombre: Donatarias y tope de donativos
+    estado: NUEVA
+    fase: 3
+    parametros: [DONATIVOS_DEDUCIBLE_PCT, DONATARIA_INGRESOS_NO_RELACIONADOS_PCT, DONATARIA_GASTOS_ADMIN_PCT]
+    calculadora: tope_donativos
+    casos:
+      - {nombre: "Donante PM con UF 2 M", fecha: "2026-12-31", entradas: {base_anio_anterior: "2000000"}, esperado: "140000.00"}
+
+  - id: R-118
+    nombre: Retenciones de plataformas digitales
+    estado: NUEVA
+    fase: 3
+    parametros: [PLATAFORMAS_ISR_TABLA, PLATAFORMAS_IVA_RET_PCT]
+    calculadora: retencion_plataforma
+    casos:
+      - {nombre: "Venta 10,000 + IVA 1,600", fecha: "2026-11-05", entradas: {actividad: enajenacion_servicios, base: "10000", iva: "1600"}, esperado: {isr: "250.00", iva: "800.00"}}
+      - {nombre: "Transporte sin RFC", fecha: "2026-11-05", entradas: {actividad: sin_rfc, base: "10000", iva: "1600"}, esperado: {isr: "2000.00", iva: "1600.00"}}
+
+  - id: R-120
+    nombre: Anual personas físicas
+    estado: NUEVA
+    fase: 3
+    parametros: [ISR_TARIFA_ANUAL, DED_PERS_VECES_UMA_ANUAL, DED_PERS_PCT_INGRESO]
+    calculadora: isr_tarifa
+    casos:
+      - {nombre: "Base 470,000", fecha: "2026-12-31", entradas: {tabla: ISR_TARIFA_ANUAL, base: "470000.00"}, esperado: "78717.86"}
+      - {nombre: "Base 200,000", fecha: "2026-12-31", entradas: {tabla: ISR_TARIFA_ANUAL, base: "200000.00"}, esperado: "20417.81"}
+
+  - id: R-121
+    nombre: Depreciación fiscal
+    estado: NUEVA
+    fase: 3
+    parametros: [DEPRECIACION_TASAS_ART34, AUTO_TOPE_DEDUCCION]
+    calculadora: depreciacion
+    hallazgo: "Meses completos de uso; factor de actualización mínimo 1. Deducción inmediata Plan México: porcentajes POR CONFIRMAR."
+    casos:
+      - {nombre: "Cómputo 30,000, 9 meses", fecha: "2026-12-31", entradas: {moi: "30000", tipo_bien: equipo_computo, meses: 9}, esperado: "6750.00"}
+      - {nombre: "Auto 400,000 topado a 175,000", fecha: "2026-12-31", entradas: {moi: "400000", tipo_bien: automoviles, meses: 12}, esperado: "43750.00"}
+
+  - id: R-125
+    nombre: Aguinaldo (monto)
+    estado: NUEVA
+    fase: 4
+    parametros: [LFT_AGUINALDO_DIAS]
+    calculadora: aguinaldo_monto
+    hallazgo: "Días naturales contando el de ingreso; año de 365 o 366. Faltas e incapacidad por enfermedad general NO se descuentan por omisión (criterio dividido; POR CONFIRMAR jurisprudencia). Riesgo de trabajo y maternidad cuentan como laborados."
+    casos:
+      - {nombre: "Año completo, SD 500", fecha: "2026-12-15", entradas: {sd: "500", ingreso: "2020-01-01", fin: "2026-12-31"}, esperado: "7500.00"}
+      - {nombre: "Ingreso 1-jul, SD 400", fecha: "2026-12-15", entradas: {sd: "400", ingreso: "2026-07-01", fin: "2026-12-31"}, esperado: "3024.66"}
+
+  - id: R-126
+    nombre: ISR del aguinaldo (art. 96 y RLISR 174)
+    estado: NUEVA
+    fase: 4
+    parametros: [EXENTO_AGUINALDO_IMPORTE, ISR_TARIFA_MENSUAL]
+    calculadora: isr_aguinaldo
+    hallazgo: "SM = SD × 30.4. RLISR 174 es optativo para el patrón; sin redondeo intermedio, round2 al final. Exento con la UMA de la fecha de pago."
+    casos:
+      - {nombre: "SD 500", fecha: "2026-12-15", entradas: {sd: "500", aguinaldo: "7500.00"}, esperado: {exento: "3519.30", gravado: "3980.70", isr_174: "713.34", isr_ordinario: "769.99"}}
+      - {nombre: "Ingreso 1-jul, todo exento", fecha: "2026-12-15", entradas: {sd: "400", aguinaldo: "3024.66"}, esperado: {exento: "3024.66", gravado: "0.00", isr_174: "0.00", isr_ordinario: "0.00"}}
+      - {nombre: "SD 1,500", fecha: "2026-12-15", entradas: {sd: "1500", aguinaldo: "22500.00"}, esperado: {exento: "3519.30", gravado: "18980.70", isr_174: "4464.26", isr_ordinario: "5037.35"}}
+
+  - id: R-127
+    nombre: CFDI de nómina 1.2 revisión E y NOM111
+    estado: REVISAR
+    fase: 4
+    hallazgo: "Aguinaldo: TipoNomina E, PeriodicidadPago 99, TipoPercepcion 002. Revisión E (vigente 1-ene-2026): NOM75, NOM101 (subsidio ≤ 628.00 con ≤31 días), NOM108 (≤ 20.66 × días con >31), NOM109 (038 sin exento), NOM110. NOM111: reportado como 'error genérico' en la revisión E; texto oficial POR CONFIRMAR con la matriz XLS del SAT o el XML de respuesta de Finkok."
+
+  - id: R-128
+    nombre: Cuotas IMSS e Infonavit
+    estado: NUEVA
+    fase: 4
+    parametros: [IMSS_EYM_CUOTA_FIJA_PATRON, IMSS_EYM_EXCEDENTE_PATRON, IMSS_EYM_EXCEDENTE_OBRERO, IMSS_PD_PATRON, IMSS_PD_OBRERO, IMSS_GMP_PATRON, IMSS_GMP_OBRERO, IMSS_IV_PATRON, IMSS_IV_OBRERO, IMSS_GUARDERIAS_PATRON, IMSS_RETIRO_PATRON, IMSS_CEAV_OBRERO, IMSS_CEAV_PATRON_TABLA, INFONAVIT_APORTACION_PATRON, SBC_TOPE_IMPORTE, UMA_DIARIA, SM_GENERAL_DIARIO]
+    calculadora: imss_cuotas
+    casos:
+      - {nombre: "SBC 500, 30 días, prima 0.54355", fecha: "2026-03-31", entradas: {sbc: "500", dias: 30, prima_rt: "0.54355"}, esperado: {patron: "2950.28", obrero: "374.02", infonavit: "750.00", ceav_patron: "1126.95"}}
+      - {nombre: "SBC 3,500 se topa a 25 UMA", fecha: "2026-03-31", entradas: {sbc: "3500", dias: 30, prima_rt: "0.54355"}, esperado: {patron: "14376.84", obrero: "2399.28", infonavit: "4399.13", ceav_patron: "6610.13"}}
+
+  - id: R-130
+    nombre: SBC con factor de integración por antigüedad
+    estado: NUEVA
+    fase: 4
+    parametros: [LFT_VACACIONES_TABLA, LFT_AGUINALDO_DIAS, LFT_PRIMA_VACACIONAL_PCT, SBC_TOPE_IMPORTE]
+    calculadora: sbc
+    casos:
+      - {nombre: "Primer año, SD 500", fecha: "2026-12-15", entradas: {sd: "500", anio_servicio: 1}, esperado: "524.65"}
+      - {nombre: "Segundo año, SD 500", fecha: "2026-12-15", entradas: {sd: "500", anio_servicio: 2}, esperado: "525.35"}
+
+  - id: R-131
+    nombre: Retención por periodicidad con tarifa oficial y subsidio
+    estado: NUEVA
+    fase: 4
+    parametros: [ISR_TARIFA_QUINCENAL, ISR_TARIFA_SEMANAL, ISR_TARIFA_DECENAL, ISR_TARIFA_DIARIA, SUBSIDIO_EMPLEO_MENSUAL, SUBSIDIO_EMPLEO_LIMITE_INGRESO]
+    calculadora: isr_periodo_con_subsidio
+    hallazgo: "Usar la tarifa oficial del periodo (cotejada con el PDF del SAT), no la mensual × días/30.4. Las tarifas de 7, 10 y 15 días son la DIARIA × días en límites y cuotas: por eso sus cuotas no encadenan al centavo (desfase máx. 0.04 semanal, 0.06 decenal, 0.09 quincenal). No es error de transcripción. Subsidio = mensual / 30.4 × días; límite proporcional POR CONFIRMAR."
+    casos:
+      - {nombre: "Quincena 8,000", fecha: "2026-03-15", entradas: {tabla: ISR_TARIFA_QUINCENAL, base: "8000.00", dias: 15}, esperado: {isr: "799.46", subsidio: "0.00", retencion: "799.46"}}
+      - {nombre: "Quincena 7,500", fecha: "2026-03-15", entradas: {tabla: ISR_TARIFA_QUINCENAL, base: "7500.00", dias: 15}, esperado: {isr: "709.86", subsidio: "0.00", retencion: "709.86"}}
+      - {nombre: "Quincena 5,000 con subsidio", fecha: "2026-03-15", entradas: {tabla: ISR_TARIFA_QUINCENAL, base: "5000.00", dias: 15}, esperado: {isr: "366.91", subsidio: "264.30", retencion: "102.61"}}
+
+  - id: R-133
+    nombre: PTU, tope individual
+    estado: NUEVA
+    fase: 4
+    parametros: [PTU_PCT, PTU_TOPE_MESES_SALARIO, EXENTO_PTU_IMPORTE]
+    calculadora: ptu_tope
+    casos:
+      - {nombre: "Salario 10,000, promedio 12,000", fecha: "2026-05-30", entradas: {salario_mensual: "10000", promedio_3_anios: "12000"}, esperado: "30000.00"}
+      - {nombre: "Promedio mayor manda", fecha: "2026-05-30", entradas: {salario_mensual: "5000", promedio_3_anios: "18000"}, esperado: "18000.00"}
+
+  - id: R-134
+    nombre: Finiquito y liquidación (ISR por separación)
+    estado: NUEVA
+    fase: 4
+    parametros: [EXENTO_SEPARACION_IMPORTE_ANUAL, ISR_TARIFA_MENSUAL, LFT_PRIMA_ANTIGUEDAD_DIAS, LFT_PRIMA_ANTIGUEDAD_TOPE_SM, LFT_INDEMNIZACION_DIAS]
+    calculadora: separacion_isr
+    casos:
+      - {nombre: "SD 500, 5 años, 75,000", fecha: "2026-12-15", entradas: {sd: "500", total: "75000.00", anios: 5}, esperado: {exento: "52789.50", gravado: "22210.50", isr: "2102.19"}}
+      - {nombre: "5 años y 7 meses cuenta como 6", fecha: "2026-12-15", entradas: {sd: "500", total: "75000.00", anios: 5, meses_fraccion: 7}, esperado: {exento: "63347.40", gravado: "11652.60", isr: "1102.90"}}
+
+  - id: R-102
+    nombre: ISN por entidad (ampliada)
+    estado: REVISAR
+    fase: 4
+    parametros: [ISN_TASA_TABLA]
+    calculadora: isn
+    hallazgo: "Confirmadas CDMX 4% y Edomex 3%; las demás cargadas con su confianza. Entidad sin tasa: NO calcular."
+    casos:
+      - {nombre: "CDMX 100,000", fecha: "2026-11-30", entradas: {entidad: CMX, remuneraciones: "100000"}, esperado: "4000.00"}
+      - {nombre: "Edomex 100,000", fecha: "2026-11-30", entradas: {entidad: MEX, remuneraciones: "100000"}, esperado: "3000.00"}
+      - {nombre: "Entidad sin tasa", fecha: "2026-11-30", entradas: {entidad: ZAC, remuneraciones: "100000"}, espera_error: SinValor}
+
+  - id: R-136
+    nombre: Vacaciones y jornada
+    estado: NUEVA
+    fase: 4
+    parametros: [LFT_VACACIONES_TABLA, LFT_JORNADA_MAX_SEMANAL]
+    calculadora: vacaciones_dias
+    casos:
+      - {nombre: "7 años de servicio", fecha: "2026-11-05", entradas: {anio_servicio: 7}, esperado: "22"}
+      - {nombre: "Primer año", fecha: "2026-11-05", entradas: {anio_servicio: 1}, esperado: "12"}
+      - {nombre: "Jornada máxima 2027", fecha: "2027-01-04", calculadora: parametro, entradas: {id: LFT_JORNADA_MAX_SEMANAL}, esperado: "46"}
+
+  - id: R-137
+    nombre: Plazo del complemento de pago
+    estado: OK
+    fase: 2
+    parametros: [REP_DIA_LIMITE]
+    calculadora: rep_fecha_limite
+    fuente: "RMF 2026 regla 2.7.1.32"
+    casos:
+      - {nombre: "Pago 30-nov-2026", fecha: "2026-11-30", entradas: {fecha_pago: "2026-11-30"}, esperado: "2026-12-05"}
+      - {nombre: "Pago 1-dic-2026", fecha: "2026-12-01", entradas: {fecha_pago: "2026-12-01"}, esperado: "2027-01-05"}
+
+  - id: R-138
+    nombre: Serie de tipo de cambio para CFF 20
+    estado: CORREGIR
+    fase: 2
+    parametros: [BANXICO_SERIE_TC_CFF20, TIPO_CAMBIO_REGLA]
+    hallazgo: "tipo_cambio.py usa SF43718 (fecha de determinación). Cambiar a SF60653 (fecha de liquidación = publicación en DOF) con fecha = causación − 1 día hábil de publicación; validar el empate de fechas antes de fijarlo (2C)."
+
+  - id: R-140
+    nombre: Integridad de tarifas por periodo (diaria × días)
+    estado: OK
+    fase: 4
+    parametros: [ISR_TARIFA_DIARIA, ISR_TARIFA_SEMANAL, ISR_TARIFA_DECENAL, ISR_TARIFA_QUINCENAL]
+    calculadora: tarifa_periodica_es_diaria_por_dias
+    fuente: "Anexo 8 RMF 2026 apartado B fr. I a IV (PDF oficial)"
+    hallazgo: "Esta es la prueba correcta para las tarifas periódicas. La de 'cuotas encadenadas' sirve para la mensual, la anual y las acumuladas, pero NO para la semanal, decenal y quincenal."
+    casos:
+      - {nombre: "Semanal = diaria × 7", fecha: "2026-06-30", entradas: {tabla: ISR_TARIFA_SEMANAL, dias: 7}, esperado: "ok"}
+      - {nombre: "Decenal = diaria × 10", fecha: "2026-06-30", entradas: {tabla: ISR_TARIFA_DECENAL, dias: 10}, esperado: "ok"}
+      - {nombre: "Quincenal = diaria × 15", fecha: "2026-06-30", entradas: {tabla: ISR_TARIFA_QUINCENAL, dias: 15}, esperado: "ok"}

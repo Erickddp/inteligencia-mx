@@ -1,0 +1,1291 @@
+# TIMBRA · BASE DE PARÁMETROS DE LEY (fuente única de verdad)
+# Fase 1 · corte 2026-11-04 · todo es orientación hasta que Rick firme (firma.validado: true)
+#
+# Reglas de esta base:
+#  - Un parámetro NUNCA se sobreescribe: se le agrega un tramo nuevo con su vigencia (desde/hasta).
+#  - Los números van como TEXTO ("117.31") para que el motor los lea como Decimal, nunca float.
+#  - estado: vigente | por_confirmar (se aplican)
+#            propuesta | aprobado_congreso_pendiente_dof (NUNCA se aplican salvo en simulación;
+#            el motor avisa "reforma_pendiente"). Cualquier otro estado frena la carga.
+#  - IDs SIN AÑO: un parámetro, varios tramos. Los importes que dependen de la UMA son fórmulas.
+#  - Si un parámetro se calcula a partir de otros, lleva "formula" en lugar de "valores":
+#    así, si cambia el de origen (ej. la tasa de IVA), cambian solos todos los que dependen de él.
+#  - revisar_antes: fecha en la que el motor empieza a avisar que hay que confirmar si sigue igual.
+#  - hasta: null + confirmado_hasta = el valor sigue vigente por ley hasta que lo reemplacen
+#    (tarifa, UMA, salario mínimo, subsidio). Después de confirmado_hasta el motor lo sigue dando
+#    pero marcado ARRASTRADO (estimación en pantalla), para que enero no se quede en blanco.
+#    hasta con fecha = vence de verdad (estímulos con plazo, LIF anual): después da SinValor.
+
+version_base: "0.4.1"
+fecha_corte: "2026-11-05"
+
+parametros:
+
+  # ───────────────────────── UMA y salarios mínimos ─────────────────────────
+  UMA_DIARIA:
+    nombre: UMA, valor diario
+    tipo: importe
+    unidad: MXN
+    valores:
+      - valor: "113.14"
+        desde: "2025-02-01"
+        hasta: "2026-01-31"
+        fuente: "INEGI, DOF 10-ene-2025"
+      - valor: "117.31"
+        desde: "2026-02-01"
+        hasta: null
+        confirmado_hasta: "2027-01-31"
+        fuente: "INEGI, DOF 09-ene-2026 (vigente desde 1-feb-2026; enero 2026 usa la de 2025)"
+    revisar_antes: "2027-01-10"
+    firma: {validado: false, por: null, fecha: null}
+
+  UMA_MENSUAL:
+    nombre: UMA, valor mensual
+    tipo: importe
+    formula: "UMA_DIARIA * 30.4"
+    decimales: 2
+    fuente: "Ley para Determinar el Valor de la UMA, art. 4 fr. II"
+
+  UMA_ANUAL:
+    nombre: UMA, valor anual
+    tipo: importe
+    formula: "UMA_MENSUAL * 12"
+    decimales: 2
+    fuente: "Ley para Determinar el Valor de la UMA, art. 4 fr. III"
+
+  SM_GENERAL_DIARIO:
+    nombre: Salario mínimo general diario
+    tipo: importe
+    unidad: MXN
+    valores:
+      - valor: "278.80"
+        desde: "2025-01-01"
+        hasta: "2025-12-31"
+        fuente: "CONASAMI, DOF dic-2024"
+      - valor: "315.04"
+        desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        fuente: "CONASAMI, DOF 09-dic-2025"
+    revisar_antes: "2026-12-15"
+    firma: {validado: false, por: null, fecha: null}
+
+  SM_ZLFN_DIARIO:
+    nombre: Salario mínimo Zona Libre de la Frontera Norte diario
+    tipo: importe
+    unidad: MXN
+    valores:
+      - valor: "419.88"
+        desde: "2025-01-01"
+        hasta: "2025-12-31"
+        fuente: "CONASAMI, DOF dic-2024"
+      - valor: "440.87"
+        desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        fuente: "CONASAMI, DOF 09-dic-2025"
+    revisar_antes: "2026-12-15"
+    firma: {validado: false, por: null, fecha: null}
+
+  # ───────────────────────── ISR personas físicas ─────────────────────────
+  ISR_TARIFA_MENSUAL:
+    nombre: Tarifa mensual ISR (art. 96 LISR / Anexo 8 RMF)
+    tipo: tabla
+    columnas: [limite_inferior, limite_superior, cuota_fija, porcentaje_excedente]
+    valores:
+      - desde: "2023-01-01"
+        hasta: "2025-12-31"
+        fuente: "Anexo 8 RMF 2023, republicada sin cambio en RMF 2024 y 2025 (DOF 30-dic-2024)"
+        valor:
+          - ["0.01",       "746.04",     "0.00",       "1.92"]
+          - ["746.05",     "6332.05",    "14.32",      "6.40"]
+          - ["6332.06",    "11128.01",   "371.83",     "10.88"]
+          - ["11128.02",   "12935.82",   "893.63",     "16.00"]
+          - ["12935.83",   "15487.71",   "1182.88",    "17.92"]
+          - ["15487.72",   "31236.49",   "1640.18",    "21.36"]
+          - ["31236.50",   "49233.00",   "5004.12",    "23.52"]
+          - ["49233.01",   "93993.90",   "9236.89",    "30.00"]
+          - ["93993.91",   "125325.20",  "22665.17",   "32.00"]
+          - ["125325.21",  "375975.61",  "32691.18",   "34.00"]
+          - ["375975.62",  null,         "117912.32",  "35.00"]
+      - desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        fuente: "Anexo 8 RMF 2026, DOF 28-dic-2025 (actualizada por inflación; LISR art. 152: solo cambia cuando la inflación acumulada pasa de 10%)"
+        valor:
+          - ["0.01",       "844.59",     "0.00",       "1.92"]
+          - ["844.60",     "7168.51",    "16.22",      "6.40"]
+          - ["7168.52",    "12598.02",   "420.95",     "10.88"]
+          - ["12598.03",   "14644.64",   "1011.68",    "16.00"]
+          - ["14644.65",   "17533.64",   "1339.14",    "17.92"]
+          - ["17533.65",   "35362.83",   "1856.84",    "21.36"]
+          - ["35362.84",   "55736.68",   "5665.16",    "23.52"]
+          - ["55736.69",   "106410.50",  "10457.09",   "30.00"]
+          - ["106410.51",  "141880.66",  "25659.23",   "32.00"]
+          - ["141880.67",  "425641.99",  "37009.69",   "34.00"]
+          - ["425642.00",  null,         "133488.54",  "35.00"]
+    revisar_antes: "2026-12-20"
+    firma: {validado: false, por: null, fecha: null}
+
+  SUBSIDIO_EMPLEO_PCT_UMA:
+    nombre: Subsidio para el empleo, % de la UMA mensual
+    tipo: porcentaje
+    valores:
+      - valor: "15.59"
+        desde: "2026-01-01"
+        hasta: "2026-01-31"
+        fuente: "Decreto que modifica el subsidio para el empleo, DOF 31-dic-2025 (transitorio enero, se aplica sobre UMA 2025)"
+      - valor: "15.02"
+        desde: "2026-02-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        fuente: "Decreto que modifica el subsidio para el empleo, DOF 31-dic-2025"
+    nota: "El considerando del decreto menciona $536.22, pero el artículo segundo (lo que obliga) manda multiplicar la UMA mensual por el %. Enero: 3,439.46 × 15.59% = 536.21; feb-dic: 3,566.22 × 15.02% = 535.65. La semilla del repo (536.22) toma el considerando."
+    revisar_antes: "2026-12-20"
+    firma: {validado: false, por: null, fecha: null}
+
+  SUBSIDIO_EMPLEO_MENSUAL:
+    nombre: Subsidio para el empleo mensual (importe)
+    tipo: importe
+    formula: "UMA_MENSUAL * SUBSIDIO_EMPLEO_PCT_UMA / 100"
+    decimales: 2
+    fuente: "Decreto DOF 31-dic-2025; se prorratea por días con 30.4"
+
+  SUBSIDIO_EMPLEO_LIMITE_INGRESO:
+    nombre: Ingreso mensual máximo para tener subsidio
+    tipo: importe
+    valores:
+      - valor: "11492.66"
+        desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        fuente: "Decreto DOF 31-dic-2025"
+    revisar_antes: "2026-12-20"
+    firma: {validado: false, por: null, fecha: null}
+
+  DED_PERS_VECES_UMA_ANUAL:
+    nombre: Tope deducciones personales, veces UMA anual
+    tipo: numero
+    valores:
+      - valor: "5"
+        desde: "2016-01-01"
+        hasta: null
+        fuente: "LISR art. 151, último párrafo"
+
+  DED_PERS_PCT_INGRESO:
+    nombre: Tope deducciones personales, % del ingreso total (incluye exentos)
+    tipo: porcentaje
+    valores:
+      - valor: "15"
+        desde: "2016-01-01"
+        hasta: null
+        fuente: "LISR art. 151, último párrafo"
+
+  # ───────────────────────── RESICO ─────────────────────────
+  RESICO_PF_TABLA:
+    nombre: Tasas RESICO PF sobre ingreso mensual cobrado sin IVA (tasa al total, no por excedente)
+    tipo: tabla
+    columnas: [hasta_ingreso_mensual, tasa]
+    valores:
+      - desde: "2022-01-01"
+        hasta: null
+        fuente: "LISR art. 113-E"
+        valor:
+          - ["25000.00",   "1.00"]
+          - ["50000.00",   "1.10"]
+          - ["83333.33",   "1.50"]
+          - ["208333.33",  "2.00"]
+          - ["3500000.00", "2.50"]
+    firma: {validado: false, por: null, fecha: null}
+
+  RESICO_PF_TOPE_ANUAL:
+    nombre: Tope de ingresos anuales RESICO PF
+    tipo: importe
+    valores:
+      - valor: "3500000.00"
+        desde: "2022-01-01"
+        hasta: null
+        fuente: "LISR art. 113-E"
+      - valor: "5000000.00"
+        desde: "2027-01-01"
+        hasta: null
+        estado: aprobado_congreso_pendiente_dof
+        fuente: "Reforma LISR 2027: Senado 27-oct-2026, Diputados 3-nov-2026; pendiente de DOF"
+    revisar_antes: "2026-11-01"
+
+  RESICO_PF_RETENCION_PM:
+    nombre: Retención ISR que hace una moral a un RESICO PF
+    tipo: porcentaje
+    valores:
+      - valor: "1.25"
+        desde: "2022-01-01"
+        hasta: null
+        fuente: "LISR art. 113-J"
+
+  RESICO_PM_TOPE_ANUAL:
+    nombre: Tope de ingresos anuales RESICO PM
+    tipo: importe
+    valores:
+      - valor: "35000000.00"
+        desde: "2022-01-01"
+        hasta: null
+        fuente: "LISR art. 206"
+      - valor: "50000000.00"
+        desde: "2027-01-01"
+        hasta: null
+        estado: aprobado_congreso_pendiente_dof
+        fuente: "Reforma LISR 2027: Senado 27-oct-2026, Diputados 3-nov-2026; pendiente de DOF"
+
+  # ───────────────────────── ISR personas morales y otros ─────────────────────────
+  ISR_PM_TASA:
+    nombre: Tasa ISR personas morales
+    tipo: porcentaje
+    valores:
+      - valor: "30"
+        desde: "2014-01-01"
+        hasta: null
+        fuente: "LISR art. 9"
+
+  ISR_RET_HONORARIOS_PM:
+    nombre: Retención ISR por honorarios pagados por una moral
+    tipo: porcentaje
+    valores:
+      - valor: "10"
+        desde: "2014-01-01"
+        hasta: null
+        fuente: "LISR art. 106, último párrafo"
+
+  ISR_RET_ARRENDAMIENTO_PM:
+    nombre: Retención ISR por arrendamiento pagado por una moral
+    tipo: porcentaje
+    valores:
+      - valor: "10"
+        desde: "2014-01-01"
+        hasta: null
+        fuente: "LISR art. 116"
+
+  ARREND_DEDUCCION_CIEGA_PCT:
+    nombre: Deducción opcional (ciega) arrendamiento, % de ingresos (más predial)
+    tipo: porcentaje
+    valores:
+      - valor: "35"
+        desde: "2014-01-01"
+        hasta: null
+        fuente: "LISR art. 115, segundo párrafo"
+
+  ARREND_TRIMESTRAL_VECES_UMA:
+    nombre: Rentas mensuales hasta X UMA mensuales pueden pagar provisional trimestral
+    tipo: numero
+    valores:
+      - valor: "10"
+        desde: "2017-01-01"
+        hasta: null
+        fuente: "LISR art. 116, tercer párrafo"
+
+  DEDUCCION_EFECTIVO_TOPE:
+    nombre: Pagos en efectivo mayores a este monto no son deducibles
+    tipo: importe
+    valores:
+      - valor: "2000.00"
+        desde: "2014-01-01"
+        hasta: null
+        fuente: "LISR art. 27 fr. III"
+
+  AUTO_TOPE_DEDUCCION:
+    nombre: Monto original máximo deducible de automóviles
+    tipo: importe
+    valores:
+      - valor: "175000.00"
+        desde: "2017-01-01"
+        hasta: null
+        fuente: "LISR art. 36 fr. II"
+
+  # ───────────────────────── IVA ─────────────────────────
+  IVA_TASA_GENERAL:
+    nombre: Tasa general de IVA
+    tipo: porcentaje
+    valores:
+      - valor: "16"
+        desde: "2010-01-01"
+        hasta: null
+        fuente: "LIVA art. 1"
+
+  IVA_TASA_FRONTERA_NORTE:
+    nombre: Tasa efectiva IVA región fronteriza norte (estímulo, no ley)
+    tipo: porcentaje
+    valores:
+      - valor: "8"
+        desde: "2019-01-01"
+        hasta: "2026-12-31"
+        fuente: "Decreto de estímulos fiscales región fronteriza norte DOF 31-dic-2018; prorrogado DOF 31-dic-2025 hasta 31-dic-2026"
+    revisar_antes: "2026-11-01"
+    nota: "VENCE el 31-dic-2026. Si no sale prórroga en DOF, desde el 1-ene-2027 el motor ya no da 8% y la app debe avisar."
+    firma: {validado: false, por: null, fecha: null}
+
+  IVA_RET_DOS_TERCIOS:
+    nombre: Retención de IVA (2/3 del IVA) a PF por honorarios y arrendamiento, % sobre subtotal
+    tipo: porcentaje
+    formula: "IVA_TASA_GENERAL * 2 / 3"
+    decimales: 4
+    fuente: "LIVA art. 1-A fr. II inciso a); RLIVA art. 3 fr. I"
+
+  IVA_RET_SERV_ESPECIALIZADOS:
+    nombre: Retención IVA servicios especializados / puesta a disposición de personal
+    tipo: porcentaje
+    valores:
+      - valor: "6"
+        desde: "2020-01-01"
+        hasta: null
+        fuente: "LIVA art. 1-A fr. IV"
+
+  IVA_RET_AUTOTRANSPORTE:
+    nombre: Retención IVA autotransporte terrestre de bienes (fletes)
+    tipo: porcentaje
+    valores:
+      - valor: "4"
+        desde: "2004-01-01"
+        hasta: null
+        fuente: "LIVA art. 1-A fr. II inciso c); RLIVA art. 3 fr. II"
+
+  IVA_RESICO_PF_OPCION_TASA:
+    nombre: Opción de pagar IVA definitivo sobre lo cobrado, sin acreditar (RESICO PF)
+    tipo: porcentaje
+    valores:
+      - valor: "7"
+        desde: "2027-01-01"
+        hasta: null
+        estado: aprobado_congreso_pendiente_dof
+        fuente: "LIF 2027: Senado 27-oct-2026, enviada al Ejecutivo; pendiente de DOF"
+
+  # ───────────────────────── Nómina (LFT / LSS) ─────────────────────────
+  EXENTO_AGUINALDO_VECES_UMA:
+    nombre: Aguinaldo exento, veces UMA diaria
+    tipo: numero
+    valores:
+      - {valor: "30", desde: "2016-01-01", hasta: null, fuente: "LISR art. 93 fr. XIV"}
+
+  EXENTO_PRIMA_VAC_VECES_UMA:
+    nombre: Prima vacacional exenta, veces UMA diaria
+    tipo: numero
+    valores:
+      - {valor: "15", desde: "2016-01-01", hasta: null, fuente: "LISR art. 93 fr. XIV"}
+
+  EXENTO_PTU_VECES_UMA:
+    nombre: PTU exenta, veces UMA diaria
+    tipo: numero
+    valores:
+      - {valor: "15", desde: "2016-01-01", hasta: null, fuente: "LISR art. 93 fr. XIV"}
+
+  SBC_TOPE_VECES_UMA:
+    nombre: Tope del salario base de cotización IMSS, veces UMA diaria
+    tipo: numero
+    valores:
+      - {valor: "25", desde: "2016-01-01", hasta: null, fuente: "LSS art. 28"}
+
+  LFT_AGUINALDO_DIAS:
+    nombre: Días de aguinaldo mínimos
+    tipo: numero
+    valores:
+      - {valor: "15", desde: "1970-05-01", hasta: null, fuente: "LFT art. 87"}
+
+  LFT_VACACIONES_PRIMER_ANIO:
+    nombre: Días de vacaciones primer año
+    tipo: numero
+    valores:
+      - {valor: "12", desde: "2023-01-01", hasta: null, fuente: "LFT art. 76 (reforma DOF 27-dic-2022)"}
+
+  LFT_PRIMA_VACACIONAL_PCT:
+    nombre: Prima vacacional mínima
+    tipo: porcentaje
+    valores:
+      - {valor: "25", desde: "1970-05-01", hasta: null, fuente: "LFT art. 80"}
+
+  FACTOR_INTEGRACION_PRIMER_ANIO:
+    nombre: Factor de integración del SDI, primer año, prestaciones de ley
+    tipo: numero
+    formula: "(365 + LFT_AGUINALDO_DIAS + LFT_VACACIONES_PRIMER_ANIO * LFT_PRIMA_VACACIONAL_PCT / 100) / 365"
+    decimales: 4
+    fuente: "LSS art. 27 con LFT arts. 76, 80 y 87"
+
+  # ───────────────────────── Recargos (CFF 21 / LIF art. 11) ─────────────────────────
+  RECARGOS_PRORROGA_MENSUAL:
+    nombre: Tasa mensual de recargos por prórroga (base)
+    tipo: porcentaje
+    valores:
+      - {valor: "0.98", desde: "2025-01-01", hasta: "2025-12-31", fuente: "LIF 2025 art. 8"}
+      - {valor: "1.38", desde: "2026-01-01", hasta: "2026-12-31", fuente: "LIF 2026 art. 11 fr. I, DOF 07-nov-2025"}
+      - {valor: "1.38", desde: "2027-01-01", hasta: "2027-12-31", estado: aprobado_congreso_pendiente_dof, fuente: "LIF 2027 aprobada por el Congreso, pendiente de DOF"}
+    revisar_antes: "2026-12-01"
+
+  RECARGOS_MORA_MENSUAL:
+    nombre: Tasa mensual de recargos por mora (pago tardío sin autorización)
+    tipo: porcentaje
+    formula: "RECARGOS_PRORROGA_MENSUAL * 1.5"
+    decimales: 2
+    fuente: "CFF art. 21 (prórroga + 50%)"
+
+  RECARGOS_PARCIALIDADES_12M:
+    nombre: Recargos en parcialidades hasta 12 meses
+    tipo: porcentaje
+    valores:
+      - {valor: "1.26", desde: "2025-01-01", hasta: "2025-12-31", fuente: "LIF 2025"}
+      - {valor: "1.42", desde: "2026-01-01", hasta: "2026-12-31", fuente: "LIF 2026 art. 11"}
+      - {valor: "1.42", desde: "2027-01-01", hasta: "2027-12-31", estado: aprobado_congreso_pendiente_dof, fuente: "LIF 2027 aprobada por el Congreso, pendiente de DOF"}
+
+  RECARGOS_PARCIALIDADES_24M:
+    nombre: Recargos en parcialidades de más de 12 y hasta 24 meses
+    tipo: porcentaje
+    valores:
+      - {valor: "1.53", desde: "2025-01-01", hasta: "2025-12-31", fuente: "LIF 2025"}
+      - {valor: "1.63", desde: "2026-01-01", hasta: "2026-12-31", fuente: "LIF 2026 art. 11"}
+      - {valor: "1.63", desde: "2027-01-01", hasta: "2027-12-31", estado: aprobado_congreso_pendiente_dof, fuente: "LIF 2027 aprobada por el Congreso, pendiente de DOF"}
+
+  RECARGOS_PARCIALIDADES_MAS24M:
+    nombre: Recargos en parcialidades de más de 24 meses o diferidos
+    tipo: porcentaje
+    valores:
+      - {valor: "1.97", desde: "2026-01-01", hasta: "2026-12-31", fuente: "LIF 2026 art. 11"}
+      - {valor: "1.97", desde: "2027-01-01", hasta: "2027-12-31", estado: aprobado_congreso_pendiente_dof, fuente: "LIF 2027 aprobada por el Congreso, pendiente de DOF"}
+
+  # ───────────────────────── Plazos ─────────────────────────
+  DIA_VENCIMIENTO_MENSUAL:
+    nombre: Día de vencimiento de pagos mensuales (si es inhábil, siguiente hábil)
+    tipo: numero
+    valores:
+      - {valor: "17", desde: "2014-01-01", hasta: null, fuente: "LISR arts. 14 y 106; LIVA art. 5-D; CFF art. 12"}
+
+  CFDI_CANCELACION_MES_LIMITE_PM:
+    nombre: Mes del año siguiente hasta el que una PM puede cancelar CFDI (mes de su anual)
+    tipo: numero
+    valores:
+      - {valor: "3", desde: "2026-01-01", hasta: null, fuente: "CFF art. 29-A, 4o. párrafo, reforma DOF 07-nov-2025"}
+
+  CFDI_CANCELACION_MES_LIMITE_PF:
+    nombre: Mes del año siguiente hasta el que una PF puede cancelar CFDI (mes de su anual)
+    tipo: numero
+    valores:
+      - {valor: "4", desde: "2026-01-01", hasta: null, fuente: "CFF art. 29-A, 4o. párrafo, reforma DOF 07-nov-2025"}
+
+  # ───────────────────────── FASE 2: plazos, CFDI, DIOT, contabilidad electrónica ─────────────────────────
+  DIAS_EXTRA_SEXTO_DIGITO:
+    nombre: Días hábiles adicionales al día 17 según el sexto dígito numérico del RFC
+    tipo: tabla
+    columnas: [digito, dias_habiles]
+    valores:
+      - desde: "2014-01-01"
+        hasta: null
+        fuente: "Decreto que compila diversos beneficios fiscales, DOF 26-dic-2013, art. 5.1"
+        valor:
+          - ["1", "1"]
+          - ["2", "1"]
+          - ["3", "2"]
+          - ["4", "2"]
+          - ["5", "3"]
+          - ["6", "3"]
+          - ["7", "4"]
+          - ["8", "4"]
+          - ["9", "5"]
+          - ["0", "5"]
+    nota: "No aplica a: grandes contribuyentes, quienes dictaminan (PF con actividad empresarial que opten por dictaminar), CFF 32-H, Federación y entidades federativas. Confirmar alcance exacto en el texto del art. 5.1."
+    firma: {validado: false, por: null, fecha: null}
+
+  REP_DIA_LIMITE:
+    nombre: Día del mes siguiente al pago para emitir el complemento de pago (REP)
+    tipo: numero
+    valores:
+      - {valor: "5", desde: "2022-01-01", hasta: null, fuente: "RMF 2026 regla 2.7.1.32 (día 5 natural del mes siguiente al pago)"}
+
+  CFDI_EMISION_HORAS_MAX:
+    nombre: Horas máximas entre la fecha del CFDI y su certificación
+    tipo: numero
+    valores:
+      - {valor: "72", desde: "2018-01-01", hasta: null, estado: por_confirmar, fuente: "Anexo 20 / RMF (confirmar regla vigente 2026)"}
+
+  CONTA_ELEC_DIA_ENVIO_PM:
+    nombre: Contabilidad electrónica PM, día límite del segundo mes posterior
+    tipo: numero
+    valores:
+      - {valor: "3", desde: "2015-01-01", hasta: null, fuente: "CFF art. 28 fr. IV; RMF 2026 regla 2.8.1.6"}
+
+  CONTA_ELEC_DIA_ENVIO_PF:
+    nombre: Contabilidad electrónica PF, día límite del segundo mes posterior
+    tipo: numero
+    valores:
+      - {valor: "5", desde: "2015-01-01", hasta: null, fuente: "CFF art. 28 fr. IV; RMF 2026 regla 2.8.1.6"}
+
+  CONTA_ELEC_BALANZA_AJUSTADA_PM:
+    nombre: Balanza ajustada al cierre, PM (mes-día del año siguiente)
+    tipo: texto
+    valores:
+      - {valor: "04-20", desde: "2015-01-01", hasta: null, fuente: "RMF regla 2.8.1.7"}
+
+  CONTA_ELEC_BALANZA_AJUSTADA_PF:
+    nombre: Balanza ajustada al cierre, PF (mes-día del año siguiente)
+    tipo: texto
+    valores:
+      - {valor: "05-22", desde: "2015-01-01", hasta: null, fuente: "RMF regla 2.8.1.7"}
+
+  CONTA_ELEC_RELEVO_PF_INGRESOS:
+    nombre: PF con ingresos del año anterior hasta este monto quedan relevadas de contabilidad electrónica y DIOT
+    tipo: importe
+    valores:
+      - {valor: "4000000.00", desde: "2020-01-01", hasta: null, fuente: "RMF 2026 regla 2.8.1.17 (PF de Capítulo II Secc. I y III y Capítulo III con ingresos del año anterior ≤ 4 M)"}
+
+  DIOT_NUM_CAMPOS:
+    nombre: Campos por renglón del TXT de carga batch DIOT (desde 2025)
+    tipo: numero
+    valores:
+      - {valor: "54", desde: "2025-01-01", hasta: null, fuente: "SAT, instructivo de carga batch de la nueva DIOT (feb-2025): TXT UTF-8, separador |, montos enteros"}
+
+  # ───────────────────────── IMSS riesgo de trabajo ─────────────────────────
+  PRIMA_RIESGO_INICIAL_POR_CLASE:
+    nombre: Prima de riesgo de trabajo con la que se inscribe una empresa, por clase
+    tipo: tabla
+    columnas: [clase, prima_pct]
+    valores:
+      - desde: "2002-01-01"
+        hasta: null
+        fuente: "LSS art. 73"
+        valor:
+          - ["I",   "0.54355"]
+          - ["II",  "1.13065"]
+          - ["III", "2.59840"]
+          - ["IV",  "4.65325"]
+          - ["V",   "7.58875"]
+    nota: "0.54355 NO es la mínima: es la prima media de la clase I con la que se inscribe una empresa nueva. La mínima es 0.5% y la máxima 15% (LSS art. 74)."
+    firma: {validado: false, por: null, fecha: null}
+
+  PRIMA_RIESGO_MINIMA:
+    nombre: Prima de riesgo de trabajo mínima
+    tipo: porcentaje
+    valores:
+      - {valor: "0.5", desde: "2002-01-01", hasta: null, fuente: "LSS art. 74"}
+
+  PRIMA_RIESGO_MAXIMA:
+    nombre: Prima de riesgo de trabajo máxima
+    tipo: porcentaje
+    valores:
+      - {valor: "15", desde: "2002-01-01", hasta: null, fuente: "LSS art. 74"}
+
+  # ───────────────────────── FASE 2 (cierre): IVA, CFDI, DIOT, bancos, actualización ─────────────────────────
+  CFDI_GLOBAL_HORAS_MAX:
+    nombre: Horas para timbrar el CFDI global después del cierre del periodo (diario, semanal, quincenal, mensual)
+    tipo: numero
+    valores:
+      - {valor: "24", desde: "2022-01-01", hasta: null, fuente: "RMF regla 2.7.1.21 (de 72 a 24 horas desde 2022; se mantiene en RMF 2026)"}
+    nota: "Bimestral solo para quien tenga facilidad expresa en la RMF. El ingreso es del periodo amparado (InformacionGlobal), aunque se timbre tarde; timbrar fuera de plazo es infracción, no cambia el mes."
+
+  DIOT_LAYOUT_2025:
+    nombre: Orden de los 54 campos del TXT de carga batch DIOT (ejercicios 2025 en adelante)
+    tipo: lista
+    valores:
+      - desde: "2025-01-01"
+        hasta: null
+        fuente: "SAT, Instructivo para el armado del archivo de carga masiva DIOT, enero 2025 (verificado: pos. 12 = valor 16%, pos. 22 = IVA acreditable exclusivo 16%)"
+        valor:
+          - "tipo_tercero"
+          - "tipo_operacion"
+          - "rfc"
+          - "num_id_fiscal"
+          - "nombre_extranjero"
+          - "pais_residencia"
+          - "lugar_jurisdiccion"
+          - "valor_rfn"
+          - "devol_rfn"
+          - "valor_rfs"
+          - "devol_rfs"
+          - "valor_16"
+          - "devol_16"
+          - "valor_imp_tangibles"
+          - "devol_imp_tangibles"
+          - "valor_imp_intangibles"
+          - "devol_imp_intangibles"
+          - "iva_acred_excl_rfn"
+          - "iva_acred_prop_rfn"
+          - "iva_acred_excl_rfs"
+          - "iva_acred_prop_rfs"
+          - "iva_acred_excl_16"
+          - "iva_acred_prop_16"
+          - "iva_acred_excl_imp_tangibles"
+          - "iva_acred_prop_imp_tangibles"
+          - "iva_acred_excl_imp_intangibles"
+          - "iva_acred_prop_imp_intangibles"
+          - "iva_noacred_prop_rfn"
+          - "iva_noacred_requisitos_rfn"
+          - "iva_noacred_exentas_rfn"
+          - "iva_noacred_noobjeto_rfn"
+          - "iva_noacred_prop_rfs"
+          - "iva_noacred_requisitos_rfs"
+          - "iva_noacred_exentas_rfs"
+          - "iva_noacred_noobjeto_rfs"
+          - "iva_noacred_prop_16"
+          - "iva_noacred_requisitos_16"
+          - "iva_noacred_exentas_16"
+          - "iva_noacred_noobjeto_16"
+          - "iva_noacred_prop_imp_tangibles"
+          - "iva_noacred_requisitos_imp_tangibles"
+          - "iva_noacred_exentas_imp_tangibles"
+          - "iva_noacred_noobjeto_imp_tangibles"
+          - "iva_noacred_prop_imp_intangibles"
+          - "iva_noacred_requisitos_imp_intangibles"
+          - "iva_noacred_exentas_imp_intangibles"
+          - "iva_noacred_noobjeto_imp_intangibles"
+          - "iva_retenido"
+          - "imp_exentos"
+          - "exentos"
+          - "tasa_0"
+          - "no_objeto_nacional"
+          - "no_objeto_sin_establecimiento"
+          - "manifiesto_efectos"
+    nota: "Montos sin decimales, aceptan cero; vacío donde no aplique. País: el instructivo dice 2 posiciones pero su catálogo es de 3 letras (USA, CAN): usar 3 y probar. Separador |, UTF-8. Sin pipe final (54 campos = 53 separadores): confirmar con una carga real en el portal antes de producción. Ejercicios 2024 y anteriores usan otro layout."
+    firma: {validado: false, por: null, fecha: null}
+
+  TIPO_CAMBIO_REGLA:
+    nombre: Tipo de cambio para efectos fiscales
+    tipo: texto
+    valores:
+      - valor: "El publicado por Banxico en el DOF el día ANTERIOR a la operación; si ese día no hubo publicación, el último publicado antes"
+        desde: "1990-01-01"
+        hasta: null
+        estado: por_confirmar
+        fuente: "CFF art. 20, tercer párrafo"
+    nota: "Ojo: 'publicado en el DOF ayer' no es lo mismo que 'FIX determinado ayer' (el DOF publica el FIX del día hábil previo). En Banxico SIE usar la serie por FECHA DE PUBLICACIÓN en DOF (confirmar clave, se cree SF43718), no la de determinación del FIX."
+
+  ACTUALIZACION_FACTOR_DECIMALES:
+    nombre: Decimales del factor de actualización (INPC)
+    tipo: numero
+    valores:
+      - {valor: "4", desde: "2004-01-01", hasta: null, estado: por_confirmar, fuente: "CFF art. 17-A (factores hasta el diezmilésimo)"}
+    nota: "Si el factor sale menor a 1, se usa 1. La serie del INPC (base 2a. quincena julio 2018 = 100) se baja de la API de indicadores del INEGI; NO se captura a mano en este archivo."
+
+  # ═════════════════════════ v0.4.0 · FASES 3 Y 4 ═════════════════════════
+
+  # ───────── Tarifas ISR por periodicidad (Anexo 8 RMF 2026, apartado B) y anual (art. 152) ─────────
+  ISR_TARIFA_DIARIA:
+    nombre: Tarifa ISR diaria (retenciones de salarios)
+    tipo: tabla
+    columnas: [limite_inferior, limite_superior, cuota_fija, porcentaje_excedente]
+    valores:
+      - desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        fuente: "Anexo 8 RMF 2026, DOF 28-dic-2025 (PDF oficial SAT, cotejado renglón por renglón el 5-nov-2026)"
+        valor:
+          - ["0.01",     "27.78",    "0.00",    "1.92"]
+          - ["27.79",    "235.81",   "0.53",    "6.40"]
+          - ["235.82",   "414.41",   "13.85",   "10.88"]
+          - ["414.42",   "481.73",   "33.28",   "16.00"]
+          - ["481.74",   "576.76",   "44.05",   "17.92"]
+          - ["576.77",   "1163.25",  "61.08",   "21.36"]
+          - ["1163.26",  "1833.44",  "186.35",  "23.52"]
+          - ["1833.45",  "3500.35",  "343.98",  "30.00"]
+          - ["3500.36",  "4667.13",  "844.05",  "32.00"]
+          - ["4667.14",  "14001.38", "1217.42", "34.00"]
+          - ["14001.39", null,       "4391.07", "35.00"]
+
+  ISR_TARIFA_SEMANAL:
+    nombre: Tarifa ISR semanal
+    tipo: tabla
+    columnas: [limite_inferior, limite_superior, cuota_fija, porcentaje_excedente]
+    valores:
+      - desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        fuente: "Anexo 8 RMF 2026, DOF 28-dic-2025 (PDF oficial SAT, cotejado renglón por renglón el 5-nov-2026)"
+        valor:
+          - ["0.01",     "194.46",   "0.00",     "1.92"]
+          - ["194.47",   "1650.67",  "3.71",     "6.40"]
+          - ["1650.68",  "2900.87",  "96.95",    "10.88"]
+          - ["2900.88",  "3372.11",  "232.96",   "16.00"]
+          - ["3372.12",  "4037.32",  "308.35",   "17.92"]
+          - ["4037.33",  "8142.75",  "427.56",   "21.36"]
+          - ["8142.76",  "12834.08", "1304.45",  "23.52"]
+          - ["12834.09", "24502.45", "2407.86",  "30.00"]
+          - ["24502.46", "32669.91", "5908.35",  "32.00"]
+          - ["32669.92", "98009.66", "8521.94",  "34.00"]
+          - ["98009.67", null,       "30737.49", "35.00"]
+
+  ISR_TARIFA_DECENAL:
+    nombre: Tarifa ISR decenal
+    tipo: tabla
+    columnas: [limite_inferior, limite_superior, cuota_fija, porcentaje_excedente]
+    valores:
+      - desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        fuente: "Anexo 8 RMF 2026, DOF 28-dic-2025 (PDF oficial SAT, cotejado renglón por renglón el 5-nov-2026)"
+        valor:
+          - ["0.01",      "277.80",    "0.00",     "1.92"]
+          - ["277.81",    "2358.10",   "5.30",     "6.40"]
+          - ["2358.11",   "4144.10",   "138.50",   "10.88"]
+          - ["4144.11",   "4817.30",   "332.80",   "16.00"]
+          - ["4817.31",   "5767.60",   "440.50",   "17.92"]
+          - ["5767.61",   "11632.50",  "610.80",   "21.36"]
+          - ["11632.51",  "18334.40",  "1863.50",  "23.52"]
+          - ["18334.41",  "35003.50",  "3439.80",  "30.00"]
+          - ["35003.51",  "46671.30",  "8440.50",  "32.00"]
+          - ["46671.31",  "140013.80", "12174.20", "34.00"]
+          - ["140013.81", null,        "43910.70", "35.00"]
+
+  ISR_TARIFA_QUINCENAL:
+    nombre: Tarifa ISR quincenal
+    tipo: tabla
+    columnas: [limite_inferior, limite_superior, cuota_fija, porcentaje_excedente]
+    valores:
+      - desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        fuente: "Anexo 8 RMF 2026, DOF 28-dic-2025 (PDF oficial SAT, cotejado renglón por renglón el 5-nov-2026)"
+        valor:
+          - ["0.01",      "416.70",    "0.00",     "1.92"]
+          - ["416.71",    "3537.15",   "7.95",     "6.40"]
+          - ["3537.16",   "6216.15",   "207.75",   "10.88"]
+          - ["6216.16",   "7225.95",   "499.20",   "16.00"]
+          - ["7225.96",   "8651.40",   "660.75",   "17.92"]
+          - ["8651.41",   "17448.75",  "916.20",   "21.36"]
+          - ["17448.76",  "27501.60",  "2795.25",  "23.52"]
+          - ["27501.61",  "52505.25",  "5159.70",  "30.00"]
+          - ["52505.26",  "70006.95",  "12660.75", "32.00"]
+          - ["70006.96",  "210020.70", "18261.30", "34.00"]
+          - ["210020.71", null,        "65866.05", "35.00"]
+
+  ISR_TARIFA_ANUAL:
+    nombre: Tarifa ISR anual personas físicas (art. 152)
+    tipo: tabla
+    columnas: [limite_inferior, limite_superior, cuota_fija, porcentaje_excedente]
+    valores:
+      - desde: "2025-01-01"
+        hasta: "2025-12-31"
+        fuente: "Anexo 8 RMF 2026 apartado C fr. I (tarifa del ejercicio 2025), DOF 28-dic-2025 (PDF oficial SAT)"
+        valor:
+          - ["0.01", "8952.49", "0.00", "1.92"]
+          - ["8952.50", "75984.55", "171.88", "6.40"]
+          - ["75984.56", "133536.07", "4461.94", "10.88"]
+          - ["133536.08", "155229.80", "10723.55", "16.00"]
+          - ["155229.81", "185852.57", "14194.54", "17.92"]
+          - ["185852.58", "374837.88", "19682.13", "21.36"]
+          - ["374837.89", "590795.99", "60049.40", "23.52"]
+          - ["590796.00", "1127926.84", "110842.74", "30.00"]
+          - ["1127926.85", "1503902.46", "271981.99", "32.00"]
+          - ["1503902.47", "4511707.37", "392294.17", "34.00"]
+          - ["4511707.38", null, "1414947.85", "35.00"]
+      - desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        fuente: "Anexo 8 RMF 2026 apartado C fr. II, DOF 28-dic-2025 (PDF oficial SAT, cotejado)"
+        valor:
+          - ["0.01",       "10135.11",   "0.00",       "1.92"]
+          - ["10135.12",   "86022.11",   "194.59",     "6.40"]
+          - ["86022.12",   "151176.19",  "5051.37",    "10.88"]
+          - ["151176.20",  "175735.66",  "12140.13",   "16.00"]
+          - ["175735.67",  "210403.69",  "16069.64",   "17.92"]
+          - ["210403.70",  "424353.97",  "22282.14",   "21.36"]
+          - ["424353.98",  "668840.14",  "67981.92",   "23.52"]
+          - ["668840.15",  "1276925.98", "125485.07",  "30.00"]
+          - ["1276925.99", "1702567.97", "307910.81",  "32.00"]
+          - ["1702567.98", "5107703.92", "444116.23",  "34.00"]
+          - ["5107703.93", null,         "1601862.46", "35.00"]
+    nota: "Diciembre del art. 106 = esta tabla. Enero = ISR_TARIFA_MENSUAL. Febrero a noviembre = ISR_TARIFA_ACUMULADA_106."
+
+  # ───────── Exentos e importes derivados de la UMA (siempre fórmula) ─────────
+  EXENTO_AGUINALDO_IMPORTE:
+    nombre: Aguinaldo exento (importe)
+    tipo: importe
+    formula: "EXENTO_AGUINALDO_VECES_UMA * UMA_DIARIA"
+    decimales: 2
+    fuente: "LISR art. 93 fr. XIV; UMA a la fecha de pago"
+
+  EXENTO_PRIMA_VAC_IMPORTE:
+    nombre: Prima vacacional exenta (importe)
+    tipo: importe
+    formula: "EXENTO_PRIMA_VAC_VECES_UMA * UMA_DIARIA"
+    decimales: 2
+    fuente: "LISR art. 93 fr. XIV"
+
+  EXENTO_PTU_IMPORTE:
+    nombre: PTU exenta (importe)
+    tipo: importe
+    formula: "EXENTO_PTU_VECES_UMA * UMA_DIARIA"
+    decimales: 2
+    fuente: "LISR art. 93 fr. XIV"
+
+  EXENTO_SEPARACION_VECES_UMA:
+    nombre: Exento por separación, veces UMA por año de servicio (fracción > 6 meses = año)
+    tipo: numero
+    valores:
+      - {valor: "90", desde: "2016-01-01", hasta: null, fuente: "LISR art. 93 fr. XIII"}
+
+  EXENTO_SEPARACION_IMPORTE_ANUAL:
+    nombre: Exento por separación por cada año de servicio (importe)
+    tipo: importe
+    formula: "EXENTO_SEPARACION_VECES_UMA * UMA_DIARIA"
+    decimales: 2
+    fuente: "LISR art. 93 fr. XIII"
+
+  SBC_TOPE_IMPORTE:
+    nombre: Tope del SBC (importe diario)
+    tipo: importe
+    formula: "SBC_TOPE_VECES_UMA * UMA_DIARIA"
+    decimales: 2
+    fuente: "LSS art. 28"
+
+  # ───────── IMSS (cuotas por ramo) ─────────
+  IMSS_EYM_CUOTA_FIJA_PATRON:
+    nombre: EyM cuota fija patronal, % de la UMA diaria por día cotizado
+    tipo: porcentaje
+    valores:
+      - {valor: "20.40", desde: "2008-01-01", hasta: null, fuente: "LSS art. 106 fr. I y transitorio 19o"}
+  IMSS_EYM_EXCEDENTE_UMA:
+    nombre: Veces UMA a partir de las cuales se paga el excedente de EyM
+    tipo: numero
+    valores:
+      - {valor: "3", desde: "2008-01-01", hasta: null, fuente: "LSS art. 106 fr. II"}
+  IMSS_EYM_EXCEDENTE_PATRON:
+    nombre: EyM excedente, patrón
+    tipo: porcentaje
+    valores:
+      - {valor: "1.10", desde: "2008-01-01", hasta: null, fuente: "LSS art. 106 fr. II"}
+  IMSS_EYM_EXCEDENTE_OBRERO:
+    nombre: EyM excedente, trabajador
+    tipo: porcentaje
+    valores:
+      - {valor: "0.40", desde: "2008-01-01", hasta: null, fuente: "LSS art. 106 fr. II"}
+  IMSS_PD_PATRON:
+    nombre: Prestaciones en dinero, patrón
+    tipo: porcentaje
+    valores:
+      - {valor: "0.70", desde: "1997-07-01", hasta: null, fuente: "LSS art. 107"}
+  IMSS_PD_OBRERO:
+    nombre: Prestaciones en dinero, trabajador
+    tipo: porcentaje
+    valores:
+      - {valor: "0.25", desde: "1997-07-01", hasta: null, fuente: "LSS art. 107"}
+  IMSS_GMP_PATRON:
+    nombre: Gastos médicos de pensionados, patrón
+    tipo: porcentaje
+    valores:
+      - {valor: "1.05", desde: "1997-07-01", hasta: null, fuente: "LSS art. 25"}
+  IMSS_GMP_OBRERO:
+    nombre: Gastos médicos de pensionados, trabajador
+    tipo: porcentaje
+    valores:
+      - {valor: "0.375", desde: "1997-07-01", hasta: null, fuente: "LSS art. 25"}
+  IMSS_IV_PATRON:
+    nombre: Invalidez y vida, patrón
+    tipo: porcentaje
+    valores:
+      - {valor: "1.75", desde: "1997-07-01", hasta: null, fuente: "LSS art. 147"}
+  IMSS_IV_OBRERO:
+    nombre: Invalidez y vida, trabajador
+    tipo: porcentaje
+    valores:
+      - {valor: "0.625", desde: "1997-07-01", hasta: null, fuente: "LSS art. 147"}
+  IMSS_GUARDERIAS_PATRON:
+    nombre: Guarderías y prestaciones sociales, patrón
+    tipo: porcentaje
+    valores:
+      - {valor: "1.00", desde: "1997-07-01", hasta: null, fuente: "LSS art. 211"}
+  IMSS_RETIRO_PATRON:
+    nombre: Retiro, patrón (bimestral)
+    tipo: porcentaje
+    valores:
+      - {valor: "2.00", desde: "1997-07-01", hasta: null, fuente: "LSS art. 168 fr. I"}
+  IMSS_CEAV_OBRERO:
+    nombre: Cesantía y vejez, trabajador (bimestral)
+    tipo: porcentaje
+    valores:
+      - {valor: "1.125", desde: "1997-07-01", hasta: null, fuente: "LSS art. 168 fr. II"}
+  IMSS_CEAV_PATRON_TABLA:
+    nombre: Cesantía y vejez patronal por rango de SBC (primer renglón = 1 salario mínimo; demás en veces UMA, comparando SBC/UMA redondeado a 2 decimales)
+    tipo: tabla
+    columnas: [hasta, tasa]
+    valores:
+      - desde: "2026-01-01"
+        hasta: "2026-12-31"
+        fuente: "LSS art. 168 fr. II y transitorio 2o, reforma DOF 16-dic-2020"
+        valor:
+          - ["SM",   "3.150"]
+          - ["1.50", "3.676"]
+          - ["2.00", "4.851"]
+          - ["2.50", "5.556"]
+          - ["3.00", "6.026"]
+          - ["3.50", "6.361"]
+          - ["4.00", "6.613"]
+          - [null,   "7.513"]
+      - desde: "2027-01-01"
+        hasta: "2027-12-31"
+        fuente: "LSS art. 168 fr. II y transitorio 2o, reforma DOF 16-dic-2020"
+        valor:
+          - ["SM",   "3.150"]
+          - ["1.50", "3.807"]
+          - ["2.00", "5.276"]
+          - ["2.50", "6.157"]
+          - ["3.00", "6.745"]
+          - ["3.50", "7.164"]
+          - ["4.00", "7.479"]
+          - [null,   "8.603"]
+    nota: "El corte entre 4.00 y 4.01 UMA (y los demás) se resuelve redondeando SBC/UMA a 2 decimales: criterio POR CONFIRMAR contra el SUA."
+    firma: {validado: false, por: null, fecha: null}
+
+  INFONAVIT_APORTACION_PATRON:
+    nombre: Aportación patronal Infonavit (bimestral)
+    tipo: porcentaje
+    valores:
+      - {valor: "5", desde: "1972-05-01", hasta: null, fuente: "Ley del Infonavit art. 29 fr. II"}
+
+  UMI_DIARIA:
+    nombre: Unidad Mixta Infonavit, diaria
+    tipo: importe
+    valores:
+      - valor: "100.81"
+        desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        fuente: "Aviso Infonavit ene-2026 (incremento 0.00%); no se publica en DOF"
+
+  # ───────── LFT: vacaciones, antigüedad, indemnización, jornada, PTU ─────────
+  LFT_VACACIONES_TABLA:
+    nombre: Días de vacaciones por año de servicio
+    tipo: tabla
+    columnas: [hasta_anio_servicio, dias]
+    valores:
+      - desde: "2023-01-01"
+        hasta: null
+        fuente: "LFT art. 76, reforma DOF 27-dic-2022"
+        valor:
+          - ["1", "12"]
+          - ["2", "14"]
+          - ["3", "16"]
+          - ["4", "18"]
+          - ["5", "20"]
+          - ["10", "22"]
+          - ["15", "24"]
+          - ["20", "26"]
+          - ["25", "28"]
+          - ["30", "30"]
+          - ["35", "32"]
+    nota: "Cada 5 años después del quinto suben 2 días. LFT_VACACIONES_PRIMER_ANIO debe coincidir con el primer renglón."
+
+  LFT_PRIMA_ANTIGUEDAD_DIAS:
+    nombre: Días de prima de antigüedad por año
+    tipo: numero
+    valores:
+      - {valor: "12", desde: "1970-05-01", hasta: null, fuente: "LFT art. 162 fr. I"}
+  LFT_PRIMA_ANTIGUEDAD_TOPE_SM:
+    nombre: Tope del salario para prima de antigüedad, veces salario mínimo
+    tipo: numero
+    valores:
+      - {valor: "2", desde: "1970-05-01", hasta: null, fuente: "LFT arts. 162 fr. II, 485 y 486"}
+  LFT_INDEMNIZACION_DIAS:
+    nombre: Indemnización constitucional, días de salario
+    tipo: numero
+    valores:
+      - {valor: "90", desde: "1970-05-01", hasta: null, fuente: "LFT art. 50 fr. III; CPEUM 123-A fr. XXII"}
+  LFT_JORNADA_MAX_SEMANAL:
+    nombre: Jornada máxima semanal (horas)
+    tipo: numero
+    valores:
+      - {valor: "48", desde: "1970-05-01", hasta: "2026-12-31", fuente: "LFT art. 61"}
+      - {valor: "46", desde: "2027-01-01", hasta: "2027-12-31", fuente: "LFT reformada, DOF 01-may-2026, transitorios"}
+      - {valor: "44", desde: "2028-01-01", hasta: "2028-12-31", fuente: "LFT reformada, DOF 01-may-2026, transitorios"}
+      - {valor: "42", desde: "2029-01-01", hasta: "2029-12-31", fuente: "LFT reformada, DOF 01-may-2026, transitorios"}
+      - {valor: "40", desde: "2030-01-01", hasta: null, fuente: "LFT reformada, DOF 01-may-2026, transitorios; CPEUM DOF 03-mar-2026"}
+    firma: {validado: false, por: null, fecha: null}
+  PTU_PCT:
+    nombre: Participación de los trabajadores en las utilidades
+    tipo: porcentaje
+    valores:
+      - {valor: "10", desde: "2009-01-01", hasta: null, fuente: "Resolución de la Comisión Nacional para la PTU; LFT art. 117"}
+  PTU_TOPE_MESES_SALARIO:
+    nombre: Tope individual de PTU, meses de salario (o promedio de 3 años, el mayor)
+    tipo: numero
+    valores:
+      - {valor: "3", desde: "2021-04-24", hasta: null, fuente: "LFT art. 127 fr. VIII (reforma DOF 23-abr-2021)"}
+
+  # ───────── ISR PM, donatarias, frontera, plataformas, dictamen ─────────
+  INTERESES_NETOS_LIMITE_PCT:
+    nombre: Límite de deducción de intereses netos, % de la utilidad fiscal ajustada
+    tipo: porcentaje
+    valores:
+      - {valor: "30", desde: "2020-01-01", hasta: null, fuente: "LISR art. 28 fr. XXXII"}
+      - {valor: "20", desde: "2027-01-01", hasta: null, estado: aprobado_congreso_pendiente_dof, fuente: "Reforma LISR 2027, pendiente de DOF"}
+  ISR_RET_INTERESES:
+    nombre: Retención anual de ISR sobre capital que genera intereses
+    tipo: porcentaje
+    valores:
+      - {valor: "0.68", desde: "2027-01-01", hasta: "2027-12-31", estado: aprobado_congreso_pendiente_dof, fuente: "LIF 2027 aprobada por el Congreso, pendiente de DOF"}
+    nota: "Falta cargar el tramo 2026 (LIF 2026) con su fuente; sin él, 2026 da SinValor."
+  DONATIVOS_DEDUCIBLE_PCT:
+    nombre: Tope de deducción de donativos, % de la utilidad fiscal (PM) o ingresos acumulables (PF) del año anterior
+    tipo: porcentaje
+    valores:
+      - {valor: "7", desde: "2014-01-01", hasta: null, fuente: "LISR arts. 27 fr. I y 151 fr. III"}
+  DONATARIA_INGRESOS_NO_RELACIONADOS_PCT:
+    nombre: Máximo de ingresos no relacionados con el objeto (excedente paga ISR)
+    tipo: porcentaje
+    valores:
+      - {valor: "10", desde: "2014-01-01", hasta: null, fuente: "LISR art. 80"}
+  DONATARIA_GASTOS_ADMIN_PCT:
+    nombre: Máximo de gastos de administración, % de los donativos
+    tipo: porcentaje
+    valores:
+      - {valor: "5", desde: "2016-01-01", hasta: null, fuente: "RLISR art. 138"}
+  FRONTERA_ISR_DIVISOR:
+    nombre: Crédito ISR región fronteriza = ISR proporcional entre este divisor
+    tipo: numero
+    valores:
+      - {valor: "3", desde: "2019-01-01", hasta: "2026-12-31", fuente: "Decreto de estímulos región fronteriza norte, DOF 31-dic-2018; prorrogado DOF 31-dic-2025"}
+    revisar_antes: "2026-11-01"
+  FRONTERA_ISR_PROPORCION_MIN:
+    nombre: Ingresos mínimos en la región, % del total, para el estímulo de ISR
+    tipo: porcentaje
+    valores:
+      - {valor: "90", desde: "2019-01-01", hasta: "2026-12-31", fuente: "Decreto de estímulos región fronteriza norte, DOF 31-dic-2018; prorrogado DOF 31-dic-2025"}
+  PLATAFORMAS_ISR_TABLA:
+    nombre: Retención ISR por plataformas digitales, por actividad
+    tipo: tabla
+    columnas: [actividad, tasa]
+    valores:
+      - desde: "2026-01-01"
+        hasta: null
+        estado: por_confirmar
+        fuente: "LISR art. 113-A; LIF 2026 art. 25 fr. VI, DOF 07-nov-2025"
+        valor:
+          - ["transporte_entrega", "2.1"]
+          - ["hospedaje",          "4"]
+          - ["enajenacion_servicios", "2.5"]
+          - ["sin_rfc",            "20"]
+    nota: "Retención a PM 2.5%: falta confirmar si es acreditable o definitiva."
+  PLATAFORMAS_IVA_RET_PCT:
+    nombre: Retención de IVA por plataformas, % del IVA (100% sin RFC)
+    tipo: porcentaje
+    valores:
+      - {valor: "50", desde: "2020-06-01", hasta: null, fuente: "LIVA art. 18-J fr. II inciso a)"}
+  DEPRECIACION_TASAS_ART34:
+    nombre: Tasas máximas de deducción de inversiones (selección)
+    tipo: tabla
+    columnas: [tipo_bien, tasa]
+    valores:
+      - desde: "2014-01-01"
+        hasta: null
+        fuente: "LISR arts. 33 y 34"
+        valor:
+          - ["construcciones", "5"]
+          - ["mobiliario_equipo_oficina", "10"]
+          - ["automoviles", "25"]
+          - ["equipo_computo", "30"]
+          - ["moldes_troqueles", "35"]
+  ISSIF_UMBRAL_INGRESOS:
+    nombre: Ingresos del año anterior a partir de los cuales se presenta ISSIF
+    tipo: importe
+    valores:
+      - {valor: "1103204520.00", desde: "2026-01-01", hasta: null, confirmado_hasta: "2026-12-31", estado: por_confirmar, fuente: "CFF art. 32-H; Anexo 5 RMF 2026 (transcripción)"}
+  DICTAMEN_UMBRAL_INGRESOS:
+    nombre: Ingresos del año anterior a partir de los cuales el dictamen es obligatorio
+    tipo: importe
+    valores:
+      - {valor: "2013710870.00", desde: "2026-01-01", hasta: null, confirmado_hasta: "2026-12-31", estado: por_confirmar, fuente: "CFF art. 32-A; Anexo 5 RMF 2026 (transcripción)"}
+
+  # ───────── ISN por entidad ─────────
+  ISN_TASA_TABLA:
+    nombre: Impuesto sobre nóminas, tasa por entidad
+    tipo: tabla
+    columnas: [entidad, tasa, confianza]
+    valores:
+      - desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        fuente: "Códigos y leyes de hacienda estatales 2026 (ver confianza por renglón)"
+        valor:
+          - ["CMX", "4",    "vigente: Código Fiscal CDMX art. 158"]
+          - ["MEX", "3",    "vigente: Código Financiero Edomex art. 56"]
+          - ["PUE", "3",    "por_confirmar: fuente secundaria"]
+          - ["OAX", "3",    "por_confirmar: fuente secundaria"]
+          - ["JAL", "3",    "por_confirmar: asimilados posible 5%"]
+          - ["BCN", "4.25", "por_confirmar: 1.80% + sobretasas"]
+          - ["CHH", "4",    "por_confirmar: fuentes en conflicto"]
+          - ["NLE", "3",    "por_confirmar: fuentes en conflicto"]
+    nota: "Faltan 24 entidades. Si la entidad no está en la tabla, NO calcular: avisar."
+    firma: {validado: false, por: null, fecha: null}
+
+  # ───────── Tipo de cambio ─────────
+  BANXICO_SERIE_TC_CFF20:
+    nombre: Serie Banxico SIE para el tipo de cambio del CFF 20
+    tipo: texto
+    valores:
+      - {valor: "SF60653", desde: "1990-01-01", hasta: null, estado: por_confirmar, fuente: "Banxico SIE: SF60653 = FIX por fecha de liquidación (coincide con publicación en DOF); SF43718 = por fecha de determinación"}
+    nota: "Validar con qué fecha empata la serie contra la publicación del DOF antes de fijar la regla. Hoy tipo_cambio.py usa SF43718."
+
+  # ───────── Tablas oficiales del Anexo 8 que antes se derivaban ─────────
+  ISR_TARIFA_ACUMULADA_106:
+    nombre: Tarifas acumuladas del art. 106 (612), por mes. Enero = mensual; diciembre = anual
+    tipo: tabla_por_mes
+    columnas: [limite_inferior, limite_superior, cuota_fija, porcentaje_excedente]
+    valores:
+      - desde: "2026-01-01"
+        hasta: "2026-12-31"
+        fuente: "Anexo 8 RMF 2026, DOF 28-dic-2025 (PDF oficial SAT, cotejado renglón por renglón el 5-nov-2026)"
+        valor:
+          "02":
+            - ["0.01", "1689.18", "0.00", "1.92"]
+            - ["1689.19", "14337.02", "32.44", "6.40"]
+            - ["14337.03", "25196.04", "841.90", "10.88"]
+            - ["25196.05", "29289.28", "2023.36", "16.00"]
+            - ["29289.29", "35067.28", "2678.28", "17.92"]
+            - ["35067.29", "70725.66", "3713.68", "21.36"]
+            - ["70725.67", "111473.36", "11330.32", "23.52"]
+            - ["111473.37", "212821.00", "20914.18", "30.00"]
+            - ["212821.01", "283761.32", "51318.46", "32.00"]
+            - ["283761.33", "851283.98", "74019.38", "34.00"]
+            - ["851283.99", null, "266977.08", "35.00"]
+          "03":
+            - ["0.01", "2533.77", "0.00", "1.92"]
+            - ["2533.78", "21505.53", "48.66", "6.40"]
+            - ["21505.54", "37794.06", "1262.85", "10.88"]
+            - ["37794.07", "43933.92", "3035.04", "16.00"]
+            - ["43933.93", "52600.92", "4017.42", "17.92"]
+            - ["52600.93", "106088.49", "5570.52", "21.36"]
+            - ["106088.50", "167210.04", "16995.48", "23.52"]
+            - ["167210.05", "319231.50", "31371.27", "30.00"]
+            - ["319231.51", "425641.98", "76977.69", "32.00"]
+            - ["425641.99", "1276925.97", "111029.07", "34.00"]
+            - ["1276925.98", null, "400465.62", "35.00"]
+          "04":
+            - ["0.01", "3378.36", "0.00", "1.92"]
+            - ["3378.37", "28674.04", "64.88", "6.40"]
+            - ["28674.05", "50392.08", "1683.80", "10.88"]
+            - ["50392.09", "58578.56", "4046.72", "16.00"]
+            - ["58578.57", "70134.56", "5356.56", "17.92"]
+            - ["70134.57", "141451.32", "7427.36", "21.36"]
+            - ["141451.33", "222946.72", "22660.64", "23.52"]
+            - ["222946.73", "425642.00", "41828.36", "30.00"]
+            - ["425642.01", "567522.64", "102636.92", "32.00"]
+            - ["567522.65", "1702567.96", "148038.76", "34.00"]
+            - ["1702567.97", null, "533954.16", "35.00"]
+          "05":
+            - ["0.01", "4222.95", "0.00", "1.92"]
+            - ["4222.96", "35842.55", "81.10", "6.40"]
+            - ["35842.56", "62990.10", "2104.75", "10.88"]
+            - ["62990.11", "73223.20", "5058.40", "16.00"]
+            - ["73223.21", "87668.20", "6695.70", "17.92"]
+            - ["87668.21", "176814.15", "9284.20", "21.36"]
+            - ["176814.16", "278683.40", "28325.80", "23.52"]
+            - ["278683.41", "532052.50", "52285.45", "30.00"]
+            - ["532052.51", "709403.30", "128296.15", "32.00"]
+            - ["709403.31", "2128209.95", "185048.45", "34.00"]
+            - ["2128209.96", null, "667442.70", "35.00"]
+          "06":
+            - ["0.01", "5067.54", "0.00", "1.92"]
+            - ["5067.55", "43011.06", "97.32", "6.40"]
+            - ["43011.07", "75588.12", "2525.70", "10.88"]
+            - ["75588.13", "87867.84", "6070.08", "16.00"]
+            - ["87867.85", "105201.84", "8034.84", "17.92"]
+            - ["105201.85", "212176.98", "11141.04", "21.36"]
+            - ["212176.99", "334420.08", "33990.96", "23.52"]
+            - ["334420.09", "638463.00", "62742.54", "30.00"]
+            - ["638463.01", "851283.96", "153955.38", "32.00"]
+            - ["851283.97", "2553851.94", "222058.14", "34.00"]
+            - ["2553851.95", null, "800931.24", "35.00"]
+          "07":
+            - ["0.01", "5912.13", "0.00", "1.92"]
+            - ["5912.14", "50179.57", "113.54", "6.40"]
+            - ["50179.58", "88186.14", "2946.65", "10.88"]
+            - ["88186.15", "102512.48", "7081.76", "16.00"]
+            - ["102512.49", "122735.48", "9373.98", "17.92"]
+            - ["122735.49", "247539.81", "12997.88", "21.36"]
+            - ["247539.82", "390156.76", "39656.12", "23.52"]
+            - ["390156.77", "744873.50", "73199.63", "30.00"]
+            - ["744873.51", "993164.62", "179614.61", "32.00"]
+            - ["993164.63", "2979493.93", "259067.83", "34.00"]
+            - ["2979493.94", null, "934419.78", "35.00"]
+          "08":
+            - ["0.01", "6756.72", "0.00", "1.92"]
+            - ["6756.73", "57348.08", "129.76", "6.40"]
+            - ["57348.09", "100784.16", "3367.60", "10.88"]
+            - ["100784.17", "117157.12", "8093.44", "16.00"]
+            - ["117157.13", "140269.12", "10713.12", "17.92"]
+            - ["140269.13", "282902.64", "14854.72", "21.36"]
+            - ["282902.65", "445893.44", "45321.28", "23.52"]
+            - ["445893.45", "851284.00", "83656.72", "30.00"]
+            - ["851284.01", "1135045.28", "205273.84", "32.00"]
+            - ["1135045.29", "3405135.92", "296077.52", "34.00"]
+            - ["3405135.93", null, "1067908.32", "35.00"]
+          "09":
+            - ["0.01", "7601.31", "0.00", "1.92"]
+            - ["7601.32", "64516.59", "145.98", "6.40"]
+            - ["64516.60", "113382.18", "3788.55", "10.88"]
+            - ["113382.19", "131801.76", "9105.12", "16.00"]
+            - ["131801.77", "157802.76", "12052.26", "17.92"]
+            - ["157802.77", "318265.47", "16711.56", "21.36"]
+            - ["318265.48", "501630.12", "50986.44", "23.52"]
+            - ["501630.13", "957694.50", "94113.81", "30.00"]
+            - ["957694.51", "1276925.94", "230933.07", "32.00"]
+            - ["1276925.95", "3830777.91", "333087.21", "34.00"]
+            - ["3830777.92", null, "1201396.86", "35.00"]
+          "10":
+            - ["0.01", "8445.90", "0.00", "1.92"]
+            - ["8445.91", "71685.10", "162.20", "6.40"]
+            - ["71685.11", "125980.20", "4209.50", "10.88"]
+            - ["125980.21", "146446.40", "10116.80", "16.00"]
+            - ["146446.41", "175336.40", "13391.40", "17.92"]
+            - ["175336.41", "353628.30", "18568.40", "21.36"]
+            - ["353628.31", "557366.80", "56651.60", "23.52"]
+            - ["557366.81", "1064105.00", "104570.90", "30.00"]
+            - ["1064105.01", "1418806.60", "256592.30", "32.00"]
+            - ["1418806.61", "4256419.90", "370096.90", "34.00"]
+            - ["4256419.91", null, "1334885.40", "35.00"]
+          "11":
+            - ["0.01", "9290.49", "0.00", "1.92"]
+            - ["9290.50", "78853.61", "178.42", "6.40"]
+            - ["78853.62", "138578.22", "4630.45", "10.88"]
+            - ["138578.23", "161091.04", "11128.48", "16.00"]
+            - ["161091.05", "192870.04", "14730.54", "17.92"]
+            - ["192870.05", "388991.13", "20425.24", "21.36"]
+            - ["388991.14", "613103.48", "62316.76", "23.52"]
+            - ["613103.49", "1170515.50", "115027.99", "30.00"]
+            - ["1170515.51", "1560687.26", "282251.53", "32.00"]
+            - ["1560687.27", "4682061.89", "407106.59", "34.00"]
+            - ["4682061.90", null, "1468373.94", "35.00"]
+    nota: "NO se derivan multiplicando la mensual: el SAT usa límite superior × meses y límite inferior = superior anterior + 0.01 (febrero 283,761.33, no 283,761.34)."
+
+  ISR_TARIFA_TRIMESTRAL_ARRENDAMIENTO:
+    nombre: Tarifa de pagos provisionales trimestrales de arrendamiento (art. 116)
+    tipo: tabla
+    columnas: [limite_inferior, limite_superior, cuota_fija, porcentaje_excedente]
+    valores:
+      - desde: "2026-01-01"
+        hasta: "2026-12-31"
+        fuente: "Anexo 8 RMF 2026, DOF 28-dic-2025 (PDF oficial SAT, cotejado renglón por renglón el 5-nov-2026)"
+        valor:
+          - ["0.01", "2533.77", "0.00", "1.92"]
+          - ["2533.78", "21505.53", "48.66", "6.40"]
+          - ["21505.54", "37794.06", "1262.85", "10.88"]
+          - ["37794.07", "43933.92", "3035.04", "16.00"]
+          - ["43933.93", "52600.92", "4017.42", "17.92"]
+          - ["52600.93", "106088.49", "5570.52", "21.36"]
+          - ["106088.50", "167210.04", "16995.48", "23.52"]
+          - ["167210.05", "319231.50", "31371.27", "30.00"]
+          - ["319231.51", "425641.98", "76977.69", "32.00"]
+          - ["425641.99", "1276925.97", "111029.07", "34.00"]
+          - ["1276925.98", null, "400465.62", "35.00"]
+
+  ISR_TARIFA_RIF_BIMESTRAL:
+    nombre: Tarifa de pagos bimestrales definitivos RIF residual (art. 111 LISR vigente hasta 2021)
+    tipo: tabla
+    columnas: [limite_inferior, limite_superior, cuota_fija, porcentaje_excedente]
+    valores:
+      - desde: "2026-01-01"
+        hasta: "2026-12-31"
+        fuente: "Anexo 8 RMF 2026, DOF 28-dic-2025 (PDF oficial SAT, cotejado renglón por renglón el 5-nov-2026)"
+        valor:
+          - ["0.01", "1689.18", "0.00", "1.92"]
+          - ["1689.19", "14337.02", "32.44", "6.40"]
+          - ["14337.03", "25196.04", "841.90", "10.88"]
+          - ["25196.05", "29289.28", "2023.36", "16.00"]
+          - ["29289.29", "35067.28", "2678.28", "17.92"]
+          - ["35067.29", "70725.66", "3713.68", "21.36"]
+          - ["70725.67", "111473.36", "11330.32", "23.52"]
+          - ["111473.37", "212821.00", "20914.18", "30.00"]
+          - ["212821.01", "283761.32", "51318.46", "32.00"]
+          - ["283761.33", "851283.98", "74019.38", "34.00"]
+          - ["851283.99", null, "266977.08", "35.00"]
