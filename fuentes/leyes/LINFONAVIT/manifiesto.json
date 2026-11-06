@@ -1,0 +1,12 @@
+{
+ "clave": "LINFONAVIT",
+ "nombre": "Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores",
+ "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf",
+ "fuente": "Cámara de Diputados (texto vigente); cotejar contra el DOF",
+ "ultima_reforma_segun_pdf": "2025-02-21",
+ "descargado": "2026-11-06",
+ "sha256_pdf": "9ee6e5ef336dee5700726bd3c570d24f91fc458136e298ae2e3806bd12217912",
+ "sha256_texto": "56e6b158d69b675d99c391e3f402aed7d96f455ed8a80207a2d792ff13a54dca",
+ "articulos": 95,
+ "derogados": 6
+}

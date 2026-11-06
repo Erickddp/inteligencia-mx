@@ -67,3 +67,19 @@ Sin ID en la base o sin fuente primaria cotejada:
 - Los workflows no se han visto correr: pueden requerir ajustes menores.
 - Mientras no haya protección, `main` acepta push directo.
 - El tag `v0.4.1` apunta al estado previo al paquete: no debe moverse (la app verifica por huella y commit).
+
+## Actualización 6-nov-2026 (tarde): conocimiento fiscal antes que integración
+
+Se midió la base y es corta: 86 reglas, 38 con casos (92 casos), 8 con fuente a nivel de regla; ~12 reglas de contabilidad; sin biblioteca de leyes ni vigía. El «80 %» se retira.
+
+Hecho en esta rama:
+
+- `fuentes/leyes/`: LISR, LIVA, LSS, Ley del Infonavit y LFPIORPI, un artículo por archivo, con huellas ([README](../fuentes/leyes/README.md)). Las 72 citas de ley de la base a estas cinco resuelven; ninguna apunta a un artículo inexistente.
+- `scripts/vigia_dof.py`: lee el índice diario del DOF (`dof.gob.mx`, sin «www»; el certificado de `www` falla). No hay API oficial: es HTML, y si cambia el script falla en vez de callar. En 25 días reales leyó 213 notas y marcó 1 posible cambio (decreto de aguinaldo del 23-oct); tipo de cambio, TIIE, UDI, INPC y estímulos de combustibles salen aparte como datos de serie.
+- `DIAS_POR_MES_SM` (30.4) en la base.
+
+Falta, en orden: CFF, LFT, LIEPS, RLISR, RLIVA, RMF y Anexos → matriz obligaciones × régimen con artículo y parámetro → reglas nuevas (deducciones LISR 25/28, retenciones, ajuste anual, cierre) → contabilidad → n8n con el Vigía como primera pieza.
+
+Pendiente de Rick: dar acceso de red a `omawww.sat.gob.mx` para la RMF (hoy solo está permitido en el entorno de esta sesión) y elegir qué sigue primero.
+
+Hallazgo por verificar: la sesión de factureedp reporta, con datos de Banxico de 675 días, que la regla de tipo de cambio que Timbra ya usa coincide con SF60653, lo que contradice R-52 y R-138 (CORREGIR, «Timbra usa SF43718»). No se cambia la base con un resumen: se necesita el script y los datos de la comparación en un archivo; con eso, R-138 pasa a OK en un PR con su caso.

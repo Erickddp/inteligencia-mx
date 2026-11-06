@@ -1,0 +1,482 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "676ca15d2f494163f912359a8ff35b8e8b2483c52ee74ee9ea96496337e82d18",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "1-a": {
+  "archivo": "articulos/art-0001-a.md",
+  "sha256": "7c003304aa41a1c00480a3b1698fcbfade4be5c7443bdf5bded7fbfdb2500614",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "1-a-bis": {
+  "archivo": "articulos/art-0001-a-bis.md",
+  "sha256": "e813ab6d349ee8a2ac12ae8d69a873fa48f34c7b1ba68c48683c7b56dc356f4a",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "1-b": {
+  "archivo": "articulos/art-0001-b.md",
+  "sha256": "696d82cfd9a068ce2ffb0f2eac82dcbc1d7ca0076570cb37518ecba829faa571",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "1-c": {
+  "archivo": "articulos/art-0001-c.md",
+  "sha256": "d9f0003905cc6e03033875b5a078c6757bb3e65a1308a575c5852be1c4353788",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "f1559ad9bea731c43080f271ef494c645c260ec471292b7451240d6ef8cad8d9",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": true
+ },
+ "2-a": {
+  "archivo": "articulos/art-0002-a.md",
+  "sha256": "40f3f32092763e2eefd739b4d7b93785671551cdd62950a1d2c1e69203088c4a",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "2-b": {
+  "archivo": "articulos/art-0002-b.md",
+  "sha256": "c515c33b4f99f53f7e0c9108e2d8990973a154e3ecf729102457bd68f226b87a",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": true
+ },
+ "2-c": {
+  "archivo": "articulos/art-0002-c.md",
+  "sha256": "80d002c0c63fae0fe676b3e887fad5bd2ad990b796254e51a882b56996a17e69",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": true
+ },
+ "2-d": {
+  "archivo": "articulos/art-0002-d.md",
+  "sha256": "f66bc14968cb968a27c18c0abb44f70f5b5c8fc8147d90b493a9af78765e21ba",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": true
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "fdfc305fc590d05fc007322f79f3378b5b98be9b4e4737eca71d0304fa331ae1",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "92099e19603cf4f2f83875d37644d0fa8eb227c20bddae68a99d2fe53ec1adfb",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "4-a": {
+  "archivo": "articulos/art-0004-a.md",
+  "sha256": "524b0a310fe2eea20cc260ed459b58440ee274895ef538c70cf33b31956c1e48",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "4-b": {
+  "archivo": "articulos/art-0004-b.md",
+  "sha256": "1b7a9125027d4bd446240979c46ffdfae0fb049d79e448356ad9e071a2d3f625",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": true
+ },
+ "4-c": {
+  "archivo": "articulos/art-0004-c.md",
+  "sha256": "32bc0507cb9ae11d2b12eba135b1899eb9113a68a12740065710ff202ff15c98",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": true
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "e4120346719a3c4908c42507870968ef0cf4a1326639809a7fe0be9cf9d4568a",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "5-a": {
+  "archivo": "articulos/art-0005-a.md",
+  "sha256": "57fc92dbcb3eaea5aec4580cbc6a35e9370f419e90782bc4039470fbe93c570f",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "5-b": {
+  "archivo": "articulos/art-0005-b.md",
+  "sha256": "fd6b8119f29ab7808511ad94c00522cb730629038005c3b7f0cd6218c4666c1f",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "5-c": {
+  "archivo": "articulos/art-0005-c.md",
+  "sha256": "0b05d1ff3ec68a7ea0d5182db1866d5b5a7e8044d19ca797b6043b81c3f21795",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "5-d": {
+  "archivo": "articulos/art-0005-d.md",
+  "sha256": "9146d81bbad090318a50c2e8f7add144aaf619703f4f6828613033e4145597ed",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "5-e": {
+  "archivo": "articulos/art-0005-e.md",
+  "sha256": "79fe316194b3762bec402bb4ebd6916f557f1253a889d06946496e3778432387",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": true
+ },
+ "5-f": {
+  "archivo": "articulos/art-0005-f.md",
+  "sha256": "90a36f4b435efaab5053b6cf69a6142fb169c480a1af6eb9ca860eb8a7492819",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "25e2d80f7c86a91f2bf71a9a17ccc70c1e8d028115ee4a745d05fb72319727d9",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "65fc72f32e29504b09ecfcf1a48329e6505981d1f573b7b7da5b84edba046580",
+  "ubicacion": "Capitulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "61a19b9ffe06c62649da3393feccdeda974a693823d3b1ccdde3568daddc87cd",
+  "ubicacion": "Capitulo II · De la enajenación",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "b1ca8b9395c01bc4dc99219c1e54d44d6575ef2e2609f22cc7ce95c636797d6b",
+  "ubicacion": "Capitulo II · De la enajenación",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "6d82190014a39f08b1a61b884560c7c0cebdcd7f85064ab164e3bc4f6b678632",
+  "ubicacion": "Capitulo II · De la enajenación",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "61f2491c360b741babf4ce9f348f8da48e92ac0e1a9ecd7a59424bbc6c3a2dbb",
+  "ubicacion": "Capitulo II · De la enajenación",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "fbda051b2df56795c78ad858b0a84877cb9b558289f621e08f1e7859475c7dee",
+  "ubicacion": "Capitulo II · De la enajenación",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "a8a5aa8b034c359a57941c98dad3d698021f3f86e226c19add2d4d96544e900f",
+  "ubicacion": "Capitulo II · De la enajenación",
+  "derogado": true
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "cc19b93731fa70f7ea24c11149314ceadf384cfb7220fa601e5606700ef97412",
+  "ubicacion": "Capitulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "ae4a536d9dbc77615b42e3b9e85c9ea849293cef163fc38522c8bc010ce4ec28",
+  "ubicacion": "Capitulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "0768660484a719ad35513510a5f785f280b6c18109983ecbd32430607aee2f86",
+  "ubicacion": "Capitulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "3e68a2b8f09d42c912ff14ca940892e5b06326c9ad40bf20f192576c38eb6b9a",
+  "ubicacion": "Capitulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "d285596a915d8aaf5688fd926db6fec6088a148c58d6a27f21337628f6fc24e3",
+  "ubicacion": "Capitulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "18-a": {
+  "archivo": "articulos/art-0018-a.md",
+  "sha256": "2b37a20529cde386b97abef34beac28ba01f2ad729d12830ede8671699253eb1",
+  "ubicacion": "Capitulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "18-b": {
+  "archivo": "articulos/art-0018-b.md",
+  "sha256": "d439a839c20b5acbf82ec24d08fb2db8446cd1743f006974728361446e9c598e",
+  "ubicacion": "Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección I · Disposiciones generales Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "18-c": {
+  "archivo": "articulos/art-0018-c.md",
+  "sha256": "ee8affb3e232c56b991c095f68a14e6472974c43e809d6f3918a120a4c5424d9",
+  "ubicacion": "Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección I · Disposiciones generales Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "18-d": {
+  "archivo": "articulos/art-0018-d.md",
+  "sha256": "6e8755e04d40d38f20cf01fb17b9e56bc17f565fafdbdb57cf1a2ca9acdd8bea",
+  "ubicacion": "Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección I · Disposiciones generales Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "18-e": {
+  "archivo": "articulos/art-0018-e.md",
+  "sha256": "35877e6e2647eb758cccb80a29455f00368cd202a6b43d6b456b338e0e308ede",
+  "ubicacion": "Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección I · Disposiciones generales Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "18-f": {
+  "archivo": "articulos/art-0018-f.md",
+  "sha256": "ecb27bc0b0cec0d077aed8cb8a206d81d2d03ec0e4552139db264991db97aa9e",
+  "ubicacion": "Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección I · Disposiciones generales Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "18-g": {
+  "archivo": "articulos/art-0018-g.md",
+  "sha256": "1feda6d2ea2fdc372010d3c96bafafb648f2f4f4f58fa20805f493ae1e2045e4",
+  "ubicacion": "Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección I · Disposiciones generales Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "18-h": {
+  "archivo": "articulos/art-0018-h.md",
+  "sha256": "0d59a2301218c72169d757f642588f301cf73de8ff92f485a6da66f86539f32b",
+  "ubicacion": "Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección I · Disposiciones generales Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "18-h-bis": {
+  "archivo": "articulos/art-0018-h-bis.md",
+  "sha256": "eb8bdf6d52e6c2c859dd2e0ad324cfea7917e5e477a93df22acea6d4224505a9",
+  "ubicacion": "Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección I · Disposiciones generales Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "18-h-ter": {
+  "archivo": "articulos/art-0018-h-ter.md",
+  "sha256": "1618e47da200777c1e3a659d505adf44031ab67d18f1668eb24ea92b6a9a3e30",
+  "ubicacion": "Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección I · Disposiciones generales Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "18-h-quater": {
+  "archivo": "articulos/art-0018-h-quater.md",
+  "sha256": "38e8a35c85e06f317ba706fcc51347ea0c53b7fdbd960ebd45f86c20c9d82839",
+  "ubicacion": "Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección I · Disposiciones generales Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "18-h-quintus": {
+  "archivo": "articulos/art-0018-h-quintus.md",
+  "sha256": "ae880a53aeb7fba58747a11726eb96ea6b7cf00f324ed6a539f4a68d6aca4bfe",
+  "ubicacion": "Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección I · Disposiciones generales Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "18-i": {
+  "archivo": "articulos/art-0018-i.md",
+  "sha256": "fa1ea9ed7b6cbe0ac8f0711972625ced36bdc2fc526049902d4ed099c83af40a",
+  "ubicacion": "Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección I · Disposiciones generales Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "18-j": {
+  "archivo": "articulos/art-0018-j.md",
+  "sha256": "585d8fd66a99041e74e647cc2024afbcca3222c006afdff5e542a7decb2d63ed",
+  "ubicacion": "Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección II · De los servicios digitales de intermediación entre terceros Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "18-k": {
+  "archivo": "articulos/art-0018-k.md",
+  "sha256": "21b3848f708ddd899a1696b53d125538d8ed0e141c87ae8b8ce5a3c5944a8ae0",
+  "ubicacion": "Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección II · De los servicios digitales de intermediación entre terceros Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "18-l": {
+  "archivo": "articulos/art-0018-l.md",
+  "sha256": "f29cd9d6a78c12f104a974f9aa37337597cd7d68a728245cd6f5642a235a7685",
+  "ubicacion": "Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección II · De los servicios digitales de intermediación entre terceros Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "18-m": {
+  "archivo": "articulos/art-0018-m.md",
+  "sha256": "7938fb5e2df5053fe9efa09254edd5097a980b166818c3fd9ab8e970d4cb5924",
+  "ubicacion": "Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección II · De los servicios digitales de intermediación entre terceros Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "ae96916b46ac00019adc5e0db02aea737d053d03d3a3dfa53f6ad1e8b6e7f251",
+  "ubicacion": "Capitulo IV · Del uso o goce temporal de bienes",
+  "derogado": false
+ },
+ "20": {
+  "archivo": "articulos/art-0020.md",
+  "sha256": "9e792be69206e1d7d5ca8f2e40cc391c55f6716de808f8ced6b8c804b271395e",
+  "ubicacion": "Capitulo IV · Del uso o goce temporal de bienes",
+  "derogado": false
+ },
+ "21": {
+  "archivo": "articulos/art-0021.md",
+  "sha256": "6424a1cbc33a4baa25635f4dc1a8feaedbff4c4f4e0a08d14ad99205d3b1b6b7",
+  "ubicacion": "Capitulo IV · Del uso o goce temporal de bienes",
+  "derogado": false
+ },
+ "22": {
+  "archivo": "articulos/art-0022.md",
+  "sha256": "8446ceb1baf8dc602247261a2546b8917e003db7af646c0f501e20943d563c1c",
+  "ubicacion": "Capitulo IV · Del uso o goce temporal de bienes",
+  "derogado": false
+ },
+ "23": {
+  "archivo": "articulos/art-0023.md",
+  "sha256": "dd41de37e918a3dc1437148834c61c1162f72b3d0b479ce5a581664074e1e07d",
+  "ubicacion": "Capitulo IV · Del uso o goce temporal de bienes",
+  "derogado": false
+ },
+ "24": {
+  "archivo": "articulos/art-0024.md",
+  "sha256": "f2d071e28cb28b3430c97580745d76fef185d99ec4813467e73017d6c2568f98",
+  "ubicacion": "Capitulo V · De la importación de bienes y servicios",
+  "derogado": false
+ },
+ "25": {
+  "archivo": "articulos/art-0025.md",
+  "sha256": "11f709d8910d8b139a4804d400aafb6e7e79c1c1d13a00af58a57021c72ae087",
+  "ubicacion": "Capitulo V · De la importación de bienes y servicios",
+  "derogado": false
+ },
+ "26": {
+  "archivo": "articulos/art-0026.md",
+  "sha256": "5cf31ff1bac446be37b488f1c6a73d332bc9a217403d5dfdfafc264faa751240",
+  "ubicacion": "Capitulo V · De la importación de bienes y servicios",
+  "derogado": false
+ },
+ "27": {
+  "archivo": "articulos/art-0027.md",
+  "sha256": "0e569429ed674d979b6ce36e1910b4f1eb0aa8270d7aca2f16854743bdb743fc",
+  "ubicacion": "Capitulo V · De la importación de bienes y servicios",
+  "derogado": false
+ },
+ "28": {
+  "archivo": "articulos/art-0028.md",
+  "sha256": "fdfe2cb7eb10ee08ea44a33e9feb6b5ed022fe54d05c3b4d575a965a5a8f4dad",
+  "ubicacion": "Capitulo V · De la importación de bienes y servicios",
+  "derogado": false
+ },
+ "28-a": {
+  "archivo": "articulos/art-0028-a.md",
+  "sha256": "77f7ecb40d6f9fd2ad3e45d6da393d765fe88d60c2b771ad25daf383e3a2c02f",
+  "ubicacion": "Capitulo V · De la importación de bienes y servicios",
+  "derogado": false
+ },
+ "29": {
+  "archivo": "articulos/art-0029.md",
+  "sha256": "637be50e04f7e5f0bc6bfa8b6c51d58e97897ef9bce2c89cb080deeb8b377503",
+  "ubicacion": "Capitulo VI · De la exportación de bienes o servicios",
+  "derogado": false
+ },
+ "30": {
+  "archivo": "articulos/art-0030.md",
+  "sha256": "0adaa2c00139fbacc52d91903682e16e452f9d7767781ab195bec4e5293e54f9",
+  "ubicacion": "Capitulo VI · De la exportación de bienes o servicios",
+  "derogado": false
+ },
+ "31": {
+  "archivo": "articulos/art-0031.md",
+  "sha256": "491317c627ccdf0efac45752020fd37edb3f5570721f05f93fa7acd811fe8c37",
+  "ubicacion": "Capitulo VI · De la exportación de bienes o servicios",
+  "derogado": false
+ },
+ "32": {
+  "archivo": "articulos/art-0032.md",
+  "sha256": "09699565caed5f64cdaf0840a813a6659f3c62ee99037db284c74abe2e3e151c",
+  "ubicacion": "Capitulo VII · De las obligaciones de los contribuyentes",
+  "derogado": false
+ },
+ "33": {
+  "archivo": "articulos/art-0033.md",
+  "sha256": "c138300fbe27ea4aa1d258758c472c9220934d590724438fe5c0334c5c38f0c2",
+  "ubicacion": "Capitulo VII · De las obligaciones de los contribuyentes",
+  "derogado": false
+ },
+ "34": {
+  "archivo": "articulos/art-0034.md",
+  "sha256": "84aa627673dfa94e1cd1707fd5e1438e9d58aa10b0a9748044a1db65d09ffd02",
+  "ubicacion": "Capitulo VII · De las obligaciones de los contribuyentes",
+  "derogado": false
+ },
+ "35": {
+  "archivo": "articulos/art-0035.md",
+  "sha256": "f4bf7e431e1194a7ffd1a920f92e23ce2dbf0e32c932eb100f173a18e4ccfa34",
+  "ubicacion": "Capitulo VII · De las obligaciones de los contribuyentes",
+  "derogado": true
+ },
+ "35-a": {
+  "archivo": "articulos/art-0035-a.md",
+  "sha256": "d2f6867e68727dd8ebedd7424c4b15e34348a40e69507b98473b9025293bb49e",
+  "ubicacion": "Capitulo VII · De las obligaciones de los contribuyentes",
+  "derogado": true
+ },
+ "35-b": {
+  "archivo": "articulos/art-0035-b.md",
+  "sha256": "211d55231fe260eb7fecf97f1210f7515ff52b191e419cfb93fb0cd2f742ea27",
+  "ubicacion": "Capitulo VII · De las obligaciones de los contribuyentes",
+  "derogado": true
+ },
+ "36": {
+  "archivo": "articulos/art-0036.md",
+  "sha256": "42b2a03448f10686fa7611c504860f9d29f6437b23eb626cf2f97c8b8a5bd809",
+  "ubicacion": "Capitulo VII · De las obligaciones de los contribuyentes",
+  "derogado": true
+ },
+ "37": {
+  "archivo": "articulos/art-0037.md",
+  "sha256": "3e49200eabd8a4f7321f87107489dc4816d49d783b2d12df1b884b42d5901f20",
+  "ubicacion": "Capitulo VII · De las obligaciones de los contribuyentes",
+  "derogado": true
+ },
+ "38": {
+  "archivo": "articulos/art-0038.md",
+  "sha256": "8bc618d139bd78dedc158da15b8d8b3023aaeca0cce6c07626f3487a44cdaa39",
+  "ubicacion": "Capitulo VIII · De las facultades de las autoridades",
+  "derogado": true
+ },
+ "39": {
+  "archivo": "articulos/art-0039.md",
+  "sha256": "4ec17101678d9b963f76afecd5fd81c7098cf03dd4cf5bd43bc95a555cf9119f",
+  "ubicacion": "Capitulo VIII · De las facultades de las autoridades",
+  "derogado": false
+ },
+ "40": {
+  "archivo": "articulos/art-0040.md",
+  "sha256": "0d53b50c6ca3c7d63c747456df88c092692b1307b52c858e723bc6eed4aaaf94",
+  "ubicacion": "Capitulo VIII · De las facultades de las autoridades",
+  "derogado": true
+ },
+ "41": {
+  "archivo": "articulos/art-0041.md",
+  "sha256": "2a6c21589ee18d4254655b11e0fbfdaf38615d57f4803293b19b9961130ee765",
+  "ubicacion": "Capitulo IX · De las participaciones a las entidades federativas",
+  "derogado": false
+ },
+ "42": {
+  "archivo": "articulos/art-0042.md",
+  "sha256": "540aedb33ff27fe688bb64444f61b3445b0bf26c8762491ec8e66ef4f423f443",
+  "ubicacion": "Capitulo IX · De las participaciones a las entidades federativas",
+  "derogado": false
+ },
+ "43": {
+  "archivo": "articulos/art-0043.md",
+  "sha256": "b4ba3d13a51f8b9d8c08d971785262787a2ac1c8a2b021a6ed40561ef39a3073",
+  "ubicacion": "Capitulo IX · De las participaciones a las entidades federativas",
+  "derogado": false
+ }
+}

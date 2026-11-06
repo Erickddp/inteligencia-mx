@@ -1,0 +1,1418 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "8db6f7a3515b3d61a1536cc6098fc375a25398053b5fd0f57e5000c0b6c165d5",
+  "ubicacion": "Título I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "aabd297b3386090f02f2d81561bd123db6e1fb219f778215350c323be28a8cff",
+  "ubicacion": "Título I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "c691e703a57bab1576bac869706983cc0a89fd31339cefbdae114cd7f0b2bdcf",
+  "ubicacion": "Título I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "5bfa09c39b0951fc07450bac717938ccd112f601baed8c058dab4a69eb3d85de",
+  "ubicacion": "Título I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "4-a": {
+  "archivo": "articulos/art-0004-a.md",
+  "sha256": "9d606e247bf106741f6cd61a94381972c456fd313f7a4e2dd38ae6e37939ed63",
+  "ubicacion": "Título I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "4-b": {
+  "archivo": "articulos/art-0004-b.md",
+  "sha256": "b7a0a503d02628a3f0be78b8184e95515aa601cb410748736013ad61183d2e7c",
+  "ubicacion": "Título I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "769b494e50f56164c7a69be361b129954ec613d132749e38dfdbce2a63670f56",
+  "ubicacion": "Título I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "35c3aa4f772695f7dde70c6c3e8fff0891841e481e57d131ca8ef1cc5269689a",
+  "ubicacion": "Título I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "7eeb259da533c17f6947ce6c728d9386a55337a3c8cb4d62e60f7dd9513bfbc9",
+  "ubicacion": "Título I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "98f1000fa2d2ec31f549411f34973b54f59478abaa10961d1ead37366101f947",
+  "ubicacion": "Título I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "b22e3c773e7ad831a9eed413028c875a943390a4167a83df4cd4b02ea86edc36",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "eb4cbcf4601d7880905400221e9fd23b667fa11352de301b426f5e7080463e79",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "c46a469979dc9eb92601beecc7e6b226d4aa22768d98d5a74fed6a7e9a7ce235",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "584727e6e6bf42fc30477b140a44bfdec17c1329127309161cd352b63f6a3ff9",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "cc404d0e08cbe7e1804bf92cb0aa8a192b6aede1d460677691323016296003df",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES",
+  "derogado": false
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "9ca313b17f2762b73179f540026d4ff5a98aaa7c0197dee0034dda176207c43e",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "c36cde07a3ddc94e637d737c263faee81afad9a9c4849b63c9d2f788f9ab8e04",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES",
+  "derogado": false
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "4704a23c93fc05207c3de57b3e2e4d35a81691e29c6d0bbf95f4a380c485ed0e",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo I · DE LOS INGRESOS",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "7817d01d756cd6038fba372125557a2e59eafd70888d0b9d6b70ed6c8453fe30",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo I · DE LOS INGRESOS",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "c775c68b0642b6087d055d39a518a9669bc7e473a1c577e2d5e77a4d5b75b391",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo I · DE LOS INGRESOS",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "2c390627886e049a22b5d9fb1cb7f3ec444134e8d601ae2f11a181a5eea2121f",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo I · DE LOS INGRESOS",
+  "derogado": false
+ },
+ "20": {
+  "archivo": "articulos/art-0020.md",
+  "sha256": "fc3343b3cd9346dd467656378f4acb5a35a6dc11c2af73e37bff7de107b8c132",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo I · DE LOS INGRESOS",
+  "derogado": false
+ },
+ "21": {
+  "archivo": "articulos/art-0021.md",
+  "sha256": "f7844c3bf7a12e451c749278d916094d2f5b9e0cd6dd2585048ff73743eec9ba",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo I · DE LOS INGRESOS",
+  "derogado": false
+ },
+ "22": {
+  "archivo": "articulos/art-0022.md",
+  "sha256": "d4fd2385b68fc10e99b4ba208eb4f7e16872df5433534379399fe7f0f26ac888",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo I · DE LOS INGRESOS",
+  "derogado": false
+ },
+ "23": {
+  "archivo": "articulos/art-0023.md",
+  "sha256": "7424004a806190d83622560e500d1fa91e07aa7e75682228ddfd86c7a5ef5f02",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo I · DE LOS INGRESOS",
+  "derogado": false
+ },
+ "24": {
+  "archivo": "articulos/art-0024.md",
+  "sha256": "3cda9ea70c6b5485df4b1e6bd808cb2d9a6e266b316c7ccc7fd1de74d56a21cc",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo I · DE LOS INGRESOS",
+  "derogado": false
+ },
+ "25": {
+  "archivo": "articulos/art-0025.md",
+  "sha256": "3522112e24aa0dd0e4a0b73cb225ae5cb9be480df30acaecb8c51c82d075df3d",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección I · DE LAS DEDUCCIONES EN GENERAL",
+  "derogado": false
+ },
+ "26": {
+  "archivo": "articulos/art-0026.md",
+  "sha256": "85560ce6e225a753a5b151a06fb49f125a95b5d7d33dd0cc5381b8a0da7dfc65",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección I · DE LAS DEDUCCIONES EN GENERAL",
+  "derogado": false
+ },
+ "27": {
+  "archivo": "articulos/art-0027.md",
+  "sha256": "3b46f84177baac49b941ebf992be271a2138ef130d68e3289db7423c0256ccde",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección I · DE LAS DEDUCCIONES EN GENERAL",
+  "derogado": false
+ },
+ "28": {
+  "archivo": "articulos/art-0028.md",
+  "sha256": "1d70a9e94e3802da2ca2af8191291a60f637a5d61793d23406ddafa20299445e",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección I · DE LAS DEDUCCIONES EN GENERAL",
+  "derogado": false
+ },
+ "29": {
+  "archivo": "articulos/art-0029.md",
+  "sha256": "bda75855c9968378bd5ad2e494609f42b77e9e535872de924188d65c2f928f9b",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección I · DE LAS DEDUCCIONES EN GENERAL",
+  "derogado": false
+ },
+ "30": {
+  "archivo": "articulos/art-0030.md",
+  "sha256": "d920c4808d6c394a90901ff412b66a28e02c7e34022c2e85cd62c6bde95293cf",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección I · DE LAS DEDUCCIONES EN GENERAL",
+  "derogado": false
+ },
+ "31": {
+  "archivo": "articulos/art-0031.md",
+  "sha256": "b50b54b207a73113f741baff9936bd1b31b7fc559e448f360ca210936051373d",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección II · DE LAS INVERSIONES",
+  "derogado": false
+ },
+ "32": {
+  "archivo": "articulos/art-0032.md",
+  "sha256": "b7ebbc03a026511822ef32852c567690795a4da3b419143da1e8dd349e10d7f6",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección II · DE LAS INVERSIONES",
+  "derogado": false
+ },
+ "33": {
+  "archivo": "articulos/art-0033.md",
+  "sha256": "d5c88bdb4cd29219b54d896388f352b959cf6faaf341314ada81133937802902",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección II · DE LAS INVERSIONES",
+  "derogado": false
+ },
+ "34": {
+  "archivo": "articulos/art-0034.md",
+  "sha256": "bc04921a092085c6bb8b1783af10a0d9cd001649c772da2eec2e6c8c064b4f04",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección II · DE LAS INVERSIONES",
+  "derogado": false
+ },
+ "35": {
+  "archivo": "articulos/art-0035.md",
+  "sha256": "5a8cfca68af12a4f0cd8225317e2032609c1b0216151160f536c6a743c5958f4",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección II · DE LAS INVERSIONES",
+  "derogado": false
+ },
+ "36": {
+  "archivo": "articulos/art-0036.md",
+  "sha256": "d47fe6ccf043dbbe1ffdf405ff3fcaddb87a36e6b2c263c9407404c03a655652",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección II · DE LAS INVERSIONES",
+  "derogado": false
+ },
+ "37": {
+  "archivo": "articulos/art-0037.md",
+  "sha256": "b434c871928fa326c4ce27d3ba9e5c11c7e613b7296a486ecceccfd9bafa79ca",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección II · DE LAS INVERSIONES",
+  "derogado": false
+ },
+ "38": {
+  "archivo": "articulos/art-0038.md",
+  "sha256": "d23bc77d9c5f7fd7369244af54203f61bce8f0e1d4b153101ab7232a7ed2bb02",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección II · DE LAS INVERSIONES",
+  "derogado": false
+ },
+ "39": {
+  "archivo": "articulos/art-0039.md",
+  "sha256": "e5a75df7858aa3b1e40f596548e02ce409de9766563800ca0875f31766d29311",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección III · DEL COSTO DE LO VENDIDO",
+  "derogado": false
+ },
+ "40": {
+  "archivo": "articulos/art-0040.md",
+  "sha256": "edeee3652fa06957fd814682444040f90aabd04bf10142c693fe6cb879688a95",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección III · DEL COSTO DE LO VENDIDO",
+  "derogado": false
+ },
+ "41": {
+  "archivo": "articulos/art-0041.md",
+  "sha256": "711269d7442936f7be0d05083afcc4216d4f5d97bb804a41e6638517972f58a0",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección III · DEL COSTO DE LO VENDIDO",
+  "derogado": false
+ },
+ "42": {
+  "archivo": "articulos/art-0042.md",
+  "sha256": "32d87405a2b6057f21eb518e262e6503dfee654e8f8d8b0cba94f24446febf10",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección III · DEL COSTO DE LO VENDIDO",
+  "derogado": false
+ },
+ "43": {
+  "archivo": "articulos/art-0043.md",
+  "sha256": "56748289dd23865c544259512825dcdb37fb853caa94eee5c898d9ed8a94b45b",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo II · DE LAS DEDUCCIONES / Sección III · DEL COSTO DE LO VENDIDO",
+  "derogado": false
+ },
+ "44": {
+  "archivo": "articulos/art-0044.md",
+  "sha256": "a337a9e9d9d416f656f60d90cea53f528d65ca6d760daafdd1bbb3c8cefac924",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo III · DEL AJUSTE POR INFLACIÓN",
+  "derogado": false
+ },
+ "45": {
+  "archivo": "articulos/art-0045.md",
+  "sha256": "8b06c3e925de0131862369ea340290a868a4f809d3999aff98c62cd8244c3056",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo III · DEL AJUSTE POR INFLACIÓN",
+  "derogado": false
+ },
+ "46": {
+  "archivo": "articulos/art-0046.md",
+  "sha256": "6d1c1b952f53af8823654e8ed0819c296c44adf0a6eb0984559df477009fbff1",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo III · DEL AJUSTE POR INFLACIÓN",
+  "derogado": false
+ },
+ "47": {
+  "archivo": "articulos/art-0047.md",
+  "sha256": "b60f15571a5cc832b9feeeb9f15b2b66c46adebda5ffd28b65697f582caf3d3f",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo IV · DE LAS INSTITUCIONES DE CRÉDITO, DE SEGUROS Y DE FIANZAS, DE LOS ALMACENES GENERALES DE DEPÓSITO, ARRENDADORAS FINANCIERAS Y UNIONES DE CRÉDITO",
+  "derogado": false
+ },
+ "48": {
+  "archivo": "articulos/art-0048.md",
+  "sha256": "d041c9144741d6c2a297ebcc683ac844ae68ddc599af600da802517c36c3fda6",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo IV · DE LAS INSTITUCIONES DE CRÉDITO, DE SEGUROS Y DE FIANZAS, DE LOS ALMACENES GENERALES DE DEPÓSITO, ARRENDADORAS FINANCIERAS Y UNIONES DE CRÉDITO",
+  "derogado": false
+ },
+ "49": {
+  "archivo": "articulos/art-0049.md",
+  "sha256": "00768aa9e51a283fc17ce2340b1f7da3842bf9de65e8a90064cb4acdaa18ce4c",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo IV · DE LAS INSTITUCIONES DE CRÉDITO, DE SEGUROS Y DE FIANZAS, DE LOS ALMACENES GENERALES DE DEPÓSITO, ARRENDADORAS FINANCIERAS Y UNIONES DE CRÉDITO",
+  "derogado": false
+ },
+ "50": {
+  "archivo": "articulos/art-0050.md",
+  "sha256": "55aee1da88a3e0b0f2a0986caa2859d24eacf29f322bf19a606cdc75cbe848dc",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo IV · DE LAS INSTITUCIONES DE CRÉDITO, DE SEGUROS Y DE FIANZAS, DE LOS ALMACENES GENERALES DE DEPÓSITO, ARRENDADORAS FINANCIERAS Y UNIONES DE CRÉDITO",
+  "derogado": false
+ },
+ "51": {
+  "archivo": "articulos/art-0051.md",
+  "sha256": "5e2e51458424830e2971544c02c928df52e367932a3a212e729592db57bfd0b3",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo IV · DE LAS INSTITUCIONES DE CRÉDITO, DE SEGUROS Y DE FIANZAS, DE LOS ALMACENES GENERALES DE DEPÓSITO, ARRENDADORAS FINANCIERAS Y UNIONES DE CRÉDITO",
+  "derogado": false
+ },
+ "52": {
+  "archivo": "articulos/art-0052.md",
+  "sha256": "d4fd6a10155944a23871bdcdb86cb362ef5689e38b8c8908dc602695151b1d70",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo IV · DE LAS INSTITUCIONES DE CRÉDITO, DE SEGUROS Y DE FIANZAS, DE LOS ALMACENES GENERALES DE DEPÓSITO, ARRENDADORAS FINANCIERAS Y UNIONES DE CRÉDITO",
+  "derogado": false
+ },
+ "53": {
+  "archivo": "articulos/art-0053.md",
+  "sha256": "2907ea988c79a44194fb5e195759187083b8b38116215e312beb776e12d9bdbe",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo IV · DE LAS INSTITUCIONES DE CRÉDITO, DE SEGUROS Y DE FIANZAS, DE LOS ALMACENES GENERALES DE DEPÓSITO, ARRENDADORAS FINANCIERAS Y UNIONES DE CRÉDITO",
+  "derogado": false
+ },
+ "54": {
+  "archivo": "articulos/art-0054.md",
+  "sha256": "b70db2a3ff554acc4dd4645358fd6875754b6afec8b4cc23edbbc744b06ca1f3",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo IV · DE LAS INSTITUCIONES DE CRÉDITO, DE SEGUROS Y DE FIANZAS, DE LOS ALMACENES GENERALES DE DEPÓSITO, ARRENDADORAS FINANCIERAS Y UNIONES DE CRÉDITO",
+  "derogado": false
+ },
+ "55": {
+  "archivo": "articulos/art-0055.md",
+  "sha256": "74defde339dc74b92f49fd0f837326297817b1aadb9f53a773ebe8d6fbc8762d",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo IV · DE LAS INSTITUCIONES DE CRÉDITO, DE SEGUROS Y DE FIANZAS, DE LOS ALMACENES GENERALES DE DEPÓSITO, ARRENDADORAS FINANCIERAS Y UNIONES DE CRÉDITO",
+  "derogado": false
+ },
+ "56": {
+  "archivo": "articulos/art-0056.md",
+  "sha256": "5d38afafff025c4ecac138cc9acabcf8387a2a5f55f11eb72fd2f5b48b69f014",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo IV · DE LAS INSTITUCIONES DE CRÉDITO, DE SEGUROS Y DE FIANZAS, DE LOS ALMACENES GENERALES DE DEPÓSITO, ARRENDADORAS FINANCIERAS Y UNIONES DE CRÉDITO",
+  "derogado": false
+ },
+ "57": {
+  "archivo": "articulos/art-0057.md",
+  "sha256": "26045160cd90d1399047c7b2e48a4cae87bc397d4f9665a8de72db2dd367d62d",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo V · DE LAS PÉRDIDAS",
+  "derogado": false
+ },
+ "58": {
+  "archivo": "articulos/art-0058.md",
+  "sha256": "fb9b1602c20d5dcd44a42c453fce592a4ebce7e3316d9ebd7a53bf5853d4c8ee",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo V · DE LAS PÉRDIDAS",
+  "derogado": false
+ },
+ "59": {
+  "archivo": "articulos/art-0059.md",
+  "sha256": "8d9a1ef97fcff08f8159050a607f7e5905e520277479203e4892ddb610051629",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VI · DEL RÉGIMEN OPCIONAL PARA GRUPOS DE SOCIEDADES",
+  "derogado": false
+ },
+ "60": {
+  "archivo": "articulos/art-0060.md",
+  "sha256": "f67efbcf7ad9c980c9347b145d9e972b4c030eb770356a06631b66623121cf49",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VI · DEL RÉGIMEN OPCIONAL PARA GRUPOS DE SOCIEDADES",
+  "derogado": false
+ },
+ "61": {
+  "archivo": "articulos/art-0061.md",
+  "sha256": "0303aba75d6de6face3936b4e2a6dcf14caaaf271090774361d1b1dd1cd0ea32",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VI · DEL RÉGIMEN OPCIONAL PARA GRUPOS DE SOCIEDADES",
+  "derogado": false
+ },
+ "62": {
+  "archivo": "articulos/art-0062.md",
+  "sha256": "a71975b044ba8572f1a40948300ad15cc64979f0ca8dcbf3ddd9a702a759f46d",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VI · DEL RÉGIMEN OPCIONAL PARA GRUPOS DE SOCIEDADES",
+  "derogado": false
+ },
+ "63": {
+  "archivo": "articulos/art-0063.md",
+  "sha256": "9240cd6ff17c6d86f79c4a2e2de44ce764e0a3c80e1ccefdbc0f88b4cf5891ad",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VI · DEL RÉGIMEN OPCIONAL PARA GRUPOS DE SOCIEDADES",
+  "derogado": false
+ },
+ "64": {
+  "archivo": "articulos/art-0064.md",
+  "sha256": "40fe60e98f2171d2f5b2910943c96c3913b96d549cc20ba26fb5cad8faa3eeb7",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VI · DEL RÉGIMEN OPCIONAL PARA GRUPOS DE SOCIEDADES",
+  "derogado": false
+ },
+ "65": {
+  "archivo": "articulos/art-0065.md",
+  "sha256": "ff355d57d79cc51a6840a34baec3d29fcbe5589a10981c78b33dd386d5ed7945",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VI · DEL RÉGIMEN OPCIONAL PARA GRUPOS DE SOCIEDADES",
+  "derogado": false
+ },
+ "66": {
+  "archivo": "articulos/art-0066.md",
+  "sha256": "9cb7a73b1b8f02059e76536cf61a848edf7cb5170b1a86dedbf68e410f826360",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VI · DEL RÉGIMEN OPCIONAL PARA GRUPOS DE SOCIEDADES",
+  "derogado": false
+ },
+ "67": {
+  "archivo": "articulos/art-0067.md",
+  "sha256": "5dcafc167473662e3c63f105bbc3d0bfe9798ea5d4836a1be7284df2d4330ba6",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VI · DEL RÉGIMEN OPCIONAL PARA GRUPOS DE SOCIEDADES",
+  "derogado": false
+ },
+ "68": {
+  "archivo": "articulos/art-0068.md",
+  "sha256": "442ece5335afd88e074fd60cbfbef4e1f7790c233af5ff687d5a96705fb640c8",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VI · DEL RÉGIMEN OPCIONAL PARA GRUPOS DE SOCIEDADES",
+  "derogado": false
+ },
+ "69": {
+  "archivo": "articulos/art-0069.md",
+  "sha256": "307984df81310a02f22736e26a85dce3c6b3eb04ea00cb1ab7bd2760fe5793e2",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VI · DEL RÉGIMEN OPCIONAL PARA GRUPOS DE SOCIEDADES",
+  "derogado": false
+ },
+ "70": {
+  "archivo": "articulos/art-0070.md",
+  "sha256": "6aa9bfb6a10437468e714a055f7571275d3c1b89a4deed2ad8eddc3b0c43ce7b",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VI · DEL RÉGIMEN OPCIONAL PARA GRUPOS DE SOCIEDADES",
+  "derogado": false
+ },
+ "71": {
+  "archivo": "articulos/art-0071.md",
+  "sha256": "8309ab94b47b5e1947e0054f19d7199f40386b996b543c40ebf5e5c0e4233a86",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VI · DEL RÉGIMEN OPCIONAL PARA GRUPOS DE SOCIEDADES",
+  "derogado": false
+ },
+ "72": {
+  "archivo": "articulos/art-0072.md",
+  "sha256": "b3b4e9940646e904435afd843d165ba83b94e8a94d3a090f53de914e28f51098",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VII · DE LOS COORDINADOS",
+  "derogado": false
+ },
+ "73": {
+  "archivo": "articulos/art-0073.md",
+  "sha256": "bcae30e3c92c6798900849ee5a14d3ce688253e880e4428cf0c550c6b051086e",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VII · DE LOS COORDINADOS",
+  "derogado": false
+ },
+ "74": {
+  "archivo": "articulos/art-0074.md",
+  "sha256": "391b81f54ade574c6277085f1039c9f665833c4f449330997352b69b598ba48c",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VIII · RÉGIMEN DE ACTIVIDADES AGRÍCOLAS, GANADERAS, SILVÍCOLAS Y PESQUERAS",
+  "derogado": false
+ },
+ "74-a": {
+  "archivo": "articulos/art-0074-a.md",
+  "sha256": "b48bf6a39fd7798aa0895e0b807ed53b02b986dcffdaf63bf22ba6d57d5404d3",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VIII · RÉGIMEN DE ACTIVIDADES AGRÍCOLAS, GANADERAS, SILVÍCOLAS Y PESQUERAS",
+  "derogado": true
+ },
+ "74-b": {
+  "archivo": "articulos/art-0074-b.md",
+  "sha256": "67268ff43acdbfbb57adbadd63b713f8a07161044128755723f8638c0c122476",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VIII · RÉGIMEN DE ACTIVIDADES AGRÍCOLAS, GANADERAS, SILVÍCOLAS Y PESQUERAS",
+  "derogado": false
+ },
+ "75": {
+  "archivo": "articulos/art-0075.md",
+  "sha256": "4c0d6ff1e9adf2cc9b0542e2bd18fb502634c44b7805c622f6bba06715315e19",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo VIII · RÉGIMEN DE ACTIVIDADES AGRÍCOLAS, GANADERAS, SILVÍCOLAS Y PESQUERAS",
+  "derogado": false
+ },
+ "76": {
+  "archivo": "articulos/art-0076.md",
+  "sha256": "aebb791d3adbb2a013318285c1c357457a3b94ebf65a5ab38b34444cfd564040",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo IX · DE LAS OBLIGACIONES DE LAS PERSONAS MORALES",
+  "derogado": false
+ },
+ "76-a": {
+  "archivo": "articulos/art-0076-a.md",
+  "sha256": "fe59789e8361ed4fd4417168d1cab7b557b401c17fe77ae11ed1d17bbed4edb6",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo IX · DE LAS OBLIGACIONES DE LAS PERSONAS MORALES",
+  "derogado": false
+ },
+ "77": {
+  "archivo": "articulos/art-0077.md",
+  "sha256": "ed3ce22884f093cfac859e803a8e4dc2c4aaa039b247e6afbbf48c9ecb3cab62",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo IX · DE LAS OBLIGACIONES DE LAS PERSONAS MORALES",
+  "derogado": false
+ },
+ "77-a": {
+  "archivo": "articulos/art-0077-a.md",
+  "sha256": "49f52bb50d5248f584ead8295f81d44e4bc8fa0ae5496c82c6b6a6fec6f511cf",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo IX · DE LAS OBLIGACIONES DE LAS PERSONAS MORALES",
+  "derogado": false
+ },
+ "78": {
+  "archivo": "articulos/art-0078.md",
+  "sha256": "00a61c9bf3038fb0da8dcfb918e4a7c49cc6c974a800a42f20ea4ccef8c587fa",
+  "ubicacion": "Título II · DE LAS PERSONAS MORALES / Capítulo IX · DE LAS OBLIGACIONES DE LAS PERSONAS MORALES",
+  "derogado": false
+ },
+ "79": {
+  "archivo": "articulos/art-0079.md",
+  "sha256": "0cc8d2605851188586336feefcc7ddcabcda049394e5f341998f5b82623ca26c",
+  "ubicacion": "Título III · DEL RÉGIMEN DE LAS PERSONAS MORALES CON FINES NO LUCRATIVOS",
+  "derogado": false
+ },
+ "80": {
+  "archivo": "articulos/art-0080.md",
+  "sha256": "022c2979e4bc85a3001d57e6c4252611ed56fc1af94be40f7afdff77eba00b00",
+  "ubicacion": "Título III · DEL RÉGIMEN DE LAS PERSONAS MORALES CON FINES NO LUCRATIVOS",
+  "derogado": false
+ },
+ "81": {
+  "archivo": "articulos/art-0081.md",
+  "sha256": "28d8f0f9560018e4220626ede391775e2d58288bdf806291506119ab7ba8ff4c",
+  "ubicacion": "Título III · DEL RÉGIMEN DE LAS PERSONAS MORALES CON FINES NO LUCRATIVOS",
+  "derogado": false
+ },
+ "82": {
+  "archivo": "articulos/art-0082.md",
+  "sha256": "4520d0fe74d19206045a0b6e74b0a5cbf20c3ff3ae85a1274ab82e17bba6eb06",
+  "ubicacion": "Título III · DEL RÉGIMEN DE LAS PERSONAS MORALES CON FINES NO LUCRATIVOS",
+  "derogado": false
+ },
+ "82-bis": {
+  "archivo": "articulos/art-0082-bis.md",
+  "sha256": "70f544485d2e71bfe0415609075af0b1ae06f5c125be37996661e6185cf0c2c8",
+  "ubicacion": "Título III · DEL RÉGIMEN DE LAS PERSONAS MORALES CON FINES NO LUCRATIVOS",
+  "derogado": false
+ },
+ "82-ter": {
+  "archivo": "articulos/art-0082-ter.md",
+  "sha256": "14a38d6264ca75cb66cf6a6552cc72fba4584d4f13d91060f63837d47efd1287",
+  "ubicacion": "Título III · DEL RÉGIMEN DE LAS PERSONAS MORALES CON FINES NO LUCRATIVOS",
+  "derogado": true
+ },
+ "82-quater": {
+  "archivo": "articulos/art-0082-quater.md",
+  "sha256": "c2a571585ae99b00e70e43e457dc2296230ec6577cb2907f4304c9b006f33a81",
+  "ubicacion": "Título III · DEL RÉGIMEN DE LAS PERSONAS MORALES CON FINES NO LUCRATIVOS",
+  "derogado": false
+ },
+ "83": {
+  "archivo": "articulos/art-0083.md",
+  "sha256": "3489df89ad96d5cc63f417916e92c5deb363aeef1034a1630016614f3224ac4e",
+  "ubicacion": "Título III · DEL RÉGIMEN DE LAS PERSONAS MORALES CON FINES NO LUCRATIVOS",
+  "derogado": false
+ },
+ "84": {
+  "archivo": "articulos/art-0084.md",
+  "sha256": "67bdd71ded876a120b085154f4559bfaf76a25adbc8ecfdab681ae8a915a17d0",
+  "ubicacion": "Título III · DEL RÉGIMEN DE LAS PERSONAS MORALES CON FINES NO LUCRATIVOS",
+  "derogado": true
+ },
+ "85": {
+  "archivo": "articulos/art-0085.md",
+  "sha256": "7d75a125003d8fc43a9fb57ff23df090848fd2ee28d01e32c27772da54e0cef3",
+  "ubicacion": "Título III · DEL RÉGIMEN DE LAS PERSONAS MORALES CON FINES NO LUCRATIVOS",
+  "derogado": false
+ },
+ "86": {
+  "archivo": "articulos/art-0086.md",
+  "sha256": "4ecef4a0a7e116c1de1870647da1b866756d9e0453027470c6a9db8fa2bd9520",
+  "ubicacion": "Título III · DEL RÉGIMEN DE LAS PERSONAS MORALES CON FINES NO LUCRATIVOS",
+  "derogado": false
+ },
+ "87": {
+  "archivo": "articulos/art-0087.md",
+  "sha256": "e4178f77a3ddb98f6e26812e9aa109e3a8b12ca9227ff378094ab3b4883e839f",
+  "ubicacion": "Título III · DEL RÉGIMEN DE LAS PERSONAS MORALES CON FINES NO LUCRATIVOS",
+  "derogado": false
+ },
+ "88": {
+  "archivo": "articulos/art-0088.md",
+  "sha256": "0db0bceba6b52fd8449aa757873b0871568272105cc09571c6ddf73e99f144a3",
+  "ubicacion": "Título III · DEL RÉGIMEN DE LAS PERSONAS MORALES CON FINES NO LUCRATIVOS",
+  "derogado": false
+ },
+ "89": {
+  "archivo": "articulos/art-0089.md",
+  "sha256": "868224262fdcd507233f5a008d6f1a2ff4a933c9136ecd0dfd756a829f3644e8",
+  "ubicacion": "Título III · DEL RÉGIMEN DE LAS PERSONAS MORALES CON FINES NO LUCRATIVOS",
+  "derogado": false
+ },
+ "90": {
+  "archivo": "articulos/art-0090.md",
+  "sha256": "ff127892f4cbe3b486364b9196ad10e7b83279c60016d982b26de49810ae169f",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS",
+  "derogado": false
+ },
+ "91": {
+  "archivo": "articulos/art-0091.md",
+  "sha256": "11dbdfc050741fb0ed84b83b66479bebcd6642b9e354f6726f90db21bee636f1",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS",
+  "derogado": false
+ },
+ "92": {
+  "archivo": "articulos/art-0092.md",
+  "sha256": "5bdca95b9c8a10d2df9fccd16f545ff0fe0525ca205a6139ad7d38762a53ebbf",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS",
+  "derogado": false
+ },
+ "93": {
+  "archivo": "articulos/art-0093.md",
+  "sha256": "f93a8f4400f8e29f70f7aeb8bee0312587b7f09c604a709f1a6fcb76cec41583",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS",
+  "derogado": false
+ },
+ "94": {
+  "archivo": "articulos/art-0094.md",
+  "sha256": "e238cd4b3c031802e28ac8fb6cbb3027220c9929cd6fb2228effc3e5a3bd74de",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo I · DE LOS INGRESOS POR SALARIOS Y EN GENERAL POR LA PRESTACIÓN DE UN SERVICIO PERSONAL SUBORDINADO",
+  "derogado": false
+ },
+ "95": {
+  "archivo": "articulos/art-0095.md",
+  "sha256": "bf32151ab36cd36a2a47122a9d3769dada9298f40fd06e52889fa4147f72b580",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo I · DE LOS INGRESOS POR SALARIOS Y EN GENERAL POR LA PRESTACIÓN DE UN SERVICIO PERSONAL SUBORDINADO",
+  "derogado": false
+ },
+ "96": {
+  "archivo": "articulos/art-0096.md",
+  "sha256": "136255bc3567f92fe638fc30de0e826a26dbf2248fff47e10ee5a0c4f6496d2f",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo I · DE LOS INGRESOS POR SALARIOS Y EN GENERAL POR LA PRESTACIÓN DE UN SERVICIO PERSONAL SUBORDINADO",
+  "derogado": false
+ },
+ "96-bis": {
+  "archivo": "articulos/art-0096-bis.md",
+  "sha256": "59a739e57e32f0a297bf8179d2780b5c8aafe5e3103dd2431db9b47d0348d75d",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo I · DE LOS INGRESOS POR SALARIOS Y EN GENERAL POR LA PRESTACIÓN DE UN SERVICIO PERSONAL SUBORDINADO",
+  "derogado": false
+ },
+ "97": {
+  "archivo": "articulos/art-0097.md",
+  "sha256": "c49bfda2824fa0aaaa645b49a71434c05b6dea96577c00965f1ddc7621c262f7",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo I · DE LOS INGRESOS POR SALARIOS Y EN GENERAL POR LA PRESTACIÓN DE UN SERVICIO PERSONAL SUBORDINADO",
+  "derogado": false
+ },
+ "98": {
+  "archivo": "articulos/art-0098.md",
+  "sha256": "40e34281dc898aa308c9a8fe214f3028613bd13a0cf91f935ebc94e980c69605",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo I · DE LOS INGRESOS POR SALARIOS Y EN GENERAL POR LA PRESTACIÓN DE UN SERVICIO PERSONAL SUBORDINADO",
+  "derogado": false
+ },
+ "99": {
+  "archivo": "articulos/art-0099.md",
+  "sha256": "70d46f3c9db0c74357599fd36469dda96492459599ec5b72d640fb3c0597c25b",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo I · DE LOS INGRESOS POR SALARIOS Y EN GENERAL POR LA PRESTACIÓN DE UN SERVICIO PERSONAL SUBORDINADO",
+  "derogado": false
+ },
+ "100": {
+  "archivo": "articulos/art-0100.md",
+  "sha256": "71e63fbf52a925a9e73c74557b402ff4f5c238f31a22b7ec2b260826a47d06d6",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección I · DE LAS PERSONAS FÍSICAS CON ACTIVIDADES EMPRESARIALES Y PROFESIONALES",
+  "derogado": false
+ },
+ "101": {
+  "archivo": "articulos/art-0101.md",
+  "sha256": "a015ca2532b79025c322d6346243205730d7900f275eeedf6936c70714d06e21",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección I · DE LAS PERSONAS FÍSICAS CON ACTIVIDADES EMPRESARIALES Y PROFESIONALES",
+  "derogado": false
+ },
+ "102": {
+  "archivo": "articulos/art-0102.md",
+  "sha256": "98498454f481213b3a28596a6120f3588ceaa803e768bc509b49eaa340a9655e",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección I · DE LAS PERSONAS FÍSICAS CON ACTIVIDADES EMPRESARIALES Y PROFESIONALES",
+  "derogado": false
+ },
+ "103": {
+  "archivo": "articulos/art-0103.md",
+  "sha256": "51dea75a8221b8654a6ffdf0c373bf875660b12e0d22327595f3aaa0ffc51ce8",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección I · DE LAS PERSONAS FÍSICAS CON ACTIVIDADES EMPRESARIALES Y PROFESIONALES",
+  "derogado": false
+ },
+ "104": {
+  "archivo": "articulos/art-0104.md",
+  "sha256": "09f3c0bc0f5603a6fa2457e91f066700b3a2140c19cd810b22ffc1543439c59a",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección I · DE LAS PERSONAS FÍSICAS CON ACTIVIDADES EMPRESARIALES Y PROFESIONALES",
+  "derogado": false
+ },
+ "105": {
+  "archivo": "articulos/art-0105.md",
+  "sha256": "7af2244e35ff2c19964d5734dd09e93af5fb92c85795182a746d2a5e31a91eba",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección I · DE LAS PERSONAS FÍSICAS CON ACTIVIDADES EMPRESARIALES Y PROFESIONALES",
+  "derogado": false
+ },
+ "106": {
+  "archivo": "articulos/art-0106.md",
+  "sha256": "24cfba5bf05572c1d95e152ba3365c398ea90b4ccf0e98d221e9a3209ba6d4fe",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección I · DE LAS PERSONAS FÍSICAS CON ACTIVIDADES EMPRESARIALES Y PROFESIONALES",
+  "derogado": false
+ },
+ "107": {
+  "archivo": "articulos/art-0107.md",
+  "sha256": "e03c8083d60058dd0b69a0a78160bb8579af9a649c75fa0e06b9df9ff1e5a87d",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección I · DE LAS PERSONAS FÍSICAS CON ACTIVIDADES EMPRESARIALES Y PROFESIONALES",
+  "derogado": false
+ },
+ "108": {
+  "archivo": "articulos/art-0108.md",
+  "sha256": "e610dd7f8483b05817e61aa76db989a740f27d4da38521fe31e2ae4aa0b62be2",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección I · DE LAS PERSONAS FÍSICAS CON ACTIVIDADES EMPRESARIALES Y PROFESIONALES",
+  "derogado": false
+ },
+ "109": {
+  "archivo": "articulos/art-0109.md",
+  "sha256": "514b35d5e0be2e054b395c6d701258926fa60a20f1f9abe38e3fc88fe4ea9b07",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección I · DE LAS PERSONAS FÍSICAS CON ACTIVIDADES EMPRESARIALES Y PROFESIONALES",
+  "derogado": false
+ },
+ "110": {
+  "archivo": "articulos/art-0110.md",
+  "sha256": "2edd9f4f98d65239c6c644de0d375814b03664a8067bd41c3822f8f48c6f56c7",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección I · DE LAS PERSONAS FÍSICAS CON ACTIVIDADES EMPRESARIALES Y PROFESIONALES",
+  "derogado": false
+ },
+ "111": {
+  "archivo": "articulos/art-0111.md",
+  "sha256": "795a230f56502e8c9cdd68f186085fdbeb210cbd5bcb91454e246ce1366cc09b",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección II · RÉGIMEN DE INCORPORACIÓN FISCAL Se deroga Sección derogada DOF 12-11-2021",
+  "derogado": true
+ },
+ "112": {
+  "archivo": "articulos/art-0112.md",
+  "sha256": "98c9e6abc57eee48b1b55c57c890f428b2bc751d942d1cefaa0d61af6e47aaec",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección II · RÉGIMEN DE INCORPORACIÓN FISCAL Se deroga Sección derogada DOF 12-11-2021",
+  "derogado": true
+ },
+ "113": {
+  "archivo": "articulos/art-0113.md",
+  "sha256": "37073850b328b6e9a777c3f5aa8af5db65cf1a8d0aad81badb187f10d5b9bb94",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección II · RÉGIMEN DE INCORPORACIÓN FISCAL Se deroga Sección derogada DOF 12-11-2021",
+  "derogado": true
+ },
+ "113-a": {
+  "archivo": "articulos/art-0113-a.md",
+  "sha256": "2f3991a08f91cca8636d80b5fc2741da0353a3d6cd83dbffe304218a08ecbb8c",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección III · De los ingresos por la enajenación de bienes o la prestación de servicios a través de Internet, mediante plataformas tecnológicas, aplicaciones informáticas y similares Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "113-b": {
+  "archivo": "articulos/art-0113-b.md",
+  "sha256": "0409d1e708c2f81ebb769acad4bca84b1d10bbed729c054e890f0a362542d0d4",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección III · De los ingresos por la enajenación de bienes o la prestación de servicios a través de Internet, mediante plataformas tecnológicas, aplicaciones informáticas y similares Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "113-c": {
+  "archivo": "articulos/art-0113-c.md",
+  "sha256": "51211c58f3396d014c218334dfca5af9289f56c6ddb69290a9c369c7219e5ec3",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección III · De los ingresos por la enajenación de bienes o la prestación de servicios a través de Internet, mediante plataformas tecnológicas, aplicaciones informáticas y similares Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "113-d": {
+  "archivo": "articulos/art-0113-d.md",
+  "sha256": "d8e9292f05284dabed3b1411f06a477807e3c63573c4ce001a2d572b7ca0b834",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección III · De los ingresos por la enajenación de bienes o la prestación de servicios a través de Internet, mediante plataformas tecnológicas, aplicaciones informáticas y similares Sección adicionada DOF 09-12-2019",
+  "derogado": false
+ },
+ "113-e": {
+  "archivo": "articulos/art-0113-e.md",
+  "sha256": "42b7b703279ec48d8cea2bb851d69eb557ec8a1c0f7536da53580ba4058bf1d4",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección IV · DEL RÉGIMEN SIMPLIFICADO DE CONFIANZA Sección adicionada DOF 12-11-2021",
+  "derogado": false
+ },
+ "113-f": {
+  "archivo": "articulos/art-0113-f.md",
+  "sha256": "558ada9b4aaab864b6e28269228d35dcadf5c692fec909da0e071e3cbfa16a8a",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección IV · DEL RÉGIMEN SIMPLIFICADO DE CONFIANZA Sección adicionada DOF 12-11-2021",
+  "derogado": false
+ },
+ "113-g": {
+  "archivo": "articulos/art-0113-g.md",
+  "sha256": "9ae529ce34f9b82a5220c3cc80dcb9ef13346968a47b1b96483847a70794d987",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección IV · DEL RÉGIMEN SIMPLIFICADO DE CONFIANZA Sección adicionada DOF 12-11-2021",
+  "derogado": false
+ },
+ "113-h": {
+  "archivo": "articulos/art-0113-h.md",
+  "sha256": "65f044b287c797f134c17a8992deb101cc420cc15df40bf95c34796fe421cb24",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección IV · DEL RÉGIMEN SIMPLIFICADO DE CONFIANZA Sección adicionada DOF 12-11-2021",
+  "derogado": false
+ },
+ "113-i": {
+  "archivo": "articulos/art-0113-i.md",
+  "sha256": "406efa0a4e975d8b356b69f8874c118ed8de1229a45132a440273e3db808db79",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección IV · DEL RÉGIMEN SIMPLIFICADO DE CONFIANZA Sección adicionada DOF 12-11-2021",
+  "derogado": false
+ },
+ "113-j": {
+  "archivo": "articulos/art-0113-j.md",
+  "sha256": "61de1d993233f9727278919e9bdb4496008695570d33b34f3eb9eb323758ac43",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo II · DE LOS INGRESOS POR ACTIVIDADES EMPRESARIALES Y PROFESIONALES / Sección IV · DEL RÉGIMEN SIMPLIFICADO DE CONFIANZA Sección adicionada DOF 12-11-2021",
+  "derogado": false
+ },
+ "114": {
+  "archivo": "articulos/art-0114.md",
+  "sha256": "11a45080aaa9b2386ee15acc28e300578eceb1813d53d94eaa63c15a292b1e15",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo III · DE LOS INGRESOS POR ARRENDAMIENTO Y EN GENERAL POR OTORGAR EL USO O GOCE TEMPORAL DE BIENES INMUEBLES",
+  "derogado": false
+ },
+ "115": {
+  "archivo": "articulos/art-0115.md",
+  "sha256": "ec85718a3933f3cbf099b1ab66acd62a9c68d28472de05aa4db8c073ed0cca54",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo III · DE LOS INGRESOS POR ARRENDAMIENTO Y EN GENERAL POR OTORGAR EL USO O GOCE TEMPORAL DE BIENES INMUEBLES",
+  "derogado": false
+ },
+ "116": {
+  "archivo": "articulos/art-0116.md",
+  "sha256": "ecde42b43c670018efb3600d29d3ed948ccc41fa05e6c7ac8708ab00636b417f",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo III · DE LOS INGRESOS POR ARRENDAMIENTO Y EN GENERAL POR OTORGAR EL USO O GOCE TEMPORAL DE BIENES INMUEBLES",
+  "derogado": false
+ },
+ "117": {
+  "archivo": "articulos/art-0117.md",
+  "sha256": "1d7ab2886f7db14d4aba92fae4e7f3c5329aebfd970f9d83cc17facb58c85987",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo III · DE LOS INGRESOS POR ARRENDAMIENTO Y EN GENERAL POR OTORGAR EL USO O GOCE TEMPORAL DE BIENES INMUEBLES",
+  "derogado": false
+ },
+ "118": {
+  "archivo": "articulos/art-0118.md",
+  "sha256": "141c967e377b6e11afad8965291ea4d1862d975b3c1d6cf808721114ea190f33",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo III · DE LOS INGRESOS POR ARRENDAMIENTO Y EN GENERAL POR OTORGAR EL USO O GOCE TEMPORAL DE BIENES INMUEBLES",
+  "derogado": false
+ },
+ "119": {
+  "archivo": "articulos/art-0119.md",
+  "sha256": "dd12e5d0bb9e7380e691f214ebe3b9d2d7b1c9665b9c4ef5e735c2d6e5bc6fcc",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo IV · DE LOS INGRESOS POR ENAJENACIÓN DE BIENES / Sección I · DEL RÉGIMEN GENERAL",
+  "derogado": false
+ },
+ "120": {
+  "archivo": "articulos/art-0120.md",
+  "sha256": "2f88b8266750eedd2058f21f2bd82863fd974a3d510c32e98bdc7f9744399210",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo IV · DE LOS INGRESOS POR ENAJENACIÓN DE BIENES / Sección I · DEL RÉGIMEN GENERAL",
+  "derogado": false
+ },
+ "121": {
+  "archivo": "articulos/art-0121.md",
+  "sha256": "05175c37beb2100ec79e8d4114d562c1008edd55d2621af27626441f4e7a20b1",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo IV · DE LOS INGRESOS POR ENAJENACIÓN DE BIENES / Sección I · DEL RÉGIMEN GENERAL",
+  "derogado": false
+ },
+ "122": {
+  "archivo": "articulos/art-0122.md",
+  "sha256": "ff3c91b119a51ba6845ff4ddc7d9e0b5152761f7dcc7e7a77fced5a1b2d839a6",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo IV · DE LOS INGRESOS POR ENAJENACIÓN DE BIENES / Sección I · DEL RÉGIMEN GENERAL",
+  "derogado": false
+ },
+ "123": {
+  "archivo": "articulos/art-0123.md",
+  "sha256": "078fdf0c2d3aa54c73660f169eaaaa9642e5700499f159f287d49a1bb4441351",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo IV · DE LOS INGRESOS POR ENAJENACIÓN DE BIENES / Sección I · DEL RÉGIMEN GENERAL",
+  "derogado": false
+ },
+ "124": {
+  "archivo": "articulos/art-0124.md",
+  "sha256": "26a384ebaa00469bc0f4a0e15eed6392bc30e131619cadb57053beae6affdb37",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo IV · DE LOS INGRESOS POR ENAJENACIÓN DE BIENES / Sección I · DEL RÉGIMEN GENERAL",
+  "derogado": false
+ },
+ "125": {
+  "archivo": "articulos/art-0125.md",
+  "sha256": "3a9036e14aa768335ce911b200d27796fb29fab7264267b20b35e9e5a4777c4d",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo IV · DE LOS INGRESOS POR ENAJENACIÓN DE BIENES / Sección I · DEL RÉGIMEN GENERAL",
+  "derogado": false
+ },
+ "126": {
+  "archivo": "articulos/art-0126.md",
+  "sha256": "c4def992b3d915a8a7da636ed0125ba304ff32c56fda4254e9119d965734392b",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo IV · DE LOS INGRESOS POR ENAJENACIÓN DE BIENES / Sección I · DEL RÉGIMEN GENERAL",
+  "derogado": false
+ },
+ "127": {
+  "archivo": "articulos/art-0127.md",
+  "sha256": "c0b989a664c63cd30b4ac694320ae41f9b09732d2abb3cfa0cae9118006adc60",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo IV · DE LOS INGRESOS POR ENAJENACIÓN DE BIENES / Sección I · DEL RÉGIMEN GENERAL",
+  "derogado": false
+ },
+ "128": {
+  "archivo": "articulos/art-0128.md",
+  "sha256": "5bf5aa2a433170d7bf520ca2eec3f6d87d5e4ba339f6ce3aa840e0af5e6c9d41",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo IV · DE LOS INGRESOS POR ENAJENACIÓN DE BIENES / Sección I · DEL RÉGIMEN GENERAL",
+  "derogado": false
+ },
+ "129": {
+  "archivo": "articulos/art-0129.md",
+  "sha256": "53bbebcf4200d915debe9c2b1c4143d73ba4f126ff6b05eaee5d40b5a7c226ed",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo IV · DE LOS INGRESOS POR ENAJENACIÓN DE BIENES / Sección II · DE LA ENAJENACIÓN DE ACCIONES EN BOLSA DE VALORES",
+  "derogado": false
+ },
+ "130": {
+  "archivo": "articulos/art-0130.md",
+  "sha256": "73dd6a425f9d2a26b489e74f80ff746544f4bd91d11acbe5e3f827f62fafcd13",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo V · DE LOS INGRESOS POR ADQUISICIÓN DE BIENES",
+  "derogado": false
+ },
+ "131": {
+  "archivo": "articulos/art-0131.md",
+  "sha256": "5977ef0b532ba909ba43ac21eb9f0e92ccb460055e8a17f92f6a1ca75f4776f2",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo V · DE LOS INGRESOS POR ADQUISICIÓN DE BIENES",
+  "derogado": false
+ },
+ "132": {
+  "archivo": "articulos/art-0132.md",
+  "sha256": "cbd1a3b0533a2554cc6255a3d391431e0a7dd399ba4d43c026ceefa1460bc986",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo V · DE LOS INGRESOS POR ADQUISICIÓN DE BIENES",
+  "derogado": false
+ },
+ "133": {
+  "archivo": "articulos/art-0133.md",
+  "sha256": "34783dd78844da6f9120189e194fd7f3d4284aed37ed356e321839c5af771579",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo VI · DE LOS INGRESOS POR INTERESES",
+  "derogado": false
+ },
+ "134": {
+  "archivo": "articulos/art-0134.md",
+  "sha256": "6d4f256d0c91a4947b54d7773441b714af51c3ebd4b9217262ce1a92137bbb99",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo VI · DE LOS INGRESOS POR INTERESES",
+  "derogado": false
+ },
+ "135": {
+  "archivo": "articulos/art-0135.md",
+  "sha256": "9b58b9255126413fc4a1df07fb0ce04512de832ec3572e2287309813da77a199",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo VI · DE LOS INGRESOS POR INTERESES",
+  "derogado": false
+ },
+ "136": {
+  "archivo": "articulos/art-0136.md",
+  "sha256": "8e71ab3f57c77055b7d8df40fb4ad36f682da407dd4b3ae6ca3dd0091507c2cf",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo VI · DE LOS INGRESOS POR INTERESES",
+  "derogado": false
+ },
+ "137": {
+  "archivo": "articulos/art-0137.md",
+  "sha256": "4e0ec9c0625734102ac6dd19514fff5a69419faf52e25ce628cf30e5ccae8cd9",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo VII · DE LOS INGRESOS POR LA OBTENCIÓN DE PREMIOS",
+  "derogado": false
+ },
+ "138": {
+  "archivo": "articulos/art-0138.md",
+  "sha256": "72e844d10f4f8c95d7cb891d8f778ebd869dbf7751f2955ca1c0f00482658131",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo VII · DE LOS INGRESOS POR LA OBTENCIÓN DE PREMIOS",
+  "derogado": false
+ },
+ "139": {
+  "archivo": "articulos/art-0139.md",
+  "sha256": "d0f34f1fc664b6a7fb1d0814ef653b852f550c9c3decea6698fcdf921bc0b0e0",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo VII · DE LOS INGRESOS POR LA OBTENCIÓN DE PREMIOS",
+  "derogado": false
+ },
+ "140": {
+  "archivo": "articulos/art-0140.md",
+  "sha256": "13f81153585f0f2feff5cd271414de47da3959b47f221d6304eee20bb8b90fe3",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo VIII · DE LOS INGRESOS POR DIVIDENDOS Y EN GENERAL POR LAS GANANCIAS DISTRIBUIDAS POR PERSONAS MORALES",
+  "derogado": false
+ },
+ "141": {
+  "archivo": "articulos/art-0141.md",
+  "sha256": "faa0ca1722a2b559d740442f87c25dbc6e85bfb89db8c17b284d022f22d0818a",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo IX · DE LOS DEMÁS INGRESOS QUE OBTENGAN LAS PERSONAS FÍSICAS",
+  "derogado": false
+ },
+ "142": {
+  "archivo": "articulos/art-0142.md",
+  "sha256": "b744c6bba5dcd91e78999e9fcf8ea68a0d09629595eee1417c7979c80a0a45ef",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo IX · DE LOS DEMÁS INGRESOS QUE OBTENGAN LAS PERSONAS FÍSICAS",
+  "derogado": false
+ },
+ "143": {
+  "archivo": "articulos/art-0143.md",
+  "sha256": "59e0be75074d4754cef2a4c2fec93979e5dac70e62d1d07030d1223290464aa0",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo IX · DE LOS DEMÁS INGRESOS QUE OBTENGAN LAS PERSONAS FÍSICAS",
+  "derogado": false
+ },
+ "144": {
+  "archivo": "articulos/art-0144.md",
+  "sha256": "4e857c9cc3104f6cb12c7debf9a4b9e023d859a17d87fcdad37d91f15cb8b7e2",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo IX · DE LOS DEMÁS INGRESOS QUE OBTENGAN LAS PERSONAS FÍSICAS",
+  "derogado": false
+ },
+ "145": {
+  "archivo": "articulos/art-0145.md",
+  "sha256": "45748392807876ae169338bcf4eef5724e9ebce5467195e5b6969d5165355c5b",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo IX · DE LOS DEMÁS INGRESOS QUE OBTENGAN LAS PERSONAS FÍSICAS",
+  "derogado": false
+ },
+ "146": {
+  "archivo": "articulos/art-0146.md",
+  "sha256": "62448f3ab7841f45d69824021c52c18cab9e9fbc825889b8718d1e38db88fa3d",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo IX · DE LOS DEMÁS INGRESOS QUE OBTENGAN LAS PERSONAS FÍSICAS",
+  "derogado": false
+ },
+ "147": {
+  "archivo": "articulos/art-0147.md",
+  "sha256": "3e8574187491c03bb87798500cf5a52ee9d5414c95a6cf553c7ad33c982a69a1",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo X · DE LOS REQUISITOS DE LAS DEDUCCIONES",
+  "derogado": false
+ },
+ "148": {
+  "archivo": "articulos/art-0148.md",
+  "sha256": "ea20e2f997aac1dd1526e9735a8de8bbb0d47bd88252d0855b78bee06b2e1c1e",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo X · DE LOS REQUISITOS DE LAS DEDUCCIONES",
+  "derogado": false
+ },
+ "149": {
+  "archivo": "articulos/art-0149.md",
+  "sha256": "8b0536656af10ea4d317eb5eea4acbe9cb1098e827513f723565bcd93cc29c47",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo X · DE LOS REQUISITOS DE LAS DEDUCCIONES",
+  "derogado": false
+ },
+ "150": {
+  "archivo": "articulos/art-0150.md",
+  "sha256": "a4da8f312a9309485ecb25674273ff2fa090f9258ac368ead5962100092d4e1f",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo XI · DE LA DECLARACIÓN ANUAL",
+  "derogado": false
+ },
+ "151": {
+  "archivo": "articulos/art-0151.md",
+  "sha256": "f6cf2ffdcac9db068c0cfa8e7beb289ec4c8d767dc43c84490c80a65b6a8340e",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo XI · DE LA DECLARACIÓN ANUAL",
+  "derogado": false
+ },
+ "152": {
+  "archivo": "articulos/art-0152.md",
+  "sha256": "ab774199d925126f2f566c95d38ac97e5cab431436a253fbd1b343417515c366",
+  "ubicacion": "Título IV · DE LAS PERSONAS FÍSICAS / Capítulo XI · DE LA DECLARACIÓN ANUAL",
+  "derogado": false
+ },
+ "153": {
+  "archivo": "articulos/art-0153.md",
+  "sha256": "50882ba700da7c0c342764bfecc541eb252507afb6637ee1b6c33af35488386c",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "154": {
+  "archivo": "articulos/art-0154.md",
+  "sha256": "6d3420483cc85c6c2214d2032e8842085f4cb22a1a6986d440f9823aa665841e",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "155": {
+  "archivo": "articulos/art-0155.md",
+  "sha256": "055cd48c3cc64868ccb35fe8fc4bfd7a1eb6f6f71ea60c61edb889b77676f209",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "156": {
+  "archivo": "articulos/art-0156.md",
+  "sha256": "1ef1c0e8a5ab31430d73a7e185bd4b8ccf3bff411c6c849a1f43fc54ef11703d",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "157": {
+  "archivo": "articulos/art-0157.md",
+  "sha256": "eff8af24b0d7884006e486db670461accca243c001d2bfd65390018f814bf2d9",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "158": {
+  "archivo": "articulos/art-0158.md",
+  "sha256": "75bdf5b228cabe4c731f554b8ec43792ad0fbcd4db6712488501299e95e7a6f2",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "159": {
+  "archivo": "articulos/art-0159.md",
+  "sha256": "926445033cea85129801540a4de0b9b07e413f40eeb1653fb2236812c230f3b1",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "160": {
+  "archivo": "articulos/art-0160.md",
+  "sha256": "96c5af035bd36407b096e4194f68640fe0284de76a5582c7d3774c35a6c8d330",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "161": {
+  "archivo": "articulos/art-0161.md",
+  "sha256": "9846073fc93ff5cdd0315633c2620d85fc1c002a00cf1180f697bd4710125769",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "162": {
+  "archivo": "articulos/art-0162.md",
+  "sha256": "26dcd23faa9465f7e554cd0c94b7f9941581b87ac70587d443e74c7cc58db5c3",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "163": {
+  "archivo": "articulos/art-0163.md",
+  "sha256": "d7f3c72fbc63b78196428aea00ff18d7c695162188a2e2b6bc40e1a97b6479fc",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "164": {
+  "archivo": "articulos/art-0164.md",
+  "sha256": "05b57ae43736f008b53000086b28ca0608962666ab91484bc2081f38fd606c56",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "165": {
+  "archivo": "articulos/art-0165.md",
+  "sha256": "d464f16b4f5b6baf90d28cafb4a8855b25341354b15805cefa3b8f79fcffff08",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "166": {
+  "archivo": "articulos/art-0166.md",
+  "sha256": "86dbe2d9e768d8bf9353d5b7b8900f6c32b64881dc721881f342ff7c4a3ba7ae",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "167": {
+  "archivo": "articulos/art-0167.md",
+  "sha256": "3a000aa31554bf865475ef0638b40a87940d2a09bd69298a0083e66b85e2eb91",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "168": {
+  "archivo": "articulos/art-0168.md",
+  "sha256": "b26fd7bf88c5e700fc44a7aa7de7b78e36b86e813614f657e6ee2546bb064335",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "169": {
+  "archivo": "articulos/art-0169.md",
+  "sha256": "e218b0572ba15ddfe6e0c958a77dc079e25d361611bed991ebd3afe266a4c2a5",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "170": {
+  "archivo": "articulos/art-0170.md",
+  "sha256": "10006a0a0b55c7b342fa3b53d67ec610e14c17b980ca648e444e7b405d66b143",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "171": {
+  "archivo": "articulos/art-0171.md",
+  "sha256": "f7f606a2dfa812340f69fee93fbaf801f1dfe7d641cc90592d5550328b18085f",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "172": {
+  "archivo": "articulos/art-0172.md",
+  "sha256": "400762853169db74e0d40f5fd588c2440ffad411ffc69efd0d798e4b092ae488",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "173": {
+  "archivo": "articulos/art-0173.md",
+  "sha256": "3882dc5c4e72bf89259ad9ae7243aac3038ca08207c784188c6f5e47956e5f6e",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "174": {
+  "archivo": "articulos/art-0174.md",
+  "sha256": "241fe341a94437053f3d1ad26f6c7225d1c99460a19dbba35491719891f28b44",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "175": {
+  "archivo": "articulos/art-0175.md",
+  "sha256": "569165968de6520a4bb0f63d1597246dfa400a6bb8fac2b95f40c12b0a19d570",
+  "ubicacion": "Título V · DE LOS RESIDENTES EN EL EXTRANJERO CON INGRESOS PROVENIENTES DE FUENTE DE RIQUEZA UBICADA EN TERRITORIO NACIONAL",
+  "derogado": false
+ },
+ "176": {
+  "archivo": "articulos/art-0176.md",
+  "sha256": "1420ba570e336f96aa89bbb675f1c59d62a8898afdcdaf8cf7d0fcce06a8cd84",
+  "ubicacion": "Título VI · DE LAS ENTIDADES EXTRANJERAS CONTROLADAS SUJETAS A REGÍMENES FISCALES PREFERENTES, DE LAS EMPRESAS MULTINACIONALES Y DE LAS OPERACIONES CELEBRADAS ENTRE PARTES RELACIONADAS Denominación del Título reformada DOF 09-12-2019, 12-11-2021 / Capítulo I · DE LAS ENTIDADES EXTRANJERAS CONTROLADAS SUJETAS A REGÍMENES FISCALES PREFERENTES Denominación del Capítulo reformada DOF 09-12-2019",
+  "derogado": false
+ },
+ "177": {
+  "archivo": "articulos/art-0177.md",
+  "sha256": "fd7ad765d3dee31d968623f1caf81dd07fb3cfd858c5ee19da63bb368c692fc3",
+  "ubicacion": "Título VI · DE LAS ENTIDADES EXTRANJERAS CONTROLADAS SUJETAS A REGÍMENES FISCALES PREFERENTES, DE LAS EMPRESAS MULTINACIONALES Y DE LAS OPERACIONES CELEBRADAS ENTRE PARTES RELACIONADAS Denominación del Título reformada DOF 09-12-2019, 12-11-2021 / Capítulo I · DE LAS ENTIDADES EXTRANJERAS CONTROLADAS SUJETAS A REGÍMENES FISCALES PREFERENTES Denominación del Capítulo reformada DOF 09-12-2019",
+  "derogado": false
+ },
+ "178": {
+  "archivo": "articulos/art-0178.md",
+  "sha256": "a2025fc5a4eed13362a018baa9ee34dff7909f73b5667829ca745263c40a646a",
+  "ubicacion": "Título VI · DE LAS ENTIDADES EXTRANJERAS CONTROLADAS SUJETAS A REGÍMENES FISCALES PREFERENTES, DE LAS EMPRESAS MULTINACIONALES Y DE LAS OPERACIONES CELEBRADAS ENTRE PARTES RELACIONADAS Denominación del Título reformada DOF 09-12-2019, 12-11-2021 / Capítulo I · DE LAS ENTIDADES EXTRANJERAS CONTROLADAS SUJETAS A REGÍMENES FISCALES PREFERENTES Denominación del Capítulo reformada DOF 09-12-2019",
+  "derogado": false
+ },
+ "179": {
+  "archivo": "articulos/art-0179.md",
+  "sha256": "31160908b302ead181dc5f02fa5439221a60507871b7adb5461164f3e930b365",
+  "ubicacion": "Título VI · DE LAS ENTIDADES EXTRANJERAS CONTROLADAS SUJETAS A REGÍMENES FISCALES PREFERENTES, DE LAS EMPRESAS MULTINACIONALES Y DE LAS OPERACIONES CELEBRADAS ENTRE PARTES RELACIONADAS Denominación del Título reformada DOF 09-12-2019, 12-11-2021 / Capítulo II · DE LAS EMPRESAS MULTINACIONALES Y DE LAS OPERACIONES CELEBRADAS ENTRE PARTES RELACIONADAS Denominación del Capítulo reformada DOF 12-11-2021",
+  "derogado": false
+ },
+ "180": {
+  "archivo": "articulos/art-0180.md",
+  "sha256": "e215fb8b2ef665719a083fbc268e4def12fcbf5bb3455a02d1ce074d2d493c8e",
+  "ubicacion": "Título VI · DE LAS ENTIDADES EXTRANJERAS CONTROLADAS SUJETAS A REGÍMENES FISCALES PREFERENTES, DE LAS EMPRESAS MULTINACIONALES Y DE LAS OPERACIONES CELEBRADAS ENTRE PARTES RELACIONADAS Denominación del Título reformada DOF 09-12-2019, 12-11-2021 / Capítulo II · DE LAS EMPRESAS MULTINACIONALES Y DE LAS OPERACIONES CELEBRADAS ENTRE PARTES RELACIONADAS Denominación del Capítulo reformada DOF 12-11-2021",
+  "derogado": false
+ },
+ "181": {
+  "archivo": "articulos/art-0181.md",
+  "sha256": "7d2030111b43ed728a71cc641ddf976e85da9e5b995d361a12439d535d9af253",
+  "ubicacion": "Título VI · DE LAS ENTIDADES EXTRANJERAS CONTROLADAS SUJETAS A REGÍMENES FISCALES PREFERENTES, DE LAS EMPRESAS MULTINACIONALES Y DE LAS OPERACIONES CELEBRADAS ENTRE PARTES RELACIONADAS Denominación del Título reformada DOF 09-12-2019, 12-11-2021 / Capítulo II · DE LAS EMPRESAS MULTINACIONALES Y DE LAS OPERACIONES CELEBRADAS ENTRE PARTES RELACIONADAS Denominación del Capítulo reformada DOF 12-11-2021",
+  "derogado": false
+ },
+ "182": {
+  "archivo": "articulos/art-0182.md",
+  "sha256": "6dfa34146fe6366d81b72ee803fb02253db087a9ff8b1454a5e22c9f01962865",
+  "ubicacion": "Título VI · DE LAS ENTIDADES EXTRANJERAS CONTROLADAS SUJETAS A REGÍMENES FISCALES PREFERENTES, DE LAS EMPRESAS MULTINACIONALES Y DE LAS OPERACIONES CELEBRADAS ENTRE PARTES RELACIONADAS Denominación del Título reformada DOF 09-12-2019, 12-11-2021 / Capítulo II · DE LAS EMPRESAS MULTINACIONALES Y DE LAS OPERACIONES CELEBRADAS ENTRE PARTES RELACIONADAS Denominación del Capítulo reformada DOF 12-11-2021",
+  "derogado": false
+ },
+ "183": {
+  "archivo": "articulos/art-0183.md",
+  "sha256": "6612b45ef5b3fccf77302fc69c7e1aedcbde73b5ff9ced1f2fc3ff4f39a82f3c",
+  "ubicacion": "Título VI · DE LAS ENTIDADES EXTRANJERAS CONTROLADAS SUJETAS A REGÍMENES FISCALES PREFERENTES, DE LAS EMPRESAS MULTINACIONALES Y DE LAS OPERACIONES CELEBRADAS ENTRE PARTES RELACIONADAS Denominación del Título reformada DOF 09-12-2019, 12-11-2021 / Capítulo II · DE LAS EMPRESAS MULTINACIONALES Y DE LAS OPERACIONES CELEBRADAS ENTRE PARTES RELACIONADAS Denominación del Capítulo reformada DOF 12-11-2021",
+  "derogado": false
+ },
+ "183-bis": {
+  "archivo": "articulos/art-0183-bis.md",
+  "sha256": "eda74760ae5ed4a4cd1b9d89d9bff4897adb466d064a393ab3134cd80d1b83d3",
+  "ubicacion": "Título VI · DE LAS ENTIDADES EXTRANJERAS CONTROLADAS SUJETAS A REGÍMENES FISCALES PREFERENTES, DE LAS EMPRESAS MULTINACIONALES Y DE LAS OPERACIONES CELEBRADAS ENTRE PARTES RELACIONADAS Denominación del Título reformada DOF 09-12-2019, 12-11-2021 / Capítulo II · DE LAS EMPRESAS MULTINACIONALES Y DE LAS OPERACIONES CELEBRADAS ENTRE PARTES RELACIONADAS Denominación del Capítulo reformada DOF 12-11-2021",
+  "derogado": false
+ },
+ "184": {
+  "archivo": "articulos/art-0184.md",
+  "sha256": "32158bdb0ebb0d4c9e7ff9c77f0e2dc9915b1c874a4fd2369a6e81ad78d970d7",
+  "ubicacion": "Título VI · DE LAS ENTIDADES EXTRANJERAS CONTROLADAS SUJETAS A REGÍMENES FISCALES PREFERENTES, DE LAS EMPRESAS MULTINACIONALES Y DE LAS OPERACIONES CELEBRADAS ENTRE PARTES RELACIONADAS Denominación del Título reformada DOF 09-12-2019, 12-11-2021 / Capítulo II · DE LAS EMPRESAS MULTINACIONALES Y DE LAS OPERACIONES CELEBRADAS ENTRE PARTES RELACIONADAS Denominación del Capítulo reformada DOF 12-11-2021",
+  "derogado": false
+ },
+ "185": {
+  "archivo": "articulos/art-0185.md",
+  "sha256": "5867b235e3db44e31146340d1fbf9a96d34baa984f6c7575ad8802180608cce8",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo I · DE LAS CUENTAS PERSONALES DEL AHORRO",
+  "derogado": false
+ },
+ "186": {
+  "archivo": "articulos/art-0186.md",
+  "sha256": "115f9136334f88e1d4150c79088f37b71c80764d893af5391a2cb9ba4d186f63",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo II · DE LOS PATRONES QUE CONTRATEN A PERSONAS QUE PADEZCAN DISCAPACIDAD Y ADULTOS MAYORES",
+  "derogado": false
+ },
+ "187": {
+  "archivo": "articulos/art-0187.md",
+  "sha256": "acd4bfcbeba64aea3d62aa99482e608ab8b5c442297f2762e2220a93a4d4f06f",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo III · DE LOS FIDEICOMISOS DEDICADOS A LA ADQUISICIÓN O CONSTRUCCIÓN DE INMUEBLES",
+  "derogado": false
+ },
+ "188": {
+  "archivo": "articulos/art-0188.md",
+  "sha256": "84e1976d087185684d8771068a9f9a905e8f564259c9aa8afea684995fe00cbd",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo III · DE LOS FIDEICOMISOS DEDICADOS A LA ADQUISICIÓN O CONSTRUCCIÓN DE INMUEBLES",
+  "derogado": false
+ },
+ "189": {
+  "archivo": "articulos/art-0189.md",
+  "sha256": "9a66e64af6ce428681e282b92e313e0511c1b49671ec51bcb2b2d0210e598357",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo IV · DE LOS ESTÍMULOS FISCALES A LA PRODUCCIÓN Y DISTRIBUCIÓN CINEMATOGRÁFICA Y TEATRAL NACIONAL",
+  "derogado": false
+ },
+ "190": {
+  "archivo": "articulos/art-0190.md",
+  "sha256": "b75f5bb85c8f91bebeb9c17e26b43e4aa4cfe2c05b1609c0701e4386727edcf3",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo IV · DE LOS ESTÍMULOS FISCALES A LA PRODUCCIÓN Y DISTRIBUCIÓN CINEMATOGRÁFICA Y TEATRAL NACIONAL",
+  "derogado": false
+ },
+ "191": {
+  "archivo": "articulos/art-0191.md",
+  "sha256": "02daa847068cf183ea110f1fc24e4f6ef3547e99d420b3d27ccc4c0d3d67e6dc",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo V · DE LOS CONTRIBUYENTES DEDICADOS A LA CONSTRUCCIÓN Y ENAJENACIÓN DE DESARROLLOS INMOBILIARIOS",
+  "derogado": false
+ },
+ "192": {
+  "archivo": "articulos/art-0192.md",
+  "sha256": "a827700702a331db4e9e776247b84ebe7267d6e39b0ccd4c080900f3d9fbc943",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo VI · DE LA PROMOCIÓN DE LA INVERSIÓN EN CAPITAL DE RIESGO EN EL PAÍS",
+  "derogado": false
+ },
+ "193": {
+  "archivo": "articulos/art-0193.md",
+  "sha256": "5a25e8c1249263aa0ca40df7dd9bb6bf6088029e25a0baabc053def56c5461da",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo VI · DE LA PROMOCIÓN DE LA INVERSIÓN EN CAPITAL DE RIESGO EN EL PAÍS",
+  "derogado": false
+ },
+ "194": {
+  "archivo": "articulos/art-0194.md",
+  "sha256": "547b18cd55f63dff626e9915b6df7563ace7f6ff8e66574f2be4583b252cb80f",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo VII · DE LAS SOCIEDADES COOPERATIVAS DE PRODUCCIÓN",
+  "derogado": false
+ },
+ "195": {
+  "archivo": "articulos/art-0195.md",
+  "sha256": "4d39f529f513b112f547b6654582dc961ac1074f13d017c8c0df34083f95dade",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo VII · DE LAS SOCIEDADES COOPERATIVAS DE PRODUCCIÓN",
+  "derogado": false
+ },
+ "196": {
+  "archivo": "articulos/art-0196.md",
+  "sha256": "2d604f62f16ecc4c231b2eff5c8938bc422c70b17f7ab6d3e12cad1deea944bc",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo VIII · DE LA OPCIÓN DE ACUMULACIÓN DE INGRESOS POR PERSONAS MORALES Se deroga Capítulo adicionado DOF 30-11-2016. Derogado DOF 12-11-2021",
+  "derogado": true
+ },
+ "197": {
+  "archivo": "articulos/art-0197.md",
+  "sha256": "5b2b1a1067c9e14df0046effed7db8cd6e7b500326f41e83fd78beab0959fbb8",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo VIII · DE LA OPCIÓN DE ACUMULACIÓN DE INGRESOS POR PERSONAS MORALES Se deroga Capítulo adicionado DOF 30-11-2016. Derogado DOF 12-11-2021",
+  "derogado": true
+ },
+ "198": {
+  "archivo": "articulos/art-0198.md",
+  "sha256": "6e5d9ba91730853b4c7c71c70e9bb48fa057ced2e0a8b4549d4410acb50a8cda",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo VIII · DE LA OPCIÓN DE ACUMULACIÓN DE INGRESOS POR PERSONAS MORALES Se deroga Capítulo adicionado DOF 30-11-2016. Derogado DOF 12-11-2021",
+  "derogado": true
+ },
+ "199": {
+  "archivo": "articulos/art-0199.md",
+  "sha256": "6600bf1c8d862fcba7647c3dc85ae539128b87268fb26374b0ea2d4aeab3f94e",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo VIII · DE LA OPCIÓN DE ACUMULACIÓN DE INGRESOS POR PERSONAS MORALES Se deroga Capítulo adicionado DOF 30-11-2016. Derogado DOF 12-11-2021",
+  "derogado": true
+ },
+ "200": {
+  "archivo": "articulos/art-0200.md",
+  "sha256": "8140a45d0b6dd844358066ad8ad9f19fdd867b0fd1f03005177dc867e999dffb",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo VIII · DE LA OPCIÓN DE ACUMULACIÓN DE INGRESOS POR PERSONAS MORALES Se deroga Capítulo adicionado DOF 30-11-2016. Derogado DOF 12-11-2021",
+  "derogado": true
+ },
+ "201": {
+  "archivo": "articulos/art-0201.md",
+  "sha256": "29bbf0cf84b5054d62c708d9142c6fa449296e9513e1b440ba2357ff47355a06",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo VIII · DE LA OPCIÓN DE ACUMULACIÓN DE INGRESOS POR PERSONAS MORALES Se deroga Capítulo adicionado DOF 30-11-2016. Derogado DOF 12-11-2021",
+  "derogado": true
+ },
+ "202": {
+  "archivo": "articulos/art-0202.md",
+  "sha256": "94d4224cc6eec7b3fe96fb54d893f018281242e83f425d405581354a786c19e7",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo IX · DEL ESTÍMULO FISCAL A LA INVESTIGACIÓN Y DESARROLLO DE TECNOLOGÍA Capítulo adicionado DOF 30-11-2016",
+  "derogado": false
+ },
+ "203": {
+  "archivo": "articulos/art-0203.md",
+  "sha256": "925303ef5dc0c7a55d0cea06e2d1eb6c745eb15f3d6f5f028fb62149293b7c72",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo X · DEL ESTÍMULO FISCAL AL DEPORTE DE ALTO RENDIMIENTO Capítulo adicionado DOF 30-11-2016",
+  "derogado": false
+ },
+ "204": {
+  "archivo": "articulos/art-0204.md",
+  "sha256": "909c751407de5dc0a43e3a1c25a3cd1d7742d363273b45cfce35f00fee8297af",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo XI · DE LOS EQUIPOS DE ALIMENTACIÓN PARA VEHÍCULOS ELÉCTRICOS Capítulo adicionado DOF 30-11-2016",
+  "derogado": false
+ },
+ "205": {
+  "archivo": "articulos/art-0205.md",
+  "sha256": "b93a8565bc04c854bb4de6545b632494de23dd6cd6c82013e21ab90357e2c822",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo XI · DE LOS EQUIPOS DE ALIMENTACIÓN PARA VEHÍCULOS ELÉCTRICOS Capítulo adicionado DOF 30-11-2016",
+  "derogado": false
+ },
+ "206": {
+  "archivo": "articulos/art-0206.md",
+  "sha256": "5237c7a9e0790b8a4c4c0642a39bfc10ad78853434bb792bf08d68bb36007f07",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo XII · RÉGIMEN SIMPLIFICADO DE CONFIANZA DE PERSONAS MORALES Capítulo adicionado DOF 12-11-2021",
+  "derogado": false
+ },
+ "207": {
+  "archivo": "articulos/art-0207.md",
+  "sha256": "c34c0ef6ec71eaa30328fff6e8e49b9261b96030d484f649f9a5b52ee1ce2cbc",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo XII · RÉGIMEN SIMPLIFICADO DE CONFIANZA DE PERSONAS MORALES Capítulo adicionado DOF 12-11-2021",
+  "derogado": false
+ },
+ "208": {
+  "archivo": "articulos/art-0208.md",
+  "sha256": "272e6b4b9c345b42ffef9379216aa6748fe9d9cd912caf6b3e0955eae9b75617",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo XII · RÉGIMEN SIMPLIFICADO DE CONFIANZA DE PERSONAS MORALES Capítulo adicionado DOF 12-11-2021",
+  "derogado": false
+ },
+ "209": {
+  "archivo": "articulos/art-0209.md",
+  "sha256": "482a467d08509dd65022535d45cc80ea5bf6945dc6087f82e22cb7abe4860b51",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo XII · RÉGIMEN SIMPLIFICADO DE CONFIANZA DE PERSONAS MORALES Capítulo adicionado DOF 12-11-2021",
+  "derogado": false
+ },
+ "210": {
+  "archivo": "articulos/art-0210.md",
+  "sha256": "1565d88beb81dae2e78542d5624381b6deecacfaacfb0d96696b6e15ff304a57",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo XII · RÉGIMEN SIMPLIFICADO DE CONFIANZA DE PERSONAS MORALES Capítulo adicionado DOF 12-11-2021",
+  "derogado": false
+ },
+ "211": {
+  "archivo": "articulos/art-0211.md",
+  "sha256": "11b4aa6017ca39596286251eb1622c399e9eba3d24f4ea3bbed42cb6862274bd",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo XII · RÉGIMEN SIMPLIFICADO DE CONFIANZA DE PERSONAS MORALES Capítulo adicionado DOF 12-11-2021",
+  "derogado": false
+ },
+ "212": {
+  "archivo": "articulos/art-0212.md",
+  "sha256": "fb88b77222d5f6d77d77e7a39576a3ec270468f84394ac3001fa23ef9e556c95",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo XII · RÉGIMEN SIMPLIFICADO DE CONFIANZA DE PERSONAS MORALES Capítulo adicionado DOF 12-11-2021",
+  "derogado": false
+ },
+ "213": {
+  "archivo": "articulos/art-0213.md",
+  "sha256": "addc66807a55cc53ed06c0a4441ab015e37ef61d5d9042d5a99bbafc1ae204e9",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo XII · RÉGIMEN SIMPLIFICADO DE CONFIANZA DE PERSONAS MORALES Capítulo adicionado DOF 12-11-2021",
+  "derogado": false
+ },
+ "214": {
+  "archivo": "articulos/art-0214.md",
+  "sha256": "2782b9773cdc6208243efa377a649d1cf6bbf3b7f99742e0d7bb2e7d34277675",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo XII · RÉGIMEN SIMPLIFICADO DE CONFIANZA DE PERSONAS MORALES Capítulo adicionado DOF 12-11-2021",
+  "derogado": false
+ },
+ "215": {
+  "archivo": "articulos/art-0215.md",
+  "sha256": "990ecc3a17eedf4a03aacc08d7928d2653a9cc48a45376a400ca2649d73d4577",
+  "ubicacion": "Título VII · DE LOS ESTÍMULOS FISCALES / Capítulo XII · RÉGIMEN SIMPLIFICADO DE CONFIANZA DE PERSONAS MORALES Capítulo adicionado DOF 12-11-2021",
+  "derogado": false
+ }
+}

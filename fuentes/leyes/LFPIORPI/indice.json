@@ -1,0 +1,440 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "889d116c507e503ca9c76f10ed8d6502f0fa3d63e1a2c6d0719a4d2bbcc55236",
+  "ubicacion": "Capítulo I · Disposiciones Preliminares",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "b0054a540266e81a0f31bae17cf074bfd298d815ec379cdf49e532e0cf6f41ba",
+  "ubicacion": "Capítulo I · Disposiciones Preliminares",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "063ce3704b6c7b1fabe4b7a5925823a363bcc625633707ccf275b092662d18b0",
+  "ubicacion": "Capítulo I · Disposiciones Preliminares",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "adc6a17401a685caee7edef30bb07942dc4b5abefec0951db62acd7f67edc456",
+  "ubicacion": "Capítulo I · Disposiciones Preliminares",
+  "derogado": false
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "0995d77f152a2886134f25b8bdd16356cfa575b5c1e205ee11168b56f21501e2",
+  "ubicacion": "Capítulo II · De las Autoridades",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "73639df0d20c82f2dd5d078d2ca73ccb463518d6ef2aa476b94ca21f56420696",
+  "ubicacion": "Capítulo II · De las Autoridades",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "2811fdb0eb3c9a019651050b634fe886e68f3329d5ed4ef1742b83c24c462c2d",
+  "ubicacion": "Capítulo II · De las Autoridades",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "425798455fd79a6fcd0a315fa4f1db29192455f5348acdefdfd403154b73cdb1",
+  "ubicacion": "Capítulo II · De las Autoridades",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "4265c009a92de319e4be211eafc7e2af273c0a2048b91a54a54a3fd5e3a301dd",
+  "ubicacion": "Capítulo II · De las Autoridades",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "5a34d7638821950469fd9e512365fc15d2e2880d4276440fe263095d57e1a4b3",
+  "ubicacion": "Capítulo II · De las Autoridades",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "5b4fb27fb18c14e5629a7ec3d024362d328b099b6d4483cbad39680707d18eeb",
+  "ubicacion": "Capítulo II · De las Autoridades",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "756015ff228d5f45e3727f215c7dcf7d1530497e4fc54687e68899418a3680c8",
+  "ubicacion": "Capítulo II · De las Autoridades",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "4d7797d1eab8da41d2620cebd5fa6f07fae652ddec20264e73d8aebb8b74df50",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "a600616d74ffc4d0f82c6fe4b92827aedecc7aa12b383c144e420a77dca2c9b7",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "2c609a9cdaa4478addb6c9f2f7c34be17860a93a9af4a22b2910d3456d343ff9",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "fc83208d7bf6530d8474e2d7293ced68a3b17af21d8527241327d07f5e35c19b",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "ff5a06c18d272b32de48a3d2bc679d897f9e0e6224de5e6ab5a8e9d2a967dcad",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "be1944194c75bb5f332f221bfc6ba088cac1532bbbb722221563adff7a2253d5",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "e8d8260e0c0566a2bcf28517202c5ddbb36b6f360d21b3403b5180b24f4c7f95",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "20": {
+  "archivo": "articulos/art-0020.md",
+  "sha256": "ab8bdc553724005045ad8f54a68ceaabbac226ed37165aaf6ce4089608514605",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "21": {
+  "archivo": "articulos/art-0021.md",
+  "sha256": "1cbf08e55835abaabfdf0cd56417e3815dc9a9b45d3d4ce71f3e284f75827ba8",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "22": {
+  "archivo": "articulos/art-0022.md",
+  "sha256": "87600a9fc9e3af7780615e57537533cb1c4b7f4c948819b9df5093774160abb1",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "22-bis": {
+  "archivo": "articulos/art-0022-bis.md",
+  "sha256": "18fdc3a214ce0d46f374d79363603cbae302c53e35471710230c8b97701a7162",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "23": {
+  "archivo": "articulos/art-0023.md",
+  "sha256": "f0ede2c74fc1342d45b2759fcd919848e6be67664d12d08bc3a4dcb3523236d7",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "24": {
+  "archivo": "articulos/art-0024.md",
+  "sha256": "4166bc76ee60c426d2d4c057d2e3b4c80321dfdb7a0e619595306a59d7eddafc",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "25": {
+  "archivo": "articulos/art-0025.md",
+  "sha256": "ff797756d6338d5e9fba530026508cf7c55e27ce924959f93fafda5758d7adfb",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "26": {
+  "archivo": "articulos/art-0026.md",
+  "sha256": "470829fe2a7c172b025f82304743a1d17861a8bde199325a1068b9483a11bc08",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "27": {
+  "archivo": "articulos/art-0027.md",
+  "sha256": "02eaab0cb4b1c360d8c4c8eeeecc48cdd8ab0b30820287f4e421e870dff10ac4",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "28": {
+  "archivo": "articulos/art-0028.md",
+  "sha256": "7e91f10cf4c80a4a306570540f6baebee66551053d0fa355eac761ae07817604",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "29": {
+  "archivo": "articulos/art-0029.md",
+  "sha256": "78658c4b7aab960bda912925f07fc3cc6bf81a10c13b135535f25e39e5818d08",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "30": {
+  "archivo": "articulos/art-0030.md",
+  "sha256": "7693d31318f6f68326a88b9e62389a41abd53ff52ed3cd1e6e60470579f30bb3",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "31": {
+  "archivo": "articulos/art-0031.md",
+  "sha256": "e5919dde4946869688968789b20783da517a3e6e2138d17c2354f9441d2b622c",
+  "ubicacion": "Capítulo III · De las Entidades Financieras y de las Actividades Vulnerables",
+  "derogado": false
+ },
+ "32": {
+  "archivo": "articulos/art-0032.md",
+  "sha256": "930263ef7663354bdfd2474db613c411d921cebf2671dd2480e2d6f433299ac6",
+  "ubicacion": "Capítulo IV · Del Uso de Efectivo y Metales",
+  "derogado": false
+ },
+ "33": {
+  "archivo": "articulos/art-0033.md",
+  "sha256": "a71f7fa7f4b1cc27394da32cbce7ad462f6d745fbe9058c9ef82b2cd5fd79b00",
+  "ubicacion": "Capítulo IV · Del Uso de Efectivo y Metales",
+  "derogado": false
+ },
+ "33-bis": {
+  "archivo": "articulos/art-0033-bis.md",
+  "sha256": "546c671ace530b89df3eecfe273af46f72725d5241d01ac7259f86266599e9bd",
+  "ubicacion": "Capítulo IV Bis · Del Beneficiario Controlador Capítulo adicionado DOF 16-07-2025",
+  "derogado": false
+ },
+ "33-ter": {
+  "archivo": "articulos/art-0033-ter.md",
+  "sha256": "c5d3a056b3f7722bce88f2bf29a597e0840288bf54aa8c92aa8d3e6999d22757",
+  "ubicacion": "Capítulo IV Bis · Del Beneficiario Controlador Capítulo adicionado DOF 16-07-2025",
+  "derogado": false
+ },
+ "33-quater": {
+  "archivo": "articulos/art-0033-quater.md",
+  "sha256": "14ea2451cae7a87b5bfc60670de2e5149bf9c89593b355a7810672f1a027cf82",
+  "ubicacion": "Capítulo IV Bis · Del Beneficiario Controlador Capítulo adicionado DOF 16-07-2025",
+  "derogado": false
+ },
+ "34": {
+  "archivo": "articulos/art-0034.md",
+  "sha256": "bd76a119298c28d1c889b72f1caacf3c38d08d1c283da1c75566a647e0684df7",
+  "ubicacion": "Capítulo V · De las Visitas de Verificación",
+  "derogado": false
+ },
+ "35": {
+  "archivo": "articulos/art-0035.md",
+  "sha256": "986052aa0ddd2ea05882f4184d42c0d483f2512cbe32d3f40dab554afb556950",
+  "ubicacion": "Capítulo V · De las Visitas de Verificación",
+  "derogado": false
+ },
+ "36": {
+  "archivo": "articulos/art-0036.md",
+  "sha256": "e7b00087f27b0cef00ed84b464fcb7ffa8f24eee1adee15b5b2476c75f64f126",
+  "ubicacion": "Capítulo V · De las Visitas de Verificación",
+  "derogado": false
+ },
+ "37": {
+  "archivo": "articulos/art-0037.md",
+  "sha256": "ab7d5cd4c613cace8151f1ceb7f6acc1ffefeaad0b198f58ca40554ed2af8663",
+  "ubicacion": "Capítulo V · De las Visitas de Verificación",
+  "derogado": false
+ },
+ "38": {
+  "archivo": "articulos/art-0038.md",
+  "sha256": "1f1897fe896efd94367c3c79f9fb72445f8fdfdc745fd1e58bd97006906c2f8f",
+  "ubicacion": "Capítulo VI · De la Reserva y Manejo de Información",
+  "derogado": false
+ },
+ "39": {
+  "archivo": "articulos/art-0039.md",
+  "sha256": "75c99bc13981a8376372638292c975df46200bf85f38cc063544f35f59480b12",
+  "ubicacion": "Capítulo VI · De la Reserva y Manejo de Información",
+  "derogado": false
+ },
+ "40": {
+  "archivo": "articulos/art-0040.md",
+  "sha256": "d5cfa8bc8d3274954cf121e276524cf83a3e7cd361ea9dfdae0ae225721e1dfa",
+  "ubicacion": "Capítulo VI · De la Reserva y Manejo de Información",
+  "derogado": false
+ },
+ "41": {
+  "archivo": "articulos/art-0041.md",
+  "sha256": "8b1c39bd17090edd1c5920de5d95fbe4ee296b2b428b5b23f624b25d5e4fe532",
+  "ubicacion": "Capítulo VI · De la Reserva y Manejo de Información",
+  "derogado": false
+ },
+ "41-bis": {
+  "archivo": "articulos/art-0041-bis.md",
+  "sha256": "9e02bb58ca25a526a02b6a403ef7a0a188fb71f688ffee6bde6dd73ddd474180",
+  "ubicacion": "Capítulo VI · De la Reserva y Manejo de Información",
+  "derogado": false
+ },
+ "42": {
+  "archivo": "articulos/art-0042.md",
+  "sha256": "be5309105c99e1a4c69df86c7b538d12453f93ce9682ceaa6b126eba40d97b6c",
+  "ubicacion": "Capítulo VI · De la Reserva y Manejo de Información",
+  "derogado": false
+ },
+ "43": {
+  "archivo": "articulos/art-0043.md",
+  "sha256": "6c3b939b2c8d9fb27445a12a88d39939e5862e7003a1440fcb003bbd13b8f447",
+  "ubicacion": "Capítulo VI · De la Reserva y Manejo de Información",
+  "derogado": false
+ },
+ "44": {
+  "archivo": "articulos/art-0044.md",
+  "sha256": "e47c6d5a82b5e1f825e31bd26be225b160006e5d4726362cdba3e2c48f92e892",
+  "ubicacion": "Capítulo VI · De la Reserva y Manejo de Información",
+  "derogado": false
+ },
+ "45": {
+  "archivo": "articulos/art-0045.md",
+  "sha256": "1ad0176f73bad352b80ca689c9ddc1384aa3e289edff7fbd7834dad10aa8b2b3",
+  "ubicacion": "Capítulo VI · De la Reserva y Manejo de Información",
+  "derogado": false
+ },
+ "46": {
+  "archivo": "articulos/art-0046.md",
+  "sha256": "0b02122300b1e2a09bee033c85f1b6b50bea333195e63c29a60c7cd0c6d0afcc",
+  "ubicacion": "Capítulo VI · De la Reserva y Manejo de Información",
+  "derogado": false
+ },
+ "47": {
+  "archivo": "articulos/art-0047.md",
+  "sha256": "6dc800fce2bc413a38fca910b33ed3b604010e849727a1d5f6e7aac8db08bbe8",
+  "ubicacion": "Capítulo VI · De la Reserva y Manejo de Información",
+  "derogado": false
+ },
+ "48": {
+  "archivo": "articulos/art-0048.md",
+  "sha256": "3d3b6105da3f8ffb4e547bfc196c88c58b50fb65e5d877b6cc732c74f89349c3",
+  "ubicacion": "Capítulo VI · De la Reserva y Manejo de Información",
+  "derogado": false
+ },
+ "49": {
+  "archivo": "articulos/art-0049.md",
+  "sha256": "697adaff4418f77a7ff0769dbf01f8594873782f3746a3e8a0947c1984f458f7",
+  "ubicacion": "Capítulo VI · De la Reserva y Manejo de Información",
+  "derogado": false
+ },
+ "50": {
+  "archivo": "articulos/art-0050.md",
+  "sha256": "c9a1c511389f5654d8e5f6c332da71943369306c289b1ec581b54dedf1dc7731",
+  "ubicacion": "Capítulo VI · De la Reserva y Manejo de Información",
+  "derogado": false
+ },
+ "51": {
+  "archivo": "articulos/art-0051.md",
+  "sha256": "bf8605b1700adfb5b4ff7a6a4abcf3d8bf0edcc0062dd704a692a6080045e8df",
+  "ubicacion": "Capítulo VI · De la Reserva y Manejo de Información",
+  "derogado": false
+ },
+ "51-bis": {
+  "archivo": "articulos/art-0051-bis.md",
+  "sha256": "efa29e44546baa8b07dbd4fdda490605f65a513097937c6fa13d997efe75e0c3",
+  "ubicacion": "Capítulo VI · De la Reserva y Manejo de Información",
+  "derogado": false
+ },
+ "51-ter": {
+  "archivo": "articulos/art-0051-ter.md",
+  "sha256": "ad633f9a6c1d952188282540196a6754cae240f43eaf45b33bcea0af47a726bd",
+  "ubicacion": "Capítulo VI · De la Reserva y Manejo de Información",
+  "derogado": false
+ },
+ "52": {
+  "archivo": "articulos/art-0052.md",
+  "sha256": "56e9a59303ac749d0561a2771c82f5f8c84bfa49b8d0954e2d20a2d2016df862",
+  "ubicacion": "Capítulo VII · De las Sanciones Administrativas",
+  "derogado": false
+ },
+ "53": {
+  "archivo": "articulos/art-0053.md",
+  "sha256": "64cf0d804fc451f389db987761b3de717359fe580b0018d625968da4a246b33a",
+  "ubicacion": "Capítulo VII · De las Sanciones Administrativas",
+  "derogado": false
+ },
+ "54": {
+  "archivo": "articulos/art-0054.md",
+  "sha256": "1a2fda6fabd9e68457bc3a5b12726babd6184e9cd433b1a5ca9fc4bca11e1d9c",
+  "ubicacion": "Capítulo VII · De las Sanciones Administrativas",
+  "derogado": false
+ },
+ "54-bis": {
+  "archivo": "articulos/art-0054-bis.md",
+  "sha256": "01033fa0038c4475bd390c9bd0ae96ac7bba1572e0dbb909fce8e9c1ada93d8d",
+  "ubicacion": "Capítulo VII · De las Sanciones Administrativas",
+  "derogado": false
+ },
+ "55": {
+  "archivo": "articulos/art-0055.md",
+  "sha256": "2c269f036fc40de12e40287d5aa3821c63694b3fcc0e16edd922739eaeba54e1",
+  "ubicacion": "Capítulo VII · De las Sanciones Administrativas",
+  "derogado": false
+ },
+ "56": {
+  "archivo": "articulos/art-0056.md",
+  "sha256": "fff92696e058485b9d4a8372c4329f2cc26e3dd7ef1466df3871905c6e0a946a",
+  "ubicacion": "Capítulo VII · De las Sanciones Administrativas",
+  "derogado": false
+ },
+ "57": {
+  "archivo": "articulos/art-0057.md",
+  "sha256": "3c2bc0b47f9ae9cf499d0b09cf5bf6f44ef9bc71fa67f3ca2555e72dfa181ad3",
+  "ubicacion": "Capítulo VII · De las Sanciones Administrativas",
+  "derogado": false
+ },
+ "58": {
+  "archivo": "articulos/art-0058.md",
+  "sha256": "0c2189f641874de319d97c18bc010be8d592dfd1bbbb159b054147edaafd5e14",
+  "ubicacion": "Capítulo VII · De las Sanciones Administrativas",
+  "derogado": false
+ },
+ "59": {
+  "archivo": "articulos/art-0059.md",
+  "sha256": "03fe0f36c86c0a5a9ea0c1b0c0f9100785702cc5c99eca12827f1866a69ddf49",
+  "ubicacion": "Capítulo VII · De las Sanciones Administrativas",
+  "derogado": false
+ },
+ "60": {
+  "archivo": "articulos/art-0060.md",
+  "sha256": "d5e090d836e005c509febcdc87ee4cdee90c7b6413f0a8275ed0008121a33dcf",
+  "ubicacion": "Capítulo VII · De las Sanciones Administrativas",
+  "derogado": false
+ },
+ "61": {
+  "archivo": "articulos/art-0061.md",
+  "sha256": "774c029ea0874be6c1d43026657f42332187c42b6a2f2ef37a82ba37718890ee",
+  "ubicacion": "Capítulo VII · De las Sanciones Administrativas",
+  "derogado": false
+ },
+ "62": {
+  "archivo": "articulos/art-0062.md",
+  "sha256": "676a8cc33f6f58d77b74c0199cf06217e200a5485a30db7d35069e3a0f95e3a0",
+  "ubicacion": "Capítulo VIII · De los Delitos",
+  "derogado": false
+ },
+ "63": {
+  "archivo": "articulos/art-0063.md",
+  "sha256": "a5b714691ba0d2586341d8711fd1cb9995e2a6107dbbb6f67c34addfbbd983b2",
+  "ubicacion": "Capítulo VIII · De los Delitos",
+  "derogado": false
+ },
+ "64": {
+  "archivo": "articulos/art-0064.md",
+  "sha256": "6db2665d3a59ada3422859bf9573a7f1a7727198f582de95ce323d02f2811735",
+  "ubicacion": "Capítulo VIII · De los Delitos",
+  "derogado": false
+ },
+ "65": {
+  "archivo": "articulos/art-0065.md",
+  "sha256": "6e084d742eab3a66fd1a56e70a1798db76c32b1b0d1a0818b459d8ddd606dcda",
+  "ubicacion": "Capítulo VIII · De los Delitos",
+  "derogado": false
+ }
+}

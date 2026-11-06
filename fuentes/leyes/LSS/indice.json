@@ -1,0 +1,2312 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "f603a9e55f5a9b8f8eccbb1c929d88713f074841c28031cf7b676f798d090de2",
+  "ubicacion": "Titulo PRIMERO · DISPOSICIONES GENERALES / Capitulo UNICO",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "0d0ea30ed1090def3c91b1a9f3e1923e169df0f126f3db7d411b3f3de7d6d0d6",
+  "ubicacion": "Titulo PRIMERO · DISPOSICIONES GENERALES / Capitulo UNICO",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "7fb28a83a73e315e30d6b38dabef4cc4035ad1623076d97f7c2bf1731b83397c",
+  "ubicacion": "Titulo PRIMERO · DISPOSICIONES GENERALES / Capitulo UNICO",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "72ac52ac0259c35d1a8a70c6df4ac1cb88e756f799c37bdcc0ac200ea13ba779",
+  "ubicacion": "Titulo PRIMERO · DISPOSICIONES GENERALES / Capitulo UNICO",
+  "derogado": false
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "a97d2946ba1ec387ce5046961ae3586eb24844d27f130c522e927e4dcde91d62",
+  "ubicacion": "Titulo PRIMERO · DISPOSICIONES GENERALES / Capitulo UNICO",
+  "derogado": false
+ },
+ "5-a": {
+  "archivo": "articulos/art-0005-a.md",
+  "sha256": "39283faa64f6b9564bee03b1f6e960045128aeeffd83be171d4feb00f94d6dc9",
+  "ubicacion": "Titulo PRIMERO · DISPOSICIONES GENERALES / Capitulo UNICO",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "e3c0a3a44722532f0bc9497155a98fc87f688979060e0893fef06aeaebabe3aa",
+  "ubicacion": "Titulo PRIMERO · DISPOSICIONES GENERALES / Capitulo UNICO",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "84a6099f165a98f6db47dcf921563240e37487213d29539f9317e96f3bb7c28e",
+  "ubicacion": "Titulo PRIMERO · DISPOSICIONES GENERALES / Capitulo UNICO",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "3ab3f8bdceba1a607afe3d624492a9df014058b4fef0850a9f659151d6175ee9",
+  "ubicacion": "Titulo PRIMERO · DISPOSICIONES GENERALES / Capitulo UNICO",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "c1d43ebeeebb6e52c93c6a61086afab1d17e988c986ed8dc82c3e4cba8690d2c",
+  "ubicacion": "Titulo PRIMERO · DISPOSICIONES GENERALES / Capitulo UNICO",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "5d6cde6eb3db23cd95314976838a12e7505532a0279fa5f926defde64ea1c859",
+  "ubicacion": "Titulo PRIMERO · DISPOSICIONES GENERALES / Capitulo UNICO",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "62902dd904f9fab342eb594b428b5566116c0366e6f3f087d99ca139d02e4e93",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "fa1aedf6539513e3e9a7d6219823b15652029901c9b861b947f4df1af61a7145",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "1d4db37cd06138c9a2a299cd5afbbd8b5ccc70ac91da0dcdb57abea261257677",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo I · GENERALIDADES",
+  "derogado": true
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "9ed3e3876d925d5e695afc1816a3fa2721d605474c132e48c5e143b8d4e257ce",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "bfbabd9841929bca8c55b5460f36623884417c57e307d43d1d0ecb9ed0edbd6b",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "15-a": {
+  "archivo": "articulos/art-0015-a.md",
+  "sha256": "087f1a734f994ef2c937105efc440c64e88e42da4c8761612a54e63a0c20d5d2",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "15-b": {
+  "archivo": "articulos/art-0015-b.md",
+  "sha256": "f40c79f428e2edac7df93f28a85c292d53b8e82998b9bd20bfc7874c8fd62452",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "76b4dc0d0ed9b9e12a804a6768031426d58a15640d4707f48476c01c9dc95f55",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "dead3c802168c097fa0de98087a7a6418ea5888beb0e12ed17cc057dd70670a4",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "2b0685f4720e11623861f378e87f7ad685e0f593e31cdc8a65d83726084ac858",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "85a0b29efbef0e814a48d61584fd93343195036f2ecfecf26d8dbfbd471bcc1e",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "20": {
+  "archivo": "articulos/art-0020.md",
+  "sha256": "d9de23799c41e338eaa0cb46adba6720e144eb8d2de7590c8295323a14339526",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "21": {
+  "archivo": "articulos/art-0021.md",
+  "sha256": "91af1bfc12dc8f81a21a3c8e7215b175b460d08554551b4225c441b98792af2c",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "22": {
+  "archivo": "articulos/art-0022.md",
+  "sha256": "b2e5b8ff673a5d88976f1021f4659cf1b63327c32f22acf12f338b574eb1529f",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "23": {
+  "archivo": "articulos/art-0023.md",
+  "sha256": "b5fc2a81f377163e469a13f0b22eb6a6283b23b051abf59030d0e525e125d568",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "24": {
+  "archivo": "articulos/art-0024.md",
+  "sha256": "fcd94627b33698d84757e0657401091e794dbbee8a894bbfef7f5ccc1ad68c7d",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "25": {
+  "archivo": "articulos/art-0025.md",
+  "sha256": "90d495066635d83d7ac5290dcfe116ea83f6af1e8bb257f87cb700a8b37d6d4f",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "26": {
+  "archivo": "articulos/art-0026.md",
+  "sha256": "fae8f2eef48377fa26d79488aba36f0446154bde19863d11f215856ddee560ca",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "27": {
+  "archivo": "articulos/art-0027.md",
+  "sha256": "5183983e4a9717a31d43afb55997d31a58e06e6a253d29d02a769beb5d4837cf",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "28": {
+  "archivo": "articulos/art-0028.md",
+  "sha256": "36895d3a4b748fc42d8bb01bd006f98299efa12acd69f62d74f30d12681f0484",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "28-a": {
+  "archivo": "articulos/art-0028-a.md",
+  "sha256": "6ee2d58dc32caa47d7e47c6b563a656938cda09764a779535ad1e72625180e3f",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "29": {
+  "archivo": "articulos/art-0029.md",
+  "sha256": "2df42fff43f9ef317c7386cb4b8ce92bd7794d23fa509a1094e7b8a6920f8d03",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "30": {
+  "archivo": "articulos/art-0030.md",
+  "sha256": "7c0ff7bad72d82f59122520e7498ee7c4d04a0936e0f3d4afbfb83667343d158",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "31": {
+  "archivo": "articulos/art-0031.md",
+  "sha256": "6ad9786eb26d9b52353e736701f726d06c75d148977a92ecd6afd1c9aa1ca512",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "32": {
+  "archivo": "articulos/art-0032.md",
+  "sha256": "23e3bd543ac76cbb8dd3307fee344ccbe0461458a9200b8b7f0ebc98b06b08a6",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "33": {
+  "archivo": "articulos/art-0033.md",
+  "sha256": "764be77521beb2803e93b0201b2a6f98dbbc73cbd36f4c43f42cf6acf1993baf",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "34": {
+  "archivo": "articulos/art-0034.md",
+  "sha256": "c896448c0a1ade7403975d09355b11d80598b274d5ad68a4ec50c373504cd338",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "35": {
+  "archivo": "articulos/art-0035.md",
+  "sha256": "cb52defea1c36d9d93e202de3d788d1b4e72c74a641ed4fc7166623ba4d218a0",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "36": {
+  "archivo": "articulos/art-0036.md",
+  "sha256": "5a6c0202526dbd5821c8259ed8282950d0bc6da7e23302d02fe5cf3743687daf",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "37": {
+  "archivo": "articulos/art-0037.md",
+  "sha256": "ea0e078b93eec2b28d2ff67858a18d7047ca7d57621af7a1c4151bfb07285ac3",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "38": {
+  "archivo": "articulos/art-0038.md",
+  "sha256": "7f5a30956a3017c23bb88a53b226131ddcad66ffcfe34a2b402569a65c46b193",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "39": {
+  "archivo": "articulos/art-0039.md",
+  "sha256": "2f8ac302c4d27f7bf9a87e386b8ecb7b682c2a0e240dfe6d01c690a4dc088e36",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "39-a": {
+  "archivo": "articulos/art-0039-a.md",
+  "sha256": "8acdc0cfc1fadf338c447492b27ea0e0965d66df89d5feacf5fa0b09f461285c",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "39-b": {
+  "archivo": "articulos/art-0039-b.md",
+  "sha256": "96ef02c4064352db7646341ffc96b6c95119a7a97a2132ec2e66c281dcffda15",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "39-c": {
+  "archivo": "articulos/art-0039-c.md",
+  "sha256": "888b0be57aee25426669ba5e35664cf20b4db8c5e29a40c41652194dc48e76c1",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "39-d": {
+  "archivo": "articulos/art-0039-d.md",
+  "sha256": "7e0084ea6c8db324be960d819c816d61039d4b97d710f35573dcd1bb1cb0b737",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "40": {
+  "archivo": "articulos/art-0040.md",
+  "sha256": "9904444d8548c9790a2b93c2bfd84bfda08225b180478aad3e99c8e29cfd3a47",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "40-a": {
+  "archivo": "articulos/art-0040-a.md",
+  "sha256": "a84138b8dbad020813105ca8cd16bf5e140409bec62086ba7a18ea4563d2063b",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "40-b": {
+  "archivo": "articulos/art-0040-b.md",
+  "sha256": "7779d37318a20a57d14d18697357aaca036ab9f55dfb39d468b367eb1eacac2b",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "40-c": {
+  "archivo": "articulos/art-0040-c.md",
+  "sha256": "3ffc9be776063dc34b3cae1fedf2f0e9f642b3f9e3fbfacdf3564ac93d790663",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "40-d": {
+  "archivo": "articulos/art-0040-d.md",
+  "sha256": "50c17bf3a71506438c8f91b54f485859f8b201022c9ec111743c3dcdf01fc899",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "40-e": {
+  "archivo": "articulos/art-0040-e.md",
+  "sha256": "212a0b2456b790e9d5b9a4d5a0b41c322e91a051b5f4b1c4f922440e937c5e7b",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "40-f": {
+  "archivo": "articulos/art-0040-f.md",
+  "sha256": "72f217c181ed686ca28bc85d886625fcff0d5b8567cb1ee99fc659e5db3c0242",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo II · DE LAS BASES DE COTIZACION Y DE LAS CUOTAS",
+  "derogado": false
+ },
+ "41": {
+  "archivo": "articulos/art-0041.md",
+  "sha256": "955cabf249cf0ec469e029803c490a6f39d5f655951ab9e6cb0ef97c4fd472bf",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "42": {
+  "archivo": "articulos/art-0042.md",
+  "sha256": "149a2eecfa3f023edf93e9b517dcc331e30bd96050eee369ce7f88204899a45c",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "43": {
+  "archivo": "articulos/art-0043.md",
+  "sha256": "9f85577f513f2bf763137026b23f30e49400a5f69aa5726cf98dfc4344c13a32",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "44": {
+  "archivo": "articulos/art-0044.md",
+  "sha256": "703859330c3f10c4de69fa3c4c882b99ab80d434289eb4e42de747bd4b123cfc",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "45": {
+  "archivo": "articulos/art-0045.md",
+  "sha256": "2526ca350de6a876d8494a13e61fd028c222bb9c4f1e746e17dc57c45b51ae01",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "46": {
+  "archivo": "articulos/art-0046.md",
+  "sha256": "43b02dd83816ffc71e2d21b8b8be0bdf60cc280f9284fca848419c94f6061ffa",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "47": {
+  "archivo": "articulos/art-0047.md",
+  "sha256": "238e41d75e221f667c6f8c39250f450d479030d678c304fe87d61749790314de",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "48": {
+  "archivo": "articulos/art-0048.md",
+  "sha256": "b40c6464e4aa6873e9237cec63cf594f90d81f0df930bf70dd6fe91f649d4757",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "49": {
+  "archivo": "articulos/art-0049.md",
+  "sha256": "e536cf7b0b9188422924344a72a6971df15a2cfb6b0d97b84d740d8c5c749270",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "50": {
+  "archivo": "articulos/art-0050.md",
+  "sha256": "794d72f840696120e044300d8189cb1bc1ceefdc8b70a792ee2c715b250ecedd",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "51": {
+  "archivo": "articulos/art-0051.md",
+  "sha256": "0989e05e778ac989482cc5b9b83da56525207075a4f4e91f232eded4176c4569",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "52": {
+  "archivo": "articulos/art-0052.md",
+  "sha256": "9330166785f46f93f589899eb48c60fdcc30e4fe37ef46d7377c6b66c6e96690",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "53": {
+  "archivo": "articulos/art-0053.md",
+  "sha256": "58c03f5062657c9a51bfa2284aac7f903feb0c9e9f962c21a7932471a12e69f4",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "54": {
+  "archivo": "articulos/art-0054.md",
+  "sha256": "de6b8ba3d121cd43d156986be07f80ea5b517fba28bbb9cb6468332704598cd0",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "55": {
+  "archivo": "articulos/art-0055.md",
+  "sha256": "11d6176289a44e689c481dace5e3b958bd51b34864c99e92923e12bd02a567d6",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "56": {
+  "archivo": "articulos/art-0056.md",
+  "sha256": "0ecbdd02e0f4ce89416cf4ad445c8340a84694f2b37914581d077df67170a274",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "57": {
+  "archivo": "articulos/art-0057.md",
+  "sha256": "ca73eeb139aaefd36ab526b225a8f331c6d6e9c9ef88388b8c12b6b9d8d9fa39",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "58": {
+  "archivo": "articulos/art-0058.md",
+  "sha256": "dda992e688daab425b83cbc6da7c4a8a5aedc4ad3e5780a6f4312ddcc3dec96d",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "59": {
+  "archivo": "articulos/art-0059.md",
+  "sha256": "86f48070e0e3bcc99f198fd637a570dcec857c07e507265a3a7c5427f165151e",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "60": {
+  "archivo": "articulos/art-0060.md",
+  "sha256": "5eff2f237ed78a6e4db3d94572c5ab4a2644613929f8d239b63e88a9a0509be2",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "61": {
+  "archivo": "articulos/art-0061.md",
+  "sha256": "1f645014027043b02fda5c9d1c6bb22ddba599a3b1c1990d1a121004e0686c33",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "62": {
+  "archivo": "articulos/art-0062.md",
+  "sha256": "c3bda01913dde0b914acce54f093b23bf92e73eeba0fc747e8c31505df4dd5cf",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "63": {
+  "archivo": "articulos/art-0063.md",
+  "sha256": "0c190ec6abdebc64c7abeb9445bb0b46f7234bd27733d1d1eba3a634ed633e09",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "64": {
+  "archivo": "articulos/art-0064.md",
+  "sha256": "5dd69afa7309f853460e0153e246b324a234e5fc49c495992d1150ecee198071",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "65": {
+  "archivo": "articulos/art-0065.md",
+  "sha256": "6c822a6c79872e1926fea614645ae83ad0afdd536aba9a5173521392986bfbd5",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "66": {
+  "archivo": "articulos/art-0066.md",
+  "sha256": "80e56902bc4648024f25cdbf54ad4901f3a5f51ced1be1aa2e0a53eb97a7a6fc",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "67": {
+  "archivo": "articulos/art-0067.md",
+  "sha256": "0154a4104173617698dcf1f8b9257ee6a56e0dea8d19b41fb0473d3aa2da0812",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "68": {
+  "archivo": "articulos/art-0068.md",
+  "sha256": "fd2cd2d95fd4da5a979dfa2da3e06096ac39f894ec0027a7e3cd2cb8595daebd",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "69": {
+  "archivo": "articulos/art-0069.md",
+  "sha256": "88bbfb487eebfbf19837e158d1da067d23ef77aa330e4caf135cb9b8dcf35b8e",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "70": {
+  "archivo": "articulos/art-0070.md",
+  "sha256": "da5595e4f31093e9e9cd35347e5be016a05ba0158fdcd2ddab11414cc13c9891",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "71": {
+  "archivo": "articulos/art-0071.md",
+  "sha256": "dbd030c39ad226be1ac7d806b879991b150d5b72f535aa6b450e63e73469f3f2",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "72": {
+  "archivo": "articulos/art-0072.md",
+  "sha256": "bd5027d4c629d5d57ca14db553f8d5d68a85a0c343d09fbafda0a38da59352af",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "73": {
+  "archivo": "articulos/art-0073.md",
+  "sha256": "b562c4210b7a681b7ac9382ab9316aecfe700321186c905503966d6e30e7a4e1",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "74": {
+  "archivo": "articulos/art-0074.md",
+  "sha256": "9a0a542946cc13984cbbf5dca4c1bc28c23a158f8cd1ccc8dd55f63f3ef3ac36",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "75": {
+  "archivo": "articulos/art-0075.md",
+  "sha256": "c56b5e87644d08b69096067d0555b14e00e05d4efe397266c949cbe2dfd5073a",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "76": {
+  "archivo": "articulos/art-0076.md",
+  "sha256": "567dbedc945a44529b9ae69584d60f1d51372b201628f035bdd4c8b0c188d632",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "77": {
+  "archivo": "articulos/art-0077.md",
+  "sha256": "60dc38c6142d9172f4cf63895ad11242b358891e655de9c871718a66701f6e4f",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "78": {
+  "archivo": "articulos/art-0078.md",
+  "sha256": "ca63f3ff65ee05cfcc974b26d5bdcaa9d54840fcbc4f06c85ddeb468f3438d80",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "79": {
+  "archivo": "articulos/art-0079.md",
+  "sha256": "84c17ec57cb6b551f8c992dd0f9cd6c0c7cfd87a002861de3c9fe26bd5d197dc",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "80": {
+  "archivo": "articulos/art-0080.md",
+  "sha256": "40ceb2abd73b21b29ac3279c2f3bf006e88e986cc473850b95e9b3c2d0d224ac",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "81": {
+  "archivo": "articulos/art-0081.md",
+  "sha256": "ce6e318118e4125cbd5af6a6cb31c61c22c00cb0216bce90e9c63b6919a13a24",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "82": {
+  "archivo": "articulos/art-0082.md",
+  "sha256": "a620553a9d98646d17c3b354355bbcb82d513fc36acac0fd29e0beb81d365fd9",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "83": {
+  "archivo": "articulos/art-0083.md",
+  "sha256": "dd5862535c123bb565a43f15b9e035adc69da8c38093b7d73df2994aaff85faa",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo III · DEL SEGURO DE RIESGOS DE TRABAJO",
+  "derogado": false
+ },
+ "84": {
+  "archivo": "articulos/art-0084.md",
+  "sha256": "8c24d6ae4b38015dad8327612beb245887cf9501f4d3df0b05a08c778e1b52b3",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "85": {
+  "archivo": "articulos/art-0085.md",
+  "sha256": "5f31e8995833b1d3cea86c9941afe2007403b128280c8b01436111a4f2af98f0",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "86": {
+  "archivo": "articulos/art-0086.md",
+  "sha256": "fd1ffbf6acb9da66a7a62790e0f8164807716cb63e3781809846cf9f24c5f293",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "87": {
+  "archivo": "articulos/art-0087.md",
+  "sha256": "113bf4e18a56d03d98dab68ad9c28b30d4d7533887b6d98c70477430351a75aa",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "88": {
+  "archivo": "articulos/art-0088.md",
+  "sha256": "4fb194c846aab76458f1300f11e4145f6680cf4f450f8b769fc42a9a082cf78e",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "89": {
+  "archivo": "articulos/art-0089.md",
+  "sha256": "0d1551326376b1cdcc43e4770836a51fc209de29abe4ae6a2ecb1df60bb7c465",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "90": {
+  "archivo": "articulos/art-0090.md",
+  "sha256": "d9a0b2d49ac27411c1f74290425cdc497f7f05e16cc1ab3329ddc7333d963504",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "91": {
+  "archivo": "articulos/art-0091.md",
+  "sha256": "d53cee7f3afbe58e60826bb5a7cab436012d16dffd4b26aa4f7a8a881c5fc2a8",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "92": {
+  "archivo": "articulos/art-0092.md",
+  "sha256": "418117ad3584af61ed69d89a51e808fae01707f0e36e4b274bb013d578963e87",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "93": {
+  "archivo": "articulos/art-0093.md",
+  "sha256": "5652bb11e40fbeedaf1cd7174c31f629fabe02b392c286be03c10883e7471c81",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "94": {
+  "archivo": "articulos/art-0094.md",
+  "sha256": "740ff08a10d28c2ee16f73c8cf83b30a595231b61838d77d8ddc4cb821048ec6",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "95": {
+  "archivo": "articulos/art-0095.md",
+  "sha256": "e69e48a9f12f1edd7f4590a2a678aa6670f29ec318949e8c5b1f4e37b7c841f2",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "96": {
+  "archivo": "articulos/art-0096.md",
+  "sha256": "0af58f726118a51398d7ec54cd5a56d6c12965a7188f3187303816fa9e4d4bfc",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "97": {
+  "archivo": "articulos/art-0097.md",
+  "sha256": "d5fa19f7447b5c2a8818e10516f5ab33a4efc7bf1ecabcab371682d68f86ec4f",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "98": {
+  "archivo": "articulos/art-0098.md",
+  "sha256": "950285e3f32bdf17282315d912a989b13ce38abbd86aea977b22fed23a23ba23",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "99": {
+  "archivo": "articulos/art-0099.md",
+  "sha256": "a80f421f98ddb8c599f09f5b17b9eafe74d5b1caf4dc68a2875b7d6855b9aff1",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "100": {
+  "archivo": "articulos/art-0100.md",
+  "sha256": "b16741dd5ebe887313ca6f225e46b412167becce5f222e3db7ff3e50889bc125",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "101": {
+  "archivo": "articulos/art-0101.md",
+  "sha256": "dac92ea3e3d192396314506ba098f87d625e00b577fbd5c8f3bc57cc67c8a36b",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "102": {
+  "archivo": "articulos/art-0102.md",
+  "sha256": "7176066de9fbcf91db472758915835389d2b81e8d8b8ffa23274e4806b8ffa45",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "102-bis": {
+  "archivo": "articulos/art-0102-bis.md",
+  "sha256": "2e143aa832b2fa13d406ab6ee687e426ccd7a8ae5f900972a703d3cb411c480b",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "103": {
+  "archivo": "articulos/art-0103.md",
+  "sha256": "61d136ce40562cc0479077ed6acb51f5425a1c0131541dba3c6f1735e38f4478",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "104": {
+  "archivo": "articulos/art-0104.md",
+  "sha256": "af522cc79d069d3b6c79556ca04a63eeb91ca87ca6990185d213eea3471246cf",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "105": {
+  "archivo": "articulos/art-0105.md",
+  "sha256": "db371736a0ec1d71991467f0b5723affec74d9c842ae70c30bd01af96dc32140",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "106": {
+  "archivo": "articulos/art-0106.md",
+  "sha256": "e7fcea2e4f388f9c9ec70c9bb0bd98eeb7a4a76e188ce8ee85c2971b04682ee0",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "107": {
+  "archivo": "articulos/art-0107.md",
+  "sha256": "b1a33aa1586796e8cb0b166f1b0b829461953420b1f761364a4fb57647808e0e",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "108": {
+  "archivo": "articulos/art-0108.md",
+  "sha256": "ffd678657a56a9e2370ad2856b9d0e6d241294d5252155d5bc654d5cc0246632",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "109": {
+  "archivo": "articulos/art-0109.md",
+  "sha256": "2ec68da2436d8a3aa3a815ab8f1d9bca45c4e83eeac352d75af2dfdbc0aa7a23",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "109-bis": {
+  "archivo": "articulos/art-0109-bis.md",
+  "sha256": "61cb1a9f2bdfbddbea7d8a2bb1964978089326d54d0f5c5af5529b796912ced9",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "110": {
+  "archivo": "articulos/art-0110.md",
+  "sha256": "f61bbb3a92f61920b61c3c899b02c1ea3396388c4115df176ff0d40321ab3793",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "111": {
+  "archivo": "articulos/art-0111.md",
+  "sha256": "067d381eca863e658d216d103b71dea38e4b39f3b2912ddf76cfd437ac2d112f",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "111-a": {
+  "archivo": "articulos/art-0111-a.md",
+  "sha256": "2929d6f563241d9fed229597cc8b4f07683737d1a21ce3c5b4849bc795557734",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IV · DEL SEGURO DE ENFERMEDADES Y MATERNIDAD",
+  "derogado": false
+ },
+ "112": {
+  "archivo": "articulos/art-0112.md",
+  "sha256": "a85008b27217f806c909630f8acf8f615a5c0dc35fd27ed1a53aef70b261c0af",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "113": {
+  "archivo": "articulos/art-0113.md",
+  "sha256": "0bd2d6c94894c74cad558d37925d734a0da72ed9e3125406a3b7fdd6d4a05c4d",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "114": {
+  "archivo": "articulos/art-0114.md",
+  "sha256": "2a1d79a867035f5435a3b0c59e36aabecb564055006b33ab2c37a4d270e3f18e",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "115": {
+  "archivo": "articulos/art-0115.md",
+  "sha256": "6e795f592487f7f0c7076160fdbf3bf1752aba0ceaf6023c4d9cc8108d3d8fca",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "116": {
+  "archivo": "articulos/art-0116.md",
+  "sha256": "63562c047fdfd1d7bd48b07aa1f492d51a5774dc88fcbc8fc8f090d6d76bb722",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "117": {
+  "archivo": "articulos/art-0117.md",
+  "sha256": "d75304cd8ba66e2a02b7d30217d01a8ff761947545c66222e63c4df8e89f05cc",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "118": {
+  "archivo": "articulos/art-0118.md",
+  "sha256": "f7d5d83560e2efccaa7d45b1b113bb88343be4113ea83987c1510a6462d4dd8a",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "119": {
+  "archivo": "articulos/art-0119.md",
+  "sha256": "f5c1f7995957ff1d959dc04e94305d83dba0929126f58953c8fcd823fcffd60c",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "120": {
+  "archivo": "articulos/art-0120.md",
+  "sha256": "505b5e85506c0c8efc9df92fe711182d43214289375678ff6022db0569d0ef8a",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "121": {
+  "archivo": "articulos/art-0121.md",
+  "sha256": "07bc22cfacffe9d2e7d065c4d6b124ce95cf165e5244f1b80f19c251cff55142",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "122": {
+  "archivo": "articulos/art-0122.md",
+  "sha256": "21bc0175437f1adb352d43408eaac0b2496dfa08b182f8a06471136fcf3110ee",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "123": {
+  "archivo": "articulos/art-0123.md",
+  "sha256": "e92cc25b52ae67301b135e57fcbcb3b9d808195ffe3804746c2b371ddbc4f364",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "124": {
+  "archivo": "articulos/art-0124.md",
+  "sha256": "443635302900fffc785f2d53a37c24bf7c8810e300907380978649f67c4f6772",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "125": {
+  "archivo": "articulos/art-0125.md",
+  "sha256": "a365b2a74165c843894b6a02df9ab4721604b638259ca17fc5e6f57622ea20ca",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "126": {
+  "archivo": "articulos/art-0126.md",
+  "sha256": "b3bfe0bab3e385a27d1203c4e5ee9113f50ad3d67d24df81f0992900826c6006",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "127": {
+  "archivo": "articulos/art-0127.md",
+  "sha256": "0ed694c965a59434a691d708ad67db190493bc9f89365379f0bd370ba6f27e59",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "128": {
+  "archivo": "articulos/art-0128.md",
+  "sha256": "2ec6b645cfe30b6855f7abd57c026a287e9a54627aae8b808b4f8b10ba511d0d",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "129": {
+  "archivo": "articulos/art-0129.md",
+  "sha256": "0b7c29e921f387cbde4e84ddf3ed9fc060f58dbbf8de32a2ea8c4bee2e28bf11",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "130": {
+  "archivo": "articulos/art-0130.md",
+  "sha256": "36dd2fc156e28377aa73665a056b454a210ecd200c0a10e1d83ce96b92bf78e2",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "131": {
+  "archivo": "articulos/art-0131.md",
+  "sha256": "88ba29d5c2f5f9d652876e88c4c04d93a160abd43b614e8e87d08f81c31f4d0c",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "132": {
+  "archivo": "articulos/art-0132.md",
+  "sha256": "cf67ad08d5d735ab61ad2cb84901ecc0620b6382d043b9c2f5f9b4297ef57df4",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": true
+ },
+ "133": {
+  "archivo": "articulos/art-0133.md",
+  "sha256": "0f16e3543e1417e77a218cd37699fa9b6db2e59535a77d3a921a146edb050d84",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "134": {
+  "archivo": "articulos/art-0134.md",
+  "sha256": "a95a8c2346b03829578cb82dc1936fb57ba41939b81fa4f1109ebd17875a610e",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "135": {
+  "archivo": "articulos/art-0135.md",
+  "sha256": "a275a019a4d502cbc107ec0b0d78163510434c9bb569f6ebd11572ab0b45ec21",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "136": {
+  "archivo": "articulos/art-0136.md",
+  "sha256": "85c2bdc5faf5c5ea34ce132aa2882fe5836fbb4798c1cca18bad4371605a7406",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "137": {
+  "archivo": "articulos/art-0137.md",
+  "sha256": "130dfaa55b0fae8c34a6f8c42516ae5e7a8a6d064a55472fab3a3f56c21e62f1",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "137-bis": {
+  "archivo": "articulos/art-0137-bis.md",
+  "sha256": "1a9f2d95c26d8da06cb7cac33c1d6b283d7da2231d2a16d413b1df0c88018898",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "138": {
+  "archivo": "articulos/art-0138.md",
+  "sha256": "34f0b6f09afd960ea52c8398d0abb7dd3e90dcd36b86bda1849923d04f1ec0fe",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "139": {
+  "archivo": "articulos/art-0139.md",
+  "sha256": "4f134ca8ddf87fa1ce3ae408cf44333ec37014e93e6b306e896e113d2e5b3aff",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "140": {
+  "archivo": "articulos/art-0140.md",
+  "sha256": "3b4fcaca92d7893a66047f3c46ab59c68a7b944174b015fbdd4f90ce2ff4ff5d",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "140-bis": {
+  "archivo": "articulos/art-0140-bis.md",
+  "sha256": "c82700507d0ac4dc02b0461455fc94887761a7b20b8bdf6617e680bfcdca0511",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "141": {
+  "archivo": "articulos/art-0141.md",
+  "sha256": "8809a76768f0523da7b334093a85422000b873fc38860b4b09a61a9f58164367",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "142": {
+  "archivo": "articulos/art-0142.md",
+  "sha256": "38f4514bd89916ac00b45cde67e29644fa8c46b6e1476f1c896ceb235eb54a42",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "143": {
+  "archivo": "articulos/art-0143.md",
+  "sha256": "9d0d5f774b8d5cb4293417f144fefa4c7eebadf824c062c203b4b813ee4a71f6",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "144": {
+  "archivo": "articulos/art-0144.md",
+  "sha256": "e89ce21bbf6328affc6da11958000788b9e27bfd03dcfe5d4b2948290dee2a84",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "145": {
+  "archivo": "articulos/art-0145.md",
+  "sha256": "bab39d5f4b26ff2ad8938f4948527e202611a45e6ec7a1b5affc9fa8cd679a7d",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "146": {
+  "archivo": "articulos/art-0146.md",
+  "sha256": "571bb6d3a9fe967152fdfba4065724203455f50faa7158b085a4531853f05c7b",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "147": {
+  "archivo": "articulos/art-0147.md",
+  "sha256": "378cb27be92ce6c07756c7d579b8e53c91f80d4b03d54ae9f61c2088295d13ff",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "148": {
+  "archivo": "articulos/art-0148.md",
+  "sha256": "524040f2dbeb5a8f6927ffdd3ed2db2c3e3b3e95b0b32f469ac4bf76e3980449",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "149": {
+  "archivo": "articulos/art-0149.md",
+  "sha256": "59283c14c3263285fa2381fbe3be7dd02ffc902a718f17aabb34d93cfa9f7966",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "150": {
+  "archivo": "articulos/art-0150.md",
+  "sha256": "9e5b446a8dfada7a9a5039d0c3c68d6c2bed3464eb809c54622c47d0c4eee4de",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "151": {
+  "archivo": "articulos/art-0151.md",
+  "sha256": "ff2f0b9b55b1efae87a84fa5c0470853c0db9e24ef6bb98d8cd0915058de2b1a",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA",
+  "derogado": false
+ },
+ "152": {
+  "archivo": "articulos/art-0152.md",
+  "sha256": "ea1ae0f9f6f8c60a6a5881434f7c7025bbbad78c0279107bcaa01be33586aaba",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "153": {
+  "archivo": "articulos/art-0153.md",
+  "sha256": "d52ea1d77478b6767fab1e8c4594b5bf6a9792f7435ec9b61f88d6900ad6d0a0",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "154": {
+  "archivo": "articulos/art-0154.md",
+  "sha256": "31a933b783ab29f694cba6046eb052b502d951b15f01e64a85f6983eb51bffe7",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "155": {
+  "archivo": "articulos/art-0155.md",
+  "sha256": "d4010213fb8e5631368dff95b817fbb68b3f40b80f23f1da940fc28b7f96e71c",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "156": {
+  "archivo": "articulos/art-0156.md",
+  "sha256": "e0250f0cadef31200010e860c7a60562c4b218a77649de1bb192b75f9760db68",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "157": {
+  "archivo": "articulos/art-0157.md",
+  "sha256": "90fc5db11678dab698d38b796f92af9f12be21aec886b275c16ec3b75699b6d7",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "158": {
+  "archivo": "articulos/art-0158.md",
+  "sha256": "6245be337365028fce6fdab987435ed6934a7cce49fc9327d82e37c23373de37",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "159": {
+  "archivo": "articulos/art-0159.md",
+  "sha256": "315f12d52340d0938ecb98612f16ffc6ca03828086c8ca8ab75e6566ad1b97b2",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "160": {
+  "archivo": "articulos/art-0160.md",
+  "sha256": "b4a24aeb2cb489e125fbc2b258d3acacbe004aacaff5354785fa6ac277abf813",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "161": {
+  "archivo": "articulos/art-0161.md",
+  "sha256": "8fc3855ba9133b12282cf2fba2012763a65deb9ad82dedc4dde0ccb8854aee91",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "162": {
+  "archivo": "articulos/art-0162.md",
+  "sha256": "f84fd8c27aecca503c4957830943d6d91dc9aa7672ad4ab0f66807c263aa5dd2",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "163": {
+  "archivo": "articulos/art-0163.md",
+  "sha256": "489209016872fbcb1433186d21c324d3471efd8ffc29db468857c54b82af2626",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "164": {
+  "archivo": "articulos/art-0164.md",
+  "sha256": "aad34ae8ea278de5980811b3c84afa46aa8c71e20a08e96e4888b8f2ff8466ee",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "165": {
+  "archivo": "articulos/art-0165.md",
+  "sha256": "4a294917a0f605e18e2eff253c811a178335592929371e68b735ec7e40608a2c",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "166": {
+  "archivo": "articulos/art-0166.md",
+  "sha256": "20507a6f87f13303a0abcc3fa3a17e2c78b66a8fbd2ff2ef113a6beba7cb3644",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "167": {
+  "archivo": "articulos/art-0167.md",
+  "sha256": "c4f6e12990b3bbf7569dce9fdd904b4790edce432ace7bbe2bb82319e41ac16f",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "168": {
+  "archivo": "articulos/art-0168.md",
+  "sha256": "f0bb7c3718ec7f637ae2d6e43f49a6610e1f9929c7b201af586848d674e69d89",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "169": {
+  "archivo": "articulos/art-0169.md",
+  "sha256": "2064dc1db746a0c79a24ffdb72dcc72653106b7027f98f3afa93e093604353d6",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "170": {
+  "archivo": "articulos/art-0170.md",
+  "sha256": "96f328031e573ab95cd67f0a380663960be01982a6575570815a95ac96b7fe55",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "171": {
+  "archivo": "articulos/art-0171.md",
+  "sha256": "b8833b3ea94745ba9b251a9a00d2eeb47131fae0232e5d4ff66dcc7ec087aa53",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "172": {
+  "archivo": "articulos/art-0172.md",
+  "sha256": "4b84cb15094050fde22087ca8fb15f902a5b6f28f4498fe1e1144a69ee80f045",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "172-a": {
+  "archivo": "articulos/art-0172-a.md",
+  "sha256": "13b5a56727ec57961cdf8cfc6b6594dec38115beba274a0d608b9b4b516f94e5",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "173": {
+  "archivo": "articulos/art-0173.md",
+  "sha256": "d0754e0bb932c16d9e9240cdc233d58150b0e0b3431625a11de07f6409341a6d",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "174": {
+  "archivo": "articulos/art-0174.md",
+  "sha256": "a480f99744d1986ed893443132d9d28f20c57ec706f3be1b1675368f0a60e0ec",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "175": {
+  "archivo": "articulos/art-0175.md",
+  "sha256": "6aed837ca9a6bc7b18c8d29eb6d5d02775d20730e48fe6095745244d4ccc0107",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "176": {
+  "archivo": "articulos/art-0176.md",
+  "sha256": "18abdf4c440696856da2302f9578523ce6e424fa3c3832341c2effbd4e2f8cce",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "177": {
+  "archivo": "articulos/art-0177.md",
+  "sha256": "f5435234547cbe3b9bcf7f78aeb05db1bef025d575b8283e8047328c07b6b37f",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "178": {
+  "archivo": "articulos/art-0178.md",
+  "sha256": "3c755ea0a3b33ebb947601e4af3676805f2a56dfe2f404e70cfe510b069141db",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "179": {
+  "archivo": "articulos/art-0179.md",
+  "sha256": "1e5168adff411047924b655638e27145bce16f28a33074b354c39d912d40d4ba",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "180": {
+  "archivo": "articulos/art-0180.md",
+  "sha256": "313f05bf62fa7d4b0e4badc09f7166f64924cefa3787591d9a62f226019cef2f",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "181": {
+  "archivo": "articulos/art-0181.md",
+  "sha256": "a487807b4a5cd0eabef60e45f698cd49f794f766f8215b787018aed703453b51",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "182": {
+  "archivo": "articulos/art-0182.md",
+  "sha256": "e4e18bb6b881f87984614d7e59cfe1b25a434ec195b7efb3e50dfb93339fcea1",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "183": {
+  "archivo": "articulos/art-0183.md",
+  "sha256": "41ef432c9d3b2daaf0809f81011b9d012fa8de0af45214d83db1c41db02a58ce",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "184": {
+  "archivo": "articulos/art-0184.md",
+  "sha256": "46758ed02437d4e5c6a179600360f6cfb3ab7e9f7b59f95fb6da20bd56994b13",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "185": {
+  "archivo": "articulos/art-0185.md",
+  "sha256": "6021417600c93b68de76611feb6ebd6da3b7ea61f2a3abfa33fc7ac0c52b2f84",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "186": {
+  "archivo": "articulos/art-0186.md",
+  "sha256": "8e0e837655a497b0f22dd41a4dada7ca74564e211aaa71c3c7bdab44c0c6340a",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "187": {
+  "archivo": "articulos/art-0187.md",
+  "sha256": "67f42152167e6163e7705bddec6c388d45ae67b8217bc181bbe4992272b1e1ca",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "188": {
+  "archivo": "articulos/art-0188.md",
+  "sha256": "a9527be0800304b70672068902ee217f1bbe834767b4fc8fb7fc01340437e526",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "189": {
+  "archivo": "articulos/art-0189.md",
+  "sha256": "26adc12bcb43d4d0149624bb974eca26042f86ef288be78b2fb60c1bc2e66b88",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "190": {
+  "archivo": "articulos/art-0190.md",
+  "sha256": "b6331dc4e7916dfbe6f7cc92a66a350f66ff3fc2b3208762a7a85652f011e37b",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "191": {
+  "archivo": "articulos/art-0191.md",
+  "sha256": "ff9d96b5df9f547d9925d5d4727547474626a0df5a9b0ce2553c323161995686",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "192": {
+  "archivo": "articulos/art-0192.md",
+  "sha256": "052b4cc9e5783ecf0ddff20bb35e3a063bcb47573d543aa12904a6c20ed964e8",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "193": {
+  "archivo": "articulos/art-0193.md",
+  "sha256": "6c746cb1dd48c828b541edf07756dc71b425a7cfdd5d7e8aae1855b5740ea672",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "193-bis": {
+  "archivo": "articulos/art-0193-bis.md",
+  "sha256": "87a4b45af043cb9a2e72370c56a6ca1debc934f1357322e866c61c6f4b4e7874",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "194": {
+  "archivo": "articulos/art-0194.md",
+  "sha256": "1cfd98940a51c040221878f7a3c7551939d02f2f950c0d05c94214bca4d5ba0b",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "195": {
+  "archivo": "articulos/art-0195.md",
+  "sha256": "7a5b75d7320c3427d87f349699cef701c39a23d886a8bb9fa6f78d01b21b4468",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "196": {
+  "archivo": "articulos/art-0196.md",
+  "sha256": "12648116bf220ac1d492cf4c9941b118fffc43153206fa59dfe6faabf5773427",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "197": {
+  "archivo": "articulos/art-0197.md",
+  "sha256": "c6731e838c537e7150957d030b722825d76eb77f634ee6df650ff50363056479",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "198": {
+  "archivo": "articulos/art-0198.md",
+  "sha256": "f47c829f5e2d24286340f2221f0e69db091051bb38f4ee2b6f330f0fbe4cda8e",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "199": {
+  "archivo": "articulos/art-0199.md",
+  "sha256": "3428e0f6867f7def96cfd3ae785fcbb5aeea64659c4b55b2be43f45eade79265",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "200": {
+  "archivo": "articulos/art-0200.md",
+  "sha256": "10537de9e0afe0d27ca4a95ad82b10c8e372330bbf5cf3e3287d10c3918e7c35",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VI · DEL SEGURO DE RETIRO, CESANTIA EN EDAD AVANZADA Y VEJEZ",
+  "derogado": false
+ },
+ "201": {
+  "archivo": "articulos/art-0201.md",
+  "sha256": "1fee7d28b6be40b18d1d2430edfc1e345a6408b27b0e903ac94653afc0417ed7",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "202": {
+  "archivo": "articulos/art-0202.md",
+  "sha256": "0846ca787c1834ebb32f80febf64711bdaf3ea0c74ee24920f352d38a95713e8",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "203": {
+  "archivo": "articulos/art-0203.md",
+  "sha256": "a265d5ae600a8c9cd21ff220e899414517b4a1486900b33a60e4f305bc9bce3b",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "204": {
+  "archivo": "articulos/art-0204.md",
+  "sha256": "143f28195dc872ae241dac1c0c99bd9b5bc0baed38565a50c5ea0fe96f98289f",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "205": {
+  "archivo": "articulos/art-0205.md",
+  "sha256": "68470f8dc1eb0fc79acad5acea483e909036c619c348adab859ce78aea7c8b6a",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "206": {
+  "archivo": "articulos/art-0206.md",
+  "sha256": "70ec89b89099040c927428851c789e482bf14892b38ba36a2ffb44253a1115b0",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "207": {
+  "archivo": "articulos/art-0207.md",
+  "sha256": "ca37e538aede1d5c231f4e63749789bd005d71974b1a831f8479364c76060da9",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "208": {
+  "archivo": "articulos/art-0208.md",
+  "sha256": "d0631e45e923204150c5f330e338834a047e42fa3c62db60ae3594844a6f01ec",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "209": {
+  "archivo": "articulos/art-0209.md",
+  "sha256": "ca4be5823fa3d1d51774bdac6d8410d2c250a129369df11f578099a3fd7a46de",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "210": {
+  "archivo": "articulos/art-0210.md",
+  "sha256": "2e731a1c6136d266bed3b14078ee8621505b7d6a11c34727c81225fd0091f25a",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "210-a": {
+  "archivo": "articulos/art-0210-a.md",
+  "sha256": "cbbfbd757a194fb8a705b8f71b08818f5c77e5c64cce977747f426397f77d285",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "211": {
+  "archivo": "articulos/art-0211.md",
+  "sha256": "67bce0b9897e91db7c41c73f47e0d1bc52014f968db67130f9a35bbaad053dec",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "212": {
+  "archivo": "articulos/art-0212.md",
+  "sha256": "55b8d70b19aa2e708060e268e92a8e6442914feb0bdd15389e22386f2cd748a2",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "213": {
+  "archivo": "articulos/art-0213.md",
+  "sha256": "051d769f44ca37157fb3eb5ff79787a619904853610159569d4d527d1924d97e",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "214": {
+  "archivo": "articulos/art-0214.md",
+  "sha256": "b892faef843890c6aa12f9bc9108bf0c8f021b5bd958370fa903a63d628a7f3d",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "215": {
+  "archivo": "articulos/art-0215.md",
+  "sha256": "fe895ef193730f5dd88042674e55e29d624344be27a71e187dbac33ecce37351",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "216": {
+  "archivo": "articulos/art-0216.md",
+  "sha256": "ee6267d3b4880ac22696be86059889c15ad8f7b3b002d40fc95d4048fc93fad9",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "216-a": {
+  "archivo": "articulos/art-0216-a.md",
+  "sha256": "27918632b236844c0025c253b035f51c2497469b91226ce3d051fa384d9f4b8f",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "217": {
+  "archivo": "articulos/art-0217.md",
+  "sha256": "598eb54fb49c295dcbe1ab509af64f1b408186b1526f4b549d9ea5c2adf3500b",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VII · DEL SEGURO DE GUARDERIAS Y DE LAS PRESTACIONES SOCIALES",
+  "derogado": false
+ },
+ "218": {
+  "archivo": "articulos/art-0218.md",
+  "sha256": "8ad1a57635b2eb2ccd440fa2c29b791f110b4de37f68ac7c50e6acaeccf0d6f7",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VIII · DE LA CONTINUACION VOLUNTARIA EN EL REGIMEN OBLIGATORIO",
+  "derogado": false
+ },
+ "219": {
+  "archivo": "articulos/art-0219.md",
+  "sha256": "ff2f99182d33afe53909aaa08194c189803553c217730ac8f6808a1e7cb205d8",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VIII · DE LA CONTINUACION VOLUNTARIA EN EL REGIMEN OBLIGATORIO",
+  "derogado": false
+ },
+ "220": {
+  "archivo": "articulos/art-0220.md",
+  "sha256": "db4160232f349a1defd002406549fa25f53d2a6cc1b290d2d48097bd573d919f",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VIII · DE LA CONTINUACION VOLUNTARIA EN EL REGIMEN OBLIGATORIO",
+  "derogado": false
+ },
+ "221": {
+  "archivo": "articulos/art-0221.md",
+  "sha256": "f51f848b06d2e211565a6c62453292355832d5667ed1335b3882f1438886fe54",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo VIII · DE LA CONTINUACION VOLUNTARIA EN EL REGIMEN OBLIGATORIO",
+  "derogado": false
+ },
+ "222": {
+  "archivo": "articulos/art-0222.md",
+  "sha256": "7ec7d686237d521cb786f66050949caa0b17499a8ca0d3fd2435b578a900d23c",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IX · DE LA INCORPORACION VOLUNTARIA AL REGIMEN OBLIGATORIO",
+  "derogado": false
+ },
+ "223": {
+  "archivo": "articulos/art-0223.md",
+  "sha256": "d773316edb97a0994cbcb4103a6046305abceaea9c428685cb37e968714e6107",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IX · DE LA INCORPORACION VOLUNTARIA AL REGIMEN OBLIGATORIO",
+  "derogado": false
+ },
+ "224": {
+  "archivo": "articulos/art-0224.md",
+  "sha256": "7c7e37c3e6d26308009f058760386b0bc59a624074ef81d437850071c9929d77",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IX · DE LA INCORPORACION VOLUNTARIA AL REGIMEN OBLIGATORIO",
+  "derogado": false
+ },
+ "225": {
+  "archivo": "articulos/art-0225.md",
+  "sha256": "79e07e72027e190b2befe319d5c6263abac67e9d64368d707e76e84b086c4edd",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IX · DE LA INCORPORACION VOLUNTARIA AL REGIMEN OBLIGATORIO",
+  "derogado": false
+ },
+ "226": {
+  "archivo": "articulos/art-0226.md",
+  "sha256": "28606c1950ac445bac280504d63afbb91380ffe1f6a1b2703bee9f4344eda408",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IX · DE LA INCORPORACION VOLUNTARIA AL REGIMEN OBLIGATORIO",
+  "derogado": false
+ },
+ "227": {
+  "archivo": "articulos/art-0227.md",
+  "sha256": "af2bb5fa5e2505224e0e09fa77176a1217c0d43813e19c965a39a3728ddec4cc",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IX · DE LA INCORPORACION VOLUNTARIA AL REGIMEN OBLIGATORIO",
+  "derogado": false
+ },
+ "228": {
+  "archivo": "articulos/art-0228.md",
+  "sha256": "b9bbc5bdb735c18f51e5b32eb96bde902a24ec2b895042c42e01b4d3988bc7bf",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IX · DE LA INCORPORACION VOLUNTARIA AL REGIMEN OBLIGATORIO",
+  "derogado": false
+ },
+ "229": {
+  "archivo": "articulos/art-0229.md",
+  "sha256": "0a42f2f41b1e6b0e416fb71c130942d24388088eb841e5da3f083b90da1b9f4a",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IX · DE LA INCORPORACION VOLUNTARIA AL REGIMEN OBLIGATORIO",
+  "derogado": false
+ },
+ "230": {
+  "archivo": "articulos/art-0230.md",
+  "sha256": "e8378149ae590aaa46a215a4c41ff9bee56ed5e82d10e289910537bceac810fa",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IX · DE LA INCORPORACION VOLUNTARIA AL REGIMEN OBLIGATORIO",
+  "derogado": false
+ },
+ "231": {
+  "archivo": "articulos/art-0231.md",
+  "sha256": "70ba8f8c8aaaa300ba8cb0dea22b2fd8bc75879aa32062802abd11b35f54d195",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IX · DE LA INCORPORACION VOLUNTARIA AL REGIMEN OBLIGATORIO",
+  "derogado": true
+ },
+ "232": {
+  "archivo": "articulos/art-0232.md",
+  "sha256": "1aec3ec98bd9b2f437bc6c566c8f523f98d38cc19cb4c7e967a443236e51d32a",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IX · DE LA INCORPORACION VOLUNTARIA AL REGIMEN OBLIGATORIO",
+  "derogado": false
+ },
+ "233": {
+  "archivo": "articulos/art-0233.md",
+  "sha256": "8101fc1f043c81f3c312067c757d7eeebd18066167fba3e208835176ad4a4423",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo IX · DE LA INCORPORACION VOLUNTARIA AL REGIMEN OBLIGATORIO",
+  "derogado": false
+ },
+ "234": {
+  "archivo": "articulos/art-0234.md",
+  "sha256": "989735dd80dcc0f00975f1ab28a9c7b9d6f00124f469c99b0b7aa58d424e5146",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo X · DE LA SEGURIDAD SOCIAL EN EL CAMPO",
+  "derogado": false
+ },
+ "235": {
+  "archivo": "articulos/art-0235.md",
+  "sha256": "bf77202e0a168b9b6c2aab1c87f159abd49c255628eeb3ec83dd8a7d44e8cb51",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo X · DE LA SEGURIDAD SOCIAL EN EL CAMPO",
+  "derogado": false
+ },
+ "236": {
+  "archivo": "articulos/art-0236.md",
+  "sha256": "3f1a5aab008f8034e42cf909bdd8fe8e207264e4a3cda6ad5834381b4aff2096",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo X · DE LA SEGURIDAD SOCIAL EN EL CAMPO",
+  "derogado": false
+ },
+ "237": {
+  "archivo": "articulos/art-0237.md",
+  "sha256": "05fa28a59315bcc2dc96b429aca82bbb65548e27ef3484931c261cc963345c3b",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo X · DE LA SEGURIDAD SOCIAL EN EL CAMPO",
+  "derogado": false
+ },
+ "237-a": {
+  "archivo": "articulos/art-0237-a.md",
+  "sha256": "78781578dcc89d1a8e1374fbb8a415c6e4161922aa0d7041076f06f74af805d4",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo X · DE LA SEGURIDAD SOCIAL EN EL CAMPO",
+  "derogado": false
+ },
+ "237-b": {
+  "archivo": "articulos/art-0237-b.md",
+  "sha256": "252ed0bff11946a034cd8e959482944e76762407276dd144c79e49bc92c710ea",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo X · DE LA SEGURIDAD SOCIAL EN EL CAMPO",
+  "derogado": false
+ },
+ "237-c": {
+  "archivo": "articulos/art-0237-c.md",
+  "sha256": "038ef9e73b049f233538fba1a3e49447287a48d7e93d350960cdcd6566664fb5",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo X · DE LA SEGURIDAD SOCIAL EN EL CAMPO",
+  "derogado": false
+ },
+ "237-d": {
+  "archivo": "articulos/art-0237-d.md",
+  "sha256": "5a2908075133b3013b61bab92f1e8c0ef7ed59fb21ca9030cf0b385a4cefec38",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo X · DE LA SEGURIDAD SOCIAL EN EL CAMPO",
+  "derogado": false
+ },
+ "237-e": {
+  "archivo": "articulos/art-0237-e.md",
+  "sha256": "f1b377f01f0ad9c7fdf65e9dcd071f47e5d6360084f2d1972df8898ead764190",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo X · DE LA SEGURIDAD SOCIAL EN EL CAMPO",
+  "derogado": false
+ },
+ "238": {
+  "archivo": "articulos/art-0238.md",
+  "sha256": "ba62323ccf74dc6d84aeed79888f4527032450a3303ad86b24291074c50b4fa1",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo X · DE LA SEGURIDAD SOCIAL EN EL CAMPO",
+  "derogado": false
+ },
+ "239": {
+  "archivo": "articulos/art-0239.md",
+  "sha256": "34c08b7bf99845d6ad8d05af0b2ccf2473e291fc1bd977aa858edf87bbc86b76",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo X · DE LA SEGURIDAD SOCIAL EN EL CAMPO",
+  "derogado": false
+ },
+ "239-a": {
+  "archivo": "articulos/art-0239-a.md",
+  "sha256": "2d8ce45d94f82012904c1bb9f7e64e37ea064407b74eac7c87ac3454dc7fdb81",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo XI · DE LAS PERSONAS TRABAJADORAS DEL HOGAR Capítulo adicionado DOF 16-11-2022",
+  "derogado": false
+ },
+ "239-b": {
+  "archivo": "articulos/art-0239-b.md",
+  "sha256": "e4f2589b67bcf7dc7c5907d091273ec488f9f48e0a6d2a0abe6aa16749d27a75",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo XI · DE LAS PERSONAS TRABAJADORAS DEL HOGAR Capítulo adicionado DOF 16-11-2022",
+  "derogado": false
+ },
+ "239-c": {
+  "archivo": "articulos/art-0239-c.md",
+  "sha256": "abe93186f8ed6f6dafb53d41555d87c0519268b5149d6f707404a4e0efd39823",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo XI · DE LAS PERSONAS TRABAJADORAS DEL HOGAR Capítulo adicionado DOF 16-11-2022",
+  "derogado": false
+ },
+ "239-d": {
+  "archivo": "articulos/art-0239-d.md",
+  "sha256": "6d5221b9a1420c74892b835aadd86f2fc678ae81fb221bf3162bc12250945eb2",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo XI · DE LAS PERSONAS TRABAJADORAS DEL HOGAR Capítulo adicionado DOF 16-11-2022",
+  "derogado": false
+ },
+ "239-e": {
+  "archivo": "articulos/art-0239-e.md",
+  "sha256": "f0358d10a8194f03aaf29ed9238d8538f37adec91a041f05201b3d0cec3015bb",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo XI · DE LAS PERSONAS TRABAJADORAS DEL HOGAR Capítulo adicionado DOF 16-11-2022",
+  "derogado": false
+ },
+ "239-f": {
+  "archivo": "articulos/art-0239-f.md",
+  "sha256": "3b06882b1e0874fce89f1e4b3257a362302a888320134030731a22c5e9b972af",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo XI · DE LAS PERSONAS TRABAJADORAS DEL HOGAR Capítulo adicionado DOF 16-11-2022",
+  "derogado": false
+ },
+ "239-g": {
+  "archivo": "articulos/art-0239-g.md",
+  "sha256": "c7982b0a283453a7b1b6f0145778ce798b36693bc73e42e4befed26b7033197d",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo XI · DE LAS PERSONAS TRABAJADORAS DEL HOGAR Capítulo adicionado DOF 16-11-2022",
+  "derogado": false
+ },
+ "239-h": {
+  "archivo": "articulos/art-0239-h.md",
+  "sha256": "c191b45a3470d56f70fbdcd3629a80c334acdf65b2bc9cbe9931993d7519acbb",
+  "ubicacion": "Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo XI · DE LAS PERSONAS TRABAJADORAS DEL HOGAR Capítulo adicionado DOF 16-11-2022",
+  "derogado": false
+ },
+ "240": {
+  "archivo": "articulos/art-0240.md",
+  "sha256": "5308e5eea1c53fa1a080115821f917ebf29b6b380f1effdef1b5378a5e583eb3",
+  "ubicacion": "Titulo TERCERO · DEL REGIMEN VOLUNTARIO / Capitulo I · DEL SEGURO DE SALUD PARA LA FAMILIA",
+  "derogado": false
+ },
+ "241": {
+  "archivo": "articulos/art-0241.md",
+  "sha256": "d00fe016a600b1bb42dd567b2487f77a85ba9d0c744581fb84b663293d066a57",
+  "ubicacion": "Titulo TERCERO · DEL REGIMEN VOLUNTARIO / Capitulo I · DEL SEGURO DE SALUD PARA LA FAMILIA",
+  "derogado": false
+ },
+ "242": {
+  "archivo": "articulos/art-0242.md",
+  "sha256": "ca391c1f069c4440ac28479d381737c3ca6507d10b83233bc0627dd3cd96d000",
+  "ubicacion": "Titulo TERCERO · DEL REGIMEN VOLUNTARIO / Capitulo I · DEL SEGURO DE SALUD PARA LA FAMILIA",
+  "derogado": false
+ },
+ "243": {
+  "archivo": "articulos/art-0243.md",
+  "sha256": "1b514ea3a18f895b23768a369a6527d559fbbcda45629e825127ac6e47fa9912",
+  "ubicacion": "Titulo TERCERO · DEL REGIMEN VOLUNTARIO / Capitulo I · DEL SEGURO DE SALUD PARA LA FAMILIA",
+  "derogado": false
+ },
+ "244": {
+  "archivo": "articulos/art-0244.md",
+  "sha256": "8272a6f426ef2c8419b1d3d5d69aad74b323e8eaf145bfeb560b4b8c26964250",
+  "ubicacion": "Titulo TERCERO · DEL REGIMEN VOLUNTARIO / Capitulo I · DEL SEGURO DE SALUD PARA LA FAMILIA",
+  "derogado": false
+ },
+ "245": {
+  "archivo": "articulos/art-0245.md",
+  "sha256": "7f4264920e77464fab338512e85aff2dccc9295df72146028f53afd95ea4fd7d",
+  "ubicacion": "Titulo TERCERO · DEL REGIMEN VOLUNTARIO / Capitulo I · DEL SEGURO DE SALUD PARA LA FAMILIA",
+  "derogado": false
+ },
+ "246": {
+  "archivo": "articulos/art-0246.md",
+  "sha256": "ee0d0b6bce09488158be0bf52b2bf7c132c71ed8f232a7bd7cb109033b2e2487",
+  "ubicacion": "Titulo TERCERO · DEL REGIMEN VOLUNTARIO / Capitulo II · DE LOS SEGUROS ADICIONALES",
+  "derogado": false
+ },
+ "247": {
+  "archivo": "articulos/art-0247.md",
+  "sha256": "ca86424984b49ec653a99543ffa1d644e74e40efcec04badb6966e71eb8dbe2c",
+  "ubicacion": "Titulo TERCERO · DEL REGIMEN VOLUNTARIO / Capitulo II · DE LOS SEGUROS ADICIONALES",
+  "derogado": false
+ },
+ "248": {
+  "archivo": "articulos/art-0248.md",
+  "sha256": "a758e6eb5386a7769e2fb06a4ff0c4a949f2d3b035dc5d81262093e255a43d96",
+  "ubicacion": "Titulo TERCERO · DEL REGIMEN VOLUNTARIO / Capitulo II · DE LOS SEGUROS ADICIONALES",
+  "derogado": false
+ },
+ "249": {
+  "archivo": "articulos/art-0249.md",
+  "sha256": "051e7cfe54d21505cd1c927ccd324670bcb3647eb4624b0559048f90f9519eff",
+  "ubicacion": "Titulo TERCERO · DEL REGIMEN VOLUNTARIO / Capitulo II · DE LOS SEGUROS ADICIONALES",
+  "derogado": false
+ },
+ "250": {
+  "archivo": "articulos/art-0250.md",
+  "sha256": "d4deeaef4492c3cf02cead87e8cf737b99b29a79b58e39d6f528612f563465e8",
+  "ubicacion": "Titulo TERCERO · DEL REGIMEN VOLUNTARIO / Capitulo II · DE LOS SEGUROS ADICIONALES",
+  "derogado": false
+ },
+ "250-a": {
+  "archivo": "articulos/art-0250-a.md",
+  "sha256": "48c1b3c093ab7e07223eaa62b1ccb458a94a3ff149befd32fca35e4d4501633a",
+  "ubicacion": "Titulo TERCERO · DEL REGIMEN VOLUNTARIO / Capítulo III · OTROS SEGUROS Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "250-b": {
+  "archivo": "articulos/art-0250-b.md",
+  "sha256": "bcc9fe9aba8e7764fdc9874f6d26d93c042761a73dc7770a135bef3d89ed453a",
+  "ubicacion": "Titulo TERCERO · DEL REGIMEN VOLUNTARIO / Capítulo III · OTROS SEGUROS Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "251": {
+  "archivo": "articulos/art-0251.md",
+  "sha256": "c939164592262890079ccb6c5ff742685722b5a5d63b66b02d13be8c9dedb21b",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo I · DE LAS ATRIBUCIONES, PATRIMONIO Y ÓRGANOS DE GOBIERNO Y ADMINISTRACIÓN Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "251-a": {
+  "archivo": "articulos/art-0251-a.md",
+  "sha256": "14855201d80caa3785f25b744d7db5655e7b63b99bdfde7b4a4f08df7efa8714",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo I · DE LAS ATRIBUCIONES, PATRIMONIO Y ÓRGANOS DE GOBIERNO Y ADMINISTRACIÓN Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "252": {
+  "archivo": "articulos/art-0252.md",
+  "sha256": "bf4f295ab9bdfcb41dc18ef149afbaaee1450abef73569d0ca1a58bebf2d2343",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo I · DE LAS ATRIBUCIONES, PATRIMONIO Y ÓRGANOS DE GOBIERNO Y ADMINISTRACIÓN Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "253": {
+  "archivo": "articulos/art-0253.md",
+  "sha256": "ae42c39846fc468583f83c5fac63b7ae4ad0cbbac7bb0492c9341aaade6aa050",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo I · DE LAS ATRIBUCIONES, PATRIMONIO Y ÓRGANOS DE GOBIERNO Y ADMINISTRACIÓN Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "254": {
+  "archivo": "articulos/art-0254.md",
+  "sha256": "99f5a0c41c5925f498fda4fd4839a16a85808369234df175a0d7d3829add8eff",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo I · DE LAS ATRIBUCIONES, PATRIMONIO Y ÓRGANOS DE GOBIERNO Y ADMINISTRACIÓN Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "255": {
+  "archivo": "articulos/art-0255.md",
+  "sha256": "6eb5c7ca8f2a8d5caafe028e3a1b38bf8ab608a890398cfb19aa5e7ce03f6789",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo I · DE LAS ATRIBUCIONES, PATRIMONIO Y ÓRGANOS DE GOBIERNO Y ADMINISTRACIÓN Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "256": {
+  "archivo": "articulos/art-0256.md",
+  "sha256": "56c7bad3f6d2f945556f97372502323bb491f6bd227fd3ce66d3e53a2394e73b",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo I · DE LAS ATRIBUCIONES, PATRIMONIO Y ÓRGANOS DE GOBIERNO Y ADMINISTRACIÓN Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "257": {
+  "archivo": "articulos/art-0257.md",
+  "sha256": "a7d66ecc21b158fbc6ef5399c572a4121c4aa1fa6b66ccbf5b74a8b063939576",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo I · DE LAS ATRIBUCIONES, PATRIMONIO Y ÓRGANOS DE GOBIERNO Y ADMINISTRACIÓN Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "258": {
+  "archivo": "articulos/art-0258.md",
+  "sha256": "e5d78b21c2db34eb1999bdd261a44d5063b9ee9721bac0fa4a024795c1019246",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capitulo II · DE LA ASAMBLEA GENERAL",
+  "derogado": false
+ },
+ "259": {
+  "archivo": "articulos/art-0259.md",
+  "sha256": "1fdd4b0f83a9f3ffec72d7a8869037c57879a7315ccf465a3ad4c080a57992fc",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capitulo II · DE LA ASAMBLEA GENERAL",
+  "derogado": false
+ },
+ "260": {
+  "archivo": "articulos/art-0260.md",
+  "sha256": "7c5f387e128c70a3d26e92f66d9d772cbd20bce4cde5dffa9970620157ff3424",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capitulo II · DE LA ASAMBLEA GENERAL",
+  "derogado": false
+ },
+ "261": {
+  "archivo": "articulos/art-0261.md",
+  "sha256": "079054144313118326ec0939bfde391cf4373c418dda68ad579c4c0fd64d01bd",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capitulo II · DE LA ASAMBLEA GENERAL",
+  "derogado": false
+ },
+ "262": {
+  "archivo": "articulos/art-0262.md",
+  "sha256": "74c6927e79aadfda0737da82912e663f7f56261ce6ea461965d2dedc015cf1a6",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capitulo II · DE LA ASAMBLEA GENERAL",
+  "derogado": false
+ },
+ "263": {
+  "archivo": "articulos/art-0263.md",
+  "sha256": "fd10bc24aed23a93df4d6b9654a5216f6e463b60a653c0d6a91e39cf02b91a10",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capitulo III · DEL CONSEJO TECNICO",
+  "derogado": false
+ },
+ "264": {
+  "archivo": "articulos/art-0264.md",
+  "sha256": "87b68d65a0705a2eb9be200b8940dfeb56d9cd61f25c5b9bfe196b05183b57ac",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capitulo III · DEL CONSEJO TECNICO",
+  "derogado": false
+ },
+ "265": {
+  "archivo": "articulos/art-0265.md",
+  "sha256": "98e35f515fbc70adaee81148490f4fccfa43a6792179e38cdf228234e19e584d",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capitulo IV · DE LA COMISION DE VIGILANCIA",
+  "derogado": false
+ },
+ "266": {
+  "archivo": "articulos/art-0266.md",
+  "sha256": "0ad05cfa3751ebbc7e78c5ccaffab1eb2f8175b40be1d1622b24f3bff80b8420",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capitulo IV · DE LA COMISION DE VIGILANCIA",
+  "derogado": false
+ },
+ "267": {
+  "archivo": "articulos/art-0267.md",
+  "sha256": "0e1572543291d87c2e9f2641792bb4b5e1098943835c1bd9a74aa44557b07b51",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capitulo V · DE LA DIRECCION GENERAL",
+  "derogado": false
+ },
+ "268": {
+  "archivo": "articulos/art-0268.md",
+  "sha256": "d74c7e998ae3663a6dc4becc3f1fefde07cc29121e6e52f7bc900cbe456fc9ad",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capitulo V · DE LA DIRECCION GENERAL",
+  "derogado": false
+ },
+ "268-a": {
+  "archivo": "articulos/art-0268-a.md",
+  "sha256": "edb370457fb9f2f67554bf3bfedb6bd927401e7d57fa0da2ad466436ab6b0cff",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capitulo V · DE LA DIRECCION GENERAL",
+  "derogado": false
+ },
+ "269": {
+  "archivo": "articulos/art-0269.md",
+  "sha256": "c3b786502f7407640a88387e6e5311ef7ee3147cb782e9af42f29c5b48a0b6a4",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capitulo V · DE LA DIRECCION GENERAL",
+  "derogado": false
+ },
+ "270": {
+  "archivo": "articulos/art-0270.md",
+  "sha256": "5449e0110187e7da16f1de1378c6cd88e3762750fda5a6169dbb423283d3c54a",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VI · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL COMO ORGANISMO FISCAL AUTÓNOMO Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "271": {
+  "archivo": "articulos/art-0271.md",
+  "sha256": "f497a0749f4bbb306b0f294d986605af9e5c646adcd5460ab0a1755a0a92ba5c",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VI · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL COMO ORGANISMO FISCAL AUTÓNOMO Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "272": {
+  "archivo": "articulos/art-0272.md",
+  "sha256": "94547cc325a684109b46dd98e187a071047c0258d132d869a40f4e2005a6761a",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VI · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL COMO ORGANISMO FISCAL AUTÓNOMO Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "273": {
+  "archivo": "articulos/art-0273.md",
+  "sha256": "e7a4c98b22c81636afebcad804339072c5fa612f4ca0c1cd0bb2320f77640509",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VI · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL COMO ORGANISMO FISCAL AUTÓNOMO Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "274": {
+  "archivo": "articulos/art-0274.md",
+  "sha256": "4f5aadbccdebf1802135deb2cce3fbe9b552cb43f61c5ccbff7320aecf7343a0",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VI · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL COMO ORGANISMO FISCAL AUTÓNOMO Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "275": {
+  "archivo": "articulos/art-0275.md",
+  "sha256": "e390cae89c1a409602457a6475fbde4c0c0ab3315540a5ab3d11c466dc3b96bb",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VI · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL COMO ORGANISMO FISCAL AUTÓNOMO Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "276": {
+  "archivo": "articulos/art-0276.md",
+  "sha256": "8250589c394cadb900067a598273a25d43c074bcb4bb9c41d6dbb8ed61b34e6d",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VI · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL COMO ORGANISMO FISCAL AUTÓNOMO Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "277": {
+  "archivo": "articulos/art-0277.md",
+  "sha256": "188d2f196ff7a0991a32d96403c35d0b8083cf6a1d5e6b0ad2749ed6444799ad",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VI · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL COMO ORGANISMO FISCAL AUTÓNOMO Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "277-a": {
+  "archivo": "articulos/art-0277-a.md",
+  "sha256": "7d7172f1617abd4dd625a3c0aa74d1211b90906e9b06715465e4e60bdc1feeda",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VI · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL COMO ORGANISMO FISCAL AUTÓNOMO Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "277-b": {
+  "archivo": "articulos/art-0277-b.md",
+  "sha256": "de0a29743e936eafa54f3a18585c2dfc9e2daf998f6013ccd096cec50cff04a7",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VI · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL COMO ORGANISMO FISCAL AUTÓNOMO Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "277-c": {
+  "archivo": "articulos/art-0277-c.md",
+  "sha256": "46a6a7d5a5d1bdf3b236f2075e9042456959d8372a768ca646df8917570f8b9f",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VI · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL COMO ORGANISMO FISCAL AUTÓNOMO Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "277-d": {
+  "archivo": "articulos/art-0277-d.md",
+  "sha256": "d07e5a588380e8ec2002b94dc2f2cc2c21ece98a5a302da07c45ddae1b23dd6e",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VI · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL COMO ORGANISMO FISCAL AUTÓNOMO Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "277-e": {
+  "archivo": "articulos/art-0277-e.md",
+  "sha256": "bd1d41f6eb835c12d0133bbfbc2b7d578c7a3e0128abfef95800a51268166760",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VI · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL COMO ORGANISMO FISCAL AUTÓNOMO Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "277-f": {
+  "archivo": "articulos/art-0277-f.md",
+  "sha256": "44dcfc8134ee6239642ab5135a613cc988054fa25ddd6f2095b3ce5fd11b1205",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VI · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL COMO ORGANISMO FISCAL AUTÓNOMO Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "277-g": {
+  "archivo": "articulos/art-0277-g.md",
+  "sha256": "a09cbb5e8685387e6f385314c3b5c53d4e30d99b52f072e08574263b0cbb339b",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VI · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL COMO ORGANISMO FISCAL AUTÓNOMO Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "278": {
+  "archivo": "articulos/art-0278.md",
+  "sha256": "2bf43d54600042148e349035ec888dcade5d66fa8217863122c4c44458174813",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VII · DE LA CONSTITUCIÓN DE RESERVAS Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "279": {
+  "archivo": "articulos/art-0279.md",
+  "sha256": "9de9e5b03cc254ac954a3eee33ae188b161fe21808d3f4077d9e926fb6e19672",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VII · DE LA CONSTITUCIÓN DE RESERVAS Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "280": {
+  "archivo": "articulos/art-0280.md",
+  "sha256": "d5eb784db1ff73470cd4acde6fe57f997768b97395069e4c97acba2ed37ef5d9",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VII · DE LA CONSTITUCIÓN DE RESERVAS Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "281": {
+  "archivo": "articulos/art-0281.md",
+  "sha256": "767573b17a646e3e0b6eb58ad41707224a413eb82adbe03206a37e16db632579",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VII · DE LA CONSTITUCIÓN DE RESERVAS Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "282": {
+  "archivo": "articulos/art-0282.md",
+  "sha256": "5279186e19020f2428d0417cd2081c6d632fe54d709b5c3343dfcb282768ecb4",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VII · DE LA CONSTITUCIÓN DE RESERVAS Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "283": {
+  "archivo": "articulos/art-0283.md",
+  "sha256": "d9e59e3f3f4ee27b0cd5d62c36be8ed1c7cbd807200b090d12967603f9c7a117",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VII · DE LA CONSTITUCIÓN DE RESERVAS Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "284": {
+  "archivo": "articulos/art-0284.md",
+  "sha256": "cf03ceb7805f4ddf0927a80ba25a5380853d7ff3ac49943c8ac2abdfe1d1612b",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VII · DE LA CONSTITUCIÓN DE RESERVAS Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "285": {
+  "archivo": "articulos/art-0285.md",
+  "sha256": "92f1e6fa2dd98b79b06caf23445ffba93a419e748b97935f0557dce538545fab",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VII · DE LA CONSTITUCIÓN DE RESERVAS Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "286": {
+  "archivo": "articulos/art-0286.md",
+  "sha256": "4b352b13275547abb0ffb5136440e4663ed08dce0a37494a7d44e997cfa11ddd",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VII · DE LA CONSTITUCIÓN DE RESERVAS Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "286-a": {
+  "archivo": "articulos/art-0286-a.md",
+  "sha256": "fb560daf94cfc3c6f03fdebd4dd66223d62a9e7d3fa01f63f9443d734f74ef54",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VII · DE LA CONSTITUCIÓN DE RESERVAS Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "286-b": {
+  "archivo": "articulos/art-0286-b.md",
+  "sha256": "f235290656970233989919a3c49118f1db9ea621245279417f90ba6439228e2f",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VII · DE LA CONSTITUCIÓN DE RESERVAS Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "286-c": {
+  "archivo": "articulos/art-0286-c.md",
+  "sha256": "b38c23bb93950b4885fd51109be00589f38187c3ec957dafb0fa95793621880f",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VII · DE LA CONSTITUCIÓN DE RESERVAS Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "286-d": {
+  "archivo": "articulos/art-0286-d.md",
+  "sha256": "88e804a72b49697ab52a446fb36cf39931b2aa64c3657dd18739197e9c100a47",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VII · DE LA CONSTITUCIÓN DE RESERVAS Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "286-e": {
+  "archivo": "articulos/art-0286-e.md",
+  "sha256": "a68cee72a472e198687fe01b2ff772003a4f5e7c26bf844f9e1e3b9bf0379862",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VII · DE LA CONSTITUCIÓN DE RESERVAS Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "286-f": {
+  "archivo": "articulos/art-0286-f.md",
+  "sha256": "2c0a88b399888766bc15d47fb564252b3f7b2f8f3c5b493e0277d23b8867f27a",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VIII · DEL SISTEMA DE PROFESIONALIZACIÓN Y DESARROLLO Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "286-g": {
+  "archivo": "articulos/art-0286-g.md",
+  "sha256": "840599bfad972fbdbeb75ef04f306881ec7c3122efa99bd3d24161010c797e64",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VIII · DEL SISTEMA DE PROFESIONALIZACIÓN Y DESARROLLO Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "286-h": {
+  "archivo": "articulos/art-0286-h.md",
+  "sha256": "6700718e7a9e3a244a41e957155c1b9407db9e34dd46faf8247618b36711d3a9",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VIII · DEL SISTEMA DE PROFESIONALIZACIÓN Y DESARROLLO Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "286-i": {
+  "archivo": "articulos/art-0286-i.md",
+  "sha256": "b8ef5dac44f9ff90ea23aa07cde19e94031a763fef7df432cc7d06b748d59e2b",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VIII · DEL SISTEMA DE PROFESIONALIZACIÓN Y DESARROLLO Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "286-j": {
+  "archivo": "articulos/art-0286-j.md",
+  "sha256": "6731de2bab70c9a61555d2ae7fc54d81fc62f53de7f955f5e2358e6fa1811dcb",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VIII · DEL SISTEMA DE PROFESIONALIZACIÓN Y DESARROLLO Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "286-k": {
+  "archivo": "articulos/art-0286-k.md",
+  "sha256": "719ccd80b6ec0ffb4bae9c8440cf28b6c66ce8a82231e9a9eb82f4b782fe0cb1",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo VIII · DEL SISTEMA DE PROFESIONALIZACIÓN Y DESARROLLO Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "286-l": {
+  "archivo": "articulos/art-0286-l.md",
+  "sha256": "8abb4f3e5f2d3e426a78f81d1b5981c200ea87a8c8788ab5cfce9af18fc2f2e6",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo IX · DE LOS MEDIOS DE COMUNICACIÓN Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "286-m": {
+  "archivo": "articulos/art-0286-m.md",
+  "sha256": "1641692255709e47ef828e8775d23684632fd28bcf2691672bff5eee2481bef4",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo IX · DE LOS MEDIOS DE COMUNICACIÓN Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "286-n": {
+  "archivo": "articulos/art-0286-n.md",
+  "sha256": "e11db73674ebbcae3c3eb1c8a6ba35e341d3760d59d108b1a1f48138afba8812",
+  "ubicacion": "Titulo CUARTO · DEL INSTITUTO MEXICANO DEL SEGURO SOCIAL / Capítulo IX · DE LOS MEDIOS DE COMUNICACIÓN Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "287": {
+  "archivo": "articulos/art-0287.md",
+  "sha256": "5523f5577d0ce42e91da0838af8fe684237b5a77ff8bea2dfd2774040ad9b061",
+  "ubicacion": "Titulo QUINTO · DE LOS PROCEDIMIENTOS, DE LA CADUCIDAD Y PRESCRIPCION / Capítulo I · DE LOS CRÉDITOS FISCALES Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "288": {
+  "archivo": "articulos/art-0288.md",
+  "sha256": "be773ade0f0b493fdbf5c52eec30f6666aadc0dcb00eae45699d74660d3e2347",
+  "ubicacion": "Titulo QUINTO · DE LOS PROCEDIMIENTOS, DE LA CADUCIDAD Y PRESCRIPCION / Capítulo I · DE LOS CRÉDITOS FISCALES Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "289": {
+  "archivo": "articulos/art-0289.md",
+  "sha256": "81a3fc63d70d46b6e7443d2cad97cabee44356e35df590e8f38976aa99b1db02",
+  "ubicacion": "Titulo QUINTO · DE LOS PROCEDIMIENTOS, DE LA CADUCIDAD Y PRESCRIPCION / Capítulo I · DE LOS CRÉDITOS FISCALES Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "290": {
+  "archivo": "articulos/art-0290.md",
+  "sha256": "08fcc045fe38f48b3690d636e266a57ba991bea03a9cf2784efb3f9686489e7e",
+  "ubicacion": "Titulo QUINTO · DE LOS PROCEDIMIENTOS, DE LA CADUCIDAD Y PRESCRIPCION / Capítulo I · DE LOS CRÉDITOS FISCALES Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "291": {
+  "archivo": "articulos/art-0291.md",
+  "sha256": "3089833b5e2111488d5831af4aa4db2266c0da7929fc0742eca5aba5db4624ec",
+  "ubicacion": "Titulo QUINTO · DE LOS PROCEDIMIENTOS, DE LA CADUCIDAD Y PRESCRIPCION / Capitulo II · DE LOS PROCEDIMIENTOS",
+  "derogado": false
+ },
+ "292": {
+  "archivo": "articulos/art-0292.md",
+  "sha256": "0302483f04348796a1cdf7fbaef177f5a95087207bf32b25cbaecd129fc48849",
+  "ubicacion": "Titulo QUINTO · DE LOS PROCEDIMIENTOS, DE LA CADUCIDAD Y PRESCRIPCION / Capitulo II · DE LOS PROCEDIMIENTOS",
+  "derogado": false
+ },
+ "293": {
+  "archivo": "articulos/art-0293.md",
+  "sha256": "8c85104d41097f623086313c258414ae360d4ed4cc1de06408f77b48d7421e76",
+  "ubicacion": "Titulo QUINTO · DE LOS PROCEDIMIENTOS, DE LA CADUCIDAD Y PRESCRIPCION / Capitulo II · DE LOS PROCEDIMIENTOS",
+  "derogado": false
+ },
+ "294": {
+  "archivo": "articulos/art-0294.md",
+  "sha256": "f641f4fce5e82ba3130e92b67d7fae6c68911fd7ace2cadd18ab435d3790dc1a",
+  "ubicacion": "Titulo QUINTO · DE LOS PROCEDIMIENTOS, DE LA CADUCIDAD Y PRESCRIPCION / Capitulo II · DE LOS PROCEDIMIENTOS",
+  "derogado": false
+ },
+ "295": {
+  "archivo": "articulos/art-0295.md",
+  "sha256": "11a30dd3223bf9cfc6390746fa4372564df4bf9efd4f79ae2334e980b4efd811",
+  "ubicacion": "Titulo QUINTO · DE LOS PROCEDIMIENTOS, DE LA CADUCIDAD Y PRESCRIPCION / Capitulo II · DE LOS PROCEDIMIENTOS",
+  "derogado": false
+ },
+ "296": {
+  "archivo": "articulos/art-0296.md",
+  "sha256": "9c716183cc1edde3317092b798a58538fee61f2241376a2439b1dbdd11b979e9",
+  "ubicacion": "Titulo QUINTO · DE LOS PROCEDIMIENTOS, DE LA CADUCIDAD Y PRESCRIPCION / Capitulo II · DE LOS PROCEDIMIENTOS",
+  "derogado": false
+ },
+ "297": {
+  "archivo": "articulos/art-0297.md",
+  "sha256": "65819df1be55909401ebba0c2a54e1d5687ac54515a6e9267eaa3ea6c0789e85",
+  "ubicacion": "Titulo QUINTO · DE LOS PROCEDIMIENTOS, DE LA CADUCIDAD Y PRESCRIPCION / Capitulo III · DE LA CADUCIDAD Y PRESCRIPCION",
+  "derogado": false
+ },
+ "298": {
+  "archivo": "articulos/art-0298.md",
+  "sha256": "82cdfa83cdad6e6d53caf9674de9e13342bc4bd18a8b88610fe9a8fb266d2c9a",
+  "ubicacion": "Titulo QUINTO · DE LOS PROCEDIMIENTOS, DE LA CADUCIDAD Y PRESCRIPCION / Capitulo III · DE LA CADUCIDAD Y PRESCRIPCION",
+  "derogado": false
+ },
+ "299": {
+  "archivo": "articulos/art-0299.md",
+  "sha256": "a55d2646009d3306754603aabde428623cb04c7f397acd5e24eaeaa926b2bb4f",
+  "ubicacion": "Titulo QUINTO · DE LOS PROCEDIMIENTOS, DE LA CADUCIDAD Y PRESCRIPCION / Capitulo III · DE LA CADUCIDAD Y PRESCRIPCION",
+  "derogado": false
+ },
+ "300": {
+  "archivo": "articulos/art-0300.md",
+  "sha256": "e6b5bf6d8e528296b649dd52974707d1153787ce86631a62ffd602bf3adb6dd1",
+  "ubicacion": "Titulo QUINTO · DE LOS PROCEDIMIENTOS, DE LA CADUCIDAD Y PRESCRIPCION / Capitulo III · DE LA CADUCIDAD Y PRESCRIPCION",
+  "derogado": false
+ },
+ "301": {
+  "archivo": "articulos/art-0301.md",
+  "sha256": "80b48a155fd37434fb4ff434f93703373fc6376675c5b216cff541a37a288834",
+  "ubicacion": "Titulo QUINTO · DE LOS PROCEDIMIENTOS, DE LA CADUCIDAD Y PRESCRIPCION / Capitulo III · DE LA CADUCIDAD Y PRESCRIPCION",
+  "derogado": false
+ },
+ "302": {
+  "archivo": "articulos/art-0302.md",
+  "sha256": "e88c35847f0bdbbd299ad87a599d9d196e5815fbfb63c2bcbc447511173e6a06",
+  "ubicacion": "Titulo QUINTO · DE LOS PROCEDIMIENTOS, DE LA CADUCIDAD Y PRESCRIPCION / Capitulo III · DE LA CADUCIDAD Y PRESCRIPCION",
+  "derogado": false
+ },
+ "303": {
+  "archivo": "articulos/art-0303.md",
+  "sha256": "13f017ae2f607e0041be90063e09e13420b6953bff8d8e6a3cacd2c04d00eb6d",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo I · DE LAS RESPONSABILIDADES Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "303-a": {
+  "archivo": "articulos/art-0303-a.md",
+  "sha256": "763bdec7645031dff6c28cf32b78e31f1b3dc133d8789a24903d374a9639113f",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo I · DE LAS RESPONSABILIDADES Denominación del Capítulo reformada DOF 20-12-2001",
+  "derogado": false
+ },
+ "304": {
+  "archivo": "articulos/art-0304.md",
+  "sha256": "1e1961e80eefd8eed26a5a126946840ad8a11c2313d9699f9a17c305f2ed869b",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo II · DE LAS INFRACCIONES Y SANCIONES Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "304-a": {
+  "archivo": "articulos/art-0304-a.md",
+  "sha256": "a86c80f205823fcf1c0f0d29e8bebd29d6d36af0d23e6f4083c6c50ba4f2ac41",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo II · DE LAS INFRACCIONES Y SANCIONES Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "304-b": {
+  "archivo": "articulos/art-0304-b.md",
+  "sha256": "37b931eb743fb20c1928537d9caffd0c0bfa9162af340e980ba9568bb646a443",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo II · DE LAS INFRACCIONES Y SANCIONES Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "304-c": {
+  "archivo": "articulos/art-0304-c.md",
+  "sha256": "99ba175c474c2b9bf7daa1b97ca9e484ecbb623f7ebe2b7246f3031e6e8ab141",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo II · DE LAS INFRACCIONES Y SANCIONES Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "304-d": {
+  "archivo": "articulos/art-0304-d.md",
+  "sha256": "1aa032743c05ccd6d776c778787b681436f5cd473053bbd8329869284756bde5",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo II · DE LAS INFRACCIONES Y SANCIONES Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "305": {
+  "archivo": "articulos/art-0305.md",
+  "sha256": "601d51fdf46f62e58f3cea7cc295218c04c900b706db7ee4dcb6ce2f34a94aa6",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo III · DE LOS DELITOS Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "306": {
+  "archivo": "articulos/art-0306.md",
+  "sha256": "3219c6721972455a286895bb9d64f65b70728becb4458a599d0a6652c50a190f",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo III · DE LOS DELITOS Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "307": {
+  "archivo": "articulos/art-0307.md",
+  "sha256": "a1208a3e904a496d637c21a43496bfd67d3460b28a39538968471b4602613c0b",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo III · DE LOS DELITOS Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "308": {
+  "archivo": "articulos/art-0308.md",
+  "sha256": "318ea3afe02f0f7a75749ab6e3f256f8c51f11fd74a90c8459f254c09f314b04",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo III · DE LOS DELITOS Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "309": {
+  "archivo": "articulos/art-0309.md",
+  "sha256": "8e53c9d2a178459b21b4fdeffa06545a35e681a13532488e93bddb5706a22799",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo III · DE LOS DELITOS Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "310": {
+  "archivo": "articulos/art-0310.md",
+  "sha256": "8e2716f1ecfb9f967ee92d76ca7bdc21a85d5e389a941c654344393fac7e80f0",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo III · DE LOS DELITOS Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "311": {
+  "archivo": "articulos/art-0311.md",
+  "sha256": "792525dcdc258129c246d8e97cb88f4ed5e30be087aa1189cc7ed27330cdc9e8",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo III · DE LOS DELITOS Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "312": {
+  "archivo": "articulos/art-0312.md",
+  "sha256": "3fa825b88da5709f215082e45410b1a42e42dc6f7b45f2f7d7f9a7c5e9b90d04",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo III · DE LOS DELITOS Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "313": {
+  "archivo": "articulos/art-0313.md",
+  "sha256": "d60dd419a7d8a00a04d698c1a11fb71d0868592e2de8ebf50b805817173794dc",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo III · DE LOS DELITOS Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "314": {
+  "archivo": "articulos/art-0314.md",
+  "sha256": "9d8c07c09a9815af175d225da0a5dde0fd1f060559e81bb723b42825be8f9804",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo III · DE LOS DELITOS Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "315": {
+  "archivo": "articulos/art-0315.md",
+  "sha256": "99d0b8ad50beead58512578d63f963c828f41669683560c7f9777e9622837d9d",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo III · DE LOS DELITOS Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "316": {
+  "archivo": "articulos/art-0316.md",
+  "sha256": "a775e8ef9073fa76ee61007e897c93ed27d3e84b302cf25df929be635ba5ed21",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo III · DE LOS DELITOS Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "317": {
+  "archivo": "articulos/art-0317.md",
+  "sha256": "1bc2e4bd10cb7844b4bb69c82f14363781df361ff0376906b021d56651d7d789",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo III · DE LOS DELITOS Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "318": {
+  "archivo": "articulos/art-0318.md",
+  "sha256": "c9450158432b738a6e4334983997814000588ebc359770713e25bb7f02622390",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo III · DE LOS DELITOS Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ },
+ "319": {
+  "archivo": "articulos/art-0319.md",
+  "sha256": "35c78e80ec7db70793c064e2a222a8485e5816bfc79d3a0b070f6b35ccc2c325",
+  "ubicacion": "Título SEXTO · DE LAS RESPONSABILIDADES, INFRACCIONES, SANCIONES Y DELITOS Denominación del Título reformada DOF 20-12-2001 / Capítulo III · DE LOS DELITOS Capítulo adicionado DOF 20-12-2001",
+  "derogado": false
+ }
+}
