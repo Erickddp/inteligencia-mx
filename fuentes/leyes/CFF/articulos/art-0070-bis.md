@@ -1,0 +1,8 @@
+# CFF · Artículo 70-BIS
+
+Ley: Código Fiscal de la Federación (CFF)
+Ubicación: Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones
+Texto según: Cámara de Diputados, última reforma DOF 2026-04-09 · https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
+
+Artículo 70 Bis.- (Derogado).

@@ -1,5 +1,9 @@
 # LINFONAVIT · Artículo 18-BIS
 
+Ley: Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores (LINFONAVIT)
+Texto según: Cámara de Diputados, última reforma DOF 2025-02-21 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
+
 Artículo 18 Bis.- El Comité de Auditoría se integrará en forma tripartita con un integrante designado por el Gobierno Federal, uno del sector de los trabajadores y uno del sector empresarial, designados por el Consejo de Administración, previo dictamen de la Comisión de Vigilancia, y sujetos a la ratificación de la Asamblea General.
 
 Por cada integrante propietario deberá haber un suplente.

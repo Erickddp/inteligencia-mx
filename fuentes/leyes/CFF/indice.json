@@ -1,0 +1,2528 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "8b74355315927c3be167251106b8daa157607a1863c98fa571e8c2e5fb43a18d",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "d6d7aa0e94a44add9c52d6fe25d7fa75d7d8cb334b4406183d84642a074da28f",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "2318ecf4cee2637467592288529497874d5eb3dc66eac0f5e60852e05422c8e3",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "010a8be36ec6ea3e73cee776141f255ba533b83d60a5d46127405f430d3749a2",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "4-a": {
+  "archivo": "articulos/art-0004-a.md",
+  "sha256": "d123a4f20e35064f5ec9ab060843b4e3779c43f364aba64a77de69137cbcb88e",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "c4e10e13f40266446d0ca1110cde57dc88b9222e71c652d5c11ce5f26ff79251",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "5-a": {
+  "archivo": "articulos/art-0005-a.md",
+  "sha256": "ac1af35d0b66fba51d7da41748b64b93542d6944888928932731ad951edad9e9",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "8e3096f959915727e79eb842b97f635fdec56d07078a53f1650af0bcb2858612",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "3c62f26505e05302600fb36e8b0002b365c3230daea62300ee864a913550ba1c",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "d3bd91de5edab748b0048bdabafa3fd83df3202eb8347a76059348be87c7df5b",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "78d71f86907abded003cc82defd42edfd6f409f306e93f8614abf0a1c37074fa",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "f55b5ee86136c153c76b5ef0015bdc81bdeb8b1a5764b5f6f9e027c945fbea24",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "5af9e6bde9b61ad57a4f3efc3ac75610d15522ea60052652ea3430d25690a3da",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "04601c41e9d7df74299a1c3df4d4e3a42d726ebb68a9853f0202fb4d4e19b7fb",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "a6ebad1e1392afa26b45a901880a7443dd9564d5537cabd79dea0d515359f83a",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "4f60d7a4992e2bd6903d0a6b9ac83131a7052cf4808c4e5e82c162c573784598",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "14-a": {
+  "archivo": "articulos/art-0014-a.md",
+  "sha256": "706a800d28c694449af14160cd3a56a2e60dfa9af0df58c07465717158fc0dda",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "14-b": {
+  "archivo": "articulos/art-0014-b.md",
+  "sha256": "1b2771f091c31305ceacf261ea4e6d2b170a799e9f2f46c85a6d5a624ce60ba6",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "d058c43d87f893d01214a8e36a08d95c862890db81a91b837dbe12d2a6fdff44",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "15-a": {
+  "archivo": "articulos/art-0015-a.md",
+  "sha256": "6fd63f0d8144a08ac6a90980952b47b11750e0f673fca01c05c805db56c7d75d",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "15-b": {
+  "archivo": "articulos/art-0015-b.md",
+  "sha256": "f75dee815f98b208dcf1ea9a3ce487a8bea0db468bfe59f7efd8ac5c01f4ce5a",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "15-c": {
+  "archivo": "articulos/art-0015-c.md",
+  "sha256": "4e39503f6da92be4b2e90fe200ea67f110abfce4458f6415f759ca44a240a5df",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "15-d": {
+  "archivo": "articulos/art-0015-d.md",
+  "sha256": "9636a61dba21116cc434091a29f3bcea0b11c98ce7fd1551ebe761f5e851c106",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "b3fc7e748acc77d08dc50dd02b8a11a96c3e632fd93fdd5a9970f2e8a7b97e8b",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "16-a": {
+  "archivo": "articulos/art-0016-a.md",
+  "sha256": "50f66278c6ec8a3a112386cf3865dd434a9f10c4c50775e7c10eb7c22b2cfdf2",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "16-b": {
+  "archivo": "articulos/art-0016-b.md",
+  "sha256": "f157b9239d30f83cebb13348ea138aa7014753c385f61a368687f7cd6d1bc43e",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "16-c": {
+  "archivo": "articulos/art-0016-c.md",
+  "sha256": "386a2596482195e018f2c64925023a17b994b530d6e11eb5be86e57a6b445df5",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "427a62ace09456877c3ae4e0b409391e8e10b977e3fa0bd6e8b2fd165b0605fc",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "17-a": {
+  "archivo": "articulos/art-0017-a.md",
+  "sha256": "8fa4a19b03a1c593f1e967bc7ce4a5c9cf2449b687617e482e0053517aa9aa44",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "17-b": {
+  "archivo": "articulos/art-0017-b.md",
+  "sha256": "9e6c43d2782752202cc53eb746196605c716d8540a20885362cf86bb3c3e36e8",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capitulo I",
+  "derogado": false
+ },
+ "17-c": {
+  "archivo": "articulos/art-0017-c.md",
+  "sha256": "ce9408b7576dc1de64e5c2b47bd9c7569fbb64d41063a072f5921cb9c7165f2b",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capítulo II · DE LOS MEDIOS ELECTRÓNICOS",
+  "derogado": false
+ },
+ "17-d": {
+  "archivo": "articulos/art-0017-d.md",
+  "sha256": "d186324b004eaa051248cf7b9a730a1b8e5b8c30d5a120d11b1d1ff390923213",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capítulo II · DE LOS MEDIOS ELECTRÓNICOS",
+  "derogado": false
+ },
+ "17-e": {
+  "archivo": "articulos/art-0017-e.md",
+  "sha256": "691fdad47f70aa02b43023517f233708d7b446a359bddc32f4b2036799bed158",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capítulo II · DE LOS MEDIOS ELECTRÓNICOS",
+  "derogado": false
+ },
+ "17-f": {
+  "archivo": "articulos/art-0017-f.md",
+  "sha256": "d4a82e594058ccf03815a4be634ad0004ea823f7dd6c302b1944abb477eb606b",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capítulo II · DE LOS MEDIOS ELECTRÓNICOS",
+  "derogado": false
+ },
+ "17-g": {
+  "archivo": "articulos/art-0017-g.md",
+  "sha256": "7b30fd04a85e6904ad2b4d36f1cd9e3d4f8920a9e1bc8330882c58635140e937",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capítulo II · DE LOS MEDIOS ELECTRÓNICOS",
+  "derogado": false
+ },
+ "17-h": {
+  "archivo": "articulos/art-0017-h.md",
+  "sha256": "be54afa13ef97f578c9cbb2c5e0c903acc166c0b4e1ba39bd92e10a16e28a6c6",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capítulo II · DE LOS MEDIOS ELECTRÓNICOS",
+  "derogado": false
+ },
+ "17-h-bis": {
+  "archivo": "articulos/art-0017-h-bis.md",
+  "sha256": "02baf9487679ac667b7553a3ccce6cd896517b6fb2263ce81e717807cb8d1ba5",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capítulo II · DE LOS MEDIOS ELECTRÓNICOS",
+  "derogado": false
+ },
+ "17-i": {
+  "archivo": "articulos/art-0017-i.md",
+  "sha256": "3c6c836aad8664b7234e1da60739dc36312c037ef18b335cdff74dc403542374",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capítulo II · DE LOS MEDIOS ELECTRÓNICOS",
+  "derogado": false
+ },
+ "17-j": {
+  "archivo": "articulos/art-0017-j.md",
+  "sha256": "ee3f9a91dea9d0b3d42227277a242075aad579d3d47909f2823884109d8a3503",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capítulo II · DE LOS MEDIOS ELECTRÓNICOS",
+  "derogado": false
+ },
+ "17-k": {
+  "archivo": "articulos/art-0017-k.md",
+  "sha256": "e85b776755cfae025f9217962ef083703e1197929170ec2b6b13b8b82c956806",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capítulo II · DE LOS MEDIOS ELECTRÓNICOS",
+  "derogado": false
+ },
+ "17-l": {
+  "archivo": "articulos/art-0017-l.md",
+  "sha256": "f340ee3dd31cdb69d10893402a7220b63d4d3c497c1669c9edc33dc0c05b6cf5",
+  "ubicacion": "Titulo PRIMERO · Disposiciones Generales / Capítulo II · DE LOS MEDIOS ELECTRÓNICOS",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "ad2c11dd1190a63763cdf1376f8bd355d165b9378671fd7f3011ef28d63d0fa3",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "18-a": {
+  "archivo": "articulos/art-0018-a.md",
+  "sha256": "ada7b80028d5a261fbc120febee7d0c389f38039e055b02e4b54ee24dfef10e6",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "18-b": {
+  "archivo": "articulos/art-0018-b.md",
+  "sha256": "97f8afd67dae22be41dc3004128df48c0b837926334a5fed66023925a3a3eef1",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "f8f8872bfe53bdd0da0b9a5df38dded78c7ac3bff6615ddaef99b69c5e1240e2",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "19-a": {
+  "archivo": "articulos/art-0019-a.md",
+  "sha256": "ba2eb549938ee5a9a1dd15cdd4d999d8ff4673b671f51256bff9242fe4a709b0",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "20": {
+  "archivo": "articulos/art-0020.md",
+  "sha256": "e7509c9818e841d14205cec00559f3db624b2bfc8ea937c460e61ff79ea27652",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "20-bis": {
+  "archivo": "articulos/art-0020-bis.md",
+  "sha256": "6ff9976274a1ef2e1996a4b268ad69f270d3dd9faefe18712dc89e8151a45e4c",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "20-ter": {
+  "archivo": "articulos/art-0020-ter.md",
+  "sha256": "9366044b190e18234f72bf3a8f1b6c8fcfbeb0e79d217dfb771d9db24c8f5553",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "21": {
+  "archivo": "articulos/art-0021.md",
+  "sha256": "3ad29a71068db66135f14fccac1f00e024f455a93cad20579437559e7f02a4c3",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "22": {
+  "archivo": "articulos/art-0022.md",
+  "sha256": "19142a14d80944245d64c1634f5d7ca1f7677c6dc1677883282cd19ec54604ab",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "22-a": {
+  "archivo": "articulos/art-0022-a.md",
+  "sha256": "de340a7d9f28bc13987f890e975680ad9f11d801a7b7006f23768c77b7359044",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "22-b": {
+  "archivo": "articulos/art-0022-b.md",
+  "sha256": "7c53eaaab1ba437183e33ff82616d627f9a61f9cf413568aeb7d7958fffaed07",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "22-c": {
+  "archivo": "articulos/art-0022-c.md",
+  "sha256": "e4263f32b5eb9e70dabf0e86ed4899d81511f56f83ab1614e0368aba67022d8c",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "22-d": {
+  "archivo": "articulos/art-0022-d.md",
+  "sha256": "33ea1e134a92ed88bdd57ea98b0f7f591ba4f82b0e699ea92d96ef841039f6ce",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "23": {
+  "archivo": "articulos/art-0023.md",
+  "sha256": "55879d24c57dc145e6ed16c4f9ec2e94aac06caedb16d70f6d9fb556ea66959c",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "24": {
+  "archivo": "articulos/art-0024.md",
+  "sha256": "273c82128cd99bc3fc2a023b39995ce5fc37502df85b529a6ff7df5536708fdc",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "25": {
+  "archivo": "articulos/art-0025.md",
+  "sha256": "c1e879b727d30d6c6e16a709bf99868fba2b9c803bf132b8d6e89b95d1d48448",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "25-a": {
+  "archivo": "articulos/art-0025-a.md",
+  "sha256": "f46922bbf62e045f0c18c0ff48f654f1bcb9fd743624fdc955ce33d799c3422c",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "26": {
+  "archivo": "articulos/art-0026.md",
+  "sha256": "89e215620f10eb1f866d2a129ae67bb7a884a18d47e239534e77c166065b8147",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "26-a": {
+  "archivo": "articulos/art-0026-a.md",
+  "sha256": "3b700004c5c59c5a4e9ac3e70cfad3714cc0b32700e790ee7d278185ecd78839",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "27": {
+  "archivo": "articulos/art-0027.md",
+  "sha256": "53a015b031e006e8dbfe0ddc4de1dc7581428f4043128a8f6bb07c011e9dfe74",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "28": {
+  "archivo": "articulos/art-0028.md",
+  "sha256": "a631da7d953a9384e58bc89338577d63fc2c121f2b2c18f8e5b65386c260b03c",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "29": {
+  "archivo": "articulos/art-0029.md",
+  "sha256": "5a019eebf48150486773999d035875ffb9350b453ed4bd8c43f7e036a5906696",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "29-bis": {
+  "archivo": "articulos/art-0029-bis.md",
+  "sha256": "b98fec4ad073758422cc020f3ca48978d7d0470ee80bf0ad3a52319c380caaed",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "29-a": {
+  "archivo": "articulos/art-0029-a.md",
+  "sha256": "6f868ede14e6c802118864255682477535f93356bf4e245c4e303b38842e2e64",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "29-a-bis": {
+  "archivo": "articulos/art-0029-a-bis.md",
+  "sha256": "6cd12d993239d618720a3f8c23a6f7a25c80148248368f4de34b43714fb7ca02",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "29-b": {
+  "archivo": "articulos/art-0029-b.md",
+  "sha256": "fa1158e3c3c9dd6c167d01894026100fa5d7ddac68228ccc4d6f473d512e2573",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": true
+ },
+ "29-c": {
+  "archivo": "articulos/art-0029-c.md",
+  "sha256": "91a40bafdaa3686e3a91bd81ce3a3f14a529070a109a279b48019a02f9315c51",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": true
+ },
+ "29-d": {
+  "archivo": "articulos/art-0029-d.md",
+  "sha256": "a06634062c24413c4534d84feb20e239da0d8655d60934a4fc89e5fd615ad16a",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": true
+ },
+ "30": {
+  "archivo": "articulos/art-0030.md",
+  "sha256": "bdd8582546a81085bff5788391ba0d964daeb9fc9b45cebe8906dbecbd056934",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "30-a": {
+  "archivo": "articulos/art-0030-a.md",
+  "sha256": "d56cac36b0a19dca63a8209dfc7d71b921965d22171ed1916065bcd91dcdbbca",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "30-b": {
+  "archivo": "articulos/art-0030-b.md",
+  "sha256": "7473cde2d8d2b54e6d66f7641b70a3a996fdc7e0557f0d2b0d8d6c62ded329db",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "31": {
+  "archivo": "articulos/art-0031.md",
+  "sha256": "b867d93bfcfee7f265bda82569cc5ec3a4c6751190f9e0b319376dbc17820e5e",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "31-a": {
+  "archivo": "articulos/art-0031-a.md",
+  "sha256": "cb771e9feaa4620533c4af3a11ef3cbae9c8b3003e0770253f577f7ecf5ae8e5",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "32": {
+  "archivo": "articulos/art-0032.md",
+  "sha256": "37b2804aee3bbaa1470060b0c1eb9fd399e85727954340d6d2d92f9e98b8790d",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "32-a": {
+  "archivo": "articulos/art-0032-a.md",
+  "sha256": "3cbf305d1d96c57774c9d95838f05b4d0e066efa8329a4a1f0bff7e9a4f5e027",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "32-b": {
+  "archivo": "articulos/art-0032-b.md",
+  "sha256": "5cad6d341e26bd884e84a24ec2dcf71d3a1243bb1c866df35255583230b3e459",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "32-b-bis": {
+  "archivo": "articulos/art-0032-b-bis.md",
+  "sha256": "d3d1bfcd1336ce89bf6240675ccd169ad5032656be2bd664c9ce950a3ce9e938",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "32-b-ter": {
+  "archivo": "articulos/art-0032-b-ter.md",
+  "sha256": "7ae1784ac7c5413dc016bd932473e89fd67dc4026fbb4f66c8be378957b9fbd9",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "32-b-quater": {
+  "archivo": "articulos/art-0032-b-quater.md",
+  "sha256": "99c3c5533b7b4fe3fc2db6e60a38db43bf7006531f31114033e0dcf6aa024114",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "32-b-quinquies": {
+  "archivo": "articulos/art-0032-b-quinquies.md",
+  "sha256": "a1f4d1baa866ab69060138f9739c3584b3e782a818016d442cd6df795e97d627",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "32-c": {
+  "archivo": "articulos/art-0032-c.md",
+  "sha256": "1f67466b3451490910c44175390fd241a9535478e6ce976daac471a563d1225d",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "32-d": {
+  "archivo": "articulos/art-0032-d.md",
+  "sha256": "5eaa03ff76bcc9e614fd284226cef57d87d3afc5b6d352e90239bdd5da22a76c",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "32-e": {
+  "archivo": "articulos/art-0032-e.md",
+  "sha256": "5bd5b1278426ce548b9f02beafc137d4939766809553d12d7670f18605752386",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "32-f": {
+  "archivo": "articulos/art-0032-f.md",
+  "sha256": "6ae9382bc518a442e658ec3bd4962599faa04603dff89c421f61300314796d95",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "32-g": {
+  "archivo": "articulos/art-0032-g.md",
+  "sha256": "fd619488e830a2584b9316a1300f51532df7317090f157b46ed6ffba8eeccbd7",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "32-h": {
+  "archivo": "articulos/art-0032-h.md",
+  "sha256": "db593873065c1d0bc9801315b45de2f84c35252945e6fbdbc42be50b26b5d718",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "32-i": {
+  "archivo": "articulos/art-0032-i.md",
+  "sha256": "4ecafe1a01b0f73d87b2babb4a7199691bca813b690a34ade2eb4a64595f8049",
+  "ubicacion": "Titulo SEGUNDO · De los Derechos y Obligaciones de los Contribuyentes / Capitulo UNICO",
+  "derogado": false
+ },
+ "33": {
+  "archivo": "articulos/art-0033.md",
+  "sha256": "883400d5113e9c2b0603d97ee387325c150c8c042b7337bd24390528bc6981b8",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "33-a": {
+  "archivo": "articulos/art-0033-a.md",
+  "sha256": "5ae26b01b26588aba032827938f3ba2d14a56aa408ddd6f42df41b55c76a0ef7",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "33-b": {
+  "archivo": "articulos/art-0033-b.md",
+  "sha256": "53a6940443385fa76ead4d38bc6d99f58d62dc8bc463cefd57c74a4dc615b42a",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "34": {
+  "archivo": "articulos/art-0034.md",
+  "sha256": "c8647489ddbf971fb3d1f01c7cdffb19e514ec10d960bf4fbdae9058e3185559",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "34-a": {
+  "archivo": "articulos/art-0034-a.md",
+  "sha256": "9ec3ccc6a678547df18be13ce576f9d18c4f32e1728136835faf00f349f300fb",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "35": {
+  "archivo": "articulos/art-0035.md",
+  "sha256": "21ad1146a541c2bd6352ef5a98e05114e734618e177e378a5096247ba868d98e",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "36": {
+  "archivo": "articulos/art-0036.md",
+  "sha256": "0669ba9575ed9712057599267e0641f0f939c1ddc78ed006640155fbc1350640",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "36-bis": {
+  "archivo": "articulos/art-0036-bis.md",
+  "sha256": "a5468dd29928a4052e750a4a9ff6f86b00c14caf7883770c386271c440c7dc7d",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "37": {
+  "archivo": "articulos/art-0037.md",
+  "sha256": "eb74f3934b153cc228597c3d088eb9cebeee61b6f69ec05d4a96e5fa25dbe0c0",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "38": {
+  "archivo": "articulos/art-0038.md",
+  "sha256": "ee1f039ee54057b763d88e2b4d7418cb916a3feafb29883e16495d246e616bf5",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "39": {
+  "archivo": "articulos/art-0039.md",
+  "sha256": "d89e2fbf0e355ef46f5c60ea5084dec6fd608636e2c7873dc8092f10e47428a2",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "40": {
+  "archivo": "articulos/art-0040.md",
+  "sha256": "9c51ea75fc1c8296edb9c676f33b0248239c954132ba9759301e1213c0a881f3",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "40-a": {
+  "archivo": "articulos/art-0040-a.md",
+  "sha256": "48eacb578d10577c19267071a6be019f79a206232266746d738c4a27b80a6579",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "41": {
+  "archivo": "articulos/art-0041.md",
+  "sha256": "30d76a3adaa257f161860b70dcd067dff8c4f040f019268db2816a86cbeb3b34",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "41-a": {
+  "archivo": "articulos/art-0041-a.md",
+  "sha256": "09b1e890beb6e7b8a346490abaa4ad65d7db62627106bc0518a690db7bce44f5",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "41-b": {
+  "archivo": "articulos/art-0041-b.md",
+  "sha256": "4c74baf294af05edd19f8cd3c5a844cc6d98d9e28841b9b079ef937809bdb5f6",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": true
+ },
+ "42": {
+  "archivo": "articulos/art-0042.md",
+  "sha256": "49ca1556ee750e0584450855f2332a1a8cd51c96afd14d0e104a63ad1795c5ad",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "42-a": {
+  "archivo": "articulos/art-0042-a.md",
+  "sha256": "171d07838ffd04b4f5fd78089a680dd5681c65180b1168e1e8e771b1ca1d3423",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "42-b": {
+  "archivo": "articulos/art-0042-b.md",
+  "sha256": "2b57b9ddaa53853bd0352357eca063797ad289dcece7cf512791909b1d3d9b9a",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "43": {
+  "archivo": "articulos/art-0043.md",
+  "sha256": "2d9d9e9ffafe2b988893016469f25bf6d70295e9e7c63245edd6a1ae8d4460ec",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "44": {
+  "archivo": "articulos/art-0044.md",
+  "sha256": "c57ea6cf91385d23b40ce90945e4b53a66a720b2f19c780ff8bc98492c61971f",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "45": {
+  "archivo": "articulos/art-0045.md",
+  "sha256": "f339da87369e33a9f4b48abf3c6b869d4e88fd4f732e583921723e51ce49030c",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "46": {
+  "archivo": "articulos/art-0046.md",
+  "sha256": "00019f7b4318708da0cbc836a0af8fba3a89e4a4fe5dceac9334eec29155c99d",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "46-a": {
+  "archivo": "articulos/art-0046-a.md",
+  "sha256": "231aeb2f8bb0b33c43fa0d46a277337175553702b97537443d0dd982fe31cf69",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "47": {
+  "archivo": "articulos/art-0047.md",
+  "sha256": "e907bd28bc3762fb2b9aaa3fb1eeec518e7c3caf9ac0f179ada9533564cfc732",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "48": {
+  "archivo": "articulos/art-0048.md",
+  "sha256": "97ad0b57013f4352159a15c9bce18353be259da5167f30784d817333a88d9eff",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "48-a": {
+  "archivo": "articulos/art-0048-a.md",
+  "sha256": "9436919d57f819fa7154d7e8eb803252d3b3d8727eda66026710173501edca2e",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "49": {
+  "archivo": "articulos/art-0049.md",
+  "sha256": "1128f8e4d620a5bdc5c27e115650660b9a5e735493f136b90c43a15f19d89bad",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "49-bis": {
+  "archivo": "articulos/art-0049-bis.md",
+  "sha256": "b72b696bdfc3151b55fb00e6d424e3397d89542416a812e436742b84138892ec",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "50": {
+  "archivo": "articulos/art-0050.md",
+  "sha256": "9dfb6ad1e21a0a395a7942a1f99efbac6a8050855a28ade5147a3daa308e9545",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "51": {
+  "archivo": "articulos/art-0051.md",
+  "sha256": "8a3189267dc34775ac0c69c6f0cb9c9e44def31c7ff5a6bd75a33a735bd0b331",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "52": {
+  "archivo": "articulos/art-0052.md",
+  "sha256": "1af006fb2a24f3f931554fae8ee3cec34afbc9da8e2ae0b93c6e35c05d381ceb",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "52-a": {
+  "archivo": "articulos/art-0052-a.md",
+  "sha256": "652b5d0c3c3d714632249583c64360295de7ed06b579e0adf892dfe2c3e409fb",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "53": {
+  "archivo": "articulos/art-0053.md",
+  "sha256": "fe5b6310d0869f84574e872525281e45b1624b40b131644e7c6ad5f3c1c2ca80",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "53-a": {
+  "archivo": "articulos/art-0053-a.md",
+  "sha256": "b836f2f5d07e65f123f7df672f68875601e32fa4648068a1354523a04a6ab0a3",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "53-b": {
+  "archivo": "articulos/art-0053-b.md",
+  "sha256": "2cf8aac61e76f6251fe8d139dbf2fb47c1aa773450bc6ef36346e0bc7e443e5c",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "53-c": {
+  "archivo": "articulos/art-0053-c.md",
+  "sha256": "31b0f772f4a289242b477a117c0297d12c4bb4bae1f5d80cd3177d4b7427038d",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "53-d": {
+  "archivo": "articulos/art-0053-d.md",
+  "sha256": "fa24775fc04ad9ca0b733ce3e73ed96714a5750fc9776bb91c358e4d7f1a27da",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "54": {
+  "archivo": "articulos/art-0054.md",
+  "sha256": "4b16ebdd2628738b41dca717e6d9c8c6b53513ca49fd9fbc77fdc97c3c7e7e2e",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "55": {
+  "archivo": "articulos/art-0055.md",
+  "sha256": "db46391a5a04d089b03e76850d73dd211f54741d7939b2c08c17dcf22a7295ee",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "56": {
+  "archivo": "articulos/art-0056.md",
+  "sha256": "f3f6129fe1bf4a69e257b89c2352797515801189843327601e1c46c146f85b92",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "57": {
+  "archivo": "articulos/art-0057.md",
+  "sha256": "b4e0f9145dc27f966672b8c9a7440c00ab924aaa91b50026a1ad8900fe457bee",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "58": {
+  "archivo": "articulos/art-0058.md",
+  "sha256": "b674ff5a6a96ef5f5dec85e9a5eaf9390d7150c85075eaf9ca3d1961eeb53522",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "58-a": {
+  "archivo": "articulos/art-0058-a.md",
+  "sha256": "2d0ef2444f15232d2777185f0602da22dacee87c8f97d29dfe99a8f2d1c55250",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "59": {
+  "archivo": "articulos/art-0059.md",
+  "sha256": "e21e133f3efba512ca2ce2fa82f38c4999a92bcdd1a024fafa1acb136ce94cab",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "60": {
+  "archivo": "articulos/art-0060.md",
+  "sha256": "36525525dad5eb7daf763393e003cab15637cc883718a7b2c83e9946c9393c2d",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "61": {
+  "archivo": "articulos/art-0061.md",
+  "sha256": "847daeb00aefc0061a7c283c7eb460a412a1fd0562995d43f255feee499985ff",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "62": {
+  "archivo": "articulos/art-0062.md",
+  "sha256": "b31d8ed7ccb90c393278666bbf3183d212616383e91ae2bafdf10161053852ba",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "63": {
+  "archivo": "articulos/art-0063.md",
+  "sha256": "cb705b56a61787fe25b560b3d1b8a57c7f04669b50c7ad0bd851660926a54385",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "64": {
+  "archivo": "articulos/art-0064.md",
+  "sha256": "a0c2b4a330f3d490a8bd15cbb04933412517a720238845d9b8255b8060a79d46",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": true
+ },
+ "65": {
+  "archivo": "articulos/art-0065.md",
+  "sha256": "44ff4b33969abe364fb97a0bf7367744f3ae1fdb4dca22ed4bcc712300a4b2db",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "66": {
+  "archivo": "articulos/art-0066.md",
+  "sha256": "db2b8a63fba3a3f3dd23027d960255d731e2132485c2c77a1de0bfa018408f46",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "66-a": {
+  "archivo": "articulos/art-0066-a.md",
+  "sha256": "9b33d34d6d02f98a72c33fc7658dea5c05b042dbf92f63ad7b4c19efd44551e4",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "67": {
+  "archivo": "articulos/art-0067.md",
+  "sha256": "c8443d589d89e9e8b5ba378f838e5d41a643b444901ca41ef58fd420631f1db5",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "68": {
+  "archivo": "articulos/art-0068.md",
+  "sha256": "5a3394d51b3734a107917a0f4c58ffd882f106c641baedfaa6c4985ee98aa08e",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "69": {
+  "archivo": "articulos/art-0069.md",
+  "sha256": "64b832043a6fdb43d5b446698f68eed8d84026e69d9fb5a8319675b3e5cfbe5b",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "69-a": {
+  "archivo": "articulos/art-0069-a.md",
+  "sha256": "d13ade7ec61db8e93a6e898af6658145b1cd7b015279474b8f6f8cfc825f1c61",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "69-b": {
+  "archivo": "articulos/art-0069-b.md",
+  "sha256": "684a9b622376c406f932afc33924f0c033661f7d0600a1c0ffe6230f63275b1d",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "69-b-bis": {
+  "archivo": "articulos/art-0069-b-bis.md",
+  "sha256": "41a79104c823cc7ad4873d9f5b87934cc558db369ecf1c4918b4782304ae2d06",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "69-b-ter": {
+  "archivo": "articulos/art-0069-b-ter.md",
+  "sha256": "ddae15919622e807ce0440acb6ab00780b96a91cb10d94bcc33931fe6cb821bf",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capitulo I",
+  "derogado": false
+ },
+ "69-c": {
+  "archivo": "articulos/art-0069-c.md",
+  "sha256": "2256be0e537d2dd8f39ceebdbd315a5ff073ce57960d8ab4baa194498e8b6dcb",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capítulo II · De los Acuerdos Conclusivos",
+  "derogado": false
+ },
+ "69-d": {
+  "archivo": "articulos/art-0069-d.md",
+  "sha256": "67cb738c0a225490dd1f5e173f5fed8fc83da52ba8e4f4dcda1ded21f0276196",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capítulo II · De los Acuerdos Conclusivos",
+  "derogado": false
+ },
+ "69-e": {
+  "archivo": "articulos/art-0069-e.md",
+  "sha256": "d61cd61f167808df33c31df612f973231433e8551de2228b8344c83f13b4f224",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capítulo II · De los Acuerdos Conclusivos",
+  "derogado": false
+ },
+ "69-f": {
+  "archivo": "articulos/art-0069-f.md",
+  "sha256": "b607b724cec7098055021a75f7e0417fd5f0efad093ea12bd47294f30d8085be",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capítulo II · De los Acuerdos Conclusivos",
+  "derogado": false
+ },
+ "69-g": {
+  "archivo": "articulos/art-0069-g.md",
+  "sha256": "e27b1b6178aa0a60ca11c8f337e042bf41ee257dd958d3dfe8eedb312c8e4f7d",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capítulo II · De los Acuerdos Conclusivos",
+  "derogado": false
+ },
+ "69-h": {
+  "archivo": "articulos/art-0069-h.md",
+  "sha256": "409161d812e70687520a1c3564def20ac4bc5103c1a1d9777603b5e6765f9639",
+  "ubicacion": "Titulo TERCERO · De las Facultades de las Autoridades Fiscales / Capítulo II · De los Acuerdos Conclusivos",
+  "derogado": false
+ },
+ "70": {
+  "archivo": "articulos/art-0070.md",
+  "sha256": "19a07a8103de49dc701511977aed524549558fcb82f9556a0e765c477ad2041f",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "70-a": {
+  "archivo": "articulos/art-0070-a.md",
+  "sha256": "919d3e9e3e3866a52f86910e6f8c901f67a5bf82b716b92c9dc07f614e004e84",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "70-bis": {
+  "archivo": "articulos/art-0070-bis.md",
+  "sha256": "b5592ae4a0e4b94612b651b55946ff8c15de122107866e047e9a5b5ec57a13f3",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "71": {
+  "archivo": "articulos/art-0071.md",
+  "sha256": "e50cd4828a13bc39970931b5cfcd6c1dac08a70354c6d37970fa199b06a1415c",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "72": {
+  "archivo": "articulos/art-0072.md",
+  "sha256": "a28d9a48f65f1bc189260abbc0d5f4580f568faf7760d0cae019fe8c4e0df1f1",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "73": {
+  "archivo": "articulos/art-0073.md",
+  "sha256": "289b784b1e16ace7c1eb90a138c9c12c58dd5b1ed74e36ca68f5dcd960d97bda",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "74": {
+  "archivo": "articulos/art-0074.md",
+  "sha256": "4ac0f41b0e2fc56f23f616f24d779f4fd067febaa53d4310e4f99d129a8b7018",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "75": {
+  "archivo": "articulos/art-0075.md",
+  "sha256": "7d836d4c425505457846ecefe2346793447e1121712122cb3cb1dba9b13caf86",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "76": {
+  "archivo": "articulos/art-0076.md",
+  "sha256": "b3fbe0a7fb9fd199d281b7434f63ee973cc5d7e14a294d64fe8c6e6a1b709623",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "77": {
+  "archivo": "articulos/art-0077.md",
+  "sha256": "7c628dd9e330e0c01d76bc91ec5e28615bc16855bab2326189fba1da1d8048db",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "78": {
+  "archivo": "articulos/art-0078.md",
+  "sha256": "8d737bb6153bb46e9b45f9414c24b11b5c5c538666e0e37394b6666b56946970",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "79": {
+  "archivo": "articulos/art-0079.md",
+  "sha256": "bc21e13e26ef3b7318c572de6310142d27c46a9bc490d59719c14ce658396acf",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "80": {
+  "archivo": "articulos/art-0080.md",
+  "sha256": "4e486e42fba6799e2c0eb1f5e220c203173da040e4b3e40017b5b0a8ea358f9a",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "81": {
+  "archivo": "articulos/art-0081.md",
+  "sha256": "bbee0c6e680f4f4affd627e74944695cb7f1baca2531fbb4f00becfaae35586b",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "82": {
+  "archivo": "articulos/art-0082.md",
+  "sha256": "13fab66b26eed9c4071d4fefdddb54252f1fcf444bc17ca442aa6d21d34dcb5f",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "82-a": {
+  "archivo": "articulos/art-0082-a.md",
+  "sha256": "7ac5b19270c94b63a03b2f689504f14f1705c4688222745cdf63b8158c8a4412",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "82-b": {
+  "archivo": "articulos/art-0082-b.md",
+  "sha256": "013aef7788786728425e20797ebb53a1c96eccbc0ed5d78aee3020bc5652a412",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "82-c": {
+  "archivo": "articulos/art-0082-c.md",
+  "sha256": "66c645680fd5c7be111e5b7e0cda13f99bf652add70dad2601a94a8ff8da74ad",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "82-d": {
+  "archivo": "articulos/art-0082-d.md",
+  "sha256": "de261a4329dac9bd85f5a16339b0f96d93bba30f9763cf5da7c9a71a5a200485",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "82-e": {
+  "archivo": "articulos/art-0082-e.md",
+  "sha256": "4cd0ca5ad2a09b6b7f235b72bcf083c4a6025123283ce3788216ad7bf6dc5b3b",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "82-f": {
+  "archivo": "articulos/art-0082-f.md",
+  "sha256": "3980ac3f4cb4cf4b0b9fea91943c0147b9bd63e7d1e2e2f1c0fe2e55491e4a9e",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "82-g": {
+  "archivo": "articulos/art-0082-g.md",
+  "sha256": "9284141481e82259aa9435fa7dcc8fdd8059477bd733f8d6e0a3d9d4e2c632a2",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "82-h": {
+  "archivo": "articulos/art-0082-h.md",
+  "sha256": "bb3700ad1c97c6c4775bda9cc9c7ae574c8b4d86627d20de102107ccb47b7f5b",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "83": {
+  "archivo": "articulos/art-0083.md",
+  "sha256": "9fcd60e77616c72d35d546b9aa37a6c29b214c8415cfb7e7533b7a1b3652b79c",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "84": {
+  "archivo": "articulos/art-0084.md",
+  "sha256": "50256c049e5e7e2044da54b502e913e140adac3de03f64dca3bf56cdfed426ad",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "84-a": {
+  "archivo": "articulos/art-0084-a.md",
+  "sha256": "f817e5bcf457b239531135eff828778287bdf14f49b0aed8928e7b43c4df603e",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "84-b": {
+  "archivo": "articulos/art-0084-b.md",
+  "sha256": "07af39aac070da079e06db9743604c8ece485c889a8b28841597b4347105cdfe",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "84-c": {
+  "archivo": "articulos/art-0084-c.md",
+  "sha256": "8dc65f6ca5f65a39030f4d311d0d3f863a7c7f1c093329ecbdf253ddcdd09f38",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "84-d": {
+  "archivo": "articulos/art-0084-d.md",
+  "sha256": "64fad793e37fd95c872f4ed34ff801e22dc8b3f89fe7930acdb5be293401f78a",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "84-e": {
+  "archivo": "articulos/art-0084-e.md",
+  "sha256": "ae4b2937573a5b3d4e13fba1596d59afeb1597939651dec4e92cf3dba99b8fb6",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "84-f": {
+  "archivo": "articulos/art-0084-f.md",
+  "sha256": "268cf345fdd3777efd7aee21232bcf650f4cc4ce8ed4fb817245b646767d3101",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "84-g": {
+  "archivo": "articulos/art-0084-g.md",
+  "sha256": "47df0034dc5658cca63180bfd5b920b16ecbedfeecdc1b1544909d5976608e3d",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "84-h": {
+  "archivo": "articulos/art-0084-h.md",
+  "sha256": "8878c2f9b932a7c070d6063dd4f65d26686c4c9c1113c2381aad03054d11df74",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "84-i": {
+  "archivo": "articulos/art-0084-i.md",
+  "sha256": "de95f990365e502aebf45cfec88d788da04c70a80c842981d25b0ec6f613501b",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "84-j": {
+  "archivo": "articulos/art-0084-j.md",
+  "sha256": "320fdf8854acae2fd8b85097cf4484c29f73b2d6e66937611e0dedbcec8437b6",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "84-k": {
+  "archivo": "articulos/art-0084-k.md",
+  "sha256": "f9d091a39241caf4b4d55bf614165f4c74981104c7dcca29f1f7baea66814a18",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "84-l": {
+  "archivo": "articulos/art-0084-l.md",
+  "sha256": "ea1fbe8542dd163d7d6207f15b97e5e4c14ecad2d185419a3948fc22e156457e",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "84-m": {
+  "archivo": "articulos/art-0084-m.md",
+  "sha256": "acdaa1fb265e7d68ba1b9b3cd631f90021b348c9a952809505e9629368219e0b",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "84-n": {
+  "archivo": "articulos/art-0084-n.md",
+  "sha256": "0b2687a9e219fb9023739ff872d28aaec912cfe52d8fd59223463099f6a2e096",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "85": {
+  "archivo": "articulos/art-0085.md",
+  "sha256": "84bdd143a4cb05bdbfc80e6f9e954f93f08923267ea8d261a46cb9ac459e7926",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "86": {
+  "archivo": "articulos/art-0086.md",
+  "sha256": "a9bf669f4e54d5bf35d525d7b300cdc510abaa08642894c2fce487bb26a134e3",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "86-a": {
+  "archivo": "articulos/art-0086-a.md",
+  "sha256": "51532608cd28558e0eb1f268cbf99e09421ca2b2e3e0af5de6409e45eab88516",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "86-b": {
+  "archivo": "articulos/art-0086-b.md",
+  "sha256": "c5ff962d2ca2c0c119980025e676f7d25e14f6db596cf8963bc3c107dfe48aa0",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "86-c": {
+  "archivo": "articulos/art-0086-c.md",
+  "sha256": "4a0324da5b29976067e3cac12a521880ac111bba89eb00f41ebffa240dc06b70",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "86-d": {
+  "archivo": "articulos/art-0086-d.md",
+  "sha256": "52f1633bb34f324bf294cfe58caae135316ff4e7ccff4533f8189c5f27693e71",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "86-e": {
+  "archivo": "articulos/art-0086-e.md",
+  "sha256": "a238be9ff96a8ba297b69a7d73d159edb3186bf789b03f8c0d7ea25fd6e51161",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "86-f": {
+  "archivo": "articulos/art-0086-f.md",
+  "sha256": "e9e1f2da2bdade1ee9241c5662bb12cf077a096fee026c0f078571b97507bfaf",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "86-g": {
+  "archivo": "articulos/art-0086-g.md",
+  "sha256": "af4df7dc8cf00589ffc8a4fa951a2b34d7aecab6209c0d1f21f925b5386f673a",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "86-h": {
+  "archivo": "articulos/art-0086-h.md",
+  "sha256": "db8c8da633737813f1fbba608aef980bdd01a3de5a9d1888c92050f6f0e8381f",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "86-i": {
+  "archivo": "articulos/art-0086-i.md",
+  "sha256": "81cd6f7b250e89298120fac1c24f382251346ea6704c9477dea16c76cc498841",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "86-j": {
+  "archivo": "articulos/art-0086-j.md",
+  "sha256": "096864f38db12b91b1ccde252c4ab682eb6c4ca20c26d70f72d7a25ff864f208",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "87": {
+  "archivo": "articulos/art-0087.md",
+  "sha256": "c5049db76868d84cc25cacca26771228addcdf1477760a3a03e00d4e98260072",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "88": {
+  "archivo": "articulos/art-0088.md",
+  "sha256": "2d5377f91839d386d1e853959e2c32d8294337852dfd47a9aad88c04f3442ade",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "89": {
+  "archivo": "articulos/art-0089.md",
+  "sha256": "330f7d97360dac7d5817440d1bc8b6e9ba5f2825fc4aed95b9817bbe06a08fb5",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "90": {
+  "archivo": "articulos/art-0090.md",
+  "sha256": "03f3b7eda0deeff3a66f7fc0f1ac600c64fea3af439e73129e750dab658500df",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "90-a": {
+  "archivo": "articulos/art-0090-a.md",
+  "sha256": "c96595ada56249d5203bd73faa070f8bffd2db1f4ad7c3fce9eb23a3225a08d8",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "91": {
+  "archivo": "articulos/art-0091.md",
+  "sha256": "0aa0516cbb6475f6a2203642aaa69b86bd01acfa94cf454891614990d6f956e2",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "91-a": {
+  "archivo": "articulos/art-0091-a.md",
+  "sha256": "f6a222dc9fa42026054a35759611931561f9e437bd869b3b0023c814e82253b6",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "91-b": {
+  "archivo": "articulos/art-0091-b.md",
+  "sha256": "0feb9a4b5f2469045bc9449280e78b7b76fd41052af8b1a0eaf07269832ea6e9",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": false
+ },
+ "91-c": {
+  "archivo": "articulos/art-0091-c.md",
+  "sha256": "08c64f56ee849d23405d73e46b3914cb9adac3fc181abf11cba69207524da2c7",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": true
+ },
+ "91-d": {
+  "archivo": "articulos/art-0091-d.md",
+  "sha256": "f154857dee88b969ee42761338f0a61b1dc1fa5a08b3d55c4a45c2334a84541c",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo I · De las infracciones",
+  "derogado": true
+ },
+ "92": {
+  "archivo": "articulos/art-0092.md",
+  "sha256": "58c5469682eb81d8cca5b3771fa301cceedd57d2b52b95979e63a83a897a515c",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "93": {
+  "archivo": "articulos/art-0093.md",
+  "sha256": "b51a0a99d061784fab0eee5cd238d4ba79c1c102c8a3046a504246e092aaeca6",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "94": {
+  "archivo": "articulos/art-0094.md",
+  "sha256": "98bed06770fe0c48059316013ecd2acb7c0906851fd405b626315208b97250e3",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": true
+ },
+ "95": {
+  "archivo": "articulos/art-0095.md",
+  "sha256": "c268f6a730e05a2c461134a217ceb1b5772709947e2ec8b658f36ba3dfc79c4c",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "96": {
+  "archivo": "articulos/art-0096.md",
+  "sha256": "e009be98e4ab0161eb871347d6fbeda63815897c58d46d5da572245ea25e025d",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "97": {
+  "archivo": "articulos/art-0097.md",
+  "sha256": "681f8ef16d3a8a194b8b7a410f579890b055e775a56732978ab485ea1334b92a",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "98": {
+  "archivo": "articulos/art-0098.md",
+  "sha256": "1418fa740523dd766247342747da1b8cf858bddef386ef1c9724f6a7b8790563",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "99": {
+  "archivo": "articulos/art-0099.md",
+  "sha256": "1aeccdcc7482b5e2b3846219ec6e470a8a05669e3065a2867e7ea3f18c33a17d",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "100": {
+  "archivo": "articulos/art-0100.md",
+  "sha256": "fc5085439404e5d3727cddde70b4f8c0d3da6ffff265e981ed8d389b2adbc897",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "101": {
+  "archivo": "articulos/art-0101.md",
+  "sha256": "e2d8b61d68aa29e4a8a864c234bae2dfd2027093392bddd0188701fd719c5c5e",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "102": {
+  "archivo": "articulos/art-0102.md",
+  "sha256": "048ba7068b85b963076734ff66d35880583199c05558bdeea9a16618df48a2ac",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "103": {
+  "archivo": "articulos/art-0103.md",
+  "sha256": "173c3981b0a46c0df08acc25f810a4fce64174bf527028209e7169c27171b8e4",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "104": {
+  "archivo": "articulos/art-0104.md",
+  "sha256": "a9e844d5275d5071e085b30c5612f32431eb8c3563b9b036e297111b92ca3c32",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "105": {
+  "archivo": "articulos/art-0105.md",
+  "sha256": "153fde3db77964f7c79a46c5d43de8a616b763206a58db07a7f239be25aac42a",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "106": {
+  "archivo": "articulos/art-0106.md",
+  "sha256": "397561f8145bde22a2aa5e5377be5ad61a2e982dd2cf83ba9d442c81155c6f9b",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "107": {
+  "archivo": "articulos/art-0107.md",
+  "sha256": "7de64ab335af955b76099df6d2575cc24748b014e911b2b79ed84c175b012216",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "108": {
+  "archivo": "articulos/art-0108.md",
+  "sha256": "ad22051ac9c35bd0c6a4ae3317d92b2733ce6f24575bf60758cf546520369a57",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "109": {
+  "archivo": "articulos/art-0109.md",
+  "sha256": "af14329f6cb20a60fdae6c19a786ee94af4d6e1e4edd3746ee65d1b250d762a6",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "110": {
+  "archivo": "articulos/art-0110.md",
+  "sha256": "07277da38d9065217521c3f87fb96797437a8f3d335f635637577f266e25a169",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "111": {
+  "archivo": "articulos/art-0111.md",
+  "sha256": "d4b2bbe82287364e63d6ea9dd0241fbb7c2034f2ed58933447c276580ae6a3c8",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": true
+ },
+ "111-bis": {
+  "archivo": "articulos/art-0111-bis.md",
+  "sha256": "ad056ce5096ec1fc0f424d090ab5312a21287ce8ce07fa860fe363bd6254f458",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "112": {
+  "archivo": "articulos/art-0112.md",
+  "sha256": "33269371bcc8d37c4a8b72736e493152ae75c29632d3f753254ac9d12d367fff",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "113": {
+  "archivo": "articulos/art-0113.md",
+  "sha256": "5a367233a8563c5760a37f82648d962f70153e97f0507e214338b5613b386692",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "113-bis": {
+  "archivo": "articulos/art-0113-bis.md",
+  "sha256": "a496b3de19bfd0156f4cd5d9fdc7596a84f62d6c9ea460c3f524ed21f93cad2c",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "114": {
+  "archivo": "articulos/art-0114.md",
+  "sha256": "46ab866991f006780f198ada1065a25371fabc6995065c9027fcc514f17d20a7",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "114-a": {
+  "archivo": "articulos/art-0114-a.md",
+  "sha256": "d501cec3aca857391d3104c170a1819351fc20ff16d040f2d063d2f0d29df706",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "114-b": {
+  "archivo": "articulos/art-0114-b.md",
+  "sha256": "a3ab29ed972891a11fc792676f37aef9f75c61537c40399edd957bd6268ebb8f",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "115": {
+  "archivo": "articulos/art-0115.md",
+  "sha256": "f815f710fc8bc8dd23bf38320bcb23de909ac9afed08124c59b8e78ea8213a6d",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "115-bis": {
+  "archivo": "articulos/art-0115-bis.md",
+  "sha256": "d6e23593214f089b20f45e018d31ef32b814c3c5e0ff9e101c54eaded7166073",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": true
+ },
+ "115-ter": {
+  "archivo": "articulos/art-0115-ter.md",
+  "sha256": "e3b75cd56165b06f027273011f61f0b8e7487bd5a75266041365790e0a56f7ff",
+  "ubicacion": "Titulo CUARTO · De las Infracciones y Delitos Fiscales / Capitulo II · De los delitos fiscales",
+  "derogado": false
+ },
+ "116": {
+  "archivo": "articulos/art-0116.md",
+  "sha256": "01a50bb366ba852655d8623450991eef51fcf8eb3f7f0d67347042576be7b742",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "117": {
+  "archivo": "articulos/art-0117.md",
+  "sha256": "1ae33547e06e4c887e2681bdaf2193d766447b7bcfc79ff9bdedd2cccdf4f830",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "118": {
+  "archivo": "articulos/art-0118.md",
+  "sha256": "2797bda8b1b7370566a07bcdf6d0472679e5dcd25e803499093c6993956f1b73",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": true
+ },
+ "119": {
+  "archivo": "articulos/art-0119.md",
+  "sha256": "20c75d87fb384966b77badc912f611a844e764049faedb5a3e875801d61ff33b",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": true
+ },
+ "120": {
+  "archivo": "articulos/art-0120.md",
+  "sha256": "d9ae3b4459f2e59bc7f2a5c322bf9ef1695ea63b6312b6e276b9a6183032d121",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "121": {
+  "archivo": "articulos/art-0121.md",
+  "sha256": "a8744001c4444e02856a31be9c531eb111551940b9dea871c128f4453c7b7151",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "122": {
+  "archivo": "articulos/art-0122.md",
+  "sha256": "bc1eb9c8e76ad60b3ed652ee5e313daa20a59d84a354263afb3b02f30229c816",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "123": {
+  "archivo": "articulos/art-0123.md",
+  "sha256": "7185a0c8d4f857e37a32b5a83f2d12ede508797cca26655c96c075da7b83ab02",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "124": {
+  "archivo": "articulos/art-0124.md",
+  "sha256": "933e46aa30544495514deebe6805f88c56909df6da4fd497bbf4bbded23a7e32",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "124-a": {
+  "archivo": "articulos/art-0124-a.md",
+  "sha256": "d1cb60b7ae47c4c023830cf8e24c1698be598097476dafa441ba7a79c8ca5fe9",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "125": {
+  "archivo": "articulos/art-0125.md",
+  "sha256": "4c2885197f2418eda5a9de3b6c2c96d79e4e812ad8c1d61cc38e57425b45e673",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "126": {
+  "archivo": "articulos/art-0126.md",
+  "sha256": "4d6b3608872b81494ec4d270c356545773160449b8b622606b7f8017193fb463",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "127": {
+  "archivo": "articulos/art-0127.md",
+  "sha256": "f9b97cae7390f83e55519a80d51ace11d87cb1e6545cc3656f91b0cfff444856",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "128": {
+  "archivo": "articulos/art-0128.md",
+  "sha256": "183bcca86865a6625988e18d90b606860219d535acc7a2920fad3cd76ced407b",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "129": {
+  "archivo": "articulos/art-0129.md",
+  "sha256": "f834bcea343c9ae793ff269bb41f9ebf90cb2e69e8a402bdc0afad675d3b19fc",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": true
+ },
+ "130": {
+  "archivo": "articulos/art-0130.md",
+  "sha256": "39e4194efb4be443d5ee4ef07e5ce6003cadcf90201bcb5b896da89b322cb025",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "131": {
+  "archivo": "articulos/art-0131.md",
+  "sha256": "cc6723a8b8bfeabd11d1b569b83ff7d3bc18866a4d53a46fa8fee529afb54b52",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "132": {
+  "archivo": "articulos/art-0132.md",
+  "sha256": "c26533398447a2785029f17468754622c447d4b9601d1ccfc79ab34a13fa1296",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "133": {
+  "archivo": "articulos/art-0133.md",
+  "sha256": "a033e9acda154f9a794e4f083baa6cc00c3d7a9070044c3a9c55361f0815e841",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "133-a": {
+  "archivo": "articulos/art-0133-a.md",
+  "sha256": "96538a5e46a2ce10859af412e7d3cc76ed6c0186a7847ad70436fd56fd8b173d",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "133-b": {
+  "archivo": "articulos/art-0133-b.md",
+  "sha256": "f0f5577f6296aa45223866ce0897cda025f479cebd03d2caec4df1715840b03b",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "133-c": {
+  "archivo": "articulos/art-0133-c.md",
+  "sha256": "03b7594889a8aa68b4da1e03b3bedc49b025ec7c8fd9bb7ec9cfbd86441df1cb",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "133-d": {
+  "archivo": "articulos/art-0133-d.md",
+  "sha256": "e3350b311fc2ada8896a187f4d418ca96a298a2bba5247550d5e50b68d2fd875",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "133-e": {
+  "archivo": "articulos/art-0133-e.md",
+  "sha256": "201ddf95fcd7f81fed580df7263a5c511573e9f570abd6eef773c62379077441",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "133-f": {
+  "archivo": "articulos/art-0133-f.md",
+  "sha256": "9a7a2f9fcfda09b756ea24b420540989106fbd9dbef74a1a95e676767c7a9216",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "133-g": {
+  "archivo": "articulos/art-0133-g.md",
+  "sha256": "7a189d5a52ff6365e6013e7f7a71cb6bfb4e570e88d7a00c76adbe575fcf5a29",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo I · Del recurso administrativo",
+  "derogado": false
+ },
+ "134": {
+  "archivo": "articulos/art-0134.md",
+  "sha256": "9fd85135f7c35cd3036b568ea2558a6122b4936dbae55974779b5a5bfa2c5fc0",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo II · De las notificaciones y la garantía del interés fiscal",
+  "derogado": false
+ },
+ "135": {
+  "archivo": "articulos/art-0135.md",
+  "sha256": "73c72595912011cdd16921a341ab7ac2f02526b4a621a90ac27fe7a31f5cf213",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo II · De las notificaciones y la garantía del interés fiscal",
+  "derogado": false
+ },
+ "136": {
+  "archivo": "articulos/art-0136.md",
+  "sha256": "d2ad67f02fdc565166d5396c24ff72e8786b563cdcf4883354d0f19bb3c019a2",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo II · De las notificaciones y la garantía del interés fiscal",
+  "derogado": false
+ },
+ "137": {
+  "archivo": "articulos/art-0137.md",
+  "sha256": "71e5d024b4fcadcdff98409ef9b97b296c76db315cf62812b7a0dafdbc61cc7c",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo II · De las notificaciones y la garantía del interés fiscal",
+  "derogado": false
+ },
+ "138": {
+  "archivo": "articulos/art-0138.md",
+  "sha256": "160ebc84dcbfd43baff43ce80afe1865668e751e54be410e99390f44311ea265",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo II · De las notificaciones y la garantía del interés fiscal",
+  "derogado": false
+ },
+ "139": {
+  "archivo": "articulos/art-0139.md",
+  "sha256": "814ea348a67852c5dc2d608ae0252daf776a1f4d138a8f1727f140f1cacd885d",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo II · De las notificaciones y la garantía del interés fiscal",
+  "derogado": false
+ },
+ "140": {
+  "archivo": "articulos/art-0140.md",
+  "sha256": "9c22c727b88ebf55bc3fbcb900fa11435f7a3c10094596f3599bb469f5957610",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo II · De las notificaciones y la garantía del interés fiscal",
+  "derogado": false
+ },
+ "141": {
+  "archivo": "articulos/art-0141.md",
+  "sha256": "764acc95185c8eee92d55da3a4643c9bd2d0b516668094116fac1e9a87d2fa12",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo II · De las notificaciones y la garantía del interés fiscal",
+  "derogado": false
+ },
+ "141-a": {
+  "archivo": "articulos/art-0141-a.md",
+  "sha256": "cf54029bf679f88b054236f8ad94843b3b1d81bf7d38714270ee748a8b1100bd",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo II · De las notificaciones y la garantía del interés fiscal",
+  "derogado": false
+ },
+ "142": {
+  "archivo": "articulos/art-0142.md",
+  "sha256": "8d1857817890abbcd4739bdea6e8cf252bb869441eb636df630f9269f73fc36c",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo II · De las notificaciones y la garantía del interés fiscal",
+  "derogado": false
+ },
+ "143": {
+  "archivo": "articulos/art-0143.md",
+  "sha256": "42abd23503f1b6582f8e34b11d713523b5cedd6149d40ee4054ab7cd3064779e",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo II · De las notificaciones y la garantía del interés fiscal",
+  "derogado": false
+ },
+ "144": {
+  "archivo": "articulos/art-0144.md",
+  "sha256": "ecf6a41867667299d4550c1414f153c6b92105b6cb724e347b70bdd27ce0e78a",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo II · De las notificaciones y la garantía del interés fiscal",
+  "derogado": false
+ },
+ "145": {
+  "archivo": "articulos/art-0145.md",
+  "sha256": "c80878e9d9a287e6387cdf6576823a72bb66b21fb9a948736e7673b4a9006cfe",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "145-a": {
+  "archivo": "articulos/art-0145-a.md",
+  "sha256": "fdaf265a92eb2a61488ee6bb698f6a87823e0fa24ecbcd2fbd1d037504b87a84",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": true
+ },
+ "146": {
+  "archivo": "articulos/art-0146.md",
+  "sha256": "a08c44b84d573e33763597fd96e89a0c6880b7088b9ed9b6e86b5aed00b2baae",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "146-a": {
+  "archivo": "articulos/art-0146-a.md",
+  "sha256": "7ce389bdd1c6cb4fde189b59b69126d1c93ac5ca02281785d9f9fd58b99873a1",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "146-b": {
+  "archivo": "articulos/art-0146-b.md",
+  "sha256": "01677f3ad4f2a852627d5a032a322f05bce1cb969add191a6ad9aca8dbee1cc6",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": true
+ },
+ "146-c": {
+  "archivo": "articulos/art-0146-c.md",
+  "sha256": "ff2bba8b397c7d0f4f920c9dc8ec4d15733f55d12aa5104d387928610bc1dfcf",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "146-d": {
+  "archivo": "articulos/art-0146-d.md",
+  "sha256": "0dc2dd14a87e718af760b3512d9ca02a81792bc92b759e9c4f06060c17f5fcc5",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "147": {
+  "archivo": "articulos/art-0147.md",
+  "sha256": "4ea34bcc006c25d2e7e2af0f61a16958c2a6a0bb631afa714ad10b6db1d67e43",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "148": {
+  "archivo": "articulos/art-0148.md",
+  "sha256": "1b924eca39f373ddd7f8253ae0d5af5a1b8dc3420f7705af530cfe76d0a6a5d1",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "149": {
+  "archivo": "articulos/art-0149.md",
+  "sha256": "b01dff7991e6509ddce177531b75d9ed79b2a15ec2e1fa0bde4030f52d1d60dd",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "150": {
+  "archivo": "articulos/art-0150.md",
+  "sha256": "5aaeba93302efb54c9fe451abeca856b578dc3d052000f9d3c31efe96e91c127",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "151": {
+  "archivo": "articulos/art-0151.md",
+  "sha256": "4e4456f03cda339cd5c776a520f0cf1464402a4dc226624b4014ecfe3454f5b9",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "151-bis": {
+  "archivo": "articulos/art-0151-bis.md",
+  "sha256": "adf21687b1b23ce14eea4565244509c80803cb18f006cb60adb4d49e9dfb0eaa",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "152": {
+  "archivo": "articulos/art-0152.md",
+  "sha256": "ceedba1a3dc07a4978725048585587d514205636008699230d704218dc7eb5c5",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "153": {
+  "archivo": "articulos/art-0153.md",
+  "sha256": "5132b1bc266f4c909d25fba3c09f6adc772e179a6e2c5aee96059fd91f3b856e",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "154": {
+  "archivo": "articulos/art-0154.md",
+  "sha256": "dcc1e97c5b156bdc813e0973b598b9c23daedfc7baeeccaba6e61edaa202ecf7",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "155": {
+  "archivo": "articulos/art-0155.md",
+  "sha256": "ef450c38a13dbbc49d92c71582d14fb1f208b1baf585bc46fac80503ac7bc3dd",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "156": {
+  "archivo": "articulos/art-0156.md",
+  "sha256": "ec1f7a2732c1f0ca093c5b2c0b8b3e3f0f7d37cac5659f05a83de36d66ebe836",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "156-bis": {
+  "archivo": "articulos/art-0156-bis.md",
+  "sha256": "26dab42fa5d17433e42def1971cc008a614615290672f4fa3958681d74b36661",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "156-ter": {
+  "archivo": "articulos/art-0156-ter.md",
+  "sha256": "4cbbaed64480f4dd0ae587ff50797bf5cc959ee64443829062b01332426607b1",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "157": {
+  "archivo": "articulos/art-0157.md",
+  "sha256": "fc3a2e6a9f70e21106997c6fa643973ed98097d74987fa1c0a4cbe76779b6a8c",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "158": {
+  "archivo": "articulos/art-0158.md",
+  "sha256": "c4d686c4080c6fa5c5dbe55c9efc4c3ffc953b3f9565e9c09dd0e0a5809db1de",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "159": {
+  "archivo": "articulos/art-0159.md",
+  "sha256": "b3a078e2e0b1e7b13a4593b1990e8c4bf209bf80ec0a514701505d83e4792ae2",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "160": {
+  "archivo": "articulos/art-0160.md",
+  "sha256": "7387542eecc3937b6c1583aec7f0840127af56e137b39326ee3f7caf829b9cc5",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "161": {
+  "archivo": "articulos/art-0161.md",
+  "sha256": "a26ebec5a003f2a12b21bd9ca8afcba3749de19663e7eeab40eabd00d8850c2c",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "162": {
+  "archivo": "articulos/art-0162.md",
+  "sha256": "a6dd2bc62b2aa76338bedb8226d3b9a04ee2dce50dea8ce85b6da55da29db372",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "163": {
+  "archivo": "articulos/art-0163.md",
+  "sha256": "eace1f678f92a602c2e41b96571212d6e08c4a24a9fa99169d7bbd1d0118b644",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "164": {
+  "archivo": "articulos/art-0164.md",
+  "sha256": "517fd3854b4e0a79c7efc63bcfaf761d26cb4e8d81c8da940dbdf42cd1eb303a",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "165": {
+  "archivo": "articulos/art-0165.md",
+  "sha256": "def630d79052b65a75ae2c9f5418c068ea6e8231cfa0b0ffb38d6f9818d8a109",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "166": {
+  "archivo": "articulos/art-0166.md",
+  "sha256": "b883d11f9e9df8aea45c17b33cfeb7139886bc383c73febf3c409c17b46ee5fb",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "167": {
+  "archivo": "articulos/art-0167.md",
+  "sha256": "4df9b48b4d70aab08f4c6eb840bb7c5bb8a1d9adf502b214863a92e2750fed1a",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "168": {
+  "archivo": "articulos/art-0168.md",
+  "sha256": "3f64e66d33e7dfb0692086112176f93eff2924cfcf7b92179c86997bf66af06e",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "169": {
+  "archivo": "articulos/art-0169.md",
+  "sha256": "c09511cbd475ebc9cb54f5eac4080ff9f36f8d7ca3d15c747192d3e13d8c9df4",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "170": {
+  "archivo": "articulos/art-0170.md",
+  "sha256": "81da1da672d78e2c630641710a2f07c7028fe0d8a0b992bfbe2095b517d9b838",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "171": {
+  "archivo": "articulos/art-0171.md",
+  "sha256": "847ff09e3ca014a5b105151daceeaabf1fcd1d375c01873fa829d3546b7151a3",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "172": {
+  "archivo": "articulos/art-0172.md",
+  "sha256": "51f9155b8d846e7b4e5625015462c38848557b5dd97198135e4e6a5c8f11dc08",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "173": {
+  "archivo": "articulos/art-0173.md",
+  "sha256": "d16066df3951a7d84f15d52a973c913f52adb1d48b68b40b2bfca34d5f68bb70",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "174": {
+  "archivo": "articulos/art-0174.md",
+  "sha256": "5a05b8f686487de3052db75b1d46a6167fc646e6734c962c4e703744dbd59fa3",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "175": {
+  "archivo": "articulos/art-0175.md",
+  "sha256": "09d16deca249bbbdaac999e2a9def26edb35a1088325b65104844bac3d014140",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "176": {
+  "archivo": "articulos/art-0176.md",
+  "sha256": "934ad396f8820d4c5d345052117f1a33eb564021218459e9ce3311ab2254a495",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "177": {
+  "archivo": "articulos/art-0177.md",
+  "sha256": "1335c1b525250673b8f5e4cdc6b00e985f5bee5495723edd12db7509b02f18c8",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "178": {
+  "archivo": "articulos/art-0178.md",
+  "sha256": "5250e11653a09fdffa16b301fdf5be65cf7bd6b2b1abd99286e12a7f5cd1dc1f",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "179": {
+  "archivo": "articulos/art-0179.md",
+  "sha256": "5811f36fa68e360a016a13efe4e45fa0d7ec1ff7e15ceacafdfa180c4095ee72",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "180": {
+  "archivo": "articulos/art-0180.md",
+  "sha256": "a76c4f0ca00f9440fa477d2dc44be63c900bc1d1ec42db0815c461d8983c7c97",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "181": {
+  "archivo": "articulos/art-0181.md",
+  "sha256": "cf2368002910c9a3c96081047183175a159a0d08a98fb4fd9f4204c0b91bd512",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "182": {
+  "archivo": "articulos/art-0182.md",
+  "sha256": "971f2f37dad94ed6b34a82baeb11b65a978ab144a0ec9e7e85c3611c323d0b71",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "183": {
+  "archivo": "articulos/art-0183.md",
+  "sha256": "ce677fcc01401eaefcedb2816b57ba2b7bad272581ee1da57923823c963d27df",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "184": {
+  "archivo": "articulos/art-0184.md",
+  "sha256": "b6ee6638721327dcf6a811cc73afed61fd68f6ba1b7feb09a716c5b4ba214323",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "185": {
+  "archivo": "articulos/art-0185.md",
+  "sha256": "cf4f6170854cde17fee25df2cb118de279166da8d1ae69736cd3b94aa29b9e94",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "186": {
+  "archivo": "articulos/art-0186.md",
+  "sha256": "a6de647b36b528911ad112d8d19e3a4b810e592491ea87c8e7660131b39f707d",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "187": {
+  "archivo": "articulos/art-0187.md",
+  "sha256": "076c5bd9884db46cde59d3ef7f221df4749290f413bf9b564058a70f0c81771e",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "188": {
+  "archivo": "articulos/art-0188.md",
+  "sha256": "8001054281d2017d9b59214eb71c6e7705b4e53c80f569112d80edc5d7ce2080",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "188-bis": {
+  "archivo": "articulos/art-0188-bis.md",
+  "sha256": "acef74af5c676de1040952b480c75d924738d743a8cb94834fce50e6086d1a7c",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "189": {
+  "archivo": "articulos/art-0189.md",
+  "sha256": "84cb6dc0cb7fa72b463f37e11665ef8321e74bd133aef747c191e66baa7ee682",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "190": {
+  "archivo": "articulos/art-0190.md",
+  "sha256": "91a8bf3ca1cc58a2f7b049efc0d622f8df6b0a4a356dadf3d103780f96e2eca6",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": true
+ },
+ "191": {
+  "archivo": "articulos/art-0191.md",
+  "sha256": "4cecdf54656eee0865075f706ed8ac9602fc3d315f38807ca18058751197ff14",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "192": {
+  "archivo": "articulos/art-0192.md",
+  "sha256": "711672c79727fb973545d3d669cf62effac9e4a10aa7b372ac4586012cc545af",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "193": {
+  "archivo": "articulos/art-0193.md",
+  "sha256": "0066f8a16357aa47dc0e76772138083576ff25e8099d11f316ebf91788c51bfc",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": true
+ },
+ "194": {
+  "archivo": "articulos/art-0194.md",
+  "sha256": "4ad5ba3c1c924ecf592a7a27779c7a0ed4a1bb14d904297400fcb4072a115dc8",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "195": {
+  "archivo": "articulos/art-0195.md",
+  "sha256": "4d7fd52707cc45a584ae0b15360131e92bb855b6a657b58cb7902f2f0aa44f16",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "196": {
+  "archivo": "articulos/art-0196.md",
+  "sha256": "767cff881c18c5f806de34c791bd02568d61a28e37d2ce9df84e0110b5aa63d5",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "196-a": {
+  "archivo": "articulos/art-0196-a.md",
+  "sha256": "e9443ccb3c0d5a991fd345cd35efdce97eca5c23bc11e5ddf81f89f5accd7dff",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "196-b": {
+  "archivo": "articulos/art-0196-b.md",
+  "sha256": "8b5cdcc07f6100467d4336ad2e11254a1edc688b8a936906429d2f9bd0df0b7a",
+  "ubicacion": "Titulo QUINTO · De Los Procedimientos Administrativos / Capitulo III · Del procedimiento administrativo de ejecución",
+  "derogado": false
+ },
+ "197": {
+  "archivo": "articulos/art-0197.md",
+  "sha256": "664ba336b0e1ec6bf44417a838431a5a993df9da2e371bf40f7807ea0bb7b638",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": false
+ },
+ "198": {
+  "archivo": "articulos/art-0198.md",
+  "sha256": "7c8f05209e1a3d96a45c7f8f1a7d26a90077366437ed16f8c664416b0ee4dbaf",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": false
+ },
+ "199": {
+  "archivo": "articulos/art-0199.md",
+  "sha256": "aeb6c99d6df7d4a9db1b453b52fbef41d094de71057ffc5a13e375bee15080ac",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": false
+ },
+ "200": {
+  "archivo": "articulos/art-0200.md",
+  "sha256": "dd98b12860717ffb7fff05737875fcf322f2a1ebb5b826c9ef13930cd342e061",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": false
+ },
+ "201": {
+  "archivo": "articulos/art-0201.md",
+  "sha256": "5369ea12a6589ad28ec1902456cce73964e3cd2bfe44e8fd9b25f86c0403de80",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": false
+ },
+ "202": {
+  "archivo": "articulos/art-0202.md",
+  "sha256": "f3f993372d2caba07b3542f0f35bf9901007ddb709dcb92bf2c0044bb36b8f24",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": false
+ },
+ "203": {
+  "archivo": "articulos/art-0203.md",
+  "sha256": "9d693d3b1c1979737516834806e9f27624e2803f6cc6d163d1b10d7b6142eb25",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "204": {
+  "archivo": "articulos/art-0204.md",
+  "sha256": "4ec5d51bdd7fb70fd35e4af13fe4e26259ec7b5ea3a4f8f93373178678ebce83",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "205": {
+  "archivo": "articulos/art-0205.md",
+  "sha256": "b485c663f335cd5200c1595a1cf8e36e9cc8e06ab07633ad8a86bc77a468ce71",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "206": {
+  "archivo": "articulos/art-0206.md",
+  "sha256": "3dadaf2e3142b824122cc5a7dfba153a9bbd9960b0a92c3dc2205bc8f39847d5",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "207": {
+  "archivo": "articulos/art-0207.md",
+  "sha256": "920cf9ea365c41c2428f8b07bbe2a9ede0ed8575b72f2a769c1315c916556204",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "208": {
+  "archivo": "articulos/art-0208.md",
+  "sha256": "1e1f8c9cdde88001dae8a4d58d7fe8a74d53528ea5aab4e241b9ec773195ff99",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "208-bis": {
+  "archivo": "articulos/art-0208-bis.md",
+  "sha256": "a42abd46e2f8cdcbf4b46854460da84b5943e1a028ed0cea31d5da7706f1ac91",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "209": {
+  "archivo": "articulos/art-0209.md",
+  "sha256": "5146e93ae3e98fabe68e024c58fc2d531c89a74b060f02824f46b1bd98efb1c9",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "209-bis": {
+  "archivo": "articulos/art-0209-bis.md",
+  "sha256": "71233b98eff1c8f669b899d4b78570e6c2cf035d50ca4de7e6fefc851056eeb8",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "210": {
+  "archivo": "articulos/art-0210.md",
+  "sha256": "371efb92c4340b9336e6838538953e8fcc9af7310bddafab7da7679b84e00faa",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "211": {
+  "archivo": "articulos/art-0211.md",
+  "sha256": "9c74e2fc0f40710e52de420b2fa28c690a169b72ee504bbaeccc997a7e8f42d5",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "212": {
+  "archivo": "articulos/art-0212.md",
+  "sha256": "24d9811ac5614f7c0f61c03fce8549477efe968a86ab348f0d9bc4d3641a5024",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "213": {
+  "archivo": "articulos/art-0213.md",
+  "sha256": "d9b5c617e8803add5fd32b2c61baad03bd139d39258da5f416f0eba15f579f4f",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "214": {
+  "archivo": "articulos/art-0214.md",
+  "sha256": "28d234a655abd5131416a103071b35f534c07806939d2d5ee12e7513f1b2477f",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "215": {
+  "archivo": "articulos/art-0215.md",
+  "sha256": "34330a5a2c6a8a913fdf4e7512e57edc5bb9f5fe165cc6248db7b4fd9a0c3378",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "216": {
+  "archivo": "articulos/art-0216.md",
+  "sha256": "0224aa95b4ab032e1f650a76f354ef6a0992479561d10c48f08e237a996fda00",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "217": {
+  "archivo": "articulos/art-0217.md",
+  "sha256": "84fc994556d50888c5bdfa750fc14a35cf9ef208227a61a0747da1b44d1159d1",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "218": {
+  "archivo": "articulos/art-0218.md",
+  "sha256": "ed7b1dd9407fda7b7d22368e01dbde2d9f2dd65bd0ac5044bc6321d2b9dc74af",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "219": {
+  "archivo": "articulos/art-0219.md",
+  "sha256": "995193a24764759ce7b19ccf1aa33eebac5dff9a0b313f4443a870a5825a0e66",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "220": {
+  "archivo": "articulos/art-0220.md",
+  "sha256": "d42ab437bda5b569acc6865cf59ddfa5bf1e37f41b93f5c84862df654517a34c",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "221": {
+  "archivo": "articulos/art-0221.md",
+  "sha256": "4523721b84781786534ada67047a3c064c36c53b500b4b529f4ca28c0e4c0f08",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "222": {
+  "archivo": "articulos/art-0222.md",
+  "sha256": "3a08c7e2fdab3324ba72437d1e73319faa3820057cdc9f35e2e7bc70080a8bc7",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "223": {
+  "archivo": "articulos/art-0223.md",
+  "sha256": "e9f7ea5922db3e3c39c98b24a2891c6c3d0f416ed4189c377ac7ac33c753b4bf",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "224": {
+  "archivo": "articulos/art-0224.md",
+  "sha256": "48db65a02b23cd870089df9977e5f6279eb77edba3db2c406a94f098d5e7b83b",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "225": {
+  "archivo": "articulos/art-0225.md",
+  "sha256": "e73f7a1e655166c8aa2afd55bea30e995b71c6840eeb7b5fea3a72ce96e64603",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "226": {
+  "archivo": "articulos/art-0226.md",
+  "sha256": "0998d09d91644a5ecf39db214d76b75f7549657427524c3839f4921e689b1e58",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "227": {
+  "archivo": "articulos/art-0227.md",
+  "sha256": "d62098e32ab24b1308476244a290efd385d462637ac20442c572565d440474ce",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "228": {
+  "archivo": "articulos/art-0228.md",
+  "sha256": "c3bdf786df3528bca16f20a47c4dc937a20404703ad72a3312fcefa02e357eca",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "228-bis": {
+  "archivo": "articulos/art-0228-bis.md",
+  "sha256": "dce8be1922c6a03a0d2ba759b9da80e008c89f1795bdda6d16446ecd90ed6dd0",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "229": {
+  "archivo": "articulos/art-0229.md",
+  "sha256": "de77f0608554a205f539f11b23f9a1ab8c86c5c1ecd4a2e91fbabe2783501ef4",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "230": {
+  "archivo": "articulos/art-0230.md",
+  "sha256": "4f7d1f8ceded88e0bc17de7cf3eea9fe1199cec294982b8de147b372099b7dd0",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "231": {
+  "archivo": "articulos/art-0231.md",
+  "sha256": "eba8b02e0b5650bdc970485f386c0780a7218b04bb990520674f19ea156988dd",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "232": {
+  "archivo": "articulos/art-0232.md",
+  "sha256": "493c4a3750d8e39167b94ac953aa772a7c1cc2a0d5f447c361673b0907a61ec8",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "233": {
+  "archivo": "articulos/art-0233.md",
+  "sha256": "f6c2e197ae668f1917cb894eda298eb2165b4e647d1ecee322de045a0d0f8429",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "234": {
+  "archivo": "articulos/art-0234.md",
+  "sha256": "0af3076fb989fefbd103aa82c7c11dc31f3e3dfaac2455b2a5d0a44081de890a",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "235": {
+  "archivo": "articulos/art-0235.md",
+  "sha256": "89d6bbb937fe32d9d2bc0ea02da345c93d607dd4109a136635ec54b4e841955e",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "236": {
+  "archivo": "articulos/art-0236.md",
+  "sha256": "69eeaab6b0a21fc567eb0e43a8242958ba9324dcb9c77d9200a2f804a58771d1",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "237": {
+  "archivo": "articulos/art-0237.md",
+  "sha256": "c5d1d9a7e85297b12bae1152863adb395535927af7b2b3acb05912b581833f21",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "238": {
+  "archivo": "articulos/art-0238.md",
+  "sha256": "3f1dedee75cca8a7ba71dc6673436c9a5c5436723a8aa17ad74b5fdef8d96969",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "239": {
+  "archivo": "articulos/art-0239.md",
+  "sha256": "bb9e6dc9b310d96ab96b364112ca97d256bacbc302ddffe09698b1893e7981df",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "239-a": {
+  "archivo": "articulos/art-0239-a.md",
+  "sha256": "23beb0918c6ad8b0059dd5c91c5e6e47bceb784123e49930d8ad93d8f9e86830",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "239-b": {
+  "archivo": "articulos/art-0239-b.md",
+  "sha256": "b2fe10bc1876af06e4e018eff3a59afdf1c60469dad542bffd7e5ce72508a576",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "239-c": {
+  "archivo": "articulos/art-0239-c.md",
+  "sha256": "2e1c4d96ac5c795d1970209904e8d3f9cf8a27bb6b9117e29483ed9174aa2746",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "240": {
+  "archivo": "articulos/art-0240.md",
+  "sha256": "d1d57c5a1b98e761606cc4ff94947ebee1994374830ae0e2f3a375e40fbd745f",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "241": {
+  "archivo": "articulos/art-0241.md",
+  "sha256": "1193648e75ea536de1954fb41aa60fcfb16afa9ea5cebd716285ceacb7268fe2",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "242": {
+  "archivo": "articulos/art-0242.md",
+  "sha256": "f0f6b3034152419adde67ccc30797d674a2732e770cb4054806479bc57bd279f",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "243": {
+  "archivo": "articulos/art-0243.md",
+  "sha256": "c07555c87d358e4ce21e9f33f85a7d67b2a5625af114728f4b10fcc6aed6fa0f",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "244": {
+  "archivo": "articulos/art-0244.md",
+  "sha256": "c503f47721b9b4635b752344e6284d000e8b793eaa692f5bbf8f14fd34aa8f34",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "245": {
+  "archivo": "articulos/art-0245.md",
+  "sha256": "667550c3f66c5d204ecc660627b8dc16f3f816ab4b561bfa4e52be6fa153f95e",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "246": {
+  "archivo": "articulos/art-0246.md",
+  "sha256": "56d0a8f60ced4ef2c61912020be5635162636ba945e67f93f5c6df66ffa904c3",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "247": {
+  "archivo": "articulos/art-0247.md",
+  "sha256": "9567a813c495930949e3eb398429507f3606f30fb4fb2ff44078e0ee86e7b408",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "248": {
+  "archivo": "articulos/art-0248.md",
+  "sha256": "db43a231049acdf616f711b357b10d50ebab17d27a21044fff801be8a01a0970",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "249": {
+  "archivo": "articulos/art-0249.md",
+  "sha256": "b5a10ab11c754822f600fd3617987d0848ecba506162c6f3bbf9513c20a08ef6",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "250": {
+  "archivo": "articulos/art-0250.md",
+  "sha256": "b3f6fa94e7fa1c60b63399f99561b91af70b25aad43d536579f4da83cbbcfdaa",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "251": {
+  "archivo": "articulos/art-0251.md",
+  "sha256": "dc227782b9d4ba3aaef2b32cff7aaa504213afaf500e4b6c4273d04ad9f5c9e9",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "252": {
+  "archivo": "articulos/art-0252.md",
+  "sha256": "c1da6ca49e977a3a6781faec97c3351e942ecc4f821a2b19bec0eae95ef8bbc1",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "253": {
+  "archivo": "articulos/art-0253.md",
+  "sha256": "e7a77439c0add3218f6ef2caef684f9e62795aebcc5031333868fd9f764d29f0",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "254": {
+  "archivo": "articulos/art-0254.md",
+  "sha256": "cdb87e96a8cf70d29c06bbd266d7b78201af7827569f6469ba9e7b46300f2cad",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "255": {
+  "archivo": "articulos/art-0255.md",
+  "sha256": "f52e3e51598bcdf25ad4c850e8323f0275d39bce7ebb93305676452ad0b2663f",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "256": {
+  "archivo": "articulos/art-0256.md",
+  "sha256": "b602e33e86359882ea01ea1b0d06ee47396666eb40dfae5cbe334ec29d734e88",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "257": {
+  "archivo": "articulos/art-0257.md",
+  "sha256": "b723f1366f97fca5190dc8d8803ab26b4407b895a5a0d8685e14f60468bf5c9d",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "258": {
+  "archivo": "articulos/art-0258.md",
+  "sha256": "31ecb9bfe284cc8a0f8bbc1cb15135c901a151adf3480853939d7571056022cc",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "258-a": {
+  "archivo": "articulos/art-0258-a.md",
+  "sha256": "27985bdd458a60cc6241689a9332d5f29e864b91e5a21f4c38e8311e12d23208",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "259": {
+  "archivo": "articulos/art-0259.md",
+  "sha256": "6911dda7bb8fd9ea730fced7ecc6c167103db46f2dab2bcf839bdecf26d95ad5",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "260": {
+  "archivo": "articulos/art-0260.md",
+  "sha256": "03bd4a8f772eef6e6cc6da5d83911a48aa9eafaeadc2ada42073038af474c741",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "261": {
+  "archivo": "articulos/art-0261.md",
+  "sha256": "1d6cc493fb52a2900f907a42a0a560841f9c31e1b3fc01065759ce3457bb5a66",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "262": {
+  "archivo": "articulos/art-0262.md",
+  "sha256": "af04a18b260a9ca77e2d31d879f14b8705c516ce5ceb061e64dd99872a17ddf2",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ },
+ "263": {
+  "archivo": "articulos/art-0263.md",
+  "sha256": "b3cde41b8b5af60ca37276f606626283bc6cfd42e1806c9bacc087493e07daed",
+  "ubicacion": "Titulo SEXTO · De la Revelación de Esquemas Reportables / Capítulo ÚNICO",
+  "derogado": true
+ }
+}

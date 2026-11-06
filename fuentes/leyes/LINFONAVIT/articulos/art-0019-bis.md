@@ -1,5 +1,9 @@
 # LINFONAVIT · Artículo 19-BIS
 
+Ley: Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores (LINFONAVIT)
+Texto según: Cámara de Diputados, última reforma DOF 2025-02-21 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
+
 Artículo 19 Bis.- El Auditor Externo tendrá las siguientes atribuciones y facultades:
 
 I.- Practicar la auditoría de los estados financieros y comprobar, cuando lo estime conveniente los avalúos de los bienes, materia de operación del Instituto;

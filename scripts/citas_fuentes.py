@@ -22,7 +22,7 @@ NUM = re.compile(r"(\d+)\s*[º°]?o?\.?\s*(?:-\s*([A-Z])\b|\s+(Bis|Ter|Qu[áa]te
 
 def ids(texto: str) -> list[str]:
     out = []
-    for m in NUM.finditer(re.split(r"\b(?:fr|frs|fracc|fracción|fracciones|párr|párrafo|inciso)\b\.?", texto)[0]):
+    for m in NUM.finditer(re.split(r"\(|\b(?:fr|frs|fracc|fracción|fracciones|párr|párrafo|inciso|reforma|reformada|DOF|decreto|transitorios?|con)\b\.?", texto)[0]):
         partes = [m.group(1)] + [x.lower().replace("á", "a") for x in (m.group(2), m.group(3)) if x]
         out.append("-".join(partes))
     return out
@@ -35,7 +35,13 @@ def main():
     a = ap.parse_args()
     indices = {d.name: set(json.loads((d / "indice.json").read_text(encoding="utf-8"))) for d in LEYES_DIR.glob("*/") if (d / "indice.json").exists()}
     texto = "\n".join((RAIZ / "base" / f).read_text(encoding="utf-8") for f in ("parametros.yaml", "reglas.yaml"))
+    cotejo = {}
+    for d in LEYES_DIR.glob("*/"):
+        if (d / "manifiesto.json").exists():
+            c = json.loads((d / "manifiesto.json").read_text(encoding="utf-8")).get("cotejado_dof", {})
+            cotejo[d.name] = (bool(c.get("ley_completa")), set(c.get("articulos", {})))
     ok, mal, fuera = collections.Counter(), collections.defaultdict(set), collections.Counter()
+    sin_cotejar = collections.defaultdict(set)
     for m in CITA.finditer(texto):
         ley = ALIAS[m.group(1)]
         for i in ids(m.group(2)):
@@ -43,11 +49,14 @@ def main():
                 fuera[ley] += 1
             elif i in indices[ley]:
                 ok[ley] += 1
+                if not (cotejo[ley][0] or i in cotejo[ley][1]):
+                    sin_cotejar[ley].add(i)
             else:
                 mal[ley].add(i)
     print("Citas que resuelven a un artículo de la biblioteca:", dict(ok) or "ninguna")
     print("Citas de leyes que aún NO están en la biblioteca (trabajo pendiente):", dict(fuera) or "ninguna")
     print("Citas sin artículo en la biblioteca:", {k: sorted(v) for k, v in mal.items()} if a.detalle else {k: len(v) for k, v in mal.items()} or "ninguna")
+    print("Artículos citados que NO están cotejados con el DOF (sus parámetros no se firman):", {k: sorted(v) for k, v in sin_cotejar.items()} if a.detalle else {k: len(v) for k, v in sin_cotejar.items()})
     if a.estricto and mal:
         sys.exit(1)
 

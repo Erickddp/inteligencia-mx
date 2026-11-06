@@ -8,8 +8,9 @@ import pytest
 from conftest import RAIZ
 
 LEYES = RAIZ / "fuentes" / "leyes"
-CLAVES = ["LISR", "LIVA", "LFPIORPI", "LSS", "LINFONAVIT"]
-CLAVE = {"LISR": ["96", "106", "151", "152"], "LIVA": ["1", "1-a", "5", "32"], "LFPIORPI": ["17"], "LSS": ["27", "28"], "LINFONAVIT": ["29"]}
+CLAVES = ["LISR", "LIVA", "LFPIORPI", "LSS", "LINFONAVIT", "LFT", "CFF", "RLISR", "RLIVA"]
+CLAVE = {"LISR": ["96", "106", "151", "152"], "LIVA": ["1", "1-a", "5", "32"], "LFPIORPI": ["17"], "LSS": ["27", "28"], "LINFONAVIT": ["29"],
+         "LFT": ["76", "80", "87", "117", "162", "353-ñ"], "CFF": ["17-a", "20", "21", "29", "29-a", "80"], "RLISR": ["1", "174"], "RLIVA": ["1"]}
 
 
 def carga(c):

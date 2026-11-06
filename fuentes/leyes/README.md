@@ -9,6 +9,10 @@ Texto de ley, **un artículo por archivo**, para que cada regla de `base/` cite 
 | Ley del Seguro Social | `LSS` | 15-ene-2026 | 385 |
 | Ley del Infonavit | `LINFONAVIT` | 21-feb-2025 | 95 |
 | Ley antilavado (LFPIORPI) | `LFPIORPI` | 16-jul-2025 | 73 |
+| Ley Federal del Trabajo | `LFT` | 14-may-2026 | 1,266 |
+| Código Fiscal de la Federación | `CFF` | 09-abr-2026 | 421 |
+| Reglamento de la LISR | `RLISR` | 06-may-2016 | 313 |
+| Reglamento de la LIVA | `RLIVA` | 25-sep-2014 | 84 |
 
 ## Cómo está guardado y por qué
 
@@ -29,7 +33,11 @@ python -m pytest tests/test_biblioteca.py
 
 ## Límites que hay que saber
 
-1. **Orientación hasta cotejar con el DOF.** El texto es el de la Cámara de Diputados, que puede ir atrás del DOF. Hoy su índice marca la LISR en 2024 y la LIVA en 2021, y la base ya cita reformas posteriores (paquete económico 2026): **esos artículos hay que cotejarlos contra el decreto publicado** antes de firmar.
+1. **Orientación hasta cotejar con el DOF.** Cada artículo trae «Cotejado con el DOF: NO» hasta que una persona lo cotee (campo `cotejado_dof` del manifiesto, que regenerar no borra), y `citas_fuentes.py` lista los parámetros que citan artículos sin cotejar: esos no se firman. El texto es el de la Cámara de Diputados, que puede ir atrás del DOF. Hoy su índice marca la LISR en 2024 y la LIVA en 2021, y la base ya cita reformas posteriores (paquete económico 2026): **esos artículos hay que cotejarlos contra el decreto publicado** antes de firmar.
 2. **Las tablas se aplanan.** La tarifa del art. 96 o las tablas del art. 113-E salen como texto corrido. Los números de tarifa viven en `base/parametros.yaml` (cotejados con el Anexo 8), no aquí.
-3. Falta el Código Fiscal de la Federación, la LFT, la LIEPS, los reglamentos (RLISR, RLIVA), la RMF con sus anexos y la LIF. La base ya cita CFF y LFT 14 veces cada una: son lo siguiente.
+3. Falta la RMF con sus Anexos (se guarda por año y por resolución de modificación: `fuentes/rmf/2026/…`, con los anexos aparte), la LIEPS y la LIF.
 4. Los encabezados se reconocen por forma. Si la Cámara cambia el formato del PDF, `extraer_ley.py` falla en vez de guardar basura (mínimo 20 artículos).
+
+## Cómo entra una reforma
+
+Una reforma no se sobrescribe en silencio: cada decreto entra en **su propio PR**, con el decreto (URL del DOF y fecha), el texto regenerado y la actualización de `cotejado_dof`. El historial de git guarda el texto anterior, así que se puede saber qué texto estaba vigente en una fecha.

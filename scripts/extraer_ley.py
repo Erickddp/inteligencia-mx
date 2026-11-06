@@ -6,7 +6,8 @@
   python scripts/extraer_ley.py --todas                  # las leyes del catálogo
 
 Sale en fuentes/leyes/<CLAVE>/:
-  manifiesto.json    url, última reforma (la que dice el PDF), fecha de descarga, SHA256 del PDF y del texto
+  manifiesto.json    url, última reforma (la que dice el PDF), fecha de descarga, SHA256 del PDF y del texto, y `cotejado_dof`
+                     (quién cotejó contra el DOF y cuándo; lo llena una persona y regenerar no lo borra)
   indice.json        artículo -> SHA256 de su texto y ubicación (título, capítulo, sección)
   articulos/art-0106.md, art-0004-a.md, ...
   transitorios.md    el transitorio de la ley y los de los decretos de reforma
@@ -19,21 +20,25 @@ import argparse, datetime as dt, hashlib, json, re, subprocess, sys, tempfile, u
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
-BASE_URL = "https://www.diputados.gob.mx/LeyesBiblio/pdf/{archivo}.pdf"
+BASE_URL = "https://www.diputados.gob.mx/LeyesBiblio/{ruta}"
 # clave del repo -> (archivo en diputados, nombre oficial)
 LEYES = {
-    "LISR": ("LISR", "Ley del Impuesto sobre la Renta"),
-    "LIVA": ("LIVA", "Ley del Impuesto al Valor Agregado"),
-    "LFPIORPI": ("LFPIORPI", "Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita"),
-    "LSS": ("LSS", "Ley del Seguro Social"),
-    "LINFONAVIT": ("LIFNVT", "Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores"),
+    "LISR": ("pdf/LISR.pdf", "Ley del Impuesto sobre la Renta"),
+    "LIVA": ("pdf/LIVA.pdf", "Ley del Impuesto al Valor Agregado"),
+    "LFPIORPI": ("pdf/LFPIORPI.pdf", "Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita"),
+    "LSS": ("pdf/LSS.pdf", "Ley del Seguro Social"),
+    "LINFONAVIT": ("pdf/LIFNVT.pdf", "Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores"),
+    "LFT": ("pdf/LFT.pdf", "Ley Federal del Trabajo"),
+    "CFF": ("pdf/CFF.pdf", "Código Fiscal de la Federación"),
+    "RLISR": ("regley/Reg_LISR_060516.pdf", "Reglamento de la Ley del Impuesto sobre la Renta"),
+    "RLIVA": ("regley/Reg_LIVA_250914.pdf", "Reglamento de la Ley del Impuesto al Valor Agregado"),
 }
 
 SUFIJO = r"(?:Bis|Ter|Qu[áa]ter|Quinquies|Sexies|Septies|Octies|Nonies|Decies|Quintus|Sextus|Septimus)"
 INICIO = re.compile(r"^ {0,6}Art[íi]culo\s+(?=\d)")
-SUF_RE = [re.compile(r"\s*\.?\s*-\s*([A-Z])\b"),                                  # -A
+SUF_RE = [re.compile(r"\s*\.?\s*-([A-ZÑ])\b(?!\s+[a-záéíóú])"),                                  # -A
           re.compile(rf"\s*\.?\s*-?\s*({SUFIJO})\b", re.I),                        # Bis, -Quáter, BIS
-          re.compile(r"\s+([A-Z])\b(?=\s*[.\-])"),                                   # «5 A.»
+          re.compile(r"\s+([A-ZÑ])\b(?=\s*[.\-])"),                                   # «5 A.»
           re.compile(r"\s+(\d{1,2})\b(?=\s*[.\-])")]                                # «18 Bis 1.»
 
 
@@ -57,7 +62,7 @@ def encabezado(linea: str) -> str | None:
     return "-".join(p.lower().replace("á", "a") for p in partes)
 
 
-ENCABEZADO = re.compile(r"^\s{30,}(LEY|C[ÓO]DIGO) [A-ZÁÉÍÓÚÑ ,]+\s*$|^\s*(C[ÁA]MARA DE DIPUTADOS DEL H\. CONGRESO DE LA UNI[ÓO]N|Secretar[íi]a General|Secretar[íi]a de Servicios Parlamentarios|\d+ de \d+)\s*$|[ÚU]ltima [Rr]eforma",)
+ENCABEZADO = re.compile(r"^\s{30,}(LEY|C[ÓO]DIGO|REGLAMENTO) [A-ZÁÉÍÓÚÑ ,]+\s*$|^\s*(C[ÁA]MARA DE DIPUTADOS DEL H\. CONGRESO DE LA UNI[ÓO]N|Secretar[íi]a General|Secretar[íi]a de Servicios Parlamentarios|\d+ de \d+)\s*$|[ÚU]ltima [Rr]eforma",)
 ESTRUCTURA = re.compile(r"^\s*(LIBRO|T[ÍI]TULO|CAP[ÍI]TULO|SECCI[ÓO]N)\s+([IVXLCDM]+|PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|S[ÉE]PTIMO|OCTAVO|NOVENO|D[ÉE]CIMO|[ÚU]NICO|\d+)(\s+(?:Bis|BIS|[A-Z]))?\s*$", re.I)
 TRANSITORIOS = re.compile(r"^\s*(ART[ÍI]CULOS\s+)?TRANSITORIOS\s*$")
 NIVEL = {"LIBRO": 0, "TITULO": 1, "TÍTULO": 1, "CAPITULO": 2, "CAPÍTULO": 2, "SECCION": 3, "SECCIÓN": 3}
@@ -152,7 +157,7 @@ def ultima_reforma(texto: str) -> str | None:
 
 
 def procesa(clave: str, pdf: Path, url: str, out_raiz: Path) -> dict:
-    archivo, nombre = LEYES[clave]
+    ruta, nombre = LEYES[clave]
     with tempfile.TemporaryDirectory() as td:
         txt = Path(td) / "ley.txt"
         subprocess.run(["pdftotext", "-layout", str(pdf), str(txt)], check=True)
@@ -165,13 +170,22 @@ def procesa(clave: str, pdf: Path, url: str, out_raiz: Path) -> dict:
     for viejo in (dest / "articulos").glob("art-*.md"):
         viejo.unlink()
     reforma = ultima_reforma(texto)
+    previo = {}
+    if (dest / "manifiesto.json").exists():  # el cotejo con el DOF lo hace una persona: regenerar no lo borra
+        previo = json.loads((dest / "manifiesto.json").read_text(encoding="utf-8")).get("cotejado_dof", {})
+    cotejo = {"ley_completa": previo.get("ley_completa"), "articulos": previo.get("articulos", {})}
     indice = {}
     for aid in orden:
         a = arts[aid]
         cuerpo = reflow(a["lineas"])
         cab = f"# {clave} · Artículo {aid.upper() if '-' in aid else aid}\n\n"
+        c = cotejo["articulos"].get(aid) or cotejo["ley_completa"]
+        meta = [f"Ley: {nombre} ({clave})",
+                f"Texto según: Cámara de Diputados, última reforma DOF {reforma or 'sin dato'} · {url}",
+                "Cotejado con el DOF: " + (f"sí, {c['fecha']} ({c['decreto']})" if c else "NO (no se firma ningún parámetro que cite este artículo)")]
         if a["ubicacion"]:
-            cab += f"Ubicación: {a['ubicacion']}\n\n"
+            meta.insert(1, f"Ubicación: {a['ubicacion']}")
+        cab += "\n".join(meta) + "\n\n"
         md = cab + cuerpo.rstrip() + "\n"
         f = dest / "articulos" / nombre_archivo(aid)
         f.write_text(md, encoding="utf-8", newline="\n")
@@ -182,7 +196,7 @@ def procesa(clave: str, pdf: Path, url: str, out_raiz: Path) -> dict:
     man = {"clave": clave, "nombre": nombre, "url": url, "fuente": "Cámara de Diputados (texto vigente); cotejar contra el DOF",
            "ultima_reforma_segun_pdf": reforma, "descargado": dt.date.today().isoformat(),
            "sha256_pdf": sha(pdf.read_bytes()), "sha256_texto": sha("".join(indice[a]["sha256"] for a in orden).encode()),
-           "articulos": len(orden), "derogados": sum(1 for a in indice.values() if a["derogado"])}
+           "cotejado_dof": cotejo, "articulos": len(orden), "derogados": sum(1 for a in indice.values() if a["derogado"])}
     (dest / "manifiesto.json").write_text(json.dumps(man, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
     return man
 
@@ -202,7 +216,7 @@ def main():
     a = ap.parse_args()
     claves = sorted(LEYES) if a.todas else [a.clave] if a.clave else ap.error("indica una clave o --todas")
     for c in claves:
-        url = BASE_URL.format(archivo=LEYES[c][0])
+        url = BASE_URL.format(ruta=LEYES[c][0])
         with tempfile.TemporaryDirectory() as td:
             pdf = a.pdf if (a.pdf and not a.todas) else Path(td) / f"{c}.pdf"
             if not (a.pdf and not a.todas):

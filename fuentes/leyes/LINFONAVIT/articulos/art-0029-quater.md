@@ -1,5 +1,9 @@
 # LINFONAVIT · Artículo 29-QUATER
 
+Ley: Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores (LINFONAVIT)
+Texto según: Cámara de Diputados, última reforma DOF 2025-02-21 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
+
 Artículo 29 Quáter.- El Instituto utilizará medios electrónicos para el cumplimiento de su objeto y podrá tener el carácter de autoridad certificadora, en términos de lo dispuesto por la Ley de Firma Electrónica Avanzada, para emitir certificados digitales a efecto de aplicar el uso de firma electrónica avanzada en las formas y procedimientos a su cargo.
 
 Las disposiciones del Código Fiscal de la Federación en materia de medios electrónicos serán aplicables a las contribuciones administradas por el Instituto como organismo fiscal autónomo, mismo que actuará como autoridad certificadora y proporcionará los servicios de certificación de firmas electrónicas avanzadas en tal contexto.

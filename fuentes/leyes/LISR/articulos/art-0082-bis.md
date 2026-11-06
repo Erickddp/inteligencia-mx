@@ -1,6 +1,9 @@
 # LISR · Artículo 82-BIS
 
+Ley: Ley del Impuesto sobre la Renta (LISR)
 Ubicación: Título III · DEL RÉGIMEN DE LAS PERSONAS MORALES CON FINES NO LUCRATIVOS
+Texto según: Cámara de Diputados, última reforma DOF 2024-04-01 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
 
 Artículo 82-Bis. Las instituciones autorizadas para recibir donativos deducibles en términos de esta Ley, que se encuentren en los supuestos a que se refiere el artículo 82, fracción V, del presente ordenamiento, deberán informar a las autoridades fiscales el importe y los datos de identificación de los bienes, así como los de identidad de las personas morales a quienes se destinó la totalidad de su patrimonio, a través de los medios y formatos que para tal efecto emita el Servicio de Administración Tributaria mediante reglas de carácter general. En caso de no cumplir con lo anterior, el valor de los bienes susceptibles de transmisión se considerará como ingreso omitido y se deberá pagar el impuesto sobre la renta de conformidad con lo dispuesto en el Título II, de esta Ley.
 

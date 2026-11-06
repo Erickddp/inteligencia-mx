@@ -1,6 +1,9 @@
 # LISR · Artículo 82-QUATER
 
+Ley: Ley del Impuesto sobre la Renta (LISR)
 Ubicación: Título III · DEL RÉGIMEN DE LAS PERSONAS MORALES CON FINES NO LUCRATIVOS
+Texto según: Cámara de Diputados, última reforma DOF 2024-04-01 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
 
 Artículo 82-Quáter. Para los efectos del párrafo cuarto del artículo 82 de esta Ley, se estará a lo siguiente:
 

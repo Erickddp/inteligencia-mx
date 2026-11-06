@@ -1,0 +1,16 @@
+{
+ "clave": "LFT",
+ "nombre": "Ley Federal del Trabajo",
+ "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+ "fuente": "Cámara de Diputados (texto vigente); cotejar contra el DOF",
+ "ultima_reforma_segun_pdf": "2026-05-14",
+ "descargado": "2026-11-06",
+ "sha256_pdf": "12f09393a1951a91c3f57f579bf611b034edf1a5f78cdbfb828e23ff3a9acbf7",
+ "sha256_texto": "ab84e73fa15b45f57e3e2b0f96584b7561dc69ba4a6e580fc96056d766c15c53",
+ "cotejado_dof": {
+  "ley_completa": null,
+  "articulos": {}
+ },
+ "articulos": 1266,
+ "derogados": 156
+}

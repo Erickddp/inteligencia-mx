@@ -1,0 +1,506 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "721fb6d9c2da3941e84766ef5190c3e064b26df9416d0cdfa166bf98bc76a9b2",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "c8edcc491cdec4b821b9582e14584ca7fcc9511dc69f82ff6b13d2d6e83965d7",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "5d84db9f79182cfd94e3ce81aa3be5284c9b57729adc71f23225f614d66e3336",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "32135cc466a8fa3254308a4a90cf981c3dba152b0a443b6f7729469dc3e1f759",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "e2ce922894d0bf69a5027f71c8af2b13dcb7d350b8d5d64ac3b7aad41284e028",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "a7e943ddbce2984bfb33cc9ddde4e2db05d4f76cdc996123cffad692f3b746c6",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "8e10ae3d542fb9a7dd5092a9c47b8018a25d0325d488a046297d5ac65a8513eb",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "50defbe8e2e113017022f2808bb380d193bc976bd930ccb7282377ad70ae209b",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "0823a94b96e6f742b96257d29194fbed4545d4df21d946f37a32a20e2ae9fdfd",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "1f48eb29747caf54a6c476489d22c1f7c6edc43d87f55c4394ec04f2eed28d60",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "10-a": {
+  "archivo": "articulos/art-0010-a.md",
+  "sha256": "959feacf548c6260622381518d74d60315dcc190de6e1c83da1a81b44b067d6b",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "54819a47335a15d367618b79669619f1b147e68d12f2a29b42c8102854f1b1e8",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "5aeb2a31741ae607d02062feec266a1313494cddc4ed14cb2cbd007dc0f3fb78",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "070fc51c09323b199c515f576880f11e1dea41f3d731836004f84f4f777cdd5d",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "8fe3a549ebcbaa5cbffce6b54d7d1cf065e3554b036ef394610d86373c1e9a6f",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "433acd4169f4ddf641d913d3f50a7b459151a2aa786d795be7f2fd64fe0ab533",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "a2bd66948fc4f87fca16c742d7e1b68b4259a2a998c36f7a6f22c581f65a5f8a",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "37a80206b8feaa4e65d93224460044ecdbd6c00fb5fedaf2489d8810f94a959d",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "ad7627ec8345ac1322ba21ae2cab520b50ea517987994fddf8b0f5e7b5999ce8",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "d7f75687648789514adcaefdf7e79f22a52f5d608a81f9540c02168b9c0843e0",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "20": {
+  "archivo": "articulos/art-0020.md",
+  "sha256": "ed8ea871b4d36fa7d221c98bc4954d64c88d24c32397b53673f3181c26779bf4",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "21": {
+  "archivo": "articulos/art-0021.md",
+  "sha256": "5293336a08f57c62ff91aaaa5edf33526b3a0541512deedf0233c2c1382946b5",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "22": {
+  "archivo": "articulos/art-0022.md",
+  "sha256": "4644fdbdb2294ab91ee6277e09ec866dd88563cc839fdcbf3edfdcf71b388cd5",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "22-a": {
+  "archivo": "articulos/art-0022-a.md",
+  "sha256": "e32b4af957e59aabbe96bc437a09337a381a25d5e4c772a081a8ccc6b85c81a9",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "22-b": {
+  "archivo": "articulos/art-0022-b.md",
+  "sha256": "40a101877e345d89553fcef45ee81ad23033d0d2096806bd6590e41885436e3f",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "23": {
+  "archivo": "articulos/art-0023.md",
+  "sha256": "23fdc3bd6561c7e25a81d0c9f5e6824d66a98b9eb6864f15437607edb8846137",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "24": {
+  "archivo": "articulos/art-0024.md",
+  "sha256": "00f4e60526354491b9d520c6bdb1bc91870704a7fcbf959c185e9d3b88524c41",
+  "ubicacion": "Capítulo I · Disposiciones generales",
+  "derogado": false
+ },
+ "25": {
+  "archivo": "articulos/art-0025.md",
+  "sha256": "c0968ea5c011849f6cc17471c4ee262d39377a9b641407b83bc455cb649fbbf2",
+  "ubicacion": "Capítulo II · De la enajenación",
+  "derogado": false
+ },
+ "26": {
+  "archivo": "articulos/art-0026.md",
+  "sha256": "6fe07728a8c3064937b8cbb5ecd16f5af0e9840596b399c368e9b5cd110dcb57",
+  "ubicacion": "Capítulo II · De la enajenación",
+  "derogado": false
+ },
+ "27": {
+  "archivo": "articulos/art-0027.md",
+  "sha256": "07d38dae0cbe602400ed8f3cc350556d76119142841c881ac2681cacd9cfd2ed",
+  "ubicacion": "Capítulo II · De la enajenación",
+  "derogado": false
+ },
+ "28": {
+  "archivo": "articulos/art-0028.md",
+  "sha256": "58447184f6f9a187ac5e420658d8d73950ea8c4f3c0fb774d16af48d9fbc9836",
+  "ubicacion": "Capítulo II · De la enajenación",
+  "derogado": false
+ },
+ "29": {
+  "archivo": "articulos/art-0029.md",
+  "sha256": "a0cbab3cf1fa5046755d739fb9944e2d25e3cac1990da22a33f1717c2c510769",
+  "ubicacion": "Capítulo II · De la enajenación",
+  "derogado": false
+ },
+ "30": {
+  "archivo": "articulos/art-0030.md",
+  "sha256": "6676a178db025c6507b388032c26d1d3d4d7b614415fa78f5ff7f5bc2ae2f5bb",
+  "ubicacion": "Capítulo II · De la enajenación",
+  "derogado": false
+ },
+ "31": {
+  "archivo": "articulos/art-0031.md",
+  "sha256": "61fd85e8fed459b42bec94350b69fade37f2b5c03e3e5ac605861e828013a4cf",
+  "ubicacion": "Capítulo II · De la enajenación",
+  "derogado": false
+ },
+ "32": {
+  "archivo": "articulos/art-0032.md",
+  "sha256": "b7c8588b8cdd921d60903f7c2a28cde7f5e0775e6b80b2295326fb7d0c28ea9e",
+  "ubicacion": "Capítulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "33": {
+  "archivo": "articulos/art-0033.md",
+  "sha256": "42535298a52f1b7e43dbbca23c96977e2af067f59d2433398f895d659676eebf",
+  "ubicacion": "Capítulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "34": {
+  "archivo": "articulos/art-0034.md",
+  "sha256": "b2cae0fe46585d697c9b72c903a7e8d8cb4a1aa495922848b8de74da52942639",
+  "ubicacion": "Capítulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "35": {
+  "archivo": "articulos/art-0035.md",
+  "sha256": "a7f9578e29a63f1d58baa6def8d81a6114072b5aaa9702541917dbe478430db3",
+  "ubicacion": "Capítulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "36": {
+  "archivo": "articulos/art-0036.md",
+  "sha256": "05c92725712d355acee956cd9ce6c3924fddea66e0be3e471a4e218a1d9933c6",
+  "ubicacion": "Capítulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "37": {
+  "archivo": "articulos/art-0037.md",
+  "sha256": "2af4e1626b14fb13039f06e58f2b02fde9ce11960077fa4a0a9b28885ef046ab",
+  "ubicacion": "Capítulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "38": {
+  "archivo": "articulos/art-0038.md",
+  "sha256": "bcb1d99cf1dedca344ab8de1c5fde627413fbe98f73985657046d51cc072c27e",
+  "ubicacion": "Capítulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "39": {
+  "archivo": "articulos/art-0039.md",
+  "sha256": "b2f888dd961291fad7e97a70904fd3684b111682a62ac1b68d5ad0a5105962dc",
+  "ubicacion": "Capítulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "39-a": {
+  "archivo": "articulos/art-0039-a.md",
+  "sha256": "3e85dc14dc063632c46d8d013ff875a29de49b08f613e5357275fe514437c67e",
+  "ubicacion": "Capítulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "40": {
+  "archivo": "articulos/art-0040.md",
+  "sha256": "bbb4c25e32a3ef36abd158043e9aeeaa2e1ed3c844bfe4c364e36df537d5463b",
+  "ubicacion": "Capítulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "40-a": {
+  "archivo": "articulos/art-0040-a.md",
+  "sha256": "9dc29a7808579239e5891c2aa76cef7689a844f6469b924952cd8fa7e9e92dfb",
+  "ubicacion": "Capítulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "41": {
+  "archivo": "articulos/art-0041.md",
+  "sha256": "dcf0dae15c94b0e612051c56e190577807adae8793f9ea90f1f28e6c9cbcd89f",
+  "ubicacion": "Capítulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "42": {
+  "archivo": "articulos/art-0042.md",
+  "sha256": "5a868f207716cc3a50a2eb99993b325c7958dc8eca662e8c375bfb25502f14c5",
+  "ubicacion": "Capítulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "43": {
+  "archivo": "articulos/art-0043.md",
+  "sha256": "118e219468b75bfb5be699f172b5c9bab457400ae2225ad66a2dcff2535e2353",
+  "ubicacion": "Capítulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "44": {
+  "archivo": "articulos/art-0044.md",
+  "sha256": "3a1b0344dc7fcc67c51c09acb60ae50b590499d5563f456b7767b839519c169f",
+  "ubicacion": "Capítulo III · De la prestación de servicios",
+  "derogado": false
+ },
+ "45": {
+  "archivo": "articulos/art-0045.md",
+  "sha256": "a97967c3a779a0c482b4c6bd55f76eb833e69a32a7f602360df02c4f22a52c02",
+  "ubicacion": "Capítulo IV · Del uso o goce temporal de bienes",
+  "derogado": false
+ },
+ "46": {
+  "archivo": "articulos/art-0046.md",
+  "sha256": "5b6e9f01f2a46214151c584e1631d41816c3d6d712c47a472f2863985475ffbe",
+  "ubicacion": "Capítulo V · De la importación de bienes y servicios",
+  "derogado": false
+ },
+ "47": {
+  "archivo": "articulos/art-0047.md",
+  "sha256": "97c9b708001f3fc1c58b4442fbc0415fa36b283ccea96eac1ef511f40f8f1a8f",
+  "ubicacion": "Capítulo V · De la importación de bienes y servicios",
+  "derogado": false
+ },
+ "48": {
+  "archivo": "articulos/art-0048.md",
+  "sha256": "5f8f6919fe6e614cdc55ea9a712ae95e2af7550506a9516f00bf9dce11951643",
+  "ubicacion": "Capítulo V · De la importación de bienes y servicios",
+  "derogado": false
+ },
+ "49": {
+  "archivo": "articulos/art-0049.md",
+  "sha256": "b7e789ba5523d634cc41a9345f1c236da659ec092b9740380c4119ed7f6dfad5",
+  "ubicacion": "Capítulo V · De la importación de bienes y servicios",
+  "derogado": false
+ },
+ "50": {
+  "archivo": "articulos/art-0050.md",
+  "sha256": "cb528555c5e1e406b1866b322cdf1971c7e082be22033fade08369b3320e30b9",
+  "ubicacion": "Capítulo V · De la importación de bienes y servicios",
+  "derogado": false
+ },
+ "51": {
+  "archivo": "articulos/art-0051.md",
+  "sha256": "9dfd7e5fba9ffc154391b940ceb658031bb259def1160465a4f4de81e36c473c",
+  "ubicacion": "Capítulo V · De la importación de bienes y servicios",
+  "derogado": false
+ },
+ "52": {
+  "archivo": "articulos/art-0052.md",
+  "sha256": "2f822575c3d583b0acfbbdd10b4844e9cfe3c463540b58ee0a32b054a33db809",
+  "ubicacion": "Capítulo V · De la importación de bienes y servicios",
+  "derogado": false
+ },
+ "53": {
+  "archivo": "articulos/art-0053.md",
+  "sha256": "e9ac8f0c65a417c9eeba9bd197cca013c28ac25849e2b661f34a9682887ff110",
+  "ubicacion": "Capítulo V · De la importación de bienes y servicios",
+  "derogado": false
+ },
+ "54": {
+  "archivo": "articulos/art-0054.md",
+  "sha256": "4cc08b2e2caaaad80bc817b1da4e46c2ca15a90b3ebd9063bd5682323f525ff8",
+  "ubicacion": "Capítulo V · De la importación de bienes y servicios",
+  "derogado": false
+ },
+ "55": {
+  "archivo": "articulos/art-0055.md",
+  "sha256": "3d52868cd2fa87a5213b73711a67d760cea3475ed6a148b8af0683161512e8a9",
+  "ubicacion": "Capítulo V · De la importación de bienes y servicios",
+  "derogado": false
+ },
+ "56": {
+  "archivo": "articulos/art-0056.md",
+  "sha256": "6ad8300fa3309661ff5427b40a062ea441dd16eafd6a30783e3e249ffabf56eb",
+  "ubicacion": "Capítulo V · De la importación de bienes y servicios",
+  "derogado": false
+ },
+ "57": {
+  "archivo": "articulos/art-0057.md",
+  "sha256": "05fb231ac117ea606c25e75b7101b6fcc4db67f99f83bf021a436bdd7d9bf14c",
+  "ubicacion": "Capítulo VI · De la exportación de bienes y servicios / Sección I · De las disposiciones generales",
+  "derogado": false
+ },
+ "58": {
+  "archivo": "articulos/art-0058.md",
+  "sha256": "8918d20d39221b3f3d8301636dc7e2b66067d93cc8928d5ecca8d3c8829b4c11",
+  "ubicacion": "Capítulo VI · De la exportación de bienes y servicios / Sección I · De las disposiciones generales",
+  "derogado": false
+ },
+ "59": {
+  "archivo": "articulos/art-0059.md",
+  "sha256": "d230ca1196b925ba8d29c6fbc1dd7af00d9cd845f8f0f268670506682926b0ff",
+  "ubicacion": "Capítulo VI · De la exportación de bienes y servicios / Sección I · De las disposiciones generales",
+  "derogado": false
+ },
+ "60": {
+  "archivo": "articulos/art-0060.md",
+  "sha256": "4c2cb676e1ee7557e8275fa6a35a4945bd3bd010379edfc56a1a7b6ffa6ca7ed",
+  "ubicacion": "Capítulo VI · De la exportación de bienes y servicios / Sección I · De las disposiciones generales",
+  "derogado": false
+ },
+ "61": {
+  "archivo": "articulos/art-0061.md",
+  "sha256": "66c4c2a8694215c528f764cc0a9bb971b59f19ce3ab449ed2557c5ec93d24e46",
+  "ubicacion": "Capítulo VI · De la exportación de bienes y servicios / Sección I · De las disposiciones generales",
+  "derogado": false
+ },
+ "62": {
+  "archivo": "articulos/art-0062.md",
+  "sha256": "f2ae3000969c121112906d7d940d86eea23c71069fcede6dcd4627e0b38425e3",
+  "ubicacion": "Capítulo VI · De la exportación de bienes y servicios / Sección II · De los servicios de filmación o grabación",
+  "derogado": false
+ },
+ "63": {
+  "archivo": "articulos/art-0063.md",
+  "sha256": "e1277796b7fb2d711ad052e0d509c7d196e1888f15d9645915786011886c77be",
+  "ubicacion": "Capítulo VI · De la exportación de bienes y servicios / Sección II · De los servicios de filmación o grabación",
+  "derogado": false
+ },
+ "64": {
+  "archivo": "articulos/art-0064.md",
+  "sha256": "caaf42f784d4e0592b4de924bad5e21483d3e809c367d225f1822cabec4ccfb2",
+  "ubicacion": "Capítulo VI · De la exportación de bienes y servicios / Sección III · De los servicios de hotelería y conexos para congresos, convenciones, exposiciones o ferias Derogada. Sección derogada DOF 25-09-2014",
+  "derogado": false
+ },
+ "65": {
+  "archivo": "articulos/art-0065.md",
+  "sha256": "9da20af76c201f9cad3274a01352d6119f451691c2dfed51473cc1027c17a754",
+  "ubicacion": "Capítulo VI · De la exportación de bienes y servicios / Sección III · De los servicios de hotelería y conexos para congresos, convenciones, exposiciones o ferias Derogada. Sección derogada DOF 25-09-2014",
+  "derogado": false
+ },
+ "66": {
+  "archivo": "articulos/art-0066.md",
+  "sha256": "3c4e16dac020eaec739e15abfa9908257eb682a2831308242eab0cf461440237",
+  "ubicacion": "Capítulo VI · De la exportación de bienes y servicios / Sección III · De los servicios de hotelería y conexos para congresos, convenciones, exposiciones o ferias Derogada. Sección derogada DOF 25-09-2014",
+  "derogado": false
+ },
+ "67": {
+  "archivo": "articulos/art-0067.md",
+  "sha256": "31045b7112363830a93e23474113f8f71efbe5f5db1504e52715dda53a8643a5",
+  "ubicacion": "Capítulo VI · De la exportación de bienes y servicios / Sección III · De los servicios de hotelería y conexos para congresos, convenciones, exposiciones o ferias Derogada. Sección derogada DOF 25-09-2014",
+  "derogado": false
+ },
+ "68": {
+  "archivo": "articulos/art-0068.md",
+  "sha256": "04d231d394ffd25e8460bc9f3ad341103ca183447b432383391b892e47c4d83d",
+  "ubicacion": "Capítulo VI · De la exportación de bienes y servicios / Sección III · De los servicios de hotelería y conexos para congresos, convenciones, exposiciones o ferias Derogada. Sección derogada DOF 25-09-2014",
+  "derogado": false
+ },
+ "69": {
+  "archivo": "articulos/art-0069.md",
+  "sha256": "d7b6d6c425a7f69f2e75a39d0d98209071b8b9fcb2f8a8d137d0cab3f550d0f4",
+  "ubicacion": "Capítulo VI · De la exportación de bienes y servicios / Sección III · De los servicios de hotelería y conexos para congresos, convenciones, exposiciones o ferias Derogada. Sección derogada DOF 25-09-2014",
+  "derogado": false
+ },
+ "70": {
+  "archivo": "articulos/art-0070.md",
+  "sha256": "d8abab4bc04fde98ac5a48ab4d7f4e15c1ef6948a5cba22ff60eafdd1017c880",
+  "ubicacion": "Capítulo VI · De la exportación de bienes y servicios / Sección III · De los servicios de hotelería y conexos para congresos, convenciones, exposiciones o ferias Derogada. Sección derogada DOF 25-09-2014",
+  "derogado": false
+ },
+ "71": {
+  "archivo": "articulos/art-0071.md",
+  "sha256": "7d0a4912506051f9bbdb4b5742943ec2a6a550edb4e1bd215601e64dcd7bb881",
+  "ubicacion": "Capítulo VII · De las obligaciones de los contribuyentes",
+  "derogado": false
+ },
+ "72": {
+  "archivo": "articulos/art-0072.md",
+  "sha256": "9ea9914e54f50eb86e2aa62e4f09a736dbaba48076bb672a92abedd308b33ac4",
+  "ubicacion": "Capítulo VII · De las obligaciones de los contribuyentes",
+  "derogado": false
+ },
+ "73": {
+  "archivo": "articulos/art-0073.md",
+  "sha256": "4b6708c866a4a2dbce9112776360d838afef6063532cfbd37881d38da4cdf7ed",
+  "ubicacion": "Capítulo VII · De las obligaciones de los contribuyentes",
+  "derogado": false
+ },
+ "74": {
+  "archivo": "articulos/art-0074.md",
+  "sha256": "3d8ac2f98cc8402da99d4acb8f26a98d2f473df1fcb8f19d2ce154b7d9a84670",
+  "ubicacion": "Capítulo VII · De las obligaciones de los contribuyentes",
+  "derogado": false
+ },
+ "75": {
+  "archivo": "articulos/art-0075.md",
+  "sha256": "9e6aa42cf5fafe340062fd5955d8e627b5e1000e0d2a430c29fd3489bb93e442",
+  "ubicacion": "Capítulo VII · De las obligaciones de los contribuyentes",
+  "derogado": false
+ },
+ "76": {
+  "archivo": "articulos/art-0076.md",
+  "sha256": "8d2661b247066252f85ebca4796ddd5dcf59f7942d06a30965d1352a3eb39b40",
+  "ubicacion": "Capítulo VII · De las obligaciones de los contribuyentes",
+  "derogado": false
+ },
+ "77": {
+  "archivo": "articulos/art-0077.md",
+  "sha256": "728d62388c3b0206602f92337b3e8ae32f5f2a8b4349628abb9bb6161743a865",
+  "ubicacion": "Capítulo VII · De las obligaciones de los contribuyentes",
+  "derogado": false
+ },
+ "78": {
+  "archivo": "articulos/art-0078.md",
+  "sha256": "ab76babff21b44e9d47fed743ae6442176ff5d040b2cbbbbec33f69c62fa076d",
+  "ubicacion": "Capítulo VII · De las obligaciones de los contribuyentes",
+  "derogado": false
+ },
+ "79": {
+  "archivo": "articulos/art-0079.md",
+  "sha256": "b5bedf635f2f73a182fbb94e95a8aa8c2fd1c89fcc4ae8bb2700524ecc6c0768",
+  "ubicacion": "Capítulo VIII · De las facultades de las autoridades",
+  "derogado": false
+ }
+}

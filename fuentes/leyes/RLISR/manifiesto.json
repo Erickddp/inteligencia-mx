@@ -1,0 +1,16 @@
+{
+ "clave": "RLISR",
+ "nombre": "Reglamento de la Ley del Impuesto sobre la Renta",
+ "url": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LISR_060516.pdf",
+ "fuente": "Cámara de Diputados (texto vigente); cotejar contra el DOF",
+ "ultima_reforma_segun_pdf": "2016-05-06",
+ "descargado": "2026-11-06",
+ "sha256_pdf": "0538fd2fa3da9705370350b1e25a1656cc681d2c489545334079e1b35360d6e3",
+ "sha256_texto": "1c70ccf00ba1a40707ae887e21e4e8bc367d7fe062351e24ac7d3ef2d95cd104",
+ "cotejado_dof": {
+  "ley_completa": null,
+  "articulos": {}
+ },
+ "articulos": 313,
+ "derogados": 0
+}

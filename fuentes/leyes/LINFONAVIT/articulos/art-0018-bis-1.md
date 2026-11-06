@@ -1,5 +1,9 @@
 # LINFONAVIT · Artículo 18-BIS-1
 
+Ley: Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores (LINFONAVIT)
+Texto según: Cámara de Diputados, última reforma DOF 2025-02-21 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
+
 Artículo 18 Bis 1.- El Comité de Auditoría deberá desempeñar las actividades siguientes:
 
 I.- Vigilar que la administración de los recursos y los gastos, así como las operaciones se hagan de acuerdo con las disposiciones de esta Ley y de la normatividad que de la misma emane;

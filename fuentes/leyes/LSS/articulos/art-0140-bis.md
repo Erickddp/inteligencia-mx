@@ -1,6 +1,9 @@
 # LSS · Artículo 140-BIS
 
+Ley: Ley del Seguro Social (LSS)
 Ubicación: Titulo SEGUNDO · DEL REGIMEN OBLIGATORIO / Capitulo V · DEL SEGURO DE INVALIDEZ Y VIDA
+Texto según: Cámara de Diputados, última reforma DOF 2026-01-15 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
 
 Artículo 140 Bis. Para los casos de madres o padres trabajadores asegurados, cuyos hijos de hasta dieciséis años hayan sido diagnosticados por el Instituto con cáncer de cualquier tipo, podrán gozar de una licencia por cuidados médicos de los hijos para ausentarse de sus labores en caso de que el niño, niña o adolescente diagnosticado requiera de descanso médico en los periodos críticos de tratamiento o de hospitalización durante el tratamiento médico, de acuerdo a la prescripción del médico tratante, incluyendo, en su caso, el tratamiento destinado al alivio del dolor y los cuidados paliativos por cáncer avanzado.
 

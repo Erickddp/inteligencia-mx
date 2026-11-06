@@ -1,6 +1,9 @@
 # LIVA · Artículo 18-H-BIS
 
+Ley: Ley del Impuesto al Valor Agregado (LIVA)
 Ubicación: Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección I · Disposiciones generales Sección adicionada DOF 09-12-2019
+Texto según: Cámara de Diputados, última reforma DOF 2021-11-12 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
 
 Artículo 18-H BIS. El incumplimiento de las obligaciones a que se refieren las fracciones I, VI y VII del artículo 18-D de esta Ley por los residentes en el extranjero sin establecimiento en México que proporcionen los servicios digitales previstos en el artículo 18-B del presente ordenamiento a receptores ubicados en territorio nacional, dará lugar a que se bloquee temporalmente el acceso al servicio digital del prestador de los servicios digitales que incumplió con las obligaciones mencionadas, bloqueo que se realizará por conducto de los concesionarios de una red pública de telecomunicaciones en México, hasta el momento en que dicho residente cumpla con las obligaciones omitidas.
 

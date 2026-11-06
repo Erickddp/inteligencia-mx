@@ -1,6 +1,9 @@
 # LIVA · Artículo 1-A-BIS
 
+Ley: Ley del Impuesto al Valor Agregado (LIVA)
 Ubicación: Capitulo I · Disposiciones generales
+Texto según: Cámara de Diputados, última reforma DOF 2021-11-12 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
 
 Artículo 1o.-A BIS.- Los contribuyentes residentes en México que proporcionen los servicios digitales a que se refiere la fracción II del artículo 18-B de la presente Ley a receptores ubicados en territorio nacional, que operen como intermediarios en actividades realizadas por terceros afectas al pago del impuesto al valor agregado, además de las obligaciones establecidas en la misma, estarán obligados a cumplir con las obligaciones a que se refiere el artículo 18-J de este ordenamiento.
 

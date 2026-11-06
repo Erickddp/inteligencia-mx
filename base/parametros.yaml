@@ -660,9 +660,9 @@ parametros:
       - valor: "El publicado por Banxico en el DOF el día ANTERIOR a la operación; si ese día no hubo publicación, el último publicado antes"
         desde: "1990-01-01"
         hasta: null
-        estado: por_confirmar
+        estado: vigente
         fuente: "CFF art. 20, tercer párrafo"
-    nota: "Ojo: 'publicado en el DOF ayer' no es lo mismo que 'FIX determinado ayer' (el DOF publica el FIX del día hábil previo). En Banxico SIE usar la serie por FECHA DE PUBLICACIÓN en DOF (confirmar clave, se cree SF43718), no la de determinación del FIX."
+    nota: "'Publicado en el DOF ayer' no es 'FIX determinado ayer': el DOF publica el FIX del día hábil previo, o sea el SEGUNDO FIX determinado antes de la fecha. Equivale a la serie SF60653 de Banxico (verificado en 675 días, 0 diferencias: fuentes/evidencia/tc_cff20)."
 
   ACTUALIZACION_FACTOR_DECIMALES:
     nombre: Decimales del factor de actualización (INPC)
@@ -1126,8 +1126,8 @@ parametros:
     nombre: Serie Banxico SIE para el tipo de cambio del CFF 20
     tipo: texto
     valores:
-      - {valor: "SF60653", desde: "1990-01-01", hasta: null, estado: por_confirmar, fuente: "Banxico SIE: SF60653 = FIX por fecha de liquidación (coincide con publicación en DOF); SF43718 = por fecha de determinación"}
-    nota: "Validar con qué fecha empata la serie contra la publicación del DOF antes de fijar la regla. Hoy tipo_cambio.py usa SF43718."
+      - {valor: "SF60653", desde: "1990-01-01", hasta: null, estado: vigente, fuente: "Banxico SIE: SF60653 = FIX por fecha de liquidación (coincide con publicación en DOF); SF43718 = por fecha de determinación"}
+    nota: "Empate verificado: la regla del DOF anterior aplicada a SF43718 da exactamente SF60653 en 675 días (fuentes/evidencia/tc_cff20). No hace falta cambiar la serie que guarda la app; SF60653 es la serie de verificación."
 
   # ───────── Tablas oficiales del Anexo 8 que antes se derivaban ─────────
   ISR_TARIFA_ACUMULADA_106:

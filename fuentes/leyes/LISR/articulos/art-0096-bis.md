@@ -1,6 +1,9 @@
 # LISR · Artículo 96-BIS
 
+Ley: Ley del Impuesto sobre la Renta (LISR)
 Ubicación: Título IV · DE LAS PERSONAS FÍSICAS / Capítulo I · DE LOS INGRESOS POR SALARIOS Y EN GENERAL POR LA PRESTACIÓN DE UN SERVICIO PERSONAL SUBORDINADO
+Texto según: Cámara de Diputados, última reforma DOF 2024-04-01 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
 
 Artículo 96-Bis. Las personas morales que hagan pagos en una sola exhibición a personas físicas con cargo a la subcuenta del seguro de retiro o a la subcuenta de retiro, cesantía en edad avanzada y vejez, previstas en la Ley del Seguro Social y los que obtengan los trabajadores al servicio del Estado con cargo a la cuenta individual del sistema de ahorro para el retiro, prevista en la Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado, distintos de los conceptos señalados en el artículo 93, fracción IV de esta Ley, deberán retener y enterar el impuesto conforme a lo siguiente:
 

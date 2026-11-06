@@ -1,0 +1,1880 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "65892554d464a30338c4903b3b037149ded31935b0eca622fb4dc6d59b87801d",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "056de59a75823ed9115e0f15551b398bd45ba161b297e5368b1f5276e52e4d9e",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "e8a2d04e6c0f3b4beeee64903e6172658fe52f64a25ec486c2154388d9e563d5",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "28812a0c14d3f4eb6132e9ffc2453686faa1c72394a9aa302957ab3e5f1ca60c",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "54955db74df5a98e084c8b9d7757212bb0436d150c050c73f5393427617e3f28",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "715ae7ab6817752454ec3194d92ab34c63d068a7d427a44114349594cd0929e4",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "ba7cc0e15850c77ef1ea7d7724d1b14f21d255a0c0f8d09db4dc1e55fc365f82",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "a0b82dd549b7123cb72652f0cc089cb85c591e75ee69a167e53559ae992c4b50",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "d8354d0a8d711676b24fddd327bec16a7d15950a9b1c208439f6094dc55e2f7d",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "e6e01bac9ac9953389775f9b312ea7ca456bfb172c930b3674ee9d40b238d022",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "c2fe2997aae90ef47fc84dcf7dbbc118670eb650e0b2bb104551d16f15e95bde",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "e2dbae6e7b7fe000413277f5d678c82c99409afb6dbc6420d137a47e9e0bc995",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "4427de8f15e6f875b1f9626090c0ac18756a3b380074494ab57008b2b2697425",
+  "ubicacion": "Título II · De las Personas Morales",
+  "derogado": false
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "a18e39746811ce84b39118adf973543ebd36b54b46eef6bd7ed31578a2bc12e9",
+  "ubicacion": "Título II · De las Personas Morales",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "41149f0bff9ca85bbae08b7c40ae302b0b7b8a9d644654af19dbd34f702461a1",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo I · De los Ingresos",
+  "derogado": false
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "93e3845f486119e8b82754af77c3f7d282d28ad7f792582013cbdb82394196f1",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo I · De los Ingresos",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "d5bb35dbe4622f9db38b3ce375c02833547c9cfeea86d1149511f34c4f853ff7",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo I · De los Ingresos",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "a3cee2aa37a142c17726c698c469910b3a044b704d96529dd15794192ffa5bb2",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo I · De los Ingresos",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "befb38c2bd3faca3d35741f854210eef8f51dc7a001757feb66e9bf67c8b933c",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo I · De los Ingresos",
+  "derogado": false
+ },
+ "20": {
+  "archivo": "articulos/art-0020.md",
+  "sha256": "2a7f666803f648cba03a2bfa8b1d5923002b2f8a05506abd57a54b8e25743553",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo I · De los Ingresos",
+  "derogado": false
+ },
+ "21": {
+  "archivo": "articulos/art-0021.md",
+  "sha256": "4b4c72757a11041bad43e3e9aa408429286c74faa0a4656027aefcd7ff695735",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo I · De los Ingresos",
+  "derogado": false
+ },
+ "22": {
+  "archivo": "articulos/art-0022.md",
+  "sha256": "91164d5277246614519b08873d4cd0083333c75d8e42d31366e449f337b4db41",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo I · De los Ingresos",
+  "derogado": false
+ },
+ "23": {
+  "archivo": "articulos/art-0023.md",
+  "sha256": "fef3e36c16e9c7247af3608dae561ad52f71b11d42a21939a791c87809bec264",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo I · De los Ingresos",
+  "derogado": false
+ },
+ "24": {
+  "archivo": "articulos/art-0024.md",
+  "sha256": "8bdf51921ad5177e71163cf0a0ee40094826444a361bac8909bdcb2223a2c23a",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo I · De los Ingresos",
+  "derogado": false
+ },
+ "25": {
+  "archivo": "articulos/art-0025.md",
+  "sha256": "341ec525300a82c0cd0403a6a49c941a90cdb1e77a307aae58a1082021831bf5",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo I · De los Ingresos",
+  "derogado": false
+ },
+ "26": {
+  "archivo": "articulos/art-0026.md",
+  "sha256": "a6e5f550b08a7740966f03c2d9a28ece8f77227fc785f14a224bc031db52cd85",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo I · De los Ingresos",
+  "derogado": false
+ },
+ "27": {
+  "archivo": "articulos/art-0027.md",
+  "sha256": "18d68da5aaa48ec83c7227af50af97657b8e8a4411b48536523586eb4e110489",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo I · De los Ingresos",
+  "derogado": false
+ },
+ "28": {
+  "archivo": "articulos/art-0028.md",
+  "sha256": "8d6c7448d5e2d04ab97e233518ba8ea0678b4341047d5ca08a922dd26e774411",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo I · De los Ingresos",
+  "derogado": false
+ },
+ "29": {
+  "archivo": "articulos/art-0029.md",
+  "sha256": "17cccd926d1453effb6bab270f06bd802b66d23f1b36f7eac854d86907968840",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo I · De los Ingresos",
+  "derogado": false
+ },
+ "30": {
+  "archivo": "articulos/art-0030.md",
+  "sha256": "3ff1cfdbbf9f9245cb726ba170792ee3a147d8374acbd5c1aa73d6eb069744ce",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "31": {
+  "archivo": "articulos/art-0031.md",
+  "sha256": "f5a8ea79ee3034e4655b83d92a5e6db1574a2a78cc04e8a36b0ea5eda1287218",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "32": {
+  "archivo": "articulos/art-0032.md",
+  "sha256": "11986d3e1231ce0343e51b8e22c28d81ea57a19d5099f1f2a34ade854cc197bb",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "33": {
+  "archivo": "articulos/art-0033.md",
+  "sha256": "78948934520cf94e7748e2ae3f76895c1657fa1ef0beee8552676fac86d52417",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "34": {
+  "archivo": "articulos/art-0034.md",
+  "sha256": "31af5cea2863ecdfbc0278fcf310c923f9dc890d951e72c7262c4daeb9891a06",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "35": {
+  "archivo": "articulos/art-0035.md",
+  "sha256": "e8aef1ec6e8356676edbd6d6942bd04850b7b32a7eca82b901a09cdcfa14920a",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "36": {
+  "archivo": "articulos/art-0036.md",
+  "sha256": "78d7726572d2598f2519927d156af5a9b2d8a6f7bedebe985a8a451c8e745148",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "37": {
+  "archivo": "articulos/art-0037.md",
+  "sha256": "a2910815b35e664a6a2f699b0ab3c7c5eddc5797056eb6af14174ef4552e1b2a",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "38": {
+  "archivo": "articulos/art-0038.md",
+  "sha256": "b38237d1e5fe000b29b00c25cc5d1cb100a025045ad30c8b2fe5394ef9de0409",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "39": {
+  "archivo": "articulos/art-0039.md",
+  "sha256": "03d620a4575b5a6b8f288feaafd3a1575601fcaaf23edf24fdce6d6848b38473",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "40": {
+  "archivo": "articulos/art-0040.md",
+  "sha256": "ab0dd6d6cb58355538db26e106819c36528d655250b20f4edc6fc1f369144362",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "41": {
+  "archivo": "articulos/art-0041.md",
+  "sha256": "e5ff9c562681561f660cf6d4ce4ff8865060c4c67b99c37cd79f2cda8e09f880",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "42": {
+  "archivo": "articulos/art-0042.md",
+  "sha256": "1579fcf8927aa868efe583a3f3b4cb0b5e30088acfd7c4a915dca799c39fbc48",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "43": {
+  "archivo": "articulos/art-0043.md",
+  "sha256": "ee05893ae01443ac7ce63c0477623b4f92edc454469be89708cdd8bee7689812",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "44": {
+  "archivo": "articulos/art-0044.md",
+  "sha256": "1c8f2ec142ab5c8bc73a37f643be34a0b7afbfe48f97e7442539c4cb585f9153",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "45": {
+  "archivo": "articulos/art-0045.md",
+  "sha256": "9aaf0b98fe2ae0ff14d8ceb732bd48454bbe972d3af1729963efbe856c22b2d8",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "46": {
+  "archivo": "articulos/art-0046.md",
+  "sha256": "53857bda4799d0917fa068e494a120a14bf1d30cbd44bd675700bc74a28420bb",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "47": {
+  "archivo": "articulos/art-0047.md",
+  "sha256": "bc705af8b6cee8c3c2b63f859d419277f30d2eb49ea855ca362db7a05215c728",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "48": {
+  "archivo": "articulos/art-0048.md",
+  "sha256": "ae810794e135ee05b3b12de9bf56f348d5cb5babd48013dbb65a3c962eb9dee9",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "49": {
+  "archivo": "articulos/art-0049.md",
+  "sha256": "7f88d40e12384f4caf1300c96afe6a647fb8fda79463e3d8567bc6905e40fd1d",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "50": {
+  "archivo": "articulos/art-0050.md",
+  "sha256": "ecfd3dbccf7f4ec456edbccec203e36259d153fd3df8b907d7fd4c70775a0470",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "51": {
+  "archivo": "articulos/art-0051.md",
+  "sha256": "0116cdfd373485b32c3cafff3f4340e850d871d747e369b30f750162644d7a0d",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "52": {
+  "archivo": "articulos/art-0052.md",
+  "sha256": "d56c09ef9c14c5f6a40f339a8e06c4ac90fd352673148f542c73428356d9718d",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "53": {
+  "archivo": "articulos/art-0053.md",
+  "sha256": "4a2def865fd02e78ae5c4a37504321c825ad654991ff9f10be2800edd8712b08",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "54": {
+  "archivo": "articulos/art-0054.md",
+  "sha256": "07e2ae0ae197c6a01900ec3c98fe24af0533ba2219766d8b03b35bbcd49359ed",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "55": {
+  "archivo": "articulos/art-0055.md",
+  "sha256": "286fcd36c55074986a46aafe4d3b454c6f6e867e1d24ec03c8c947683659863e",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "56": {
+  "archivo": "articulos/art-0056.md",
+  "sha256": "4cfbf6db5a3375e3d32130d748a6c9e5525a6c6f532c5adb68eac539ce97b9ae",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "57": {
+  "archivo": "articulos/art-0057.md",
+  "sha256": "b4baf0146faba2d477801429e5425b8fe76ee4ce97740f81f7b043eab0b3fc25",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "58": {
+  "archivo": "articulos/art-0058.md",
+  "sha256": "dd4b5b6f4ffb48ca26d17ed9ec08d31e00cd16412bd8ceafa18cfe28ea5fe5de",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "59": {
+  "archivo": "articulos/art-0059.md",
+  "sha256": "f15b885f7e8acdca0b4939e797348c33298566e4300986a7a43e3f52a876a817",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "60": {
+  "archivo": "articulos/art-0060.md",
+  "sha256": "f85e6e3dabdc48f1c731502e09f39fc36613c9886a219b95ff1228204010c369",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "61": {
+  "archivo": "articulos/art-0061.md",
+  "sha256": "663e0eaacd95abe6712b73b22802f2ed54ead018284404a0cb33a45617f746b9",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "62": {
+  "archivo": "articulos/art-0062.md",
+  "sha256": "eb29f16780d2d48bb684f129d18d624fd32b9849ecaf9db3cc19a1eb35fb199e",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "63": {
+  "archivo": "articulos/art-0063.md",
+  "sha256": "174a52fa5b44983d32857e71a094d2ef6fbead33d374f2d76f14c52912b791e1",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "64": {
+  "archivo": "articulos/art-0064.md",
+  "sha256": "3fe29a4c3c329f941f669d8f54834dd098cc6532be13a52af8a6fec9a740df88",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "65": {
+  "archivo": "articulos/art-0065.md",
+  "sha256": "ca1ac24ce68c97f88b6c55f396f6ae50104a8838316b42eefa938e1dd8840706",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "66": {
+  "archivo": "articulos/art-0066.md",
+  "sha256": "ae8c6d74dca7fbc8c3b28770d265fd9f0ed46027c031d1cf44d40cdccaf76290",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "67": {
+  "archivo": "articulos/art-0067.md",
+  "sha256": "7f3cbc97d13bdb293e1f6b5332ad5bd55fb49cc99bc516eeb89e4a1964d5a76a",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "68": {
+  "archivo": "articulos/art-0068.md",
+  "sha256": "287d8e8c752bda777227d4c18e57ffa2adb7f51dced32b2041dc9fceb7d31b13",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "69": {
+  "archivo": "articulos/art-0069.md",
+  "sha256": "c1fe18b54eff4a2045fad7993fbc01dd9484f2b4f9bc6a2306c076c6ea7c41be",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "70": {
+  "archivo": "articulos/art-0070.md",
+  "sha256": "dbcd8c13182988fc9113cf953131fec33773c3ad9c49a27a1e8234384eda40fe",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "71": {
+  "archivo": "articulos/art-0071.md",
+  "sha256": "59778448a47c07cc8ccb61d13b99fa8bcabbbe010c3c84c69bb634f6aff769cb",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "72": {
+  "archivo": "articulos/art-0072.md",
+  "sha256": "73749564e017501fd1189de852a2f25e6874d9b7388c6cb566f884686136e6b5",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección I · De las Deducciones en General",
+  "derogado": false
+ },
+ "73": {
+  "archivo": "articulos/art-0073.md",
+  "sha256": "580550f63c5ee5f02b77f06f672dd234ee496eccc8e3808fa9f62419fa0b3ce5",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección II · De las Inversiones",
+  "derogado": false
+ },
+ "74": {
+  "archivo": "articulos/art-0074.md",
+  "sha256": "e6844c0ac4220eaa1e5fc4628b63c72d8560e4e26234851bb39a890f5c7c4b6c",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección II · De las Inversiones",
+  "derogado": false
+ },
+ "75": {
+  "archivo": "articulos/art-0075.md",
+  "sha256": "6ed0d3b50588d365c6a9bcb8347b0f1a1756a3096b946e155d7d33f39ca70022",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección II · De las Inversiones",
+  "derogado": false
+ },
+ "76": {
+  "archivo": "articulos/art-0076.md",
+  "sha256": "45696e3cf4e086abbc93853fc6d06e4b7f37d76ee0817f0bcf75ce037634cb43",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección II · De las Inversiones",
+  "derogado": false
+ },
+ "77": {
+  "archivo": "articulos/art-0077.md",
+  "sha256": "fd37a8be76221eb82e67ad5abef10b8cf4cb5c31c61da66015bb83021f645bb7",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección III · Del Costo de lo Vendido",
+  "derogado": false
+ },
+ "78": {
+  "archivo": "articulos/art-0078.md",
+  "sha256": "92d1a0b6bcb799ec16be1a18c4668523d2026474d3fc725547112ca218792d69",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección III · Del Costo de lo Vendido",
+  "derogado": false
+ },
+ "79": {
+  "archivo": "articulos/art-0079.md",
+  "sha256": "327466b0d343a17dd394f7497940d485e3c3ee05d8cbb27736cf10f415935dd5",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección III · Del Costo de lo Vendido",
+  "derogado": false
+ },
+ "80": {
+  "archivo": "articulos/art-0080.md",
+  "sha256": "891b3d0fd4d4490dd362da60075436aaf4cee8f4b8bb1b84b1bf18c8a9b71502",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección III · Del Costo de lo Vendido",
+  "derogado": false
+ },
+ "81": {
+  "archivo": "articulos/art-0081.md",
+  "sha256": "1a49d5f9b850d134db36a21aea0f1ba44355d678e2c58f7410876bfecbd7b7c1",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección III · Del Costo de lo Vendido",
+  "derogado": false
+ },
+ "82": {
+  "archivo": "articulos/art-0082.md",
+  "sha256": "c247389911a7c971fa5f780a524ea438969d123c86b8bce960fb726e17ba46fe",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección III · Del Costo de lo Vendido",
+  "derogado": false
+ },
+ "83": {
+  "archivo": "articulos/art-0083.md",
+  "sha256": "9192039a2e21cc41a1724ece56857c31633daff1cef0888545c53f1248dbed5b",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección III · Del Costo de lo Vendido",
+  "derogado": false
+ },
+ "84": {
+  "archivo": "articulos/art-0084.md",
+  "sha256": "0fa5ade890f8d53a98e2acb89017ac742747d7fb9d0ea0483433ae69c9d821a4",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo II · De las Deducciones / Sección III · Del Costo de lo Vendido",
+  "derogado": false
+ },
+ "85": {
+  "archivo": "articulos/art-0085.md",
+  "sha256": "e74b7fa459baee423a388a5839faa46d8af6db9ab676d5720fbd1025c7307057",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo III · Del Ajuste por Inflación",
+  "derogado": false
+ },
+ "86": {
+  "archivo": "articulos/art-0086.md",
+  "sha256": "af65d65e80400f80c8e2edfa2969463dc68aff49abfbdaa989131d5a25cc7cf8",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo III · Del Ajuste por Inflación",
+  "derogado": false
+ },
+ "87": {
+  "archivo": "articulos/art-0087.md",
+  "sha256": "230275813c9ab46d1a86affa5131868c7911a1a3246f6bc123cbc9304f5b405e",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo III · Del Ajuste por Inflación",
+  "derogado": false
+ },
+ "88": {
+  "archivo": "articulos/art-0088.md",
+  "sha256": "f5c597a9404dc0ffe7c40f571e5d27b2a79460ecca3d49ce326bfbb2e9989263",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo III · Del Ajuste por Inflación",
+  "derogado": false
+ },
+ "89": {
+  "archivo": "articulos/art-0089.md",
+  "sha256": "e0b95f7eb4e0ddb5ad1f4daf2383048b4366c1e47ce417a72a739af0333ad1f2",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo IV · De las Instituciones de Crédito, de Seguros y de Fianzas, de los Almacenes Generales de Depósito, Arrendadoras Financieras y Uniones de Crédito",
+  "derogado": false
+ },
+ "90": {
+  "archivo": "articulos/art-0090.md",
+  "sha256": "5a3391aa6c277e5cc39916d3d30a152888a08a6f473294ad40791d6d1470e763",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo IV · De las Instituciones de Crédito, de Seguros y de Fianzas, de los Almacenes Generales de Depósito, Arrendadoras Financieras y Uniones de Crédito",
+  "derogado": false
+ },
+ "91": {
+  "archivo": "articulos/art-0091.md",
+  "sha256": "d506c6090c51866e234665fdf0837362258ff265efbf8cf3d8f3afa99d450203",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo IV · De las Instituciones de Crédito, de Seguros y de Fianzas, de los Almacenes Generales de Depósito, Arrendadoras Financieras y Uniones de Crédito",
+  "derogado": false
+ },
+ "92": {
+  "archivo": "articulos/art-0092.md",
+  "sha256": "a443c8429b077bfc7133b5367c6b02231529124515483404ea90193332a9335a",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo IV · De las Instituciones de Crédito, de Seguros y de Fianzas, de los Almacenes Generales de Depósito, Arrendadoras Financieras y Uniones de Crédito",
+  "derogado": false
+ },
+ "93": {
+  "archivo": "articulos/art-0093.md",
+  "sha256": "62947022cfc5aef0285300927c1d1e4eff66cfa6452945fb990b4b94d07f4394",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo IV · De las Instituciones de Crédito, de Seguros y de Fianzas, de los Almacenes Generales de Depósito, Arrendadoras Financieras y Uniones de Crédito",
+  "derogado": false
+ },
+ "94": {
+  "archivo": "articulos/art-0094.md",
+  "sha256": "e08c0471c4548de408045b92060a5a25af4801c70e4393694d759344e594196f",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo IV · De las Instituciones de Crédito, de Seguros y de Fianzas, de los Almacenes Generales de Depósito, Arrendadoras Financieras y Uniones de Crédito",
+  "derogado": false
+ },
+ "95": {
+  "archivo": "articulos/art-0095.md",
+  "sha256": "f5e0f74739a198f868b3d1d2669e88f35b1403740b130e5c732aa362d32f81ec",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo IV · De las Instituciones de Crédito, de Seguros y de Fianzas, de los Almacenes Generales de Depósito, Arrendadoras Financieras y Uniones de Crédito",
+  "derogado": false
+ },
+ "96": {
+  "archivo": "articulos/art-0096.md",
+  "sha256": "5991892969954d59877fd528fc7d02151c370469789383f051382634f8259dde",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo IV · De las Instituciones de Crédito, de Seguros y de Fianzas, de los Almacenes Generales de Depósito, Arrendadoras Financieras y Uniones de Crédito",
+  "derogado": false
+ },
+ "97": {
+  "archivo": "articulos/art-0097.md",
+  "sha256": "4f40d1dfc9be27de3325385356d5dc18d91201a86731cc1161e44798d539fbf3",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo V · Del Régimen Opcional para Grupos de Sociedades",
+  "derogado": false
+ },
+ "98": {
+  "archivo": "articulos/art-0098.md",
+  "sha256": "5eb4959ce8e72ad45bd4e09d3d13a1e970d4d1018c05b0bf271e5bb7d1142502",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VI · De los Coordinados",
+  "derogado": false
+ },
+ "99": {
+  "archivo": "articulos/art-0099.md",
+  "sha256": "c6c4bda5e4d36fa40c5751c5e0080e0579e3d23f20ca5b5404473a97dcbcde54",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VI · De los Coordinados",
+  "derogado": false
+ },
+ "100": {
+  "archivo": "articulos/art-0100.md",
+  "sha256": "41952b1727d885105025c6981ff593e66cf288b34bfe11e145821665d687655b",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VI · De los Coordinados",
+  "derogado": false
+ },
+ "101": {
+  "archivo": "articulos/art-0101.md",
+  "sha256": "6b29a63c1b10561b0c2befacf9b18a346a0ec0999562282b5f1d000b59fc0464",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VI · De los Coordinados",
+  "derogado": false
+ },
+ "102": {
+  "archivo": "articulos/art-0102.md",
+  "sha256": "3beeca20be3d22d007972c4685021c349516f0f7799f7b1ad1b9f914e75c2988",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VII · Del Régimen de Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras",
+  "derogado": false
+ },
+ "103": {
+  "archivo": "articulos/art-0103.md",
+  "sha256": "d28409e7c33ae8895569cbce4a6db524af365868f34195fa5449faf9445d6ed2",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VII · Del Régimen de Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras",
+  "derogado": false
+ },
+ "104": {
+  "archivo": "articulos/art-0104.md",
+  "sha256": "46646181ad152945ab21f5537a0c5957bd879b3e39abd294aeae27cfc78ca61f",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VII · Del Régimen de Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras",
+  "derogado": false
+ },
+ "105": {
+  "archivo": "articulos/art-0105.md",
+  "sha256": "4f76512e93c7d9d2474cd8393012e0101e723f75e518499a53974f6d408af96b",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VII · Del Régimen de Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras",
+  "derogado": false
+ },
+ "106": {
+  "archivo": "articulos/art-0106.md",
+  "sha256": "b30bc474c2339cb6974169eedd0e926ffb81122a206c09173fc00fb38542f56c",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VII · Del Régimen de Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras",
+  "derogado": false
+ },
+ "107": {
+  "archivo": "articulos/art-0107.md",
+  "sha256": "b2c9498e1181421e7267827a0570468d4556c9b7b9f8ae4c316e7a0763cacfaf",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "108": {
+  "archivo": "articulos/art-0108.md",
+  "sha256": "d22fcdbe3ba6936570ff73957abf565d1f46dcd88e0a512249d1f603d38c43eb",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "109": {
+  "archivo": "articulos/art-0109.md",
+  "sha256": "32885055464b0f9b57ab9cc570b4cc59a29fd51747d7b8864d9c95dcf0adf1f8",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "110": {
+  "archivo": "articulos/art-0110.md",
+  "sha256": "7172b549fb332359f88eba1e76032c18e0c428eb91a5c8b09e21dc2a89e0f9a1",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "111": {
+  "archivo": "articulos/art-0111.md",
+  "sha256": "1373c047087c87cb3502e5e7cc65e1ad985f1f3811d9a2b4326d9fb5556667ff",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "112": {
+  "archivo": "articulos/art-0112.md",
+  "sha256": "39d8be87b3bae30574e1e9c950b8b239d37f99691d62540250cb3acac9dcf203",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "113": {
+  "archivo": "articulos/art-0113.md",
+  "sha256": "abbc98d1bdc6b0c595c0bb6619baf72894d8fd1452aa01f199880f6f627964e0",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "114": {
+  "archivo": "articulos/art-0114.md",
+  "sha256": "cac609fe627a097b6fbebaf44469017a8f15fdadb563131e9e8c144662645d6f",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "115": {
+  "archivo": "articulos/art-0115.md",
+  "sha256": "151f931600d4220fc53dcaeb834b7768d30be89f37f11dd7e39a67fcfb8dc37f",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "116": {
+  "archivo": "articulos/art-0116.md",
+  "sha256": "661115a64d67dfc3caeb1bf00fdf9c71892a37f646fbcb31939efc6caf378734",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "117": {
+  "archivo": "articulos/art-0117.md",
+  "sha256": "b70482807b36587cbca8d7ee4ec3ee9932d99c7113186ed881b51933d9b789c9",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "118": {
+  "archivo": "articulos/art-0118.md",
+  "sha256": "06f374b691601536b41adfc3045a0a239614b07a7f98fc8c5bccc76bf4cc5f76",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "119": {
+  "archivo": "articulos/art-0119.md",
+  "sha256": "d5fa350118c5f83e43aea36220952af4330ecef6a0306f8aab95f7f2c7330b13",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "120": {
+  "archivo": "articulos/art-0120.md",
+  "sha256": "21e4ab0920d1d8f2d3559f802ede621ad3c3cc12a013bb1589229ae3063f2d82",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "121": {
+  "archivo": "articulos/art-0121.md",
+  "sha256": "5b07b742176d5229b790a1e6d7ad3bb20262e58f0ddc38620142249d63845ea7",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "122": {
+  "archivo": "articulos/art-0122.md",
+  "sha256": "90240eb02b6abd2d144a650b6698272d7f2f23dbe69b8d5e4706e9ba0ec2d017",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "123": {
+  "archivo": "articulos/art-0123.md",
+  "sha256": "0c56739b2024a1f6ce0b36d033f05a39fb4fac04a88bdb63bea2baffe27b62b6",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "124": {
+  "archivo": "articulos/art-0124.md",
+  "sha256": "08696a37b352bd8bd3b1bae8f6b9432abad4f58f76597b7a0d5f458144c730a7",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "125": {
+  "archivo": "articulos/art-0125.md",
+  "sha256": "bf9c0cbc241cb2d599e372f3730f03ee1ac13fca518baaee68271045e64a07ed",
+  "ubicacion": "Título II · De las Personas Morales / Capítulo VIII · De las Obligaciones de las Personas Morales",
+  "derogado": false
+ },
+ "126": {
+  "archivo": "articulos/art-0126.md",
+  "sha256": "d5b98f3d396e2a8120836557338f31092084bf75011d03d7ea07aedab694e751",
+  "ubicacion": "Título III · Del Régimen de las Personas Morales con Fines no Lucrativos",
+  "derogado": false
+ },
+ "127": {
+  "archivo": "articulos/art-0127.md",
+  "sha256": "ac3c91191353e9f59a8bd6883282a5bb5202e56eef1bced506312ece4d4edacc",
+  "ubicacion": "Título III · Del Régimen de las Personas Morales con Fines no Lucrativos",
+  "derogado": false
+ },
+ "128": {
+  "archivo": "articulos/art-0128.md",
+  "sha256": "83547ce34cc0e364f2404b828275edb4a29b1c0608326702ac6b8dfc938795c1",
+  "ubicacion": "Título III · Del Régimen de las Personas Morales con Fines no Lucrativos",
+  "derogado": false
+ },
+ "129": {
+  "archivo": "articulos/art-0129.md",
+  "sha256": "bfc00492a08575f224b91928890722cdf3cedd85d9cfbe5cfb3081ebaaed12ce",
+  "ubicacion": "Título III · Del Régimen de las Personas Morales con Fines no Lucrativos",
+  "derogado": false
+ },
+ "130": {
+  "archivo": "articulos/art-0130.md",
+  "sha256": "ed7cca6db8efb80f9e53286771e975dfb01ba7212fec565bbed8edf01e1efab8",
+  "ubicacion": "Título III · Del Régimen de las Personas Morales con Fines no Lucrativos",
+  "derogado": false
+ },
+ "131": {
+  "archivo": "articulos/art-0131.md",
+  "sha256": "b8cfe17591f5e1806a700b71e1673980aab264253b52175881fd5906888d6d15",
+  "ubicacion": "Título III · Del Régimen de las Personas Morales con Fines no Lucrativos",
+  "derogado": false
+ },
+ "132": {
+  "archivo": "articulos/art-0132.md",
+  "sha256": "bdeb258d82ba1aef9fafcfff5ed6e473298429787b025e150dde69bc0a2e5fb6",
+  "ubicacion": "Título III · Del Régimen de las Personas Morales con Fines no Lucrativos",
+  "derogado": false
+ },
+ "133": {
+  "archivo": "articulos/art-0133.md",
+  "sha256": "9e3bc43bc943c0ea8dc58c4eb46c1c05cd308ca02975b086f8f0ea40dc6891f3",
+  "ubicacion": "Título III · Del Régimen de las Personas Morales con Fines no Lucrativos",
+  "derogado": false
+ },
+ "134": {
+  "archivo": "articulos/art-0134.md",
+  "sha256": "41f6062f41a03d444d59f36d0587811623c1b7ec2c4df93228da4e5cca1604c4",
+  "ubicacion": "Título III · Del Régimen de las Personas Morales con Fines no Lucrativos",
+  "derogado": false
+ },
+ "135": {
+  "archivo": "articulos/art-0135.md",
+  "sha256": "f4126ce4f437c8d92ba18736dac12c1e406d1d36e707ca4e7b6aab2451222ff3",
+  "ubicacion": "Título III · Del Régimen de las Personas Morales con Fines no Lucrativos",
+  "derogado": false
+ },
+ "136": {
+  "archivo": "articulos/art-0136.md",
+  "sha256": "a2807ad8abb04a62557606b1dabf1f8801fd43d55996b4219ef460bc0c5e3340",
+  "ubicacion": "Título III · Del Régimen de las Personas Morales con Fines no Lucrativos",
+  "derogado": false
+ },
+ "137": {
+  "archivo": "articulos/art-0137.md",
+  "sha256": "7e6daec2f44a26334e19b31c3db165ab67596a7095086092046d268f8ae2c7d0",
+  "ubicacion": "Título III · Del Régimen de las Personas Morales con Fines no Lucrativos",
+  "derogado": false
+ },
+ "138": {
+  "archivo": "articulos/art-0138.md",
+  "sha256": "96fd662b4a291b88cea7879115eca91f6bbffd76aca59fd9438448e8f182e21e",
+  "ubicacion": "Título III · Del Régimen de las Personas Morales con Fines no Lucrativos",
+  "derogado": false
+ },
+ "139": {
+  "archivo": "articulos/art-0139.md",
+  "sha256": "1296c3cb4325891def9958284d30fa5c5cda20b678162db6fb677776d5449c3f",
+  "ubicacion": "Título III · Del Régimen de las Personas Morales con Fines no Lucrativos",
+  "derogado": false
+ },
+ "140": {
+  "archivo": "articulos/art-0140.md",
+  "sha256": "1b7197341cd1505144b297ab462ba28e2296ff96177f1eeda529a74b7eb068e4",
+  "ubicacion": "Título III · Del Régimen de las Personas Morales con Fines no Lucrativos",
+  "derogado": false
+ },
+ "141": {
+  "archivo": "articulos/art-0141.md",
+  "sha256": "9ba0b9d8f79da87943514761f6ed9933ae7e0d29ca168783259c70cb89fa520e",
+  "ubicacion": "Título III · Del Régimen de las Personas Morales con Fines no Lucrativos",
+  "derogado": false
+ },
+ "142": {
+  "archivo": "articulos/art-0142.md",
+  "sha256": "7984a93bcc6428a051f0e42ed09f40454417a7203f0588d1582333dc42d0e61a",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "143": {
+  "archivo": "articulos/art-0143.md",
+  "sha256": "538a98d0c58522ce35d27d6c39176152df3eaf6943280fd60982fc32a4010454",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "144": {
+  "archivo": "articulos/art-0144.md",
+  "sha256": "21d10a59fa0aad7c360549627f16d67ba08a86beef55c91619d48c17d9e3ad43",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "145": {
+  "archivo": "articulos/art-0145.md",
+  "sha256": "950e0e80239dec09ea3e4c7220271d59752259ae6ebdd0e0ba02e0ee36ae40d1",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "146": {
+  "archivo": "articulos/art-0146.md",
+  "sha256": "2553d8d956f47698aa3c27eee0ab167ad473bdfc51dafe3554f5eb063dfe5e6e",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "147": {
+  "archivo": "articulos/art-0147.md",
+  "sha256": "3269c052b538930c1d940dc7258641ecc12492e04a6547829ab5e63796d28ee1",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "148": {
+  "archivo": "articulos/art-0148.md",
+  "sha256": "1635fb2813dee3dedc2ba48a83854e58081d5a07c7d0c9e4ae86238d748ad8ed",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "149": {
+  "archivo": "articulos/art-0149.md",
+  "sha256": "07f19aacb5765e28d9903aa1a26cc1a49561cc5a0b0cbaa118e9f634b2c86e89",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "150": {
+  "archivo": "articulos/art-0150.md",
+  "sha256": "d85bcbc89acadd0307b706935e6112e0b361b654bc056e4972f4aabd938dd816",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "151": {
+  "archivo": "articulos/art-0151.md",
+  "sha256": "ca7d5fa95f216416c27d5b62a815d0379d33e8ca29b1930755786ee03d59b887",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "152": {
+  "archivo": "articulos/art-0152.md",
+  "sha256": "c2d891f3034431229e251b106007033ea5d6bab5faebac9411af4354d3e46b43",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "153": {
+  "archivo": "articulos/art-0153.md",
+  "sha256": "43d6f90da5da1574be7ad94089d7a081eeae279107c4fa6ab58c0fb32f764fec",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "154": {
+  "archivo": "articulos/art-0154.md",
+  "sha256": "9b45a09e112bb6a61637696f142879b74401baaa33319f9de0995e8f5e42647e",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "155": {
+  "archivo": "articulos/art-0155.md",
+  "sha256": "4002b2c297ccb56ba4a32251431d5e784631711e2a3bf88d493d861e0ea98210",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "156": {
+  "archivo": "articulos/art-0156.md",
+  "sha256": "5d3b2db5b18f26eedcf88bea38eb7384f0d01478eb20ed32aafc23ccf560baf5",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "157": {
+  "archivo": "articulos/art-0157.md",
+  "sha256": "5c2b362b745a07e4dae46917aff5ec7d90e1d967ff2f0e33202a58d72e76d782",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "158": {
+  "archivo": "articulos/art-0158.md",
+  "sha256": "ff4d76bbbcd72fe0d9b293fa9cd2ebaa32b955c6838776d1ae447106e7ca0438",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "159": {
+  "archivo": "articulos/art-0159.md",
+  "sha256": "23e3563595b51e3aaebf11fdb15a3dbed3ca0a2aecfb2938a6ba4a5b7de093c1",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "160": {
+  "archivo": "articulos/art-0160.md",
+  "sha256": "179c48263e9342e2710ff46c345c8b1c24c6ad72978fd0214959e269141d2e51",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "161": {
+  "archivo": "articulos/art-0161.md",
+  "sha256": "b8c5e194a71fb0ac0fd179e48ecd0fc4c5c4e9cc3bafadc33dd5e09d202cca34",
+  "ubicacion": "Título IV · De las Personas Físicas",
+  "derogado": false
+ },
+ "162": {
+  "archivo": "articulos/art-0162.md",
+  "sha256": "c4f4467109d6c834778a403e5b2b83ab9f7d084f1346b748ebec70fde9f3dbb7",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "163": {
+  "archivo": "articulos/art-0163.md",
+  "sha256": "e98ee22486a4a20b50b2e52a8c14fbc31db81e5103b3c1f91ff16f7364a4bb69",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "164": {
+  "archivo": "articulos/art-0164.md",
+  "sha256": "317a97b7ef1def171881c849340a167dbdfa9818ce21f0b45a29337ea7e98df4",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "165": {
+  "archivo": "articulos/art-0165.md",
+  "sha256": "dbfb67f51af5dd8aacb658719d51e7e9b8d47dfcba5966964fe9e2748803f9d9",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "166": {
+  "archivo": "articulos/art-0166.md",
+  "sha256": "7256d4f0a5c1b98fbbffaf1d86df967671cb030a9a9c8c1868e98c5bc7f17fa6",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "167": {
+  "archivo": "articulos/art-0167.md",
+  "sha256": "b909c148b24f9245ade9b1df9118c4d416bcdc3d7a6cc708d65a1c5f5924ad72",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "168": {
+  "archivo": "articulos/art-0168.md",
+  "sha256": "87d9c2487ad28625e46bdffd646a0586cf19f872df4e4f4f778974aaffb430f4",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "169": {
+  "archivo": "articulos/art-0169.md",
+  "sha256": "799744574710a41a49164e0598dcd6c06588d1dffa3bc9805d59264ee984e120",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "170": {
+  "archivo": "articulos/art-0170.md",
+  "sha256": "55df5b980bbdbc904ba7c19de9de102c1bcf248ece469d3cf088276d7af99173",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "171": {
+  "archivo": "articulos/art-0171.md",
+  "sha256": "777a470fc0e864a30fce5d27441cd09c2894d898d5f43f87d62a95aed21678fc",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "172": {
+  "archivo": "articulos/art-0172.md",
+  "sha256": "468fcbf0f853d1fc4d111de2c50b8f2dd8e2845e6a10a413d94b06caf4faf412",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "173": {
+  "archivo": "articulos/art-0173.md",
+  "sha256": "9afd3f02af69785d995ba10057865a8de649ab2be7f9cce3a07085d86f782494",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "174": {
+  "archivo": "articulos/art-0174.md",
+  "sha256": "9fd9d1114c745995199af2227d040c449644aa832ff4b1215a2ca210bae91b31",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "175": {
+  "archivo": "articulos/art-0175.md",
+  "sha256": "42b1f1df1801b123930ff278618cc2fa1d58104ce9d7df9b66e97e9be4fc27ae",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "176": {
+  "archivo": "articulos/art-0176.md",
+  "sha256": "ec0f4cdc9ff4a954022990e45c0340898bdb10920b5b31ee42b21e3986fbc47b",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "177": {
+  "archivo": "articulos/art-0177.md",
+  "sha256": "908189128c009afdf14f5a1c3743aa4be4bd9e747e8602e7a12a9f17636636eb",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "178": {
+  "archivo": "articulos/art-0178.md",
+  "sha256": "d1d67b5580599519985ba28a51ae0e2805c16862149eb7c553961bb465ad0778",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "179": {
+  "archivo": "articulos/art-0179.md",
+  "sha256": "a4436a2d82cb551a74e7f0ae83d39e92eea3ae19c74f3b103e1a3bd9441006e3",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "180": {
+  "archivo": "articulos/art-0180.md",
+  "sha256": "0d08fc3f620f1dceb0c3cb2eaca34c88c9cf85ab34c264affd78f23c060a0cdd",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "181": {
+  "archivo": "articulos/art-0181.md",
+  "sha256": "a9d1fde1e501ba6289f434e6899c4f111bb368f7ee0fc5ead04c1ad42372a2ae",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "182": {
+  "archivo": "articulos/art-0182.md",
+  "sha256": "a4ed58f33557404624df5f48d86e6c3d1c3edc838fe3743beeb80d7743d37fc7",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "183": {
+  "archivo": "articulos/art-0183.md",
+  "sha256": "6d5a81841d63f6120c3341a13e9ec46b1ee3ea34c52b458bab96ff18b1102cea",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo I · De los Ingresos por Salarios y en General por la Prestación de un Servicio Personal Subordinado",
+  "derogado": false
+ },
+ "184": {
+  "archivo": "articulos/art-0184.md",
+  "sha256": "f6f1bdac52ea1511214f7d959de58cd81799af769dfe2859189f217cfd072da6",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo II · De los Ingresos por Actividades Empresariales y Profesionales",
+  "derogado": false
+ },
+ "185": {
+  "archivo": "articulos/art-0185.md",
+  "sha256": "08d01863221a47e44853d98558f7270c6e3389d62a909004444b05eb3b93549c",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo II · De los Ingresos por Actividades Empresariales y Profesionales",
+  "derogado": false
+ },
+ "186": {
+  "archivo": "articulos/art-0186.md",
+  "sha256": "76ac06c55a8d18e1cb924e59d4d04456b0db6d1f137d897a7715e2940bedc383",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo II · De los Ingresos por Actividades Empresariales y Profesionales",
+  "derogado": false
+ },
+ "187": {
+  "archivo": "articulos/art-0187.md",
+  "sha256": "36f66a9c94baedbfcdbee7671c343ea6097da92c3d314a8b664306b1583e4646",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo II · De los Ingresos por Actividades Empresariales y Profesionales",
+  "derogado": false
+ },
+ "188": {
+  "archivo": "articulos/art-0188.md",
+  "sha256": "7c1de9f07e2c91ff21dc22580581dcd2bba01de821872ef5d4fdaf9d676f60de",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo II · De los Ingresos por Actividades Empresariales y Profesionales",
+  "derogado": false
+ },
+ "189": {
+  "archivo": "articulos/art-0189.md",
+  "sha256": "cfbc8d341df7db3aa7db93954d886912bfa00276f1b02cc130024b9e5958c7a9",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo II · De los Ingresos por Actividades Empresariales y Profesionales",
+  "derogado": false
+ },
+ "190": {
+  "archivo": "articulos/art-0190.md",
+  "sha256": "dda0b44ba97786a20b86045758c97a82f6d639696411d21ad4f7b20cf9787715",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo II · De los Ingresos por Actividades Empresariales y Profesionales",
+  "derogado": false
+ },
+ "191": {
+  "archivo": "articulos/art-0191.md",
+  "sha256": "a9510965360588ac09adfd6f65b8da48a39d46fef5a1c87adad442d458b92eb3",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo II · De los Ingresos por Actividades Empresariales y Profesionales",
+  "derogado": false
+ },
+ "192": {
+  "archivo": "articulos/art-0192.md",
+  "sha256": "f9e4d038f19c17e886737a4d7cc12411731e598d53cbb584f617a7cf5c6cf6fe",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo II · De los Ingresos por Actividades Empresariales y Profesionales",
+  "derogado": false
+ },
+ "193": {
+  "archivo": "articulos/art-0193.md",
+  "sha256": "33926462f40c2b8f6449d1941768e9a277088f1ef491d020a27c6c8fab412530",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo II · De los Ingresos por Actividades Empresariales y Profesionales",
+  "derogado": false
+ },
+ "194": {
+  "archivo": "articulos/art-0194.md",
+  "sha256": "18e1049eb94d6be1a77f08a17eafd778c377bcf6204e11e3bafdf4d4742a757f",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo III · De los Ingresos por Arrendamiento y en General por Otorgar el Uso o Goce Temporal de Bienes Inmuebles",
+  "derogado": false
+ },
+ "195": {
+  "archivo": "articulos/art-0195.md",
+  "sha256": "50e7b908dcc5ad3bd6a5ce7ce23940300485abb57d4729af0c7d81621ae584f9",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo III · De los Ingresos por Arrendamiento y en General por Otorgar el Uso o Goce Temporal de Bienes Inmuebles",
+  "derogado": false
+ },
+ "196": {
+  "archivo": "articulos/art-0196.md",
+  "sha256": "e82dc97540a7482f190bf736bacb7e5a7cdc086e19fbfd1babc4ca1b6803c725",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo III · De los Ingresos por Arrendamiento y en General por Otorgar el Uso o Goce Temporal de Bienes Inmuebles",
+  "derogado": false
+ },
+ "197": {
+  "archivo": "articulos/art-0197.md",
+  "sha256": "fc277f49787f4e2ef20186982ecaf1472941c7160756e9d67420f6c9f00bc409",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo III · De los Ingresos por Arrendamiento y en General por Otorgar el Uso o Goce Temporal de Bienes Inmuebles",
+  "derogado": false
+ },
+ "198": {
+  "archivo": "articulos/art-0198.md",
+  "sha256": "4202d087dc6bd7cd3a5ac7504e0aef243fdcb967ca41ef2d64095cc60ed0acdc",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo III · De los Ingresos por Arrendamiento y en General por Otorgar el Uso o Goce Temporal de Bienes Inmuebles",
+  "derogado": false
+ },
+ "199": {
+  "archivo": "articulos/art-0199.md",
+  "sha256": "1a4c4c03190efe1ac7abbe47e269f511d4123896ee736bf1f2cff3227760ba03",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo III · De los Ingresos por Arrendamiento y en General por Otorgar el Uso o Goce Temporal de Bienes Inmuebles",
+  "derogado": false
+ },
+ "200": {
+  "archivo": "articulos/art-0200.md",
+  "sha256": "39eaaa8f907f4c9ae1608eabd9a094ca12eda409eb53c54bc1313dbf54aa7a2b",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IV · De los Ingresos por Enajenación de Bienes",
+  "derogado": false
+ },
+ "201": {
+  "archivo": "articulos/art-0201.md",
+  "sha256": "9c35cc0cf3ef8022db366af2212937a344e34242c4d02eb19a3685055e0755b2",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IV · De los Ingresos por Enajenación de Bienes",
+  "derogado": false
+ },
+ "202": {
+  "archivo": "articulos/art-0202.md",
+  "sha256": "be93dfb0e81ecd7d35df2035aefe58afa1c2b321f97691a34c90a9f3aaf8caf4",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IV · De los Ingresos por Enajenación de Bienes",
+  "derogado": false
+ },
+ "203": {
+  "archivo": "articulos/art-0203.md",
+  "sha256": "bfd4b7cc2e86ac6fe987ed9ae712167ff55689dc1f4e120a863436a3d7b71de4",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IV · De los Ingresos por Enajenación de Bienes",
+  "derogado": false
+ },
+ "204": {
+  "archivo": "articulos/art-0204.md",
+  "sha256": "4dbf4f598b8a26b9b19751ccf09d8120aaec758e8b36526a99ab8db37565fb1d",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IV · De los Ingresos por Enajenación de Bienes",
+  "derogado": false
+ },
+ "205": {
+  "archivo": "articulos/art-0205.md",
+  "sha256": "3b68e2b24603e364a6e6f4df21edf905397ade6043b3823a666ca87b20864cbe",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IV · De los Ingresos por Enajenación de Bienes",
+  "derogado": false
+ },
+ "206": {
+  "archivo": "articulos/art-0206.md",
+  "sha256": "784f0a373cfdf75aad5ee995466de35cc401a3fa248933a9c68de65c104f2917",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IV · De los Ingresos por Enajenación de Bienes",
+  "derogado": false
+ },
+ "207": {
+  "archivo": "articulos/art-0207.md",
+  "sha256": "262be9045c2fb52b52b7efb254fb1b059463002103c2d407d2edeb6bd34789bb",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IV · De los Ingresos por Enajenación de Bienes",
+  "derogado": false
+ },
+ "208": {
+  "archivo": "articulos/art-0208.md",
+  "sha256": "57948da1d107bf35ee11ce2452bf330cd27e941951b278231a0981923e273fa4",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IV · De los Ingresos por Enajenación de Bienes",
+  "derogado": false
+ },
+ "209": {
+  "archivo": "articulos/art-0209.md",
+  "sha256": "2125d1ee45049d3b672c863b331bafca590332d93a7eb1f150f0b14c1c747b9c",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IV · De los Ingresos por Enajenación de Bienes",
+  "derogado": false
+ },
+ "210": {
+  "archivo": "articulos/art-0210.md",
+  "sha256": "5a4879cec293b30f868f78614bbc1da184cc282dca33a5871cc59473029665f4",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IV · De los Ingresos por Enajenación de Bienes",
+  "derogado": false
+ },
+ "211": {
+  "archivo": "articulos/art-0211.md",
+  "sha256": "3da8150e3884834affda59f26c70ea9d3ced9aef43cee3585e83b98652945657",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IV · De los Ingresos por Enajenación de Bienes",
+  "derogado": false
+ },
+ "212": {
+  "archivo": "articulos/art-0212.md",
+  "sha256": "7e540cf814c4172d7e8905ae12d8f8c01dee3a463560e386f1a7617ac32c27a3",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IV · De los Ingresos por Enajenación de Bienes",
+  "derogado": false
+ },
+ "213": {
+  "archivo": "articulos/art-0213.md",
+  "sha256": "561cbfe429da1c2ab0468575af574c8a2cf26a56da69fda9357045f14e9ac460",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IV · De los Ingresos por Enajenación de Bienes",
+  "derogado": false
+ },
+ "214": {
+  "archivo": "articulos/art-0214.md",
+  "sha256": "9ab01eba4c2bbed0794bba489caafacbbc1d20a90ef96d6035c9e49f677a5326",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IV · De los Ingresos por Enajenación de Bienes",
+  "derogado": false
+ },
+ "215": {
+  "archivo": "articulos/art-0215.md",
+  "sha256": "48806cad618df82bd62c5ab67c2f3da4ec4e714cdc8668fb4edd5e4f0ece2a36",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IV · De los Ingresos por Enajenación de Bienes",
+  "derogado": false
+ },
+ "216": {
+  "archivo": "articulos/art-0216.md",
+  "sha256": "1615d0f88b8dc4e7b4d0e761d8ecaaba722c786d2d4f28c17cb8c1393506864f",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo V · De los Ingresos por Adquisición de Bienes",
+  "derogado": false
+ },
+ "217": {
+  "archivo": "articulos/art-0217.md",
+  "sha256": "176ee677d7bb3cd55f96fe89df2c4fd0f934526185039bd9a6cfeee0b4333921",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo V · De los Ingresos por Adquisición de Bienes",
+  "derogado": false
+ },
+ "218": {
+  "archivo": "articulos/art-0218.md",
+  "sha256": "bf63ebf2ae7c21a3d9dba07c71fa48efb09eda0cb1d41451917793fe52232ca4",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo V · De los Ingresos por Adquisición de Bienes",
+  "derogado": false
+ },
+ "219": {
+  "archivo": "articulos/art-0219.md",
+  "sha256": "4144d8805be1618e92e7f8e955c3777e24a9e20c48b31795dd1e3be5fabe1669",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo V · De los Ingresos por Adquisición de Bienes",
+  "derogado": false
+ },
+ "220": {
+  "archivo": "articulos/art-0220.md",
+  "sha256": "15611d98c787e8297a8bb6ff50b5077bb7079093581200418d37ebd0c61ad61e",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VI · De los Ingresos por Intereses",
+  "derogado": false
+ },
+ "221": {
+  "archivo": "articulos/art-0221.md",
+  "sha256": "fc3bcbff078c9a137194cecc12e5b9a9cb54cfb63213f54362d4c617500e598c",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VI · De los Ingresos por Intereses",
+  "derogado": false
+ },
+ "222": {
+  "archivo": "articulos/art-0222.md",
+  "sha256": "ae08f33038fa036f62d2b927f4bbd53241b55a9fcbdcdb222c50f14db37f6b27",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VI · De los Ingresos por Intereses",
+  "derogado": false
+ },
+ "223": {
+  "archivo": "articulos/art-0223.md",
+  "sha256": "412cc544bc46947e1a8a309c6e93358b5470a5ab8eaacc07765540728dd6097f",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VI · De los Ingresos por Intereses",
+  "derogado": false
+ },
+ "224": {
+  "archivo": "articulos/art-0224.md",
+  "sha256": "4df3bf4657252be0b8709e3acc9fcd8c8014c9243a0dd0851fd71d98afd155d7",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VI · De los Ingresos por Intereses",
+  "derogado": false
+ },
+ "225": {
+  "archivo": "articulos/art-0225.md",
+  "sha256": "134442482e5ef2eea24f4d3a116e719a83a4d3ae176ab49cad56eb6a8472f3a9",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VI · De los Ingresos por Intereses",
+  "derogado": false
+ },
+ "226": {
+  "archivo": "articulos/art-0226.md",
+  "sha256": "6d853596377a228bea5c68f07c445ded46897a870591a558c9540cf1c5a020b5",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VI · De los Ingresos por Intereses",
+  "derogado": false
+ },
+ "227": {
+  "archivo": "articulos/art-0227.md",
+  "sha256": "39664882eeae9516d684361df034dcfce59b48a25d4a136b0c5b25ab65727925",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VI · De los Ingresos por Intereses",
+  "derogado": false
+ },
+ "228": {
+  "archivo": "articulos/art-0228.md",
+  "sha256": "a1748fe1331e473b9610d68e8771095fb8c857c20d1d34ccca4d422aa4f639cd",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VI · De los Ingresos por Intereses",
+  "derogado": false
+ },
+ "229": {
+  "archivo": "articulos/art-0229.md",
+  "sha256": "e693a8279dfcf590a1ed2f72d9a8bc6b573e9c2a895a37a4ff6757689f77c873",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VI · De los Ingresos por Intereses",
+  "derogado": false
+ },
+ "230": {
+  "archivo": "articulos/art-0230.md",
+  "sha256": "639dc0e444053a5306952a289b7f361f9c4e53a5faae29353fc9d04477c4bc4b",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VI · De los Ingresos por Intereses",
+  "derogado": false
+ },
+ "231": {
+  "archivo": "articulos/art-0231.md",
+  "sha256": "28e82ba4872fab1a4ea5d0d10a4441cd01e06e476b28c201879ea904d2365b5a",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VI · De los Ingresos por Intereses",
+  "derogado": false
+ },
+ "232": {
+  "archivo": "articulos/art-0232.md",
+  "sha256": "920240c9daf6d76b75591962cd17781b08c4bf9cea35cd4b92751ae5c0c3d70e",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VI · De los Ingresos por Intereses",
+  "derogado": false
+ },
+ "233": {
+  "archivo": "articulos/art-0233.md",
+  "sha256": "a91eb32ff97f361a6e2587a1bfa15ea691593c194422b263b3791b2361c4560f",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VI · De los Ingresos por Intereses",
+  "derogado": false
+ },
+ "234": {
+  "archivo": "articulos/art-0234.md",
+  "sha256": "52ad420044c048ba7be7d1d3bd4120d1024ea85ebd56b5765cfc606cbf3f2a1c",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VII · De los Ingresos por Obtención de Premios",
+  "derogado": false
+ },
+ "235": {
+  "archivo": "articulos/art-0235.md",
+  "sha256": "7c4efd4a7719e62741b510de99dcca47e1f7c6a77aaa1e0ff4ee990c9f9554b5",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VII · De los Ingresos por Obtención de Premios",
+  "derogado": false
+ },
+ "236": {
+  "archivo": "articulos/art-0236.md",
+  "sha256": "9286b28ea25f9cf1e485c8df0efc15149216c2b5b1477488d161e9d93ce34b7a",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VIII · De los Demás Ingresos que Obtengan las Personas Físicas",
+  "derogado": false
+ },
+ "237": {
+  "archivo": "articulos/art-0237.md",
+  "sha256": "2dd71f0b563474d2ef9fb5b26b2895f46831e87126f9ee54dfb50f471f43be52",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VIII · De los Demás Ingresos que Obtengan las Personas Físicas",
+  "derogado": false
+ },
+ "238": {
+  "archivo": "articulos/art-0238.md",
+  "sha256": "fafc4c06fe7d7051a7086146c1b98a8a71dc7fe60d2b96782fe267e874a042b4",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VIII · De los Demás Ingresos que Obtengan las Personas Físicas",
+  "derogado": false
+ },
+ "239": {
+  "archivo": "articulos/art-0239.md",
+  "sha256": "f10da7c72a0bb5279aea3de0a01511583f289a323029e7047dbadd694f48de16",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VIII · De los Demás Ingresos que Obtengan las Personas Físicas",
+  "derogado": false
+ },
+ "240": {
+  "archivo": "articulos/art-0240.md",
+  "sha256": "ba43e4397fe018348b82100c90bfdaf804cbbb4cff5afd5dc51e1dc5a602caaa",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo VIII · De los Demás Ingresos que Obtengan las Personas Físicas",
+  "derogado": false
+ },
+ "241": {
+  "archivo": "articulos/art-0241.md",
+  "sha256": "00d90916725c0bac1c67d2188a36690272cab214ac64665220a85f2e50bed009",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "242": {
+  "archivo": "articulos/art-0242.md",
+  "sha256": "7c8fdfc2895a8456e2329c64198990407ab96e2321ed8fbe5b70c7d9cd99004b",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "243": {
+  "archivo": "articulos/art-0243.md",
+  "sha256": "71e07ca76072aad3c0e9f4741d9556b0bec8f602715449e1402860ad0ee7694a",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "244": {
+  "archivo": "articulos/art-0244.md",
+  "sha256": "c23e795735a11e320f9a8e50dd0e7459ccc5bbf10299285cdec7f5018ece42e4",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "245": {
+  "archivo": "articulos/art-0245.md",
+  "sha256": "2fc95cf68f19ecdd160923f03996e552cd26a58eaa3e69381045c09ff77616ae",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "246": {
+  "archivo": "articulos/art-0246.md",
+  "sha256": "cfe0d82d449d06eed2d1dc656b66843943986a9bef5597be2fb751bc5a047908",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "247": {
+  "archivo": "articulos/art-0247.md",
+  "sha256": "2d824735cacafc5ccad8025c5ede467bf009657d6668fce2a380402962c6e28a",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "248": {
+  "archivo": "articulos/art-0248.md",
+  "sha256": "9621f2621d0ddb7bfe20ccd16c2b9f919aee07a1a80d028c574d6b49ca083720",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "249": {
+  "archivo": "articulos/art-0249.md",
+  "sha256": "fbf68b6dddbafd90e0d4f85616cac10dfea8f30981a1cfd52b82a93ca4645f44",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "250": {
+  "archivo": "articulos/art-0250.md",
+  "sha256": "f222816ed6a56ce39ca190d3c8a63ff8f2d61302939919736298876f789cd610",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "251": {
+  "archivo": "articulos/art-0251.md",
+  "sha256": "3404680eb041fe7dcc23e9024344398c11d8a9170eab8b8521ddd816bc4b0388",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "252": {
+  "archivo": "articulos/art-0252.md",
+  "sha256": "c889478820adde5d0e657aabbcd37595fa93b6be1443f3e3f5c0d1ac3d3b91b0",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "253": {
+  "archivo": "articulos/art-0253.md",
+  "sha256": "a3579033321c9d7a56f5d711a36314784562aa1ae455b0ce7a2016db9d7687e1",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "254": {
+  "archivo": "articulos/art-0254.md",
+  "sha256": "332a5ac201b2a9276e94661b14bdc5db7dcdba7c260ef9ad235597f65349856d",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "255": {
+  "archivo": "articulos/art-0255.md",
+  "sha256": "348f6d8e767cc75fa91695ec44bad4d6a7ea70100027c4b7fd4ac412da8148fc",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "256": {
+  "archivo": "articulos/art-0256.md",
+  "sha256": "6cd39279dcd34ea3a31fd5ead59d5bfe802b6f2365cf98299749386b33847681",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "257": {
+  "archivo": "articulos/art-0257.md",
+  "sha256": "c010fdc3ca04743113b58f3c8788e8f0154a7bde0a80c7d9631c8c1a542e3f6a",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "258": {
+  "archivo": "articulos/art-0258.md",
+  "sha256": "c090814a72696ac8f171ae7b504fdbbc02992c5303bdf4fcb16fec706c228030",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "259": {
+  "archivo": "articulos/art-0259.md",
+  "sha256": "0a0f50afbeb575b0dbb2272d771b9c012cb11031acfceb4008d23beb598cfcba",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo IX · De los Requisitos de las Deducciones",
+  "derogado": false
+ },
+ "260": {
+  "archivo": "articulos/art-0260.md",
+  "sha256": "48348b744139acf745192eebb9d3819fcd2c30dece78e55c35733d54636dd315",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo X · De la Declaración Anual",
+  "derogado": false
+ },
+ "261": {
+  "archivo": "articulos/art-0261.md",
+  "sha256": "a7df6b9d90d27e954cc6243f47c4caf4c12ba6f8057299939176a01cdd9c6eab",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo X · De la Declaración Anual",
+  "derogado": false
+ },
+ "262": {
+  "archivo": "articulos/art-0262.md",
+  "sha256": "bd10d258d821805de9e3ae412521aa9ff091a91f567c3b00e176ac6b65bcccaa",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo X · De la Declaración Anual",
+  "derogado": false
+ },
+ "263": {
+  "archivo": "articulos/art-0263.md",
+  "sha256": "39dc5289a7ca853ef3052828cd1939e6ffc4fd6a95650594fc38c6c7d662fe52",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo X · De la Declaración Anual",
+  "derogado": false
+ },
+ "264": {
+  "archivo": "articulos/art-0264.md",
+  "sha256": "0d3906faea037f1af5983f8d6cdc278030ca62ad2c10be260847df2084434e29",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo X · De la Declaración Anual",
+  "derogado": false
+ },
+ "265": {
+  "archivo": "articulos/art-0265.md",
+  "sha256": "259c14d5c4998b885564daf77b4a41056fa8b5e925dc09c1dd2f32b0c719fdd4",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo X · De la Declaración Anual",
+  "derogado": false
+ },
+ "266": {
+  "archivo": "articulos/art-0266.md",
+  "sha256": "381e97a91ae45dd2794446dfebb278556afa1eb427576a490ccbb167f2b8ff7a",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo X · De la Declaración Anual",
+  "derogado": false
+ },
+ "267": {
+  "archivo": "articulos/art-0267.md",
+  "sha256": "c42715ebb610a5f002935100bdc3045bce054ece3c8bcb0db64329299247b41f",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo X · De la Declaración Anual",
+  "derogado": false
+ },
+ "268": {
+  "archivo": "articulos/art-0268.md",
+  "sha256": "c978d80df83e17d95cec952e254969ba35792a27b60cf8f57d99d359b2384385",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo X · De la Declaración Anual",
+  "derogado": false
+ },
+ "269": {
+  "archivo": "articulos/art-0269.md",
+  "sha256": "6aa8e2efc4def1e34143f4581aa7f32571b96420705bf18e1bec4f90acaf6ad1",
+  "ubicacion": "Título IV · De las Personas Físicas / Capítulo X · De la Declaración Anual",
+  "derogado": false
+ },
+ "270": {
+  "archivo": "articulos/art-0270.md",
+  "sha256": "5cbd321d36f0296a352ffcd28e43e41bcfc57e24b143d52fa72397b8f0b5d277",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "271": {
+  "archivo": "articulos/art-0271.md",
+  "sha256": "5d2fb5c6bf88ba773520a5222a5b38974b3e718d970987c4c4a77efd517f9a3d",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "272": {
+  "archivo": "articulos/art-0272.md",
+  "sha256": "ec172e428189f2549af742a6befaca3fb59e86e60158993fdc9a12de1a6ef835",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "273": {
+  "archivo": "articulos/art-0273.md",
+  "sha256": "0558884f2ec5f1dfde32c29fcb75cdbe66dc9efb8d22283f05c6b2df5f49b487",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "274": {
+  "archivo": "articulos/art-0274.md",
+  "sha256": "a5d482fb4473a7319d1732dc9703c0549816015d98571c1d075aa4038e0386e3",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "275": {
+  "archivo": "articulos/art-0275.md",
+  "sha256": "d69384f5aa9a4cf197361c89d2e0d4b9a14bbab7b51d17c1a687cc63dc283e0c",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "276": {
+  "archivo": "articulos/art-0276.md",
+  "sha256": "e86cc94eeb9221f395885929271e832d4227db74d9a8ddd32dd1338e7df3ceae",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "277": {
+  "archivo": "articulos/art-0277.md",
+  "sha256": "796af452d0de47ee2200009e24b4e27e59b360d5d9ac41f4a3cbac9c89e53c27",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "278": {
+  "archivo": "articulos/art-0278.md",
+  "sha256": "f0b31355d51e91d048b57e9374865200af283eb839e91f53e03b3904cb97fdda",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "279": {
+  "archivo": "articulos/art-0279.md",
+  "sha256": "0f4d185b2f31275a61bf0aa070dee07f5ee2ba3231d1781a20a5afb3b15165e0",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "280": {
+  "archivo": "articulos/art-0280.md",
+  "sha256": "6d83afa77d7574a923260bbf263dee82b43176d40896fce6629867a629f2bb15",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "281": {
+  "archivo": "articulos/art-0281.md",
+  "sha256": "d202f80f4acdf13e35dcabfe41e3efdcc94a47ddfa9ecddc90ed91e1422d3f12",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "282": {
+  "archivo": "articulos/art-0282.md",
+  "sha256": "ecb8f1b765827b27ff65f91a2819cb72af7f57e41b646789ef2fdb6755ef83d2",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "283": {
+  "archivo": "articulos/art-0283.md",
+  "sha256": "eda771e29415997d4077b6a9c86ddd04c87d7d8b2e4f2b689ef43576528e5cfd",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "284": {
+  "archivo": "articulos/art-0284.md",
+  "sha256": "7dea39eaf8e34d37d19b992a799581d2fa042861ebb6728c9eeec6d833e102bd",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "285": {
+  "archivo": "articulos/art-0285.md",
+  "sha256": "aa4bb6ae39b6e964d778dd5f43120da5bb51d38f064850644ccae2761442ce42",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "286": {
+  "archivo": "articulos/art-0286.md",
+  "sha256": "5c60b118a4a70887594f3f7865392b54d05ec20dcd192b8d5760133214dec34c",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "287": {
+  "archivo": "articulos/art-0287.md",
+  "sha256": "c10ed74b2bc44f765c54162420bf4f1c24c1d9bf1d741ee85e04445406f33b65",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "288": {
+  "archivo": "articulos/art-0288.md",
+  "sha256": "88d0e547105bfa3ad205f0b5b39f20a79219c718290b00962533e69b2bf1f8de",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "289": {
+  "archivo": "articulos/art-0289.md",
+  "sha256": "5d5a781b0612d33c44176801245a4765f8fa31d2e01ab44bc820ece11c4040d1",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "290": {
+  "archivo": "articulos/art-0290.md",
+  "sha256": "556017198c228f159ff9e055a944c4d5e70a67b003acf6ea00dea5a4c6215716",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "291": {
+  "archivo": "articulos/art-0291.md",
+  "sha256": "ba0f07ea942f0a93f932ac37ac1066fa77b97431b06b0a62798362aac1ca4a68",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "292": {
+  "archivo": "articulos/art-0292.md",
+  "sha256": "db24d826832d37b49990629a7502b8479cfd514dfb2971818744f0762d2ef179",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "293": {
+  "archivo": "articulos/art-0293.md",
+  "sha256": "142701684fb6e56abd0702718a7c7a3201eedd49336e5638f87c099f8756a915",
+  "ubicacion": "Título V · De los Residentes en el Extranjero con Ingresos Provenientes de Fuente de Riqueza Ubicada en Territorio Nacional",
+  "derogado": false
+ },
+ "294": {
+  "archivo": "articulos/art-0294.md",
+  "sha256": "e3d1fe2b31e846e0492ff7bb2f98662e48f2039af60d40200e22d9b0712674c9",
+  "ubicacion": "Título VI · De los Regímenes Fiscales Preferentes y de las Empresas Multinacionales",
+  "derogado": false
+ },
+ "295": {
+  "archivo": "articulos/art-0295.md",
+  "sha256": "21947157ad76448ae02b6a5558f2a576580134910d72d15c20d0eba3c143afb6",
+  "ubicacion": "Título VI · De los Regímenes Fiscales Preferentes y de las Empresas Multinacionales",
+  "derogado": false
+ },
+ "296": {
+  "archivo": "articulos/art-0296.md",
+  "sha256": "671db94db95eaabb9830e9702e55edd6130e5df93c9937d37ea4ffb8ad3ebaa3",
+  "ubicacion": "Título VI · De los Regímenes Fiscales Preferentes y de las Empresas Multinacionales",
+  "derogado": false
+ },
+ "297": {
+  "archivo": "articulos/art-0297.md",
+  "sha256": "3f838c2106199c15df95ee497cec406714ade2f12597775dc35f0ca14ab0ea82",
+  "ubicacion": "Título VI · De los Regímenes Fiscales Preferentes y de las Empresas Multinacionales",
+  "derogado": false
+ },
+ "298": {
+  "archivo": "articulos/art-0298.md",
+  "sha256": "893c448a7811d6954bd3baff934f509208cc420c69878804a36828bf66d8873d",
+  "ubicacion": "Título VI · De los Regímenes Fiscales Preferentes y de las Empresas Multinacionales",
+  "derogado": false
+ },
+ "299": {
+  "archivo": "articulos/art-0299.md",
+  "sha256": "5c3aa60749dc539683e0565384ebac329a8d25fd37ee3968a9bbac044e8d25d8",
+  "ubicacion": "Título VI · De los Regímenes Fiscales Preferentes y de las Empresas Multinacionales",
+  "derogado": false
+ },
+ "300": {
+  "archivo": "articulos/art-0300.md",
+  "sha256": "241e4aff1ee53b74891e6c642433e0cdd7067f3f24752a6b1dffecb7803c1b92",
+  "ubicacion": "Título VI · De los Regímenes Fiscales Preferentes y de las Empresas Multinacionales",
+  "derogado": false
+ },
+ "301": {
+  "archivo": "articulos/art-0301.md",
+  "sha256": "323368dc35bbc4b2aaf59bfeda361aeac7273ab625f2b1b32377bf4d0053563b",
+  "ubicacion": "Título VI · De los Regímenes Fiscales Preferentes y de las Empresas Multinacionales",
+  "derogado": false
+ },
+ "302": {
+  "archivo": "articulos/art-0302.md",
+  "sha256": "82837a486f42e5b6560e184793a1acc5aaee983ec5ab8e88e071764c6411648c",
+  "ubicacion": "Título VI · De los Regímenes Fiscales Preferentes y de las Empresas Multinacionales",
+  "derogado": false
+ },
+ "303": {
+  "archivo": "articulos/art-0303.md",
+  "sha256": "a083912e3d554910da495c8fb5c198d58a3aafcb1f4eea0cc6f549dcee045b6a",
+  "ubicacion": "Título VII · De los Estímulos Fiscales",
+  "derogado": false
+ },
+ "304": {
+  "archivo": "articulos/art-0304.md",
+  "sha256": "3a9cd07e05cc658995769bde9709648dbed5747beb6e32ee67ec6abe9e5afc82",
+  "ubicacion": "Título VII · De los Estímulos Fiscales",
+  "derogado": false
+ },
+ "305": {
+  "archivo": "articulos/art-0305.md",
+  "sha256": "3bda7a12ed3ddaf6604ad9a0688677a7815b98eba3cb62043ff4489c478def38",
+  "ubicacion": "Título VII · De los Estímulos Fiscales",
+  "derogado": false
+ },
+ "306": {
+  "archivo": "articulos/art-0306.md",
+  "sha256": "158b9d31200d832661556f97598a8f2a85485ae13068f6f5d5e32bed1789c1d6",
+  "ubicacion": "Título VII · De los Estímulos Fiscales",
+  "derogado": false
+ },
+ "307": {
+  "archivo": "articulos/art-0307.md",
+  "sha256": "4f0ec25474b7b81a95dd28ee17b8d99e1561a402f9a0416f76264d8d66f725f5",
+  "ubicacion": "Título VII · De los Estímulos Fiscales",
+  "derogado": false
+ },
+ "308": {
+  "archivo": "articulos/art-0308.md",
+  "sha256": "e29220f464f7033b62694d6ca42cebfc48442158fbb129f08964f25e113e1e15",
+  "ubicacion": "Título VII · De los Estímulos Fiscales",
+  "derogado": false
+ },
+ "309": {
+  "archivo": "articulos/art-0309.md",
+  "sha256": "a6c99eaa01919ceac5ee534d1c4b06748ac5d5d67f88275e9bca3f4ce20456c5",
+  "ubicacion": "Título VII · De los Estímulos Fiscales",
+  "derogado": false
+ },
+ "310": {
+  "archivo": "articulos/art-0310.md",
+  "sha256": "a494dee2d860ec1932b05a0fa1f720a22b5bbdad653cb1fb119f474d96239316",
+  "ubicacion": "Título VII · De los Estímulos Fiscales",
+  "derogado": false
+ },
+ "311": {
+  "archivo": "articulos/art-0311.md",
+  "sha256": "281535c885c2a22121be95e39d4251e2591a77c2e9fa770e1e0687e4f54da4e8",
+  "ubicacion": "Título VII · De los Estímulos Fiscales",
+  "derogado": false
+ },
+ "312": {
+  "archivo": "articulos/art-0312.md",
+  "sha256": "15dbe7e788a5ab4466b2259ba082ab83c16d8ac8bf3c59e727fa6cb5f86c29cf",
+  "ubicacion": "Título VII · De los Estímulos Fiscales",
+  "derogado": false
+ },
+ "313": {
+  "archivo": "articulos/art-0313.md",
+  "sha256": "5442071471a7bdd4ff2f7a37853c945d7568204ab97b51671bad4c18c2dbeb01",
+  "ubicacion": "Título VII · De los Estímulos Fiscales",
+  "derogado": false
+ }
+}

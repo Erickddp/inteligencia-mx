@@ -233,10 +233,17 @@ reglas:
   - {id: R-51, nombre: "Cuadre de saldos del estado de cuenta", estado: OK, fase: 1}
   - id: R-52
     nombre: Dólares y tipo de cambio
-    estado: CORREGIR
+    estado: OK
     fase: 2
-    parametros: [TIPO_CAMBIO_REGLA]
-    hallazgo: "CFF 20: el tipo de cambio que Banxico publica en el DOF el día ANTERIOR a la operación (no el FIX determinado el día anterior: son un día distintos). Para el CFDI manda el TipoCambio que trae el comprobante; para pagos en dólares el del REP (TipoCambioP). La perilla P14 'dof_anterior' debe leer la serie por fecha de publicación. Diferencias entre TC de factura y de pago = ganancia o pérdida cambiaria (resultado), no ingreso por ventas."
+    parametros: [TIPO_CAMBIO_REGLA, BANXICO_SERIE_TC_CFF20]
+    calculadora: tipo_cambio_dof_anterior
+    fuente: "CFF art. 20, tercer párrafo; Banxico SIE SF43718 y SF60653"
+    hallazgo: "CFF 20: el tipo de cambio que Banxico publica en el DOF el día ANTERIOR a la operación. El DOF publica el FIX determinado el día hábil bancario previo, así que la regla es el SEGUNDO FIX determinado antes de la fecha. Verificado contra la serie SF60653 de Banxico (fecha de liquidación) en 675 días (2025-01-01 a 2026-11-06) con 0 diferencias, incluidos fines de semana y el puente del 2-nov-2026 (evidencia en fuentes/evidencia/tc_cff20, recalculada de forma independiente). Para el CFDI manda el TipoCambio que trae el comprobante; para pagos en dólares el del REP (TipoCambioP). Diferencias entre TC de factura y de pago = ganancia o pérdida cambiaria (resultado), no ingreso por ventas."
+    casos:
+      - {nombre: "Martes normal: dos FIX atrás", fecha: "2026-11-05", entradas: {fix: {"2026-10-28": "18.6673", "2026-10-29": "18.8148", "2026-10-30": "18.7962", "2026-11-03": "18.7592", "2026-11-04": "18.6285", "2026-11-05": "18.7147"}}, esperado: "18.7592"}
+      - {nombre: "Día siguiente a un FIX faltante (puente del 2-nov)", fecha: "2026-11-03", entradas: {fix: {"2026-10-28": "18.6673", "2026-10-29": "18.8148", "2026-10-30": "18.7962", "2026-11-03": "18.7592", "2026-11-04": "18.6285", "2026-11-05": "18.7147"}}, esperado: "18.8148"}
+      - {nombre: "Día del puente sin FIX propio", fecha: "2026-11-02", entradas: {fix: {"2026-10-28": "18.6673", "2026-10-29": "18.8148", "2026-10-30": "18.7962", "2026-11-03": "18.7592", "2026-11-04": "18.6285", "2026-11-05": "18.7147"}}, esperado: "18.8148"}
+      - {nombre: "Sin dos FIX previos no hay valor", fecha: "2026-10-29", entradas: {fix: {"2026-10-28": "18.6673"}}, espera_error: SinValor}
   - id: R-53
     nombre: Depósito sin CFDI / pago sin CFDI
     estado: OK
@@ -627,10 +634,10 @@ reglas:
 
   - id: R-138
     nombre: Serie de tipo de cambio para CFF 20
-    estado: CORREGIR
+    estado: OK
     fase: 2
     parametros: [BANXICO_SERIE_TC_CFF20, TIPO_CAMBIO_REGLA]
-    hallazgo: "tipo_cambio.py usa SF43718 (fecha de determinación). Cambiar a SF60653 (fecha de liquidación = publicación en DOF) con fecha = causación − 1 día hábil de publicación; validar el empate de fechas antes de fijarlo (2C)."
+    hallazgo: "No hay que cambiar de serie. La app guarda SF43718 (FIX por fecha de determinación) y deriva la regla del DOF anterior (el segundo FIX previo); eso da, día por día, los mismos valores que SF60653 (FIX por fecha de liquidación). Verificado en 675 días con 0 diferencias (fuentes/evidencia/tc_cff20; el caso de R-52 lo ejecuta el motor). SF60653 queda como serie de verificación: si Banxico dejara de publicar una, la otra sirve."
 
   - id: R-140
     nombre: Integridad de tarifas por periodo (diaria × días)

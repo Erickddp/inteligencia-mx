@@ -1,5 +1,9 @@
 # LINFONAVIT · Artículo 41-BIS
 
+Ley: Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores (LINFONAVIT)
+Texto según: Cámara de Diputados, última reforma DOF 2025-02-21 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
+
 Artículo 41 Bis.- El Consejo de Administración deberá aprobar anualmente el presupuesto de gastos de administración, operación y vigilancia del Instituto, los que no deberán exceder del 0.55 por ciento de los activos totales que administre, entendiendo por estos el promedio mensual del último año del total de los activos sin disminuir las reservas constituidas en términos de la normativa aplicable. El gasto de administración y operación de la empresa filial deberá estar previsto en este presupuesto.
 
 Los gastos de administración, operación y vigilancia serán las erogaciones netas derivadas del cumplimiento de su objeto, que se identifiquen en el estado de resultados conforme a la normativa correspondiente.

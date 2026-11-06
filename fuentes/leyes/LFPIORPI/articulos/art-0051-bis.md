@@ -1,6 +1,9 @@
 # LFPIORPI · Artículo 51-BIS
 
+Ley: Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita (LFPIORPI)
 Ubicación: Capítulo VI · De la Reserva y Manejo de Información
+Texto según: Cámara de Diputados, última reforma DOF 2025-07-16 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPIORPI.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
 
 Artículo 51 Bis. Las dependencias y entidades de la Administración Pública Federal, local, municipal y de las demarcaciones de la Ciudad de México, así como los organismos constitucionales autónomos y empresas públicas del Estado proporcionarán a la Secretaría, la información, datos, imágenes y documentación a la que tengan acceso y que les sea requerida en el ejercicio de sus atribuciones.
 

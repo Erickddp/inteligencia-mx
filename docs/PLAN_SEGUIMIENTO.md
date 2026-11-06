@@ -83,3 +83,10 @@ Falta, en orden: CFF, LFT, LIEPS, RLISR, RLIVA, RMF y Anexos → matriz obligaci
 Pendiente de Rick: dar acceso de red a `omawww.sat.gob.mx` para la RMF (hoy solo está permitido en el entorno de esta sesión) y elegir qué sigue primero.
 
 Hallazgo por verificar: la sesión de factureedp reporta, con datos de Banxico de 675 días, que la regla de tipo de cambio que Timbra ya usa coincide con SF60653, lo que contradice R-52 y R-138 (CORREGIR, «Timbra usa SF43718»). No se cambia la base con un resumen: se necesita el script y los datos de la comparación en un archivo; con eso, R-138 pasa a OK en un PR con su caso.
+
+## Actualización 6-nov-2026 (noche)
+
+- **R-52 y R-138 pasan a OK.** La evidencia de factureedp (675 días, SF43718 contra SF60653, 0 diferencias) está en `fuentes/evidencia/tc_cff20/` con sus huellas, y la recalculé desde los JSON crudos con código propio: mismo resultado. No hay que cambiar de serie: la app guarda SF43718 y deriva la regla del DOF anterior (el segundo FIX previo), que equivale a SF60653. R-52 tiene ahora 4 casos reales (con el puente del 2-nov) y una calculadora nueva en el motor (`tipo_cambio_dof_anterior`).
+- **Biblioteca de leyes: 9 textos.** LISR, LIVA, LSS, Ley del Infonavit, LFPIORPI, LFT, CFF, RLISR y RLIVA. Cada artículo trae ley, ubicación, fuente, última reforma y «Cotejado con el DOF: NO» hasta que una persona lo cotee; los parámetros que citan artículos sin cotejar no se firman. Las 98 citas de la base a estas leyes resuelven.
+- Falta: RMF con Anexos (necesita `omawww.sat.gob.mx` en el entorno donde se trabaje), LIEPS, LIF.
+- Cuidado con los reglamentos: la Cámara tiene el RLISR en la versión de 2016 y el RLIVA en la de 2014; cotejar contra el DOF antes de firmar.

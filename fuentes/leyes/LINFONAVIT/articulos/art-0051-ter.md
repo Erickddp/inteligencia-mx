@@ -1,5 +1,9 @@
 # LINFONAVIT · Artículo 51-TER
 
+Ley: Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores (LINFONAVIT)
+Texto según: Cámara de Diputados, última reforma DOF 2025-02-21 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
+
 Artículo 51 Ter.- El Instituto podrá establecer programas que otorguen a las personas trabajadoras acceso a vivienda mediante arrendamiento social, los cuales se regirán por las reglas que emita el Consejo de Administración debiendo cumplir los siguientes principios:
 
 I.- Las operaciones a que se refiere el presente artículo se podrán realizar respecto de viviendas

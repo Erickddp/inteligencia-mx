@@ -1,5 +1,9 @@
 # LINFONAVIT · Artículo 51-QUATER
 
+Ley: Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores (LINFONAVIT)
+Texto según: Cámara de Diputados, última reforma DOF 2025-02-21 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
+
 Artículo 51 Quáter.- Las personas trabajadoras derechohabientes tendrán las siguientes obligaciones frente al Instituto en materia de arrendamiento social:
 
 I.- Pagar en tiempo, forma y de manera completa las rentas a que estén obligados. Para tales

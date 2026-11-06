@@ -1,6 +1,9 @@
 # LIVA · Artículo 18-H-TER
 
+Ley: Ley del Impuesto al Valor Agregado (LIVA)
 Ubicación: Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección I · Disposiciones generales Sección adicionada DOF 09-12-2019
+Texto según: Cámara de Diputados, última reforma DOF 2021-11-12 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
 
 Artículo 18-H TER. Para los efectos de lo dispuesto en el artículo 18-H BIS de esta Ley, en forma previa al bloqueo mencionado en el artículo citado, el Servicio de Administración Tributaria dará a conocer al contribuyente la resolución en que determine el incumplimiento de las obligaciones de que se trate.
 

@@ -1,5 +1,9 @@
 # LINFONAVIT · Artículo 51-BIS-1
 
+Ley: Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores (LINFONAVIT)
+Texto según: Cámara de Diputados, última reforma DOF 2025-02-21 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
+
 Artículo 51 Bis 1.- Las convocatorias, que podrán referirse a uno o más conjuntos habitacionales, se publicarán en uno de los diarios de mayor circulación en el país y simultáneamente, cuando menos en uno de la entidad federativa donde se ejecutarán las obras y contendrán, como mínimo, los requisitos siguientes:
 
 I.- La descripción general de la obra que se desee ejecutar;

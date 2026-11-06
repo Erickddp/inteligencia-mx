@@ -218,6 +218,16 @@ def calc_parametro(b, f, id):
     return b.valor(id, f)
 
 
+def calc_tipo_cambio_dof_anterior(b, f, fix):
+    """CFF 20: el tipo de cambio publicado en el DOF el día anterior a la operación. El DOF publica el FIX determinado el día hábil
+    bancario previo, así que es el SEGUNDO FIX determinado antes de la fecha (entre `fix`: fecha_de_determinación -> valor).
+    Sin dos FIX previos no hay valor: avisa, no inventa. Equivale a la serie Banxico SF60653 (evidencia: fuentes/evidencia/tc_cff20)."""
+    previos = sorted(str(d) for d in fix if str(d) < f)
+    if len(previos) < 2:
+        raise SinValor(f"hacen falta dos FIX determinados antes de {f}")
+    return D(str(fix[previos[-2]]))
+
+
 def calc_estado_parametro(b, f, id):
     return b.detalle(id, f)["estado"]
 

@@ -1,5 +1,9 @@
 # LINFONAVIT · Artículo 29-BIS
 
+Ley: Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores (LINFONAVIT)
+Texto según: Cámara de Diputados, última reforma DOF 2025-02-21 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
+
 Artículo 29 Bis.- Las personas físicas o morales que se encuentren registradas en términos del artículo 15 de la Ley Federal del Trabajo para llevar a cabo la prestación de servicios especializados o la ejecución de obras especializadas que no forman parte del objeto social ni de la actividad económica preponderante de la beneficiaria de los mismos, deberán proporcionar cuatrimestralmente a más tardar el día 17 de los meses de enero, mayo y septiembre, la información de los contratos celebrados en el cuatrimestre de que se trate, conforme a lo siguiente:
 
 a) Datos Generales;

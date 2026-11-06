@@ -1,6 +1,9 @@
 # LIVA · Artículo 18-H-QUATER
 
+Ley: Ley del Impuesto al Valor Agregado (LIVA)
 Ubicación: Capítulo III BIS · De la prestación de servicios digitales por residentes en el extranjero sin establecimiento en México Capítulo adicionado DOF 09-12-2019 / Sección I · Disposiciones generales Sección adicionada DOF 09-12-2019
+Texto según: Cámara de Diputados, última reforma DOF 2021-11-12 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
 
 Artículo 18-H QUÁTER. Para los efectos de lo dispuesto en los artículos 18-H BIS y 18-H TER de esta Ley, el bloqueo temporal deberá ser ordenado a los concesionarios de una red pública de telecomunicaciones en México, mediante resolución debidamente fundada y motivada, emitida por funcionario público con cargo de administrador general de conformidad con lo previsto en el Reglamento Interior del Servicio de Administración Tributaria. Con independencia de lo anterior, dicho órgano desconcentrado podrá solicitar el auxilio de cualquier autoridad competente para llevar a cabo el bloqueo temporal a que se refiere el presente artículo.
 

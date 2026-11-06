@@ -7,6 +7,10 @@
  "descargado": "2026-11-06",
  "sha256_pdf": "f2b5b1770441a6a4e48f3ade408f9ff7a3e9c81bd5d529e52484f49e4a8e91a6",
  "sha256_texto": "517a09477331fc44d447ea39126af7e4a6db17589a149ae4709b83aec7db45b0",
+ "cotejado_dof": {
+  "ley_completa": null,
+  "articulos": {}
+ },
  "articulos": 80,
  "derogados": 15
 }

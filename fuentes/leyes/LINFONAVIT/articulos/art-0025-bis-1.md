@@ -1,5 +1,9 @@
 # LINFONAVIT · Artículo 25-BIS-1
 
+Ley: Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores (LINFONAVIT)
+Texto según: Cámara de Diputados, última reforma DOF 2025-02-21 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
+
 Artículo 25 Bis 1.- Son funciones del Comité de Transparencia, además de las establecidas en la Ley General y la Ley Federal en materia de Transparencia y Acceso a la Información Pública, las siguientes:
 
 _Párrafo reformado DOF 24-01-2017_

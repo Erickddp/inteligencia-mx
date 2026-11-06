@@ -1,5 +1,9 @@
 # LINFONAVIT · Artículo 43-BIS
 
+Ley: Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores (LINFONAVIT)
+Texto según: Cámara de Diputados, última reforma DOF 2025-02-21 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
+
 Artículo 43 Bis.- Al momento en que el trabajador reciba crédito del Instituto, el saldo de la subcuenta de vivienda de su cuenta individual se aplicará como pago inicial de alguno de los conceptos a que se refieren los incisos de la fracción II del artículo 42.
 
 Durante la vigencia del crédito concedido al trabajador, las aportaciones patronales a su favor se aplicarán a reducir el saldo insoluto a cargo del propio trabajador.
