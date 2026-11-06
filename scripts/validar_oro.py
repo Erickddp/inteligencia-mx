@@ -84,7 +84,7 @@ def archivos_texto():
     nombres = sal.stdout.splitlines() if sal.returncode == 0 else [str(p.relative_to(RAIZ)) for p in RAIZ.rglob("*") if p.is_file()]
     for n in nombres:
         p = RAIZ / n
-        if p.suffix in EXT_TEXTO and p.is_file() and n != "scripts/validar_oro.py" and not n.startswith("tests/"):
+        if p.suffix in EXT_TEXTO and p.is_file() and n not in ("scripts/validar_oro.py", "scripts/deuda_oro.json") and not n.startswith("tests/"):
             yield n, p.read_text(encoding="utf-8", errors="ignore")
 
 

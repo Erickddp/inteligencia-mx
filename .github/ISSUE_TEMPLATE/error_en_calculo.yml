@@ -1,0 +1,45 @@
+name: Error en un cálculo
+description: Un caso da una cifra distinta a la oficial
+title: "Error en cálculo: "
+labels: ["error-calculo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Usa **RFC genéricos** (XAXX010101000, AAA010101AAA) y cifras de ejemplo. Nunca datos de clientes.
+  - type: input
+    id: regla
+    attributes:
+      label: Regla o parámetro
+      placeholder: "R-20, ISR_TARIFA_MENSUAL, ..."
+  - type: textarea
+    id: caso
+    attributes:
+      label: Caso (fecha y entradas)
+      placeholder: "Fecha 2026-02-28, base 300,000, régimen 612..."
+    validations:
+      required: true
+  - type: input
+    id: esperado
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: input
+    id: obtenido
+    attributes:
+      label: Resultado obtenido
+    validations:
+      required: true
+  - type: input
+    id: fuente
+    attributes:
+      label: Fuente (de dónde sale el esperado)
+      placeholder: "Artículo, anexo, página, enlace oficial"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versión de la base
+      description: "Salida de `timbra-reglas valor UMA_DIARIA 2026-01-01` o el tag (v0.4.1)"

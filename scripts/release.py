@@ -4,12 +4,13 @@
   python scripts/release.py --version 0.5.0 --anterior DIR_ANTERIOR --out DIR_SALIDA [--raiz .] [--notas notas.md]
 
 --raiz es el repo (base/ con parametros.yaml, reglas.yaml y FASES.md; timbra_reglas/motor.py).
+--changelog agrega la entrada de la versión a CHANGELOG.md (se hace en el PR de la versión, antes del tag).
 --anterior es el paquete plano de la versión anterior (parametros.yaml, reglas.yaml...), sin sufijo.
 Hace: sube versiones -> corre timbra-reglas probar (si falla, no publica) -> compara contra la versión
 anterior -> copia con sufijo de versión -> SHA256 -> ORDEN_CAMBIO con las huellas DENTRO -> zip.
 El paquete que sale es PLANO (los 4 archivos juntos): es lo que Timbra vendoriza y verifica por huella.
 """
-import argparse, hashlib, os, re, shutil, subprocess, sys, zipfile
+import argparse, datetime as dt, hashlib, os, re, shutil, subprocess, sys, zipfile
 from pathlib import Path
 import yaml
 
@@ -65,6 +66,39 @@ def compara(ant: Path, nue: Path):
     return out
 
 
+def entrada_changelog(v: str, dif, resumen: str, fecha: str, notas: str = "") -> str:
+    """Entrada de CHANGELOG.md para la versión v, con lo que cambió contra la anterior."""
+    L = [f"## [v{v}] - {fecha}", "", f"Pruebas: {resumen}.", ""]
+    if notas:
+        L += [notas.strip(), ""]
+    if dif is None:
+        L += ["Sin versión anterior con la cual comparar.", ""]
+        return "\n".join(L)
+    secciones = [("Valores cambiados (firmas que se caen)", "valor_cambiado"), ("Estados cambiados", "estado_cambiado"),
+                 ("Vigencias cambiadas", "vigencia_cambiada"), ("Tramos nuevos", "tramos_nuevos"),
+                 ("Parámetros nuevos", "param_nuevos"), ("Parámetros quitados", "param_quitados"),
+                 ("Reglas nuevas", "reglas_nuevas"), ("Reglas quitadas", "reglas_quitadas"),
+                 ("Reglas que cambiaron de estado", "regla_estado")]
+    hubo = False
+    for titulo, k in secciones:
+        if dif[k]:
+            hubo = True
+            L += [f"### {titulo}", ""] + [f"- {i}" for i in dif[k]] + [""]
+    if not hubo:
+        L += ["Sin cambios en parámetros, vigencias, estados ni reglas.", ""]
+    return "\n".join(L)
+
+
+def escribe_changelog(raiz: Path, entrada: str, v: str):
+    """Inserta la entrada arriba de las anteriores; si ya existe la de esa versión, la reemplaza."""
+    p = raiz / "CHANGELOG.md"
+    t = p.read_text(encoding="utf-8") if p.exists() else "# Changelog\n\n"
+    partes = re.split(r"(?m)^(?=## \[v)", t)
+    cabecera, entradas = partes[0], [e for e in partes[1:] if not e.startswith(f"## [v{v}]")]
+    cuerpo = "\n".join([entrada.rstrip("\n") + "\n"] + entradas)
+    p.write_text(cabecera.rstrip("\n") + "\n\n" + cuerpo, encoding="utf-8", newline="\n")
+
+
 def main():
     a = argparse.ArgumentParser()
     a.add_argument("--raiz", default=".")
@@ -72,6 +106,7 @@ def main():
     a.add_argument("--anterior")
     a.add_argument("--out", required=True)
     a.add_argument("--notas")
+    a.add_argument("--changelog", action="store_true", help="agrega la entrada de esta versión a CHANGELOG.md")
     x = a.parse_args()
     raiz, out, v = Path(x.raiz).resolve(), Path(x.out), x.version
 
@@ -117,6 +152,9 @@ def main():
         L.append("")
     if x.notas:
         L += ["=== NOTAS DE LA INVESTIGACIÓN ===", Path(x.notas).read_text(encoding="utf-8"), ""]
+    if x.changelog:
+        notas = Path(x.notas).read_text(encoding="utf-8") if x.notas else ""
+        escribe_changelog(raiz, entrada_changelog(v, dif, resumen, dt.date.today().isoformat(), notas), v)
     orden = out / f"ORDEN_CAMBIO_v{v}.txt"
     orden.write_text("\n".join(L), encoding="utf-8")
     (out / f"SHA256_v{v}.txt").write_text(huellas + "\n", encoding="utf-8")

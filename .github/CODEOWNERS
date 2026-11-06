@@ -1,0 +1,6 @@
+# Aprobar el PR de la persona dueña = firma de la base.
+/base/          @Erickddp
+/timbra_reglas/ @Erickddp
+/scripts/       @Erickddp
+# Los flujos de CI y el propio CODEOWNERS también: quien los cambie podría saltarse las revisiones.
+/.github/       @Erickddp

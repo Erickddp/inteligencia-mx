@@ -1,0 +1,43 @@
+name: Cambio de ley
+description: Se publicó algo que puede cambiar un número de la base
+title: "Cambio de ley: "
+labels: ["cambio-de-ley"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Solo fuente primaria (DOF, PDF oficial del SAT, ley vigente, INEGI, Banxico, IMSS, CONASAMI).
+        **No pongas datos de clientes ni RFC reales.**
+  - type: input
+    id: publicacion
+    attributes:
+      label: Publicación
+      description: Qué se publicó (por ejemplo «Resolución Miscelánea, Anexo 8», «Ley de Ingresos 2027»)
+    validations:
+      required: true
+  - type: input
+    id: fecha
+    attributes:
+      label: Fecha de publicación y de entrada en vigor
+      placeholder: "Publicado AAAA-MM-DD; vigente desde AAAA-MM-DD"
+    validations:
+      required: true
+  - type: input
+    id: enlace
+    attributes:
+      label: Enlace oficial
+      placeholder: "https://www.dof.gob.mx/..."
+    validations:
+      required: true
+  - type: textarea
+    id: parametros
+    attributes:
+      label: Qué parámetros o reglas toca
+      description: IDs de parametros.yaml o R-xx, si los conoces. Si no sabes, escribe «no sé».
+    validations:
+      required: true
+  - type: textarea
+    id: notas
+    attributes:
+      label: Notas
+      description: Cualquier duda, excepciones o si es propuesta o ya está en el DOF.

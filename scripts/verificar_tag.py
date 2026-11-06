@@ -24,7 +24,11 @@ def verifica(tag: str, raiz: Path = RAIZ) -> list:
     if not re.fullmatch(r"v\d+\.\d+\.\d+", tag):
         return [f"El tag '{tag}' no tiene la forma vX.Y.Z"]
     quiere = tag[1:]
-    return [f"{arch}: dice {ver!r} y el tag pide {quiere!r}" for arch, ver in versiones(raiz).items() if ver != quiere]
+    errores = [f"{arch}: dice {ver!r} y el tag pide {quiere!r}" for arch, ver in versiones(raiz).items() if ver != quiere]
+    cl = raiz / "CHANGELOG.md"
+    if cl.exists() and f"## [{tag}]" not in cl.read_text(encoding="utf-8"):
+        errores.append(f"CHANGELOG.md no tiene la entrada «## [{tag}]» (python scripts/release.py --changelog ...)")
+    return errores
 
 
 def main():
