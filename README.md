@@ -45,6 +45,16 @@ timbra-reglas exportar 2026-01 2026-12                # JSON mes por mes
 
 Cada release publica un paquete plano (`parametros`, `reglas`, `motor`, `FASES`) con sus huellas SHA256, para que quien lo use verifique cada archivo.
 
+## Aportar con Claude Code
+
+Dentro de este repositorio, en Claude Code, basta decir qué falta:
+
+```
+/inteligencia-fiscal leyes estatales de Querétaro, fiscales
+```
+
+La skill [`/inteligencia-fiscal`](.claude/skills/inteligencia-fiscal/SKILL.md) busca la fuente oficial, registra la ley con el [estándar de aportación](docs/ESTANDAR_APORTACION.md) y deja un PR firmado para revisión. Para una regla o un valor concreto está [`/aportar-inteligencia-mx`](.claude/skills/aportar-inteligencia-mx/SKILL.md). Ninguna mezcla a `main`: quien mantiene el repositorio revisa y firma.
+
 ## Contribuir
 
 Lee [CONTRIBUTING.md](CONTRIBUTING.md). Resumen: abre un issue de «cambio de ley», propón el cambio en un PR con fuente primaria y casos, y firma tus commits (`git commit -s`).

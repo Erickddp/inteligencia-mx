@@ -26,10 +26,14 @@ jobs:
         run: pip install -e ".[test]"
       - name: timbra-reglas probar
         run: timbra-reglas probar
+      - name: Instalar pdftotext (la prueba de registrar una ley lo usa)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
       - name: pytest
         run: python -m pytest -q
       - name: Reglas de oro
         run: python scripts/validar_oro.py
+      - name: Estándar de aportación (fuente oficial, claves, índices)
+        run: python scripts/validar_aportacion.py
       - name: El paquete plano funciona SOLO, sin el repositorio
         run: |
           V=$(python -c "from timbra_reglas.motor import VERSION_MOTOR; print(VERSION_MOTOR)")

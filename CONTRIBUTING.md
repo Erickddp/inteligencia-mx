@@ -42,6 +42,10 @@ Cada tramo cita la fuente con la publicación y la fecha (`DOF dd-mmm-aaaa`) y, 
 
 El CI comenta en tu PR las diferencias contra `main`: valores cambiados (cada uno es una firma que se cae), vigencias, estados, tramos y reglas nuevas.
 
+### Con Claude Code
+
+Si usas Claude Code dentro del repositorio, `/inteligencia-fiscal leyes estatales de Querétaro, fiscales` hace este recorrido por ti para el texto de una ley, y `/aportar-inteligencia-mx` para un número o una regla. Las dos siguen el [estándar de aportación](docs/ESTANDAR_APORTACION.md): fuente de dominio oficial, claves `<ENTIDAD>-<SIGLAS>`, PR separados para el texto y para los números, y `python scripts/validar_aportacion.py` en verde.
+
 ## 4. Cómo correr las pruebas
 
 ```bash

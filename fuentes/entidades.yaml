@@ -1,0 +1,38 @@
+# Las 32 entidades federativas con su clave ISO 3166-2:MX (la misma que usa ISN_TASA_TABLA: CMX, MEX, PUE, OAX, JAL, BCN, CHH, NLE).
+# Una ley estatal o municipal se registra con la clave  <ISO>-<SIGLAS>  (por ejemplo QUE-XXXX para una ley de Querétaro).
+# `alias` sirve para que la skill /inteligencia-fiscal entienda cómo la escribe la gente.
+version: 1
+fuente: "ISO 3166-2:MX"
+entidades:
+  - {iso: AGU, nombre: Aguascalientes, alias: []}
+  - {iso: BCN, nombre: Baja California, alias: []}
+  - {iso: BCS, nombre: Baja California Sur, alias: []}
+  - {iso: CAM, nombre: Campeche, alias: []}
+  - {iso: CHP, nombre: Chiapas, alias: []}
+  - {iso: CHH, nombre: Chihuahua, alias: []}
+  - {iso: CMX, nombre: Ciudad de México, alias: [CDMX, Distrito Federal, DF]}
+  - {iso: COA, nombre: Coahuila, alias: [Coahuila de Zaragoza]}
+  - {iso: COL, nombre: Colima, alias: []}
+  - {iso: DUR, nombre: Durango, alias: []}
+  - {iso: GUA, nombre: Guanajuato, alias: []}
+  - {iso: GRO, nombre: Guerrero, alias: []}
+  - {iso: HID, nombre: Hidalgo, alias: []}
+  - {iso: JAL, nombre: Jalisco, alias: []}
+  - {iso: MEX, nombre: Estado de México, alias: [Edomex, México (estado)]}
+  - {iso: MIC, nombre: Michoacán, alias: [Michoacan, Michoacán de Ocampo]}
+  - {iso: MOR, nombre: Morelos, alias: []}
+  - {iso: NAY, nombre: Nayarit, alias: []}
+  - {iso: NLE, nombre: Nuevo León, alias: [Nuevo Leon, NL]}
+  - {iso: OAX, nombre: Oaxaca, alias: []}
+  - {iso: PUE, nombre: Puebla, alias: []}
+  - {iso: QUE, nombre: Querétaro, alias: [Queretaro, Qro]}
+  - {iso: ROO, nombre: Quintana Roo, alias: [QRoo]}
+  - {iso: SLP, nombre: San Luis Potosí, alias: [San Luis Potosi]}
+  - {iso: SIN, nombre: Sinaloa, alias: []}
+  - {iso: SON, nombre: Sonora, alias: []}
+  - {iso: TAB, nombre: Tabasco, alias: []}
+  - {iso: TAM, nombre: Tamaulipas, alias: []}
+  - {iso: TLA, nombre: Tlaxcala, alias: []}
+  - {iso: VER, nombre: Veracruz, alias: [Veracruz de Ignacio de la Llave]}
+  - {iso: YUC, nombre: Yucatán, alias: [Yucatan]}
+  - {iso: ZAC, nombre: Zacatecas, alias: []}

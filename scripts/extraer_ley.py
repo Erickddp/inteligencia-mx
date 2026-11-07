@@ -5,6 +5,14 @@
   python scripts/extraer_ley.py LISR --pdf ruta.pdf      # usa un PDF ya bajado
   python scripts/extraer_ley.py --todas                  # las leyes del catálogo
 
+Una ley FUERA del catálogo federal (estatal o municipal) se registra con su clave <ENTIDAD>-<SIGLAS>, su URL oficial y sus datos:
+
+  python scripts/extraer_ley.py QUE-XXXX --url https://sitio.oficial.gob.mx/ley.pdf --nombre "Nombre oficial de la ley" \
+      --ambito estatal --entidad QUE --materia fiscal --emisor "Congreso del Estado" --diario "Periódico Oficial"
+
+La URL debe ser de un dominio oficial (fuentes/dominios_oficiales.yaml) y la entidad una clave de fuentes/entidades.yaml.
+Estándar completo: docs/ESTANDAR_APORTACION.md.
+
 Sale en fuentes/leyes/<CLAVE>/:
   manifiesto.json    url, última reforma (la que dice el PDF), fecha de descarga, SHA256 del PDF y del texto, `advertencias` y `cotejado_dof`
                      (quién cotejó contra el DOF y cuándo; lo llena una persona y regenerar no lo borra)
@@ -20,6 +28,8 @@ import argparse, datetime as dt, hashlib, json, re, subprocess, sys, tempfile, u
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import validar_aportacion as va  # noqa: E402  (dominios oficiales y entidades)
 BASE_URL = "https://www.diputados.gob.mx/LeyesBiblio/{ruta}"
 # clave del repo -> (archivo en diputados, nombre oficial)
 LEYES = {
@@ -177,11 +187,15 @@ def ultima_reforma(texto: str):
     return (max(fechas), "fecha más reciente citada en el texto (el PDF no trae encabezado de última reforma)") if fechas else (None, "sin dato")
 
 
-def procesa(clave: str, pdf: Path, url: str, out_raiz: Path) -> dict:
-    ruta, nombre = LEYES[clave]
+def procesa(clave: str, pdf: Path, url: str, out_raiz: Path, nombre: str | None = None, datos: dict | None = None) -> dict:
+    # `datos` (ámbito, entidad, materia, emisor, diario) no se llama meta: dentro del ciclo de artículos `meta` es el encabezado de cada uno
+    datos = datos or {}
+    nombre = nombre or LEYES[clave][1]
+    emisor, diario = datos.get("emisor", "Cámara de Diputados"), datos.get("diario", "DOF")
+    art = "el " if diario == "DOF" else ""
     with tempfile.TemporaryDirectory() as td:
         txt = Path(td) / "ley.txt"
-        subprocess.run(["pdftotext", "-layout", str(pdf), str(txt)], check=True)
+        subprocess.run(["pdftotext", "-enc", "UTF-8", "-layout", str(pdf), str(txt)], check=True)
         texto = txt.read_text(encoding="utf-8", errors="replace")
     arts, orden, trans = extrae(texto)
     if len(orden) < 10:
@@ -211,8 +225,8 @@ def procesa(clave: str, pdf: Path, url: str, out_raiz: Path) -> dict:
         cab = f"# {clave} · Artículo {aid.upper() if '-' in aid else aid}\n\n"
         c = cotejo["articulos"].get(aid) or cotejo["ley_completa"]
         meta = [f"Ley: {nombre} ({clave})",
-                f"Texto según: Cámara de Diputados, última reforma DOF {reforma or 'sin dato'} · {url}",
-                "Cotejado con el DOF: " + (f"sí, {c['fecha']} ({c['decreto']})" if c else "NO (no se firma ningún parámetro que cite este artículo)")]
+                f"Texto según: {emisor}, última reforma {diario} {reforma or 'sin dato'} · {url}",
+                f"Cotejado con {art}{diario}: " + (f"sí, {c['fecha']} ({c['decreto']})" if c else "NO (no se firma ningún parámetro que cite este artículo)")]
         if a["ubicacion"]:
             meta.insert(1, f"Ubicación: {a['ubicacion']}")
         cab += "\n".join(meta) + "\n\n"
@@ -223,10 +237,11 @@ def procesa(clave: str, pdf: Path, url: str, out_raiz: Path) -> dict:
                        "derogado": bool(re.search(r"\bSe deroga\b", cuerpo[:400]))}
     (dest / "transitorios.md").write_text(f"# {clave} · Transitorios\n\n" + reflow(trans).rstrip() + "\n", encoding="utf-8", newline="\n")
     (dest / "indice.json").write_text(json.dumps(indice, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
-    man = {"clave": clave, "nombre": nombre, "url": url, "fuente": "Cámara de Diputados (texto vigente); cotejar contra el DOF",
+    man = {"clave": clave, "nombre": nombre, "url": url, "fuente": f"{emisor} (texto vigente); cotejar contra {art}{diario}",
            "ultima_reforma_segun_pdf": reforma, "ultima_reforma_origen": origen_reforma, "descargado": dt.date.today().isoformat(),
            "sha256_pdf": sha(pdf.read_bytes()), "sha256_texto": sha("".join(indice[a]["sha256"] for a in orden).encode()),
            "cotejado_dof": cotejo, "advertencias": advertencias, "articulos": len(orden), "derogados": sum(1 for a in indice.values() if a["derogado"])}
+    man.update({k: datos[k] for k in ("ambito", "entidad", "materia", "emisor", "diario") if k in datos})
     (dest / "manifiesto.json").write_text(json.dumps(man, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
     return man
 
@@ -239,19 +254,44 @@ def baja(url: str, destino: Path):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("clave", nargs="?", choices=sorted(LEYES))
+    ap.add_argument("clave", nargs="?")
     ap.add_argument("--pdf", type=Path)
     ap.add_argument("--todas", action="store_true")
     ap.add_argument("--out", type=Path, default=RAIZ / "fuentes" / "leyes")
+    ap.add_argument("--url", help="URL oficial de la ley (obligatoria si no está en el catálogo federal)")
+    ap.add_argument("--nombre", help="nombre oficial de la ley (ley fuera del catálogo federal)")
+    ap.add_argument("--ambito", choices=sorted(va.AMBITOS))
+    ap.add_argument("--entidad", help="clave ISO de la entidad (fuentes/entidades.yaml), por ejemplo QUE")
+    ap.add_argument("--materia", choices=sorted(va.MATERIAS))
+    ap.add_argument("--emisor", help="quién publica el texto (congreso o periódico oficial del estado)")
+    ap.add_argument("--diario", default="Periódico Oficial", help="diario donde se publican sus reformas (defecto en leyes fuera del catálogo)")
     a = ap.parse_args()
-    claves = sorted(LEYES) if a.todas else [a.clave] if a.clave else ap.error("indica una clave o --todas")
+    if a.todas:
+        claves = sorted(LEYES)
+    elif a.clave:
+        claves = [a.clave]
+    else:
+        ap.error("indica una clave o --todas")
     for c in claves:
-        url = BASE_URL.format(ruta=LEYES[c][0])
+        if c in LEYES:
+            url, nombre, meta = BASE_URL.format(ruta=LEYES[c][0]), None, None
+        else:  # ley estatal o municipal: se registra con su URL oficial y sus datos
+            if not (a.url and a.nombre and a.ambito in ("estatal", "municipal") and a.entidad and a.materia and a.emisor):
+                ap.error(f"{c} no está en el catálogo federal: da --url, --nombre, --ambito (estatal o municipal), --entidad, --materia y --emisor")
+            entidades = va.carga_entidades()
+            if a.entidad not in entidades:
+                ap.error(f"entidad {a.entidad!r} no válida; usa una clave de fuentes/entidades.yaml")
+            if not re.fullmatch(rf"{a.entidad}-[A-Z0-9]+(-[A-Z0-9]+)*", c):
+                ap.error(f"la clave de una ley de {a.entidad} debe ser {a.entidad}-<SIGLAS> (por ejemplo {a.entidad}-XXXX)")
+            if not va.dominio_oficial(a.url):
+                ap.error(f"{a.url} no es de un dominio oficial (fuentes/dominios_oficiales.yaml): solo fuente primaria")
+            url, nombre = a.url, a.nombre
+            meta = {"ambito": a.ambito, "entidad": a.entidad, "materia": a.materia, "emisor": a.emisor, "diario": a.diario}
         with tempfile.TemporaryDirectory() as td:
             pdf = a.pdf if (a.pdf and not a.todas) else Path(td) / f"{c}.pdf"
             if not (a.pdf and not a.todas):
                 baja(url, pdf)
-            m = procesa(c, pdf, url, a.out)
+            m = procesa(c, pdf, url, a.out, nombre, meta)
         print(f"{c}: {m['articulos']} artículos ({m['derogados']} derogados), última reforma según el PDF: {m['ultima_reforma_segun_pdf']}")
 
 

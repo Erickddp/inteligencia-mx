@@ -1,0 +1,11 @@
+# Dominios que cuentan como FUENTE PRIMARIA para registrar una ley o un documento (regla de oro 1).
+# Un blog, una nota de prensa, un despacho, un foro o un video sirven para ENCONTRAR la fuente, nunca para citarla.
+#
+# `sufijos`: el host de la URL debe terminar en uno de ellos (o ser igual a él).
+#   .gob.mx  -> cualquier sitio de gobierno: DOF, SAT, IMSS, Infonavit, CONASAMI, congresos y periódicos oficiales
+#               estatales, gobiernos estatales y municipales.
+# `organismos`: organismos oficiales que no usan .gob.mx.
+version: 1
+sufijos: [".gob.mx"]
+organismos: [inegi.org.mx, banxico.org.mx]
+nota: "Que el dominio sea oficial es condición necesaria, no suficiente: la persona que revisa el PR verifica que el documento sea el vigente."
