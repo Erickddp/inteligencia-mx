@@ -5,7 +5,7 @@
 # fase: en qué fase se termina de investigar
 # casos: los corre "python motor.py probar". confirmado:false = no cuenta como falla (espera firma o dato oficial)
 
-version_base: "0.4.1"
+version_base: "0.4.2"
 
 reglas:
 

@@ -16,7 +16,7 @@
 #    pero marcado ARRASTRADO (estimación en pantalla), para que enero no se quede en blanco.
 #    hasta con fecha = vence de verdad (estímulos con plazo, LIF anual): después da SinValor.
 
-version_base: "0.4.1"
+version_base: "0.4.2"
 fecha_corte: "2026-11-05"
 
 parametros:
