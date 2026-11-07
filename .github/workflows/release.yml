@@ -35,9 +35,13 @@ jobs:
           PREV=$(git tag --list 'v[0-9]*.[0-9]*.[0-9]*' --sort=-v:refname | grep -vx "$TAG" | head -1 || true)
           mkdir -p "$RUNNER_TEMP/anterior"
           if [ -n "$PREV" ]; then
-            gh release download "$PREV" --dir "$RUNNER_TEMP/anterior" --pattern 'parametros_*.yaml' --pattern 'reglas_*.yaml'
-            mv "$RUNNER_TEMP"/anterior/parametros_*.yaml "$RUNNER_TEMP/anterior/parametros.yaml"
-            mv "$RUNNER_TEMP"/anterior/reglas_*.yaml "$RUNNER_TEMP/anterior/reglas.yaml"
+            gh release download "$PREV" --dir "$RUNNER_TEMP/anterior" --pattern 'parametros*.yaml' --pattern 'reglas*.yaml'
+            # el release anterior trae los archivos con nombre plano (v0.4.1), con sufijo de versión, o con los dos: se acepta cualquiera
+            for f in parametros reglas; do
+              src=$(ls "$RUNNER_TEMP"/anterior/${f}.yaml "$RUNNER_TEMP"/anterior/${f}_v*.yaml 2>/dev/null | head -1)
+              [ -n "$src" ] || { echo "El release $PREV no trae $f.yaml"; exit 1; }
+              [ "$src" = "$RUNNER_TEMP/anterior/$f.yaml" ] || mv "$src" "$RUNNER_TEMP/anterior/$f.yaml"
+            done
             echo "ANTERIOR=$RUNNER_TEMP/anterior" >> "$GITHUB_ENV"
             echo "Comparando contra $PREV"
           else

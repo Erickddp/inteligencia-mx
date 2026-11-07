@@ -24,7 +24,9 @@ from pathlib import Path
 import yaml
 
 RAIZ = Path(__file__).resolve().parent.parent
-RFC_GENERICOS = {"XAXX010101000", "XEXX010101000", "AAA010101AAA", "AAAA010101AAA"}
+RFC_GENERICOS = {"XAXX010101000", "XEXX010101000", "AAA010101AAA", "AAAA010101AAA",
+                 # RFC genéricos para residentes en el extranjero, definidos por la propia RMF 2026 (reglas 2.4.3, 3.17.8 y 12.2.9)
+                 "EXT990101NI1", "EXTF900101NI1", "EXT990101NI4", "EXT990101NI9"}
 RE_RFC = re.compile(r"\b[A-ZÑ&]{3,4}\d{6}[A-Z0-9]{3}\b")
 RE_ANIO_MES = re.compile(r"(?:^|_)(?:(?:19|20)\d\d|ENE|FEB|MAR|ABR|MAY|JUN|JUL|AGO|SEP|OCT|NOV|DIC|"
                          r"ENERO|FEBRERO|MARZO|ABRIL|MAYO|JUNIO|JULIO|AGOSTO|SEPTIEMBRE|OCTUBRE|NOVIEMBRE|DICIEMBRE)(?:_|$)")
