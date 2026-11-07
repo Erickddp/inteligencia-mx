@@ -461,12 +461,12 @@ reglas:
     nombre: Provisional 606 con ciega y predial
     citas: [{ley: LISR, articulo: "115"}, {ley: LISR, articulo: "116"}]
     que_dice: "En arrendamiento puedes deducir lo que paga la ley o la deducción opcional (ciega) del predial y de los ingresos, y sobre el resto se paga con la tarifa."
-    correcto_si: "El pago provisional mensual usa la tarifa mensual, no la acumulada, y el predial se resta solo si se pagó."
+    correcto_si: "El pago provisional mensual usa la tarifa mensual y el trimestral la tarifa trimestral oficial; la deducción opcional sustituye a las demás deducciones y el predial pagado se resta además; la retención de la persona moral se acredita."
     estado: NUEVA
     fase: 3
     parametros: [ARREND_DEDUCCION_CIEGA_PCT, ISR_TARIFA_MENSUAL]
     calculadora: isr_606
-    hallazgo: "Mensual: tarifa MENSUAL (no acumulada). Trimestral: tarifa oficial ISR_TARIFA_TRIMESTRAL_ARRENDAMIENTO (Anexo 8 2026)."
+    hallazgo: "Mensual: tarifa MENSUAL (no acumulada). Trimestral: tarifa oficial ISR_TARIFA_TRIMESTRAL_ARRENDAMIENTO (Anexo 8 2026). Según LISR 116 se puede pagar por trimestre solo quien únicamente tenga ingresos por arrendamiento y una renta mensual de hasta diez salarios mínimos elevados al mes (el texto sigue diciendo salarios mínimos; se entiende UMA, ARREND_TRIMESTRAL_VECES_UMA): la calculadora no lo valida, lo valida la app. LISR 115 dice que el 35 % es una opción EN SUBSTITUCIÓN de las demás deducciones, y que quien la ejerce puede deducir además el predial: no dice que pueda elegirse la mayor de las dos cada mes, así que usar lo mayor entre ciega y gastos reales es un criterio que decide el contador, no la ley. La retención de 10 % que hace una persona moral se acredita contra el pago provisional (LISR 116)."
     casos:
       - {nombre: "Trimestre: rentas 60,000 ciega", fecha: "2026-03-31", entradas: {ingresos: "60000.00", trimestral: true}, esperado: "3227.99"}
       - {nombre: "Renta 20,000 ciega", fecha: "2026-03-31", entradas: {ingresos: "20000.00"}, esperado: "1076.00"}
@@ -474,6 +474,11 @@ reglas:
 
   - id: R-113
     nombre: Provisional RESICO PM
+    fuente: "LISR art. 206, 207, 208 y 211 (texto de la Cámara; sin cotejar con el DOF)"
+    citas: [{ley: LISR, articulo: "206"}, {ley: LISR, articulo: "207"}, {ley: LISR, articulo: "208"}, {ley: LISR, articulo: "211"}]
+    que_dice: "En el RESICO de personas morales el pago provisional sale de lo cobrado menos lo pagado, acumulado desde enero, con la tasa de las personas morales; después se acreditan los provisionales anteriores y las retenciones."
+    correcto_si: "Cobrado y pagado son acumulados desde el inicio del ejercicio, se resta la PTU pagada y las pérdidas anteriores, la tasa es la del art. 9 y se acreditan los pagos provisionales del mismo ejercicio y las retenciones del periodo."
+    hallazgo: "Fundamento verificado en LISR 211 (pago provisional: ingresos efectivamente percibidos menos deducciones efectivamente erogadas y PTU pagada, desde el inicio del ejercicio, por la tasa del art. 9). El tope de ingresos del ejercicio anterior (LISR 206) es RESICO_PM_TOPE_ANUAL. La calculadora recibe cobrado y pagado ya acumulados."
     estado: NUEVA
     fase: 3
     parametros: [ISR_PM_TASA, RESICO_PM_TOPE_ANUAL]
@@ -736,7 +741,7 @@ reglas:
     citas: [{ley: CFF, articulo: "28"}, {ley: RCFF, articulo: "33"}, {ley: LIVA, articulo: "5"}, {nif: "C-4"}, {nif: "A-2"}]
     que_dice: "Al recibir una factura, el gasto (o el inventario) y el IVA acreditable pendiente se cargan y le debes al proveedor lo que realmente pagarás; lo que retienes queda por pagar al SAT."
     correcto_si: "La póliza cuadra; un gasto no deducible va completo, con su IVA, a no deducibles; las retenciones propias se abonan a ISR e IVA retenido por pagar."
-    hallazgo: "El IVA acreditable pendiente pasa a pagado cuando se paga la factura (R-153)."
+    hallazgo: "El IVA acreditable pendiente pasa a pagado cuando se paga la factura (R-153), salvo el IVA que se retuvo, que se acredita después del entero (R-156 y R-157)."
     casos:
       - {nombre: "Gasto gravado 1,000 más IVA 160", fecha: "2026-06-30", entradas: {base: "1000", iva: "160"}, esperado: "D gasto 1000.00; D iva_acreditable_pendiente 160.00; H proveedores 1160.00"}
       - {nombre: "Servicio con retenciones propias (10 % ISR y 2/3 del IVA)", fecha: "2026-06-30", entradas: {base: "10000", iva: "1600", isr_retenido: "1000", iva_retenido: "1066.67"}, esperado: "D gasto 10000.00; D iva_acreditable_pendiente 1600.00; H isr_retenido_por_pagar 1000.00; H iva_retenido_por_pagar 1066.67; H proveedores 9533.33"}
@@ -750,12 +755,14 @@ reglas:
     fuente: "LIVA art. 5 fr. III; CFF art. 28; NIF C-1 y B-15 (referencia)"
     citas: [{ley: LIVA, articulo: "5"}, {ley: CFF, articulo: "28"}, {nif: "C-1"}, {nif: "B-15"}]
     que_dice: "Al pagar, el proveedor queda saldado y la parte proporcional del IVA pasa de pendiente a pagado, que es el que se acredita."
-    correcto_si: "El IVA se acredita solo en la proporción efectivamente pagada y el pago en efectivo sale de Caja."
-    hallazgo: "Simplificación: con retención de IVA, el IVA retenido solo se acredita al enterarlo (LIVA 5 fr. IV); esta póliza no lo separa todavía."
+    correcto_si: "El IVA se acredita solo en la proporción efectivamente pagada, sin el IVA que yo retuve, y el pago en efectivo sale de Caja."
+    hallazgo: "El IVA que se retuvo al proveedor no pasa a pagado con el pago: se acredita en la declaración mensual siguiente a la del entero de la retención (LIVA 5 fr. IV). Con `iva_retenido` esta póliza lo deja pendiente; R-156 registra el entero y R-157 su acreditamiento."
     casos:
       - {nombre: "Pago de la mitad (580 de 1,160)", fecha: "2026-06-30", entradas: {pagado: "580", iva: "160", total_cfdi: "1160"}, esperado: "D iva_acreditable_pagado 80.00; D proveedores 580.00; H bancos 580.00; H iva_acreditable_pendiente 80.00"}
       - {nombre: "Pago total en efectivo, límite: todo el IVA pasa a pagado", fecha: "2026-06-30", entradas: {pagado: "1160", iva: "160", total_cfdi: "1160", medio: caja}, esperado: "D iva_acreditable_pagado 160.00; D proveedores 1160.00; H caja 1160.00; H iva_acreditable_pendiente 160.00"}
       - {nombre: "Pago de una compra sin IVA", fecha: "2026-06-30", entradas: {pagado: "500", total_cfdi: "500"}, esperado: "D proveedores 500.00; H bancos 500.00"}
+      - {nombre: "Pago total con IVA retenido: solo se acredita el IVA que no se retuvo", fecha: "2026-06-30", entradas: {pagado: "9533.33", iva: "1600", total_cfdi: "9533.33", iva_retenido: "1066.67"}, esperado: "D iva_acreditable_pagado 533.33; D proveedores 9533.33; H bancos 9533.33; H iva_acreditable_pendiente 533.33"}
+      - {nombre: "Pago de la mitad con IVA retenido", fecha: "2026-06-30", entradas: {pagado: "4766.67", iva: "1600", total_cfdi: "9533.33", iva_retenido: "1066.67"}, esperado: "D iva_acreditable_pagado 266.67; D proveedores 4766.67; H bancos 4766.67; H iva_acreditable_pendiente 266.67"}
   - id: R-154
     nombre: "Póliza tipo: nota de crédito emitida (lo inverso del CFDI, con devoluciones y descuentos)"
     estado: CRITERIO
@@ -841,3 +848,32 @@ reglas:
       - {nombre: "El índice del mes anterior al pago no se ha publicado: se usa el último (sep-2026)", fecha: "2026-11-20", entradas: {monto: "10000", desde: "2026-01-17", hasta: "2026-11-20"}, esperado: {inpc_antiguo: "2025-12 143.042", inpc_reciente: "2026-09 146.075", factor: "1.0212", actualizacion: "212.00", monto_actualizado: "10212.00"}}
       - {nombre: "Antes de oct-2021 no hay INPC cargado: avisa y no calcula", fecha: "2026-11-05", entradas: {monto: "10000", desde: "2021-09-17", hasta: "2026-02-10"}, espera_error: SinValor}
       - {nombre: "Actualización y recargos juntos: vence 19-ene, paga 20-abr-2026 = 4 meses de recargos", fecha: "2026-04-20", calculadora: actualizacion_y_recargos, entradas: {monto: "10000", vencimiento: "2026-01-19", pago: "2026-04-20"}, esperado: {factor: "1.0175", monto_actualizado: "10175.00", meses: "4", tasa_total: "8.28", recargos: "842.49", total: "11017.49"}}
+
+  - id: R-156
+    nombre: "Póliza tipo: entero al SAT del ISR y del IVA retenidos (banco o caja)"
+    estado: CRITERIO
+    fase: 4
+    calculadora: poliza_entero_retenciones
+    fuente: "LIVA art. 1-A y 5 fr. IV; CFF art. 28; NIF C-19 (referencia)"
+    citas: [{ley: LIVA, articulo: "1-a"}, {ley: LIVA, articulo: "5"}, {ley: CFF, articulo: "28"}, {nif: "C-19"}]
+    que_dice: "Cuando enteras al SAT lo que retuviste, el pasivo de ISR retenido y de IVA retenido por pagar se salda contra el banco o la caja."
+    correcto_si: "La póliza salda exactamente lo retenido que se está enterando y el efectivo sale del medio con que se pagó."
+    casos:
+      - {nombre: "Entero de ISR 1,000 e IVA 1,066.67 retenidos", fecha: "2026-06-30", entradas: {isr_retenido: "1000", iva_retenido: "1066.67"}, esperado: "D isr_retenido_por_pagar 1000.00; D iva_retenido_por_pagar 1066.67; H bancos 2066.67"}
+      - {nombre: "Solo IVA retenido, pagado en efectivo", fecha: "2026-06-30", entradas: {iva_retenido: "1066.67", medio: caja}, esperado: "D iva_retenido_por_pagar 1066.67; H caja 1066.67"}
+      - {nombre: "Solo ISR retenido", fecha: "2026-06-30", entradas: {isr_retenido: "1000"}, esperado: "D isr_retenido_por_pagar 1000.00; H bancos 1000.00"}
+  - id: R-157
+    nombre: "Póliza tipo: acreditamiento del IVA retenido y enterado (declaración siguiente)"
+    estado: CRITERIO
+    fase: 4
+    calculadora: poliza_acreditamiento_iva_retenido
+    fuente: "LIVA art. 5 fr. IV; CFF art. 28"
+    citas: [{ley: LIVA, articulo: "5"}, {ley: CFF, articulo: "28"}]
+    que_dice: "El IVA que retuviste y ya enteraste lo puedes acreditar, pero hasta la declaración mensual siguiente a la del entero, no en la misma."
+    correcto_si: "El mes de acreditamiento es posterior al mes del entero; si no, no se acredita todavía y la app avisa en vez de contabilizarlo."
+    hallazgo: "Con R-153 (`iva_retenido`) y R-156, el IVA retenido queda pendiente al pagar, se entera, y pasa a pagado en esta póliza un mes después."
+    casos:
+      - {nombre: "Entero en mayo, acreditamiento en junio", fecha: "2026-06-30", entradas: {iva_retenido: "1066.67", mes_entero: "2026-05", mes_acreditamiento: "2026-06"}, esperado: "D iva_acreditable_pagado 1066.67; H iva_acreditable_pendiente 1066.67"}
+      - {nombre: "Se acredita meses después del entero", fecha: "2026-07-31", entradas: {iva_retenido: "1066.67", mes_entero: "2026-05", mes_acreditamiento: "2026-07"}, esperado: "D iva_acreditable_pagado 1066.67; H iva_acreditable_pendiente 1066.67"}
+      - {nombre: "Cruza de año: entero en diciembre, acreditamiento en enero", fecha: "2026-01-31", entradas: {iva_retenido: "500", mes_entero: "2025-12", mes_acreditamiento: "2026-01"}, esperado: "D iva_acreditable_pagado 500.00; H iva_acreditable_pendiente 500.00"}
+      - {nombre: "Límite: en el mismo mes del entero todavía no se acredita", fecha: "2026-05-31", entradas: {iva_retenido: "1066.67", mes_entero: "2026-05", mes_acreditamiento: "2026-05"}, espera_error: SinValor}

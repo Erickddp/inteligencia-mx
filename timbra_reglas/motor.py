@@ -667,11 +667,26 @@ def calc_poliza_recibido(b, f, base, iva="0", isr_retenido="0", iva_retenido="0"
                              ("H", "iva_retenido_por_pagar", iva_retenido)])
 
 
-def calc_poliza_pago(b, f, pagado, iva="0", total_cfdi="0", medio="banco"):
+def calc_poliza_pago(b, f, pagado, iva="0", total_cfdi="0", medio="banco", iva_retenido="0"):
     """Pago a proveedor: salda la cuenta y el IVA pasa de pendiente a pagado en la proporción pagada (LIVA 5 fr. III)."""
-    iva_p = red(D(iva) * D(pagado) / D(total_cfdi)) if D(total_cfdi) else D(0)
+    # el IVA que yo retuve no se acredita con el pago: se acredita en la declaración siguiente al entero (LIVA 5 fr. IV)
+    iva_p = red((D(iva) - D(iva_retenido)) * D(pagado) / D(total_cfdi)) if D(total_cfdi) else D(0)
     return _poliza([("D", "proveedores", pagado), ("D", "iva_acreditable_pagado", iva_p), ("H", _medio(medio), pagado),
                     ("H", "iva_acreditable_pendiente", iva_p)])
+
+
+def calc_poliza_entero_retenciones(b, f, isr_retenido="0", iva_retenido="0", medio="banco"):
+    """Entero al SAT de lo que retuve (ISR e IVA): el pasivo se salda contra banco o caja."""
+    return _poliza([("D", "isr_retenido_por_pagar", isr_retenido), ("D", "iva_retenido_por_pagar", iva_retenido),
+                    ("H", _medio(medio), D(isr_retenido) + D(iva_retenido))])
+
+
+def calc_poliza_acreditamiento_iva_retenido(b, f, iva_retenido, mes_entero, mes_acreditamiento):
+    """LIVA 5 fr. IV: el IVA retenido y enterado se acredita en la declaración mensual SIGUIENTE a la del entero; antes
+    de ese mes no se acredita y la calculadora avisa en lugar de calcular."""
+    if mes_acreditamiento <= mes_entero:
+        raise SinValor(f"El IVA retenido enterado en {mes_entero} se acredita en la declaración siguiente (LIVA 5 fr. IV), no en {mes_acreditamiento}")
+    return _poliza([("D", "iva_acreditable_pagado", iva_retenido), ("H", "iva_acreditable_pendiente", iva_retenido)])
 
 
 def calc_poliza_nomina(b, f, percepciones, isr_retenido="0", imss_obrero="0", imss_patron="0", infonavit_patron="0"):

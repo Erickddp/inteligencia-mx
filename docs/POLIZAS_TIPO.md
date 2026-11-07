@@ -1,6 +1,6 @@
 # Pólizas tipo y NIF
 
-Las reglas **R-150 a R-155** dicen, para cada evento contable, qué se carga y qué se abona. Es criterio contable, no cifra de ley: no tienen firma hasta que la persona que mantiene el repositorio las firme.
+Las reglas **R-150 a R-157** dicen, para cada evento contable, qué se carga y qué se abona. Es criterio contable, no cifra de ley: no tienen firma hasta que la persona que mantiene el repositorio las firme.
 
 ## Cómo se usan
 
@@ -17,11 +17,13 @@ Las reglas **R-150 a R-155** dicen, para cada evento contable, qué se carga y q
 | R-152 | CFDI recibido | `poliza_recibido` | `gasto` o `inventario`, `gasto_no_deducible`, `iva_acreditable_pendiente`, `proveedores`, `isr_retenido_por_pagar`, `iva_retenido_por_pagar` |
 | R-153 | Pago a proveedor | `poliza_pago` | `proveedores`, `bancos` o `caja`, `iva_acreditable_pendiente`, `iva_acreditable_pagado` |
 | R-154 | Nota de crédito emitida | `poliza_nota_credito_emitida` | `devoluciones_y_descuentos`, `iva_trasladado_no_cobrado`, `clientes`, retenciones de R-150 |
+| R-156 | Entero de retenciones al SAT | `poliza_entero_retenciones` | `isr_retenido_por_pagar`, `iva_retenido_por_pagar`, `bancos` o `caja` |
+| R-157 | Acreditamiento del IVA retenido enterado (mes siguiente) | `poliza_acreditamiento_iva_retenido` | `iva_acreditable_pendiente`, `iva_acreditable_pagado` |
 | R-155 | Nómina pagada | `poliza_nomina` | `sueldos_y_salarios`, `cuotas_patronales`, `aportaciones_infonavit`, `bancos`, `isr_retenido_por_pagar`, `imss_por_pagar`, `infonavit_por_pagar` |
 
 ## Todavía no cubierto
 
-Depreciación en pólizas, determinación y compensación mensual del IVA, provisión del ISR, saldos iniciales, cierre de resultados, subsidio para el empleo acreditable en la nómina y el IVA retenido que solo se acredita al enterarlo (LIVA 5 fr. IV).
+Depreciación en pólizas, determinación y compensación mensual del IVA, provisión del ISR, saldos iniciales, cierre de resultados y el subsidio para el empleo acreditable en la nómina. El IVA retenido ya se separa: al pagar queda pendiente (R-153), se entera (R-156) y se acredita en la declaración siguiente (R-157, LIVA 5 fr. IV).
 
 ## Las NIF
 
