@@ -26,12 +26,12 @@ def sube_version(raiz: Path, v: str):
         t, n = re.subn(r'^version_base: ".*"$', f'version_base: "{v}"', p.read_text(encoding="utf-8"), count=1, flags=re.M)
         if n != 1:
             sys.exit(f"{f}: no encontré version_base")
-        p.write_text(t, encoding="utf-8")
+        p.write_text(t, encoding="utf-8", newline="\n")
     p = raiz / "timbra_reglas/motor.py"
     t, n = re.subn(r'^VERSION_MOTOR = ".*"$', f'VERSION_MOTOR = "{v}"', p.read_text(encoding="utf-8"), count=1, flags=re.M)
     if n != 1:
         sys.exit("motor.py: no encontré VERSION_MOTOR")
-    p.write_text(t, encoding="utf-8")
+    p.write_text(t, encoding="utf-8", newline="\n")
 
 
 def carga(d: Path):
@@ -134,7 +134,7 @@ def main():
     for nombre, ruta in ARCH.items():
         shutil.copy(raiz / ruta, out / nombre)
         planos.append(out / nombre)
-    (out / "SHA256SUMS").write_text("\n".join(f"{hashlib.sha256(c.read_bytes()).hexdigest()}  {c.name}" for c in planos) + "\n", encoding="utf-8")
+    (out / "SHA256SUMS").write_text("\n".join(f"{hashlib.sha256(c.read_bytes()).hexdigest()}  {c.name}" for c in planos) + "\n", encoding="utf-8", newline="\n")
 
     L = [f"ORDEN DE CAMBIO · Base fiscal v{v}", "Autoriza: Rick (C.P.).", "",
          "=== HUELLAS (verifica con sha256sum ANTES de cargar; si una no coincide, no cargues nada) ===", huellas, "",
@@ -164,8 +164,8 @@ def main():
         notas = Path(x.notas).read_text(encoding="utf-8") if x.notas else ""
         escribe_changelog(raiz, entrada_changelog(v, dif, resumen, dt.date.today().isoformat(), notas), v)
     orden = out / f"ORDEN_CAMBIO_v{v}.txt"
-    orden.write_text("\n".join(L), encoding="utf-8")
-    (out / f"SHA256_v{v}.txt").write_text(huellas + "\n", encoding="utf-8")
+    orden.write_text("\n".join(L), encoding="utf-8", newline="\n")
+    (out / f"SHA256_v{v}.txt").write_text(huellas + "\n", encoding="utf-8", newline="\n")
     # Contrato para las apps (Timbra): qué IDs cambian, antes y después, y qué firmas se caen.
     if str(Path(__file__).resolve().parent) not in sys.path:
         sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -173,7 +173,7 @@ def main():
     commit = os.environ.get("GITHUB_SHA") or integracion.commit_actual()
     huellas_planas = {c.name: hashlib.sha256(c.read_bytes()).hexdigest() for c in planos}
     datos = integracion.integracion(Path(x.anterior) if x.anterior else None, raiz / "base", v, commit, huellas_planas, resumen)
-    (out / f"integracion_v{v}.json").write_text(json.dumps(datos, ensure_ascii=False, indent=1, default=str) + "\n", encoding="utf-8")
+    (out / f"integracion_v{v}.json").write_text(json.dumps(datos, ensure_ascii=False, indent=1, default=str) + "\n", encoding="utf-8", newline="\n")
     z = out / f"timbra-reglas-v{v}.zip"
     with zipfile.ZipFile(z, "w", zipfile.ZIP_DEFLATED) as zf:
         for c in copias + [orden, out / f"SHA256_v{v}.txt"]:

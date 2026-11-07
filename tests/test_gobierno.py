@@ -84,9 +84,10 @@ def test_tag_exige_entrada_de_changelog(tmp_path):
         shutil.copy(BASE / f, tmp_path / "base" / f)
     shutil.copy(RAIZ / "timbra_reglas" / "motor.py", tmp_path / "timbra_reglas" / "motor.py")
     (tmp_path / "CHANGELOG.md").write_text("# Changelog\n", encoding="utf-8")
-    assert any("CHANGELOG" in e for e in vt.verifica("v0.4.1", tmp_path))
-    (tmp_path / "CHANGELOG.md").write_text("# Changelog\n\n## [v0.4.1] - x\n", encoding="utf-8")
-    assert vt.verifica("v0.4.1", tmp_path) == []
+    tag_actual = f"v{vt.versiones(tmp_path)['motor.py']}"
+    assert any("CHANGELOG" in e for e in vt.verifica(tag_actual, tmp_path))
+    (tmp_path / "CHANGELOG.md").write_text(f"# Changelog\n\n## [{tag_actual}] - x\n", encoding="utf-8")
+    assert vt.verifica(tag_actual, tmp_path) == []
 
 
 def test_skill_aportar_regla_es_valida_y_solo_cita_lo_que_existe():
