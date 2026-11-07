@@ -7,7 +7,8 @@
 --changelog agrega la entrada de la versión a CHANGELOG.md (se hace en el PR de la versión, antes del tag).
 --anterior es el paquete plano de la versión anterior (parametros.yaml, reglas.yaml...), sin sufijo.
 Hace: sube versiones -> corre timbra-reglas probar (si falla, no publica) -> compara contra la versión
-anterior -> copia con sufijo de versión -> SHA256 -> ORDEN_CAMBIO con las huellas DENTRO -> zip.
+anterior -> copia con sufijo de versión (y copia con el nombre plano + SHA256SUMS, que es lo que baja Timbra)
+-> SHA256 -> ORDEN_CAMBIO con las huellas DENTRO -> zip.
 El paquete que sale es PLANO (los 4 archivos juntos): es lo que Timbra vendoriza y verifica por huella.
 """
 import argparse, datetime as dt, hashlib, os, re, shutil, subprocess, sys, zipfile
@@ -127,6 +128,12 @@ def main():
         shutil.copy(raiz / ruta, dest)
         copias.append(dest)
     huellas = "\n".join(f"{hashlib.sha256(c.read_bytes()).hexdigest()}  {c.name}" for c in copias)
+    # Timbra baja los 4 archivos del release POR SU NOMBRE (sin sufijo) y compara huellas: van también así, byte por byte iguales.
+    planos = []
+    for nombre, ruta in ARCH.items():
+        shutil.copy(raiz / ruta, out / nombre)
+        planos.append(out / nombre)
+    (out / "SHA256SUMS").write_text("\n".join(f"{hashlib.sha256(c.read_bytes()).hexdigest()}  {c.name}" for c in planos) + "\n", encoding="utf-8")
 
     L = [f"ORDEN DE CAMBIO · Base fiscal v{v}", "Autoriza: Rick (C.P.).", "",
          "=== HUELLAS (verifica con sha256sum ANTES de cargar; si una no coincide, no cargues nada) ===", huellas, "",

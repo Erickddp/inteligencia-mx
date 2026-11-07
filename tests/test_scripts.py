@@ -126,3 +126,29 @@ def test_tag_coincide_con_la_base():
 @pytest.mark.parametrize("malo", ["0.4.1", "v0.4", "v0.4.1-rc1", "vX.Y.Z", "v9.9.9"])
 def test_tag_que_no_coincide_falla(malo):
     assert tag.verifica(malo)
+
+
+def test_release_publica_los_cuatro_archivos_con_nombre_plano_ademas_del_sufijo(tmp_path):
+    """Timbra baja los 4 archivos del release por su nombre (sin sufijo) y compara huellas; el workflow usa los de sufijo para las diferencias."""
+    import hashlib
+    import shutil
+    import subprocess
+    import sys
+    raiz = tmp_path / "raiz"
+    shutil.copytree(BASE, raiz / "base")
+    (raiz / "timbra_reglas").mkdir()
+    for f in (RAIZ / "timbra_reglas").glob("*.py"):
+        shutil.copy(f, raiz / "timbra_reglas" / f.name)
+    shutil.copytree(RAIZ / "scripts", raiz / "scripts")
+    out = tmp_path / "out"
+    r = subprocess.run([sys.executable, str(raiz / "scripts" / "release.py"), "--raiz", str(raiz), "--version", "9.9.9", "--out", str(out)],
+                       capture_output=True, text=True, env={**__import__("os").environ, "PYTHONPATH": str(raiz)})
+    assert r.returncode == 0, r.stdout + r.stderr
+    for nombre in ("parametros.yaml", "reglas.yaml", "motor.py", "FASES.md"):
+        stem, suf = nombre.rsplit(".", 1)
+        plano, con_sufijo = out / nombre, out / f"{stem}_v9.9.9.{suf}"
+        assert plano.read_bytes() == con_sufijo.read_bytes()
+    sumas = dict(l.split("  ")[::-1] for l in (out / "SHA256SUMS").read_text(encoding="utf-8").splitlines())
+    assert set(sumas) == {"parametros.yaml", "reglas.yaml", "motor.py", "FASES.md"}
+    for nombre, h in sumas.items():
+        assert hashlib.sha256((out / nombre).read_bytes()).hexdigest() == h
