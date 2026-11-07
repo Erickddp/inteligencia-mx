@@ -41,9 +41,11 @@ Esto **no** cotea artículo por artículo: dice que no se encontró un decreto p
 - Decretos anteriores, por referencia: 1-may-2024 (11.82 %); 31-dic-2024 (13.8 %, 14.39 % en enero de 2025, límite $10,171.00).
 - Sigue pendiente (no es de este decreto): la base no tiene tramos de 2025 para el subsidio.
 
-### 3.2 Salario mínimo 2025 y 2026: la fecha de DOF no se localizó  *(EN REVISIÓN: pudo estar en la otra edición)*
-- La base cita «CONASAMI, DOF dic-2024» (278.80) y 2026 (315.04). La nota de CONASAMI del 9-feb-2026 confirma que existe una resolución del 3-dic-2025, pero **no encontré su publicación** en el DOF de diciembre de 2024, ni de diciembre de 2025 a enero de 2026, ni por título ni por organismo.
-- Las cifras (278.80 y 315.04, +13 %) son coherentes con lo conocido, así que **no se tocaron**; falta la nota del DOF que las respalde. Debe buscarse a mano.
+### 3.2 Salario mínimo 2025 y 2026: la base estaba bien
+- **Retractación.** La versión anterior decía que no se localizaba la publicación. Estaba en la edición matutina que el primer lector no leía.
+- Resolución del H. Consejo de Representantes de CONASAMI, **DOF 19-dic-2024** (nota 5745678): salarios de 2025, **278.80** (zona general) y **419.88** (frontera norte). Verificado contra el texto (archivo Word).
+- Resolución del 3-dic-2025, **DOF 9-dic-2025** (nota 5775534): salarios de 2026, **315.04** (zona general, +13.0 %) y **440.87** (frontera norte, +5.0 %). Verificado contra el texto.
+- Se precisaron las cuatro citas de la base; los valores no cambian.
 
 ### 3.3 Lo que sí cuadra
 - UMA 2026: DOF 9-ene-2026 («Unidad de medida y actualización»; la nota existe, no leí su texto). UMA 2025: el DOF del 10-ene-2025 tiene notas relacionadas; no leí su texto.

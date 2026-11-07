@@ -74,12 +74,12 @@ parametros:
       - valor: "278.80"
         desde: "2025-01-01"
         hasta: "2025-12-31"
-        fuente: "CONASAMI, DOF dic-2024"
+        fuente: "CONASAMI, resolución del H. Consejo de Representantes, DOF 19-dic-2024 (nota 5745678). Verificado el 7-nov-2026 contra el texto: 278.80 (zona general) y 419.88 (frontera norte)"
       - valor: "315.04"
         desde: "2026-01-01"
         hasta: null
         confirmado_hasta: "2026-12-31"
-        fuente: "CONASAMI, DOF 09-dic-2025"
+        fuente: "CONASAMI, resolución del H. Consejo de Representantes del 3-dic-2025, DOF 09-dic-2025 (nota 5775534). Verificado el 7-nov-2026 contra el texto: 315.04 (zona general) y 440.87 (frontera norte)"
     revisar_antes: "2026-12-15"
     firma: {validado: false, por: null, fecha: null}
 
@@ -91,12 +91,12 @@ parametros:
       - valor: "419.88"
         desde: "2025-01-01"
         hasta: "2025-12-31"
-        fuente: "CONASAMI, DOF dic-2024"
+        fuente: "CONASAMI, resolución del H. Consejo de Representantes, DOF 19-dic-2024 (nota 5745678). Verificado el 7-nov-2026 contra el texto: 278.80 (zona general) y 419.88 (frontera norte)"
       - valor: "440.87"
         desde: "2026-01-01"
         hasta: null
         confirmado_hasta: "2026-12-31"
-        fuente: "CONASAMI, DOF 09-dic-2025"
+        fuente: "CONASAMI, resolución del H. Consejo de Representantes del 3-dic-2025, DOF 09-dic-2025 (nota 5775534). Verificado el 7-nov-2026 contra el texto: 315.04 (zona general) y 440.87 (frontera norte)"
     revisar_antes: "2026-12-15"
     firma: {validado: false, por: null, fecha: null}
 
