@@ -96,6 +96,8 @@ def clasifica(n: dict) -> dict | None:
         if rx.search(t):
             return {"tipo": "dato_periodico", "serie": serie}
     temas = [nombre for nombre, rx, _ in TEMAS if rx.search(t)]
+    if not temas and re.search(r"SALARIOS MINIMOS", n["organismo"], re.I):
+        temas = ["salario_minimo"]  # las resoluciones de CONASAMI traen títulos genéricos («Resolución del H. Consejo de Representantes…»)
     por_organismo = bool(ORGANISMOS.search(n["organismo"])) and not temas
     if RUIDO.search(t):
         return None

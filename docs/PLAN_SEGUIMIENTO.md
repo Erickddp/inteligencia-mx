@@ -90,3 +90,10 @@ Hallazgo por verificar: la sesión de factureedp reporta, con datos de Banxico d
 - **Biblioteca de leyes: 9 textos.** LISR, LIVA, LSS, Ley del Infonavit, LFPIORPI, LFT, CFF, RLISR y RLIVA. Cada artículo trae ley, ubicación, fuente, última reforma y «Cotejado con el DOF: NO» hasta que una persona lo cotee; los parámetros que citan artículos sin cotejar no se firman. Las 98 citas de la base a estas leyes resuelven.
 - Falta: RMF con Anexos (necesita `omawww.sat.gob.mx` en el entorno donde se trabaje), LIEPS, LIF.
 - Cuidado con los reglamentos: la Cámara tiene el RLISR en la versión de 2016 y el RLIVA en la de 2014; cotejar contra el DOF antes de firmar.
+
+## Actualización 7-nov-2026
+
+- Barrido del DOF de ~1,800 días: resultados y alertas en [HALLAZGOS_DOF.md](HALLAZGOS_DOF.md). **Alerta mayor: los valores del subsidio para el empleo 2026 citan un decreto del 31-dic-2025 que no aparece en el DOF**; el vigente (31-dic-2024) da 13.8 % y $10,171.00. Los tramos quedaron `por_confirmar`; falta tu decisión.
+- `series/inpc.yaml` (oct-2021 a sep-2026): 49 meses del DOF coinciden con Banxico sin diferencias; 11 meses sin nota del DOF localizada, marcados sin cotejar.
+- R-17 con 5 casos (sale de la deuda de reglas de oro).
+- Falta: Ley del IEPS, Reglamento de la LFPIORPI, RMF 2026 con anexos y modificaciones; cotejo humano artículo por artículo.

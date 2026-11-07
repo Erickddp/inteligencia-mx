@@ -73,7 +73,9 @@ def test_citas_de_la_base_a_leyes_incluidas_resuelven():
 
 def test_evidencia_conserva_sus_huellas():
     """La evidencia (datos crudos de Banxico) se guarda byte por byte: si Git le cambia los saltos de línea, la huella no cuadra."""
-    d = LEYES.parent / "evidencia" / "tc_cff20"
-    for linea in (d / "SHA256SUMS").read_text(encoding="utf-8").splitlines():
-        h, nombre = linea.split(None, 1)
-        assert hashlib.sha256((d / nombre.strip().lstrip("*")).read_bytes()).hexdigest() == h, nombre
+    carpetas = [d for d in (LEYES.parent / "evidencia").iterdir() if (d / "SHA256SUMS").exists()]
+    assert len(carpetas) >= 2
+    for d in carpetas:
+        for linea in (d / "SHA256SUMS").read_text(encoding="utf-8").splitlines():
+            h, nombre = linea.split(None, 1)
+            assert hashlib.sha256((d / nombre.strip().lstrip("*")).read_bytes()).hexdigest() == h, f"{d.name}/{nombre}"

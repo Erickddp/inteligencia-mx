@@ -83,3 +83,8 @@ def test_si_el_reintento_tambien_falla_la_alarma_es_real(monkeypatch):
     monkeypatch.setattr(vigia, "descarga", lambda dia, intentos=3: malo)
     with pytest.raises(SystemExit):
         vigia.lee_dia(dt.date(2026, 11, 5), None, espera=0)
+
+
+def test_resolucion_de_conasami_con_titulo_generico_se_marca_por_su_organismo():
+    c = vigia.clasifica(nota("Resolución del H. Consejo de Representantes del 3 de diciembre de 2025.", "COMISION NACIONAL DE LOS SALARIOS MINIMOS"))
+    assert c and c["nivel"] == "alta" and "salario_minimo" in c["temas"]

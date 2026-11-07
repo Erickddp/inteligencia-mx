@@ -1,0 +1,77 @@
+# TIMBRA · SERIE INPC (índice nacional de precios al consumidor, general)
+# Fuente primaria: INEGI, publicado en el Diario Oficial de la Federación (CFF arts. 20 y 20-bis).
+# Cada mes lleva la URL de la nota del DOF de donde se leyó. Cifras como TEXTO (Decimal en el motor, nunca float).
+#  - fuente: dof            valor leído de una nota del DOF y cruzado contra Banxico SIE SP1: coinciden los 49 meses.
+#  - fuente: banxico_sp1    el DOF de ese mes no se localizó todavía; el valor es de Banxico y NO está cotejado con el DOF
+#                           (cotejado_dof: false). No se firma ni se usa para recargos hasta cotejarlo.
+# via: mes_publicado = nota del mes siguiente que da a conocer el índice; anexo_conceptos = nota de conceptos de consumo;
+#      mes_anterior_citado = el DOF cita el índice del mes anterior en la nota del mes siguiente.
+# Evidencia de Banxico (respuesta cruda y huellas): fuentes/evidencia/inpc_banxico/
+
+serie: INPC
+nombre: Índice Nacional de Precios al Consumidor, general
+base: "segunda quincena de julio de 2018 = 100"
+unidad: puntos
+corte: "2026-11-07"
+cobertura: {desde: "2021-10", hasta: "2026-09"}
+valores:
+  "2021-10": {valor: "115.561", fuente: dof, via: anexo_conceptos, publicado: "2021-11-26", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5636525&fecha=26/11/2021"}
+  "2021-11": {valor: "116.884", fuente: dof, via: mes_publicado, publicado: "2021-12-10", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5637916&fecha=10/12/2021"}
+  "2021-12": {valor: "117.308", fuente: dof, via: mes_publicado, publicado: "2022-01-10", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5640426&fecha=10/01/2022"}
+  "2022-01": {valor: "118.002", fuente: dof, via: mes_publicado, publicado: "2022-02-10", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5642467&fecha=10/02/2022"}
+  "2022-02": {valor: "118.981", fuente: dof, via: mes_publicado, publicado: "2022-03-10", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5645211&fecha=10/03/2022"}
+  "2022-03": {valor: "120.159", fuente: dof, via: mes_publicado, publicado: "2022-04-08", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5648478&fecha=08/04/2022"}
+  "2022-04": {valor: "120.809", fuente: dof, via: mes_publicado, publicado: "2022-05-10", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5651490&fecha=10/05/2022"}
+  "2022-05": {valor: "121.022", fuente: dof, via: mes_anterior_citado, publicado: "2022-07-08", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5657514&fecha=08/07/2022"}
+  "2022-06": {valor: "122.044", fuente: dof, via: mes_anterior_citado, publicado: "2022-08-10", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5660871&fecha=10/08/2022"}
+  "2022-07": {valor: "122.948", fuente: banxico_sp1, cotejado_dof: false}
+  "2022-08": {valor: "123.803", fuente: dof, via: anexo_conceptos, publicado: "2022-09-29", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5665835&fecha=29/09/2022"}
+  "2022-09": {valor: "124.571", fuente: dof, via: mes_anterior_citado, publicado: "2022-11-10", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5670986&fecha=10/11/2022"}
+  "2022-10": {valor: "125.276", fuente: dof, via: anexo_conceptos, publicado: "2022-11-23", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5672200&fecha=23/11/2022"}
+  "2022-11": {valor: "125.997", fuente: dof, via: mes_anterior_citado, publicado: "2023-01-10", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5676669&fecha=10/01/2023"}
+  "2022-12": {valor: "126.478", fuente: dof, via: mes_anterior_citado, publicado: "2023-02-10", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5679238&fecha=10/02/2023"}
+  "2023-01": {valor: "127.336", fuente: dof, via: anexo_conceptos, publicado: "2023-02-21", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5680246&fecha=21/02/2023"}
+  "2023-02": {valor: "128.046", fuente: dof, via: anexo_conceptos, publicado: "2023-03-23", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5683534&fecha=23/03/2023"}
+  "2023-03": {valor: "128.389", fuente: dof, via: anexo_conceptos, publicado: "2023-04-24", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5686467&fecha=24/04/2023"}
+  "2023-04": {valor: "128.363", fuente: banxico_sp1, cotejado_dof: false}
+  "2023-05": {valor: "128.084", fuente: dof, via: anexo_conceptos, publicado: "2023-06-22", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5693047&fecha=22/06/2023"}
+  "2023-06": {valor: "128.214", fuente: dof, via: anexo_conceptos, publicado: "2023-07-24", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5696460&fecha=24/07/2023"}
+  "2023-07": {valor: "128.832", fuente: banxico_sp1, cotejado_dof: false}
+  "2023-08": {valor: "129.545", fuente: dof, via: anexo_conceptos, publicado: "2023-09-20", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5702433&fecha=20/09/2023"}
+  "2023-09": {valor: "130.120", fuente: dof, via: mes_anterior_citado, publicado: "2023-11-10", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5708314&fecha=10/11/2023"}
+  "2023-10": {valor: "130.609", fuente: dof, via: anexo_conceptos, publicado: "2023-11-23", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5709289&fecha=23/11/2023"}
+  "2023-11": {valor: "131.445", fuente: dof, via: mes_anterior_citado, publicado: "2024-01-10", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5714084&fecha=10/01/2024"}
+  "2023-12": {valor: "132.373", fuente: banxico_sp1, cotejado_dof: false}
+  "2024-01": {valor: "133.555", fuente: banxico_sp1, cotejado_dof: false}
+  "2024-02": {valor: "133.681", fuente: dof, via: mes_anterior_citado, publicado: "2024-04-10", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5722818&fecha=10/04/2024"}
+  "2024-03": {valor: "134.065", fuente: dof, via: mes_anterior_citado, publicado: "2024-05-10", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5726267&fecha=10/05/2024"}
+  "2024-04": {valor: "134.336", fuente: dof, via: anexo_conceptos, publicado: "2024-05-20", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5727372&fecha=20/05/2024"}
+  "2024-05": {valor: "134.087", fuente: dof, via: anexo_conceptos, publicado: "2024-06-24", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5731248&fecha=24/06/2024"}
+  "2024-06": {valor: "134.594", fuente: dof, via: mes_anterior_citado, publicado: "2024-08-09", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5735649&fecha=09/08/2024"}
+  "2024-07": {valor: "136.003", fuente: dof, via: mes_anterior_citado, publicado: "2024-09-10", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5738656&fecha=10/09/2024"}
+  "2024-08": {valor: "136.013", fuente: dof, via: mes_anterior_citado, publicado: "2024-10-10", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5740784&fecha=10/10/2024"}
+  "2024-09": {valor: "136.080", fuente: dof, via: anexo_conceptos, publicado: "2024-10-21", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5741424&fecha=21/10/2024"}
+  "2024-10": {valor: "136.828", fuente: banxico_sp1, cotejado_dof: false}
+  "2024-11": {valor: "137.424", fuente: banxico_sp1, cotejado_dof: false}
+  "2024-12": {valor: "137.949", fuente: dof, via: anexo_conceptos, publicado: "2025-01-22", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5747554&fecha=22/01/2025"}
+  "2025-01": {valor: "138.343", fuente: banxico_sp1, cotejado_dof: false}
+  "2025-02": {valor: "138.726", fuente: dof, via: anexo_conceptos, publicado: "2025-03-24", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5752690&fecha=24/03/2025"}
+  "2025-03": {valor: "139.161", fuente: dof, via: mes_anterior_citado, publicado: "2025-05-09", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5756916&fecha=09/05/2025"}
+  "2025-04": {valor: "139.620", fuente: dof, via: anexo_conceptos, publicado: "2025-05-19", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5757566&fecha=19/05/2025"}
+  "2025-05": {valor: "140.012", fuente: dof, via: anexo_conceptos, publicado: "2025-06-23", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5760827&fecha=23/06/2025"}
+  "2025-06": {valor: "140.405", fuente: banxico_sp1, cotejado_dof: false}
+  "2025-07": {valor: "140.780", fuente: dof, via: anexo_conceptos, publicado: "2025-08-22", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5766413&fecha=22/08/2025"}
+  "2025-08": {valor: "140.867", fuente: dof, via: anexo_conceptos, publicado: "2025-09-22", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5768281&fecha=22/09/2025"}
+  "2025-09": {valor: "141.197", fuente: banxico_sp1, cotejado_dof: false}
+  "2025-10": {valor: "141.708", fuente: dof, via: anexo_conceptos, publicado: "2025-11-24", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5773765&fecha=24/11/2025"}
+  "2025-11": {valor: "142.645", fuente: dof, via: mes_anterior_citado, publicado: "2026-01-09", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5778071&fecha=09/01/2026"}
+  "2025-12": {valor: "143.042", fuente: dof, via: anexo_conceptos, publicado: "2026-01-20", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5778510&fecha=20/01/2026"}
+  "2026-01": {valor: "143.588", fuente: dof, via: anexo_conceptos, publicado: "2026-02-23", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5780710&fecha=23/02/2026"}
+  "2026-02": {valor: "144.307", fuente: dof, via: anexo_conceptos, publicado: "2026-03-23", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5782957&fecha=23/03/2026"}
+  "2026-03": {valor: "145.544", fuente: dof, via: anexo_conceptos, publicado: "2026-04-20", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5785302&fecha=20/04/2026"}
+  "2026-04": {valor: "145.831", fuente: dof, via: anexo_conceptos, publicado: "2026-05-26", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5788539&fecha=26/05/2026"}
+  "2026-05": {valor: "145.527", fuente: banxico_sp1, cotejado_dof: false}
+  "2026-06": {valor: "145.131", fuente: dof, via: anexo_conceptos, publicado: "2026-07-27", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5794783&fecha=27/07/2026"}
+  "2026-07": {valor: "145.169", fuente: dof, via: anexo_conceptos, publicado: "2026-08-24", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5796960&fecha=24/08/2026"}
+  "2026-08": {valor: "145.462", fuente: dof, via: anexo_conceptos, publicado: "2026-09-29", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5799799&fecha=29/09/2026"}
+  "2026-09": {valor: "146.075", fuente: dof, via: anexo_conceptos, publicado: "2026-10-19", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5801491&fecha=19/10/2026"}
