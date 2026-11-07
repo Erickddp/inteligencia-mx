@@ -57,3 +57,18 @@ Esto **no** cotea artículo por artículo: dice que no se encontró un decreto p
 - `series/inpc.yaml`: oct-2021 a sep-2026 (60 meses). **49 meses salen de notas del DOF y coinciden con Banxico (SP1) sin una sola diferencia**; el DOF no se contradice entre notas.
 - **11 meses no se localizaron en el DOF** (2022-07, 2023-04, 2023-07, 2023-12, 2024-01, 2024-10, 2024-11, 2025-01, 2025-06, 2025-09, 2026-05). Entran con el valor de Banxico marcados `cotejado_dof: false`: no se usan para recargos ni se firman hasta cotejarlos.
 - Antes de oct-2021 no se barrió el DOF.
+
+## 5. RMF 2026: citas de la base verificadas contra el texto
+
+Con la RMF 2026 en `fuentes/rmf/` (1,208 reglas) se comprobaron las seis reglas que cita la base:
+
+| Regla | La base dice | El texto del DOF |
+|---|---|---|
+| 2.7.1.21 | CFDI global dentro de 24 horas | Confirmado: «a más tardar dentro de las 24 horas siguientes al cierre de las operaciones» |
+| 2.7.1.32 | REP a más tardar el día 5 del mes siguiente | Confirmado: «quinto día natural del mes inmediato siguiente» |
+| 2.8.1.6 | Contabilidad electrónica: día 3 (PM) y día 5 (PF) del segundo mes | Confirmado |
+| 2.8.1.7 | Balanza ajustada: 20 de abril (PM), 22 de mayo (PF) | **Cita equivocada.** La 2.8.1.7 trata de información de usuarios (telefonía, energía, casas de bolsa). Las fechas están en la **2.8.1.6, fracción II**. Se corrigió la cita; los valores no cambian |
+| 2.8.1.17 | Relevo para PF con ingresos hasta 4 millones | Confirmado: «$4'000,000.00»; releva de contabilidad electrónica y DIOT |
+| 3.13.x | RESICO PM relevado de contabilidad electrónica | Sigue «por confirmar» en la base |
+
+Faltan las tres modificaciones a la RMF 2026 (9-jul, 1-oct y 2-oct de 2026): una regla citada arriba pudo cambiar después.

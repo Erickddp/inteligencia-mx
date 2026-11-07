@@ -1,0 +1,9 @@
+# RMF2026 · Regla 10.22 · Pago en efectivo contenido en la propuesta económica de las bases de licitación emitidas por la SENER
+
+Resolución: Resolución Miscelánea Fiscal para 2026 (RMF2026)
+Ubicación: Título 10 · Ley de Ingresos sobre Hidrocarburos
+Fuente: DOF, https://dof.gob.mx/nota_detalle.php?codigo=5777217&fecha=28/12/2025
+Fundamento: LSH 54, 55, LISH 4, LISR 27, 28, CFF 58-A
+Cotejado con el DOF: NO (el texto sale del archivo del DOF, sin revisión de una persona)
+
+10.22. Para los efectos de los artículos 4, segundo párrafo de la LISH, 58-A, fracción II del CFF, así como 27, fracción XIII y 28, fracción XII de la Ley del ISR, el contribuyente que haya sido seleccionado de acuerdo con las bases del procedimiento de licitación emitidas por la SENER y suscriba un Contrato para la Exploración y Extracción de hidrocarburos que derive de la migración de una asignación en los términos del procedimiento establecido en los artículos 54 y 55 de la LSH, podrá considerar que el monto en efectivo que se pague a una empresa pública del Estado por concepto de inversiones, corresponde al precio o valor de mercado y no constituye un crédito comercial.

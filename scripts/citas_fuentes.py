@@ -20,6 +20,17 @@ CITA = re.compile(r"\b(" + "|".join(sorted(map(re.escape, ALIAS), key=len, rever
 NUM = re.compile(r"(\d+)\s*[º°]?o?\.?\s*(?:-\s*([A-Z])\b|\s+(Bis|Ter|Qu[áa]ter))?", re.I)
 
 
+RMF_CITA = re.compile(r"\bRMF(?:\s+(\d{4}))?\s+reglas?\s+(\d{1,2}(?:\.\d{1,3}){1,4})(?![\d.]*x)")
+
+
+def reglas_rmf() -> dict:
+    """Reglas de la RMF en la biblioteca, por año: {'2026': {'2.7.1.21', ...}}."""
+    out = {}
+    for ix in (RAIZ / "fuentes" / "rmf").glob("*/*/indice.json"):
+        out.setdefault(ix.parent.parent.name, set()).update(json.loads(ix.read_text(encoding="utf-8")))
+    return out
+
+
 def ids(texto: str) -> list[str]:
     out = []
     for m in NUM.finditer(re.split(r"\(|\b(?:fr|frs|fracc|fracción|fracciones|párr|párrafo|inciso|reforma|reformada|DOF|decreto|transitorios?|con)\b\.?", texto)[0]):
@@ -53,6 +64,15 @@ def main():
                     sin_cotejar[ley].add(i)
             else:
                 mal[ley].add(i)
+    rmf = reglas_rmf()
+    for m in RMF_CITA.finditer(texto):
+        año = m.group(1) or "2026"
+        if año not in rmf:
+            fuera["RMF " + año] += 1
+        elif m.group(2) in rmf[año]:
+            ok["RMF"] += 1
+        else:
+            mal["RMF"].add(m.group(2))
     print("Citas que resuelven a un artículo de la biblioteca:", dict(ok) or "ninguna")
     print("Citas de leyes que aún NO están en la biblioteca (trabajo pendiente):", dict(fuera) or "ninguna")
     print("Citas sin artículo en la biblioteca:", {k: sorted(v) for k, v in mal.items()} if a.detalle else {k: len(v) for k, v in mal.items()} or "ninguna")

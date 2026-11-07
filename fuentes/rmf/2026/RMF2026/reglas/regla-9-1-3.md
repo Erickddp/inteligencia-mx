@@ -1,0 +1,27 @@
+# RMF2026 · Regla 9.1.3 · Comprobantes e información requeridos por adquisición o importación de diésel o de biodiésel y sus mezclas para agricultores o silvicultores
+
+Resolución: Resolución Miscelánea Fiscal para 2026 (RMF2026)
+Ubicación: Título 9 · Ley de Ingresos de la Federación / Capítulo 9.1 · Disposiciones generales
+Fuente: DOF, https://dof.gob.mx/nota_detalle.php?codigo=5777217&fecha=28/12/2025
+Fundamento: LIF 20, CFF 29, 29-A
+Cotejado con el DOF: NO (el texto sale del archivo del DOF, sin revisión de una persona)
+
+9.1.3. Para los efectos del artículo 20, apartado A, fracciones I y III de la LIF, las personas físicas o morales que enajenen o importen diésel o biodiésel y sus mezclas deberán conservar y, en su caso, proporcionar a las autoridades fiscales, la siguiente información:
+
+I. La cantidad correspondiente al pago que realice el agricultor o silvicultor en efectivo y, en su caso, mediante el sistema de tarjeta inteligente.
+
+II. En el caso de que el agricultor o silvicultor utilice como medio de pago el sistema de tarjeta inteligente, el comprobante fiscal que se expida deberá contener la siguiente leyenda: "El monto total consignado en el presente comprobante no deberá considerarse para el cálculo del estímulo fiscal a que se refieren el artículo 20, apartado A, fracciones I y III de la LIF, de conformidad con lo dispuesto en la regla 9.1.3., de la Resolución Miscelánea Fiscal".
+
+Cuando el agricultor o silvicultor no solicite la emisión de un comprobante que reúna los requisitos fiscales, el documento en el que conste la operación realizada, también deberá contener la leyenda a que hace referencia esta fracción.
+
+Las personas físicas o morales que enajenen los combustibles a que hace referencia la presente regla, deberán conservar y, en su caso, proporcionar a las autoridades fiscales, la información del total de las operaciones realizadas conforme a esta regla, señalando lo siguiente:
+
+I. Tratándose de personas físicas, el nombre y CURP del agricultor y en el caso de personas morales, la denominación o razón social y clave en el RFC.
+
+II. Número del comprobante de que se trate. En el caso del comprobante fiscal correspondiente a la enajenación de biodiésel o sus mezclas, se deberá señalar la proporción del biodiésel que se contenga por lo que respecta a las mezclas, al igual que el número del pedimento de importación con el que se llevó a cabo la importación del citado combustible.
+
+III. Monto total que ampara el comprobante, diferenciando los conceptos a que se refiere la fracción I de la presente regla.
+
+IV. Periodo al que corresponde la información.
+
+V. Número de la tarjeta inteligente.

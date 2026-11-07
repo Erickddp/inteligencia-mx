@@ -1,0 +1,15 @@
+# RMF2026 · Regla 11.9.9 · Documentación para comprobar la obtención de ingresos exclusivamente en la región fronteriza norte o sur
+
+Resolución: Resolución Miscelánea Fiscal para 2026 (RMF2026)
+Ubicación: Título 11 · Decretos, Circulares, Convenios y otras disposiciones / Capítulo 11.9 · Del Decreto de estímulos fiscales región fronteriza norte, publicado en el DOF el 31 de diciembre de 2018 y del Decreto de estímulos fiscales región fronteriza sur, publicado en el DOF el 30 de diciembre de 2020; así como sus posteriores modificaciones
+Fuente: DOF, https://dof.gob.mx/nota_detalle.php?codigo=5777217&fecha=28/12/2025
+Fundamento: LISR 1, CFF 28, Decretos región fronteriza norte DOF 31/12/2018 Segundo, Tercero, Cuarto, Séptimo, DOF 30/12/2020 Tercero, Séptimo, región fronteriza sur DOF 30/12/2020 Segundo, RMF 11.9.5.
+Cotejado con el DOF: NO (el texto sale del archivo del DOF, sin revisión de una persona)
+
+11.9.9. Para los efectos de los artículos Segundo, Tercero, segundo párrafo, Cuarto y Séptimo, segundo párrafo, fracción I, segundo y tercer párrafos del Decreto región fronteriza norte y Segundo del Decreto región fronteriza sur, los contribuyentes podrán comprobar que sus ingresos totales del ejercicio fiscal inmediato anterior y, en su caso, del ejercicio, obtenidos en la región fronteriza norte o sur, según corresponda, representan al menos el 90% del monto total de sus ingresos obtenidos, en México o en el extranjero, por cualquier concepto, de conformidad con lo establecido en el artículo 1 de la Ley del ISR, a través de la declaración anual del ejercicio inmediato anterior o del pago provisional, según corresponda, así como el papel de trabajo mediante el cual se integren los ingresos obtenidos en el ejercicio inmediato anterior en la región fronteriza norte o sur, conforme a la regla 11.9.5., diferenciando los montos de los ingresos obtenidos en la región fronteriza norte o sur y los obtenidos fuera de la región que corresponda; en su caso, la integración de los montos de los ingresos deberá indicarse por sucursal, agencia o establecimiento y la suma de estos deberá coincidir con el monto reportado en la balanza de comprobación del periodo por el cual se integran los ingresos en la región fronteriza norte o sur.
+
+La documentación a que se refiere esta regla deberá conservarse como parte de la contabilidad en términos del artículo 28 del CFF.
+
+Adicionalmente, los contribuyentes deberán manifestar en las declaraciones de pagos provisionales y del ejercicio, el monto total de los ingresos obtenidos en la región fronteriza norte o sur; si la cantidad manifestada en las declaraciones citadas no representa cuando menos el 90% del total de los ingresos obtenidos en cada una de dichas regiones, el contribuyente deberá presentar declaraciones complementarias por el ejercicio fiscal en el que aplicó indebidamente el estímulo fiscal en materia del ISR establecido en los Decretos a que se refiere este Capítulo.
+
+La autoridad fiscal podrá requerir a los contribuyentes los datos, informes o documentos adicionales que considere necesarios y que estén relacionados con los mismos.

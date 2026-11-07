@@ -534,13 +534,13 @@ parametros:
     nombre: Balanza ajustada al cierre, PM (mes-día del año siguiente)
     tipo: texto
     valores:
-      - {valor: "04-20", desde: "2015-01-01", hasta: null, fuente: "RMF regla 2.8.1.7"}
+      - {valor: "04-20", desde: "2015-01-01", hasta: null, fuente: "RMF 2026 regla 2.8.1.6, fracción II (verificado contra el texto del DOF 28-dic-2025; antes citaba la 2.8.1.7, que trata de otro tema)"}
 
   CONTA_ELEC_BALANZA_AJUSTADA_PF:
     nombre: Balanza ajustada al cierre, PF (mes-día del año siguiente)
     tipo: texto
     valores:
-      - {valor: "05-22", desde: "2015-01-01", hasta: null, fuente: "RMF regla 2.8.1.7"}
+      - {valor: "05-22", desde: "2015-01-01", hasta: null, fuente: "RMF 2026 regla 2.8.1.6, fracción II (verificado contra el texto del DOF 28-dic-2025; antes citaba la 2.8.1.7, que trata de otro tema)"}
 
   CONTA_ELEC_RELEVO_PF_INGRESOS:
     nombre: PF con ingresos del año anterior hasta este monto quedan relevadas de contabilidad electrónica y DIOT

@@ -1,0 +1,11 @@
+# RMF2026 · Regla 3.2.14 · Obligaciones de información de los intermediarios financieros de los fideicomisos accionarios
+
+Resolución: Resolución Miscelánea Fiscal para 2026 (RMF2026)
+Ubicación: Título 3 · Impuesto sobre la renta / Capítulo 3.2 · De los Ingresos
+Fuente: DOF, https://dof.gob.mx/nota_detalle.php?codigo=5777217&fecha=28/12/2025
+Fundamento: LISR 55, 56, 76, RMF 3.2.13.
+Cotejado con el DOF: NO (el texto sale del archivo del DOF, sin revisión de una persona)
+
+3.2.14. Para los efectos de la regla 3.2.13., fracción VI los intermediarios financieros que funjan como custodios o administradores de los certificados emitidos por los fideicomisos a que se refiere dicha regla, estarán obligados a informar al SAT, a más tardar el día 15 de febrero de cada año, de conformidad con lo establecido en los artículos 55, 56 y 76, fracción XI de la Ley del ISR, en la forma que al efecto se establezca, el nombre, clave en el RFC, domicilio, los datos de las enajenaciones de certificados realizadas y de los demás ingresos pagados a los propietarios de los certificados durante el año de calendario inmediato anterior, así como el monto de las retenciones efectuadas por la institución fiduciaria por los intereses percibidos provenientes del patrimonio del fideicomiso que administren, respecto de todas las personas que hubiesen sido propietarias de los certificados emitidos por el fideicomiso de que se trate durante dicho año de calendario.
+
+Asimismo, dichos intermediarios financieros, deberán proporcionar, a más tardar el 15 de febrero de cada año, constancia a los propietarios de los certificados citados a los que les presten servicios de intermediación, en la que se señalen los ingresos obtenidos por dichas personas derivados de la enajenación de certificados, así como los montos de los intereses nominales y reales que dichos propietarios de certificados hubiesen percibido a través del fideicomiso de que se trate y el monto de la retención con carácter de pago definitivo del ISR que les corresponda por dicho concepto, correspondientes al ejercicio inmediato anterior. También, deberán entregar una constancia por los pagos de dividendos fiduciarios que realicen a los propietarios de los certificados, en el momento en que se pague dicho dividendo.

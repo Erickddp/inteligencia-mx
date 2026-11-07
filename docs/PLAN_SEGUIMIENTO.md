@@ -97,3 +97,5 @@ Hallazgo por verificar: la sesión de factureedp reporta, con datos de Banxico d
 - `series/inpc.yaml` (oct-2021 a sep-2026): 49 meses del DOF coinciden con Banxico sin diferencias; 11 meses sin nota del DOF localizada, marcados sin cotejar.
 - R-17 con 5 casos (sale de la deuda de reglas de oro).
 - Falta: Ley del IEPS, Reglamento de la LFPIORPI, RMF 2026 con anexos y modificaciones; cotejo humano artículo por artículo.
+
+- RMF 2026 en la biblioteca (`fuentes/rmf/`, 1,208 reglas, texto del DOF, sin revisión humana). Faltan sus tres modificaciones y los anexos. Una cita de la base estaba equivocada (2.8.1.7 → 2.8.1.6 fracc. II) y se corrigió.

@@ -1,0 +1,9 @@
+# RMF2026 · Regla 11.4.7 · Información que deben proporcionar las entidades participantes del Sorteo "El Buen Fin", respecto de los premios pagados por entidad federativa
+
+Resolución: Resolución Miscelánea Fiscal para 2026 (RMF2026)
+Ubicación: Título 11 · Decretos, Circulares, Convenios y otras disposiciones / Capítulo 11.4 · Del Decreto por el que se otorgan estímulos fiscales para incentivar el uso de medios de pago electrónicos, publicado en el DOF el 31 de octubre de 2025
+Fuente: DOF, https://dof.gob.mx/nota_detalle.php?codigo=5777217&fecha=28/12/2025
+Fundamento: CFF 33-B, Decreto DOF 31/10/2025 Primero, Segundo, Cuarto, Octavo
+Cotejado con el DOF: NO (el texto sale del archivo del DOF, sin revisión de una persona)
+
+11.4.7. Para los efectos de los artículos 33-B, primer párrafo, fracción IV del CFF, Primero, en relación con el Segundo, segundo párrafo, Cuarto y Octavo, todos del Decreto a que se refiere este Capítulo, las entidades que participen con la entrega de premios en el Sorteo "El Buen Fin", deberán proporcionar al SAT a través de la cámara de compensación y/o empresa especializada que hayan suscrito las Reglas de Operación del Sorteo "El Buen Fin" 2025, y se hayan obligado conforme a lo señalado en las mismas, la información relacionada con los pagos correspondientes a los premios entregados a los tarjetahabientes y comercios ganadores, a que se refiere la ficha de trámite 5/DEC-3 "Entrega de información que deben proporcionar las entidades participantes del Sorteo "El Buen Fin" auxiliadas de la cámara de compensación y/o empresa especializada, respecto de los premios pagados por entidad federativa", con independencia de la información proporcionada conforme a la ficha de trámite 4/DEC-3 "Entrega de información que deben proporcionar las entidades participantes del Sorteo "El Buen Fin", auxiliadas de la cámara de compensación y/o empresa especializada", ambas contenidas en el Anexo 2.

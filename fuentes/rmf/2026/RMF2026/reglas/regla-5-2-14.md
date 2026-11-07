@@ -1,0 +1,9 @@
+# RMF2026 · Regla 5.2.14 · Presentación de información de bienes producidos, enajenados o importados por entidad federativa realizadas por empresa comercializadora o distribuidora
+
+Resolución: Resolución Miscelánea Fiscal para 2026 (RMF2026)
+Ubicación: Título 5 · Impuesto especial sobre producción y servicios / Capítulo 5.2 · De las obligaciones de los contribuyentes
+Fuente: DOF, https://dof.gob.mx/nota_detalle.php?codigo=5777217&fecha=28/12/2025
+Fundamento: LIEPS 2o., 19, LIEPS 2021 5o.-D, 19, LISR 179, RMF 5.2.1.
+Cotejado con el DOF: NO (el texto sale del archivo del DOF, sin revisión de una persona)
+
+5.2.14. Para los efectos del artículo 19, fracción VI de la Ley del IEPS, tratándose de productores o importadores de tabacos labrados y otros productos que contengan nicotina, que realicen la enajenación de dichos bienes a través de una comercializadora o distribuidora que sea parte relacionada de conformidad con lo establecido por el artículo 179 de la Ley del ISR, se tendrá por cumplida la obligación a que se refiere la citada fracción VI, cuando proporcionen en el Anexo 8 del Programa Electrónico "Declaración Informativa Múltiple Impuesto Especial sobre Producción y Servicios" (MULTI-IEPS) contenido en el Portal del SAT en los términos de la regla 5.2.1., la información relativa a las ventas por entidad federativa realizadas por la empresa comercializadora o distribuidora, con excepción de los contribuyentes del RIF que, de conformidad con lo establecido en el Título IV, Capítulo II, Sección II de la Ley del ISR vigente hasta el 31 de diciembre de 2021, en relación con lo señalado en el artículo Segundo, fracción IX de las Disposiciones Transitorias de la Ley del Impuesto sobre la Renta, publicada en el DOF el 12 de noviembre de 2021, continúen tributando en dicho régimen, y cumplan con lo indicado en el artículo 5o.-D de la Ley del IEPS vigente hasta el 31 de diciembre de 2021.

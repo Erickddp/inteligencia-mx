@@ -1,0 +1,33 @@
+# RMF2026 · Regla 2.19.6 · Descripción detallada del esquema reportable relativo a evitar la aplicación del Capítulo I, del Título VI de la Ley del ISR, a que se refiere el artículo 199, primer párrafo, fracción II del CFF
+
+Resolución: Resolución Miscelánea Fiscal para 2026 (RMF2026)
+Ubicación: Título 2 · Código Fiscal de la Federación / Capítulo 2.19 · De la revelación de esquemas reportables
+Fuente: DOF, https://dof.gob.mx/nota_detalle.php?codigo=5777217&fecha=28/12/2025
+Fundamento: CFF 199, 200, 201, LISR 176, RMF 2.19.1., 2.19.2., 2.19.3.
+Cotejado con el DOF: NO (el texto sale del archivo del DOF, sin revisión de una persona)
+
+2.19.6. Para los efectos de los artículos 199, fracción II y cuarto párrafo, 200, fracción VI y 201, segundo párrafo del CFF, en las declaraciones informativas a que se refieren las reglas 2.19.1., 2.19.2. y 2.19.3., en las que se revele un esquema reportable relativo a evitar la aplicación del Título VI, Capítulo I de la Ley del ISR, los asesores fiscales o los contribuyentes adjuntarán un documento en formato .pdf, con la siguiente información y documentación:
+
+I. Tratándose tanto de esquemas reportables generalizados, como de personalizados:
+
+a) Un diagrama que permita observar todas las operaciones (actos o hechos jurídicos) que forman parte del plan, proyecto, propuesta, asesoría, instrucción y/o recomendación que integran el esquema reportable; el país o las jurisdicciones donde se ubican o ubicarán los sujetos involucrados en el esquema reportable y bajo qué legislación se celebran o celebrarán las operaciones (actos o hechos jurídicos) que forman parte del esquema reportable.
+
+b) Antecedentes y conclusiones que forman parte del contexto del esquema reportable, así como los argumentos jurídicos y las premisas de las cuales parte la interpretación jurídica.
+
+c) Señalar detalladamente mediante qué operación u operaciones (actos o hechos jurídicos), en concreto, se evita o evitará la aplicación del Título VI, Capítulo I de la Ley del ISR.
+
+d) Señalar si con motivo de la implementación del esquema reportable, los contribuyentes beneficiados o que prevén obtener el beneficio se auxilian o auxiliarán de personas físicas, entidades jurídicas o figuras jurídicas en el extranjero o en México para evitar la aplicación del Título VI, Capítulo I de la Ley del ISR.
+
+e) Indicar la secuencia en la que se llevan o llevarán a cabo las operaciones (actos o hechos jurídicos) que conforman el esquema reportable.
+
+II. Tratándose de esquemas reportables personalizados, además de lo señalado en la fracción anterior, se deberá revelar, cuando menos, la siguiente información y documentación:
+
+a) Indicar la fecha exacta o fecha aproximada en que se llevaron o llevarán a cabo las operaciones (actos o hechos jurídicos) que integran el esquema reportable. Así como, en su caso, el valor consignado o estimado en dichas operaciones.
+
+b) Si los contribuyentes beneficiados se auxilian o auxiliarán de personas físicas, entidades jurídicas o figuras jurídicas en el extranjero o en México, indicar el nombre de la persona física o el nombre, denominación o razón social de la entidad, así como su clave en el RFC o número de identificación fiscal; país o jurisdicción de constitución; país de residencia; su actividad o giro y su domicilio. Tratándose de figuras jurídicas, indicar el país o jurisdicción de creación y, en su caso, de registro.
+
+c) En caso de que las personas que participan o participarán en el esquema reportable sean partes relacionadas deberán manifestar dicha situación.
+
+d) Indique de manera detallada las razones por las cuales no se ubica o ubicará en alguno de los supuestos establecidos en el artículo 176, décimo primer párrafo, fracciones I, II, III, IV o V de la Ley del ISR.
+
+En caso de que el asesor fiscal o el contribuyente no cuenten con la información y documentación señalada en las fracciones anteriores, deberán manifestarlo bajo protesta de decir verdad, exponiendo los motivos y razones de ello.

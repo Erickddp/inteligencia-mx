@@ -1,0 +1,11 @@
+# RMF2026 · Regla 12.2.8 · Restitución de contraprestaciones por la cancelación de servicios digitales de intermediación entre terceros prestados por plataformas tecnológicas de residentes en el extranjero
+
+Resolución: Resolución Miscelánea Fiscal para 2026 (RMF2026)
+Ubicación: Título 12 · De la prestación de servicios digitales / Capítulo 12.2 · De los servicios digitales de intermediación entre terceros
+Fuente: DOF, https://dof.gob.mx/nota_detalle.php?codigo=5777217&fecha=28/12/2025
+Fundamento: LIVA 18-B, 18-D, RMF 12.1.4.
+Cotejado con el DOF: NO (el texto sale del archivo del DOF, sin revisión de una persona)
+
+12.2.8. Para los efectos de los artículos 18-B, fracción II, y 18-D, fracción IV de la Ley del IVA, los sujetos a que se refieren las citadas disposiciones que presten servicios digitales de intermediación entre terceros, cuando derivado de las devoluciones de bienes o cancelación de servicios o del uso o goce temporal de bienes entre el oferente y el demandante de los mismos, restituyan las contraprestaciones que cobraron por la prestación de servicios digitales de intermediación entre terceros, incluyendo las cantidades relativas al IVA correspondiente que, a la fecha de la restitución, ya se hubieren pagado a la autoridad fiscal, podrán deducir el monto de las contraprestaciones sin el IVA que hayan devuelto, del monto de las contraprestaciones de los servicios digitales de intermediación por los que deban pagar el IVA en las siguientes declaraciones de pago hasta agotarlo, siempre que se encuentren inscritos en el RFC y emitan a las personas a quienes se hizo la restitución, un comprobante en los términos de la regla 12.1.4., en el que se haga constar el nombre y la clave en el RFC de la persona a la que se realizó la restitución, separando el monto de la contraprestación y el del IVA correspondiente.
+
+La deducción del monto de las contraprestaciones que se hayan restituido en términos de la presente regla, deberá reflejarse en papeles de trabajo, por lo que en la declaración de pago únicamente se capturará el monto de las contraprestaciones que servirá de base para el cálculo del impuesto correspondiente al periodo de que se trate, una vez aplicada la deducción.

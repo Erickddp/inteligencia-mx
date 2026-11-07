@@ -1,0 +1,21 @@
+{
+ "clave": "RMF2026",
+ "nombre": "Resolución Miscelánea Fiscal para 2026",
+ "tipo": "resolucion",
+ "dof": {
+  "fecha": "2025-12-28",
+  "nota": "5777217",
+  "url": "https://dof.gob.mx/nota_detalle.php?codigo=5777217&fecha=28/12/2025"
+ },
+ "url_documento": "https://dof.gob.mx/nota_to_doc.php?codnota=5777217",
+ "origen": "DOF (archivo Word de la nota; texto sin revisión humana)",
+ "descargado": "2026-11-07",
+ "sha256_documento": "489d4d7c312816887f5cf69fd891c5843df93be6d9f87438a2a512476483ad5b",
+ "sha256_texto": "c1152ef89490106eb46c9eea9216269af57136fc163f065af5477f24970e3401",
+ "cotejado_dof": {
+  "ley_completa": null,
+  "articulos": {}
+ },
+ "reglas": 1208,
+ "derogadas": 0
+}
