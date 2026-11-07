@@ -71,3 +71,26 @@ Con la RMF 2026 en `fuentes/rmf/` (1,208 reglas) se comprobaron las seis reglas 
 | 3.13.x | RESICO PM relevado de contabilidad electrónica | Sigue «por confirmar» en la base |
 
 Faltan las tres modificaciones a la RMF 2026 (9-jul, 1-oct y 2-oct de 2026): una regla citada arriba pudo cambiar después.
+
+## 6. IMSS e Infonavit: parámetros cotejados contra la ley y el DOF (7-nov-2026)
+
+Cotejo contra el texto de la LSS y de la Ley del Infonavit de `fuentes/leyes/` y contra los decretos del DOF. **Ningún valor cambia.**
+
+| Parámetro | Valor en la base | Respaldo | Resultado |
+|---|---|---|---|
+| `IMSS_EYM_CUOTA_FIJA_PATRON` | 20.40 % de la UMA | LSS 106 fr. I dice 13.9 %; el transitorio décimo noveno (DOF 21-dic-1995) suma 0.65 puntos cada 1-jul de 1998 a 2007: 13.9 + 6.5 = 20.40 | ✔ por aritmética del transitorio |
+| `IMSS_EYM_EXCEDENTE_PATRON` / `_OBRERO` | 1.10 % / 0.40 % sobre el excedente de 3 UMA | LSS 106 fr. II dice 6 % y 2 %; el mismo transitorio resta 0.49 y 0.16 puntos por año: 6 − 4.9 y 2 − 1.6 | ✔ |
+| `IMSS_PD_PATRON` / `_OBRERO` | 0.70 % / 0.25 % | LSS 107: cuota de 1 %; 70 % patrones, 25 % trabajadores | ✔ |
+| `IMSS_GMP_PATRON` / `_OBRERO` | 1.05 % / 0.375 % | LSS 25 | ✔ |
+| `IMSS_IV_PATRON` / `_OBRERO` | 1.75 % / 0.625 % | LSS 147 | ✔ |
+| `IMSS_GUARDERIAS_PATRON` | 1 % | LSS 211 | ✔ |
+| `IMSS_RETIRO_PATRON`, `IMSS_CEAV_OBRERO` | 2 %, 1.125 % | LSS 168 | ✔ |
+| `IMSS_CEAV_PATRON_TABLA` 2026 y 2027 | 8 renglones por año | Tabla del transitorio segundo del decreto DOF 16-dic-2020. **Es una imagen**: ni la Cámara ni el HTML ni el Word la traen como texto. Se leyó la imagen celda por celda | ✔ las dos columnas coinciden en sus 16 cifras |
+| `PRIMA_RIESGO_INICIAL_POR_CLASE`, `_MINIMA`, `_MAXIMA` | 0.54355 … 7.58875; 0.5; 15 | LSS 73 y 74 | ✔ |
+| `SBC_TOPE_VECES_UMA` | 25 | LSS 28 dice «veinticinco veces el salario mínimo» | ✔ con el decreto DOF 27-ene-2016, transitorio tercero (las menciones al salario mínimo como referencia se entienden hechas a la UMA) |
+| `INFONAVIT_APORTACION_PATRON` | 5 % | Ley del Infonavit 29 fr. II | ✔ |
+| `DIAS_POR_MES_SM` | 30.4 | Decreto DOF 27-ene-2016, transitorio segundo: valor mensual de la UMA = diario × 30.4 | ✔ fuente primaria (se corrigió la cita y el inicio de vigencia a 28-ene-2016) |
+
+Se precisaron las citas de esos parámetros. Ninguno estaba `por_confirmar`, así que no hubo nada que pasar a vigente. Los textos de ley siguen sin cotejo humano contra el DOF.
+
+**Chihuahua (ISN, otros gravámenes estatales y Código Fiscal del Estado): sin hacer.** Los sitios del Congreso, del gobierno y del Periódico Oficial de Chihuahua no responden desde el entorno de trabajo (solo están permitidos los de leyes federales, DOF, SAT, IMSS e Infonavit). Hace falta abrir esos hosts.

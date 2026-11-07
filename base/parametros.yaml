@@ -58,10 +58,10 @@ parametros:
     tipo: numero
     valores:
       - valor: "30.4"
-        desde: "2016-01-01"
+        desde: "2016-01-28"
         hasta: null
         confirmado_hasta: "2027-12-31"
-        fuente: "Ley para Determinar el Valor de la UMA, art. 4 fr. II (UMA mensual = diaria × 30.4); Decreto del subsidio para el empleo, DOF 31-dic-2025 (prorrateo por días con 30.4)"
+        fuente: "Decreto DOF 27-ene-2016 (UMA), transitorio segundo: el valor mensual de la UMA es el diario × 30.4 (en vigor desde 28-ene-2016); Ley para Determinar el Valor de la UMA, art. 4 fr. II; Decreto del subsidio para el empleo, DOF 31-dic-2025 (prorrateo por días con 30.4). Verificado el 7-nov-2026 contra el texto del decreto."
     nota: "Mismo divisor que usa UMA_MENSUAL dentro de su fórmula; esa fórmula NO se cambia aquí (cambiarla suelta la firma de UMA_MENSUAL en Timbra). Para nómina se usa en salario mensual = SD × 30.4 y en el prorrateo del subsidio (R-82, R-126, R-128, R-140). El uso SM = SD × 30.4 es práctica del cálculo, no cita de artículo: Rick confirma antes de firmar."
     revisar_antes: "2027-12-01"
     firma: {validado: false, por: null, fecha: null}
@@ -848,7 +848,7 @@ parametros:
     nombre: EyM cuota fija patronal, % de la UMA diaria por día cotizado
     tipo: porcentaje
     valores:
-      - {valor: "20.40", desde: "2008-01-01", hasta: null, fuente: "LSS art. 106 fr. I y transitorio 19o"}
+      - {valor: "20.40", desde: "2008-01-01", hasta: null, fuente: "LSS art. 106 fr. I (13.9 %) y transitorio décimo noveno (DOF 21-dic-1995): +0.65 puntos cada 1-jul de 1998 a 2007 = 20.40 %. UMA en lugar de salario mínimo: decreto DOF 27-ene-2016, transitorio tercero. Verificado el 7-nov-2026 contra el texto de la ley y del decreto."}
   IMSS_EYM_EXCEDENTE_UMA:
     nombre: Veces UMA a partir de las cuales se paga el excedente de EyM
     tipo: numero
@@ -858,12 +858,12 @@ parametros:
     nombre: EyM excedente, patrón
     tipo: porcentaje
     valores:
-      - {valor: "1.10", desde: "2008-01-01", hasta: null, fuente: "LSS art. 106 fr. II"}
+      - {valor: "1.10", desde: "2008-01-01", hasta: null, fuente: "LSS art. 106 fr. II (6 %) y transitorio décimo noveno (DOF 21-dic-1995): −0.49 puntos cada 1-jul de 1998 a 2007 = 1.10 %. Verificado el 7-nov-2026 contra el texto de la ley."}
   IMSS_EYM_EXCEDENTE_OBRERO:
     nombre: EyM excedente, trabajador
     tipo: porcentaje
     valores:
-      - {valor: "0.40", desde: "2008-01-01", hasta: null, fuente: "LSS art. 106 fr. II"}
+      - {valor: "0.40", desde: "2008-01-01", hasta: null, fuente: "LSS art. 106 fr. II (2 %) y transitorio décimo noveno (DOF 21-dic-1995): −0.16 puntos cada 1-jul de 1998 a 2007 = 0.40 %. Verificado el 7-nov-2026 contra el texto de la ley."}
   IMSS_PD_PATRON:
     nombre: Prestaciones en dinero, patrón
     tipo: porcentaje
@@ -916,7 +916,7 @@ parametros:
     valores:
       - desde: "2026-01-01"
         hasta: "2026-12-31"
-        fuente: "LSS art. 168 fr. II y transitorio 2o, reforma DOF 16-dic-2020"
+        fuente: "LSS art. 168 fr. II y transitorio segundo del decreto DOF 16-dic-2020 (la tabla por año es una imagen en el decreto; verificada celda por celda el 7-nov-2026 para 2026 y 2027)"
         valor:
           - ["SM",   "3.150"]
           - ["1.50", "3.676"]
@@ -928,7 +928,7 @@ parametros:
           - [null,   "7.513"]
       - desde: "2027-01-01"
         hasta: "2027-12-31"
-        fuente: "LSS art. 168 fr. II y transitorio 2o, reforma DOF 16-dic-2020"
+        fuente: "LSS art. 168 fr. II y transitorio segundo del decreto DOF 16-dic-2020 (la tabla por año es una imagen en el decreto; verificada celda por celda el 7-nov-2026 para 2026 y 2027)"
         valor:
           - ["SM",   "3.150"]
           - ["1.50", "3.807"]
