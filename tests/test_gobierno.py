@@ -38,7 +38,7 @@ def test_codeowners_cubre_base_motor_scripts_y_workflows():
         if linea.strip() and not linea.startswith("#"):
             ruta, *duenos = linea.split()
             reglas[ruta] = duenos
-    for ruta in ("/base/", "/timbra_reglas/", "/scripts/", "/.github/"):
+    for ruta in ("/base/", "/timbra_reglas/", "/scripts/", "/.github/", "/.claude/"):
         assert reglas.get(ruta) == ["@Erickddp"], ruta
 
 
@@ -87,3 +87,14 @@ def test_tag_exige_entrada_de_changelog(tmp_path):
     assert any("CHANGELOG" in e for e in vt.verifica("v0.4.1", tmp_path))
     (tmp_path / "CHANGELOG.md").write_text("# Changelog\n\n## [v0.4.1] - x\n", encoding="utf-8")
     assert vt.verifica("v0.4.1", tmp_path) == []
+
+
+def test_skill_aportar_regla_es_valida_y_solo_cita_lo_que_existe():
+    import re
+    texto = (RAIZ / ".claude" / "skills" / "aportar-regla" / "SKILL.md").read_text(encoding="utf-8")
+    cab = yaml.safe_load(texto.split("---")[1])
+    assert cab["name"] == "aportar-regla" and len(cab["description"]) > 60
+    for s in set(re.findall(r"scripts/(\w+\.py)", texto)):
+        assert (RAIZ / "scripts" / s).is_file(), s
+    for f in set(re.findall(r"`(docs/[\w_]+\.md|CONTRIBUTING\.md|AVISO\.md)`", texto)):
+        assert (RAIZ / f).is_file(), f

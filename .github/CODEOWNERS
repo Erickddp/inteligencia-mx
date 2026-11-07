@@ -4,3 +4,5 @@
 /scripts/       @Erickddp
 # Los flujos de CI y el propio CODEOWNERS también: quien los cambie podría saltarse las revisiones.
 /.github/       @Erickddp
+# La skill es una instrucción que Claude seguirá: quien la cambie podría desviarlo.
+/.claude/ @Erickddp
