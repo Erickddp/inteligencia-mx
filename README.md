@@ -1,4 +1,6 @@
-# timbra-reglas
+# inteligencia-mx
+
+> Antes se llamaba `timbra-reglas`. Los enlaces viejos redirigen; el paquete de Python y el comando `timbra-reglas` siguen funcionando.
 
 Base fiscal y contable de **Timbra**: los números de la ley mexicana con su vigencia y su fuente, las reglas que los usan y un motor que los resuelve por fecha. Es pública y contribuible: socios y otros contadores proponen cambios; la persona que mantiene el repositorio los firma.
 
@@ -32,7 +34,7 @@ Versión actual: **0.4.1** (90 casos).
 ## Instalar y usar
 
 ```bash
-pip install "git+https://github.com/Erickddp/timbra-reglas.git"      # o un release: ...@v0.4.1
+pip install "git+https://github.com/Erickddp/inteligencia-mx.git"    # o un release: ...@v0.4.1
 timbra-reglas probar                                  # corre los casos de reglas.yaml
 timbra-reglas valor UMA_DIARIA 2026-03-15             # valor + estado en una fecha
 timbra-reglas impacto IVA_TASA_GENERAL                # qué depende de este parámetro

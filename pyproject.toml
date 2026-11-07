@@ -15,6 +15,7 @@ test = ["pytest>=8"]
 
 [project.scripts]
 timbra-reglas = "timbra_reglas.motor:cli"
+inteligencia-mx = "timbra_reglas.motor:cli"
 
 [tool.setuptools]
 packages = ["timbra_reglas", "timbra_reglas.base"]

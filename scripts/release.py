@@ -11,7 +11,7 @@ anterior -> copia con sufijo de versión (y copia con el nombre plano + SHA256SU
 -> SHA256 -> ORDEN_CAMBIO con las huellas DENTRO -> zip.
 El paquete que sale es PLANO (los 4 archivos juntos): es lo que Timbra vendoriza y verifica por huella.
 """
-import argparse, datetime as dt, hashlib, os, re, shutil, subprocess, sys, zipfile
+import argparse, datetime as dt, hashlib, json, os, re, shutil, subprocess, sys, zipfile
 from pathlib import Path
 import yaml
 
@@ -165,6 +165,14 @@ def main():
     orden = out / f"ORDEN_CAMBIO_v{v}.txt"
     orden.write_text("\n".join(L), encoding="utf-8")
     (out / f"SHA256_v{v}.txt").write_text(huellas + "\n", encoding="utf-8")
+    # Contrato para las apps (Timbra): qué IDs cambian, antes y después, y qué firmas se caen.
+    if str(Path(__file__).resolve().parent) not in sys.path:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import integracion
+    commit = os.environ.get("GITHUB_SHA") or integracion.commit_actual()
+    huellas_planas = {c.name: hashlib.sha256(c.read_bytes()).hexdigest() for c in planos}
+    datos = integracion.integracion(Path(x.anterior) if x.anterior else None, raiz / "base", v, commit, huellas_planas, resumen)
+    (out / f"integracion_v{v}.json").write_text(json.dumps(datos, ensure_ascii=False, indent=1, default=str) + "\n", encoding="utf-8")
     z = out / f"timbra-reglas-v{v}.zip"
     with zipfile.ZipFile(z, "w", zipfile.ZIP_DEFLATED) as zf:
         for c in copias + [orden, out / f"SHA256_v{v}.txt"]:

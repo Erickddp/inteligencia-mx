@@ -1,9 +1,9 @@
 ---
-name: aportar-regla
-description: Aportar a timbra-reglas (base fiscal abierta de México) una regla, un valor de ley, un caso o un texto de ley desde Claude Code. Úsala cuando alguien quiera agregar o corregir un parámetro (UMA, salario mínimo, tarifas del Anexo 8, tasas, topes, recargos, subsidio, INPC, tipo de cambio), una regla con su fórmula y sus casos, reportar un error de cálculo, o cotejar un artículo de ley contra el DOF. Guía paso a paso desde la fuente primaria hasta el PR firmado.
+name: aportar-inteligencia-mx
+description: Aportar a inteligencia-mx (antes timbra-reglas; base fiscal abierta de México) una regla, un valor de ley, un caso o un texto de ley desde Claude Code. Úsala cuando alguien quiera agregar o corregir un parámetro (UMA, salario mínimo, tarifas del Anexo 8, tasas, topes, recargos, subsidio, INPC, tipo de cambio), una regla con su fórmula y sus casos, reportar un error de cálculo, o cotejar un artículo de ley contra el DOF. Guía paso a paso desde la fuente primaria hasta el PR firmado.
 ---
 
-# aportar-regla: llevar un dato fiscal de la fuente al PR
+# aportar-inteligencia-mx: llevar un dato fiscal de la fuente al PR
 
 timbra-reglas es la **inteligencia fiscal abierta**: la usan apps como Timbra, que la fijan por versión y huella. Un número equivocado aquí
 termina en la declaración de alguien. Por eso aquí nada entra sin **fuente primaria**, **casos al centavo** y la **firma** del CODEOWNER.

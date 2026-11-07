@@ -13,7 +13,7 @@
 
 ## Cómo citar
 
-> Base fiscal timbra-reglas, versión X.Y.Z, <https://github.com/Erickddp/timbra-reglas>, licencia CC BY 4.0.
+> Inteligencia-MX (antes timbra-reglas), versión X.Y.Z, <https://github.com/Erickddp/inteligencia-mx>, licencia CC BY 4.0.
 
 Si usas el código, conserva el aviso de la licencia Apache-2.0.
 
