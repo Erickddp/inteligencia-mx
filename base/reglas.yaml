@@ -55,6 +55,9 @@ reglas:
     hallazgo: "Usos D01-D10 no son 'no deducibles' en una PF: son deducciones personales para la anual (art. 151). Clasificarlas aparte, no tirarlas."
   - id: R-13
     nombre: IVA a cargo del mes
+    citas: [{ley: "LIVA", articulo: "1-b"}, {ley: "LIVA", articulo: "5"}, {ley: "LIVA", articulo: "6"}]
+    que_dice: "El IVA a pagar del mes es lo trasladado y efectivamente cobrado, menos las retenciones que te hicieron y el IVA acreditable pagado, menos el saldo a favor de meses anteriores."
+    correcto_si: "Solo cuentan el IVA efectivamente cobrado y el efectivamente pagado, el saldo a favor no se pierde (se acredita después o se pide completo en devolución) y las retenciones enteradas se acreditan en la declaración siguiente."
     estado: CORREGIR
     fase: 1
     calculadora: iva_mes
@@ -70,6 +73,9 @@ reglas:
         esperado: {a_pagar: "0.00", saldo_favor_remanente: "500.00", saldo_favor_del_mes: "2000.00"}
   - id: R-14
     nombre: Saldo a favor de IVA
+    citas: [{ley: "LIVA", articulo: "6"}]
+    que_dice: "Un saldo a favor de IVA no se pierde al cerrar el año: se acredita en los meses siguientes hasta agotarlo, o se pide en devolución por el total."
+    correcto_si: "El saldo pasa al mes siguiente, aun entre años; lo que se pide en devolución sale del arrastre y la devolución es por el total del saldo."
     estado: CORREGIR
     fase: 2
     fuente: "LIVA art. 6"
@@ -82,6 +88,9 @@ reglas:
     hallazgo: "ESTABA MAL: el saldo a favor NO muere al cerrar el año. Se acredita en los meses siguientes hasta agotarlo, o se pide en devolución el TOTAL. Lo pedido en devolución ya no se acredita. Unir con R-18 y perilla P12; guardar cada saldo con su mes de origen y destino (acreditado | devolución)."
   - id: R-15
     nombre: Tasas de IVA (16, 8 frontera, 0, exento)
+    citas: [{ley: "LIVA", articulo: "1"}]
+    que_dice: "La tasa general de IVA sale de la ley; la tasa de la frontera es un estímulo con vigencia, no una tasa de ley."
+    correcto_si: "Se aplica la tasa vigente a la fecha de la operación, y la de la frontera solo mientras el decreto de estímulos esté vigente."
     estado: LISTO_FIRMA
     fase: 1
     parametros: [IVA_TASA_GENERAL, IVA_TASA_FRONTERA_NORTE]
@@ -92,6 +101,9 @@ reglas:
       - {nombre: "8% sin prórroga en 2027 → aviso", fecha: "2027-01-15", entradas: {id: IVA_TASA_FRONTERA_NORTE}, espera_error: SinValor}
   - id: R-16
     nombre: Retenciones de IVA
+    citas: [{ley: "LIVA", articulo: "1-a"}, {ley: "RLIVA", articulo: "3"}]
+    que_dice: "Cuando una persona moral recibe servicios personales independientes o el uso o goce temporal de bienes de una persona física, retiene dos terceras partes del IVA; otros servicios llevan su propia retención."
+    correcto_si: "La retención de dos terceras partes sale de la tasa general vigente, sin número escrito; los servicios especializados y el autotransporte tienen su propia retención."
     estado: OK
     fase: 1
     parametros: [IVA_RET_DOS_TERCIOS, IVA_RET_SERV_ESPECIALIZADOS, IVA_RET_AUTOTRANSPORTE]
@@ -102,6 +114,9 @@ reglas:
       - {nombre: "Servicios especializados 10,000", fecha: "2026-11-04", entradas: {subtotal: "10000.00", parametro: IVA_RET_SERV_ESPECIALIZADOS}, esperado: "600.00"}
   - id: R-17
     nombre: Proporción de IVA acreditable con actividades exentas o no objeto
+    citas: [{ley: "LIVA", articulo: "5"}, {ley: "LIVA", articulo: "4-a"}, {ley: "LIVA", articulo: "5-b"}, {ley: "LIVA", articulo: "5-c"}]
+    que_dice: "Si un gasto sirve para actividades gravadas y para exentas, el IVA acreditable es proporcional: todo si es solo de gravadas y nada si es solo de exentas."
+    correcto_si: "Un gasto solo de actos gravados (16 % o 0 %) se acredita completo, uno solo de exentos o no objeto no se acredita, y uno indistinto se acredita en la proporción de gravados sobre el total de actos."
     estado: NUEVA
     fase: 2
     calculadora: proporcion_iva
@@ -190,6 +205,9 @@ reglas:
     hallazgo: "El coeficiente (P9) debe guardarse en servidor por ejercicio, no en el navegador."
   - id: R-25
     nombre: 605 / deducciones personales
+    citas: [{ley: "LISR", articulo: "151"}]
+    que_dice: "Las deducciones personales de la declaración anual tienen un tope: lo menor entre un número de UMA anuales y un porcentaje de los ingresos."
+    correcto_si: "Las deducciones personales no pasan del menor entre el tope en UMA anuales y el porcentaje de los ingresos del año."
     estado: OK
     fase: 1
     parametros: [DED_PERS_VECES_UMA_ANUAL, DED_PERS_PCT_INGRESO, UMA_ANUAL]
@@ -199,6 +217,9 @@ reglas:
       - {nombre: "Ingreso 2,000,000: manda 5 UMA anuales", fecha: "2026-12-31", entradas: {ingreso_total: "2000000.00"}, esperado: "213973.20"}
   - id: R-26
     nombre: Tarifa art. 96 y UMA 2026
+    citas: [{ley: "LISR", articulo: "96"}, {ley: "LISR", articulo: "152"}]
+    que_dice: "La retención y el pago provisional mensual de ISR de personas físicas usan la tarifa mensual del art. 96, que se actualiza solo cuando la inflación acumulada lo exige (art. 152)."
+    correcto_si: "La tarifa es la vigente a la fecha, no la del año; en enero de un año sin tarifa nueva se arrastra la anterior como estimación."
     estado: CORREGIR
     fase: 1
     parametros: [ISR_TARIFA_MENSUAL, UMA_DIARIA, UMA_MENSUAL, UMA_ANUAL]
@@ -213,6 +234,9 @@ reglas:
       - {nombre: "Frontera entre renglón 1 y 2 (sin brinco)", fecha: "2026-03-31", entradas: {base: "844.59"}, esperado: "16.22"}
   - id: R-27
     nombre: Vencimiento día 17 y días extra por sexto dígito del RFC
+    citas: [{ley: "LISR", articulo: "14"}, {ley: "LISR", articulo: "106"}, {ley: "LIVA", articulo: "5-d"}, {ley: "CFF", articulo: "12"}]
+    que_dice: "Los pagos mensuales vencen el día 17 del mes siguiente y, según el sexto dígito del RFC, un decreto da de 1 a 5 días hábiles más."
+    correcto_si: "El vencimiento es el día 17 recorrido al día hábil siguiente (CFF 12) más los días hábiles del sexto dígito, salvo grandes contribuyentes o quien dictamina."
     estado: LISTO_FIRMA
     fase: 2
     parametros: [DIA_VENCIMIENTO_MENSUAL, DIAS_EXTRA_SEXTO_DIGITO]
@@ -231,6 +255,9 @@ reglas:
   # ───────────── D. DIOT ─────────────
   - id: R-30
     nombre: "DIOT: layout y criterio de pagado"
+    citas: [{ley: "LIVA", articulo: "32"}]
+    que_dice: "La DIOT informa al SAT el IVA de tus operaciones con cada proveedor, por tasa, en un archivo con el orden de campos del instructivo."
+    correcto_si: "El archivo trae los 54 campos en el orden oficial, montos enteros y el IVA desglosado por tasa; el criterio es el IVA efectivamente pagado."
     estado: LISTO_FIRMA
     fase: 2
     parametros: [DIOT_NUM_CAMPOS, DIOT_LAYOUT_2025]
@@ -255,6 +282,9 @@ reglas:
   - {id: R-51, nombre: "Cuadre de saldos del estado de cuenta", estado: OK, fase: 1}
   - id: R-52
     nombre: Dólares y tipo de cambio
+    citas: [{ley: "CFF", articulo: "20"}]
+    que_dice: "Una operación en dólares se convierte con el tipo de cambio que Banxico publicó en el DOF el día anterior."
+    correcto_si: "Se usa el tipo de cambio publicado en el DOF el día anterior, que equivale al FIX determinado dos días hábiles antes (serie SF60653)."
     estado: OK
     fase: 2
     parametros: [TIPO_CAMBIO_REGLA, BANXICO_SERIE_TC_CFF20]
@@ -317,6 +347,9 @@ reglas:
   - {id: R-80, nombre: "Parámetros de nómina con vigencia por fecha de pago", estado: REVISAR, fase: 4}
   - id: R-81
     nombre: SDI y factor de integración
+    citas: [{ley: "LSS", articulo: "27"}, {ley: "LSS", articulo: "28"}, {ley: "LFT", articulo: "76"}, {ley: "LFT", articulo: "80"}, {ley: "LFT", articulo: "87"}]
+    que_dice: "El salario base de cotización suma al salario diario las prestaciones de ley (aguinaldo, vacaciones y prima) mediante el factor de integración, y tiene un tope."
+    correcto_si: "El factor sale de los días de aguinaldo, vacaciones y prima vacacional de la LFT según la antigüedad, y el salario base de cotización no pasa del tope del art. 28 de la LSS."
     estado: OK
     fase: 1
     parametros: [FACTOR_INTEGRACION_PRIMER_ANIO, SBC_TOPE_VECES_UMA, UMA_DIARIA]
@@ -326,6 +359,9 @@ reglas:
       - {nombre: "Factor primer año", fecha: "2026-11-04", entradas: {id: FACTOR_INTEGRACION_PRIMER_ANIO}, esperado: "1.0493"}
   - id: R-82
     nombre: ISR de nómina y subsidio para el empleo
+    citas: [{ley: "LISR", articulo: "96"}]
+    que_dice: "La retención de ISR de sueldos usa la tarifa del art. 96 y se resta el subsidio para el empleo cuando el ingreso está dentro de su límite."
+    correcto_si: "La tarifa y el subsidio son los vigentes en la fecha de pago (el subsidio de enero usa la UMA anterior) y el subsidio solo aplica si el ingreso mensual no pasa del límite del decreto."
     estado: OK
     fase: 1
     parametros: [ISR_TARIFA_MENSUAL, SUBSIDIO_EMPLEO_MENSUAL, SUBSIDIO_EMPLEO_LIMITE_INGRESO, DIAS_POR_MES_SM]
@@ -338,6 +374,9 @@ reglas:
       - {nombre: "Divisor de días por mes, límite de vigencia confirmada", fecha: "2027-12-31", entradas: {id: DIAS_POR_MES_SM}, esperado: "30.4"}
   - id: R-83
     nombre: Exentos de aguinaldo, prima vacacional y PTU
+    citas: [{ley: "LISR", articulo: "93"}]
+    que_dice: "El aguinaldo, la prima vacacional y la PTU están exentos de ISR hasta cierto número de UMA; lo que lo pasa paga ISR."
+    correcto_si: "El exento es el número de UMA que fija el art. 93 multiplicado por la UMA de la fecha de pago."
     estado: OK
     fase: 1
     parametros: [EXENTO_AGUINALDO_VECES_UMA, EXENTO_PRIMA_VAC_VECES_UMA, EXENTO_PTU_VECES_UMA, UMA_DIARIA]
@@ -365,6 +404,9 @@ reglas:
   # ───────────── NUEVAS (no estaban en tu catálogo) ─────────────
   - id: R-100
     nombre: Actualización y recargos por pago tardío
+    citas: [{ley: "CFF", articulo: "17-a"}, {ley: "CFF", articulo: "21"}]
+    que_dice: "Lo que pagas tarde se actualiza con el INPC (art. 17-A) y causa recargos por cada mes o fracción con la tasa de mora (art. 21)."
+    correcto_si: "El factor de actualización no baja de 1 y los recargos usan la tasa de mora de cada mes de atraso sobre el monto ya actualizado."
     estado: NUEVA
     fase: 2
     calculadora: parametro
@@ -415,6 +457,9 @@ reglas:
       - {nombre: "UMA diaria el 1-feb-2026", fecha: "2026-02-01", entradas: {id: UMA_DIARIA}, esperado: "117.31"}
   - id: R-108
     nombre: Ajuste a pesos en el pago
+    citas: [{ley: "CFF", articulo: "20"}]
+    que_dice: "El pago de contribuciones se ajusta a pesos enteros."
+    correcto_si: "Los centavos de 1 a 50 bajan al peso inferior y los de 51 a 99 suben al peso superior."
     estado: NUEVA
     fase: 2
     calculadora: ajuste_pesos
@@ -515,6 +560,9 @@ reglas:
 
   - id: R-117
     nombre: Donatarias y tope de donativos
+    citas: [{ley: "LISR", articulo: "27"}, {ley: "LISR", articulo: "80"}, {ley: "LISR", articulo: "151"}, {ley: "RLISR", articulo: "138"}]
+    que_dice: "Los donativos son deducibles hasta un porcentaje de lo obtenido el año anterior, y las donatarias tienen límites de ingresos no relacionados y de gastos de administración."
+    correcto_si: "El tope de donativos es el porcentaje de ley sobre la base del año anterior, y la donataria no debe pasar sus límites de ingresos por actividades no relacionadas ni de gastos de administración."
     estado: NUEVA
     fase: 3
     parametros: [DONATIVOS_DEDUCIBLE_PCT, DONATARIA_INGRESOS_NO_RELACIONADOS_PCT, DONATARIA_GASTOS_ADMIN_PCT]
@@ -551,6 +599,9 @@ reglas:
 
   - id: R-121
     nombre: Depreciación fiscal
+    citas: [{ley: "LISR", articulo: "33"}, {ley: "LISR", articulo: "34"}, {ley: "LISR", articulo: "36"}]
+    que_dice: "La inversión se deduce año con año con el porcentaje máximo de su tipo de bien desde que se empieza a usar, y los automóviles tienen un tope de monto."
+    correcto_si: "El porcentaje no pasa del máximo del art. 34 por tipo de bien, se cuentan meses completos de uso y la inversión en automóviles solo se deduce hasta su tope (art. 36 fr. II)."
     estado: NUEVA
     fase: 3
     parametros: [DEPRECIACION_TASAS_ART34, AUTO_TOPE_DEDUCCION]
@@ -562,6 +613,9 @@ reglas:
 
   - id: R-125
     nombre: Aguinaldo (monto)
+    citas: [{ley: "LFT", articulo: "87"}]
+    que_dice: "El aguinaldo es de al menos quince días de salario y se paga antes del 20 de diciembre; quien trabajó menos del año recibe la parte proporcional."
+    correcto_si: "El monto es proporcional a los días trabajados del año (365 o 366) sobre los días de aguinaldo que da la LFT."
     estado: NUEVA
     fase: 4
     parametros: [LFT_AGUINALDO_DIAS]
@@ -573,6 +627,9 @@ reglas:
 
   - id: R-126
     nombre: ISR del aguinaldo (art. 96 y RLISR 174)
+    citas: [{ley: "LISR", articulo: "93"}, {ley: "LISR", articulo: "96"}]
+    que_dice: "El aguinaldo paga ISR solo por lo que pasa del exento, y el cálculo puede hacerse con el procedimiento del art. 174 del reglamento."
+    correcto_si: "El exento es el número de UMA del art. 93 con la UMA de la fecha de pago, y el ISR del excedente sale de la tarifa del art. 96."
     estado: NUEVA
     fase: 4
     parametros: [EXENTO_AGUINALDO_IMPORTE, ISR_TARIFA_MENSUAL]
@@ -591,6 +648,9 @@ reglas:
 
   - id: R-128
     nombre: Cuotas IMSS e Infonavit
+    citas: [{ley: "LSS", articulo: "25"}, {ley: "LSS", articulo: "106"}, {ley: "LSS", articulo: "107"}]
+    que_dice: "Las cuotas del IMSS se calculan por ramo sobre el salario base de cotización, con una parte del patrón y otra del trabajador."
+    correcto_si: "Cada ramo usa su porcentaje vigente a la fecha sobre el salario base de cotización con su tope, y la cuota fija de enfermedad y maternidad sale de la UMA."
     estado: NUEVA
     fase: 4
     parametros: [IMSS_EYM_CUOTA_FIJA_PATRON, IMSS_EYM_EXCEDENTE_PATRON, IMSS_EYM_EXCEDENTE_OBRERO, IMSS_PD_PATRON, IMSS_PD_OBRERO, IMSS_GMP_PATRON, IMSS_GMP_OBRERO, IMSS_IV_PATRON, IMSS_IV_OBRERO, IMSS_GUARDERIAS_PATRON, IMSS_RETIRO_PATRON, IMSS_CEAV_OBRERO, IMSS_CEAV_PATRON_TABLA, INFONAVIT_APORTACION_PATRON, SBC_TOPE_IMPORTE, UMA_DIARIA, SM_GENERAL_DIARIO]
@@ -601,6 +661,9 @@ reglas:
 
   - id: R-130
     nombre: SBC con factor de integración por antigüedad
+    citas: [{ley: "LSS", articulo: "27"}, {ley: "LSS", articulo: "28"}, {ley: "LFT", articulo: "76"}, {ley: "LFT", articulo: "80"}, {ley: "LFT", articulo: "87"}]
+    que_dice: "El salario base de cotización cambia con la antigüedad porque cambian los días de vacaciones, y con ellos el factor de integración."
+    correcto_si: "El factor sale de la tabla de vacaciones, el aguinaldo y la prima vacacional de la LFT según los años de servicio, y el salario no pasa del tope de la LSS."
     estado: NUEVA
     fase: 4
     parametros: [LFT_VACACIONES_TABLA, LFT_AGUINALDO_DIAS, LFT_PRIMA_VACACIONAL_PCT, SBC_TOPE_IMPORTE]
@@ -626,6 +689,9 @@ reglas:
 
   - id: R-133
     nombre: PTU, tope individual
+    citas: [{ley: "LFT", articulo: "117"}, {ley: "LFT", articulo: "127"}, {ley: "LISR", articulo: "93"}]
+    que_dice: "El reparto de utilidades a cada trabajador tiene un límite: tres meses de salario o el promedio de lo recibido en los últimos años."
+    correcto_si: "El monto individual no pasa del tope de la LFT y la parte exenta de ISR es la que fija el art. 93."
     estado: NUEVA
     fase: 4
     parametros: [PTU_PCT, PTU_TOPE_MESES_SALARIO, EXENTO_PTU_IMPORTE]
@@ -636,6 +702,9 @@ reglas:
 
   - id: R-134
     nombre: Finiquito y liquidación (ISR por separación)
+    citas: [{ley: "LISR", articulo: "93"}, {ley: "LFT", articulo: "50"}, {ley: "LFT", articulo: "162"}]
+    que_dice: "En un finiquito o liquidación, la indemnización y la prima de antigüedad están exentas hasta cierto número de UMA por cada año de servicio; lo que lo pasa paga ISR."
+    correcto_si: "El exento es el número de UMA por año de servicio que fija el art. 93 y solo el excedente paga ISR; la indemnización y la prima salen de la LFT."
     estado: NUEVA
     fase: 4
     parametros: [EXENTO_SEPARACION_IMPORTE_ANUAL, ISR_TARIFA_MENSUAL, LFT_PRIMA_ANTIGUEDAD_DIAS, LFT_PRIMA_ANTIGUEDAD_TOPE_SM, LFT_INDEMNIZACION_DIAS]
@@ -658,6 +727,9 @@ reglas:
 
   - id: R-136
     nombre: Vacaciones y jornada
+    citas: [{ley: "LFT", articulo: "76"}, {ley: "LFT", articulo: "61"}]
+    que_dice: "Los días de vacaciones suben con la antigüedad según la tabla de la LFT, y la jornada máxima baja por etapas conforme a la reforma."
+    correcto_si: "Los días de vacaciones salen de la tabla de la LFT por años de servicio y la jornada máxima de la semana es la vigente a la fecha."
     estado: NUEVA
     fase: 4
     parametros: [LFT_VACACIONES_TABLA, LFT_JORNADA_MAX_SEMANAL]
@@ -669,6 +741,9 @@ reglas:
 
   - id: R-137
     nombre: Plazo del complemento de pago
+    citas: [{ley: "RMF", articulo: "2.7.1.32", anio: "2026"}]
+    que_dice: "El complemento de pago se emite a más tardar el día 5 del mes siguiente al pago."
+    correcto_si: "El plazo se cuenta desde la fecha de pago del complemento y vence el día 5 natural del mes siguiente."
     estado: OK
     fase: 2
     parametros: [REP_DIA_LIMITE]
@@ -800,7 +875,7 @@ reglas:
     citas: [{ley: LISR, articulo: "113-a"}, {ley: LISR, articulo: "113-b"}, {ley: LISR, articulo: "113-c"}, {ley: LIVA, articulo: "18-j"}, {ley: LIF2026, articulo: "25"}]
     que_dice: "La plataforma te retiene ISR según tu actividad y la mitad del IVA; si no le das tu RFC te retiene más; esa retención es un pago provisional, salvo que optes y calificas para que sea definitivo."
     correcto_si: "Las personas físicas usan la tasa de su actividad y las personas morales la suya; sin RFC se retiene la tasa máxima de ISR y todo el IVA; la retención es definitiva solo si la persona física optó y sus ingresos del año anterior no pasaron del tope."
-    hallazgo: "R-118 y PLATAFORMAS_ISR_TABLA mezclan dos casos: el 2.5 % de enajenación y servicios es de las personas morales (LIF 2026 art. 25 fr. VI); a las personas físicas la LISR 113-A les retiene 1 %. Esta regla los separa. Todos los parámetros nuevos quedan por_confirmar hasta cotejar con el DOF: el texto de la LISR en la biblioteca trae como última reforma el 01-abr-2024 y falta descartar una reforma posterior. La opción de pago definitivo exige además que la persona física solo tenga ingresos de plataformas (más salarios o intereses): eso lo valida la app, no la calculadora."
+    hallazgo: "R-118 y PLATAFORMAS_ISR_TABLA mezclan dos casos: el 2.5 % de enajenación y servicios es de las personas morales (LIF 2026 art. 25 fr. VI); a las personas físicas la LISR 113-A les retiene 1 %. Esta regla los separa. Todos los parámetros nuevos quedan por_confirmar hasta que una persona los confirme en el DOF: el texto de la LISR trae como última reforma el 01-abr-2024; el barrido del DOF no encontró decretos posteriores y la LIF 2026 art. 25 fr. VI remite al 113-A fr. III como vigente (consistente), pero eso es evidencia, no prueba. La opción de pago definitivo exige además que la persona física solo tenga ingresos de plataformas (más salarios o intereses): eso lo valida la app, no la calculadora."
     casos:
       - {nombre: "PF transporte o entrega: 2.1 % del ingreso y 50 % del IVA", fecha: "2026-06-30", entradas: {contribuyente: pf, actividad: transporte_entrega, ingresos: "10000", iva_trasladado: "1600"}, esperado: {tasa: "2.1", isr_retenido: "210.00", iva_retenido: "800.00", pago_definitivo: "no"}}
       - {nombre: "PF hospedaje: 4 %", fecha: "2026-06-30", entradas: {contribuyente: pf, actividad: hospedaje, ingresos: "10000", iva_trasladado: "1600"}, esperado: {tasa: "4", isr_retenido: "400.00", iva_retenido: "800.00", pago_definitivo: "no"}}

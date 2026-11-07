@@ -1319,7 +1319,7 @@ parametros:
           - ["hospedaje", "4"]
           - ["enajenacion_servicios", "1"]
           - ["sin_rfc", "20"]
-    nota: "Antes de 2021 aplicaba otro texto del art. 113-A (no cargado). Falta cotejar con el DOF que no haya reforma posterior: el PDF de la Cámara trae como última reforma el 01-abr-2024."
+    nota: "Antes de 2021 aplicaba otro texto del art. 113-A (no cargado). El PDF de la Cámara trae como última reforma el 01-abr-2024. El barrido del DOF (docs/HALLAZGOS_DOF.md) no encontró decretos que reformen la LISR después de esa fecha, y la LIF 2026 art. 25 fr. VI remite a la fracción III del art. 113-A como vigente; es evidencia, no prueba: queda por_confirmar hasta que una persona lo confirme en el DOF."
   PLATAFORMAS_ISR_PM_TABLA:
     nombre: Retención de ISR a personas morales por plataformas digitales (enajenación de bienes y servicios)
     tipo: tabla

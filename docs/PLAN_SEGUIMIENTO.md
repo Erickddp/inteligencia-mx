@@ -142,3 +142,10 @@ Hallazgo por verificar: la sesión de factureedp reporta, con datos de Banxico d
 - La RMF 2026 tiene **cuatro** modificaciones publicadas (9-jul, 1-oct, 2-oct y 30-oct), no tres; ninguna está en la biblioteca.
 - El Vigía detecta decretos «ómnibus» y lee su texto: el del 1-abr-2024 reformó el art. 79 de la LISR con un título que no la nombra.
 - Pendiente de Rick: abrir hosts de Chihuahua (ISN y Código Fiscal del Estado), y decidir PR único o por tema.
+
+## Actualización 7-nov-2026 (noche)
+
+- **Código agrupador del SAT** (R-163 y R-164): catálogo de 1,075 renglones por_confirmar (versión de dic-2014; falta el Anexo 24 de la RMF 2026, que no se pudo descargar) y mapa de los conceptos de las pólizas. Cuatro cuentas de Timbra no coinciden con el SAT (docs/POLIZAS_TIPO.md).
+- **Citas estructuradas:** 47 de 99 reglas ya traen `citas`, `que_dice` y `correcto_si`, todas verificadas contra la biblioteca. Quedan sin citas las que no tienen fundamento en la biblioteca (frontera, ISN, Anexo 8, decretos) y las de diseño.
+- **Plataformas (R-160):** el barrido del DOF no encontró reformas a la LISR posteriores al 01-abr-2024; las tasas siguen por_confirmar hasta que una persona lo confirme en el DOF.
+- **Pendiente:** Anexo 24 vigente, cotejo humano de las tasas, 621, frontera, finiquito (método del ISR), ISN por estado y Chihuahua (sin acceso a las fuentes), separar el IMSS obrero y patronal en R-155.
