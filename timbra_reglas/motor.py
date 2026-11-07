@@ -504,6 +504,111 @@ def calc_reforma_pendiente(b, f, id):
     return b.detalle(id, f).get("reforma_pendiente", {}).get("valor", "ninguna")
 
 
+def calc_isr_plataformas(b, f, contribuyente, actividad, ingresos, iva_trasladado="0", con_rfc="si",
+                         opta_definitivo="no", ingresos_ejercicio_anterior="0"):
+    """Retención de la plataforma digital (régimen 625). Personas físicas: LISR 113-A (tasa por actividad), 113-C fr. IV
+    (20 % sin RFC) y LIVA 18-J fr. II a) (50 % del IVA; 100 % sin RFC). Personas morales: LIF 2026 art. 25 fr. VI (2.5 %,
+    20 % sin RFC), sin retención de IVA. Es pago definitivo solo si la persona física optó (LISR 113-B) y sus ingresos del
+    ejercicio anterior no pasaron del tope."""
+    base, iva = D(ingresos), D(iva_trasladado)
+    if contribuyente == "pf":
+        tasas = {a: t for a, t in b.valor("PLATAFORMAS_ISR_PF_TABLA", f)}
+        tasa = tasas["sin_rfc"] if con_rfc == "no" else tasas[actividad]
+        pct_iva = D(100) if con_rfc == "no" else b.valor("PLATAFORMAS_IVA_RET_PCT", f)
+        definitivo = opta_definitivo == "si" and D(ingresos_ejercicio_anterior) <= b.valor("PLATAFORMAS_PD_TOPE_ANUAL", f)
+    elif contribuyente == "pm":
+        if actividad != "enajenacion_servicios":
+            raise ValueError("Para personas morales solo está cargada la enajenación de bienes y servicios (LIF 2026 art. 25 fr. VI)")
+        tasas = {a: t for a, t in b.valor("PLATAFORMAS_ISR_PM_TABLA", f)}
+        tasa = tasas["sin_rfc"] if con_rfc == "no" else tasas["enajenacion_servicios"]
+        pct_iva, definitivo = D(0), False
+    else:
+        raise ValueError("contribuyente debe ser pf o pm")
+    return {"tasa": str(tasa), "isr_retenido": str(red(base * tasa / 100)), "iva_retenido": str(red(iva * pct_iva / 100)),
+            "pago_definitivo": "si" if definitivo else "no"}
+
+
+# ---------- series de datos (INPC, tipo de cambio): se leen por fecha, igual que los parámetros ----------
+def dir_series() -> Path:
+    """Carpeta con las series (inpc.yaml...): TIMBRA_REGLAS_SERIES, junto al motor (paquete plano), ./series (instalado
+    con pip) o ../series (repo clonado)."""
+    env = os.environ.get("TIMBRA_REGLAS_SERIES")
+    candidatas = ([Path(env)] if env else []) + [AQUI / "series", AQUI.parent / "series", AQUI]
+    for c in candidatas:
+        if (c / "inpc.yaml").is_file():
+            return c
+    raise SinValor("No encontré la carpeta de series (inpc.yaml): " + ", ".join(str(c) for c in candidatas))
+
+
+def _carga_serie(sid, carpeta=None):
+    p = Path(carpeta or dir_series()) / f"{sid.lower()}.yaml"
+    if not p.is_file():
+        raise SinValor(f"{sid}: no hay archivo de serie ({p.name})")
+    return yaml.safe_load(p.read_text(encoding="utf-8"))["valores"]
+
+
+def serie(sid, fecha, carpeta=None):
+    """Valor de una serie en una fecha. La llave es el día (AAAA-MM-DD) o, si la serie es mensual, el mes (AAAA-MM).
+    Si no hay dato, SinValor: la app avisa y no inventa."""
+    v = _carga_serie(sid, carpeta)
+    for llave in (fecha, fecha[:7]):
+        if llave in v:
+            return D(str(v[llave]["valor"]))
+    raise SinValor(f"{sid}: no hay valor para {fecha}")
+
+
+def _mes_anterior(fecha):
+    y, m = int(fecha[:4]), int(fecha[5:7])
+    return f"{y - 1}-12" if m == 1 else f"{y}-{m - 1:02d}"
+
+
+def calc_actualizacion_inpc(b, f, monto, desde, hasta):
+    """CFF 17-A con el INPC real de la serie: factor = INPC del mes anterior al más reciente del periodo (el del pago) entre
+    el INPC del mes anterior al más antiguo (el del vencimiento); si es menor que 1, es 1. Si el índice del mes anterior al
+    más reciente aún no se publica, se usa el último publicado."""
+    v = _carga_serie("INPC")
+    mes_antiguo, mes_reciente = _mes_anterior(desde), _mes_anterior(hasta)
+    if mes_antiguo not in v:
+        raise SinValor(f"INPC: no hay índice para {mes_antiguo}")
+    if mes_reciente not in v:
+        ultimo = max(v)
+        if mes_reciente < ultimo:
+            raise SinValor(f"INPC: no hay índice para {mes_reciente}")
+        mes_reciente = ultimo
+    antiguo, reciente = D(str(v[mes_antiguo]["valor"])), D(str(v[mes_reciente]["valor"]))
+    dec = int(b.valor("ACTUALIZACION_FACTOR_DECIMALES", f))
+    factor = red(max(reciente / antiguo, D(1)), dec)
+    actualizado = red(D(monto) * factor)
+    return {"inpc_antiguo": f"{mes_antiguo} {antiguo}", "inpc_reciente": f"{mes_reciente} {reciente}", "factor": str(factor),
+            "actualizacion": str(red(actualizado - D(monto))), "monto_actualizado": str(actualizado)}
+
+
+def calc_actualizacion_y_recargos(b, f, monto, vencimiento, pago):
+    """Pago tardío: actualización con INPC real (CFF 17-A) y recargos sobre el monto actualizado (CFF 21)."""
+    act = calc_actualizacion_inpc(b, f, monto, vencimiento, pago)
+    rec = calc_recargos(b, f, act["monto_actualizado"], vencimiento, pago)
+    return {"factor": act["factor"], "monto_actualizado": act["monto_actualizado"], "meses": rec["meses"],
+            "tasa_total": rec["tasa_total"], "recargos": rec["recargos"],
+            "total": str(D(act["monto_actualizado"]) + D(rec["recargos"]))}
+
+
+# ---------- anual de personas morales ----------
+def calc_isr_anual_pm(b, f, ingresos_acumulables, deducciones_autorizadas, ptu_pagada="0", perdidas_anteriores="0",
+                      pagos_provisionales="0", retenciones="0"):
+    """LISR 9: utilidad fiscal = ingresos acumulables menos deducciones y PTU pagada; resultado fiscal = utilidad menos pérdidas
+    de ejercicios anteriores (LISR 57); ISR = tasa de personas morales × resultado fiscal; se acreditan los pagos
+    provisionales y las retenciones del ejercicio (LISR 14). `perdidas_anteriores` entra ya actualizada y vigente (10 ejercicios)."""
+    utilidad = D(ingresos_acumulables) - D(deducciones_autorizadas) - D(ptu_pagada)
+    perdidas = D(perdidas_anteriores)
+    resultado = max(utilidad - perdidas, D(0))
+    isr = red(resultado * b.valor("ISR_PM_TASA", f) / 100)
+    acreditable = D(pagos_provisionales) + D(retenciones)
+    por_amortizar = max(perdidas - max(utilidad, D(0)), D(0)) + max(-utilidad, D(0))
+    return {"utilidad_fiscal": str(red(utilidad)), "resultado_fiscal": str(red(resultado)), "isr": str(isr),
+            "a_cargo": str(red(max(isr - acreditable, D(0)))), "saldo_a_favor": str(red(max(acreditable - isr, D(0)))),
+            "perdidas_por_amortizar": str(red(por_amortizar))}
+
+
 # ---------- pólizas tipo: «evento → cargos y abonos por concepto» (criterio contable, no cifras de ley) ----------
 # Los conceptos son nombres estables (clientes, iva_trasladado_no_cobrado...), no números de cuenta: cada app
 # los apunta a su propio catálogo, idealmente al código agrupador del SAT. Toda póliza debe cuadrar.

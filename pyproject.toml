@@ -18,14 +18,16 @@ timbra-reglas = "timbra_reglas.motor:cli"
 inteligencia-mx = "timbra_reglas.motor:cli"
 
 [tool.setuptools]
-packages = ["timbra_reglas", "timbra_reglas.base"]
+packages = ["timbra_reglas", "timbra_reglas.base", "timbra_reglas.series"]
 
 [tool.setuptools.package-dir]
 timbra_reglas = "timbra_reglas"
 "timbra_reglas.base" = "base"
+"timbra_reglas.series" = "series"
 
 [tool.setuptools.package-data]
 "timbra_reglas.base" = ["parametros.yaml", "reglas.yaml"]
+"timbra_reglas.series" = ["*.yaml"]
 
 [tool.setuptools.dynamic]
 version = {attr = "timbra_reglas.motor.VERSION_MOTOR"}

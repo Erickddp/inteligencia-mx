@@ -109,6 +109,7 @@ def main():
     a.add_argument("--notas")
     a.add_argument("--changelog", action="store_true", help="agrega la entrada de esta versión a CHANGELOG.md")
     x = a.parse_args()
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     raiz, out, v = Path(x.raiz).resolve(), Path(x.out), x.version
 
     sube_version(raiz, v)

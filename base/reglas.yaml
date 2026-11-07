@@ -522,6 +522,7 @@ reglas:
     citas: [{ley: LISR, articulo: "113-a"}, {ley: LISR, articulo: "113-c"}, {ley: LIVA, articulo: "18-j"}]
     que_dice: "Las plataformas digitales retienen ISR e IVA a quienes venden o prestan servicios por ellas: el ISR depende del tipo de actividad y de si diste tu RFC, y el IVA es un porcentaje del IVA trasladado."
     correcto_si: "La tasa de ISR corresponde a la actividad y al RFC dado a la plataforma, y la retención de IVA es el porcentaje de ley sobre el IVA trasladado."
+    hallazgo: "Ojo: este cálculo usa PLATAFORMAS_ISR_TABLA, que mezcla dos casos: el 2.5 % de enajenación y servicios es de las personas morales (LIF 2026 art. 25 fr. VI) y a las personas físicas la LISR 113-A les retiene 1 %. Usa R-160 (isr_plataformas), que los separa; esta regla queda por compatibilidad."
     estado: NUEVA
     fase: 3
     parametros: [PLATAFORMAS_ISR_TABLA, PLATAFORMAS_IVA_RET_PCT]
@@ -780,3 +781,63 @@ reglas:
     casos:
       - {nombre: "Nómina con ISR, cuota obrera y cuotas patronales", fecha: "2026-06-30", entradas: {percepciones: "10000", isr_retenido: "850", imss_obrero: "250", imss_patron: "1500", infonavit_patron: "500"}, esperado: "D aportaciones_infonavit 500.00; D cuotas_patronales 1500.00; D sueldos_y_salarios 10000.00; H bancos 8900.00; H imss_por_pagar 1750.00; H infonavit_por_pagar 500.00; H isr_retenido_por_pagar 850.00"}
       - {nombre: "Límite: sin retenciones ni cuotas, el neto es todo", fecha: "2026-06-30", entradas: {percepciones: "6000"}, esperado: "D sueldos_y_salarios 6000.00; H bancos 6000.00"}
+
+  # ───────────── H. Plataformas digitales (625) ─────────────
+  - id: R-160
+    nombre: "Plataformas digitales (625): retención de ISR e IVA, pago definitivo y sin RFC"
+    estado: NUEVA
+    fase: 3
+    parametros: [PLATAFORMAS_ISR_PF_TABLA, PLATAFORMAS_ISR_PM_TABLA, PLATAFORMAS_IVA_RET_PCT, PLATAFORMAS_PD_TOPE_ANUAL]
+    calculadora: isr_plataformas
+    fuente: "LISR art. 113-A, 113-B y 113-C; LIVA art. 18-J; LIF 2026 art. 25 fr. VI (texto de la Cámara; sin cotejar con el DOF)"
+    citas: [{ley: LISR, articulo: "113-a"}, {ley: LISR, articulo: "113-b"}, {ley: LISR, articulo: "113-c"}, {ley: LIVA, articulo: "18-j"}, {ley: LIF2026, articulo: "25"}]
+    que_dice: "La plataforma te retiene ISR según tu actividad y la mitad del IVA; si no le das tu RFC te retiene más; esa retención es un pago provisional, salvo que optes y calificas para que sea definitivo."
+    correcto_si: "Las personas físicas usan la tasa de su actividad y las personas morales la suya; sin RFC se retiene la tasa máxima de ISR y todo el IVA; la retención es definitiva solo si la persona física optó y sus ingresos del año anterior no pasaron del tope."
+    hallazgo: "R-118 y PLATAFORMAS_ISR_TABLA mezclan dos casos: el 2.5 % de enajenación y servicios es de las personas morales (LIF 2026 art. 25 fr. VI); a las personas físicas la LISR 113-A les retiene 1 %. Esta regla los separa. Todos los parámetros nuevos quedan por_confirmar hasta cotejar con el DOF: el texto de la LISR en la biblioteca trae como última reforma el 01-abr-2024 y falta descartar una reforma posterior. La opción de pago definitivo exige además que la persona física solo tenga ingresos de plataformas (más salarios o intereses): eso lo valida la app, no la calculadora."
+    casos:
+      - {nombre: "PF transporte o entrega: 2.1 % del ingreso y 50 % del IVA", fecha: "2026-06-30", entradas: {contribuyente: pf, actividad: transporte_entrega, ingresos: "10000", iva_trasladado: "1600"}, esperado: {tasa: "2.1", isr_retenido: "210.00", iva_retenido: "800.00", pago_definitivo: "no"}}
+      - {nombre: "PF hospedaje: 4 %", fecha: "2026-06-30", entradas: {contribuyente: pf, actividad: hospedaje, ingresos: "10000", iva_trasladado: "1600"}, esperado: {tasa: "4", isr_retenido: "400.00", iva_retenido: "800.00", pago_definitivo: "no"}}
+      - {nombre: "PF enajenación de bienes y servicios: 1 %", fecha: "2026-06-30", entradas: {contribuyente: pf, actividad: enajenacion_servicios, ingresos: "10000", iva_trasladado: "1600"}, esperado: {tasa: "1", isr_retenido: "100.00", iva_retenido: "800.00", pago_definitivo: "no"}}
+      - {nombre: "PF sin RFC: ISR al 20 % e IVA al 100 %", fecha: "2026-06-30", entradas: {contribuyente: pf, actividad: enajenacion_servicios, ingresos: "10000", iva_trasladado: "1600", con_rfc: "no"}, esperado: {tasa: "20", isr_retenido: "2000.00", iva_retenido: "1600.00", pago_definitivo: "no"}}
+      - {nombre: "Definitivo en el límite: ingresos del año anterior exactamente 300,000", fecha: "2026-06-30", entradas: {contribuyente: pf, actividad: enajenacion_servicios, ingresos: "10000", iva_trasladado: "1600", opta_definitivo: "si", ingresos_ejercicio_anterior: "300000"}, esperado: {tasa: "1", isr_retenido: "100.00", iva_retenido: "800.00", pago_definitivo: "si"}}
+      - {nombre: "Un centavo arriba del tope: ya no puede ser definitivo", fecha: "2026-06-30", entradas: {contribuyente: pf, actividad: enajenacion_servicios, ingresos: "10000", iva_trasladado: "1600", opta_definitivo: "si", ingresos_ejercicio_anterior: "300000.01"}, esperado: {tasa: "1", isr_retenido: "100.00", iva_retenido: "800.00", pago_definitivo: "no"}}
+      - {nombre: "Redondeo: 1 % de 1,234.56 y 50 % de 197.53", fecha: "2026-06-30", entradas: {contribuyente: pf, actividad: enajenacion_servicios, ingresos: "1234.56", iva_trasladado: "197.53"}, esperado: {tasa: "1", isr_retenido: "12.35", iva_retenido: "98.77", pago_definitivo: "no"}}
+      - {nombre: "PM enajenación y servicios: 2.5 % y sin retención de IVA", fecha: "2026-06-30", entradas: {contribuyente: pm, actividad: enajenacion_servicios, ingresos: "10000", iva_trasladado: "1600"}, esperado: {tasa: "2.5", isr_retenido: "250.00", iva_retenido: "0.00", pago_definitivo: "no"}}
+      - {nombre: "PM sin RFC: 20 %", fecha: "2026-06-30", entradas: {contribuyente: pm, actividad: enajenacion_servicios, ingresos: "10000", iva_trasladado: "1600", con_rfc: "no"}, esperado: {tasa: "20", isr_retenido: "2000.00", iva_retenido: "0.00", pago_definitivo: "no"}}
+      - {nombre: "PM en 2027: la LIF 2026 venció y la 2027 aún no está en el DOF", fecha: "2027-01-15", entradas: {contribuyente: pm, actividad: enajenacion_servicios, ingresos: "10000", iva_trasladado: "1600"}, espera_error: SinValor}
+
+  # ───────────── I. Anual de personas morales y actualización con INPC real ─────────────
+  - id: R-161
+    nombre: "Declaración anual de personas morales: resultado fiscal, ISR del ejercicio y pagos provisionales acreditables"
+    estado: NUEVA
+    fase: 3
+    parametros: [ISR_PM_TASA]
+    calculadora: isr_anual_pm
+    fuente: "LISR art. 9, 14 y 57 (texto de la Cámara; sin cotejar con el DOF)"
+    citas: [{ley: LISR, articulo: "9"}, {ley: LISR, articulo: "14"}, {ley: LISR, articulo: "57"}]
+    que_dice: "La persona moral resta de sus ingresos acumulables las deducciones y la PTU pagada, luego las pérdidas de años anteriores, y al resultado fiscal le aplica la tasa; después acredita los pagos provisionales y las retenciones del año."
+    correcto_si: "La utilidad fiscal resta deducciones y PTU pagada; las pérdidas anteriores solo bajan la utilidad y nunca la vuelven negativa; el ISR sale de la tasa de personas morales sobre el resultado fiscal; lo acreditable (pagos provisionales y retenciones) puede dar impuesto a cargo o saldo a favor."
+    hallazgo: "Reemplaza el renglón de R-104 para personas morales. Límites: `perdidas_anteriores` debe entrar ya actualizada y dentro de los diez ejercicios (LISR 57; la app lo valida); no modela el ajuste anual por inflación, la renta gravable de la PTU (LISR 9 último párrafo) ni el impuesto por dividendos (LISR 10). Pendiente ubicar el párrafo expreso que acredita los pagos provisionales contra el impuesto anual: hoy se apoya en LISR 14, que los hace acreditables."
+    casos:
+      - {nombre: "Utilidad 280,000 con PTU pagada: ISR 84,000 y a cargo 24,000 tras 60,000 de pagos provisionales", fecha: "2026-12-31", entradas: {ingresos_acumulables: "1000000", deducciones_autorizadas: "700000", ptu_pagada: "20000", pagos_provisionales: "60000"}, esperado: {utilidad_fiscal: "280000.00", resultado_fiscal: "280000.00", isr: "84000.00", a_cargo: "24000.00", saldo_a_favor: "0.00", perdidas_por_amortizar: "0.00"}}
+      - {nombre: "Con pérdidas anteriores de 100,000: salen 180,000 y queda saldo a favor", fecha: "2026-12-31", entradas: {ingresos_acumulables: "1000000", deducciones_autorizadas: "700000", ptu_pagada: "20000", perdidas_anteriores: "100000", pagos_provisionales: "60000"}, esperado: {utilidad_fiscal: "280000.00", resultado_fiscal: "180000.00", isr: "54000.00", a_cargo: "0.00", saldo_a_favor: "6000.00", perdidas_por_amortizar: "0.00"}}
+      - {nombre: "Límite: la utilidad es exactamente igual a las pérdidas; el resultado fiscal es cero", fecha: "2026-12-31", entradas: {ingresos_acumulables: "500000", deducciones_autorizadas: "400000", perdidas_anteriores: "100000"}, esperado: {utilidad_fiscal: "100000.00", resultado_fiscal: "0.00", isr: "0.00", a_cargo: "0.00", saldo_a_favor: "0.00", perdidas_por_amortizar: "0.00"}}
+      - {nombre: "Pérdida del ejercicio: se suma a las anteriores y los provisionales quedan a favor", fecha: "2026-12-31", entradas: {ingresos_acumulables: "300000", deducciones_autorizadas: "450000", perdidas_anteriores: "50000", pagos_provisionales: "5000"}, esperado: {utilidad_fiscal: "-150000.00", resultado_fiscal: "0.00", isr: "0.00", a_cargo: "0.00", saldo_a_favor: "5000.00", perdidas_por_amortizar: "200000.00"}}
+      - {nombre: "Con retenciones del ejercicio además de pagos provisionales", fecha: "2026-12-31", entradas: {ingresos_acumulables: "1000000", deducciones_autorizadas: "700000", ptu_pagada: "20000", pagos_provisionales: "60000", retenciones: "10000"}, esperado: {utilidad_fiscal: "280000.00", resultado_fiscal: "280000.00", isr: "84000.00", a_cargo: "14000.00", saldo_a_favor: "0.00", perdidas_por_amortizar: "0.00"}}
+  - id: R-162
+    nombre: "Actualización con INPC real (CFF 17-A) y recargos sobre el monto actualizado (CFF 21)"
+    estado: NUEVA
+    fase: 2
+    parametros: [ACTUALIZACION_FACTOR_DECIMALES, RECARGOS_MORA_MENSUAL]
+    calculadora: actualizacion_inpc
+    fuente: "CFF art. 17-A y 21; INPC del DOF (series/inpc.yaml, cotejado con Banxico)"
+    citas: [{ley: CFF, articulo: "17-a"}, {ley: CFF, articulo: "21"}]
+    que_dice: "Lo que pagas tarde se actualiza con el INPC del mes anterior al del pago entre el del mes anterior al del vencimiento, y sobre esa cantidad actualizada se calculan los recargos."
+    correcto_si: "El factor nunca baja de 1; si el índice del mes anterior al pago aún no se publica se usa el último publicado; los recargos se calculan sobre el monto ya actualizado."
+    hallazgo: "El número de decimales del factor (cuatro) sigue por_confirmar. La serie viaja con el paquete de pip y en el repo, pero NO en el paquete plano de 4 archivos del release: una app que vendorice solo esos 4 debe apuntar TIMBRA_REGLAS_SERIES a una copia de series/. Para fechas anteriores a oct-2021 no hay INPC cargado y la calculadora avisa en lugar de inventar."
+    casos:
+      - {nombre: "Vence 17-mar-2025, paga 10-feb-2026: INPC de ene-2026 entre el de feb-2025", fecha: "2026-02-10", entradas: {monto: "10000", desde: "2025-03-17", hasta: "2026-02-10"}, esperado: {inpc_antiguo: "2025-02 138.726", inpc_reciente: "2026-01 143.588", factor: "1.0350", actualizacion: "350.00", monto_actualizado: "10350.00"}}
+      - {nombre: "Límite: pago en el mismo mes del vencimiento, factor 1", fecha: "2026-01-30", entradas: {monto: "10000", desde: "2026-01-17", hasta: "2026-01-30"}, esperado: {inpc_antiguo: "2025-12 143.042", inpc_reciente: "2025-12 143.042", factor: "1.0000", actualizacion: "0.00", monto_actualizado: "10000.00"}}
+      - {nombre: "El índice del mes anterior al pago no se ha publicado: se usa el último (sep-2026)", fecha: "2026-11-20", entradas: {monto: "10000", desde: "2026-01-17", hasta: "2026-11-20"}, esperado: {inpc_antiguo: "2025-12 143.042", inpc_reciente: "2026-09 146.075", factor: "1.0212", actualizacion: "212.00", monto_actualizado: "10212.00"}}
+      - {nombre: "Antes de oct-2021 no hay INPC cargado: avisa y no calcula", fecha: "2026-11-05", entradas: {monto: "10000", desde: "2021-09-17", hasta: "2026-02-10"}, espera_error: SinValor}
+      - {nombre: "Actualización y recargos juntos: vence 19-ene, paga 20-abr-2026 = 4 meses de recargos", fecha: "2026-04-20", calculadora: actualizacion_y_recargos, entradas: {monto: "10000", vencimiento: "2026-01-19", pago: "2026-04-20"}, esperado: {factor: "1.0175", monto_actualizado: "10175.00", meses: "4", tasa_total: "8.28", recargos: "842.49", total: "11017.49"}}

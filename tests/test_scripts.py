@@ -140,6 +140,7 @@ def test_release_publica_los_cuatro_archivos_con_nombre_plano_ademas_del_sufijo(
     for f in (RAIZ / "timbra_reglas").glob("*.py"):
         shutil.copy(f, raiz / "timbra_reglas" / f.name)
     shutil.copytree(RAIZ / "scripts", raiz / "scripts")
+    shutil.copytree(RAIZ / "series", raiz / "series")
     out = tmp_path / "out"
     r = subprocess.run([sys.executable, str(raiz / "scripts" / "release.py"), "--raiz", str(raiz), "--version", "9.9.9", "--out", str(out)],
                        capture_output=True, text=True, env={**__import__("os").environ, "PYTHONPATH": str(raiz)})

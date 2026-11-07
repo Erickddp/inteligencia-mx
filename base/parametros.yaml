@@ -1303,3 +1303,44 @@ parametros:
           - ["212821.01", "283761.32", "51318.46", "32.00"]
           - ["283761.33", "851283.98", "74019.38", "34.00"]
           - ["851283.99", null, "266977.08", "35.00"]
+
+  PLATAFORMAS_ISR_PF_TABLA:
+    nombre: Retención de ISR a personas físicas por plataformas digitales, por actividad
+    tipo: tabla
+    columnas: [actividad, tasa]
+    valores:
+      - desde: "2021-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        estado: por_confirmar
+        fuente: "LISR art. 113-A párrafo tercero fracs. I a III y art. 113-C fr. IV (20 % sin RFC); texto de la Cámara de Diputados con reforma DOF 08-dic-2020; sin cotejar con el DOF"
+        valor:
+          - ["transporte_entrega", "2.1"]
+          - ["hospedaje", "4"]
+          - ["enajenacion_servicios", "1"]
+          - ["sin_rfc", "20"]
+    nota: "Antes de 2021 aplicaba otro texto del art. 113-A (no cargado). Falta cotejar con el DOF que no haya reforma posterior: el PDF de la Cámara trae como última reforma el 01-abr-2024."
+  PLATAFORMAS_ISR_PM_TABLA:
+    nombre: Retención de ISR a personas morales por plataformas digitales (enajenación de bienes y servicios)
+    tipo: tabla
+    columnas: [actividad, tasa]
+    valores:
+      - desde: "2026-01-01"
+        hasta: "2026-12-31"
+        estado: por_confirmar
+        fuente: "LIF 2026 art. 25 fr. VI (en sustitución de la tasa de LISR art. 113-A párrafo tercero fr. III); texto de la Cámara de Diputados, sin cotejar con el DOF"
+        valor:
+          - ["enajenacion_servicios", "2.5"]
+          - ["sin_rfc", "20"]
+    nota: "Es acreditable contra el ISR de los pagos provisionales o de la declaración del ejercicio (no es pago definitivo). Vence con la LIF anual: la LIF 2027 está pendiente."
+  PLATAFORMAS_PD_TOPE_ANUAL:
+    nombre: Tope de ingresos del ejercicio anterior para optar por pago definitivo (plataformas digitales)
+    tipo: importe
+    unidad: MXN
+    valores:
+      - valor: "300000"
+        desde: "2020-06-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        estado: por_confirmar
+        fuente: "LISR art. 113-B fr. I y art. 113-A último párrafo; texto de la Cámara de Diputados, sin cotejar con el DOF"
