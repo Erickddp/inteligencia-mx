@@ -29,6 +29,7 @@ La app verifica cada archivo contra `SHA256SUMS` **antes** de copiarlo, y fija e
 | `estados_cambiados` | `{id, desde, antes, despues}` |
 | `reglas_nuevas`, `reglas_quitadas`, `reglas_estado` | Reglas R-xx que entran, salen o cambian de estado |
 | `calculadoras_nuevas` | Nombres de calculadoras que ninguna regla usaba en la versión anterior |
+| `meta_cambiada` | `{id, campo, antes, despues}`: cambios de `citas`, `que_dice` y `correcto_si` (el texto de apoyo del círculo de fundamento; **no** tira firmas) |
 | `firmas_que_se_caen` | `{id, desde, hash_antes}`: exactamente qué firmas deben invalidarse |
 | `ids_afectados` | Todos los IDs tocados (parámetros y reglas) |
 

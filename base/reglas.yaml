@@ -142,6 +142,9 @@ reglas:
   # ───────────── C. ISR por régimen ─────────────
   - id: R-20
     nombre: Provisional 612 con tarifa acumulada oficial
+    citas: [{ley: LISR, articulo: "106"}]
+    que_dice: "En el 612, el pago provisional de febrero a noviembre se calcula con la tabla acumulada oficial del Anexo 8, no con la tarifa mensual multiplicada por los meses."
+    correcto_si: "Enero usa la tarifa mensual, febrero a noviembre la tabla acumulada oficial del mes y diciembre la tarifa anual."
     estado: OK
     fase: 3
     parametros: [ISR_TARIFA_MENSUAL, ISR_TARIFA_ACUMULADA_106, ISR_TARIFA_ANUAL]
@@ -160,6 +163,9 @@ reglas:
     hallazgo: "Falta: predial en la ciega (35% + predial) y la opción de pagos trimestrales cuando las rentas del mes no pasan de 10 UMA mensuales (art. 116)."
   - id: R-22
     nombre: RESICO PF pago mensual
+    citas: [{ley: LISR, articulo: "113-e"}]
+    que_dice: "El RESICO de personas físicas paga una tasa sobre lo cobrado en el mes, y esa tasa sube conforme sube el cobrado mensual."
+    correcto_si: "La tasa corresponde al tramo del cobrado del mes y se aplica a todo lo cobrado; son pagos definitivos mientras no se rebase el tope anual del régimen."
     estado: OK
     fase: 1
     parametros: [RESICO_PF_TABLA, RESICO_PF_TOPE_ANUAL, RESICO_PF_RETENCION_PM]
@@ -439,6 +445,9 @@ reglas:
 
   - id: R-110
     nombre: Provisional 612 (enero = tarifa mensual)
+    citas: [{ley: LISR, articulo: "106"}]
+    que_dice: "En el 612, el pago provisional parte de lo cobrado acumulado, resta lo que la ley permite y aplica la tarifa del mes."
+    correcto_si: "Enero usa la tarifa mensual; de febrero en adelante, la tabla acumulada oficial (R-20); la base ya resta deducciones pagadas, depreciación proporcional, PTU pagada y pérdidas."
     estado: NUEVA
     fase: 3
     parametros: [ISR_TARIFA_MENSUAL]
@@ -450,6 +459,9 @@ reglas:
 
   - id: R-111
     nombre: Provisional 606 con ciega y predial
+    citas: [{ley: LISR, articulo: "115"}, {ley: LISR, articulo: "116"}]
+    que_dice: "En arrendamiento puedes deducir lo que paga la ley o la deducción opcional (ciega) del predial y de los ingresos, y sobre el resto se paga con la tarifa."
+    correcto_si: "El pago provisional mensual usa la tarifa mensual, no la acumulada, y el predial se resta solo si se pagó."
     estado: NUEVA
     fase: 3
     parametros: [ARREND_DEDUCCION_CIEGA_PCT, ISR_TARIFA_MENSUAL]
@@ -472,6 +484,9 @@ reglas:
 
   - id: R-114
     nombre: Provisional 601 con coeficiente y PTU de mayo a diciembre
+    citas: [{ley: LISR, articulo: "14"}, {ley: LISR, articulo: "9"}]
+    que_dice: "En el 601, el pago provisional sale de los ingresos acumulados por el coeficiente de utilidad, menos pérdidas y PTU pagada, por la tasa de las personas morales."
+    correcto_si: "El coeficiente es el del último ejercicio con utilidad y se redondea a cuatro decimales (criterio por confirmar); en el ejercicio de inicio no hay pagos provisionales."
     estado: NUEVA
     fase: 3
     parametros: [ISR_PM_TASA]
@@ -504,6 +519,9 @@ reglas:
 
   - id: R-118
     nombre: Retenciones de plataformas digitales
+    citas: [{ley: LISR, articulo: "113-a"}, {ley: LISR, articulo: "113-c"}, {ley: LIVA, articulo: "18-j"}]
+    que_dice: "Las plataformas digitales retienen ISR e IVA a quienes venden o prestan servicios por ellas: el ISR depende del tipo de actividad y de si diste tu RFC, y el IVA es un porcentaje del IVA trasladado."
+    correcto_si: "La tasa de ISR corresponde a la actividad y al RFC dado a la plataforma, y la retención de IVA es el porcentaje de ley sobre el IVA trasladado."
     estado: NUEVA
     fase: 3
     parametros: [PLATAFORMAS_ISR_TABLA, PLATAFORMAS_IVA_RET_PCT]
@@ -514,6 +532,9 @@ reglas:
 
   - id: R-120
     nombre: Anual personas físicas
+    citas: [{ley: LISR, articulo: "151"}, {ley: LISR, articulo: "152"}]
+    que_dice: "En la declaración anual de personas físicas se restan a los ingresos las deducciones autorizadas y las personales (con su tope) y se aplica la tarifa anual."
+    correcto_si: "Las deducciones personales no pasan del menor entre el tope en UMA anuales y el porcentaje de los ingresos."
     estado: NUEVA
     fase: 3
     parametros: [ISR_TARIFA_ANUAL, DED_PERS_VECES_UMA_ANUAL, DED_PERS_PCT_INGRESO]
@@ -584,6 +605,9 @@ reglas:
 
   - id: R-131
     nombre: Retención por periodicidad con tarifa oficial y subsidio
+    citas: [{ley: LISR, articulo: "96"}]
+    que_dice: "La retención de ISR de sueldos usa la tarifa oficial del periodo de pago (diaria, semanal, decenal, quincenal o mensual) y el subsidio para el empleo cuando corresponde."
+    correcto_si: "La tarifa es la del periodo de pago, no la mensual repartida en días, y el subsidio solo aplica si el ingreso está dentro de su límite."
     estado: NUEVA
     fase: 4
     parametros: [ISR_TARIFA_QUINCENAL, ISR_TARIFA_SEMANAL, ISR_TARIFA_DECENAL, ISR_TARIFA_DIARIA, SUBSIDIO_EMPLEO_MENSUAL, SUBSIDIO_EMPLEO_LIMITE_INGRESO]
@@ -667,3 +691,92 @@ reglas:
       - {nombre: "Semanal = diaria × 7", fecha: "2026-06-30", entradas: {tabla: ISR_TARIFA_SEMANAL, dias: 7}, esperado: "ok"}
       - {nombre: "Decenal = diaria × 10", fecha: "2026-06-30", entradas: {tabla: ISR_TARIFA_DECENAL, dias: 10}, esperado: "ok"}
       - {nombre: "Quincenal = diaria × 15", fecha: "2026-06-30", entradas: {tabla: ISR_TARIFA_QUINCENAL, dias: 15}, esperado: "ok"}
+
+  # ───────────── G. Pólizas tipo: evento → cargos y abonos por concepto ─────────────
+  # Criterio contable, no cifras de ley. Los conceptos son nombres estables (no números de cuenta): cada app los apunta a
+  # su catálogo, idealmente al código agrupador del SAT. Toda póliza cuadra o la calculadora falla. Sin firma de Rick.
+  - id: R-150
+    nombre: "Póliza tipo: CFDI emitido (clientes, ingreso por tasa, IVA trasladado no cobrado)"
+    estado: CRITERIO
+    fase: 4
+    calculadora: poliza_emitido
+    fuente: "CFF art. 28; RCFF art. 33; LIVA art. 1-B; NIF D-1 y C-3 (referencia)"
+    citas: [{ley: CFF, articulo: "28"}, {ley: RCFF, articulo: "33"}, {ley: LIVA, articulo: "1-b"}, {nif: "D-1"}, {nif: "C-3"}]
+    que_dice: "Al emitir una factura, el cliente te debe lo que te va a pagar (total menos lo que te retienen); el ingreso va por tasa y el IVA queda como trasladado hasta que cobres."
+    correcto_si: "La póliza cuadra, el ingreso se separa en gravado, tasa 0 y exento, y el IVA se reconoce como cobrado hasta el cobro."
+    hallazgo: "Retenciones que me hicieron: cargo a ISR retenido por clientes y a IVA retenido por clientes; el cargo a clientes es el total del CFDI, que ya viene neto de ellas."
+    casos:
+      - {nombre: "Servicio gravado 1,000 más IVA 160", fecha: "2026-06-30", entradas: {gravado: "1000", iva: "160"}, esperado: "D clientes 1160.00; H ingreso_gravado 1000.00; H iva_trasladado_no_cobrado 160.00"}
+      - {nombre: "Honorarios a una moral con retenciones (10 % ISR y 2/3 del IVA)", fecha: "2026-06-30", entradas: {gravado: "10000", iva: "1600", isr_retenido: "1000", iva_retenido: "1066.67"}, esperado: "D clientes 9533.33; D isr_retenido_por_clientes 1000.00; D iva_retenido_por_clientes 1066.67; H ingreso_gravado 10000.00; H iva_trasladado_no_cobrado 1600.00"}
+      - {nombre: "Mixto: gravado, tasa 0 y exento en una misma factura", fecha: "2026-06-30", entradas: {gravado: "800", tasa0: "200", exento: "300", iva: "128"}, esperado: "D clientes 1428.00; H ingreso_exento 300.00; H ingreso_gravado 800.00; H ingreso_tasa0 200.00; H iva_trasladado_no_cobrado 128.00"}
+  - id: R-151
+    nombre: "Póliza tipo: cobro (banco o caja, IVA cobrado y diferencia cambiaria)"
+    estado: CRITERIO
+    fase: 4
+    calculadora: poliza_cobro
+    fuente: "LIVA art. 1-B; CFF art. 28; NIF C-3, C-1 y B-15 (referencia)"
+    citas: [{ley: LIVA, articulo: "1-b"}, {ley: CFF, articulo: "28"}, {nif: "C-3"}, {nif: "C-1"}, {nif: "B-15"}]
+    que_dice: "Cuando te pagan, el cliente queda saldado y la parte proporcional del IVA pasa de no cobrado a cobrado; en divisa, lo que sobra o falta contra el banco es utilidad o pérdida cambiaria."
+    correcto_si: "El IVA se reclasifica en la proporción efectivamente cobrada y el cobro en efectivo va a Caja; la diferencia contra los pesos del CFDI va a cambiaria."
+    hallazgo: "El REP no tiene póliza propia: el cobro en el banco salda al cliente y reclasifica el IVA; el complemento solo reclasifica."
+    casos:
+      - {nombre: "Cobro parcial de la mitad (580 de 1,160)", fecha: "2026-06-30", entradas: {cobrado: "580", iva_trasladado: "160", total_cfdi: "1160"}, esperado: "D bancos 580.00; D iva_trasladado_no_cobrado 80.00; H clientes 580.00; H iva_trasladado_cobrado 80.00"}
+      - {nombre: "Cobro total, límite: todo el IVA pasa a cobrado", fecha: "2026-06-30", entradas: {cobrado: "1160", iva_trasladado: "160", total_cfdi: "1160"}, esperado: "D bancos 1160.00; D iva_trasladado_no_cobrado 160.00; H clientes 1160.00; H iva_trasladado_cobrado 160.00"}
+      - {nombre: "Cobro en efectivo va a Caja", fecha: "2026-06-30", entradas: {cobrado: "580", iva_trasladado: "160", total_cfdi: "1160", medio: caja}, esperado: "D caja 580.00; D iva_trasladado_no_cobrado 80.00; H clientes 580.00; H iva_trasladado_cobrado 80.00"}
+      - {nombre: "Redondeo: 386.67 de 1,160 → IVA 53.33", fecha: "2026-06-30", entradas: {cobrado: "386.67", iva_trasladado: "160", total_cfdi: "1160"}, esperado: "D bancos 386.67; D iva_trasladado_no_cobrado 53.33; H clientes 386.67; H iva_trasladado_cobrado 53.33"}
+      - {nombre: "Divisa: el banco recibe 18 pesos más que el CFDI (utilidad cambiaria)", fecha: "2026-06-30", entradas: {cobrado: "1990", cobrado_cfdi: "1972", iva_trasladado: "272", total_cfdi: "1972"}, esperado: "D bancos 1990.00; D iva_trasladado_no_cobrado 272.00; H clientes 1972.00; H iva_trasladado_cobrado 272.00; H utilidad_cambiaria 18.00"}
+      - {nombre: "Divisa: el banco recibe 22 pesos menos que el CFDI (pérdida cambiaria)", fecha: "2026-06-30", entradas: {cobrado: "1950", cobrado_cfdi: "1972", iva_trasladado: "272", total_cfdi: "1972"}, esperado: "D bancos 1950.00; D iva_trasladado_no_cobrado 272.00; D perdida_cambiaria 22.00; H clientes 1972.00; H iva_trasladado_cobrado 272.00"}
+  - id: R-152
+    nombre: "Póliza tipo: CFDI recibido (gasto o inventario, IVA acreditable pendiente, proveedores)"
+    estado: CRITERIO
+    fase: 4
+    calculadora: poliza_recibido
+    fuente: "CFF art. 28; RCFF art. 33; LIVA art. 5; NIF C-4 y A-2 (referencia)"
+    citas: [{ley: CFF, articulo: "28"}, {ley: RCFF, articulo: "33"}, {ley: LIVA, articulo: "5"}, {nif: "C-4"}, {nif: "A-2"}]
+    que_dice: "Al recibir una factura, el gasto (o el inventario) y el IVA acreditable pendiente se cargan y le debes al proveedor lo que realmente pagarás; lo que retienes queda por pagar al SAT."
+    correcto_si: "La póliza cuadra; un gasto no deducible va completo, con su IVA, a no deducibles; las retenciones propias se abonan a ISR e IVA retenido por pagar."
+    hallazgo: "El IVA acreditable pendiente pasa a pagado cuando se paga la factura (R-153)."
+    casos:
+      - {nombre: "Gasto gravado 1,000 más IVA 160", fecha: "2026-06-30", entradas: {base: "1000", iva: "160"}, esperado: "D gasto 1000.00; D iva_acreditable_pendiente 160.00; H proveedores 1160.00"}
+      - {nombre: "Servicio con retenciones propias (10 % ISR y 2/3 del IVA)", fecha: "2026-06-30", entradas: {base: "10000", iva: "1600", isr_retenido: "1000", iva_retenido: "1066.67"}, esperado: "D gasto 10000.00; D iva_acreditable_pendiente 1600.00; H isr_retenido_por_pagar 1000.00; H iva_retenido_por_pagar 1066.67; H proveedores 9533.33"}
+      - {nombre: "Compra para inventario", fecha: "2026-06-30", entradas: {base: "5000", iva: "800", destino: inventario}, esperado: "D inventario 5000.00; D iva_acreditable_pendiente 800.00; H proveedores 5800.00"}
+      - {nombre: "No deducible: todo, con su IVA, a no deducibles", fecha: "2026-06-30", entradas: {base: "2000", iva: "320", deducible: "no"}, esperado: "D gasto_no_deducible 2320.00; H proveedores 2320.00"}
+  - id: R-153
+    nombre: "Póliza tipo: pago a proveedor (banco o caja e IVA acreditable pagado)"
+    estado: CRITERIO
+    fase: 4
+    calculadora: poliza_pago
+    fuente: "LIVA art. 5 fr. III; CFF art. 28; NIF C-1 y B-15 (referencia)"
+    citas: [{ley: LIVA, articulo: "5"}, {ley: CFF, articulo: "28"}, {nif: "C-1"}, {nif: "B-15"}]
+    que_dice: "Al pagar, el proveedor queda saldado y la parte proporcional del IVA pasa de pendiente a pagado, que es el que se acredita."
+    correcto_si: "El IVA se acredita solo en la proporción efectivamente pagada y el pago en efectivo sale de Caja."
+    hallazgo: "Simplificación: con retención de IVA, el IVA retenido solo se acredita al enterarlo (LIVA 5 fr. IV); esta póliza no lo separa todavía."
+    casos:
+      - {nombre: "Pago de la mitad (580 de 1,160)", fecha: "2026-06-30", entradas: {pagado: "580", iva: "160", total_cfdi: "1160"}, esperado: "D iva_acreditable_pagado 80.00; D proveedores 580.00; H bancos 580.00; H iva_acreditable_pendiente 80.00"}
+      - {nombre: "Pago total en efectivo, límite: todo el IVA pasa a pagado", fecha: "2026-06-30", entradas: {pagado: "1160", iva: "160", total_cfdi: "1160", medio: caja}, esperado: "D iva_acreditable_pagado 160.00; D proveedores 1160.00; H caja 1160.00; H iva_acreditable_pendiente 160.00"}
+      - {nombre: "Pago de una compra sin IVA", fecha: "2026-06-30", entradas: {pagado: "500", total_cfdi: "500"}, esperado: "D proveedores 500.00; H bancos 500.00"}
+  - id: R-154
+    nombre: "Póliza tipo: nota de crédito emitida (lo inverso del CFDI, con devoluciones y descuentos)"
+    estado: CRITERIO
+    fase: 4
+    calculadora: poliza_nota_credito_emitida
+    fuente: "CFF art. 28; RCFF art. 33; NIF D-1 y B-3 (referencia)"
+    citas: [{ley: CFF, articulo: "28"}, {ley: RCFF, articulo: "33"}, {nif: "D-1"}, {nif: "B-3"}]
+    que_dice: "Una nota de crédito reduce lo que el cliente te debe y se registra como devolución o descuento, no como menos ingreso."
+    correcto_si: "Es exactamente la póliza inversa de la factura que corrige, con devoluciones y descuentos en lugar de ingreso."
+    casos:
+      - {nombre: "Devolución de 100 más IVA 16", fecha: "2026-06-30", entradas: {gravado: "100", iva: "16"}, esperado: "D devoluciones_y_descuentos 100.00; D iva_trasladado_no_cobrado 16.00; H clientes 116.00"}
+      - {nombre: "Nota de crédito de honorarios con retenciones", fecha: "2026-06-30", entradas: {gravado: "10000", iva: "1600", isr_retenido: "1000", iva_retenido: "1066.67"}, esperado: "D devoluciones_y_descuentos 10000.00; D iva_trasladado_no_cobrado 1600.00; H clientes 9533.33; H isr_retenido_por_clientes 1000.00; H iva_retenido_por_clientes 1066.67"}
+  - id: R-155
+    nombre: "Póliza tipo: nómina pagada con provisión de ISR retenido, IMSS e Infonavit"
+    estado: CRITERIO
+    fase: 4
+    calculadora: poliza_nomina
+    fuente: "CFF art. 28; LISR art. 96; NIF D-3 (referencia)"
+    citas: [{ley: CFF, articulo: "28"}, {ley: LISR, articulo: "96"}, {nif: "D-3"}]
+    que_dice: "Al pagar la nómina, los sueldos y las cuotas patronales van al gasto; lo que se retiene o se debe al SAT, al IMSS y al Infonavit queda por pagar, no desaparece."
+    correcto_si: "El pago al empleado es el neto (percepciones menos ISR retenido y cuota obrera) y las retenciones y cuotas quedan en pasivo hasta enterarse."
+    hallazgo: "Hoy la app solo carga sueldos al pagar y no provisiona ISR retenido ni IMSS. `isr_retenido` entra ya neto del subsidio para el empleo; el asiento del subsidio acreditable queda pendiente."
+    casos:
+      - {nombre: "Nómina con ISR, cuota obrera y cuotas patronales", fecha: "2026-06-30", entradas: {percepciones: "10000", isr_retenido: "850", imss_obrero: "250", imss_patron: "1500", infonavit_patron: "500"}, esperado: "D aportaciones_infonavit 500.00; D cuotas_patronales 1500.00; D sueldos_y_salarios 10000.00; H bancos 8900.00; H imss_por_pagar 1750.00; H infonavit_por_pagar 500.00; H isr_retenido_por_pagar 850.00"}
+      - {nombre: "Límite: sin retenciones ni cuotas, el neto es todo", fecha: "2026-06-30", entradas: {percepciones: "6000"}, esperado: "D sueldos_y_salarios 6000.00; H bancos 6000.00"}

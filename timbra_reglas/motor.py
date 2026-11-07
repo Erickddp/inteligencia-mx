@@ -504,6 +504,81 @@ def calc_reforma_pendiente(b, f, id):
     return b.detalle(id, f).get("reforma_pendiente", {}).get("valor", "ninguna")
 
 
+# ---------- pólizas tipo: «evento → cargos y abonos por concepto» (criterio contable, no cifras de ley) ----------
+# Los conceptos son nombres estables (clientes, iva_trasladado_no_cobrado...), no números de cuenta: cada app
+# los apunta a su propio catálogo, idealmente al código agrupador del SAT. Toda póliza debe cuadrar.
+def _poliza(lineas):
+    lineas = [(t, c, D(m)) for t, c, m in lineas if D(m) != 0]
+    debe = sum(m for t, _, m in lineas if t == "D")
+    haber = sum(m for t, _, m in lineas if t == "H")
+    if debe != haber:
+        raise ValueError(f"La póliza no cuadra: debe {debe} y haber {haber}")
+    orden = sorted(lineas, key=lambda x: (x[0] != "D", x[1]))
+    return "; ".join(f"{t} {c} {red(m)}" for t, c, m in orden)
+
+
+def _medio(medio):
+    return {"banco": "bancos", "caja": "caja"}[medio]
+
+
+def calc_poliza_emitido(b, f, gravado="0", tasa0="0", exento="0", iva="0", isr_retenido="0", iva_retenido="0"):
+    """CFDI emitido vigente: cargo a clientes por lo que me van a pagar (total menos lo que me retienen), el IVA queda
+    como trasladado no cobrado hasta el cobro (LIVA 1-B)."""
+    total = D(gravado) + D(tasa0) + D(exento) + D(iva) - D(isr_retenido) - D(iva_retenido)
+    return _poliza([("D", "clientes", total), ("D", "isr_retenido_por_clientes", isr_retenido),
+                    ("D", "iva_retenido_por_clientes", iva_retenido), ("H", "ingreso_gravado", gravado),
+                    ("H", "ingreso_tasa0", tasa0), ("H", "ingreso_exento", exento), ("H", "iva_trasladado_no_cobrado", iva)])
+
+
+def calc_poliza_nota_credito_emitida(b, f, gravado="0", tasa0="0", exento="0", iva="0", isr_retenido="0", iva_retenido="0"):
+    """Nota de crédito emitida: lo inverso del CFDI, con devoluciones y descuentos en lugar de ingreso."""
+    total = D(gravado) + D(tasa0) + D(exento) + D(iva) - D(isr_retenido) - D(iva_retenido)
+    return _poliza([("D", "devoluciones_y_descuentos", D(gravado) + D(tasa0) + D(exento)), ("D", "iva_trasladado_no_cobrado", iva),
+                    ("H", "clientes", total), ("H", "isr_retenido_por_clientes", isr_retenido),
+                    ("H", "iva_retenido_por_clientes", iva_retenido)])
+
+
+def calc_poliza_cobro(b, f, cobrado, iva_trasladado="0", total_cfdi="0", cobrado_cfdi=None, medio="banco"):
+    """Cobro: salda al cliente y el IVA pasa de no cobrado a cobrado en la proporción cobrada (LIVA 1-B).
+    En divisa, `cobrado` son los pesos del banco y `cobrado_cfdi` los pesos al tipo de cambio del CFDI: la diferencia
+    es utilidad o pérdida cambiaria."""
+    al_cfdi = D(cobrado if cobrado_cfdi is None else cobrado_cfdi)
+    dif = D(cobrado) - al_cfdi
+    iva = red(D(iva_trasladado) * al_cfdi / D(total_cfdi)) if D(total_cfdi) else D(0)
+    return _poliza([("D", _medio(medio), cobrado), ("D", "perdida_cambiaria", -dif if dif < 0 else 0),
+                    ("D", "iva_trasladado_no_cobrado", iva), ("H", "clientes", al_cfdi),
+                    ("H", "utilidad_cambiaria", dif if dif > 0 else 0), ("H", "iva_trasladado_cobrado", iva)])
+
+
+def calc_poliza_recibido(b, f, base, iva="0", isr_retenido="0", iva_retenido="0", destino="gasto", deducible="si"):
+    """CFDI recibido: gasto (o inventario), IVA acreditable pendiente de pago y proveedor por lo que realmente debo
+    (total menos lo que yo retengo). Un gasto no deducible va completo, con su IVA (LIVA 5)."""
+    total = D(base) + D(iva) - D(isr_retenido) - D(iva_retenido)
+    if deducible == "no":
+        cargos = [("D", "gasto_no_deducible", D(base) + D(iva))]
+    else:
+        cargos = [("D", {"gasto": "gasto", "inventario": "inventario"}[destino], base), ("D", "iva_acreditable_pendiente", iva)]
+    return _poliza(cargos + [("H", "proveedores", total), ("H", "isr_retenido_por_pagar", isr_retenido),
+                             ("H", "iva_retenido_por_pagar", iva_retenido)])
+
+
+def calc_poliza_pago(b, f, pagado, iva="0", total_cfdi="0", medio="banco"):
+    """Pago a proveedor: salda la cuenta y el IVA pasa de pendiente a pagado en la proporción pagada (LIVA 5 fr. III)."""
+    iva_p = red(D(iva) * D(pagado) / D(total_cfdi)) if D(total_cfdi) else D(0)
+    return _poliza([("D", "proveedores", pagado), ("D", "iva_acreditable_pagado", iva_p), ("H", _medio(medio), pagado),
+                    ("H", "iva_acreditable_pendiente", iva_p)])
+
+
+def calc_poliza_nomina(b, f, percepciones, isr_retenido="0", imss_obrero="0", imss_patron="0", infonavit_patron="0"):
+    """Nómina pagada con provisión: sueldos y cuotas patronales al gasto; ISR retenido, IMSS e Infonavit quedan por pagar.
+    `isr_retenido` es el ISR a retener ya neto del subsidio para el empleo."""
+    neto = D(percepciones) - D(isr_retenido) - D(imss_obrero)
+    return _poliza([("D", "sueldos_y_salarios", percepciones), ("D", "cuotas_patronales", imss_patron),
+                    ("D", "aportaciones_infonavit", infonavit_patron), ("H", "bancos", neto),
+                    ("H", "isr_retenido_por_pagar", isr_retenido), ("H", "imss_por_pagar", D(imss_obrero) + D(imss_patron)),
+                    ("H", "infonavit_por_pagar", infonavit_patron)])
+
+
 CALC = {k[5:]: v for k, v in globals().items() if k.startswith("calc_")}
 
 

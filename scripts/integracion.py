@@ -7,7 +7,7 @@ Lo genera release.py en cada release. Contrato (schema 1), todo en JSON:
   version, commit, tag, generado, anterior (version_base anterior o null), huellas {archivo: sha256}, pruebas,
   parametros_nuevos, parametros_quitados, tramos_nuevos, valores_cambiados (antes y después, con las huellas
   del valor), formulas_cambiadas, vigencias_cambiadas, estados_cambiados, reglas_nuevas, reglas_quitadas,
-  reglas_estado, calculadoras_nuevas, firmas_que_se_caen y ids_afectados (todos los IDs tocados).
+  reglas_estado, calculadoras_nuevas, meta_cambiada (citas, que_dice, correcto_si), firmas_que_se_caen y ids_afectados (todos los IDs tocados).
 
 hash_valor usa la misma fórmula que las firmas de Timbra (parámetro + desde + valor), para que la app
 sepa EXACTAMENTE qué firma se cae.
@@ -23,6 +23,7 @@ from pathlib import Path
 import yaml
 
 SCHEMA = 1
+META = ("citas", "que_dice", "correcto_si")  # lo que el círculo de fundamento de las apps lee de cada ID
 
 
 def carga(d: Path):
@@ -48,7 +49,7 @@ def integracion(ant: Path | None, nue: Path, version: str, commit: str = "", hue
            "parametros_quitados": sorted(set(Pa) - set(Pn)),
            "tramos_nuevos": [], "valores_cambiados": [], "formulas_cambiadas": [], "vigencias_cambiadas": [],
            "estados_cambiados": [], "reglas_nuevas": [], "reglas_quitadas": sorted(set(Ra) - set(Rn)), "reglas_estado": [],
-           "calculadoras_nuevas": [], "firmas_que_se_caen": [], "ids_afectados": []}
+           "calculadoras_nuevas": [], "meta_cambiada": [], "firmas_que_se_caen": [], "ids_afectados": []}
     if not ant:
         return out
     for pid in sorted(set(Pa) & set(Pn)):
@@ -74,6 +75,11 @@ def integracion(ant: Path | None, nue: Path, version: str, commit: str = "", hue
         if Pa[pid].get("formula") != Pn[pid].get("formula"):
             out["formulas_cambiadas"].append({"id": pid, "antes": Pa[pid].get("formula"), "despues": Pn[pid].get("formula")})
             out["firmas_que_se_caen"].append({"id": pid, "desde": None, "hash_antes": None})
+    for i in sorted((set(Pa) & set(Pn)) | (set(Ra) & set(Rn))):
+        a, n = (Pa[i], Pn[i]) if i in Pn else (Ra[i], Rn[i])
+        for campo in META:
+            if a.get(campo) != n.get(campo):
+                out["meta_cambiada"].append({"id": i, "campo": campo, "antes": a.get(campo), "despues": n.get(campo)})
     for rid in sorted(set(Rn) - set(Ra)):
         r = Rn[rid]
         out["reglas_nuevas"].append({"id": rid, "nombre": r.get("nombre"), "estado": r.get("estado"), "calculadora": r.get("calculadora"),
@@ -84,7 +90,7 @@ def integracion(ant: Path | None, nue: Path, version: str, commit: str = "", hue
     out["calculadoras_nuevas"] = sorted({r.get("calculadora") for r in Rn.values() if r.get("calculadora")}
                                         - {r.get("calculadora") for r in Ra.values() if r.get("calculadora")})
     ids = set(out["parametros_quitados"]) | {x["id"] for k in ("parametros_nuevos", "tramos_nuevos", "valores_cambiados", "formulas_cambiadas",
-                                                                  "vigencias_cambiadas", "estados_cambiados") for x in out[k]}
+                                                                  "vigencias_cambiadas", "estados_cambiados", "meta_cambiada") for x in out[k]}
     ids |= set(out["reglas_quitadas"]) | {x["id"] for k in ("reglas_nuevas", "reglas_estado") for x in out[k]}
     out["ids_afectados"] = sorted(ids)
     return out
