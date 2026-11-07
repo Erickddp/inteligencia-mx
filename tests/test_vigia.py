@@ -123,3 +123,18 @@ def test_si_el_reintento_tambien_falla_la_alarma_es_real(monkeypatch):
 def test_resolucion_de_conasami_con_titulo_generico_se_marca_por_su_organismo():
     c = vigia.clasifica(nota("Resolución del H. Consejo de Representantes del 3 de diciembre de 2025.", "COMISION NACIONAL DE LOS SALARIOS MINIMOS"))
     assert c and c["nivel"] == "alta" and "salario_minimo" in c["temas"]
+
+
+def test_decreto_omnibus_sin_ley_en_el_titulo_se_marca_para_leer_su_texto():
+    """El 1-abr-2024 un decreto «en materia de pueblos y comunidades indígenas» reformó el art. 79 de la LISR."""
+    c = vigia.clasifica(nota("Decreto por el que se reforman diversos ordenamientos en materia de pueblos y comunidades indígenas y afromexicanas.", "SECRETARIA DE GOBERNACION"))
+    assert c and c["leer_texto"] and "decreto_generico" in c["temas"]
+    c = vigia.clasifica(nota("Decreto por el que se reforman diversas disposiciones del Reglamento del Registro Público Único.", "SECRETARIA DE HACIENDA Y CREDITO PUBLICO"))
+    assert c and c["nivel"] == "media" and c["leer_texto"]   # no se vuelve «baja» por venir de Hacienda
+    assert vigia.clasifica(nota("Decreto por el que se expropia por causa de utilidad pública la superficie de 5 hectáreas.")) is None
+
+
+def test_leyes_mencionadas_exige_el_verbo_de_reforma_cerca():
+    texto = ("Artículo Décimo Séptimo.- Se reforma el artículo 79, fracción VI, de la Ley del Impuesto sobre la Renta, para quedar como sigue. "
+             + "x " * 400 + "Considerando que la Ley del Seguro Social es importante para el país.")
+    assert vigia.leyes_mencionadas(texto) == ["LISR"]

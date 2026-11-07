@@ -90,6 +90,45 @@ def parsea(doc: str) -> list[dict]:
     return notas
 
 
+# Decretos «ómnibus»: reforman varias leyes y su título no las nombra («…en materia de pueblos y comunidades indígenas…»).
+# El 1-abr-2024 uno de ellos reformó el art. 79 de la LISR y no lo habría visto una búsqueda por título: hay que leer su texto.
+DECRETO_REFORMA = re.compile(r"^Decreto por el que se (reforma|reforman|adiciona|adicionan|deroga|derogan|abroga)\b", re.I)
+LEYES_BIBLIOTECA = {
+    "LISR": r"Ley del Impuesto sobre la Renta", "LIVA": r"Ley del Impuesto al Valor Agregado", "CFF": r"C[óo]digo Fiscal de la Federaci[óo]n",
+    "LSS": r"Ley del Seguro Social", "LFT": r"Ley Federal del Trabajo", "LINFONAVIT": r"Instituto del Fondo Nacional de la Vivienda para los Trabajadores",
+    "LFPIORPI": r"Procedencia Il[íi]cita", "LIEPS": r"Impuesto Especial sobre Producci[óo]n y Servicios", "LA": r"Ley Aduanera",
+    "LFD": r"Ley Federal de Derechos", "LISH": r"Ley de Ingresos sobre Hidrocarburos", "LFISAN": r"Impuesto sobre Autom[óo]viles Nuevos",
+    "LCF": r"Ley de Coordinaci[óo]n Fiscal", "LMV": r"Ley del Mercado de Valores",
+}
+
+
+def leyes_mencionadas(texto: str) -> list[str]:
+    """Qué leyes de la biblioteca nombra un decreto, con el verbo de reforma cerca («se reforma … de la Ley del …»)."""
+    out = []
+    for clave, pat in LEYES_BIBLIOTECA.items():
+        for m in re.finditer(pat, texto):
+            ventana = texto[max(0, m.start() - 400):m.end() + 60]
+            if re.search(r"\b(reform|adicion|deroga|abroga|expide)", ventana, re.I):
+                out.append(clave)
+                break
+    return out
+
+
+def texto_de_nota(url: str, intentos: int = 3) -> str:
+    req = urllib.request.Request(url, headers={"User-Agent": "timbra-reglas-vigia/0.1 (lectura de notas del DOF)"})
+    for i in range(intentos):
+        try:
+            with urllib.request.urlopen(req, timeout=90) as r:
+                h = r.read().decode("utf-8", errors="replace")
+            h = re.sub(r"<script.*?</script>|<style.*?</style>|<!--.*?-->", "", h, flags=re.S)
+            return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", h)))
+        except Exception:
+            if i == intentos - 1:
+                return ""
+            time.sleep(2 ** (i + 1))
+    return ""
+
+
 def clasifica(n: dict) -> dict | None:
     """None si no toca la base. Si toca: temas y qué parámetros, reglas o leyes revisar."""
     t = n["titulo"]
@@ -102,6 +141,9 @@ def clasifica(n: dict) -> dict | None:
     por_organismo = bool(ORGANISMOS.search(n["organismo"])) and not temas
     if RUIDO.search(t):
         return None
+    if not temas and DECRETO_REFORMA.match(t):  # va antes que «por organismo»: un decreto ómnibus de Hacienda no es de baja prioridad
+        return {"tipo": "posible_cambio", "nivel": "media", "temas": ["decreto_generico"], "parametros": [], "reglas": [], "leyes": [],
+                "leer_texto": True}
     if not temas and not por_organismo:
         return None
     toca = {"parametros": [], "reglas": [], "leyes": []}
@@ -161,7 +203,7 @@ def edicion_de(doc: str) -> str | None:
     return m.group(2).upper()[:3] if m else None
 
 
-def lee_dia(dia: dt.date, html_local: str | None, todas: bool = False, bajas: bool = False, espera: float = 3.0) -> dict:
+def lee_dia(dia: dt.date, html_local: str | None, todas: bool = False, bajas: bool = False, espera: float = 3.0, leer_textos: bool = False) -> dict:
     """Lee TODAS las ediciones del día (matutina, vespertina, extraordinaria) y las junta sin repetir notas.
     Pedir la página sin edición devuelve solo la última: el 22-dic-2025 mostraba 1 nota y la matutina tenía 30.
     Una respuesta incompleta se ve igual que un cambio de formato (edición sin notas): se reintenta una vez antes de dar la alarma.
@@ -190,7 +232,12 @@ def lee_dia(dia: dt.date, html_local: str | None, todas: bool = False, bajas: bo
         docs.append((ed, r))
     if not docs:
         return vigila(dia, descarga(dia, edicion="MAT"), todas, bajas)
-    return junta(dia, docs)
+    out = junta(dia, docs)
+    if leer_textos:  # los decretos genéricos se leen enteros: dicen qué leyes de la biblioteca reforman aunque el título no las nombre
+        for n in out["posibles_cambios"]:
+            if n.get("leer_texto"):
+                n["leyes_biblioteca"] = leyes_mencionadas(texto_de_nota(n["url"]))
+    return out
 
 
 def junta(dia: dt.date, docs: list) -> dict:
@@ -216,13 +263,14 @@ def main():
     ap.add_argument("--hasta")
     ap.add_argument("--html", help="usa este archivo en vez de bajar el DOF (solo con --fecha)")
     ap.add_argument("--todas", action="store_true", help="incluye también las notas descartadas")
+    ap.add_argument("--leer-texto", action="store_true", help="lee el texto de los decretos genéricos y anota qué leyes de la biblioteca reforman")
     ap.add_argument("--bajas", action="store_true", help="incluye las de prioridad baja (solo coinciden por el organismo)")
     a = ap.parse_args()
     d0 = dt.date.fromisoformat(a.desde or a.fecha or dt.date.today().isoformat())
     d1 = dt.date.fromisoformat(a.hasta or a.fecha or d0.isoformat())
     res, d = [], d0
     while d <= d1:
-        res.append(lee_dia(d, a.html, a.todas, a.bajas))
+        res.append(lee_dia(d, a.html, a.todas, a.bajas, leer_textos=a.leer_texto))
         d += dt.timedelta(days=1)
         if not a.html and d <= d1:
             time.sleep(1.5)  # cortesía con el servidor
