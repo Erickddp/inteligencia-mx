@@ -1,43 +1,77 @@
-# Plan de seguimiento · timbra-reglas
+# Plan de seguimiento · inteligencia-mx (antes timbra-reglas)
 
-Corte: 6-nov-2026. Base vigente: **v0.4.1** (90 casos). `main` en `79a9ee9`. Tag `v0.4.1` en `365546f`.
+Corte: 7-nov-2026. `main` en `8b001a2`, CI verde. Release publicado: **v0.4.1** (tag en `365546f`, huellas verificadas). Siguiente: v0.4.2 (sin cambio de valores).
 
-## Estado por punto
+## Estado
 
-| Punto | Qué | Estado | Evidencia |
-|---|---|---|---|
-| 0 | Base v0.4.1 cargada tal cual, `.gitignore`, README UTF-8 | **Hecho, en main** | huellas = `SHA256_v0.4.1.txt` |
-| A | Paquete `timbra_reglas`, comando `timbra-reglas`, pytest | **Hecho, en main** | 138 pruebas; wheel instalado en entorno limpio |
-| B | Licencias, AVISO, CODEOWNERS, CONTRIBUTING, plantillas, CHANGELOG | **Hecho, en main** | `docs/PROTECCION_DE_MAIN.md` |
-| C | CI por PR (probar, pytest, reglas de oro, diff comentado, DCO) y release por tag | **Hecho, en main; sin verlo correr** | revisar pestaña Actions |
-| D | Series INPC y tipo de cambio CFF 20 | **Bloqueado** | faltan tokens Banxico e INEGI |
-| E | Flujos n8n (Vigía DOF, Series, Vigencias, Recordatorio) | **Pendiente** | faltan credenciales y bot de Telegram |
-| F | Skill `base-fiscal-timbra` en `.claude/skills/` | **Pendiente** | archivos sin versionar en la raíz |
+| Qué | Estado |
+|---|---|
+| Repo renombrado a `inteligencia-mx` (el nombre viejo redirige; el paquete `timbra_reglas` y el comando `timbra-reglas` no cambian) | **Hecho** |
+| Base v0.4.1, paquete, pytest, gobierno del repo, CI y release por tag | **Hecho, en main** |
+| Biblioteca de leyes (20 textos) y RMF 2026 (1,208 reglas), INPC 60 meses, evidencia del tipo de cambio CFF 20, Vigía del DOF (script), IMSS e Infonavit cotejados | **Hecho, en main** |
+| `integracion_vX.json` en cada release + [docs/INTEGRACION.md](INTEGRACION.md) | **Hecho** |
+| Skill `/aportar-inteligencia-mx` | **Hecha** |
 
-## Pendiente de Rick (en GitHub)
+## Foco activo: lo que hace funcionar la app (reglas de cálculo y contabilidad)
 
-1. **Publicar el release v0.4.1** sobre el tag existente, con los 7 archivos de `out/release-v0.4.1/` (zip, 4 sueltos, ORDEN, SHA256). Decidir si la ORDEN_CAMBIO_04 va pública.
-2. **Mirar la pestaña Actions**: es la primera corrida de `ci.yml`. Avisar si algo falla.
-3. **Activar la protección** de `docs/PROTECCION_DE_MAIN.md` (ruleset de rama, ruleset de tags, merge commits, secret scanning) y crear los labels `cambio-de-ley`, `error-calculo`, `serie-automatica`, `esperando-firma`.
-4. **Crear la GitHub App** `timbra-reglas-bot` (Contents, Pull requests, Issues: lectura y escritura; instalada solo en este repo) y guardar su `.pem` en n8n.
-5. **Revisar 3 RFC** de los casos de R-27 en `base/reglas.yaml` (la lista exacta está en `scripts/deuda_oro.json`): si alguno es real, cambiarlo por uno genérico.
-6. **Mover el repo fuera de Drive** (por ejemplo `C:\dev\timbra-reglas`): Drive mete `desktop.ini` en `.git/refs` y rompe `fetch`.
-7. Para D: tokens de **Banxico (SIE)** e **INEGI (API INPC)**, guardados como variables de entorno locales, nunca en el repo.
-8. Para E: bot de **Telegram** (token y `chat_id`) en las credenciales de n8n.
+1. **Reglas de cálculo por régimen**, con casos al centavo. Hoy hay cálculo con casos para 612 (R-20, R-110), RESICO PF (R-22), 606 (R-111), RESICO PM (R-113), 601 (R-114), plataformas (R-118), anual PF (R-120), depreciación (R-121) y nómina (R-125 a R-136). Faltan o están sin calculadora: **R-21** (606, CORREGIR), **R-23** (RESICO PM), **R-24** (601 antiguo), **R-28** (625 y 621), **R-104** (anual PM).
+2. **Contabilidad.** Sin calculadora ni casos: pólizas **R-60 a R-65**, estados financieros **R-70 a R-76**, contabilidad electrónica Anexo 24 **R-101**. Las **NIF** entran como referencia y resumen propio, nunca su texto (derechos del CINIF).
+3. **Insumos de la app** (prompt ya entregado a Rick): catálogo de cuentas con código agrupador, pólizas tipo, regímenes por obligación, plataformas y casos de oro sin datos de clientes.
+4. **Chihuahua** (ISN, Código Fiscal del Estado, Ley de Ingresos): bloqueado hasta abrir los hosts del estado.
+5. **Release v0.4.2** con lo que ya está en `main` (cero valores cambiados; 2 estados pasan a vigente y 1 parámetro nuevo): `release.py --changelog`, PR y tag. Con eso la app prueba `integracion_vX.json` de verdad.
 
-## Mañana (orden)
+## EN PAUSA (diferido a propósito): automatización y contribución
 
-1. **F · Skill:** mover `SKILL.md`, `references/` y `assets/` a `.claude/skills/base-fiscal-timbra/`, adaptar rutas (`base/`, `timbra_reglas/`, `scripts/`, `timbra-reglas probar`), quitar los duplicados de la raíz. Un PR.
-2. **E · n8n:** cuatro JSON importables en `automatizacion/n8n/` con README y los tokens de permisos mínimos. El Vigía nunca escribe valores; solo abre issues «cambio de ley».
-3. **D · Series** (si hay tokens): `series/inpc.yaml`, `series/tipo_cambio_cff20.yaml`, `serie(id, fecha)` en el motor, calculadora de actualización CFF 17-A con INPC real, CI de series (huecos, duplicados, saltos > 5 %). Evidencia de SF60653 contra SF43718.
-4. **Release v0.5.0** cuando D traiga función nueva: `release.py --changelog`, PR, tag.
+Nada de esto bloquea la app. Se retoma cuando Rick lo decida.
+
+### GitHub Apps y protección del repositorio
+
+- [ ] **GitHub App del repo** (nombre sugerido `inteligencia-mx-bot`): Contents, Pull requests e Issues en lectura y escritura; instalada solo en este repo; `.pem` guardado solo en n8n o secrets. Es la que abre los PRs automáticos (series) para que Rick pueda aprobarlos y para que se dispare el CI.
+- [ ] **GitHub App de Timbra** `timbra-bump-bot`: Contents y Pull requests; instalada solo en `factureedp`. La necesita la app para abrir sola el PR «subir base a vX».
+- [ ] **Protección de `main`** y de los tags (`docs/PROTECCION_DE_MAIN.md`): ruleset de rama con CODEOWNERS obligatorio, CI verde, solo «merge commit»; ruleset de tags `v*`; secret scanning. Mientras no esté activa, `main` acepta push directo.
+- [ ] **Labels:** `cambio-de-ley`, `error-calculo`, `serie-automatica`, `esperando-firma`.
+- [ ] Revisar la pestaña **Actions** de cada release (la primera corrida de `release.yml` está por verse).
+
+### n8n (Rick lo tiene autoalojado)
+
+- [ ] **Vigía DOF (diario):** ejecuta `scripts/vigia_dof.py`; si hay coincidencia abre un issue «cambio de ley» con el enlace. Nunca escribe valores.
+- [ ] **Series:** tipo de cambio diario (Banxico) e INPC mensual (INEGI); abre un PR a `series/` con fuente y fecha, con la GitHub App.
+- [ ] **Vigencias (semanal):** corre `timbra-reglas vigencias` a hoy + 60 días y manda el resumen a Telegram.
+- [ ] **Recordatorio (semanal):** PRs abiertos esperando la firma de Rick, a Telegram.
+- [ ] Entregar los 4 como JSON importable en `automatizacion/n8n/` con README.
+- [ ] **Credenciales** (solo en n8n, nunca en el repo): GitHub App (con el paso que genera el token temporal desde el `.pem`), token de **Banxico** (SIE), token de **INEGI** (API INPC) y bot de **Telegram** (token y `chat_id`).
+
+### Series automáticas
+
+- [ ] `series/tipo_cambio_cff20.yaml` (la evidencia SF43718 contra SF60653 ya está en `fuentes/evidencia/tc_cff20/`).
+- [ ] `serie(id, fecha)` en el motor y la calculadora de actualización con INPC real (CFF 17-A, factor al diezmilésimo, mínimo 1).
+- [ ] CI de series: fechas sin huecos, sin duplicados y saltos de más de 5 % marcados para revisión humana.
+- [ ] 11 meses del INPC sin nota del DOF localizada (marcados «sin cotejar»).
+
+### Contribución (abrir el repo a socios y a la comunidad)
+
+- [ ] Compartir la skill `/aportar-inteligencia-mx` con conocidos y probarla con una persona externa de principio a fin (fuente, caso, PR firmado).
+- [ ] `base/niveles.yaml` (A/B por regla) con firma de Rick por CODEOWNERS; lo que no diga A es B.
+- [ ] Skill de mantenedor: mover `base-fiscal-timbra` a `.claude/skills/` como `mantener-base`, con rutas nuevas (hoy es un borrador sin versionar).
+- [ ] **Crecer más allá de lo fiscal** (cuando toque): `materia`, `ámbito` y `jurisdicción` como campos nuevos (sin renombrar IDs); partir la base por materia manteniendo el paquete plano de 4 archivos; citas estructuradas `{ley, artículo, fracción}` verificables contra `fuentes/`; corpus legal en repo aparte o como assets de release; versiones consolidadas de cada ley por decreto del DOF.
+- [ ] Capa de aprendizaje automático separada: lee la base para clasificar, sugerir y buscar; nunca escribe cifras.
+- [ ] Renombrar el paquete de Python solo en una versión 1.0 coordinada con la app.
+- [ ] Cotejo humano artículo por artículo de las leyes (todas están «sin cotejar con el DOF» hasta entonces).
+- [ ] Biblioteca: Ley Aduanera desactualizada (reforma del 23-oct-2026), las 4 modificaciones de la RMF 2026 y sus anexos.
+
+## Pendiente de Rick (decisiones)
+
+1. Abrir los hosts de Chihuahua (ISN y Código Fiscal del Estado) y decidir PR único o por tema.
+2. Decir cuándo se corta el release v0.4.2.
+3. Revisar los 3 RFC de los casos de R-27 (la lista exacta está en `scripts/deuda_oro.json`): si alguno es real, cambiarlo por uno genérico.
+4. Mezclar a `main` solo con aprobación suya; la protección de `main` está en pausa.
 
 ## Deuda de la base (el CI la deja pasar, solo puede bajar)
 
-`scripts/deuda_oro.json`: 82 violaciones.
+`scripts/deuda_oro.json`: 81 violaciones (R-17 ya salió).
 
 - 72 tramos con `hasta: null` sin `confirmado_hasta` (regla 5).
-- 6 reglas con número y un solo caso: R-14, R-17, R-30, R-81, R-83, R-117 (regla 6).
+- 5 reglas con número y un solo caso: R-14, R-30, R-81, R-83, R-117 (regla 6).
 - 3 RFC no genéricos en `reglas.yaml` (regla 8).
 - 1 ID con año: `DIOT_LAYOUT_2025` (regla 2). Renombrarlo cambia valores que usa la app: coordinar con un tramo nuevo, no editando el publicado.
 
