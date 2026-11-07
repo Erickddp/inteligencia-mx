@@ -1,0 +1,386 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "4e6f528c6bda333204261da17f0e32641335c0b87d05edf3316474820a607399",
+  "ubicacion": "Título PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "080dc48b0ba8b2e9a9b6a2ccf6305dd7172f6620a8a2207b69e0767b0f8da236",
+  "ubicacion": "Título PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "836eabf2ea32d51a382ce9174a2c93849446d1fb48eb423ecec737d31621ff5f",
+  "ubicacion": "Título PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "6675c775e34486eb422d3b81932cfbb3f0ec247957557194f90456c6a4b8b8d3",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "8ea9e13bfbf121674bba0301c6d57d20412b8d52e8b4ae4e684c1e160a7864af",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "06f8ae8c76cf3e5ffc659e813c4ae9f8bef9117ac5d18842456daeb686dc0656",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "dd36b00cf17dc406b5d49e07c9b20633a176aa927191034cc17970ed1f4611d8",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "e04e57935adc6f13cd7ea1f2db845bfa6b63edbcfd9c2023d419efeb9e669301",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "07209e28a03dc74a490711a4106cadabd07f2ca4dc8c9812d7a0cf47b1e2f310",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "3fa5e299aa25e6018bdaea837ce5777de1aef8966a972a4359ac5454e395c9c3",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "93ab308c07b94b6e25f637306b4f7cea6311d264e10b57d436741fb868f3ece1",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "dd85eb3004e40f9b8aebc8004f9f717e079a29428a0ee6286d50ba2c7dd9237e",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "9d3e5d5749e9ccc2793b90cb33929ee949ac35c0f5da2d3834c7eee18ca828af",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "25704ad2b9b7cd7c9ea4dbab2dca46c7ee68042f8efce2ebf487227c8f6628ec",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "0b0d6d1667216be33aec3826e3145138f54ecaf935ac60b02a88cdc8ae60540b",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "c4048378a1d7b636b49e3c7419e1933502692e2cb78baafcea8f26776d84d9a5",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "b18321a7105c1f539f3d16746b907255de64d6b0895e30184183550a51090876",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "f69ebf4ff3b8fb60c4c5c40670884cae90a6755094c14254b31677970409d8e6",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "b4a8f834cb3a59fd9def0860ef370ff6641ca51d7a3319a65865da0feb3f79e8",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "20": {
+  "archivo": "articulos/art-0020.md",
+  "sha256": "a3ab49811368f103fe3c13b0c52f998b1ead2ef6e5ef4607ad64cebd6de95b62",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "21": {
+  "archivo": "articulos/art-0021.md",
+  "sha256": "30564835f9001aac9ed6427ee330ce006805ad7b74068151104b0675020d4066",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "22": {
+  "archivo": "articulos/art-0022.md",
+  "sha256": "b3e2e59619ca03b9b939ecf7372fa463bf3a564ae9e6172c01bec5567c7b2609",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "23": {
+  "archivo": "articulos/art-0023.md",
+  "sha256": "c1fa87b913ad4f6646a03b7cc26e23ab94d9cf736424960d330ba73c40379e2d",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "24": {
+  "archivo": "articulos/art-0024.md",
+  "sha256": "87bb2b6b77787ae994282f77c17825760a7340ade924a1ab177e799d9c827a8f",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "25": {
+  "archivo": "articulos/art-0025.md",
+  "sha256": "3893c0a54add45b69f62485109cc96a9b657ade12afbd25cb881d2a22a18a0fc",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo I · DE LAS CONTRAPRESTACIONES DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "26": {
+  "archivo": "articulos/art-0026.md",
+  "sha256": "d3bcd769240778781575c2f278c75d1e76cfd26675c5f3c9114cd40adcb98b32",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo II · DISPOSICIONES APLICABLES A LOS CONTRATOS",
+  "derogado": false
+ },
+ "27": {
+  "archivo": "articulos/art-0027.md",
+  "sha256": "6c280e6b99b5a70fc629eb9e61cfae004ea1c1410980c406a493368c57532724",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo II · DISPOSICIONES APLICABLES A LOS CONTRATOS",
+  "derogado": false
+ },
+ "28": {
+  "archivo": "articulos/art-0028.md",
+  "sha256": "37f1eb9f67f1558e842757335aaa00eaa24e4a983265fd7dbe04d6b603864635",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo II · DISPOSICIONES APLICABLES A LOS CONTRATOS",
+  "derogado": false
+ },
+ "29": {
+  "archivo": "articulos/art-0029.md",
+  "sha256": "9c834cbcc25f2a5d20982e5a484cb4f174840dbee03026ea2a398ce8fca2ea90",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo II · DISPOSICIONES APLICABLES A LOS CONTRATOS",
+  "derogado": false
+ },
+ "30": {
+  "archivo": "articulos/art-0030.md",
+  "sha256": "3466bf268d49cfb6a7ecf2823a6ee1d47ad03cf2a99cff36df58dd64274df128",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo II · DISPOSICIONES APLICABLES A LOS CONTRATOS",
+  "derogado": false
+ },
+ "31": {
+  "archivo": "articulos/art-0031.md",
+  "sha256": "61bdc7e0dadf9eb471b7739b4a8e285777561fe915f129f1c20b0947c12064a6",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo II · DISPOSICIONES APLICABLES A LOS CONTRATOS",
+  "derogado": false
+ },
+ "32": {
+  "archivo": "articulos/art-0032.md",
+  "sha256": "c224784606f1d974f2371282c5bc9c0f98827430876197a7bb477beab02c5377",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo II · DISPOSICIONES APLICABLES A LOS CONTRATOS",
+  "derogado": false
+ },
+ "33": {
+  "archivo": "articulos/art-0033.md",
+  "sha256": "fc709f915b30bfdd0266a551e7628a6d2384dd3bad58fc5f93f11c066310f57c",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo II · DISPOSICIONES APLICABLES A LOS CONTRATOS",
+  "derogado": false
+ },
+ "34": {
+  "archivo": "articulos/art-0034.md",
+  "sha256": "85af81e6757638038e1daa5897caa37b285aaa85dd4a96c107401ae5471b19c5",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo II · DISPOSICIONES APLICABLES A LOS CONTRATOS",
+  "derogado": false
+ },
+ "35": {
+  "archivo": "articulos/art-0035.md",
+  "sha256": "26c974a77d2fd8baf11daf0024137729574dba8ccafcb6d025ad772cec0039b7",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo III · DE LA ADMINISTRACIÓN Y SUPERVISIÓN DE LOS ASPECTOS FINANCIEROS DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "36": {
+  "archivo": "articulos/art-0036.md",
+  "sha256": "b6a3544f7aeefdad501514603c7802b20fa61f9713f99c74561385c687ee2141",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo III · DE LA ADMINISTRACIÓN Y SUPERVISIÓN DE LOS ASPECTOS FINANCIEROS DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "37": {
+  "archivo": "articulos/art-0037.md",
+  "sha256": "0af9ab4c5efef8cadc1254530005020c25df01419c210ea033c33890484d7d83",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo III · DE LA ADMINISTRACIÓN Y SUPERVISIÓN DE LOS ASPECTOS FINANCIEROS DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "38": {
+  "archivo": "articulos/art-0038.md",
+  "sha256": "9a64a24d4b72c9cac4859c11760f25edc102aca62bae60daef5461e9850289be",
+  "ubicacion": "Título SEGUNDO · DE LOS INGRESOS POR CONTRATOS / Capítulo III · DE LA ADMINISTRACIÓN Y SUPERVISIÓN DE LOS ASPECTOS FINANCIEROS DE LOS CONTRATOS",
+  "derogado": false
+ },
+ "39": {
+  "archivo": "articulos/art-0039.md",
+  "sha256": "aec6caadfd0263d656ec829f00c93d7d994d180e1aaccde2c917d477dc50c7c0",
+  "ubicacion": "Título TERCERO · DE LOS INGRESOS DERIVADOS DE ASIGNACIONES / Capítulo I · DEL DERECHO PETROLERO PARA EL BIENESTAR Denominación del Capítulo reformada DOF 18-03-2025",
+  "derogado": false
+ },
+ "40": {
+  "archivo": "articulos/art-0040.md",
+  "sha256": "3b251dfda1bb9c83f97d5921c20cdba6cad774a93f62e3a2f63fffce1fe0bb92",
+  "ubicacion": "Título TERCERO · DE LOS INGRESOS DERIVADOS DE ASIGNACIONES / Capítulo I · DEL DERECHO PETROLERO PARA EL BIENESTAR Denominación del Capítulo reformada DOF 18-03-2025",
+  "derogado": false
+ },
+ "41": {
+  "archivo": "articulos/art-0041.md",
+  "sha256": "db036624be2997952d54ad26a56bb35bb17de98164e2e3d93cc0a7dfd9b9f829",
+  "ubicacion": "Título TERCERO · DE LOS INGRESOS DERIVADOS DE ASIGNACIONES / Capítulo I · DEL DERECHO PETROLERO PARA EL BIENESTAR Denominación del Capítulo reformada DOF 18-03-2025",
+  "derogado": false
+ },
+ "42": {
+  "archivo": "articulos/art-0042.md",
+  "sha256": "2a8cf9839e4b31a61f12a59e09e5bed2552e7a888f4f06bc7ce67f9b55c4f776",
+  "ubicacion": "Título TERCERO · DE LOS INGRESOS DERIVADOS DE ASIGNACIONES / Capítulo I · DEL DERECHO PETROLERO PARA EL BIENESTAR Denominación del Capítulo reformada DOF 18-03-2025",
+  "derogado": false
+ },
+ "43": {
+  "archivo": "articulos/art-0043.md",
+  "sha256": "164d539d1e81c1aaa7b9efa450c30769607a7dc7dfde68db8199cb83bab825b9",
+  "ubicacion": "Título TERCERO · DE LOS INGRESOS DERIVADOS DE ASIGNACIONES / Capítulo I · DEL DERECHO PETROLERO PARA EL BIENESTAR Denominación del Capítulo reformada DOF 18-03-2025",
+  "derogado": false
+ },
+ "44": {
+  "archivo": "articulos/art-0044.md",
+  "sha256": "969673a2874f2cd51f231caa1857227fcb29f775cfcf2769d02e5357b7011721",
+  "ubicacion": "Título TERCERO · DE LOS INGRESOS DERIVADOS DE ASIGNACIONES / Capítulo II · DEL DERECHO DE EXTRACCIÓN DE HIDROCARBUROS Derogado Capítulo derogado DOF 18-03-2025",
+  "derogado": false
+ },
+ "45": {
+  "archivo": "articulos/art-0045.md",
+  "sha256": "101c6b4e36a241ce8a8c27e2b629cac5c6498f4384c03ae965fe67ffca97e66e",
+  "ubicacion": "Título TERCERO · DE LOS INGRESOS DERIVADOS DE ASIGNACIONES / Capítulo III · DEL DERECHO DE EXPLORACIÓN DE HIDROCARBUROS Derogado",
+  "derogado": false
+ },
+ "46": {
+  "archivo": "articulos/art-0046.md",
+  "sha256": "81144f10a88659e72a516bf4f6b0e948e5e16da85ed054cb7f354e8f0861f240",
+  "ubicacion": "Título TERCERO · DE LOS INGRESOS DERIVADOS DE ASIGNACIONES / Capítulo IV · DE LAS OBLIGACIONES DE LOS ASIGNATARIOS",
+  "derogado": false
+ },
+ "47": {
+  "archivo": "articulos/art-0047.md",
+  "sha256": "612305d693253ec98d6e311254c6ecf846f2b8e6484fad0719bbbbe9d013c409",
+  "ubicacion": "Título TERCERO · DE LOS INGRESOS DERIVADOS DE ASIGNACIONES / Capítulo IV · DE LAS OBLIGACIONES DE LOS ASIGNATARIOS",
+  "derogado": false
+ },
+ "48": {
+  "archivo": "articulos/art-0048.md",
+  "sha256": "19738e460b6c061c753b4f8f55e4febbd429ee2ab3e9ed3326b4f7cfce9f8bbb",
+  "ubicacion": "Título TERCERO · DE LOS INGRESOS DERIVADOS DE ASIGNACIONES / Capítulo IV · DE LAS OBLIGACIONES DE LOS ASIGNATARIOS",
+  "derogado": false
+ },
+ "49": {
+  "archivo": "articulos/art-0049.md",
+  "sha256": "fe3df00be326da61a8b8d2590457e41c42976ac6bfe3f25eb946d693772f4afa",
+  "ubicacion": "Título TERCERO · DE LOS INGRESOS DERIVADOS DE ASIGNACIONES / Capítulo IV · DE LAS OBLIGACIONES DE LOS ASIGNATARIOS",
+  "derogado": false
+ },
+ "50": {
+  "archivo": "articulos/art-0050.md",
+  "sha256": "5e66e0b3a7f26a628c5b05454f8211853c5f337b3b460049ee4f8f18fcaf70ab",
+  "ubicacion": "Título TERCERO · DE LOS INGRESOS DERIVADOS DE ASIGNACIONES / Capítulo IV · DE LAS OBLIGACIONES DE LOS ASIGNATARIOS",
+  "derogado": false
+ },
+ "51": {
+  "archivo": "articulos/art-0051.md",
+  "sha256": "fc427e05f43c72e6c16f1e387d35256fcd5edc63cc9d70cfdcc622dcac9a56e3",
+  "ubicacion": "Título TERCERO · DE LOS INGRESOS DERIVADOS DE ASIGNACIONES / Capítulo IV · DE LAS OBLIGACIONES DE LOS ASIGNATARIOS",
+  "derogado": false
+ },
+ "52": {
+  "archivo": "articulos/art-0052.md",
+  "sha256": "66fcac51504ee42fec43cd672d6b2ebe478b386c849e48dc0906d5188793a0a1",
+  "ubicacion": "Título TERCERO · DE LOS INGRESOS DERIVADOS DE ASIGNACIONES / Capítulo IV · DE LAS OBLIGACIONES DE LOS ASIGNATARIOS",
+  "derogado": false
+ },
+ "53": {
+  "archivo": "articulos/art-0053.md",
+  "sha256": "460aa744e5b3beb701852cea80396efd34c09556ad7323f2c72ac45b1ba572a3",
+  "ubicacion": "Título TERCERO · DE LOS INGRESOS DERIVADOS DE ASIGNACIONES / Capítulo IV · DE LAS OBLIGACIONES DE LOS ASIGNATARIOS",
+  "derogado": false
+ },
+ "54": {
+  "archivo": "articulos/art-0054.md",
+  "sha256": "40a68537b8e0ef0488453e6526de5b39f1588e2addc3ce55c91e3b60511dc975",
+  "ubicacion": "Título CUARTO · DEL IMPUESTO POR LA ACTIVIDAD DE EXPLORACIÓN Y EXTRACCIÓN DE HIDROCARBUROS",
+  "derogado": false
+ },
+ "55": {
+  "archivo": "articulos/art-0055.md",
+  "sha256": "4c4689a543b08efcdba311e365fc2ab82fe99b315b313d09077097ed7ce79dc3",
+  "ubicacion": "Título CUARTO · DEL IMPUESTO POR LA ACTIVIDAD DE EXPLORACIÓN Y EXTRACCIÓN DE HIDROCARBUROS",
+  "derogado": false
+ },
+ "56": {
+  "archivo": "articulos/art-0056.md",
+  "sha256": "b9861956dc8b3462b395178ebec05eaf9867bcfee6a9d8eb17680d8f4d713f49",
+  "ubicacion": "Título CUARTO · DEL IMPUESTO POR LA ACTIVIDAD DE EXPLORACIÓN Y EXTRACCIÓN DE HIDROCARBUROS",
+  "derogado": false
+ },
+ "57": {
+  "archivo": "articulos/art-0057.md",
+  "sha256": "a4cd7ac000acc9b3cc06ce0e13284a55fcdfb6250cc06ccf87283fe89a205010",
+  "ubicacion": "Título CUARTO · DEL IMPUESTO POR LA ACTIVIDAD DE EXPLORACIÓN Y EXTRACCIÓN DE HIDROCARBUROS",
+  "derogado": false
+ },
+ "58": {
+  "archivo": "articulos/art-0058.md",
+  "sha256": "d7851a68c3a585893b69d944bee856a724d81737a237c137c755a7d23f12c17b",
+  "ubicacion": "Título QUINTO · DE LA TRANSPARENCIA Y FISCALIZACIÓN",
+  "derogado": false
+ },
+ "59": {
+  "archivo": "articulos/art-0059.md",
+  "sha256": "53766a5344f4b148a0accb118d2ee071065bddaf58ea48809c88465a603301c8",
+  "ubicacion": "Título QUINTO · DE LA TRANSPARENCIA Y FISCALIZACIÓN",
+  "derogado": false
+ },
+ "60": {
+  "archivo": "articulos/art-0060.md",
+  "sha256": "5963ef85bf7bfda9b0cead722c9d0466bbd8e7e33ab0964c0f3979d83a8cff28",
+  "ubicacion": "Título QUINTO · DE LA TRANSPARENCIA Y FISCALIZACIÓN",
+  "derogado": false
+ },
+ "61": {
+  "archivo": "articulos/art-0061.md",
+  "sha256": "1536e10d91e8193f23fd0b71457a1374913b95f618541abb3e1b13e2b9fcff63",
+  "ubicacion": "Título QUINTO · DE LA TRANSPARENCIA Y FISCALIZACIÓN",
+  "derogado": false
+ },
+ "62": {
+  "archivo": "articulos/art-0062.md",
+  "sha256": "04d01292b4dfe9920cecf2fe73f5666cd3fc2720dc19751c7e4766211e3c1e53",
+  "ubicacion": "Título SEXTO · DISPOSICIONES FINALES",
+  "derogado": false
+ },
+ "63": {
+  "archivo": "articulos/art-0063.md",
+  "sha256": "0ebca797ceb5923f66c7805decd8e57964f5022a13e7c6108092c2d3616115fe",
+  "ubicacion": "Título SEXTO · DISPOSICIONES FINALES",
+  "derogado": false
+ },
+ "64": {
+  "archivo": "articulos/art-0064.md",
+  "sha256": "7afa7dc3516b0ffa280337c438608a8f64dc4a3ff791f50b9da8f4e53e2943d9",
+  "ubicacion": "Título SEXTO · DISPOSICIONES FINALES",
+  "derogado": false
+ }
+}

@@ -1,0 +1,404 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "562bd93b85f4742793b9cdd6aa700a2e13e52608073abf0a90a37b240ed43fc4",
+  "ubicacion": "Capitulo I · De las Participaciones de los Estados, Municipios y Distrito Federal en Ingresos Federales",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "e81b951e5b18e948676bc59daef31252ba0f6b7f4f0c124a6bfc619018132d48",
+  "ubicacion": "Capitulo I · De las Participaciones de los Estados, Municipios y Distrito Federal en Ingresos Federales",
+  "derogado": false
+ },
+ "2-a": {
+  "archivo": "articulos/art-0002-a.md",
+  "sha256": "3e2f18a521a210f77cff52abe28be1582265fc5da96e4f7e9b686ea02e786662",
+  "ubicacion": "Capitulo I · De las Participaciones de los Estados, Municipios y Distrito Federal en Ingresos Federales",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "8d863cf342c101daa6fae21639fb05bd858fda3e398b1df31fc89013608a592e",
+  "ubicacion": "Capitulo I · De las Participaciones de los Estados, Municipios y Distrito Federal en Ingresos Federales",
+  "derogado": false
+ },
+ "3-a": {
+  "archivo": "articulos/art-0003-a.md",
+  "sha256": "80fb44030c3eac91aa0c0e01080c3bbf318796bac192a889e2d8d4870e09d859",
+  "ubicacion": "Capitulo I · De las Participaciones de los Estados, Municipios y Distrito Federal en Ingresos Federales",
+  "derogado": false
+ },
+ "3-b": {
+  "archivo": "articulos/art-0003-b.md",
+  "sha256": "43abe694fb0b939828afc85f388cd38f6f83e1e90299ff06229719965da501db",
+  "ubicacion": "Capitulo I · De las Participaciones de los Estados, Municipios y Distrito Federal en Ingresos Federales",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "16ab7d06df95c156efa770cf89fae22c65ab9772f570a1fb981da5a40c5a4f81",
+  "ubicacion": "Capitulo I · De las Participaciones de los Estados, Municipios y Distrito Federal en Ingresos Federales",
+  "derogado": false
+ },
+ "4-a": {
+  "archivo": "articulos/art-0004-a.md",
+  "sha256": "2c24665c3eb2bd85f0b5e707460ed2f5df05f268bb1e958e1389de7305080ec2",
+  "ubicacion": "Capitulo I · De las Participaciones de los Estados, Municipios y Distrito Federal en Ingresos Federales",
+  "derogado": false
+ },
+ "4-b": {
+  "archivo": "articulos/art-0004-b.md",
+  "sha256": "c08b572c21891f873b95ee2e3c826252b37e18792984dad55c3788563affa541",
+  "ubicacion": "Capitulo I · De las Participaciones de los Estados, Municipios y Distrito Federal en Ingresos Federales",
+  "derogado": false
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "89a9fcadefb5e926eef502f5b46a73661a8a9df54e2fbab5c9b52e3a1ab709ca",
+  "ubicacion": "Capitulo I · De las Participaciones de los Estados, Municipios y Distrito Federal en Ingresos Federales",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "c364b1a78702af19507c34ade05a02e2525ca47b64261814abdd2463c3e4950d",
+  "ubicacion": "Capitulo I · De las Participaciones de los Estados, Municipios y Distrito Federal en Ingresos Federales",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "42e6b3c1b4cc1ef08a6c530ed6fa1105a2ed1dcf2df7160c1d50ba86a71bd70b",
+  "ubicacion": "Capitulo I · De las Participaciones de los Estados, Municipios y Distrito Federal en Ingresos Federales",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "24c1ce46aab61d687edcb7e11c1096801baac1e478ab9de527d8d7ef98f7ae4c",
+  "ubicacion": "Capitulo I · De las Participaciones de los Estados, Municipios y Distrito Federal en Ingresos Federales",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "cd17d9dc1c99d203913a23cc10a1d35385a34118e9d465b3734b5f77e0943ddf",
+  "ubicacion": "Capitulo I · De las Participaciones de los Estados, Municipios y Distrito Federal en Ingresos Federales",
+  "derogado": false
+ },
+ "9-a": {
+  "archivo": "articulos/art-0009-a.md",
+  "sha256": "26cc9356b92c4144b773836f2d463fd6896f263f353a5d40eb0e3d32508b2d42",
+  "ubicacion": "Capitulo I · De las Participaciones de los Estados, Municipios y Distrito Federal en Ingresos Federales",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "8b8fe69c5c598d9b39af357ff82098a375d305b44231a731f657c77c7d9398fa",
+  "ubicacion": "Capitulo II · Del Sistema Nacional de Coordinación Fiscal",
+  "derogado": false
+ },
+ "10-a": {
+  "archivo": "articulos/art-0010-a.md",
+  "sha256": "461d450e16be778b6a49c66e7e84ac0dcaba89630f71f6f2fd80d761bdaf8586",
+  "ubicacion": "Capitulo II · Del Sistema Nacional de Coordinación Fiscal",
+  "derogado": false
+ },
+ "10-b": {
+  "archivo": "articulos/art-0010-b.md",
+  "sha256": "a32816c9d94b9b2d51456065d8e1206ba4b9ba7dcbdd59254ccf80b87d009921",
+  "ubicacion": "Capitulo II · Del Sistema Nacional de Coordinación Fiscal",
+  "derogado": false
+ },
+ "10-c": {
+  "archivo": "articulos/art-0010-c.md",
+  "sha256": "2988858e564372e684f0193025ec7d88d5150fffec62850928c6aeb2386efc80",
+  "ubicacion": "Capitulo II · Del Sistema Nacional de Coordinación Fiscal",
+  "derogado": false
+ },
+ "10-d": {
+  "archivo": "articulos/art-0010-d.md",
+  "sha256": "e6f8fb374f24bead375072f5fc3b243b0389d56a5147b1dd2412ea90d0302b7b",
+  "ubicacion": "Capitulo II · Del Sistema Nacional de Coordinación Fiscal",
+  "derogado": false
+ },
+ "10-e": {
+  "archivo": "articulos/art-0010-e.md",
+  "sha256": "8fed8ae3c8b10b035a43b18c1861d87e992a6af5efca29f3d76c3f232281b63d",
+  "ubicacion": "Capitulo II · Del Sistema Nacional de Coordinación Fiscal",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "cd715ebd886c2892c7c961924109a55d37af8fcac9758c8aca2578a9bd05f7bb",
+  "ubicacion": "Capitulo II · Del Sistema Nacional de Coordinación Fiscal",
+  "derogado": false
+ },
+ "11-a": {
+  "archivo": "articulos/art-0011-a.md",
+  "sha256": "2e42e33d2a199bea5705b55a15ef3ceae5058c18b7178ff0653b05ab9d94563e",
+  "ubicacion": "Capitulo II · Del Sistema Nacional de Coordinación Fiscal",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "04ce100886eab42d0e9c1a04be8a196e3d2a825dfd7a7d4271cccc0fc8ea4f22",
+  "ubicacion": "Capitulo II · Del Sistema Nacional de Coordinación Fiscal",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "950201cfbbe5654c0ae4c6f71353061e948fef656a40125be16e350f1075e6a8",
+  "ubicacion": "Capitulo III · De la Colaboración Administrativa entre las Entidades y la Federación",
+  "derogado": false
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "07c476b03f465c72b13288beb6caf23f917dcd7b94c9d911066df6e0e6580f87",
+  "ubicacion": "Capitulo III · De la Colaboración Administrativa entre las Entidades y la Federación",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "9f0135cc60b30a6e55334fd861501c6a5b89822719f7e08caa0c10a81c2db74d",
+  "ubicacion": "Capitulo III · De la Colaboración Administrativa entre las Entidades y la Federación",
+  "derogado": false
+ },
+ "15-a": {
+  "archivo": "articulos/art-0015-a.md",
+  "sha256": "aa86d21dfaa6903908b75e76b3299825badbc4995caba990b8e1b1d8084f6df6",
+  "ubicacion": "Capitulo III · De la Colaboración Administrativa entre las Entidades y la Federación",
+  "derogado": true
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "c70155d983b3e3ce77ebb15932ffbd9abe22bd3ae5656590ed2a0de90a07ee9f",
+  "ubicacion": "Capitulo IV · De los Organismos en Materia de Coordinación",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "54e99082524bd5a4bf0d1b0fe0612a2484628c586348fcb05fdd0840c50fb5e1",
+  "ubicacion": "Capitulo IV · De los Organismos en Materia de Coordinación",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "4f462897e0e40bbe03de0143e44c221e4473448b927f8cae8216b1d6403638cf",
+  "ubicacion": "Capitulo IV · De los Organismos en Materia de Coordinación",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "d48b8a16fecbdafda189ddcd883e7cfc7cee9fb79ae9f0d783e493d1100281f3",
+  "ubicacion": "Capitulo IV · De los Organismos en Materia de Coordinación",
+  "derogado": false
+ },
+ "20": {
+  "archivo": "articulos/art-0020.md",
+  "sha256": "8ecbacc8109566d290a94dcc3bd40e40d10f1061754861d15c2f03c44e7c882a",
+  "ubicacion": "Capitulo IV · De los Organismos en Materia de Coordinación",
+  "derogado": false
+ },
+ "21": {
+  "archivo": "articulos/art-0021.md",
+  "sha256": "054a2f317e2258376b80e34fd5e46df3992422486fc840293d40689183f3ef9e",
+  "ubicacion": "Capitulo IV · De los Organismos en Materia de Coordinación",
+  "derogado": false
+ },
+ "22": {
+  "archivo": "articulos/art-0022.md",
+  "sha256": "d677e1b4b2a1ddeef07bc7ac70c5ac3cc51e840f3725be358e740cfb4f127f4a",
+  "ubicacion": "Capitulo IV · De los Organismos en Materia de Coordinación",
+  "derogado": false
+ },
+ "23": {
+  "archivo": "articulos/art-0023.md",
+  "sha256": "044d6578add35342798ec4a0874bddf8cff49a16b426bc141b9150fea0c1a6d4",
+  "ubicacion": "Capitulo IV · De los Organismos en Materia de Coordinación",
+  "derogado": false
+ },
+ "24": {
+  "archivo": "articulos/art-0024.md",
+  "sha256": "1e6f9d56015f502cecd420e90eb644262ef29b578fa0f8f1c12f8c06356cd1de",
+  "ubicacion": "Capitulo IV · De los Organismos en Materia de Coordinación",
+  "derogado": false
+ },
+ "25": {
+  "archivo": "articulos/art-0025.md",
+  "sha256": "6fa26f54b4cf449616791db0f3ba4a6f4d6d82da48487f422a1de24dca6ca6a9",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "26": {
+  "archivo": "articulos/art-0026.md",
+  "sha256": "d70aacf51acd3e6e380136c2e5a52f3ab2e9fb46ea1ea00ff9000dc3a71a1f5d",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "26-a": {
+  "archivo": "articulos/art-0026-a.md",
+  "sha256": "bf415701784eb7855e5952caf131e281bd3878bd81efc94b72a4354e366e56ba",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "27": {
+  "archivo": "articulos/art-0027.md",
+  "sha256": "c7a1c2767410da69340832484bbd2e248e411333681890a543cb9bf02f648fed",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "27-a": {
+  "archivo": "articulos/art-0027-a.md",
+  "sha256": "523a72e1e26133e260de34736b850156e1b9b34b095622633258e93cb79354cc",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "28": {
+  "archivo": "articulos/art-0028.md",
+  "sha256": "b1f2f52766d55b8a968435d9800b8c99bd15bafc97b39f01765c122825b71864",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "29": {
+  "archivo": "articulos/art-0029.md",
+  "sha256": "8916c48a17824c6e80fe2fac02800f35450450b7a91e368efcf38c296b99ef77",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "30": {
+  "archivo": "articulos/art-0030.md",
+  "sha256": "820ec51dacae75913096c384f9eb1038e525566e68c20228cb0b9cf85a55c43a",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "31": {
+  "archivo": "articulos/art-0031.md",
+  "sha256": "66625c17638f2a87743fed0459a20ca0fd3cd4edbbbc16032dab4e837555f5f8",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "32": {
+  "archivo": "articulos/art-0032.md",
+  "sha256": "daff60c7dd17208106c4a3f2affc796f897e929d543b73295e91d15b00fff28a",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "33": {
+  "archivo": "articulos/art-0033.md",
+  "sha256": "040069f8c739e3feddb00730d91a7478da163235bb6cae035e7f87ceb1b9be03",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "34": {
+  "archivo": "articulos/art-0034.md",
+  "sha256": "2c771c47c4cc5df998481bcf98455d3c4298de717caec5f7229955f4f4e61283",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "35": {
+  "archivo": "articulos/art-0035.md",
+  "sha256": "bb461d680b779c81365d1423fd78c0ba87337d946658bd5d0e7f5397d6fe0dc4",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "36": {
+  "archivo": "articulos/art-0036.md",
+  "sha256": "60191c466dcfa69cebcb9688c707bbdbdf6fe8994fe202061d644f41a5b5d213",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "37": {
+  "archivo": "articulos/art-0037.md",
+  "sha256": "33ab3a9b64a25dbe31e7d9d1712d7d8ac5f799745248fd125bf30399abe20ddc",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "38": {
+  "archivo": "articulos/art-0038.md",
+  "sha256": "d6c325a990f280470253882239e732df7f910b9bf931f0027e5e01629461c444",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "39": {
+  "archivo": "articulos/art-0039.md",
+  "sha256": "8c96a9b149cd6fdaafbda3f505b32704aaccd5c20369aeab13d7fdc9ee7b0e6c",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "40": {
+  "archivo": "articulos/art-0040.md",
+  "sha256": "34d976fae3d8cdf9867abcfad4c36865cc94a6ed3cd59692ce97a3797014b2c2",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "41": {
+  "archivo": "articulos/art-0041.md",
+  "sha256": "2b89fd2f9c07d8173e57c744044374b6bf4f573f9b1ab662a563f1a830f9002f",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "42": {
+  "archivo": "articulos/art-0042.md",
+  "sha256": "5fd337261cf4d4aed40c25384ee7fa1381dbfb0c97321c45815043e6810688b4",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "43": {
+  "archivo": "articulos/art-0043.md",
+  "sha256": "2ba80acdeb6ae96dd18e311a9d4f2f2f4366ced962912ef428d33d33c08cfd37",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "44": {
+  "archivo": "articulos/art-0044.md",
+  "sha256": "6e904606ed2d005992b9f102fba14ebb224bbaa5b34f7f485b4c4d418f6ae32e",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "45": {
+  "archivo": "articulos/art-0045.md",
+  "sha256": "a4d4e9d5321f177eda51f6b1d6b4fabb0edf8cabf04b6bd06d041fb7b901f179",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "46": {
+  "archivo": "articulos/art-0046.md",
+  "sha256": "49184923b053c92b3784de9e6e4f1a6535e9dca140d6ebd50a6f90e1c76bb437",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "47": {
+  "archivo": "articulos/art-0047.md",
+  "sha256": "f0d503139cf6a917008d8ec90683e3745b541dd5c51cd2eb8f57b51a7caa8e65",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "48": {
+  "archivo": "articulos/art-0048.md",
+  "sha256": "b3d3bb9addb5c17842d0529d688c9b90701bfa9d40c94ef97a520ee122ca47af",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "49": {
+  "archivo": "articulos/art-0049.md",
+  "sha256": "c3a5ecec89d967550ce85dc4d38bf8452ab5d635496e0a134dbf48f592ce6f2c",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "50": {
+  "archivo": "articulos/art-0050.md",
+  "sha256": "b784061b95e58964bbeff007de8c282d61c6b349f6cbc6947532b3ee99716415",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "51": {
+  "archivo": "articulos/art-0051.md",
+  "sha256": "8f76b9401d3408fed669caae0cdf33c533c0e8300c744444815f66928f907a11",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ },
+ "52": {
+  "archivo": "articulos/art-0052.md",
+  "sha256": "47bb101aa1965fd34ec61447ebc6befd1a676291727071bdd3e6c294e3ed416b",
+  "ubicacion": "Capítulo V · De los Fondos de Aportaciones Federales Capítulo adicionado DOF 29-12-1997",
+  "derogado": false
+ }
+}

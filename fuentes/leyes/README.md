@@ -4,15 +4,26 @@ Texto de ley, **un artículo por archivo**, para que cada regla de `base/` cite 
 
 | Ley | Clave | Última reforma según el PDF de la Cámara | Artículos |
 |---|---|---|---|
-| Ley del Impuesto sobre la Renta | `LISR` | 01-abr-2024 | 236 |
-| Ley del Impuesto al Valor Agregado | `LIVA` | 12-nov-2021 | 80 |
-| Ley del Seguro Social | `LSS` | 15-ene-2026 | 385 |
-| Ley del Infonavit | `LINFONAVIT` | 21-feb-2025 | 95 |
-| Ley antilavado (LFPIORPI) | `LFPIORPI` | 16-jul-2025 | 73 |
-| Ley Federal del Trabajo | `LFT` | 14-may-2026 | 1,266 |
-| Código Fiscal de la Federación | `CFF` | 09-abr-2026 | 421 |
-| Reglamento de la LISR | `RLISR` | 06-may-2016 | 313 |
-| Reglamento de la LIVA | `RLIVA` | 25-sep-2014 | 84 |
+| Código Fiscal de la Federación | `CFF` | 2026-04-09 | 421 |
+| Ley Aduanera | `LA` | 2025-11-19 | 277 |
+| Ley de Coordinación Fiscal | `LCF` | 2024-01-03 | 67 |
+| Ley Federal de Derechos | `LFD` | 2025-11-07 | 699 |
+| Ley Federal del Impuesto sobre Automóviles Nuevos | `LFISAN` | 2021-11-12 | 14 |
+| Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita | `LFPIORPI` | 2025-07-16 | 73 |
+| Ley Federal del Trabajo | `LFT` | 2026-05-14 | 1,266 |
+| Ley del Impuesto Especial sobre Producción y Servicios | `LIEPS` | 2025-11-07 | 69 |
+| Ley de Ingresos de la Federación para el Ejercicio Fiscal de 2026 | `LIF2026` | sin dato | 34 |
+| Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores | `LINFONAVIT` | 2025-02-21 | 95 |
+| Ley de Ingresos sobre Hidrocarburos | `LISH` | 2025-03-18 | 64 |
+| Ley del Impuesto sobre la Renta | `LISR` | 2024-04-01 | 236 |
+| Ley del Impuesto al Valor Agregado | `LIVA` | 2021-11-12 | 80 |
+| Ley del Mercado de Valores | `LMV` | 2025-11-14 | 463 |
+| Ley del Seguro Social | `LSS` | 2026-01-15 | 385 |
+| Reglamento del Código Fiscal de la Federación | `RCFF` | sin dato | 113 |
+| Reglamento de la Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita | `RLFPIORPI` | 2026-03-27 | 70 |
+| Reglamento de la Ley del Impuesto Especial sobre Producción y Servicios | `RLIEPS` | sin dato | 19 |
+| Reglamento de la Ley del Impuesto sobre la Renta | `RLISR` | 2016-05-06 | 313 |
+| Reglamento de la Ley del Impuesto al Valor Agregado | `RLIVA` | 2014-09-25 | 84 |
 
 ## Cómo está guardado y por qué
 
@@ -20,7 +31,7 @@ Texto de ley, **un artículo por archivo**, para que cada regla de `base/` cite 
 - `indice.json`: artículo → archivo, SHA256 de su texto, ubicación (título, capítulo, sección) y si está derogado.
 - `manifiesto.json`: URL oficial, fecha de descarga, SHA256 del PDF y del texto, última reforma que dice el PDF.
 - `transitorios.md`: los de la ley y los de los decretos de reforma.
-- **Los PDF no entran al repo**: se guarda su URL y su huella. Son unos 5 MB de texto en total; un repo aparte no hace falta.
+- **Los PDF no entran al repo**: se guarda su URL y su huella. Son unos 33 MB de texto en total (la LFT y la LFD pesan más); un repo aparte no hace falta.
 - Es público: la ley no tiene dueño ([LICENCIAS.md](../../LICENCIAS.md)). Un repo privado solo serviría para criterios propios del despacho.
 
 ## Cómo se regenera
@@ -35,7 +46,7 @@ python -m pytest tests/test_biblioteca.py
 
 1. **Orientación hasta cotejar con el DOF.** Cada artículo trae «Cotejado con el DOF: NO» hasta que una persona lo cotee (campo `cotejado_dof` del manifiesto, que regenerar no borra), y `citas_fuentes.py` lista los parámetros que citan artículos sin cotejar: esos no se firman. El texto es el de la Cámara de Diputados, que puede ir atrás del DOF. Hoy su índice marca la LISR en 2024 y la LIVA en 2021, y la base ya cita reformas posteriores (paquete económico 2026): **esos artículos hay que cotejarlos contra el decreto publicado** antes de firmar.
 2. **Las tablas se aplanan.** La tarifa del art. 96 o las tablas del art. 113-E salen como texto corrido. Los números de tarifa viven en `base/parametros.yaml` (cotejados con el Anexo 8), no aquí.
-3. Falta la RMF con sus Anexos (se guarda por año y por resolución de modificación: `fuentes/rmf/2026/…`, con los anexos aparte), la LIEPS y la LIF.
+3. La RMF 2026 está en `fuentes/rmf/`; faltan sus modificaciones y los anexos. Siguen sin estar: Ley del ISSSTE, Código de Comercio, LGSM, Ley de Amparo y los reglamentos de la LSS.
 4. Los encabezados se reconocen por forma. Si la Cámara cambia el formato del PDF, `extraer_ley.py` falla en vez de guardar basura (mínimo 20 artículos).
 
 ## Cómo entra una reforma

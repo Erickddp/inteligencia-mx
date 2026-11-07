@@ -4,7 +4,8 @@
  "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
  "fuente": "Cámara de Diputados (texto vigente); cotejar contra el DOF",
  "ultima_reforma_segun_pdf": "2026-04-09",
- "descargado": "2026-11-06",
+ "ultima_reforma_origen": "encabezado del PDF",
+ "descargado": "2026-11-07",
  "sha256_pdf": "be7427b20d3552775ab42018f8f87578078770095bf8cf46322c25e36ee3aa7d",
  "sha256_texto": "1253b0a02981c2ef38fd42590c21dada48cf2065a3959ee91304b771c711f79f",
  "cotejado_dof": {

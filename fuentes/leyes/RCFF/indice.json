@@ -1,0 +1,680 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "45f0e453d821570b790bf7188c6fc40761966c5dbc180ae867f47747fc11a6b5",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "f1d1e04908b4251add7843f997c297a3a7adbc8e99a95d26db39d69b7028eab4",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "b2b34e48240b5ee83cbf5205194309e0a96ed380d349c894bfb5de912cc39eb9",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "b6e323dbb7eeecc40b4525ab02819440bb56a9a5c203804e823a076c7b7e3169",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "2bd3c6278ed3202ea89e75e2271ac62ed51a620f12e41f943d236b2f3867748c",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "003a74cef4a42932ab6296430f5e8867989d17be77bcaf2a4da8fa310eb030ee",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "70038be38e2bd5684c2ead651374ff4342232676dd2e4646bf6df1338edcad2d",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "e1bb6683b4e66b23cd86027eee296650427c640f9e52eb6d5c7427a965101433",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "b108c083d14ee081a86dbbafbed20803a90a378bd24b8e6579760c9341ceead0",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "4a3fbdfb9a1b76f5805a086c9a687f6c345a4d7caa860ecff153d52cb52ec33e",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "c07760bfa0ed1d12df00b8e3fe04095b620bcdd2cd145a1d9e06eb14532eec1f",
+  "ubicacion": "Título I · Disposiciones Generales",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "cc6a348b75812c3838ca28b775a491ab41424403f98d45a8f441cb1b582ed389",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo I · De los Requisitos de las Promociones y la Representación ante las Autoridades Fiscales",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "df3099052c98d538fd3d069da92fa34cefe2efd71c01ba5f4c91242cd9d0d5fa",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo I · De los Requisitos de las Promociones y la Representación ante las Autoridades Fiscales",
+  "derogado": false
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "304abc0a3000f1fc21bac5e93230b8c92300e0478328ffba2148167ba5dac9fd",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo II · Del Pago, de la Devolución y de la Compensación de Contribuciones",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "c0d8c84a49ed47f069307da737a98c48a54e65375316487b844504be4c157a5f",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo II · Del Pago, de la Devolución y de la Compensación de Contribuciones",
+  "derogado": false
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "eb033d5bf71f121db6803f9d81c4ae335b3482e44165bdd0160c3941316f7556",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo II · Del Pago, de la Devolución y de la Compensación de Contribuciones",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "42315c45c985cf2b44b7590d629a75e060378f4abb6957904c746c555b2b1071",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo II · Del Pago, de la Devolución y de la Compensación de Contribuciones",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "8eac44008ee89f5d943a54b2616aa25f9a2b43ba781f8ef05b608cc994e4f37e",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo II · Del Pago, de la Devolución y de la Compensación de Contribuciones",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "dbb76b4d7b85c75767006450a5d889202463c73e5fef7630d9b1ef9f33980645",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo II · Del Pago, de la Devolución y de la Compensación de Contribuciones",
+  "derogado": false
+ },
+ "20": {
+  "archivo": "articulos/art-0020.md",
+  "sha256": "f3ea7d58fad63df3f77d377b04940f007f60c30f1534008c86d726f81458459c",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo II · Del Pago, de la Devolución y de la Compensación de Contribuciones",
+  "derogado": false
+ },
+ "21": {
+  "archivo": "articulos/art-0021.md",
+  "sha256": "291f351e29c2b0889e3d4ba7bbfda79f0157e14d1d747de540c44edf41f00b4e",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo II · Del Pago, de la Devolución y de la Compensación de Contribuciones",
+  "derogado": false
+ },
+ "22": {
+  "archivo": "articulos/art-0022.md",
+  "sha256": "1426c520299efb2196ba567a69ffb920930d71a9e641a4ec8d49889028952e31",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo III · De la Inscripción y Avisos en el Registro Federal de Contribuyentes / Sección I · De la Inscripción en el Registro Federal de Contribuyentes",
+  "derogado": false
+ },
+ "23": {
+  "archivo": "articulos/art-0023.md",
+  "sha256": "cbb1570097728fd42dc61a14c767fbe698f96a6d0ff100499c67154874aa9430",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo III · De la Inscripción y Avisos en el Registro Federal de Contribuyentes / Sección I · De la Inscripción en el Registro Federal de Contribuyentes",
+  "derogado": false
+ },
+ "24": {
+  "archivo": "articulos/art-0024.md",
+  "sha256": "2d36e2dad16c893e8513b88256ada5cabd5b52f540fb9a09a070a0dd62e0a9df",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo III · De la Inscripción y Avisos en el Registro Federal de Contribuyentes / Sección I · De la Inscripción en el Registro Federal de Contribuyentes",
+  "derogado": false
+ },
+ "25": {
+  "archivo": "articulos/art-0025.md",
+  "sha256": "085084b02c263fc9c9e9bcf1b703bcb4165189f0b8976bab453af0080fa49eb4",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo III · De la Inscripción y Avisos en el Registro Federal de Contribuyentes / Sección I · De la Inscripción en el Registro Federal de Contribuyentes",
+  "derogado": false
+ },
+ "26": {
+  "archivo": "articulos/art-0026.md",
+  "sha256": "df2e7e3554b43a253b75ced117eeb48bca8e5c4d1ef6a2fa32ee59f9a885b07d",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo III · De la Inscripción y Avisos en el Registro Federal de Contribuyentes / Sección I · De la Inscripción en el Registro Federal de Contribuyentes",
+  "derogado": false
+ },
+ "27": {
+  "archivo": "articulos/art-0027.md",
+  "sha256": "4898ce13b1d232db11aa861546f5725b7697942516da78278e2c0cccc8979a85",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo III · De la Inscripción y Avisos en el Registro Federal de Contribuyentes / Sección I · De la Inscripción en el Registro Federal de Contribuyentes",
+  "derogado": false
+ },
+ "28": {
+  "archivo": "articulos/art-0028.md",
+  "sha256": "f13593fd76b68cdddae66f4696584d2cb698ab6fec73c831a99ae60f7b3c3874",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo III · De la Inscripción y Avisos en el Registro Federal de Contribuyentes / Sección I · De la Inscripción en el Registro Federal de Contribuyentes",
+  "derogado": false
+ },
+ "29": {
+  "archivo": "articulos/art-0029.md",
+  "sha256": "4497ee92266520c3e539fc784632e6f0451293331f85d8a4745fd67fafe76d34",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo III · De la Inscripción y Avisos en el Registro Federal de Contribuyentes / Sección II · De los Avisos al Registro Federal de Contribuyentes",
+  "derogado": false
+ },
+ "30": {
+  "archivo": "articulos/art-0030.md",
+  "sha256": "d32b086e0e3a7879efa4d9e4bff5cec815285b0549dfedf828f7a89f785e3cf2",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo III · De la Inscripción y Avisos en el Registro Federal de Contribuyentes / Sección II · De los Avisos al Registro Federal de Contribuyentes",
+  "derogado": false
+ },
+ "31": {
+  "archivo": "articulos/art-0031.md",
+  "sha256": "23c58310d7c4cae589286495b44aa74b7826a2571bfde9e9810ad074a9b61baf",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo III · De la Inscripción y Avisos en el Registro Federal de Contribuyentes / Sección II · De los Avisos al Registro Federal de Contribuyentes",
+  "derogado": false
+ },
+ "32": {
+  "archivo": "articulos/art-0032.md",
+  "sha256": "d2cc6b48693222d35065076b605884970ed9e8db9c4a1e01711e143c2ceef057",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo III · De la Inscripción y Avisos en el Registro Federal de Contribuyentes / Sección II · De los Avisos al Registro Federal de Contribuyentes",
+  "derogado": false
+ },
+ "33": {
+  "archivo": "articulos/art-0033.md",
+  "sha256": "eec5ed17aa437f4994dd23e4e2c54833fa81417b44818cdd2d1e435bb89ec68e",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo IV · De la Contabilidad",
+  "derogado": false
+ },
+ "34": {
+  "archivo": "articulos/art-0034.md",
+  "sha256": "0a7fdf4b54f023e5025b4d27549b4c303a39ec4b827c4d5330871e8ad28f2b1a",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo IV · De la Contabilidad",
+  "derogado": false
+ },
+ "35": {
+  "archivo": "articulos/art-0035.md",
+  "sha256": "4785deb14fe687cb9bcd24ae02180faf0ba61156356d524ecac4dcd9c7f4b13c",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo IV · De la Contabilidad",
+  "derogado": false
+ },
+ "36": {
+  "archivo": "articulos/art-0036.md",
+  "sha256": "ab4326830f1223ed51aefddd8a088c0e4c31a3effa41d696cffa5f4808f943a6",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo V · De los Comprobantes Fiscales Digitales por Internet",
+  "derogado": false
+ },
+ "37": {
+  "archivo": "articulos/art-0037.md",
+  "sha256": "376038bd4cdc1c1510a3cc79b6cc3ffc6a774135e452c300fc1ad8dac332ad19",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo V · De los Comprobantes Fiscales Digitales por Internet",
+  "derogado": false
+ },
+ "38": {
+  "archivo": "articulos/art-0038.md",
+  "sha256": "036d59e96dfd7eab34adbfdb3b997f8c804aea1e18797bd9c74108987c6504d0",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo V · De los Comprobantes Fiscales Digitales por Internet",
+  "derogado": false
+ },
+ "39": {
+  "archivo": "articulos/art-0039.md",
+  "sha256": "529f4e2e439aca9595bd4c465ba0dd042b08b38b13515b3d11449cd5c86a2744",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo V · De los Comprobantes Fiscales Digitales por Internet",
+  "derogado": false
+ },
+ "40": {
+  "archivo": "articulos/art-0040.md",
+  "sha256": "8fec5ab5597eb70629d0e8296d490bf53b9605c215e43702c1c417ff179ea5c5",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo V · De los Comprobantes Fiscales Digitales por Internet",
+  "derogado": false
+ },
+ "41": {
+  "archivo": "articulos/art-0041.md",
+  "sha256": "6c486ffc558692d473c5826b339df28270caf494d960d290191c7242321331f9",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo VI · De las Declaraciones, Solicitudes y Avisos",
+  "derogado": false
+ },
+ "42": {
+  "archivo": "articulos/art-0042.md",
+  "sha256": "57a8e1f437a3f2289378b0348f62d4d75e5c78e55e1a17e626d2e9c93e247d81",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo VI · De las Declaraciones, Solicitudes y Avisos",
+  "derogado": false
+ },
+ "43": {
+  "archivo": "articulos/art-0043.md",
+  "sha256": "a6ffd96c1119ef93005f4d66e64b1e3ba6f888f034a08a6ae2ea3799211454d3",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo VI · De las Declaraciones, Solicitudes y Avisos",
+  "derogado": false
+ },
+ "44": {
+  "archivo": "articulos/art-0044.md",
+  "sha256": "574489c27d1e5504633232571ff234693b4f008354713c2edb1f4367d1c52030",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo VI · De las Declaraciones, Solicitudes y Avisos",
+  "derogado": false
+ },
+ "45": {
+  "archivo": "articulos/art-0045.md",
+  "sha256": "a68ac4156e717a30a553e903883ab5b5428ac6e9a5654ad40ab69112165e0d01",
+  "ubicacion": "Título II · De los Derechos y Obligaciones de los Contribuyentes / Capítulo VI · De las Declaraciones, Solicitudes y Avisos",
+  "derogado": false
+ },
+ "46": {
+  "archivo": "articulos/art-0046.md",
+  "sha256": "f06b386378c3de58e3d2a0198478a230a3c5865b79d4416b94f35c9419188dc4",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "47": {
+  "archivo": "articulos/art-0047.md",
+  "sha256": "cb90aacd78b755544ff3a0e72e6c16b147e4c6178889392b08822f7f922bb0ec",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "48": {
+  "archivo": "articulos/art-0048.md",
+  "sha256": "305c0c9935fa1f19b00f9bb0caea15d5837da7e29488870193f19db016c5d63c",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "49": {
+  "archivo": "articulos/art-0049.md",
+  "sha256": "75f3be12a033f966731874a4922b5779703b283a065f186d2c718f1f62d4930c",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "50": {
+  "archivo": "articulos/art-0050.md",
+  "sha256": "bfe81c997d2ba797d666b8b43104abf372554f5340c95a744be64c643c2277b2",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "51": {
+  "archivo": "articulos/art-0051.md",
+  "sha256": "f0638ec4a46e58ad30eb447a3e9f6c1381a3f653709ca8726c9723476df210fb",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "52": {
+  "archivo": "articulos/art-0052.md",
+  "sha256": "4ebf1370ae459105d8b02a626bce6e8f8f733745e3f09d2bce069307065e6d3e",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo II · De los Dictámenes del Contador Público Inscrito / Sección I · De la Inscripción del Contador Público y de las Sociedades y Asociaciones Civiles conformadas por Contadores",
+  "derogado": false
+ },
+ "53": {
+  "archivo": "articulos/art-0053.md",
+  "sha256": "f48d1d37fa415d9a40d83c079d41c51be2b01b24117870da278bbfae7df066e2",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo II · De los Dictámenes del Contador Público Inscrito / Sección I · De la Inscripción del Contador Público y de las Sociedades y Asociaciones Civiles conformadas por Contadores",
+  "derogado": false
+ },
+ "54": {
+  "archivo": "articulos/art-0054.md",
+  "sha256": "7c17955986c68aa69634ff0157a251125b03ed20d6a8b25ebae74af320ce198b",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo II · De los Dictámenes del Contador Público Inscrito / Sección I · De la Inscripción del Contador Público y de las Sociedades y Asociaciones Civiles conformadas por Contadores",
+  "derogado": false
+ },
+ "55": {
+  "archivo": "articulos/art-0055.md",
+  "sha256": "819646b40496a7c5816d37db992d21c3d5ccdf42fb92c0aedb87e3dc67ab65f6",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo II · De los Dictámenes del Contador Público Inscrito / Sección II · De las Sanciones a los Contadores Públicos Inscritos",
+  "derogado": false
+ },
+ "56": {
+  "archivo": "articulos/art-0056.md",
+  "sha256": "4281727d187ca5fa370f09712bb2af96c5ec6f93c176e9b9cefe0dadc416af5e",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo II · De los Dictámenes del Contador Público Inscrito / Sección II · De las Sanciones a los Contadores Públicos Inscritos",
+  "derogado": false
+ },
+ "57": {
+  "archivo": "articulos/art-0057.md",
+  "sha256": "87720cd404fa17ecfe227e1c5861cb215efa81a44cdb3bf9b9b1747da4a1ce1b",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo II · De los Dictámenes del Contador Público Inscrito / Sección III · De los Dictámenes",
+  "derogado": false
+ },
+ "58": {
+  "archivo": "articulos/art-0058.md",
+  "sha256": "211c4f63a08b6ec5d53bf1cb0774424e2f0831206f51c0e7e749d713a19fb448",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo II · De los Dictámenes del Contador Público Inscrito / Sección III · De los Dictámenes",
+  "derogado": false
+ },
+ "59": {
+  "archivo": "articulos/art-0059.md",
+  "sha256": "d1ca4c4f2f1587bab74451abaf3e18c6520dfa467a6a2293f6e4302c2bebfa38",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo II · De los Dictámenes del Contador Público Inscrito / Sección III · De los Dictámenes",
+  "derogado": false
+ },
+ "60": {
+  "archivo": "articulos/art-0060.md",
+  "sha256": "739616094d28bf3431c4c21efaf0b3301b2cf49e6f516f50c6bba4816863eb11",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo II · De los Dictámenes del Contador Público Inscrito / Sección III · De los Dictámenes",
+  "derogado": false
+ },
+ "61": {
+  "archivo": "articulos/art-0061.md",
+  "sha256": "5f7f662e340b799b18c5a77c52ce4a3b42a8c511ba4a0fbef19c8995ea8f6290",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo III · De las Revisiones Electrónicas",
+  "derogado": false
+ },
+ "62": {
+  "archivo": "articulos/art-0062.md",
+  "sha256": "e7dcdcff975d55bdbf58c833f0b5f059fe834dba7a9e2fc466eb3f1043dd0281",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo III · De las Revisiones Electrónicas",
+  "derogado": false
+ },
+ "63": {
+  "archivo": "articulos/art-0063.md",
+  "sha256": "8263c9aee62b8cb7115d34cfc6c8a00b22b9a45aa5dc9f10f9f7110e11af710d",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo IV · De la Presunción de Ingresos",
+  "derogado": false
+ },
+ "64": {
+  "archivo": "articulos/art-0064.md",
+  "sha256": "259cd85c8218eebd67be2015de7d3b172a2659b0230a21ff5a2704643d2730ec",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo IV · De la Presunción de Ingresos",
+  "derogado": false
+ },
+ "65": {
+  "archivo": "articulos/art-0065.md",
+  "sha256": "8005f6645f152a13b5fc69733e67d2e1d3ee9a6d10c0f1041c245ad5a7e12fc6",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo V · Del Pago a Plazos",
+  "derogado": false
+ },
+ "66": {
+  "archivo": "articulos/art-0066.md",
+  "sha256": "376109ca935024c141a6852a4611656618e785e88f9d8a2a8fc24f9ba27117a6",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo V · Del Pago a Plazos",
+  "derogado": false
+ },
+ "67": {
+  "archivo": "articulos/art-0067.md",
+  "sha256": "d2cb6a37e0e811415431a8f5bdd829bc6eb570385605610d927afe73bca5f7fd",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo V · Del Pago a Plazos",
+  "derogado": false
+ },
+ "68": {
+  "archivo": "articulos/art-0068.md",
+  "sha256": "fa985160c47c2bba955f60d74f9499436eb74bc097c230e4601e635aa769497e",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo V · Del Pago a Plazos",
+  "derogado": false
+ },
+ "69": {
+  "archivo": "articulos/art-0069.md",
+  "sha256": "76ea17fc884be7b65fd82319d1d60e63f7200ff633dd9b1321a723e5ecfc8f4a",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo VI · De la Presunción de las Operaciones Inexistentes",
+  "derogado": false
+ },
+ "70": {
+  "archivo": "articulos/art-0070.md",
+  "sha256": "06fa6de243a7a2fab658e067e1695c2ec42fd78afaff85a29cc2944f0b99a763",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo VI · De la Presunción de las Operaciones Inexistentes",
+  "derogado": false
+ },
+ "71": {
+  "archivo": "articulos/art-0071.md",
+  "sha256": "aa2aca6e6fb02916a204a11718a7877dd5c6f88947b7375c39310f176f3017c4",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo VII · De los Acuerdos Conclusivos",
+  "derogado": false
+ },
+ "72": {
+  "archivo": "articulos/art-0072.md",
+  "sha256": "bb92a0e3c0d66e312e7b408b24501fc763eebbe3014253ddbc6810f90ed69e32",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo VII · De los Acuerdos Conclusivos",
+  "derogado": false
+ },
+ "73": {
+  "archivo": "articulos/art-0073.md",
+  "sha256": "a8ff6b820b03834b756e39c70a48605e095dfdb9d4bd016074470ceb6bd9b33d",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo VIII · De las Infracciones Fiscales",
+  "derogado": false
+ },
+ "74": {
+  "archivo": "articulos/art-0074.md",
+  "sha256": "fa99fb6facda4ede7de6639cd516a17474fe897a9de347db71270e11720684bb",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo VIII · De las Infracciones Fiscales",
+  "derogado": false
+ },
+ "75": {
+  "archivo": "articulos/art-0075.md",
+  "sha256": "c2368c5faa9d6b9195ef7410e90b4a2ae583b735a2aa64946006438fc4b48210",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo VIII · De las Infracciones Fiscales",
+  "derogado": false
+ },
+ "76": {
+  "archivo": "articulos/art-0076.md",
+  "sha256": "6c450a894a0ff0d17bfab7f8eadc5364a72deb0af307ce3edab1e3fcee4a924e",
+  "ubicacion": "Título III · De las Facultades de las Autoridades Fiscales / Capítulo VIII · De las Infracciones Fiscales",
+  "derogado": false
+ },
+ "77": {
+  "archivo": "articulos/art-0077.md",
+  "sha256": "6a3375444365f9e9d9312d24de31852dcb4587612e3fca15d3f04b2d1f4afb70",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo I · De las Notificaciones y la Garantía del Interés Fiscal",
+  "derogado": false
+ },
+ "78": {
+  "archivo": "articulos/art-0078.md",
+  "sha256": "0d6ef387c6a701c4e8b4e7ac3ffca69cb0e0055be24a3c630cf4b45100611309",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo I · De las Notificaciones y la Garantía del Interés Fiscal",
+  "derogado": false
+ },
+ "79": {
+  "archivo": "articulos/art-0079.md",
+  "sha256": "c3ad7b02568185664051b5b3fe757b081dd9cd207f012b670f37508ef280bd4d",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo I · De las Notificaciones y la Garantía del Interés Fiscal",
+  "derogado": false
+ },
+ "80": {
+  "archivo": "articulos/art-0080.md",
+  "sha256": "1a0e9f0955e44b47cebb9344d119e9623b59a44ca2989a8e0df697a3490a9014",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo I · De las Notificaciones y la Garantía del Interés Fiscal",
+  "derogado": false
+ },
+ "81": {
+  "archivo": "articulos/art-0081.md",
+  "sha256": "f851f16a6b7b688e6c0c22525b8a15c56af28a09c0a0738566ab8160ca586f0a",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo I · De las Notificaciones y la Garantía del Interés Fiscal",
+  "derogado": false
+ },
+ "82": {
+  "archivo": "articulos/art-0082.md",
+  "sha256": "96b6609cb1093f50228b9a7b0e819798467dc8c538a2d5461f82018b443f2325",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo I · De las Notificaciones y la Garantía del Interés Fiscal",
+  "derogado": false
+ },
+ "83": {
+  "archivo": "articulos/art-0083.md",
+  "sha256": "12e4c85b9732fdf7542f7cac7df56e84b6bd9a5458157bab70e78bdd4af0afb4",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo I · De las Notificaciones y la Garantía del Interés Fiscal",
+  "derogado": false
+ },
+ "84": {
+  "archivo": "articulos/art-0084.md",
+  "sha256": "8c888583c3a942a312319b23e46bd3bb03e3e40a0810aabf742b485bce056642",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo I · De las Notificaciones y la Garantía del Interés Fiscal",
+  "derogado": false
+ },
+ "85": {
+  "archivo": "articulos/art-0085.md",
+  "sha256": "ce094d97d927e1d7e7566ec8372a92d82128be764dca5f57d2a030af9ea81f85",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo I · De las Notificaciones y la Garantía del Interés Fiscal",
+  "derogado": false
+ },
+ "86": {
+  "archivo": "articulos/art-0086.md",
+  "sha256": "2913408be4fbb8c07d46c4be99ee0754afb618ca3d9f5b45319c426339981136",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo I · De las Notificaciones y la Garantía del Interés Fiscal",
+  "derogado": false
+ },
+ "87": {
+  "archivo": "articulos/art-0087.md",
+  "sha256": "5b960825dfdaef13a09f41938a496d39ae48b4607e729dc543df3ff3a743e917",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo I · De las Notificaciones y la Garantía del Interés Fiscal",
+  "derogado": false
+ },
+ "88": {
+  "archivo": "articulos/art-0088.md",
+  "sha256": "42e7183d822b52d9041acb146f441a2ac76c79b8b76ae079b3adbe73ca578e08",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo I · De las Notificaciones y la Garantía del Interés Fiscal",
+  "derogado": false
+ },
+ "89": {
+  "archivo": "articulos/art-0089.md",
+  "sha256": "29886c62783bb1cebdb7788390cab55587e7bf3f04ce482f857ea6021d0c2222",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo I · De las Notificaciones y la Garantía del Interés Fiscal",
+  "derogado": false
+ },
+ "90": {
+  "archivo": "articulos/art-0090.md",
+  "sha256": "804b3143e483276b29cabdb282fc8d9b026321994709e963c60bf04f91fe4c10",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo I · De las Notificaciones y la Garantía del Interés Fiscal",
+  "derogado": false
+ },
+ "91": {
+  "archivo": "articulos/art-0091.md",
+  "sha256": "e6a2c0200101c3bc32da140185bbd0d0fc887da6e52b88c29d1637d0d57b27c3",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo I · De las Notificaciones y la Garantía del Interés Fiscal",
+  "derogado": false
+ },
+ "92": {
+  "archivo": "articulos/art-0092.md",
+  "sha256": "458acea09386ee0f269132935670a775669658f0aa9be2f660adbb18d2d63255",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección I · Disposiciones Generales",
+  "derogado": false
+ },
+ "93": {
+  "archivo": "articulos/art-0093.md",
+  "sha256": "b66ac26fb20019e862b04c45201ccb6cead836ff2f61163f5690219286c37cb2",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección I · Disposiciones Generales",
+  "derogado": false
+ },
+ "94": {
+  "archivo": "articulos/art-0094.md",
+  "sha256": "d51d85f0c7617c1d02004846db0500f22c5a727d256dbffd934adb9c37b48fb4",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección I · Disposiciones Generales",
+  "derogado": false
+ },
+ "95": {
+  "archivo": "articulos/art-0095.md",
+  "sha256": "ab81703a6f90ecd9b5633286009a2bd0684d52c258c4a7fc45989cf7378d948d",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección I · Disposiciones Generales",
+  "derogado": false
+ },
+ "96": {
+  "archivo": "articulos/art-0096.md",
+  "sha256": "84b0c5f54fde81f6e322bce05413f9a5b2f366fb0f4c5b241d5777501555ca2c",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección I · Disposiciones Generales",
+  "derogado": false
+ },
+ "97": {
+  "archivo": "articulos/art-0097.md",
+  "sha256": "ca0bc009982bc9a624912158cfc9fcf541cfc09429a745ce0d71bf19979d00f1",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección I · Disposiciones Generales",
+  "derogado": false
+ },
+ "98": {
+  "archivo": "articulos/art-0098.md",
+  "sha256": "4f297379a8565bf14f90554ec85a5d2d61506cff75243574f9e20ba41e4d6b47",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección II · Del Embargo, Intervención y Remate",
+  "derogado": false
+ },
+ "99": {
+  "archivo": "articulos/art-0099.md",
+  "sha256": "951bfb23830cc204a45e53cbb2d92355be1b81e185fbe36f1a89d7efec4a0da7",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección II · Del Embargo, Intervención y Remate",
+  "derogado": false
+ },
+ "100": {
+  "archivo": "articulos/art-0100.md",
+  "sha256": "46d269ddef152787552185ed272291fd2d17e7b4e0b9c0fb6fd2230df7bea21a",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección II · Del Embargo, Intervención y Remate",
+  "derogado": false
+ },
+ "101": {
+  "archivo": "articulos/art-0101.md",
+  "sha256": "56e8adc75070c95f83d4664d7e500e38728c1b510bfa4f3767e8e5bd824c90f9",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección II · Del Embargo, Intervención y Remate",
+  "derogado": false
+ },
+ "102": {
+  "archivo": "articulos/art-0102.md",
+  "sha256": "58255401f969b4297e65f9a5e02d14d0eb03c777c4d178a0efd994e27ac662e1",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección II · Del Embargo, Intervención y Remate",
+  "derogado": false
+ },
+ "103": {
+  "archivo": "articulos/art-0103.md",
+  "sha256": "ae5bda62720a51fad794c562796da35d124b2854e609926da01e7677a7b86a35",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección II · Del Embargo, Intervención y Remate",
+  "derogado": false
+ },
+ "104": {
+  "archivo": "articulos/art-0104.md",
+  "sha256": "30555c40939b81af2a323259902f98da2c5347b14738413126affa2a8596abdc",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección II · Del Embargo, Intervención y Remate",
+  "derogado": false
+ },
+ "105": {
+  "archivo": "articulos/art-0105.md",
+  "sha256": "20fcd4c0b5eb0c93aa655d1accd72a8bf896b9ea5c3a613c5190c471f3019a7a",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección II · Del Embargo, Intervención y Remate",
+  "derogado": false
+ },
+ "106": {
+  "archivo": "articulos/art-0106.md",
+  "sha256": "036b0fefe6ca6e472cb444b5f1db5db43138784941c38ec97b10369d6d6dabfb",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección II · Del Embargo, Intervención y Remate",
+  "derogado": false
+ },
+ "107": {
+  "archivo": "articulos/art-0107.md",
+  "sha256": "70a6f693fed4cf7d2f3146f3d62c0e628c488551466263ce2e541286020ff7b9",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección II · Del Embargo, Intervención y Remate",
+  "derogado": false
+ },
+ "108": {
+  "archivo": "articulos/art-0108.md",
+  "sha256": "d6b55a7308d3aafb5ebad0763377d55b060475bfa32f459dc60fe4bc87999758",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección II · Del Embargo, Intervención y Remate",
+  "derogado": false
+ },
+ "109": {
+  "archivo": "articulos/art-0109.md",
+  "sha256": "799182a5071c221d8610514521730ce0168c3e56f71d042c1d1ef36f351ca614",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección II · Del Embargo, Intervención y Remate",
+  "derogado": false
+ },
+ "110": {
+  "archivo": "articulos/art-0110.md",
+  "sha256": "6b601be7fce10a7b198d826b8051c7327728387b3c0eb9ced03f927b333bbcfa",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección II · Del Embargo, Intervención y Remate",
+  "derogado": false
+ },
+ "111": {
+  "archivo": "articulos/art-0111.md",
+  "sha256": "c980455ff3c13cb6680cfc7cde79a1841dd0c3f5b592fe387dec6858e4af4394",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección II · Del Embargo, Intervención y Remate",
+  "derogado": false
+ },
+ "112": {
+  "archivo": "articulos/art-0112.md",
+  "sha256": "d8319e1c74a52b00aff4e80e654f86a2ea024647bbb433f5b26e4264acfb5792",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección II · Del Embargo, Intervención y Remate",
+  "derogado": false
+ },
+ "113": {
+  "archivo": "articulos/art-0113.md",
+  "sha256": "ae8733b4366b2d719239721983513a4fa597d0e69969b8b74ff0ac6d09d41496",
+  "ubicacion": "Título IV · De los Procedimientos Administrativos / Capítulo II · Del Procedimiento Administrativo de Ejecución / Sección II · Del Embargo, Intervención y Remate",
+  "derogado": false
+ }
+}

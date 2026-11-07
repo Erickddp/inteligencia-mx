@@ -1,0 +1,422 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "8bdb4a16f0c723840081afd146c4babecd5739f5b65beba4b16a22f2f936f81b",
+  "ubicacion": "Capítulo PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "cdc4267a865cafe48d1a9e8cede9815b4c4571a7566295a8dccc871a996c35e3",
+  "ubicacion": "Capítulo PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "8d3a6f3eeb8b0342a148ad68a1855d3d65d9163825c11a8813e40f0b87cbdad4",
+  "ubicacion": "Capítulo PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "6be4e1f18825c2e33fe76fc06762e58bf6b6be3e2d9c5d0997a075ebe3f3f2a0",
+  "ubicacion": "Capítulo PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "a8882fee69de29a29e63db44d099a42af21bc70f2b49984f1a21d7d3e1b47c41",
+  "ubicacion": "Capítulo PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "791f2beb935564f229c9f9b399849f49643526afc4da8281651afbbb97eb8b56",
+  "ubicacion": "Capítulo PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "33fbb0c65c5342eb0ed3676029a8d97da2d934b9045fbca2f864abf57adbecab",
+  "ubicacion": "Capítulo PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "7-bis": {
+  "archivo": "articulos/art-0007-bis.md",
+  "sha256": "9f030bf1877438e43ed6d770544ab3e8ff0c162d7cc840921a7b0ffb44f80747",
+  "ubicacion": "Capítulo PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "aacca00453c3fa0da5239c7292cc4e13688da0ddad9e9db420cbc6a85b3f2248",
+  "ubicacion": "Capítulo PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "f2b3071d61a6a9401059f8e37bbeb50ce07c3adf78cbc79ce8948d48a36b6a6c",
+  "ubicacion": "Capítulo PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "b4012ae9867397edce3e51e5bdd687d79737b78ec59a6d9a7e6028d9b4c18f6a",
+  "ubicacion": "Capítulo PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "10-bis": {
+  "archivo": "articulos/art-0010-bis.md",
+  "sha256": "a9d7c4d78f98a636c9fe9860bdf7ba2b96c43fedc46474f46ed323fa5cd87859",
+  "ubicacion": "Capítulo PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "d0dc98a0ec328f46d5d786a883ad4c7ea7ca7d17fe6d63cfb12da59cc38c1ea6",
+  "ubicacion": "Capítulo SEGUNDO · REGLAMENTO DE LA LEY FEDERAL PARA LA PREVENCIÓN E IDENTIFICACIÓN DE OPERACIONES CON RECURSOS DE PROCEDENCIA ILÍCITA",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "c8244445d67d872808670da56ed80afd329587c92b01c622dd5d1869703e69a2",
+  "ubicacion": "Capítulo TERCERO · DE LAS OBLIGACIONES",
+  "derogado": false
+ },
+ "12-bis": {
+  "archivo": "articulos/art-0012-bis.md",
+  "sha256": "4ec8ddfa8d3ed8289d983a7ad1c4869660f7d0ce58cc1f3c4f53608368731bd5",
+  "ubicacion": "Capítulo TERCERO · DE LAS OBLIGACIONES",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "1d0865e1e1a6ab5695a29a73d0f163b9ee0ac9f0c40f78a82d870603c2e30eb0",
+  "ubicacion": "Capítulo TERCERO · DE LAS OBLIGACIONES",
+  "derogado": false
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "6cd666c799b61434289080bf8a0334f4f1c148907ff7c7c569aa1e4c3a6048f1",
+  "ubicacion": "Capítulo TERCERO · DE LAS OBLIGACIONES",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "8c9ccc08e434d60efd062f4cfda6ae3a916ac92c4c72b2cc565de102573a721e",
+  "ubicacion": "Capítulo TERCERO · DE LAS OBLIGACIONES",
+  "derogado": false
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "2648a156722ed2fad2fb466c5d498fe4becf560c2466e718949e043bffdb98b7",
+  "ubicacion": "Capítulo TERCERO · DE LAS OBLIGACIONES",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "84a694ccc53ba95c00b2ab517faf212d4cc6e17d1087f779af07352b3e148e62",
+  "ubicacion": "Capítulo TERCERO · DE LAS OBLIGACIONES",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "71e5db2b276bc67c9a975cb6a65ecb5fe636e98178ea74b0a2328a806b050bfe",
+  "ubicacion": "Capítulo TERCERO · DE LAS OBLIGACIONES",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "46467cda3554d7ef736155b7eb4176834d30f756eabcb00d78f8bcdb828f8682",
+  "ubicacion": "Capítulo TERCERO · DE LAS OBLIGACIONES",
+  "derogado": false
+ },
+ "20": {
+  "archivo": "articulos/art-0020.md",
+  "sha256": "08c8076cd26f7f6524a7ed8b42f73701e6228b194a30a329247accbad60e277b",
+  "ubicacion": "Capítulo TERCERO · DE LAS OBLIGACIONES",
+  "derogado": false
+ },
+ "21": {
+  "archivo": "articulos/art-0021.md",
+  "sha256": "ba9e11586c4501313533213ff498b242aa07092a5a790aa4c91f2dc8fcb76597",
+  "ubicacion": "Capítulo CUARTO · DE LAS ACTIVIDADES VULNERABLES",
+  "derogado": false
+ },
+ "21-bis": {
+  "archivo": "articulos/art-0021-bis.md",
+  "sha256": "6a4e86bd4c86584a9a9ad896d373ba9edd713b804c150c68900f4fe718749f1c",
+  "ubicacion": "Capítulo CUARTO · DE LAS ACTIVIDADES VULNERABLES",
+  "derogado": false
+ },
+ "22": {
+  "archivo": "articulos/art-0022.md",
+  "sha256": "5dda37cb493218ac0bf70d56e9dd31e74f01a124749276e369b561f5665d6946",
+  "ubicacion": "Capítulo CUARTO · DE LAS ACTIVIDADES VULNERABLES",
+  "derogado": false
+ },
+ "23": {
+  "archivo": "articulos/art-0023.md",
+  "sha256": "852b3b95ed3c6620465a1859b49252b0794a0d1194260c312c767cb89ac85aaa",
+  "ubicacion": "Capítulo CUARTO · DE LAS ACTIVIDADES VULNERABLES",
+  "derogado": false
+ },
+ "24": {
+  "archivo": "articulos/art-0024.md",
+  "sha256": "22154f4fb524b13806f15ace85d3cb5ac3e348c0fc5572789ac8259f76d097fe",
+  "ubicacion": "Capítulo CUARTO · DE LAS ACTIVIDADES VULNERABLES",
+  "derogado": false
+ },
+ "25": {
+  "archivo": "articulos/art-0025.md",
+  "sha256": "0660ac31dc41cf3a408a5d664b28eb80ccd18ed3df09233df5369c59ef4f7210",
+  "ubicacion": "Capítulo CUARTO · DE LAS ACTIVIDADES VULNERABLES",
+  "derogado": false
+ },
+ "26": {
+  "archivo": "articulos/art-0026.md",
+  "sha256": "79e64b8d0d990f8cdeeb66a7b2a72b9ef6f8b75e5a87cd1d9db1a89b72a2906b",
+  "ubicacion": "Capítulo CUARTO · DE LAS ACTIVIDADES VULNERABLES",
+  "derogado": false
+ },
+ "27": {
+  "archivo": "articulos/art-0027.md",
+  "sha256": "9fc631f395a9fc36bd26541958beb801f02ea336373d86a9466b2e73002b5458",
+  "ubicacion": "Capítulo CUARTO · DE LAS ACTIVIDADES VULNERABLES",
+  "derogado": false
+ },
+ "28": {
+  "archivo": "articulos/art-0028.md",
+  "sha256": "8509a675b5b8c5f6d4e55a275eba5d042a8c45b19d1ddd5eb435a69f06cf1bf7",
+  "ubicacion": "Capítulo CUARTO · DE LAS ACTIVIDADES VULNERABLES",
+  "derogado": false
+ },
+ "29": {
+  "archivo": "articulos/art-0029.md",
+  "sha256": "685bcc476d2f7d5b339f75426112fab08f02a237a22f473d21011df822409d5b",
+  "ubicacion": "Capítulo CUARTO · DE LAS ACTIVIDADES VULNERABLES",
+  "derogado": false
+ },
+ "30": {
+  "archivo": "articulos/art-0030.md",
+  "sha256": "1a12b47bcc6be755c26433e9d21e83045906b3adaf019b45ea23ee57aacd311d",
+  "ubicacion": "Capítulo CUARTO · DE LAS ACTIVIDADES VULNERABLES",
+  "derogado": false
+ },
+ "31": {
+  "archivo": "articulos/art-0031.md",
+  "sha256": "39abcab0ec638cc3ae5a7da912d0f07b72712410145cc0bfe1f796b820423ba3",
+  "ubicacion": "Capítulo CUARTO · DE LAS ACTIVIDADES VULNERABLES",
+  "derogado": false
+ },
+ "31-bis": {
+  "archivo": "articulos/art-0031-bis.md",
+  "sha256": "9836d9bba965a0355be9f04f54ee76624ad78b4f9886cffdb2ca41d4b55b7f0c",
+  "ubicacion": "Capítulo CUARTO · DE LAS ACTIVIDADES VULNERABLES",
+  "derogado": false
+ },
+ "32": {
+  "archivo": "articulos/art-0032.md",
+  "sha256": "cc34f9d90714ac6339ab00c4d5aa4a207b53fba8365ce1b6aea50b2b418f41d7",
+  "ubicacion": "Capítulo QUINTO · REGLAMENTO DE LA LEY FEDERAL PARA LA PREVENCIÓN E IDENTIFICACIÓN DE OPERACIONES CON RECURSOS DE PROCEDENCIA ILÍCITA",
+  "derogado": false
+ },
+ "33": {
+  "archivo": "articulos/art-0033.md",
+  "sha256": "506ceb7deb5fd08d4684e31297999925b0b3e88fde24ee76727cc5d03cf016b5",
+  "ubicacion": "Capítulo QUINTO · REGLAMENTO DE LA LEY FEDERAL PARA LA PREVENCIÓN E IDENTIFICACIÓN DE OPERACIONES CON RECURSOS DE PROCEDENCIA ILÍCITA",
+  "derogado": false
+ },
+ "33-bis": {
+  "archivo": "articulos/art-0033-bis.md",
+  "sha256": "7e4e446172c12ad203b00feaaf1d80a9a286fff44e949928e59d84e7cc80c999",
+  "ubicacion": "Capítulo QUINTO · REGLAMENTO DE LA LEY FEDERAL PARA LA PREVENCIÓN E IDENTIFICACIÓN DE OPERACIONES CON RECURSOS DE PROCEDENCIA ILÍCITA",
+  "derogado": false
+ },
+ "34": {
+  "archivo": "articulos/art-0034.md",
+  "sha256": "3f2a382c7e2ad3d4617e58bdd3d89a5b29db10b495f3ea6ef881c4249d8cf90a",
+  "ubicacion": "Capítulo QUINTO · REGLAMENTO DE LA LEY FEDERAL PARA LA PREVENCIÓN E IDENTIFICACIÓN DE OPERACIONES CON RECURSOS DE PROCEDENCIA ILÍCITA",
+  "derogado": false
+ },
+ "35": {
+  "archivo": "articulos/art-0035.md",
+  "sha256": "86603a7e7e7b0d8b8a7e500a7d9c7946231988d91fcc5642400b2f646a76734c",
+  "ubicacion": "Capítulo QUINTO · REGLAMENTO DE LA LEY FEDERAL PARA LA PREVENCIÓN E IDENTIFICACIÓN DE OPERACIONES CON RECURSOS DE PROCEDENCIA ILÍCITA",
+  "derogado": false
+ },
+ "36": {
+  "archivo": "articulos/art-0036.md",
+  "sha256": "f458c63c2d78ed40bd77660bd678e959f92042be47ee477b4aafec76f633fd42",
+  "ubicacion": "Capítulo QUINTO · REGLAMENTO DE LA LEY FEDERAL PARA LA PREVENCIÓN E IDENTIFICACIÓN DE OPERACIONES CON RECURSOS DE PROCEDENCIA ILÍCITA",
+  "derogado": false
+ },
+ "37": {
+  "archivo": "articulos/art-0037.md",
+  "sha256": "638ec789856f771d7b2964202a396198a0178136b1dbc883597b29e8e6601ae8",
+  "ubicacion": "Capítulo QUINTO · REGLAMENTO DE LA LEY FEDERAL PARA LA PREVENCIÓN E IDENTIFICACIÓN DE OPERACIONES CON RECURSOS DE PROCEDENCIA ILÍCITA",
+  "derogado": false
+ },
+ "38": {
+  "archivo": "articulos/art-0038.md",
+  "sha256": "ac40c8bf478cc80796c27e4bba0d0362487252aebffb7b932c6976f8d708833b",
+  "ubicacion": "Capítulo QUINTO · REGLAMENTO DE LA LEY FEDERAL PARA LA PREVENCIÓN E IDENTIFICACIÓN DE OPERACIONES CON RECURSOS DE PROCEDENCIA ILÍCITA",
+  "derogado": false
+ },
+ "39": {
+  "archivo": "articulos/art-0039.md",
+  "sha256": "d22828d5203b77b33fd91cb46740d06264f81e4afe3a80b9ded0e8e17b220e1e",
+  "ubicacion": "Capítulo QUINTO · REGLAMENTO DE LA LEY FEDERAL PARA LA PREVENCIÓN E IDENTIFICACIÓN DE OPERACIONES CON RECURSOS DE PROCEDENCIA ILÍCITA",
+  "derogado": false
+ },
+ "40": {
+  "archivo": "articulos/art-0040.md",
+  "sha256": "1858e6e03c950baa8c0313a9858d66064ce60e5d40d11669bf98598086c722cf",
+  "ubicacion": "Capítulo QUINTO · REGLAMENTO DE LA LEY FEDERAL PARA LA PREVENCIÓN E IDENTIFICACIÓN DE OPERACIONES CON RECURSOS DE PROCEDENCIA ILÍCITA",
+  "derogado": false
+ },
+ "41": {
+  "archivo": "articulos/art-0041.md",
+  "sha256": "689ed0ba53b9f1f609f3485d290f4a8f52245f4be36bf2708bb4fe2d594b359c",
+  "ubicacion": "Capítulo QUINTO · REGLAMENTO DE LA LEY FEDERAL PARA LA PREVENCIÓN E IDENTIFICACIÓN DE OPERACIONES CON RECURSOS DE PROCEDENCIA ILÍCITA",
+  "derogado": false
+ },
+ "42": {
+  "archivo": "articulos/art-0042.md",
+  "sha256": "70397c30a6b5da63e8db87e3568463752bfb63522d57868ebce22cedf838c015",
+  "ubicacion": "Capítulo SEXTO · DEL USO DE EFECTIVO Y METALES",
+  "derogado": false
+ },
+ "43": {
+  "archivo": "articulos/art-0043.md",
+  "sha256": "d8719220d44b0b9c931990abfa1a33330f892f53a99183a3a83eb5af0db43039",
+  "ubicacion": "Capítulo SEXTO · DEL USO DE EFECTIVO Y METALES",
+  "derogado": false
+ },
+ "44": {
+  "archivo": "articulos/art-0044.md",
+  "sha256": "1503b16b76b6c8f584b37c684522339181e5789df965af6fa5ab8b8b80783ac7",
+  "ubicacion": "Capítulo SEXTO · DEL USO DE EFECTIVO Y METALES",
+  "derogado": false
+ },
+ "45": {
+  "archivo": "articulos/art-0045.md",
+  "sha256": "f8d934adfaddb38ddd43707e87a334b7361dfd24f0d8706125ac32b00b282bf8",
+  "ubicacion": "Capítulo SEXTO · DEL USO DE EFECTIVO Y METALES",
+  "derogado": false
+ },
+ "45-bis": {
+  "archivo": "articulos/art-0045-bis.md",
+  "sha256": "1bd153d053ff9e7c41cfe95a19f71570f7b618d7b35a0664ab9d2e9b9e21cc83",
+  "ubicacion": "Capítulo SEXTO BIS · DE LA LISTA DE PERSONAS POLÍTICAMENTE EXPUESTAS Capítulo adicionado DOF 27-03-2026",
+  "derogado": false
+ },
+ "45-ter": {
+  "archivo": "articulos/art-0045-ter.md",
+  "sha256": "7ab71aacb48de119facd15d971a4f3688fe3b9d8195cffacecd3a40c080d820f",
+  "ubicacion": "Capítulo SEXTO BIS · DE LA LISTA DE PERSONAS POLÍTICAMENTE EXPUESTAS Capítulo adicionado DOF 27-03-2026",
+  "derogado": false
+ },
+ "45-quater": {
+  "archivo": "articulos/art-0045-quater.md",
+  "sha256": "d1666f5b3fc1697117c06501356183a4879ba764f0db634a51f960e804e50bd6",
+  "ubicacion": "Capítulo SEXTO BIS · DE LA LISTA DE PERSONAS POLÍTICAMENTE EXPUESTAS Capítulo adicionado DOF 27-03-2026",
+  "derogado": false
+ },
+ "45-quinquies": {
+  "archivo": "articulos/art-0045-quinquies.md",
+  "sha256": "75c503cd5735471dd51970a8358936e2e8ad459fc86fa6b821737db0baa334be",
+  "ubicacion": "Capítulo SEXTO BIS · DE LA LISTA DE PERSONAS POLÍTICAMENTE EXPUESTAS Capítulo adicionado DOF 27-03-2026",
+  "derogado": false
+ },
+ "46": {
+  "archivo": "articulos/art-0046.md",
+  "sha256": "eb1f9ba01f177e9e5f10b5a0516e5dc1a90aac59f46733d8c83b0bc91a449b43",
+  "ubicacion": "Capítulo SÉPTIMO · DE LA RESERVA Y MANEJO DE LA INFORMACIÓN",
+  "derogado": false
+ },
+ "47": {
+  "archivo": "articulos/art-0047.md",
+  "sha256": "8f817870a52d47d3e27fe3fd1bf64e5ccf32fc0db59b02e92de078e3ae7f8b6c",
+  "ubicacion": "Capítulo SÉPTIMO · DE LA RESERVA Y MANEJO DE LA INFORMACIÓN",
+  "derogado": false
+ },
+ "48": {
+  "archivo": "articulos/art-0048.md",
+  "sha256": "2fc752cd13d9d5433676b227ce7665d55f6570cd9f8f7ba84e5a0e74a7e34ed7",
+  "ubicacion": "Capítulo SÉPTIMO · DE LA RESERVA Y MANEJO DE LA INFORMACIÓN",
+  "derogado": false
+ },
+ "49": {
+  "archivo": "articulos/art-0049.md",
+  "sha256": "a4a8627e3d374d6038e637968194e214b75bc1639bdaedc5cb381a9f51fac354",
+  "ubicacion": "Capítulo SÉPTIMO · DE LA RESERVA Y MANEJO DE LA INFORMACIÓN",
+  "derogado": false
+ },
+ "50": {
+  "archivo": "articulos/art-0050.md",
+  "sha256": "856ce12e141b1c20a23caebe5d777e9289f08effb10297b93c706e4c7ee084c8",
+  "ubicacion": "Capítulo SÉPTIMO · DE LA RESERVA Y MANEJO DE LA INFORMACIÓN",
+  "derogado": false
+ },
+ "51": {
+  "archivo": "articulos/art-0051.md",
+  "sha256": "cba364706cb20155eec99dac5775953604d153f7cfbbfda5191721e773edc953",
+  "ubicacion": "Capítulo OCTAVO · REGLAMENTO DE LA LEY FEDERAL PARA LA PREVENCIÓN E IDENTIFICACIÓN DE OPERACIONES CON RECURSOS DE PROCEDENCIA ILÍCITA",
+  "derogado": false
+ },
+ "52": {
+  "archivo": "articulos/art-0052.md",
+  "sha256": "55c3ac78fd2703bd99d159140da13bcf812e8cf7bd7f28ccded8ea7fdce055ee",
+  "ubicacion": "Capítulo OCTAVO · REGLAMENTO DE LA LEY FEDERAL PARA LA PREVENCIÓN E IDENTIFICACIÓN DE OPERACIONES CON RECURSOS DE PROCEDENCIA ILÍCITA",
+  "derogado": false
+ },
+ "53": {
+  "archivo": "articulos/art-0053.md",
+  "sha256": "dc9ad607a507ee20c82f6655ebe18d7bfa8ea78098ea1e32e72170476111828b",
+  "ubicacion": "Capítulo OCTAVO · REGLAMENTO DE LA LEY FEDERAL PARA LA PREVENCIÓN E IDENTIFICACIÓN DE OPERACIONES CON RECURSOS DE PROCEDENCIA ILÍCITA",
+  "derogado": false
+ },
+ "54": {
+  "archivo": "articulos/art-0054.md",
+  "sha256": "13e38ea307f272ce3851cac8b3d8813dcdacc6db918b69c0b9a71dc558864fa0",
+  "ubicacion": "Capítulo OCTAVO · REGLAMENTO DE LA LEY FEDERAL PARA LA PREVENCIÓN E IDENTIFICACIÓN DE OPERACIONES CON RECURSOS DE PROCEDENCIA ILÍCITA",
+  "derogado": false
+ },
+ "55": {
+  "archivo": "articulos/art-0055.md",
+  "sha256": "0065c00e011f712e8c1a4f4ef18202528c92d2b1004481544464f653bfe853b6",
+  "ubicacion": "Capítulo NOVENO · DE LAS SANCIONES ADMINISTRATIVAS",
+  "derogado": false
+ },
+ "55-bis": {
+  "archivo": "articulos/art-0055-bis.md",
+  "sha256": "5bc39e7e676f8d010ea1a5c7a765b9c34170036aaeb1f854dca2bd55c1ef5dc8",
+  "ubicacion": "Capítulo NOVENO · DE LAS SANCIONES ADMINISTRATIVAS",
+  "derogado": false
+ },
+ "56": {
+  "archivo": "articulos/art-0056.md",
+  "sha256": "64ee60420152c54b26deb32a435fbe36dbd0de5737d8911284a224e93552c9ae",
+  "ubicacion": "Capítulo NOVENO · DE LAS SANCIONES ADMINISTRATIVAS",
+  "derogado": false
+ },
+ "57": {
+  "archivo": "articulos/art-0057.md",
+  "sha256": "7901597d32245d750ccd88e8e36bb56ec09eaf36bbc5d38b709c984b5d5208c8",
+  "ubicacion": "Capítulo NOVENO · DE LAS SANCIONES ADMINISTRATIVAS",
+  "derogado": false
+ },
+ "58": {
+  "archivo": "articulos/art-0058.md",
+  "sha256": "8ae0314a759f2cd954cf7477ccaf0ba43a32a4d1bf58a7fb534c467af6dfbd89",
+  "ubicacion": "Capítulo NOVENO · DE LAS SANCIONES ADMINISTRATIVAS",
+  "derogado": false
+ },
+ "59": {
+  "archivo": "articulos/art-0059.md",
+  "sha256": "c5e37a32d5f2dc5839485e2bb6f4a0256449c23adaa5a67f020f155dafac64fb",
+  "ubicacion": "Capítulo NOVENO · DE LAS SANCIONES ADMINISTRATIVAS",
+  "derogado": false
+ }
+}

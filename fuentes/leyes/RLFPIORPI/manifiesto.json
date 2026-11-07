@@ -1,0 +1,17 @@
+{
+ "clave": "RLFPIORPI",
+ "nombre": "Reglamento de la Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita",
+ "url": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LFPIORPI.pdf",
+ "fuente": "Cámara de Diputados (texto vigente); cotejar contra el DOF",
+ "ultima_reforma_segun_pdf": "2026-03-27",
+ "ultima_reforma_origen": "encabezado del PDF",
+ "descargado": "2026-11-07",
+ "sha256_pdf": "8072a83eb174130772570505982e2ed0e6a7f0687db64e5efc309dfb4d2902b9",
+ "sha256_texto": "c7f95120814ea5f35bb431c12e03b8d9c45e18dfe4c5f62b5cc0bbf7665af32e",
+ "cotejado_dof": {
+  "ley_completa": null,
+  "articulos": {}
+ },
+ "articulos": 70,
+ "derogados": 0
+}

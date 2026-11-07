@@ -1,0 +1,188 @@
+# LFD · Artículo 223-BIS
+
+Ley: Ley Federal de Derechos (LFD)
+Ubicación: Titulo SEGUNDO · De los Derechos por el Uso o Aprovechamiento de Bienes del Dominio Público / Capitulo VIII · Agua
+Texto según: Cámara de Diputados, última reforma DOF 2025-11-07 · https://www.diputados.gob.mx/LeyesBiblio/pdf/LFD.pdf
+Cotejado con el DOF: NO (no se firma ningún parámetro que cite este artículo)
+
+Artículo 223-Bis. Las personas físicas y morales a que se refieren los artículos 222 y 223 de esta Ley, que trasvasen directamente las aguas nacionales, así como aquéllas que se beneficien del trasvase indirecto, pagarán adicionalmente a las cuotas previstas en el artículo 223 citado, las cuotas siguientes atendiendo a los usos establecidos en el artículo 223 de esta Ley, así como a las zonas de disponibilidad de donde se efectúa la exportación del agua trasvasada y la de importación.
+
+Apartado A, del artículo 223 de esta Ley, fuente de extracción aguas superficiales
+
+_Zona de disponibilidad importadora_
+
+disponibilidad
+
+exportadora
+
+ZD 1 2 3 4
+
+Zona de
+
+1 $4.2910
+
+2 $2.3533 $1.9759
+
+3 $1.5829 $0.9174 $0.6475
+
+4 $1.5102 $0.8306 $0.5062 $0.4954
+
+Apartado B, fracción I del artículo 223 de esta Ley, fuente de extracción aguas superficiales
+
+_Zona de disponibilidad importadora_
+
+disponibilidad
+
+exportadora
+
+ZD 1 2 3 4
+
+Zona de
+
+1 $127.56
+
+2 $71.60 $61.16
+
+3 $52.84 $35.20 $30.56
+
+4 $45.13 $25.65 $17.55 $15.18
+
+Apartado B, fracción II del artículo 223 de esta Ley, fuente de extracción aguas superficiales
+
+_Zona de disponibilidad importadora_
+
+disponibilidad
+
+exportadora
+
+ZD 1 2 3 4
+
+Zona de
+
+1 $1.4742
+
+2 $1.4742 $1.4742
+
+3 $1.4742 $1.4742 $1.4742
+
+4 $1.4742 $1.4742 $1.4742 $1.4742
+
+Apartado B, fracción III del artículo 223 de esta Ley, fuente de extracción aguas superficiales
+
+_Zona de disponibilidad importadora_
+
+disponibilidad
+
+exportadora
+
+ZD 1 2 3 4
+
+Zona de
+
+1 $1.0604
+
+2 $0.6096 $0.5291
+
+3 $0.4333 $0.2896 $0.2430
+
+4 $0.3690 $0.2114 $0.1338 $0.1125
+
+Apartado B, fracción IV del artículo 223 de esta Ley, fuente de extracción aguas superficiales
+
+Z
+
+o
+
+n
+
+a
+
+d
+
+e
+
+_d p o n b d a d e p o a d o a s x Zona de disponibilidad importadora r r t i i i l i_
+
+ZD 1 2 3 4
+
+1 $3.1599
+
+2 $1.9500 $1.7635
+
+3 $1.3452 $0.9744 $0.8224
+
+4 $1.1004 $0.6869 $0.4250 $0.3394
+
+Apartado C, del artículo 223 de esta Ley, fuente de extracción aguas superficiales
+
+_Zona de disponibilidad importadora_
+
+disponibilidad
+
+exportadora
+
+ZD 1 2 3 4
+
+Zona de
+
+1 $0.0450
+
+2 $0.0450 $0.0450
+
+3 $0.0450 $0.0450 $0.0450
+
+4 $0.0450 $0.0450 $0.0450 $0.0450
+
+La cuota que resulte de las tablas anteriores, se aplicará por cada metro cúbico o mil metros cúbicos de agua que durante el trimestre trasvase directamente el contribuyente, así como por cada metro cúbico o mil metros cúbicos de los que se haya beneficiado el contribuyente derivado del trasvase indirecto, según corresponda.
+
+El contribuyente podrá optar por adicionar a la cuota prevista en el artículo 223 de esta Ley, la cuota que se determine de acuerdo con la siguiente fórmula:
+
+_ t    t   t   1  i  *  * t j    i  *  * ti   ti     t j       t j  _
+
+Donde:
+
+*
+
+t : Cuota aplicable al trasvase de aguas nacionales.
+
+ti : Cuota prevista en el artículo 223 de esta Ley, aplicable según la zona de disponibilidad de exportación para trasvasar y el uso que corresponda.
+
+t j : Cuota prevista en el artículo 223 de esta Ley, aplicable según la zona de disponibilidad de importación del agua trasvasada y el uso que corresponda.
+
+ : Porcentaje de los costos de agotamiento y degradación ambiental respecto al Producto Interno Bruto determinado con base en los costos totales por agotamiento y degradación ambiental sin considerar los costos por agotamiento de hidrocarburos, que hace público el Instituto Nacional de Estadística y Geografía vigente al treinta y uno de diciembre del ejercicio fiscal anterior.
+
+: Tasa social de descuento vigente al treinta y uno de diciembre del ejercicio fiscal anterior, publicada en el Diario Oficial de la Federación por la Secretaría de Hacienda y Crédito Público.
+
+ t  
+
+1  i  *  * t j  : Factor de ajuste ambiental de la zona exportadora.
+
+ t j  
+
+ t  
+
+ i  *  * ti  : Factor de ajuste ambiental de la zona importadora.
+
+ t j  
+
+ti   : Factor de ajuste de costo de oportunidad social.
+
+Como facilidad administrativa, la Secretaría de Hacienda y Crédito Público, publicará en el Diario Oficial de la Federación, a más tardar el último día del segundo mes del ejercicio fiscal que corresponda, las cuotas aplicables al trasvase durante dicho ejercicio.
+
+Para los efectos de este artículo se considerará trasvase, el uso, explotación o aprovechamiento de aguas nacionales conducidas de una cuenca hidrológica a otra mediante obras de infraestructura hidráulica, que para los fines de la presente Ley pueden ser:
+
+_Párrafo reformado DOF 13-11-2023_
+
+a). Directo: El que realizan los asignatarios y concesionarios con autorización de la Comisión
+
+Nacional del Agua.
+
+b). Indirecto: El que efectúa el Estado en beneficio de los asignatarios o concesionarios, con
+
+inversión federal o con participación de inversión estatal, municipal, social o privada. Dicho
+
+beneficio tiene lugar cuando concesionarios y asignatarios usan, aprovechan o explotan
+
+aguas nacionales trasvasadas previamente por el Estado.
+
+_Artículo adicionado DOF 11-12-2013_

@@ -1,0 +1,116 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "2b87c0acea2dfcda59b4881b1a0e4f2341b5c2fdd9095f114304e572b93a735c",
+  "ubicacion": "Capítulo I",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "e1d1815a02d2824d679d64122c92c2d5a770d52df395322007d81fbed8e5c213",
+  "ubicacion": "Capítulo I",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "3d0bab1a703c2765245b0abc243a3206ef6aec63db7bae13101b73364bb0b7bf",
+  "ubicacion": "Capítulo I",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "b63096593e3e96b4e3818f29d7270ec7eb1f38dd3f9277e091f19d0c12d5986f",
+  "ubicacion": "Capítulo I",
+  "derogado": false
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "97c4877753cc290c27beff6d7c7ac6a854e7afa80fa44c613fcbe3919a1e88e9",
+  "ubicacion": "Capítulo II · De la enajenación",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "0b467096602e9c2807e0df7a273894d536d4645db86a1f17791b6d1900eaca51",
+  "ubicacion": "Capítulo II · De la enajenación",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "cd6ba926d0e1a2082417d3b8350c24b37da4068f20ac0b1e81c964f2d7ae9bd4",
+  "ubicacion": "Capítulo II · De la enajenación",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "340b5bad647b0cc750705a990b763f6daad7b4abb097aef018d8d8175d31e43e",
+  "ubicacion": "Capítulo III · De la importación de bienes",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "69d0cc092ca60104aa23adc0ce615beb295ea9f181b5fe7ef28a16da558bbfef",
+  "ubicacion": "Capítulo III · De la importación de bienes",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "de7d6700724dd7e1f7b58fecc790b4a20fadd8f89a38148057c4415c203ccd4a",
+  "ubicacion": "Capítulo III · De la importación de bienes",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "db1556ace5a46374fa69df88a2cfcf54eb08dcdfd250541148904ff21d149ed6",
+  "ubicacion": "Capítulo IV · De la prestación de servicios",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "db17fb0a3af2195744c7f16938007db7b32f013533aed58032f385e451b886eb",
+  "ubicacion": "Capítulo V · De las obligaciones de los contribuyentes",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "0f539a56bafadc7cf01c43c434499737577410d5f4f56b5b74cfe026b8a28a8f",
+  "ubicacion": "Capítulo V · De las obligaciones de los contribuyentes",
+  "derogado": false
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "78ea267c8a2e9e0a10474b7731d156167188658e8a38d54c153949ba04683870",
+  "ubicacion": "Capítulo V · De las obligaciones de los contribuyentes",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "0df0d853d384a85b4ace201a53571fda2683b279949e8978f84ed7bd5db68ceb",
+  "ubicacion": "Capítulo V · De las obligaciones de los contribuyentes",
+  "derogado": false
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "10a0cae822cbb205df0f2f986f43705c59782976275d263a449eb9ad274af348",
+  "ubicacion": "Capítulo V · De las obligaciones de los contribuyentes",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "2c4a7b5f79f4a1a885460ada4ccc8bbde8974e10439cef8b6e4c68628f4e55d0",
+  "ubicacion": "Capítulo V · De las obligaciones de los contribuyentes",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "359cab46c5b2d82950445044d6c8b821488c3799c7a7e8a5aaddd440b53284a9",
+  "ubicacion": "Capítulo V · De las obligaciones de los contribuyentes",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "25971f4567ea1811eb6b2c1f99065ac8f17efbc51cc45e18a381cb47443a8b88",
+  "ubicacion": "Capítulo VI · De las facultades de las autoridades",
+  "derogado": false
+ }
+}

@@ -15,7 +15,8 @@ RAIZ = Path(__file__).resolve().parent.parent
 LEYES_DIR = RAIZ / "fuentes" / "leyes"
 ALIAS = {"LISR": "LISR", "LIVA": "LIVA", "LSS": "LSS", "LFPIORPI": "LFPIORPI", "LINFONAVIT": "LINFONAVIT",
          "Ley del Infonavit": "LINFONAVIT", "LFT": "LFT", "CFF": "CFF", "RLISR": "RLISR", "RLIVA": "RLIVA",
-         "LIEPS": "LIEPS", "RMF": "RMF", "LIF": "LIF"}
+         "LIEPS": "LIEPS", "RMF": "RMF", "LIF": "LIF2026", "RCFF": "RCFF", "RLIEPS": "RLIEPS", "LA": "LA", "LFD": "LFD",
+         "LISH": "LISH", "LFISAN": "LFISAN", "LCF": "LCF", "LMV": "LMV", "RLFPIORPI": "RLFPIORPI"}
 CITA = re.compile(r"\b(" + "|".join(sorted(map(re.escape, ALIAS), key=len, reverse=True)) + r")\s+(?:arts?\.|artículos?)\s*([^;\"\)\n]+)")
 NUM = re.compile(r"(\d+)\s*[º°]?o?\.?\s*(?:-\s*([A-Z])\b|\s+(Bis|Ter|Qu[áa]ter))?", re.I)
 

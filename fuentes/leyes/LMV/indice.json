@@ -1,0 +1,2780 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "c09c8ac4effa023b843c4c926b76638a8844bf3bd16f039b801cd955878dd5af",
+  "ubicacion": "Título I · Disposiciones preliminares",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "ed75485e460f9af4ab88aa3a39e855f981c6134687712937c701b435ec9e1011",
+  "ubicacion": "Título I · Disposiciones preliminares",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "60395e24fe9363cb0aba0780b4eacb08b3a01eb78e211ac37eae0c8ac25951ad",
+  "ubicacion": "Título I · Disposiciones preliminares",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "4f5db4062405ff0c2a06acd7c844cbb94e0550d1f938acb594cbb181e8c4cb55",
+  "ubicacion": "Título I · Disposiciones preliminares",
+  "derogado": false
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "43652c033dd8707297a7577918995eef5a520d19b20380337d1e4bb48c0761d1",
+  "ubicacion": "Título I · Disposiciones preliminares",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "6129d5a31690560f35dcaf75ab5eed607fa7c49dc5c12d00ce9597faaefbdce4",
+  "ubicacion": "Título I · Disposiciones preliminares",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "3118b9431d490de3d188ff6f164b412327918e98ac7b309a2924371c4a0f96bd",
+  "ubicacion": "Título I · Disposiciones preliminares",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "6f7c799cc74cdded7ca2ddda3cf7dba309d65add3e6abec0ca78d679e7387c69",
+  "ubicacion": "Título I · Disposiciones preliminares",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "7f5987ed1d52c90c718523eb0b9855bfd20d00f1ab66eaefa5b013c3940b700b",
+  "ubicacion": "Título I · Disposiciones preliminares",
+  "derogado": false
+ },
+ "9-bis": {
+  "archivo": "articulos/art-0009-bis.md",
+  "sha256": "87f47618aa9f8a55f7dcefb1adcee658857b6a4c2f2e8a2a508d18e00e902cc1",
+  "ubicacion": "Título I · Disposiciones preliminares",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "4336f269f8c603e32d979ff7db74b7840ce84e5d80a3d9c4f4325c0f3ca9e7d9",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "9c7ab233d2cd8bc645532ebc6a544e6e3f5cd02b2aa02e8e793517bb6af6c0d8",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "a21da7ab956d5c83cf98bb886446d50561b1e3600839234227a07789aecd9dce",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo I · De las sociedades anónimas promotoras de inversión",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "0d3d4368716f4ab81671f6fd1f2c8ec250da3ffc082509648c65a8c809c0f78d",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo I · De las sociedades anónimas promotoras de inversión",
+  "derogado": false
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "045bb33f704357552d0904eca3c990d97712e85e381aba4f65824137ceceae42",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo I · De las sociedades anónimas promotoras de inversión / Sección I · De la administración y vigilancia",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "d699a403e124482b0893f53925da5a3e30eeef8050a332da6ac7e0c11bf3b601",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo I · De las sociedades anónimas promotoras de inversión / Sección I · De la administración y vigilancia",
+  "derogado": false
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "0fa5e43e801483dbe5f72604383fe0c2b47ab6afe30b0941324c99d50b95f3f7",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo I · De las sociedades anónimas promotoras de inversión / Sección II · De las asambleas de accionistas y convenios entre socios",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "bccfffecf2f53cc78d898314f5a1fcbadb464e7c3656e4ca5c653e449aa0626a",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo I · De las sociedades anónimas promotoras de inversión / Sección II · De las asambleas de accionistas y convenios entre socios",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "8c695da6d4c1c89bf2276b1c47b1dc6dd8f283d06fd01b1099b69bf5c89651b6",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo I · De las sociedades anónimas promotoras de inversión / Sección II · De las asambleas de accionistas y convenios entre socios",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "e88b85330e50ff044ccadc0de3fe4f936901e255e746d216b93afebf8b5f46f6",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo I · De las sociedades anónimas promotoras de inversión / Sección III · De las sociedades anónimas promotoras de inversión bursátil",
+  "derogado": false
+ },
+ "20": {
+  "archivo": "articulos/art-0020.md",
+  "sha256": "1e73aea5574195330e1a1a56656f3f423df1361fb3beaf63749f59809b46fbce",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo I · De las sociedades anónimas promotoras de inversión / Sección III · De las sociedades anónimas promotoras de inversión bursátil",
+  "derogado": false
+ },
+ "21": {
+  "archivo": "articulos/art-0021.md",
+  "sha256": "8f6835642327d3db075cd3e9b7be198231064dc0338132b15fa78b423b8bf3b8",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo I · De las sociedades anónimas promotoras de inversión / Sección III · De las sociedades anónimas promotoras de inversión bursátil",
+  "derogado": false
+ },
+ "22": {
+  "archivo": "articulos/art-0022.md",
+  "sha256": "8da247c7f964802c40005ce1996dbf3bc98248f21a6a292d79824cc27d65e441",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles",
+  "derogado": false
+ },
+ "23": {
+  "archivo": "articulos/art-0023.md",
+  "sha256": "32a6c4430b20fa5481f400cc0cb5d66594e723fa91941b9dc987d78de4a83e30",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección I · De la administración",
+  "derogado": false
+ },
+ "24": {
+  "archivo": "articulos/art-0024.md",
+  "sha256": "18b539b32859258bd0c70ba64840ea7dd48f908b277c3c849844e1d8b93546f1",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección I · De la administración",
+  "derogado": false
+ },
+ "25": {
+  "archivo": "articulos/art-0025.md",
+  "sha256": "e9443ba47a5d3d0215345365e864938b50018be75ff263d8da2e1f8f7b98761b",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección I · De la administración",
+  "derogado": false
+ },
+ "26": {
+  "archivo": "articulos/art-0026.md",
+  "sha256": "d415e2c473a7003bdace6d085efcdbf730701376cdc7c5065c6eadc1af2de8b8",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección I · De la administración",
+  "derogado": false
+ },
+ "27": {
+  "archivo": "articulos/art-0027.md",
+  "sha256": "411805f4e012c5889019cf052a037156ade4591ee27d42963f54c748422bcf42",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección I · De la administración",
+  "derogado": false
+ },
+ "28": {
+  "archivo": "articulos/art-0028.md",
+  "sha256": "b99cd492bfa055e189b9fce2ba04919b4d67c07574d7c9b2147ff430821afdd0",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección I · De la administración",
+  "derogado": false
+ },
+ "29": {
+  "archivo": "articulos/art-0029.md",
+  "sha256": "43bea6148aa97b7782aab597b966c83d4dd83a967c080e3622fd220e0a86bb9a",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección I · De la administración",
+  "derogado": false
+ },
+ "30": {
+  "archivo": "articulos/art-0030.md",
+  "sha256": "85131f78df4243cca8a76fc3d520faa5c99dc78c1ae1c61eeed1ceb85e3579c4",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección I · De la administración",
+  "derogado": false
+ },
+ "31": {
+  "archivo": "articulos/art-0031.md",
+  "sha256": "6739849f25fa4dd0a62ebfc9aaf44ba2f05f4a2416921f373d20e751568b7dda",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección I · De la administración",
+  "derogado": false
+ },
+ "32": {
+  "archivo": "articulos/art-0032.md",
+  "sha256": "76fcbf4ab481af94614092ae2bf104fe246ccc6663cfd8d134726a449121ce82",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección I · De la administración",
+  "derogado": false
+ },
+ "33": {
+  "archivo": "articulos/art-0033.md",
+  "sha256": "4ca894c71bb0fc9c8c9c2b42ba2c1e686e708b6213114e26969fbb42df86d7d0",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección I · De la administración",
+  "derogado": false
+ },
+ "34": {
+  "archivo": "articulos/art-0034.md",
+  "sha256": "3f7df9717547ede6e3512e8b147132c785b7f84cdc282e89b5f44cb2760752c2",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección I · De la administración",
+  "derogado": false
+ },
+ "35": {
+  "archivo": "articulos/art-0035.md",
+  "sha256": "e1f2f26826b739173dcea8fb33663f966b0980228c2821a143b18c2a7c3ae3d4",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección I · De la administración",
+  "derogado": false
+ },
+ "36": {
+  "archivo": "articulos/art-0036.md",
+  "sha256": "f48ca46089409b5435f3a5e75113916ff2db1ba984a2e7d7eae81e17cbbace99",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección I · De la administración",
+  "derogado": false
+ },
+ "37": {
+  "archivo": "articulos/art-0037.md",
+  "sha256": "b9fd8620e54e752b3744c8b5d8ab0adae4e7edbdeb3246b5d71706900b28f9c2",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección I · De la administración",
+  "derogado": false
+ },
+ "38": {
+  "archivo": "articulos/art-0038.md",
+  "sha256": "7f0dfbdfa430aedaf2f58bad7401c7b4b966b5c09cf18f125f4c7919db813c48",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección I · De la administración",
+  "derogado": false
+ },
+ "39": {
+  "archivo": "articulos/art-0039.md",
+  "sha256": "f4d1636b4254e234177a1f26b7530a4933a32c5672e7d6173bef9368130c9995",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección I · De la administración",
+  "derogado": false
+ },
+ "40": {
+  "archivo": "articulos/art-0040.md",
+  "sha256": "5afbb7d1142bebe922a7b2ba1cbf6c3a241f76e2feedc1f048eff5d97b588ee6",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección I · De la administración",
+  "derogado": false
+ },
+ "41": {
+  "archivo": "articulos/art-0041.md",
+  "sha256": "d40196b64e90416c0d507576b6b48adf2c4ab5b2fff3fa9cb5e317d1ea22f398",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección II · De la vigilancia",
+  "derogado": false
+ },
+ "42": {
+  "archivo": "articulos/art-0042.md",
+  "sha256": "87491530dd6c2f308659228f398dd62953dd99774535ee5fab832a459eabe167",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección II · De la vigilancia",
+  "derogado": false
+ },
+ "43": {
+  "archivo": "articulos/art-0043.md",
+  "sha256": "5db5f70061c91aca9069be8f94b61abe519bf97dd8263fa8ee69906aea892302",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección II · De la vigilancia",
+  "derogado": false
+ },
+ "44": {
+  "archivo": "articulos/art-0044.md",
+  "sha256": "09295e0a185a8193be5391cc4dbc0135d62f854f7d6c2f556360f28f16bdacc3",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección III · De la gestión, conducción y ejecución de los negocios sociales",
+  "derogado": false
+ },
+ "45": {
+  "archivo": "articulos/art-0045.md",
+  "sha256": "9c099d061c11616d5b69c65436e5f59a5441f038b73be39e77d11a7de63e21a0",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección III · De la gestión, conducción y ejecución de los negocios sociales",
+  "derogado": false
+ },
+ "46": {
+  "archivo": "articulos/art-0046.md",
+  "sha256": "b903b1e5966845e5e671203f6175bfc8f9fabba1af2d210d966a20ef2eb1cfcd",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección III · De la gestión, conducción y ejecución de los negocios sociales",
+  "derogado": false
+ },
+ "47": {
+  "archivo": "articulos/art-0047.md",
+  "sha256": "91d8adbe2ce5c43ce63521faf23bf931f9b0c0f60503349fa3696ad5f206918b",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección IV · De las asambleas de accionistas y derechos de los socios",
+  "derogado": false
+ },
+ "48": {
+  "archivo": "articulos/art-0048.md",
+  "sha256": "8ae28b19aa41a87f137f3112b0b7f2a8bab96138332b37d6a5b609e4e7d75b3b",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección IV · De las asambleas de accionistas y derechos de los socios",
+  "derogado": false
+ },
+ "49": {
+  "archivo": "articulos/art-0049.md",
+  "sha256": "a774ec0b4fe502d8513504e758b0c853362dbcea5f96baf3d90c0fb300f7da8d",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección IV · De las asambleas de accionistas y derechos de los socios",
+  "derogado": false
+ },
+ "50": {
+  "archivo": "articulos/art-0050.md",
+  "sha256": "6eccab9d447636d8aeb582b216f33bf728d693c0f14b60d5689f767d5178407a",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección IV · De las asambleas de accionistas y derechos de los socios",
+  "derogado": false
+ },
+ "51": {
+  "archivo": "articulos/art-0051.md",
+  "sha256": "5b08c3852b6cc99a983d02387847077ec5d5081771fe6eda73f66cd5ee2e1094",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección IV · De las asambleas de accionistas y derechos de los socios",
+  "derogado": false
+ },
+ "52": {
+  "archivo": "articulos/art-0052.md",
+  "sha256": "2eb25d599679f9aabbf86f8920f3f2793eeaf80a67bea030f9eb4e88b997ddc3",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección IV · De las asambleas de accionistas y derechos de los socios",
+  "derogado": false
+ },
+ "53": {
+  "archivo": "articulos/art-0053.md",
+  "sha256": "e2b454a153d2048a2b679fe0298ba4499ba671bde7ad70ace56aef07b64dfe2c",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección V · De las disposiciones especiales aplicables a la emisión de acciones de las sociedades anónimas bursátiles",
+  "derogado": false
+ },
+ "54": {
+  "archivo": "articulos/art-0054.md",
+  "sha256": "9c37036781f654f835433a24fe9aeecdb3ad22caf93ce62853b079e79a6ce580",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección V · De las disposiciones especiales aplicables a la emisión de acciones de las sociedades anónimas bursátiles",
+  "derogado": false
+ },
+ "55": {
+  "archivo": "articulos/art-0055.md",
+  "sha256": "b96c67265eee63701c28553094981ceefe067b54a847ca0b4b2e9ff5f9a8a78e",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección V · De las disposiciones especiales aplicables a la emisión de acciones de las sociedades anónimas bursátiles",
+  "derogado": true
+ },
+ "55-bis": {
+  "archivo": "articulos/art-0055-bis.md",
+  "sha256": "f4ff5866fa2bd5a9934027749196cbf4e59fc56aaa76fe6216cdd1ba4d152d13",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección V · De las disposiciones especiales aplicables a la emisión de acciones de las sociedades anónimas bursátiles",
+  "derogado": false
+ },
+ "56": {
+  "archivo": "articulos/art-0056.md",
+  "sha256": "202da25b8851585133598be0dcd09137b26e27ee1abf7626d30ca9b5ae823bbc",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección VI · De las operaciones que las sociedades anónimas bursátiles realizan con acciones de su capital social o títulos de crédito que las representen",
+  "derogado": false
+ },
+ "57": {
+  "archivo": "articulos/art-0057.md",
+  "sha256": "7129bce3472dc69e22c04a1e393a69f13f60400aa1043e711739ff962f6a8781",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo II · De las sociedades anónimas bursátiles / Sección VI · De las operaciones que las sociedades anónimas bursátiles realizan con acciones de su capital social o títulos de crédito que las representen",
+  "derogado": false
+ },
+ "58": {
+  "archivo": "articulos/art-0058.md",
+  "sha256": "22b0b4fc435885517ed606a0cab02b0afed3ef249a97d508090e2529b1e280c9",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo III · De las sociedades extranjeras y otras emisoras",
+  "derogado": false
+ },
+ "59": {
+  "archivo": "articulos/art-0059.md",
+  "sha256": "39b1b7bb68162ac2b1df661f79adf2dceddaf21235da83f7465f846b60eb9cec",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo III · De las sociedades extranjeras y otras emisoras",
+  "derogado": false
+ },
+ "60": {
+  "archivo": "articulos/art-0060.md",
+  "sha256": "81f9f7c9f0d28ebab4edf339b95567c232ee15188f2ad0b988d19b590d1f39b3",
+  "ubicacion": "Título II · De las sociedades anónimas del mercado de valores / Capítulo III · De las sociedades extranjeras y otras emisoras",
+  "derogado": false
+ },
+ "61": {
+  "archivo": "articulos/art-0061.md",
+  "sha256": "097898c5b36214c73e5bb98131c22de9e19eb5c25aedac33970084ee968bfedf",
+  "ubicacion": "Título III · De los certificados bursátiles, títulos opcionales y otras disposiciones / Capítulo I · De los certificados bursátiles",
+  "derogado": false
+ },
+ "62": {
+  "archivo": "articulos/art-0062.md",
+  "sha256": "13d78babcb3d3780632461a106f1a5aac91d8b43ed53ac069bf04861f8db304d",
+  "ubicacion": "Título III · De los certificados bursátiles, títulos opcionales y otras disposiciones / Capítulo I · De los certificados bursátiles",
+  "derogado": false
+ },
+ "63": {
+  "archivo": "articulos/art-0063.md",
+  "sha256": "fdd2d2e03a5c1b7410ee89fd2ca1d5dc3034070c9aa328662b1672fbc1f5b211",
+  "ubicacion": "Título III · De los certificados bursátiles, títulos opcionales y otras disposiciones / Capítulo I · De los certificados bursátiles",
+  "derogado": false
+ },
+ "63-bis": {
+  "archivo": "articulos/art-0063-bis.md",
+  "sha256": "efdcbb718854bd8ad2b324c225a7f88a3346209697a80b9605f0920b775fa0cb",
+  "ubicacion": "Título III · De los certificados bursátiles, títulos opcionales y otras disposiciones / Capítulo I · De los certificados bursátiles",
+  "derogado": false
+ },
+ "63-bis-1": {
+  "archivo": "articulos/art-0063-bis-1.md",
+  "sha256": "df42d51d91416ce6a6a9d91f68d7318761c9565db9dcc77d5112a1940d6ca8ac",
+  "ubicacion": "Título III · De los certificados bursátiles, títulos opcionales y otras disposiciones / Capítulo I · De los certificados bursátiles",
+  "derogado": false
+ },
+ "64": {
+  "archivo": "articulos/art-0064.md",
+  "sha256": "05d3ab9944f556408e1564588a880ced639319dc74698cd232a59ace47a30728",
+  "ubicacion": "Título III · De los certificados bursátiles, títulos opcionales y otras disposiciones / Capítulo I · De los certificados bursátiles",
+  "derogado": false
+ },
+ "64-bis": {
+  "archivo": "articulos/art-0064-bis.md",
+  "sha256": "e6354345ee8305413a716c57f279cbe324eb66267ab7826dc49b29719c3c8f8b",
+  "ubicacion": "Título III · De los certificados bursátiles, títulos opcionales y otras disposiciones / Capítulo I · De los certificados bursátiles",
+  "derogado": false
+ },
+ "64-bis-1": {
+  "archivo": "articulos/art-0064-bis-1.md",
+  "sha256": "910afc09937068a763d2715411c4954fdfc147f2cf70dbd97ccbd5ff32014590",
+  "ubicacion": "Título III · De los certificados bursátiles, títulos opcionales y otras disposiciones / Capítulo I · De los certificados bursátiles",
+  "derogado": false
+ },
+ "64-bis-2": {
+  "archivo": "articulos/art-0064-bis-2.md",
+  "sha256": "54d0fa76151c44508cc7120fd50609ed4467b07b043c1ea1ebecb655aed2424e",
+  "ubicacion": "Título III · De los certificados bursátiles, títulos opcionales y otras disposiciones / Capítulo I · De los certificados bursátiles",
+  "derogado": false
+ },
+ "64-bis-3": {
+  "archivo": "articulos/art-0064-bis-3.md",
+  "sha256": "f620c7bd08f47ebae9039576edcb2608de532dd507f10c6828a90c175546fda8",
+  "ubicacion": "Título III · De los certificados bursátiles, títulos opcionales y otras disposiciones / Capítulo I · De los certificados bursátiles",
+  "derogado": false
+ },
+ "65": {
+  "archivo": "articulos/art-0065.md",
+  "sha256": "50e5fef63fc0cc6aa0181517a1f4c45c88271baca2f7c4cbdaf1e68952321d1a",
+  "ubicacion": "Título III · De los certificados bursátiles, títulos opcionales y otras disposiciones / Capítulo II · De los títulos opcionales",
+  "derogado": false
+ },
+ "66": {
+  "archivo": "articulos/art-0066.md",
+  "sha256": "18afd97be8890cef6d73a6cc72b04c36c9d11551b6d176a284d09a7527894a27",
+  "ubicacion": "Título III · De los certificados bursátiles, títulos opcionales y otras disposiciones / Capítulo II · De los títulos opcionales",
+  "derogado": false
+ },
+ "67": {
+  "archivo": "articulos/art-0067.md",
+  "sha256": "f5ac4d5b05592197826b7cde0afdd8b90a2113803d9d53411cc95e498929ebfb",
+  "ubicacion": "Título III · De los certificados bursátiles, títulos opcionales y otras disposiciones / Capítulo II · De los títulos opcionales",
+  "derogado": false
+ },
+ "68": {
+  "archivo": "articulos/art-0068.md",
+  "sha256": "16f8df04f1a5531acb10578a5a8498e694b2f0a25eb162560f042ed69a84b078",
+  "ubicacion": "Título III · De los certificados bursátiles, títulos opcionales y otras disposiciones / Capítulo III · Otras disposiciones",
+  "derogado": false
+ },
+ "69": {
+  "archivo": "articulos/art-0069.md",
+  "sha256": "2f6e29c349801ab642fa179f92c085387cafe54d972216374c4cae01c8750e50",
+  "ubicacion": "Título III · De los certificados bursátiles, títulos opcionales y otras disposiciones / Capítulo III · Otras disposiciones",
+  "derogado": false
+ },
+ "70": {
+  "archivo": "articulos/art-0070.md",
+  "sha256": "0c51aaca239a4e8236b1492d90a0445fc995a8c93a406cbd544fbfabcbb867f6",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo I · Del Registro",
+  "derogado": false
+ },
+ "70-bis": {
+  "archivo": "articulos/art-0070-bis.md",
+  "sha256": "40a16ed5c104b1ba481fd3d22e9f3a0d2bb319d6cb73e29773c8ba986eba66e3",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo I · Del Registro",
+  "derogado": false
+ },
+ "71": {
+  "archivo": "articulos/art-0071.md",
+  "sha256": "d2dd02758db79d008a79c38a1128a877b0d2d9012b5da6669dee5b6d85365842",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo I · Del Registro",
+  "derogado": false
+ },
+ "72": {
+  "archivo": "articulos/art-0072.md",
+  "sha256": "a19026b5cc288b9827ba4b9dabee8a9733db3cb0f1aa4c5882a790e721e502f8",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo I · Del Registro",
+  "derogado": false
+ },
+ "73": {
+  "archivo": "articulos/art-0073.md",
+  "sha256": "a060c0631c69e8a4f6395899dc097450c70709c912a79a3f21a7c317a9abbbb7",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo I · Del Registro",
+  "derogado": false
+ },
+ "74": {
+  "archivo": "articulos/art-0074.md",
+  "sha256": "8690bbd718738b354bedb6e838f075218fdacdd99965229f83b0c51a75dc8545",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo I · Del Registro",
+  "derogado": false
+ },
+ "75": {
+  "archivo": "articulos/art-0075.md",
+  "sha256": "6f5f0f20ea3d8997bdbfd39f35339f732eaee7cb716233b2f9cf32b337c1db35",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo I · Del Registro",
+  "derogado": false
+ },
+ "76": {
+  "archivo": "articulos/art-0076.md",
+  "sha256": "2007d05e10c85b65fe51f1408728be6a82d9bc8f43d33b441e3217488a946c24",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo I · Del Registro",
+  "derogado": false
+ },
+ "77": {
+  "archivo": "articulos/art-0077.md",
+  "sha256": "be6de722fabc4c2e9d56eb50e44ceb0cec1784e290a51c640a0c22ccf19a6e54",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo I · Del Registro",
+  "derogado": false
+ },
+ "78": {
+  "archivo": "articulos/art-0078.md",
+  "sha256": "e6ec0ae626db10ff56ca6c27f1b5bcc1369dc2de7bc74570c3cdb0407a84f3fa",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo I · Del Registro",
+  "derogado": false
+ },
+ "79": {
+  "archivo": "articulos/art-0079.md",
+  "sha256": "2af66982f7dc9285e7833bb48a0694376654b060f20d96d785727f536da83b04",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo I · Del Registro",
+  "derogado": false
+ },
+ "80": {
+  "archivo": "articulos/art-0080.md",
+  "sha256": "b540d60462af75bf5921534d80fba7ec20900abafaa16be3243f98197b1c7efd",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo I · Del Registro",
+  "derogado": false
+ },
+ "81": {
+  "archivo": "articulos/art-0081.md",
+  "sha256": "eb9f10f5028c2bbb6f1347b8ed38c45541cd17780b9a267f1e9f319c39b1d766",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo I · Del Registro",
+  "derogado": false
+ },
+ "82": {
+  "archivo": "articulos/art-0082.md",
+  "sha256": "ee14109eacc74ff7c1d59ed90ee729b1d77df969b4626dca474e7f5e379d9603",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo I · Del Registro",
+  "derogado": false
+ },
+ "82-bis": {
+  "archivo": "articulos/art-0082-bis.md",
+  "sha256": "5ce0fdccaff5a4eae54d89140ea5455a7d5a1053695c33387db6cb88f2247f3d",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo I · Del Registro",
+  "derogado": false
+ },
+ "82-bis-1": {
+  "archivo": "articulos/art-0082-bis-1.md",
+  "sha256": "b60c846b7662b2a6ff06b83d153053448b2bac730320481cb5fb5ab658e41258",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo I · Del Registro",
+  "derogado": false
+ },
+ "82-bis-2": {
+  "archivo": "articulos/art-0082-bis-2.md",
+  "sha256": "08e7421b6495e9d5e5e7e84dd91cb2f8e17af06860cf3be26cb46245d559c9d9",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo I · Del Registro",
+  "derogado": false
+ },
+ "83": {
+  "archivo": "articulos/art-0083.md",
+  "sha256": "72ef4b68ec1f077acd2665b50cbb6bb5a64ddf1250621609c9595bed359a37cb",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores",
+  "derogado": false
+ },
+ "84": {
+  "archivo": "articulos/art-0084.md",
+  "sha256": "f7b6345d56cec38eb136b30bc647e56761408bbb80942247a3c4ce606f8d23ec",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores",
+  "derogado": false
+ },
+ "85": {
+  "archivo": "articulos/art-0085.md",
+  "sha256": "7f0e03b2102e77b8ea6f8a5294a5d98c24afff1def475179380c7d44305e8e8d",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección I · De la inscripción y oferta de suscripción o de enajenación",
+  "derogado": false
+ },
+ "86": {
+  "archivo": "articulos/art-0086.md",
+  "sha256": "c8078758639ab7f357a23fee814c84481ac2009d40d5e7cb8efc4a50aaf7a1cc",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección I · De la inscripción y oferta de suscripción o de enajenación",
+  "derogado": false
+ },
+ "86-bis": {
+  "archivo": "articulos/art-0086-bis.md",
+  "sha256": "4dab151299c1fd0d78b0cf9e9b73ce707a537b1a25e2f47b819ba5e98d1ca3bf",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección I · De la inscripción y oferta de suscripción o de enajenación",
+  "derogado": false
+ },
+ "87": {
+  "archivo": "articulos/art-0087.md",
+  "sha256": "b7b28b0ca4018829ea55d45630848c71663d7f5f3775e99a37e0577cea213b7e",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección I · De la inscripción y oferta de suscripción o de enajenación",
+  "derogado": false
+ },
+ "88": {
+  "archivo": "articulos/art-0088.md",
+  "sha256": "56464b18bf6ed572b0003aefce7b2a05449e8ea2e8d07104ce3a29460df970a9",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección I · De la inscripción y oferta de suscripción o de enajenación",
+  "derogado": false
+ },
+ "89": {
+  "archivo": "articulos/art-0089.md",
+  "sha256": "4b15bb43653193b11a66921d08802cc8390a8e402e0de408aecad7adfee74031",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección I · De la inscripción y oferta de suscripción o de enajenación",
+  "derogado": false
+ },
+ "90": {
+  "archivo": "articulos/art-0090.md",
+  "sha256": "98db0d2d221bb415e0787f4fd421aafc01dc9d2989ebae4bbb5e34dee692d29a",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección II · De la inscripción sin oferta",
+  "derogado": false
+ },
+ "90-bis": {
+  "archivo": "articulos/art-0090-bis.md",
+  "sha256": "cabce04bafd425ae2a7947a104c984b9c37208bac6646019e5dc7506c2590f7b",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección II · De la inscripción sin oferta",
+  "derogado": false
+ },
+ "91": {
+  "archivo": "articulos/art-0091.md",
+  "sha256": "081b2fb7537acd74348c27b5af483f9354fe1b19fad94d3bbefed72e96dd68ec",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección III · De la inscripción preventiva",
+  "derogado": false
+ },
+ "92": {
+  "archivo": "articulos/art-0092.md",
+  "sha256": "5d7403828ecf340c9bde808c95a8df656dc6216a475ceb6bd49b9cd453cff381",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección III · De la inscripción preventiva",
+  "derogado": false
+ },
+ "93": {
+  "archivo": "articulos/art-0093.md",
+  "sha256": "21bc5bf56ed0a4becd2118e6ce9c91ceaaa6b7f0feb501a93fe60b6a03ad4990",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección III · De la inscripción preventiva",
+  "derogado": false
+ },
+ "94": {
+  "archivo": "articulos/art-0094.md",
+  "sha256": "a54e4432558eeedd8485ae44f69b68974564644a1ad59f3352d4407f8b2867e8",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección III · De la inscripción preventiva",
+  "derogado": false
+ },
+ "95": {
+  "archivo": "articulos/art-0095.md",
+  "sha256": "b6b1696c501ea3f9a87a301e57f7ef5013604969f77297d0139f1d1ec06d54b1",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección IV · De las ofertas públicas de adquisición",
+  "derogado": false
+ },
+ "96": {
+  "archivo": "articulos/art-0096.md",
+  "sha256": "4ef2887c9d6ba3371837c112cf81e96b86bba960ad32a470475e295c2770357e",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección IV · De las ofertas públicas de adquisición",
+  "derogado": false
+ },
+ "97": {
+  "archivo": "articulos/art-0097.md",
+  "sha256": "6b4f18ce519265f4cac7041745027225bb0c32349c11535b02c3887bd192d652",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección IV · De las ofertas públicas de adquisición",
+  "derogado": false
+ },
+ "98": {
+  "archivo": "articulos/art-0098.md",
+  "sha256": "aedcc1190ac4bbf6ff87efc3214bd32add2ed8366384611c84ac32e139c41e6f",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección IV · De las ofertas públicas de adquisición",
+  "derogado": false
+ },
+ "99": {
+  "archivo": "articulos/art-0099.md",
+  "sha256": "35fdd2226b6b8dee5c0cff0ab4d63f690f14df04ad23a56f9d2a73842ec11ccf",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección IV · De las ofertas públicas de adquisición",
+  "derogado": false
+ },
+ "100": {
+  "archivo": "articulos/art-0100.md",
+  "sha256": "156f2bb014a6cee067f4c8c5da4c59a21d9fdff8504bf4cf7c0d2be4c55e9674",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección IV · De las ofertas públicas de adquisición",
+  "derogado": false
+ },
+ "101": {
+  "archivo": "articulos/art-0101.md",
+  "sha256": "1f79cc7691e25586ec4d889f603df0606cff5f2e0e8a18caf9f7b3420fec790e",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección IV · De las ofertas públicas de adquisición",
+  "derogado": false
+ },
+ "102": {
+  "archivo": "articulos/art-0102.md",
+  "sha256": "ad2166e1b4b025491c972c49b21097132b3dfa2cdc746bf9ecc73e4991c77b91",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección IV · De las ofertas públicas de adquisición",
+  "derogado": false
+ },
+ "103": {
+  "archivo": "articulos/art-0103.md",
+  "sha256": "6702f99b09b6ddd551c9bc40d714e79e3061674cb37680aa47c2d385d84beb85",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo II · De las ofertas públicas de valores / Sección IV · De las ofertas públicas de adquisición",
+  "derogado": false
+ },
+ "104": {
+  "archivo": "articulos/art-0104.md",
+  "sha256": "d968e6935eb90eda46dc185cf456f9f613238b94171ac08a935710a2d689b192",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo III · De las obligaciones de las emisoras",
+  "derogado": false
+ },
+ "105": {
+  "archivo": "articulos/art-0105.md",
+  "sha256": "5e68698e59761a1db2305d9d56e5eff72926ab9316c7cb05bb2d13a8269e168f",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo III · De las obligaciones de las emisoras",
+  "derogado": false
+ },
+ "106": {
+  "archivo": "articulos/art-0106.md",
+  "sha256": "f988f31da6b5fc2671f7c2d7e4579b473e02d93d0b8827838c5682cbde844cbc",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo III · De las obligaciones de las emisoras",
+  "derogado": false
+ },
+ "107": {
+  "archivo": "articulos/art-0107.md",
+  "sha256": "4d056cb027635efc6a70f4594f4950a0f7dbc897c7dc15fb5c005ce96ae832e0",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo IV · De la suspensión de la inscripción de valores en el Registro",
+  "derogado": false
+ },
+ "108": {
+  "archivo": "articulos/art-0108.md",
+  "sha256": "4c1f5a462aa6312c03291a38a87ab1ee196d0fad84864cb3b26028d80b2d0aae",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo V · De la cancelación de la inscripción de valores en el Registro",
+  "derogado": false
+ },
+ "108-bis": {
+  "archivo": "articulos/art-0108-bis.md",
+  "sha256": "e14bf05765076903b3025467d4e49acd7b9511dff5552d5f3ec82c33159c5747",
+  "ubicacion": "Título IV · De la inscripción y oferta de valores / Capítulo V · De la cancelación de la inscripción de valores en el Registro",
+  "derogado": false
+ },
+ "109": {
+  "archivo": "articulos/art-0109.md",
+  "sha256": "7e405139ebeed4da0b8ce265642de17e59fd01de2b8a37b4eb8e4883e4605aea",
+  "ubicacion": "Título V · De las adquisiciones de valores objeto de revelación",
+  "derogado": false
+ },
+ "110": {
+  "archivo": "articulos/art-0110.md",
+  "sha256": "4468acfdf467946e32994e80f5658b825235e3516cf24263d5a814ae4d653a3a",
+  "ubicacion": "Título V · De las adquisiciones de valores objeto de revelación",
+  "derogado": false
+ },
+ "111": {
+  "archivo": "articulos/art-0111.md",
+  "sha256": "49204c74b4ce154d94c5cfc70271cbbbd765a390635fea67db1b9391014a87b5",
+  "ubicacion": "Título V · De las adquisiciones de valores objeto de revelación",
+  "derogado": false
+ },
+ "112": {
+  "archivo": "articulos/art-0112.md",
+  "sha256": "95c36e4ee1f90fd87c3460641614297abe8f40a853740ad8e7e67fc4cccaaa9c",
+  "ubicacion": "Título V · De las adquisiciones de valores objeto de revelación",
+  "derogado": false
+ },
+ "113": {
+  "archivo": "articulos/art-0113.md",
+  "sha256": "f21d24858f2fc9a82b4f3ff25f62f8d250376cef3e1e2f3ab21b55adefe9ac8d",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores",
+  "derogado": false
+ },
+ "114": {
+  "archivo": "articulos/art-0114.md",
+  "sha256": "f7feb4ea2b5708ae48f717baecd5788cdcae7a437e35377ee9b4861b952834c3",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección I · De la organización",
+  "derogado": false
+ },
+ "115": {
+  "archivo": "articulos/art-0115.md",
+  "sha256": "1bf57fe5fe9b11e6b5dae6e6d93b930f48eaa93fa2fe0a7c377954d288c069af",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección I · De la organización",
+  "derogado": false
+ },
+ "116": {
+  "archivo": "articulos/art-0116.md",
+  "sha256": "b9ae50207f4006b9fabf1aca7a059cb886143177ba83726100a3f7661547b58d",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección I · De la organización",
+  "derogado": false
+ },
+ "117": {
+  "archivo": "articulos/art-0117.md",
+  "sha256": "e41c75272641bc5c1e2683ba35051d2d89f1ae73370bca3d7218974aba7da14c",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección I · De la organización",
+  "derogado": false
+ },
+ "118": {
+  "archivo": "articulos/art-0118.md",
+  "sha256": "bd8a66223967280f4352e4f6e9b6cc818be957e40c5b2b430729b0a86f51f12e",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección I · De la organización",
+  "derogado": false
+ },
+ "119": {
+  "archivo": "articulos/art-0119.md",
+  "sha256": "93e9a4aca362a553b3e7fae3dbec722aba47766a78df29872736ed1b2239c9f8",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección I · De la organización",
+  "derogado": false
+ },
+ "120": {
+  "archivo": "articulos/art-0120.md",
+  "sha256": "9d240c8361d0424d66295d250b8bc23bee60c64fa2592134e4dba4864465e73b",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección I · De la organización",
+  "derogado": false
+ },
+ "121": {
+  "archivo": "articulos/art-0121.md",
+  "sha256": "ed0d362fb2c159f3396f6419fe8f49a237db4a1e57f256383e5d2f3ec9b771b1",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección I · De la organización",
+  "derogado": false
+ },
+ "122": {
+  "archivo": "articulos/art-0122.md",
+  "sha256": "1f7bc5568944a0aad75648775ebc7413c625d70f433c470f48debf1dfe5ff69f",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección II · De la administración y vigilancia",
+  "derogado": false
+ },
+ "123": {
+  "archivo": "articulos/art-0123.md",
+  "sha256": "f264b1baa7f04f69bfe0aad1dce0ce992f2fcd29919cfb592d4a9a3d75d6598f",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección II · De la administración y vigilancia",
+  "derogado": false
+ },
+ "124": {
+  "archivo": "articulos/art-0124.md",
+  "sha256": "e6f0b45b0c4c00a715c695bf42cbfdd06846acef444a613b283aa679c098694e",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección II · De la administración y vigilancia",
+  "derogado": false
+ },
+ "125": {
+  "archivo": "articulos/art-0125.md",
+  "sha256": "0b480898194b3105e0d4eb3d42c61aa4ed37d98bf7143c54efe59bf8fde3cb2a",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección II · De la administración y vigilancia",
+  "derogado": false
+ },
+ "126": {
+  "archivo": "articulos/art-0126.md",
+  "sha256": "a67904dbb1a1bce36e5035a640678dd570ae148659fe360fc587e57dc8e21b14",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección II · De la administración y vigilancia",
+  "derogado": false
+ },
+ "127": {
+  "archivo": "articulos/art-0127.md",
+  "sha256": "748ec24b541fff5f1b6e6b591b6d6bd6594af0c4d7722a2809186fa33bd8edd4",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección II · De la administración y vigilancia",
+  "derogado": false
+ },
+ "128": {
+  "archivo": "articulos/art-0128.md",
+  "sha256": "909d1de51f99295d28311fd9604e0968485bec7085b093f876e6c1cd3170c8d5",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección II · De la administración y vigilancia",
+  "derogado": false
+ },
+ "129": {
+  "archivo": "articulos/art-0129.md",
+  "sha256": "35bda2787994cf4525be144b0f2eefe91af25f20241fa82fce8a1e39febd53fd",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección II · De la administración y vigilancia",
+  "derogado": false
+ },
+ "130": {
+  "archivo": "articulos/art-0130.md",
+  "sha256": "5f4daf0b6a8920368a64b1aba6c25aa7d6317d082c1227b989dd24fde0ac286c",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección II · De la administración y vigilancia",
+  "derogado": false
+ },
+ "130-bis": {
+  "archivo": "articulos/art-0130-bis.md",
+  "sha256": "76205e3d4c60b0795e5737560e7e3524dab694b4e07d742b26c6d67f313e2bfc",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección II · De la administración y vigilancia",
+  "derogado": false
+ },
+ "131": {
+  "archivo": "articulos/art-0131.md",
+  "sha256": "4d713d52e7dc58c83bc4e77a1ffd7af7814eb11c35bbd742e46c4febd69b178d",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección II · De la administración y vigilancia",
+  "derogado": false
+ },
+ "132": {
+  "archivo": "articulos/art-0132.md",
+  "sha256": "319c7ccebea100d00c5c9e4586ba5cb025928ae4fbc9abb6a30a89a70c5b9284",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección III · De la fusión y escisión",
+  "derogado": false
+ },
+ "133": {
+  "archivo": "articulos/art-0133.md",
+  "sha256": "2f550259b0a48acf5b0841e5dc35845dfd1bb2c384e05b8cc6e889d2cd61734b",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección III · De la fusión y escisión",
+  "derogado": false
+ },
+ "134": {
+  "archivo": "articulos/art-0134.md",
+  "sha256": "c9e999fd689b5995e7cf7c5ab2f139ef884c0b3282a4547314db003d210b7af6",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección III · De la fusión y escisión",
+  "derogado": false
+ },
+ "135": {
+  "archivo": "articulos/art-0135.md",
+  "sha256": "b63c776c0c532379217ebfb92faa94168137c3c774e08c6f568c2f229c33d211",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "136": {
+  "archivo": "articulos/art-0136.md",
+  "sha256": "b3a1a17c95229d80e51d82971964f2779b8ec48328a9593590a68a57ff8f6684",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "137": {
+  "archivo": "articulos/art-0137.md",
+  "sha256": "c5f597157df9cb4cb82d8c75cd2f0e1171787b93d73bf8f0f62a5a3358390998",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "138": {
+  "archivo": "articulos/art-0138.md",
+  "sha256": "493b3755a194402dff513e6b331a783a9b90409702495f16dd004bca110d844e",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "139": {
+  "archivo": "articulos/art-0139.md",
+  "sha256": "c961d9c27c2974896eb03a949e8ac2cf71137cb637799de4bfb1b9d346fbce9c",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "140": {
+  "archivo": "articulos/art-0140.md",
+  "sha256": "b324db6c31ee8d9a17a25bfae8f8715eba4ba9c0c9f9df2e211a0def2753dc64",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "141": {
+  "archivo": "articulos/art-0141.md",
+  "sha256": "639099e2b17a16f835f8591c91c05fb07792cbafacd558cbd73ebdbce4d9b834",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "142": {
+  "archivo": "articulos/art-0142.md",
+  "sha256": "9ff7c282f2cdd4a01d799f5a4e90481487cae4ac4b858df6aa7c02d6262d6826",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "143": {
+  "archivo": "articulos/art-0143.md",
+  "sha256": "8ed7448a0bb138830e4760986e7124e3046217406e63ebae545d72f157c10010",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "144": {
+  "archivo": "articulos/art-0144.md",
+  "sha256": "7b98172f2e77ea14d21e047c664b4acda7144faacd5d0781edfb430217b22c18",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "145": {
+  "archivo": "articulos/art-0145.md",
+  "sha256": "d0f1230e2c45bd859f70f731eb4fa1c4f773797073c5d3220e2a084b57180a1c",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "146": {
+  "archivo": "articulos/art-0146.md",
+  "sha256": "7e14e52345f90d8ed0de81451b604c4d7308223b0dd574f3e584d800b7ec434c",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "147": {
+  "archivo": "articulos/art-0147.md",
+  "sha256": "94d6f37bc9357c0b37723bd7e1fa0f71ef43afb5bf2789f7234bfb38544b0735",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "148": {
+  "archivo": "articulos/art-0148.md",
+  "sha256": "b1b0a62b6abc1878f2ea72b3f30051cdeb4d200a85cd3985d2ac049c2b509217",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "149": {
+  "archivo": "articulos/art-0149.md",
+  "sha256": "8931b999f73efae547ea0f86edd7e051480014f2ec140ed4a393bf3e9768f05b",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "150": {
+  "archivo": "articulos/art-0150.md",
+  "sha256": "884837312852e242938ad0c03076c1d19844b9827e64ff0661c9826b5db70c33",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "151": {
+  "archivo": "articulos/art-0151.md",
+  "sha256": "5afcee4d309eb5ec30f2aa4756cacdc12eddb4a20e939dba4b1bd0c5da81448d",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "152": {
+  "archivo": "articulos/art-0152.md",
+  "sha256": "b05230fd2d7017d88dbb3adfe19618103c12078caf0c47cfa3f96fa4b3e38c80",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "153": {
+  "archivo": "articulos/art-0153.md",
+  "sha256": "a78d042aa3135630d5e9e68319f5a73d94c6caabbd7f2d4595063be0d6820706",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "154": {
+  "archivo": "articulos/art-0154.md",
+  "sha256": "245b31f674a01dab085e44bf503ad69bd71a4a2197474af140aec0ccc1d64a85",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "155": {
+  "archivo": "articulos/art-0155.md",
+  "sha256": "57085908d0b342fbfe1841155fb12dfb0b2db8ae385339c8d0f0425b7bb943fb",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "156": {
+  "archivo": "articulos/art-0156.md",
+  "sha256": "ee624e4c2581291f8291b627869210bfbffa518523417aa8592e12c5eb86b942",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "157": {
+  "archivo": "articulos/art-0157.md",
+  "sha256": "74f896e5ee69a9ae5366324c35872eeb962f3124429cac25216ff7c44be4e75d",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "158": {
+  "archivo": "articulos/art-0158.md",
+  "sha256": "ee57a2b6ba89842d427f7e8705191179c04e66416aa07281e711dd303c4099e1",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección IV · De las medidas preventivas y correctivas, la suspensión de operaciones, la intervención, la revocación de autorizaciones y la disolución y liquidación",
+  "derogado": false
+ },
+ "159": {
+  "archivo": "articulos/art-0159.md",
+  "sha256": "91b606c31e0f2f307f2db0224fbaa92227caa4b69d815a224d8b3d6c808c4dd1",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección V · De las oficinas de representación y filiales de casas de bolsa del exterior",
+  "derogado": false
+ },
+ "160": {
+  "archivo": "articulos/art-0160.md",
+  "sha256": "5cf6a034a30e9c4bdb304916db6e50979e79e2f37efe34cc5aa371092b904a38",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección V · De las oficinas de representación y filiales de casas de bolsa del exterior",
+  "derogado": false
+ },
+ "161": {
+  "archivo": "articulos/art-0161.md",
+  "sha256": "36f4dc9e20ff5abcd89132c6299a5794872cfebec0adda3296325c662ca30459",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección V · De las oficinas de representación y filiales de casas de bolsa del exterior",
+  "derogado": false
+ },
+ "162": {
+  "archivo": "articulos/art-0162.md",
+  "sha256": "31cbf3a4df8108e5e9e0dea508456d054c1e3404d92458ed80f150572b55fa2d",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección V · De las oficinas de representación y filiales de casas de bolsa del exterior",
+  "derogado": false
+ },
+ "163": {
+  "archivo": "articulos/art-0163.md",
+  "sha256": "a19ba95ef2590c20e7058196551ff476f4844cb4605a52fd76db274317c8fe19",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección V · De las oficinas de representación y filiales de casas de bolsa del exterior",
+  "derogado": false
+ },
+ "164": {
+  "archivo": "articulos/art-0164.md",
+  "sha256": "8b0b5b003a6938dda2113b44c97dd2b3083f6b078660df1eca5b7f9752cb557c",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección V · De las oficinas de representación y filiales de casas de bolsa del exterior",
+  "derogado": false
+ },
+ "165": {
+  "archivo": "articulos/art-0165.md",
+  "sha256": "24e415d8145e7ae701ef42362a5150da6b76d05ec2521914bb64d7605aa2cf24",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección V · De las oficinas de representación y filiales de casas de bolsa del exterior",
+  "derogado": false
+ },
+ "166": {
+  "archivo": "articulos/art-0166.md",
+  "sha256": "5548b1a5e7b5000b25e44d570c460e404433c45e567e49c09d875fcbdd3a21b8",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección V · De las oficinas de representación y filiales de casas de bolsa del exterior",
+  "derogado": false
+ },
+ "167": {
+  "archivo": "articulos/art-0167.md",
+  "sha256": "ee02694eac32c7ad900800bc2854281f44e5f808b9254cb62be92e8f68361fc4",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección V · De las oficinas de representación y filiales de casas de bolsa del exterior",
+  "derogado": false
+ },
+ "168": {
+  "archivo": "articulos/art-0168.md",
+  "sha256": "76ee74f8db0d034620119c17c8bec135c9a5cec95faad05dea22cb957673de12",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección V · De las oficinas de representación y filiales de casas de bolsa del exterior",
+  "derogado": false
+ },
+ "169": {
+  "archivo": "articulos/art-0169.md",
+  "sha256": "984bc5cebeeb43fabb7acae3460918f1f40ff0228116fb2d27bfe234af816683",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección V · De las oficinas de representación y filiales de casas de bolsa del exterior",
+  "derogado": false
+ },
+ "170": {
+  "archivo": "articulos/art-0170.md",
+  "sha256": "03be1353a3493eec454f7ed1216058706c25f15a5c3e988124b99e1cb15cd88f",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo I · De las casas de bolsa / Sección V · De las oficinas de representación y filiales de casas de bolsa del exterior",
+  "derogado": false
+ },
+ "171": {
+  "archivo": "articulos/art-0171.md",
+  "sha256": "f2fccda5a29d990553b3bad4c6f973519db455575a2b992b5a5b1b6d78dc35aa",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa",
+  "derogado": false
+ },
+ "172": {
+  "archivo": "articulos/art-0172.md",
+  "sha256": "9fc66010c4967a569b1e9ec00b5003ea5a2473ea62be2838a59fd2578986c8e6",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección I · De los requerimientos de capital y diversificación",
+  "derogado": false
+ },
+ "173": {
+  "archivo": "articulos/art-0173.md",
+  "sha256": "68b806180703b3ad238fa095e0deeecd17355ce521ecefbe3f14462f0b2656b2",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección I · De los requerimientos de capital y diversificación",
+  "derogado": false
+ },
+ "173-bis": {
+  "archivo": "articulos/art-0173-bis.md",
+  "sha256": "4881000f00a37427b9ed6eb8921acc10399b2ceb08d7baa85f3c6449699af912",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección I · De los requerimientos de capital y diversificación",
+  "derogado": false
+ },
+ "174": {
+  "archivo": "articulos/art-0174.md",
+  "sha256": "d0f9f9ccf95bce947d73222abdef41e73dbb903361d5d1b7ad544cb0cccd535b",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección I · De los requerimientos de capital y diversificación",
+  "derogado": false
+ },
+ "175": {
+  "archivo": "articulos/art-0175.md",
+  "sha256": "7cbbdf4ef92d6120b464e072247510fdbaffc2fd7f4d9380320b2704083b3694",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección I · De los requerimientos de capital y diversificación",
+  "derogado": false
+ },
+ "176": {
+  "archivo": "articulos/art-0176.md",
+  "sha256": "6510356fdec235bd4c53c32fce4d1b4eee4ae3844367813acc8fcf23b6f5b13c",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección II · De las reglas de operación",
+  "derogado": false
+ },
+ "177": {
+  "archivo": "articulos/art-0177.md",
+  "sha256": "9b4bd93eef429ed02b791ea37d60456ddc3b14f331460d15ea5621bfe924f892",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección II · De las reglas de operación",
+  "derogado": false
+ },
+ "177-bis": {
+  "archivo": "articulos/art-0177-bis.md",
+  "sha256": "c2026840354baa039c25aa6b81391bad61f533776d6a62ed358abf4a80035408",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección II · De las reglas de operación",
+  "derogado": false
+ },
+ "177-ter": {
+  "archivo": "articulos/art-0177-ter.md",
+  "sha256": "64e63ad122fe613f062c41f1715c87a0fb387f09b79cb6adaef3e3037b481f38",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección II · De las reglas de operación",
+  "derogado": false
+ },
+ "178": {
+  "archivo": "articulos/art-0178.md",
+  "sha256": "b9c1f19c93538104e692a1a5e4736aa57721bfc6572158e7eea5a0f51771ac8d",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección II · De las reglas de operación",
+  "derogado": false
+ },
+ "179": {
+  "archivo": "articulos/art-0179.md",
+  "sha256": "de3f60fe97dbd239d9f715ae3559d2607a186f5886291448fa5777a0f5a917b2",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección II · De las reglas de operación",
+  "derogado": false
+ },
+ "180": {
+  "archivo": "articulos/art-0180.md",
+  "sha256": "31d67122cfda2e40247086ab4954609a5f75a9035213d8b6937fc53ddc74a099",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección II · De las reglas de operación",
+  "derogado": false
+ },
+ "181": {
+  "archivo": "articulos/art-0181.md",
+  "sha256": "6e920242582961320bc633e38bebb2421d8a1aba2500dca83a37f5c27c2d8489",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección II · De las reglas de operación",
+  "derogado": false
+ },
+ "182": {
+  "archivo": "articulos/art-0182.md",
+  "sha256": "2c76fee4043a6ce6bcda3c4dd939b746ba3147bdb8926472af74051b9cf5b905",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección II · De las reglas de operación",
+  "derogado": false
+ },
+ "183": {
+  "archivo": "articulos/art-0183.md",
+  "sha256": "bc46dff371120047f97a9e4b7c881cc5e144ab9e2ab12c1495276c6c75ed32ac",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección II · De las reglas de operación",
+  "derogado": false
+ },
+ "184": {
+  "archivo": "articulos/art-0184.md",
+  "sha256": "27a3d5a5ac9ff310a384dd02ea9bac3fd31c91e1a49ed66b781c0a5494c2ee07",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección II · De las reglas de operación",
+  "derogado": false
+ },
+ "185": {
+  "archivo": "articulos/art-0185.md",
+  "sha256": "a1d2cf9faab6921636ea7c16b4bb4656a6f428087b0fcc0b6c6752d7e48b528b",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección II · De las reglas de operación",
+  "derogado": false
+ },
+ "186": {
+  "archivo": "articulos/art-0186.md",
+  "sha256": "701509f4ae39e86145eb39b91cd139955beb06d39fe8bdc39b48ec1b43f538d3",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección II · De las reglas de operación",
+  "derogado": false
+ },
+ "187": {
+  "archivo": "articulos/art-0187.md",
+  "sha256": "a58b8e08721c66d6c01d1a62a17153b3c1c985f0366a341536e2a5390022c2c6",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección II · De las reglas de operación",
+  "derogado": false
+ },
+ "188": {
+  "archivo": "articulos/art-0188.md",
+  "sha256": "3cf41571b8cd75d96b655fa70e33fc71fa76f7be00d9c07eb0885ba02b491c17",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección III · De las prácticas de venta",
+  "derogado": false
+ },
+ "189": {
+  "archivo": "articulos/art-0189.md",
+  "sha256": "c33d5d11a1b4567b829914634866af638da0e69dbd14b6d00ae20a4b1c5ea750",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección III · De las prácticas de venta",
+  "derogado": false
+ },
+ "190": {
+  "archivo": "articulos/art-0190.md",
+  "sha256": "63182164240dc5e3f0df573359ecdd5946f7ff40632710ed3fc488875e83ae3c",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección III · De las prácticas de venta",
+  "derogado": false
+ },
+ "190-bis": {
+  "archivo": "articulos/art-0190-bis.md",
+  "sha256": "ccbd498ceab471f1c4b792edf61e18028fdd0674549732b5331737276b361bc7",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección III · De las prácticas de venta",
+  "derogado": false
+ },
+ "190-bis-1": {
+  "archivo": "articulos/art-0190-bis-1.md",
+  "sha256": "4ec32f36073765c5b0018fb714512592ef665329f9df3f64d37d9c0ec115189a",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección III · De las prácticas de venta",
+  "derogado": false
+ },
+ "191": {
+  "archivo": "articulos/art-0191.md",
+  "sha256": "c69e6776e5ede009ce3f0f47f360aad020e8802deb9a64a3af7ffcb2a03b6eac",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección III · De las prácticas de venta",
+  "derogado": false
+ },
+ "192": {
+  "archivo": "articulos/art-0192.md",
+  "sha256": "69483c464ddf251f03640740b85522848de4ab607dd49bf8b4ebc4fef6e0e167",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección IV · De la protección al inversionista",
+  "derogado": false
+ },
+ "193": {
+  "archivo": "articulos/art-0193.md",
+  "sha256": "fdcd723438448f99153476aad91850ccaeeb4d64bf40253c7907f197e4b1a28c",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección IV · De la protección al inversionista",
+  "derogado": false
+ },
+ "194": {
+  "archivo": "articulos/art-0194.md",
+  "sha256": "7edfb85f14d703b652bea3721b61a71bd5b800b4b7795376b544e8bb1e0f5719",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección IV · De la protección al inversionista",
+  "derogado": false
+ },
+ "195": {
+  "archivo": "articulos/art-0195.md",
+  "sha256": "f18e16abc433096e7e632ee56163fe0f5e605a6f5038117e7814a97a539c0fc4",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección IV · De la protección al inversionista",
+  "derogado": false
+ },
+ "196": {
+  "archivo": "articulos/art-0196.md",
+  "sha256": "2125b2b6f4fe08331e232564447d958890960f3c46e23f3ab69ffc994eefc50a",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección IV · De la protección al inversionista",
+  "derogado": false
+ },
+ "197": {
+  "archivo": "articulos/art-0197.md",
+  "sha256": "55971c00954fcce2a9516733f83c4e32083cf8e421975117a3bd0d8caa7c173e",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección IV · De la protección al inversionista",
+  "derogado": false
+ },
+ "198": {
+  "archivo": "articulos/art-0198.md",
+  "sha256": "c383b14e3ff5db86a6d939d31050dfa225785d00b388166ebeefe20bfe6b0e8f",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección IV · De la protección al inversionista",
+  "derogado": false
+ },
+ "199": {
+  "archivo": "articulos/art-0199.md",
+  "sha256": "1a19a0fa63f1599ed004ad6791e84717c4632739eecf8cc5f5a67e73e42339c6",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección V · De la contratación",
+  "derogado": false
+ },
+ "200": {
+  "archivo": "articulos/art-0200.md",
+  "sha256": "ca74cf1fd8f9afe02784f4ab1b2b33c9119c94b10bfb6618f6e47954c3772305",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección V · De la contratación",
+  "derogado": false
+ },
+ "201": {
+  "archivo": "articulos/art-0201.md",
+  "sha256": "59328a8da0cbdb80154b95e41e733788b280e2d5bbca9173479ee1919f7f4a25",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección V · De la contratación",
+  "derogado": false
+ },
+ "202": {
+  "archivo": "articulos/art-0202.md",
+  "sha256": "ca974c30a87904762c9fe3481ba9f67a708902b31338ade83053c5c27e96a569",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección V · De la contratación",
+  "derogado": false
+ },
+ "203": {
+  "archivo": "articulos/art-0203.md",
+  "sha256": "7cbc8f7a837778bd52001fc2489e8a9bd9fa79ba687d371bc514bcd86abddbae",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección V · De la contratación",
+  "derogado": false
+ },
+ "204": {
+  "archivo": "articulos/art-0204.md",
+  "sha256": "d734074f67ff4ac3db429e1f559a18af37d374949359fa07152ac7340c3ae6c0",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección V · De la contratación",
+  "derogado": false
+ },
+ "205": {
+  "archivo": "articulos/art-0205.md",
+  "sha256": "798903112eeae6639aaf6d96b88c3015b77cc10f277e762d7c595bc858e2bc1e",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VI · De la contabilidad y auditoría externa",
+  "derogado": false
+ },
+ "206": {
+  "archivo": "articulos/art-0206.md",
+  "sha256": "04184068d51209fea33dca3919f7be764849659549eb80ab0d6ee1420d41f7a8",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VI · De la contabilidad y auditoría externa",
+  "derogado": false
+ },
+ "207": {
+  "archivo": "articulos/art-0207.md",
+  "sha256": "aad208fa972833dbdcf110c37d532193f3ef734a8e0dbedba2f974e1c0cac24e",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VI · De la contabilidad y auditoría externa",
+  "derogado": false
+ },
+ "208": {
+  "archivo": "articulos/art-0208.md",
+  "sha256": "66519551a8bfc304404628069a907ea9fbf2b783da4392ce0494bf05696bbdef",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VI · De la contabilidad y auditoría externa",
+  "derogado": false
+ },
+ "209": {
+  "archivo": "articulos/art-0209.md",
+  "sha256": "103f89e5835300cfb2d20a92211c8dde56e2ab804650bae57e2490db4095da94",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VI · De la contabilidad y auditoría externa",
+  "derogado": false
+ },
+ "210": {
+  "archivo": "articulos/art-0210.md",
+  "sha256": "b9f6bb870bd01307cc9d7337343ab983759a274236ddf31b1792d2df60eee371",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VI · De la contabilidad y auditoría externa",
+  "derogado": false
+ },
+ "211": {
+  "archivo": "articulos/art-0211.md",
+  "sha256": "a79e200b1078924c80fbb818ae409205b0929e0bdd54ade1d6b400f95fd195e5",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VI · De la contabilidad y auditoría externa",
+  "derogado": false
+ },
+ "212": {
+  "archivo": "articulos/art-0212.md",
+  "sha256": "deeb1117f044b8c99fdbb647a604a382257bd81ec2f38a1ab470be17c406e842",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VII · Otras disposiciones",
+  "derogado": false
+ },
+ "213": {
+  "archivo": "articulos/art-0213.md",
+  "sha256": "8dfc1c3cc6cd8b9ea579a65de4c59ba3e5a9e985e7c0684e4324bb956808430c",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VII · Otras disposiciones",
+  "derogado": false
+ },
+ "214": {
+  "archivo": "articulos/art-0214.md",
+  "sha256": "3e8b504711c3ff747d1ad07ad55cf3f615cc5a94add1595bbc23b9b82a02e17e",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VII · Otras disposiciones",
+  "derogado": false
+ },
+ "215": {
+  "archivo": "articulos/art-0215.md",
+  "sha256": "0588453747099194d7f907f0f1ab667e70ea9f9b60e3ac824896f298e1822882",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VII · Otras disposiciones",
+  "derogado": false
+ },
+ "216": {
+  "archivo": "articulos/art-0216.md",
+  "sha256": "5dbd51dcd1c7e49ae1fb78c37df8496110d2efbb9f266115da230ea3bdb0e903",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VII · Otras disposiciones",
+  "derogado": false
+ },
+ "217": {
+  "archivo": "articulos/art-0217.md",
+  "sha256": "6e583ac4fc75b806a319e91800afc5cbf554895c1f8fae0ba1d4da742508662e",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VII · Otras disposiciones",
+  "derogado": false
+ },
+ "218": {
+  "archivo": "articulos/art-0218.md",
+  "sha256": "36a98a6afe6067b67bbc68decee1b0c27afcf584bf8af5e75d88f3bcd0a63aeb",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VII · Otras disposiciones",
+  "derogado": false
+ },
+ "219": {
+  "archivo": "articulos/art-0219.md",
+  "sha256": "c860f23e824106ba3b9e596838ab246ea22e517a32f0e83f59438502bea90e1a",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VII · Otras disposiciones",
+  "derogado": false
+ },
+ "220": {
+  "archivo": "articulos/art-0220.md",
+  "sha256": "4ef97c90c68fbf463da92900a5f91e2b73516d73a1a4a253fa644cee7e7a5027",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VII · Otras disposiciones",
+  "derogado": false
+ },
+ "221": {
+  "archivo": "articulos/art-0221.md",
+  "sha256": "43d5919131a75f77d46fc4ce0b39aaaf2ed5c823fbb4ac42dfced47fc6016c48",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VII · Otras disposiciones",
+  "derogado": false
+ },
+ "222": {
+  "archivo": "articulos/art-0222.md",
+  "sha256": "e08aebb49e7aa0a8fed86ab3979e62729f3dbb813aa2340dd97ce29eae046e5a",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VII · Otras disposiciones",
+  "derogado": false
+ },
+ "223": {
+  "archivo": "articulos/art-0223.md",
+  "sha256": "883bae837f8a28ba392fc657d4452f4a3b9ffb03f0d90c57300243bdfc6cc016",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VII · Otras disposiciones",
+  "derogado": false
+ },
+ "224": {
+  "archivo": "articulos/art-0224.md",
+  "sha256": "21ebcbaf68f90c3402ab6efadd59c9fc7083155b94b454ffbb071000808b2e70",
+  "ubicacion": "Título VI · De los intermediarios del mercado de valores / Capítulo II · Del funcionamiento, actividades y servicios de las casas de bolsa / Sección VII · Otras disposiciones",
+  "derogado": false
+ },
+ "225": {
+  "archivo": "articulos/art-0225.md",
+  "sha256": "4a784ff6620eabb878ec15acaeff107ad5da8356c35aecac241e1970c3c20e3d",
+  "ubicacion": "Título VII · De los asesores en inversiones",
+  "derogado": false
+ },
+ "225-bis": {
+  "archivo": "articulos/art-0225-bis.md",
+  "sha256": "cf76e1f8aff49a2829706c19f3b0186c08881e1ff707e8a0f2bd2871dee321e7",
+  "ubicacion": "Título VII · De los asesores en inversiones",
+  "derogado": false
+ },
+ "225-bis-1": {
+  "archivo": "articulos/art-0225-bis-1.md",
+  "sha256": "30e54e7694bad1ae9b1aa37e0aea9e823e1aa806503ec37ad5f0b6bad03854c3",
+  "ubicacion": "Título VII · De los asesores en inversiones",
+  "derogado": false
+ },
+ "225-bis-2": {
+  "archivo": "articulos/art-0225-bis-2.md",
+  "sha256": "18cefedd21a258656788a918aa0d84ea243f2b38c353fa198a48d3af5679789b",
+  "ubicacion": "Título VII · De los asesores en inversiones",
+  "derogado": false
+ },
+ "226": {
+  "archivo": "articulos/art-0226.md",
+  "sha256": "9394b021d82bd9590f5ba119881bae4684fb6fe8dc98cd923fa027e8e82e74cb",
+  "ubicacion": "Título VII · De los asesores en inversiones",
+  "derogado": false
+ },
+ "226-bis": {
+  "archivo": "articulos/art-0226-bis.md",
+  "sha256": "86e854da29b1f01b1e922732372d1816dd8d8042296522f424e9f1ff9cf9bda4",
+  "ubicacion": "Título VII · De los asesores en inversiones",
+  "derogado": false
+ },
+ "227": {
+  "archivo": "articulos/art-0227.md",
+  "sha256": "466557cb93a8482aa551471913a10df00ee5cebec36a79950cfe39532c52df30",
+  "ubicacion": "Título VII · De los asesores en inversiones",
+  "derogado": false
+ },
+ "227-bis": {
+  "archivo": "articulos/art-0227-bis.md",
+  "sha256": "3eedc06770e269afe0cb060acf8c310d9bc5ad12a9877a93546ddf5f57fc3e79",
+  "ubicacion": "Título VII · De los asesores en inversiones",
+  "derogado": false
+ },
+ "227-bis-1": {
+  "archivo": "articulos/art-0227-bis-1.md",
+  "sha256": "8088d6a1a74dd2398e9f4f1ca46aa159b4545b28cec059b71d9c24778dc24f81",
+  "ubicacion": "Título VII · De los asesores en inversiones",
+  "derogado": false
+ },
+ "228": {
+  "archivo": "articulos/art-0228.md",
+  "sha256": "ee52f1720c86986434f86167b1356280cc91cc05534db4cf48b4a75adc61e8f1",
+  "ubicacion": "Título VIII · De los organismos autorregulatorios",
+  "derogado": false
+ },
+ "229": {
+  "archivo": "articulos/art-0229.md",
+  "sha256": "7ec53fcd04ca928099c7a94f3a883f2953726b05bb9e3dc37024c37b218aa01b",
+  "ubicacion": "Título VIII · De los organismos autorregulatorios",
+  "derogado": false
+ },
+ "230": {
+  "archivo": "articulos/art-0230.md",
+  "sha256": "de3de1094cd55abe44ff94305cd9e2bd49e49737ae1d48da0b44fd7d22611d6d",
+  "ubicacion": "Título VIII · De los organismos autorregulatorios",
+  "derogado": false
+ },
+ "231": {
+  "archivo": "articulos/art-0231.md",
+  "sha256": "e96ce4ffa2ec05a5f041eda15c9c04e2f4017933279ab193af09c135f565f3a0",
+  "ubicacion": "Título VIII · De los organismos autorregulatorios",
+  "derogado": false
+ },
+ "232": {
+  "archivo": "articulos/art-0232.md",
+  "sha256": "aa1f44de9f449dd6a1c9d18af0f5b2cfe9ac88f1ea7db60ed823ba373ce98d86",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo I · Disposiciones preliminares",
+  "derogado": false
+ },
+ "233": {
+  "archivo": "articulos/art-0233.md",
+  "sha256": "d77a6e5e65dfb7997148c5c7c0d11c336d0f84eea82a926eb487f87e9eff267e",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo I · Disposiciones preliminares",
+  "derogado": false
+ },
+ "234": {
+  "archivo": "articulos/art-0234.md",
+  "sha256": "02b315e16fd30ebb18c8720f51073686f62b57d3385f8ffa62ecfb2e2d7d089a",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección I · De la organización",
+  "derogado": false
+ },
+ "235": {
+  "archivo": "articulos/art-0235.md",
+  "sha256": "6a30c7c5a1c571c634521c476968ed34d19e34c88619408ec21891de31151ee8",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección I · De la organización",
+  "derogado": false
+ },
+ "236": {
+  "archivo": "articulos/art-0236.md",
+  "sha256": "25c404f4f81d9806cf97bc1cbe5b3b78d4d7dd6ef1260e063dd2e5bad1b6d104",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección I · De la organización",
+  "derogado": false
+ },
+ "237": {
+  "archivo": "articulos/art-0237.md",
+  "sha256": "6202d4908b300017a1a8ff9bdac161faa4f9d9826d9e6167b762aa15667196f6",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección I · De la organización",
+  "derogado": false
+ },
+ "237-bis": {
+  "archivo": "articulos/art-0237-bis.md",
+  "sha256": "cef1d5a2300e91a2cd06f4ce8fd9708a99a814574125d7229988333686807605",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección I · De la organización",
+  "derogado": false
+ },
+ "238": {
+  "archivo": "articulos/art-0238.md",
+  "sha256": "18f3ba07793dc94e5feb9a04937b9cbd7dd6aac107cecb5aed88404cd245bedd",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección I · De la organización",
+  "derogado": false
+ },
+ "239": {
+  "archivo": "articulos/art-0239.md",
+  "sha256": "687c6a302c1f4db8647aa20369dcac2894194fede2cf247c89d8ab01c91caee2",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección I · De la organización",
+  "derogado": false
+ },
+ "240": {
+  "archivo": "articulos/art-0240.md",
+  "sha256": "94876c86bf19076fb41ce9b1cc0e26c8901d2e158d4c29abd46728a6fd1d5096",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección II · De la administración y vigilancia",
+  "derogado": false
+ },
+ "241": {
+  "archivo": "articulos/art-0241.md",
+  "sha256": "585bdebd49cc626f5de0f4aa2e04b4ec576738a61e9894c7b0c07e67f2c95f16",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección II · De la administración y vigilancia",
+  "derogado": false
+ },
+ "242": {
+  "archivo": "articulos/art-0242.md",
+  "sha256": "4cab82480362549e5bce5b6c437a5b7c53278fda105eb15c3220f87f04181405",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección II · De la administración y vigilancia",
+  "derogado": false
+ },
+ "243": {
+  "archivo": "articulos/art-0243.md",
+  "sha256": "342620c4b2734ee1e067db839331baa4c933bdab489199a2d1775dc946409b35",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección II · De la administración y vigilancia",
+  "derogado": false
+ },
+ "244": {
+  "archivo": "articulos/art-0244.md",
+  "sha256": "2457793fd75277d9bd0ac57ef72a7411317d1de9ae0f5aca894a7af443477edc",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "245": {
+  "archivo": "articulos/art-0245.md",
+  "sha256": "24f9beb9f8853ba5eefe2065ae46de13f598d56f53de61bc933bf5d98fb41692",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "246": {
+  "archivo": "articulos/art-0246.md",
+  "sha256": "742e1c4182a588103cdf94756fa2fa1bf84a97c02e48d85fc8af80faf36cf2c4",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "247": {
+  "archivo": "articulos/art-0247.md",
+  "sha256": "8b5d57aab6dfc93d18adb983ad6a436df471444d9cc21d59c94d7076f124a4c0",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "248": {
+  "archivo": "articulos/art-0248.md",
+  "sha256": "a9be8dfc6be3c40d78bc56ebdcc3bc85793bab70888e8e74e66eab3316f153de",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "249": {
+  "archivo": "articulos/art-0249.md",
+  "sha256": "ae640d62a2001707e8d4653dd31482eae4ed0affd29632d8bde6d59bd46ecd42",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "250": {
+  "archivo": "articulos/art-0250.md",
+  "sha256": "7ad8c68fef937a62a8aa78ad3a0b4a53301b8f7fdcc4d8f4cf703031509478ff",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "251": {
+  "archivo": "articulos/art-0251.md",
+  "sha256": "a3d5afa97d78a1e96d541fd2928011fbb39a8c6b64c94b5ec6ea048291d8c3f8",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "252": {
+  "archivo": "articulos/art-0252.md",
+  "sha256": "67b4aa049a012ab4b18e124168427b5fec877281ffd6dcbf4a606e62834a4a34",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "252-bis": {
+  "archivo": "articulos/art-0252-bis.md",
+  "sha256": "8f2ead3555a4638dcf39f4ae205f7f79217a7691128b450840453afde9f52bc7",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo II · De las bolsas de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "253": {
+  "archivo": "articulos/art-0253.md",
+  "sha256": "7eaf9b80eca4e10c07793af33a4196a32bd4d3c40e62fa36b287f081d2f9bbec",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo III · De los sistemas de negociación extrabursátil / Sección I · De las sociedades que administran sistemas para facilitar operaciones con valores",
+  "derogado": false
+ },
+ "254": {
+  "archivo": "articulos/art-0254.md",
+  "sha256": "746b5f3487c7f63a5a9aaeca88dfe006c6409d4fe71a909d6086c3ce414e6bb1",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo III · De los sistemas de negociación extrabursátil / Sección I · De las sociedades que administran sistemas para facilitar operaciones con valores",
+  "derogado": false
+ },
+ "255": {
+  "archivo": "articulos/art-0255.md",
+  "sha256": "486fa57f1b9d50dc2b8ec271f1351f7eadd68daacd3e6bdcf225f61ee445f2f9",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo III · De los sistemas de negociación extrabursátil / Sección I · De las sociedades que administran sistemas para facilitar operaciones con valores",
+  "derogado": false
+ },
+ "256": {
+  "archivo": "articulos/art-0256.md",
+  "sha256": "a967f4bba322679fda53e1a91a6d5e604560fffc74bad0d9a5f3b6b0c6132fba",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo III · De los sistemas de negociación extrabursátil / Sección I · De las sociedades que administran sistemas para facilitar operaciones con valores",
+  "derogado": false
+ },
+ "257": {
+  "archivo": "articulos/art-0257.md",
+  "sha256": "2ed95e388aeef1aa88c5c0e5ff8f19aa6ad8aa1d5e3e2f7d08666548b6d7665c",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo III · De los sistemas de negociación extrabursátil / Sección I · De las sociedades que administran sistemas para facilitar operaciones con valores",
+  "derogado": false
+ },
+ "258": {
+  "archivo": "articulos/art-0258.md",
+  "sha256": "887233f9f59c55ba6e908e59b9f4faba99066988054c1dddc982b4312bcd5259",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo III · De los sistemas de negociación extrabursátil / Sección I · De las sociedades que administran sistemas para facilitar operaciones con valores",
+  "derogado": false
+ },
+ "259": {
+  "archivo": "articulos/art-0259.md",
+  "sha256": "97ae0bbd06f4c8be38b2a171a0f35c9ffa75c50aaaa401bd8af3fb0b65a4eb86",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo III · De los sistemas de negociación extrabursátil / Sección I · De las sociedades que administran sistemas para facilitar operaciones con valores",
+  "derogado": false
+ },
+ "260": {
+  "archivo": "articulos/art-0260.md",
+  "sha256": "6e4dfa1fdffef17a6aa464404292eaa63140a95f83af7aef7aa0c07e23450c21",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo III · De los sistemas de negociación extrabursátil / Sección II · De los sistemas de negociación extrabursátil con acciones no inscritas en el Registro",
+  "derogado": false
+ },
+ "261": {
+  "archivo": "articulos/art-0261.md",
+  "sha256": "86e03c04a80ce82eb1578424833b3e155d5ab3e4ea707d8c1c16c55bf3f7927f",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo III · De los sistemas de negociación extrabursátil / Sección II · De los sistemas de negociación extrabursátil con acciones no inscritas en el Registro",
+  "derogado": false
+ },
+ "262": {
+  "archivo": "articulos/art-0262.md",
+  "sha256": "e5d6c02c787ff0ab3c1190a716ff97c4d8c39c8a696ff3b507a82f9f54738abd",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo IV · De los mercados internacionales",
+  "derogado": false
+ },
+ "263": {
+  "archivo": "articulos/art-0263.md",
+  "sha256": "f0954ebb689418867d9d8da1bf2dd2b9faaaf8e2811a24d4bcc384655e2e7a57",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo IV · De los mercados internacionales",
+  "derogado": false
+ },
+ "264": {
+  "archivo": "articulos/art-0264.md",
+  "sha256": "42a3f1ddf8e8cc86b9dea2989ed8f8035d4f1815b5cf2ecf825a98b579460ac0",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo IV · De los mercados internacionales",
+  "derogado": false
+ },
+ "265": {
+  "archivo": "articulos/art-0265.md",
+  "sha256": "da640147ac6ee76e32da5e7c1a3da7b3dba2953aff01eddf6ca37f8463b4a69f",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo V · Disposiciones comunes",
+  "derogado": false
+ },
+ "266": {
+  "archivo": "articulos/art-0266.md",
+  "sha256": "730ed9174c1089d55ce3262d4036b6e25fe68b6e57352f24e9754f7371ed104b",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo V · Disposiciones comunes",
+  "derogado": false
+ },
+ "267": {
+  "archivo": "articulos/art-0267.md",
+  "sha256": "b3af8a9dceadfb349da52d9dbb0feb96241dce828ed3669805a9571a618eb313",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo V · Disposiciones comunes",
+  "derogado": false
+ },
+ "268": {
+  "archivo": "articulos/art-0268.md",
+  "sha256": "afbbd8551e106676ba0899a06988cfc22ba0489a9a9c66d1d16d12776e0c1db0",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo VI · De la revocación y de la disolución y liquidación",
+  "derogado": false
+ },
+ "269": {
+  "archivo": "articulos/art-0269.md",
+  "sha256": "3dd9a392aeb076523f83084ffcd9c160103730aa8de62ee253ef6b532588f80d",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo VI · De la revocación y de la disolución y liquidación",
+  "derogado": false
+ },
+ "270": {
+  "archivo": "articulos/art-0270.md",
+  "sha256": "d3b847c245b3b60020bdbe2a9d043974b56618317701f944a46ac70e8dbd2045",
+  "ubicacion": "Título IX · De los sistemas de negociación bursátiles y extrabursátiles / Capítulo VI · De la revocación y de la disolución y liquidación",
+  "derogado": false
+ },
+ "271": {
+  "archivo": "articulos/art-0271.md",
+  "sha256": "1e35677ac7e438364afef8a21eec5993f2dff70f7ea253295f8d829f839bd728",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores",
+  "derogado": false
+ },
+ "272": {
+  "archivo": "articulos/art-0272.md",
+  "sha256": "f9f75c0d75336f6d8607b1fbd2c33809597c2c8837c23dd2541d06d196c26e74",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección I · De la organización",
+  "derogado": false
+ },
+ "273": {
+  "archivo": "articulos/art-0273.md",
+  "sha256": "3d162509cca045ceeffb51bad29651ec607ebaf3dd07a74ff969f65670938735",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección I · De la organización",
+  "derogado": false
+ },
+ "274": {
+  "archivo": "articulos/art-0274.md",
+  "sha256": "97798a9af708c791af5a4805488955c74ca6724e9b261719f9f3c4a7bec8aab7",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección I · De la organización",
+  "derogado": false
+ },
+ "275": {
+  "archivo": "articulos/art-0275.md",
+  "sha256": "3aa97cb35a31201cff07dcbe7b90ad2f70e2bc20bc9292a9bcf2bf080b632458",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección I · De la organización",
+  "derogado": false
+ },
+ "276": {
+  "archivo": "articulos/art-0276.md",
+  "sha256": "d1efd47d2ca92ea524c1ffbb64783a7007257ba80b5294bae0f235c18dc95d28",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección II · De la administración",
+  "derogado": false
+ },
+ "277": {
+  "archivo": "articulos/art-0277.md",
+  "sha256": "08ea38086534e7210a1bc2f5a06de57e39a31cccc33d347f524460324672f27b",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección II · De la administración",
+  "derogado": false
+ },
+ "278": {
+  "archivo": "articulos/art-0278.md",
+  "sha256": "4d8808a58668e8f8f44e074a46267da18314069002d508cde14244e4bf6681fb",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección II · De la administración",
+  "derogado": false
+ },
+ "279": {
+  "archivo": "articulos/art-0279.md",
+  "sha256": "a2caca7a78ee6993224eb8aa88fedc2da889d0a1618e792e7c5fa564495a877f",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección II · De la administración",
+  "derogado": false
+ },
+ "280": {
+  "archivo": "articulos/art-0280.md",
+  "sha256": "53e7cec6f1ad5aaa2fc5f7c4ae5145f551c255da94ed29358c2545f6432ff026",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "281": {
+  "archivo": "articulos/art-0281.md",
+  "sha256": "a335c5911b464d71310bf7960681751e7605bcb0296d4974a71d74566dea0f7b",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "282": {
+  "archivo": "articulos/art-0282.md",
+  "sha256": "288d7c60257faaa804b4ed9541c93353270daa4e8dab98ec7d540c553003e26e",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "283": {
+  "archivo": "articulos/art-0283.md",
+  "sha256": "b125f8e75fb8057abe909f5ab114d2114f82342798a608c20a0176320d660ef2",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "284": {
+  "archivo": "articulos/art-0284.md",
+  "sha256": "71caed96e0c48e0fb3239d81773acdcf08378b9d016751463841af2abec785c1",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "285": {
+  "archivo": "articulos/art-0285.md",
+  "sha256": "88e02f74dd7611d2ff183232110408a9a8b3f54d055cb43918538cdb82ec590c",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "286": {
+  "archivo": "articulos/art-0286.md",
+  "sha256": "4fc3984d2a4e7cb2e7c6343128a3e240703f150c293ba03142a5c6c7e4a3df76",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "287": {
+  "archivo": "articulos/art-0287.md",
+  "sha256": "65e0006640f7c0c6fc7961e39b4234d78f46ea1d52cee0eddebacf8e3ce8969d",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "288": {
+  "archivo": "articulos/art-0288.md",
+  "sha256": "d97a323c49b8a5e07d7c68b79d8051ebfe3eeccfa84c8b93136609f2f78e77d0",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "289": {
+  "archivo": "articulos/art-0289.md",
+  "sha256": "1ef9a4b288bf1ec9fc42c94d3b8f362c5e4c9727b7afef2e071f53b01ad1b3ab",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "290": {
+  "archivo": "articulos/art-0290.md",
+  "sha256": "83dd9272201d9bb34907961c4e3ddb0dbc8f5a53fb458835a1729bfd2eaca9c5",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "291": {
+  "archivo": "articulos/art-0291.md",
+  "sha256": "eebed4d388a664038624cac54803cb64d25f643a4339c01bb2e21a939fd611e3",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "292": {
+  "archivo": "articulos/art-0292.md",
+  "sha256": "e3150e6e56435209f3b9869abc47e750d179e69ea7c2d98660d699fd5e7f0964",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "293": {
+  "archivo": "articulos/art-0293.md",
+  "sha256": "712800ad902d460f7a148d3524ede2cbbf8fded19cc72c6636b81ac39bb2d115",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "294": {
+  "archivo": "articulos/art-0294.md",
+  "sha256": "914c05d43bc86f9b2459ec4d8321d41c64eccd9cf31896424f4bab23b4a41783",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "295": {
+  "archivo": "articulos/art-0295.md",
+  "sha256": "e86806befa1f47f2ea296296572059a7aa81e113cb3a3a26db7133adf2883395",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección IV · Otras disposiciones",
+  "derogado": false
+ },
+ "296": {
+  "archivo": "articulos/art-0296.md",
+  "sha256": "0570a027ffc42e9a2de4433ee8861f3fc5da5823ca70bca7fd6d1c4e2375568d",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección IV · Otras disposiciones",
+  "derogado": false
+ },
+ "297": {
+  "archivo": "articulos/art-0297.md",
+  "sha256": "95d48fe76b843c5d840c2c5e33839b0415070a7b12357339640900995dcf9aa2",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección IV · Otras disposiciones",
+  "derogado": false
+ },
+ "298": {
+  "archivo": "articulos/art-0298.md",
+  "sha256": "0dec4fb6650818d305afec410b2a1af32d44e157c1bf200ba7bfb28ca1776741",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección V · De la revocación y de la disolución y liquidación",
+  "derogado": false
+ },
+ "299": {
+  "archivo": "articulos/art-0299.md",
+  "sha256": "c95f25c07bc5ba4bec9b095b75873be0fd22d84affbcdd1281911344437f5f26",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección V · De la revocación y de la disolución y liquidación",
+  "derogado": false
+ },
+ "300": {
+  "archivo": "articulos/art-0300.md",
+  "sha256": "32d187b12232b558112777624054f1e973402e0c4623219be8415f5ff6e5d021",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo I · De las instituciones para el depósito de valores / Sección V · De la revocación y de la disolución y liquidación",
+  "derogado": false
+ },
+ "301": {
+  "archivo": "articulos/art-0301.md",
+  "sha256": "831e4e67007a7b5de82e3e9892148ca3caf0a51da4d84f4bfcb564d1edbf5e42",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección I · De la organización",
+  "derogado": false
+ },
+ "302": {
+  "archivo": "articulos/art-0302.md",
+  "sha256": "9061adcecfdc37b1cc14329b2414683d50a49fe09b2d87df1a90050e15372781",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección I · De la organización",
+  "derogado": false
+ },
+ "303": {
+  "archivo": "articulos/art-0303.md",
+  "sha256": "15fef9a86bd63534e0ee6be4c644f7c1c0b5ec229484188acbc6c819ca8b54af",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección I · De la organización",
+  "derogado": false
+ },
+ "304": {
+  "archivo": "articulos/art-0304.md",
+  "sha256": "0f335af985f4434d85727663320a1b5a0176c41e58dc7995c48348b35de694da",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección I · De la organización",
+  "derogado": false
+ },
+ "305": {
+  "archivo": "articulos/art-0305.md",
+  "sha256": "bb2900ada753c891147cf6f1d08b398c6160507668527c5374a82fc820bb3009",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección II · De la administración",
+  "derogado": false
+ },
+ "306": {
+  "archivo": "articulos/art-0306.md",
+  "sha256": "1e61cb2626fd34d70e91378a4d5258398c94ebe930d29cf3563b8792f566be88",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección II · De la administración",
+  "derogado": false
+ },
+ "307": {
+  "archivo": "articulos/art-0307.md",
+  "sha256": "eb8b74ae1d2fc05480c8161ccef910ed8e44033efd06f22aa056167d462cbdfb",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "308": {
+  "archivo": "articulos/art-0308.md",
+  "sha256": "804ad90f8eda429a1f79f91762adab0915e674b3a85c89f658dbb8a90a3fe821",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "309": {
+  "archivo": "articulos/art-0309.md",
+  "sha256": "55cf52bffd7a7aeb0f2180d90fb1a930380e5a36cbd4b956081ec3fcbfe71509",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "310": {
+  "archivo": "articulos/art-0310.md",
+  "sha256": "2bde114142095742533ec6ecdd530bd072cdd4c66baed6b470014437135efe90",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "311": {
+  "archivo": "articulos/art-0311.md",
+  "sha256": "474d6843f99dc9f16384b3b7956c8444f0ce9000ef7ccdc6edbeaf4cff8979da",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "312": {
+  "archivo": "articulos/art-0312.md",
+  "sha256": "0eaa8a02e33bc34badda3d97b2e4fbdd96c5a20f35ae1155bb29e044fb473aa4",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "313": {
+  "archivo": "articulos/art-0313.md",
+  "sha256": "5aca18d2cd0b208d1d36c019f85b83afd56f2a82b0c351f6021b513844d284e1",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "314": {
+  "archivo": "articulos/art-0314.md",
+  "sha256": "314e7f730a7a8acfe1b5100d5567e90dc818573a071240603f472cc995019b06",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "315": {
+  "archivo": "articulos/art-0315.md",
+  "sha256": "0c12a83e8be0ab11031bb74150b73d6dbf333a4b5b9affa31706be2c0ad3a43c",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "316": {
+  "archivo": "articulos/art-0316.md",
+  "sha256": "783a3e088ae576687bff2bc72d097e5df1916ddc8c0e64061c42debe4da2b0f2",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "317": {
+  "archivo": "articulos/art-0317.md",
+  "sha256": "16653798f3f757736ecc3d553d238ef1875fb094d6e9cb688a2cc07f31337f6f",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "318": {
+  "archivo": "articulos/art-0318.md",
+  "sha256": "0b657ae9f5784f9f0cec64e71fc2500f81bcfb2f7a8a830dd58f9f031052985b",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección III · De las actividades y servicios",
+  "derogado": false
+ },
+ "319": {
+  "archivo": "articulos/art-0319.md",
+  "sha256": "42535a4c82f79f1d50af81b548bd53785824486c5b19358999aed731ac67ba2d",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección IV · De la revocación y de la disolución y liquidación",
+  "derogado": false
+ },
+ "320": {
+  "archivo": "articulos/art-0320.md",
+  "sha256": "437e7073467e4048da7404b7eeeb19d4587e6fdf2c3624475fb7e3f3b8c189e6",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección IV · De la revocación y de la disolución y liquidación",
+  "derogado": false
+ },
+ "321": {
+  "archivo": "articulos/art-0321.md",
+  "sha256": "bcefae47449f48a2ad4ae9bfc32773dc2e16dc7c8742fe560a36c69d49ba3d06",
+  "ubicacion": "Título X · Del depósito, liquidación y compensación de valores / Capítulo II · De las contrapartes centrales de valores / Sección IV · De la revocación y de la disolución y liquidación",
+  "derogado": false
+ },
+ "322": {
+  "archivo": "articulos/art-0322.md",
+  "sha256": "86462bb24188eb67a9cc5b027f065c855c49da1d5ce970aa0569ffa65c2f3dda",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo I · De los proveedores de precios",
+  "derogado": false
+ },
+ "323": {
+  "archivo": "articulos/art-0323.md",
+  "sha256": "2b7202ab9e28506f3b8efd8a0591278807c9a8a8bad7c1268fc39bf5fc0ca4a5",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo I · De los proveedores de precios",
+  "derogado": false
+ },
+ "324": {
+  "archivo": "articulos/art-0324.md",
+  "sha256": "c02d827df677d80b500e4cfc620ad0777834ee1ac045dd2e46d75bbcd1d8eb10",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo I · De los proveedores de precios",
+  "derogado": false
+ },
+ "325": {
+  "archivo": "articulos/art-0325.md",
+  "sha256": "bae5edbfca5ac1d84115fae322641a552f7b3c62f5440a52fb59b6dc8f8d5012",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo I · De los proveedores de precios",
+  "derogado": false
+ },
+ "326": {
+  "archivo": "articulos/art-0326.md",
+  "sha256": "3e29c537c5753402590ba1ec3d49aaf49d2f0cad6cf4e52219c27eaf212eb131",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo I · De los proveedores de precios",
+  "derogado": false
+ },
+ "327": {
+  "archivo": "articulos/art-0327.md",
+  "sha256": "125c6e7e12f56853059b9f30de26fd89d09a482b007ad3f74df129076c6bd2d6",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo I · De los proveedores de precios",
+  "derogado": false
+ },
+ "328": {
+  "archivo": "articulos/art-0328.md",
+  "sha256": "f796a8b5f06f39b34e2b7fd61d8686dff85766f04f6462ff2528d9709de33dc5",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo I · De los proveedores de precios",
+  "derogado": false
+ },
+ "329": {
+  "archivo": "articulos/art-0329.md",
+  "sha256": "59c40877819a393b45b95630e7de4acf39e0f55e66ee7e87c70d8c610e1d52e9",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo I · De los proveedores de precios",
+  "derogado": false
+ },
+ "330": {
+  "archivo": "articulos/art-0330.md",
+  "sha256": "192e6f8d67c4b412f0c70c281811db0717e5be31e3be869760250ace49fbf442",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo I · De los proveedores de precios",
+  "derogado": false
+ },
+ "331": {
+  "archivo": "articulos/art-0331.md",
+  "sha256": "be3e7bc3eec4039e39be0a7da798dd608339b4002240ac9c662812b2646d8b75",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo I · De los proveedores de precios",
+  "derogado": false
+ },
+ "332": {
+  "archivo": "articulos/art-0332.md",
+  "sha256": "032e11aaeba058478c3e8b81599e99d8bf3e115d7ce86840aca70dd499035be0",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo I · De los proveedores de precios",
+  "derogado": false
+ },
+ "333": {
+  "archivo": "articulos/art-0333.md",
+  "sha256": "078a8f4b1037a5f5345eac7057aefd5298ab177b5344b2ed524c9be0f44906d5",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo I · De los proveedores de precios",
+  "derogado": false
+ },
+ "334": {
+  "archivo": "articulos/art-0334.md",
+  "sha256": "9de226e12356e4aeff1022b14478e0748f07377da0bf2f44603fbb4336017c7f",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo II · De las instituciones calificadoras de valores",
+  "derogado": false
+ },
+ "335": {
+  "archivo": "articulos/art-0335.md",
+  "sha256": "60dc34bdca82b1e1b270b9f940476f44ed6510fcaf8b09b4045f5d1a329bef3c",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo II · De las instituciones calificadoras de valores",
+  "derogado": false
+ },
+ "336": {
+  "archivo": "articulos/art-0336.md",
+  "sha256": "8462be7fa132abdd65fdbead49c908c7a47d44bc03a8c03a9f1d690dfe3a5c03",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo II · De las instituciones calificadoras de valores",
+  "derogado": false
+ },
+ "337": {
+  "archivo": "articulos/art-0337.md",
+  "sha256": "1e37283d4a19f271713ab0ef81a3c9dd2a57909bbd59d313cc241cdef91e2d0f",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo II · De las instituciones calificadoras de valores",
+  "derogado": false
+ },
+ "338": {
+  "archivo": "articulos/art-0338.md",
+  "sha256": "82e5a3a7d1c8540c0c34f669829bef04fabf859abf1fb3bb612aac55312364e0",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo II · De las instituciones calificadoras de valores",
+  "derogado": false
+ },
+ "339": {
+  "archivo": "articulos/art-0339.md",
+  "sha256": "35cca60e48161f02b7b190e95775f82f805166ae8620460bd7551dff9ba4f701",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo II · De las instituciones calificadoras de valores",
+  "derogado": false
+ },
+ "340": {
+  "archivo": "articulos/art-0340.md",
+  "sha256": "516e42c0c4986dcd801a6cb4bdaa5aad121e72fd9a0b118c232a05cea6f06aee",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo II · De las instituciones calificadoras de valores",
+  "derogado": false
+ },
+ "341": {
+  "archivo": "articulos/art-0341.md",
+  "sha256": "7866d37b34db5d9dfdb19ba43ea3f932680f9a0ff16f64df3b6b0533bbda142e",
+  "ubicacion": "Título XI · De otras entidades que participan en el desarrollo del mercado de valores / Capítulo II · De las instituciones calificadoras de valores",
+  "derogado": false
+ },
+ "342": {
+  "archivo": "articulos/art-0342.md",
+  "sha256": "199294b2f2c5a281647d27fe0d38ecb3522b12ab37fe8ed9f14475eba6bc2c91",
+  "ubicacion": "Título XII · De la auditoría externa y otros servicios",
+  "derogado": false
+ },
+ "343": {
+  "archivo": "articulos/art-0343.md",
+  "sha256": "364cf0c422d96fb021a15faaf67dc868d65716d58d9356ced6275a4529b03102",
+  "ubicacion": "Título XII · De la auditoría externa y otros servicios",
+  "derogado": false
+ },
+ "344": {
+  "archivo": "articulos/art-0344.md",
+  "sha256": "4d3ccaef74c21be3afe54d7dbe24b18df62ec712f3c585199b86114238ffd7ae",
+  "ubicacion": "Título XII · De la auditoría externa y otros servicios",
+  "derogado": false
+ },
+ "345": {
+  "archivo": "articulos/art-0345.md",
+  "sha256": "81ee708537ff4d470b93276b59fdc2d24e1980bf1a3dcc4dc8745932fae89a2e",
+  "ubicacion": "Título XII · De la auditoría externa y otros servicios",
+  "derogado": false
+ },
+ "346": {
+  "archivo": "articulos/art-0346.md",
+  "sha256": "043257e6057d058a340e75df2ff07f932b60cd208acabde946edea63f085eaf3",
+  "ubicacion": "Título XII · De la auditoría externa y otros servicios",
+  "derogado": false
+ },
+ "347": {
+  "archivo": "articulos/art-0347.md",
+  "sha256": "e1a40e0b825ae21bd2786fac7bb7ac5a30cf87dade4845f4ccb9b9053a133f92",
+  "ubicacion": "Título XII · De la auditoría externa y otros servicios",
+  "derogado": false
+ },
+ "348": {
+  "archivo": "articulos/art-0348.md",
+  "sha256": "66ab087397eac38f8a44e8e9ca23bb2d5e7020ad26994bd36ab8a95c81a1d2a5",
+  "ubicacion": "Título XII · De la auditoría externa y otros servicios",
+  "derogado": false
+ },
+ "349": {
+  "archivo": "articulos/art-0349.md",
+  "sha256": "62814115210b723221a15c5ae8f8dde0fe8ce4bbfe63d2f05fee6eab91845ab8",
+  "ubicacion": "Título XIII · De las autoridades financieras",
+  "derogado": false
+ },
+ "350": {
+  "archivo": "articulos/art-0350.md",
+  "sha256": "9c82684b494030dc131e12d7653582360617e3ddf5c6a4d58edf0223ca9c0453",
+  "ubicacion": "Título XIII · De las autoridades financieras",
+  "derogado": false
+ },
+ "351": {
+  "archivo": "articulos/art-0351.md",
+  "sha256": "320672b46fe1eda9ebea020cfc17d5bf1e11d83a5ad38a98cf9487302d5a6d25",
+  "ubicacion": "Título XIII · De las autoridades financieras",
+  "derogado": false
+ },
+ "351-bis": {
+  "archivo": "articulos/art-0351-bis.md",
+  "sha256": "c57580f3d6c2be2c538d99a3ac26ce2ecddaeacd5a1007ee176c0815fcf7183f",
+  "ubicacion": "Título XIII · De las autoridades financieras",
+  "derogado": false
+ },
+ "352": {
+  "archivo": "articulos/art-0352.md",
+  "sha256": "d90badf4eb54f75a205137b9329eecdb892f0f471daef5a29943a6c325db4bc1",
+  "ubicacion": "Título XIII · De las autoridades financieras",
+  "derogado": false
+ },
+ "353": {
+  "archivo": "articulos/art-0353.md",
+  "sha256": "ba46bd59e15da3fd7490626ddf69c7b9941c7394a9b92008b48723ba15226d53",
+  "ubicacion": "Título XIII · De las autoridades financieras",
+  "derogado": false
+ },
+ "354": {
+  "archivo": "articulos/art-0354.md",
+  "sha256": "0293cff651f421a7d665b1d86cefc9138ad4f4918bd77decc688177b3c956c99",
+  "ubicacion": "Título XIII · De las autoridades financieras",
+  "derogado": false
+ },
+ "355": {
+  "archivo": "articulos/art-0355.md",
+  "sha256": "088a8bb746e97c0d5037a5357c22fbb4030a3c8c20981d2b3d6e4a85ff301e2d",
+  "ubicacion": "Título XIII · De las autoridades financieras",
+  "derogado": false
+ },
+ "356": {
+  "archivo": "articulos/art-0356.md",
+  "sha256": "22c80eb88c3c443f46616ce8154517f4e1c8ba1b895c676e65a499880cef778d",
+  "ubicacion": "Título XIII · De las autoridades financieras",
+  "derogado": false
+ },
+ "357": {
+  "archivo": "articulos/art-0357.md",
+  "sha256": "3836029dda8e5466ae96ed36e85986afe6985611cefbca7f526e74b94bb9981f",
+  "ubicacion": "Título XIII · De las autoridades financieras",
+  "derogado": false
+ },
+ "358": {
+  "archivo": "articulos/art-0358.md",
+  "sha256": "77009e3a6f4a426b51ff11e3c5f44528f396478964a6170adc96dda9c175528d",
+  "ubicacion": "Título XIII · De las autoridades financieras",
+  "derogado": false
+ },
+ "358-bis": {
+  "archivo": "articulos/art-0358-bis.md",
+  "sha256": "baaaf71469b20bbb977979ce61fb317aed689b15a78f9ee421606d37e9d2dc0c",
+  "ubicacion": "Título XIII · De las autoridades financieras",
+  "derogado": false
+ },
+ "359": {
+  "archivo": "articulos/art-0359.md",
+  "sha256": "296cd594617deeb6ab563b8314ad6be1f31e71d6f74dec12aa7e64e26e3449a2",
+  "ubicacion": "Título XIII · De las autoridades financieras",
+  "derogado": false
+ },
+ "360": {
+  "archivo": "articulos/art-0360.md",
+  "sha256": "c1b6282afdd43666836a4944e316b3991d84bb58de6124cfb673e1e5d297bc8b",
+  "ubicacion": "Título XIII · De las autoridades financieras",
+  "derogado": false
+ },
+ "361": {
+  "archivo": "articulos/art-0361.md",
+  "sha256": "03b1f11f145a17a26e01145c261edeb8db63fcdf0cc8663ff5b64972c01ead15",
+  "ubicacion": "Título XIII · De las autoridades financieras",
+  "derogado": false
+ },
+ "362": {
+  "archivo": "articulos/art-0362.md",
+  "sha256": "ede8b2c779ef3241501b0c00525ff6f5bb4d1ff3d75676e278f2274d5c30a60a",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo I · De las infracciones y prohibiciones de mercado",
+  "derogado": false
+ },
+ "363": {
+  "archivo": "articulos/art-0363.md",
+  "sha256": "f876a547cd0b04629634f65e829c550ea244c13038ed152fda3a1e4b96474547",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo I · De las infracciones y prohibiciones de mercado",
+  "derogado": false
+ },
+ "364": {
+  "archivo": "articulos/art-0364.md",
+  "sha256": "d47bec9f56528ccd148ada6ee83ad5b9eb2954f48eee05110d10e5ce50434e33",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo I · De las infracciones y prohibiciones de mercado",
+  "derogado": false
+ },
+ "365": {
+  "archivo": "articulos/art-0365.md",
+  "sha256": "5363916740e77737d3b80685c89d91248f71d9dee34e5625fe41d76897bd6258",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo I · De las infracciones y prohibiciones de mercado",
+  "derogado": false
+ },
+ "366": {
+  "archivo": "articulos/art-0366.md",
+  "sha256": "08c630d2cf3b5762f69c9ef4f4d5bbbf0a13fa4971494b37819c918f48cb35d5",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo I · De las infracciones y prohibiciones de mercado",
+  "derogado": false
+ },
+ "367": {
+  "archivo": "articulos/art-0367.md",
+  "sha256": "3091ca8c8daf4ee78bee6fa3ecc28345ce858c47925749a820ee39fcdfb7a53d",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo I · De las infracciones y prohibiciones de mercado",
+  "derogado": false
+ },
+ "368": {
+  "archivo": "articulos/art-0368.md",
+  "sha256": "9c42c60fb6e7d6529ed79dbee1bf4dcb4f6e8a77fdccba1c1d8801f82604396a",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo I · De las infracciones y prohibiciones de mercado",
+  "derogado": false
+ },
+ "369": {
+  "archivo": "articulos/art-0369.md",
+  "sha256": "e00c0478a686dbc1cb9464df7154a2328a58bab009f727bae46009d25f03632e",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo I · De las infracciones y prohibiciones de mercado",
+  "derogado": false
+ },
+ "370": {
+  "archivo": "articulos/art-0370.md",
+  "sha256": "971de62558c7974ef2a7dbd8e5bfd7a18377098d583588e8a03d75b10ec36a78",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo I · De las infracciones y prohibiciones de mercado",
+  "derogado": false
+ },
+ "370-bis": {
+  "archivo": "articulos/art-0370-bis.md",
+  "sha256": "19a186eb0e6aa03c5a523c372c4750583eefa5df2abe16a9a80d1c90fa7f8fe3",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo I · De las infracciones y prohibiciones de mercado",
+  "derogado": false
+ },
+ "371": {
+  "archivo": "articulos/art-0371.md",
+  "sha256": "9acff18653f4fcb09ceb5524ce6dcc0aaee04831becf867cf55b0211be0317ac",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo I · De las infracciones y prohibiciones de mercado",
+  "derogado": false
+ },
+ "372": {
+  "archivo": "articulos/art-0372.md",
+  "sha256": "08f5a136fb5f648812511cd9143c71ba164d5cddd38a9494c0156461b62762c2",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo I · De las infracciones y prohibiciones de mercado",
+  "derogado": false
+ },
+ "373": {
+  "archivo": "articulos/art-0373.md",
+  "sha256": "11c8b055b232ec83a3dbf1c9fabfce57a22c9d284cf379049d7b963a5fb9d528",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo II · De los delitos",
+  "derogado": false
+ },
+ "374": {
+  "archivo": "articulos/art-0374.md",
+  "sha256": "701b532ddb3d99204c2f216b43674e2d1da5eb8933bde8c31f639c7b4abdbe02",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo II · De los delitos",
+  "derogado": false
+ },
+ "375": {
+  "archivo": "articulos/art-0375.md",
+  "sha256": "f7864c613b96a4be0199114accb675397e85e384572ed2fd98c41cea4b5f9c9d",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo II · De los delitos",
+  "derogado": false
+ },
+ "376": {
+  "archivo": "articulos/art-0376.md",
+  "sha256": "8db7f4a0904e92d24a461df1d6535d3ca29fb18c9ac3b44cbc2f3b8597ee20aa",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo II · De los delitos",
+  "derogado": false
+ },
+ "377": {
+  "archivo": "articulos/art-0377.md",
+  "sha256": "1b7067cfdfddb825bfc827f0fa5ffdef87a462f75594e3b3b9dd0e98e3539659",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo II · De los delitos",
+  "derogado": false
+ },
+ "378": {
+  "archivo": "articulos/art-0378.md",
+  "sha256": "8f4e736c0b05e6d1b0a75968a9565efc72a31f0e7796b1e3d5897196cac022fe",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo II · De los delitos",
+  "derogado": false
+ },
+ "379": {
+  "archivo": "articulos/art-0379.md",
+  "sha256": "e1a631f96eddb5baf55841530ba654b34564b66ccd02497fdd6c0a6543d54490",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo II · De los delitos",
+  "derogado": false
+ },
+ "380": {
+  "archivo": "articulos/art-0380.md",
+  "sha256": "2a8bb20db34e5801bd8bb7e8e02ce1a54bd8695688c4df255a368be73fba844b",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo II · De los delitos",
+  "derogado": false
+ },
+ "381": {
+  "archivo": "articulos/art-0381.md",
+  "sha256": "2c1d79edb81ea7b276f50d39e86e3b2eef1621c843ade7116f149a4ec03a08c7",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo II · De los delitos",
+  "derogado": false
+ },
+ "382": {
+  "archivo": "articulos/art-0382.md",
+  "sha256": "57dfe6e34cde4c888d0a53a64b0d260275dddeeaba45619bb92d114a6defc8dd",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo II · De los delitos",
+  "derogado": false
+ },
+ "383": {
+  "archivo": "articulos/art-0383.md",
+  "sha256": "1cd7ffc730a1ec8cbf285c8aa666a697c58933253970aa8bbf94c8d15f5fdfd3",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo II · De los delitos",
+  "derogado": false
+ },
+ "383-bis": {
+  "archivo": "articulos/art-0383-bis.md",
+  "sha256": "acfb5339b9c288329fe10860fbc3fcd706b482844bbca9a5a8d114bf91d4a906",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo II · De los delitos",
+  "derogado": false
+ },
+ "384": {
+  "archivo": "articulos/art-0384.md",
+  "sha256": "d853f2cd48319a3ce5443c45f9b49f877eb328172aa2663615d6c72b60cea095",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo II · De los delitos",
+  "derogado": false
+ },
+ "385": {
+  "archivo": "articulos/art-0385.md",
+  "sha256": "c0164ca0523fb0deb050654f69cd01735c63eebc0d52f3803c116eca73b64035",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo II · De los delitos",
+  "derogado": false
+ },
+ "386": {
+  "archivo": "articulos/art-0386.md",
+  "sha256": "62fa7caeb1b1784617ac8fdceda8174902ab2fa64fee6bb4379b78aaafe95675",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo II · De los delitos",
+  "derogado": false
+ },
+ "387": {
+  "archivo": "articulos/art-0387.md",
+  "sha256": "b310de2ce2882de28f298394db36b7a9d6040cb92b28114ca64ee3eff76ddf1e",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo II · De los delitos",
+  "derogado": false
+ },
+ "388": {
+  "archivo": "articulos/art-0388.md",
+  "sha256": "bedde81b02dec3fbba280f86ceef34e2645ea38bd2967f7b2d3b9f9d79774a88",
+  "ubicacion": "Título XIV · De las infracciones y prohibiciones de mercado y de los delitos / Capítulo II · De los delitos",
+  "derogado": false
+ },
+ "389": {
+  "archivo": "articulos/art-0389.md",
+  "sha256": "62c7a187e3a3268273c17bfecdd74d6fee06315986a28705ec505871de95bfad",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo I · Disposiciones preliminares",
+  "derogado": false
+ },
+ "389-bis": {
+  "archivo": "articulos/art-0389-bis.md",
+  "sha256": "ba25cc1851cf790ae8bcfb253b18936ee5dc081fb7b455562e65c7dfccedb49c",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo I · Disposiciones preliminares",
+  "derogado": false
+ },
+ "390": {
+  "archivo": "articulos/art-0390.md",
+  "sha256": "6dafc9683bb0a4b4589989424cc6b074c20123c0e554745c082c83a7f9e615ca",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo I · Disposiciones preliminares",
+  "derogado": false
+ },
+ "391": {
+  "archivo": "articulos/art-0391.md",
+  "sha256": "3fd9b69c468a3196e607ed18ed0fde4d7615874658bf271d0959a800812e974b",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo II · De la imposición de sanciones administrativas",
+  "derogado": false
+ },
+ "391-bis": {
+  "archivo": "articulos/art-0391-bis.md",
+  "sha256": "b252dfc36455a35831656ebdc1737ce0594c5eba58040cba65f74a66bf7ee0cb",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo II · De la imposición de sanciones administrativas",
+  "derogado": false
+ },
+ "392": {
+  "archivo": "articulos/art-0392.md",
+  "sha256": "b447ab2f6d663b8eac6a428f39de3a8d6013729ceda944dddc6ec0a6ca46dc4d",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo II · De la imposición de sanciones administrativas",
+  "derogado": false
+ },
+ "393": {
+  "archivo": "articulos/art-0393.md",
+  "sha256": "410d106498905d7ac4ab888d87d493d9a2a1f84be9d1298b4a2b83b7ce296e48",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo II · De la imposición de sanciones administrativas",
+  "derogado": false
+ },
+ "393-bis": {
+  "archivo": "articulos/art-0393-bis.md",
+  "sha256": "793ef63f8a9f50de52102567ecc1eec0031d68cabc4a4a2c262ca3f2f3a70e59",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo II · De la imposición de sanciones administrativas",
+  "derogado": false
+ },
+ "394": {
+  "archivo": "articulos/art-0394.md",
+  "sha256": "b397c0458f123532cb03ea1fdb34060ca0df22cc9230a8e49d385f1071996862",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo II · De la imposición de sanciones administrativas",
+  "derogado": false
+ },
+ "395": {
+  "archivo": "articulos/art-0395.md",
+  "sha256": "b97271009f0be1fd2f9418e245e81f17aee7ad76c0907c5d77452ed3dde3399d",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo II · De la imposición de sanciones administrativas",
+  "derogado": false
+ },
+ "395-bis": {
+  "archivo": "articulos/art-0395-bis.md",
+  "sha256": "9ca0e72f24bd72cbe58f96afd328d952a8537312341dce945fd6eb2ef7a9d339",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo II Bis · De los programas de autocorrección Capítulo adicionado DOF 10-01-2014",
+  "derogado": false
+ },
+ "395-bis-1": {
+  "archivo": "articulos/art-0395-bis-1.md",
+  "sha256": "a6fe7325e203b92b664af15ff6367362926daaf96c1647f3419c4e1751644269",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo II Bis · De los programas de autocorrección Capítulo adicionado DOF 10-01-2014",
+  "derogado": false
+ },
+ "395-bis-2": {
+  "archivo": "articulos/art-0395-bis-2.md",
+  "sha256": "087089d348d9f6b6919ec0957b1bbbf77868b9fc33110b675ad9b8fc347cde69",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo II Bis · De los programas de autocorrección Capítulo adicionado DOF 10-01-2014",
+  "derogado": false
+ },
+ "395-bis-3": {
+  "archivo": "articulos/art-0395-bis-3.md",
+  "sha256": "0847957e3c627a364800b7c6251613e7e5e6a441d95da8f097964f21a30ab8fb",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo II Bis · De los programas de autocorrección Capítulo adicionado DOF 10-01-2014",
+  "derogado": false
+ },
+ "396": {
+  "archivo": "articulos/art-0396.md",
+  "sha256": "8e64f3da3cbe657ad5de0a454c99671ed49d7a7321b11f3c978479334b12c659",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo III · Del recurso de revisión",
+  "derogado": false
+ },
+ "397": {
+  "archivo": "articulos/art-0397.md",
+  "sha256": "182790c93c81c10d19e256aef73c8acdca9c1ae53575d7afeafd6baa260926fc",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo IV · Del procedimiento de queja",
+  "derogado": false
+ },
+ "398": {
+  "archivo": "articulos/art-0398.md",
+  "sha256": "9931266bf18b64bb3d389e2908419e38f0a4e0bc2fae19b32e449af6011d4ad7",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo IV · Del procedimiento de queja",
+  "derogado": false
+ },
+ "399": {
+  "archivo": "articulos/art-0399.md",
+  "sha256": "ece81930d252537c95607cefe6df4ed98fa22beea7da506c700e03a0287204e2",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo V · De las notificaciones",
+  "derogado": false
+ },
+ "400": {
+  "archivo": "articulos/art-0400.md",
+  "sha256": "4b912380ce14c85938aff66e62c296c6175b1219dec84e71a083bfee46eb1a39",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo V · De las notificaciones",
+  "derogado": false
+ },
+ "401": {
+  "archivo": "articulos/art-0401.md",
+  "sha256": "010d6c2e4ffb28105d1e88b94f90e39fb613cb35c77300bd86ecd0dd3945f1b8",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo V · De las notificaciones",
+  "derogado": false
+ },
+ "402": {
+  "archivo": "articulos/art-0402.md",
+  "sha256": "a56e2329b38718ee8e7ee25a95ed524d3a8cba535b85438da7e5f0cf3b6ec90f",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo V · De las notificaciones",
+  "derogado": false
+ },
+ "403": {
+  "archivo": "articulos/art-0403.md",
+  "sha256": "245877176bf6834beb7d08b1c400b99783bad8d429cafdf0fae7d9917d731b10",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo V · De las notificaciones",
+  "derogado": false
+ },
+ "404": {
+  "archivo": "articulos/art-0404.md",
+  "sha256": "269e64a2c6c63e002791b5260ed45b0b90159aa6fac51b5192e88c63fd8ce129",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo V · De las notificaciones",
+  "derogado": false
+ },
+ "405": {
+  "archivo": "articulos/art-0405.md",
+  "sha256": "f560de5a60262328251e93a1a5ee299143caeee02addf28ba20f39b0624a6a22",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo V · De las notificaciones",
+  "derogado": false
+ },
+ "406": {
+  "archivo": "articulos/art-0406.md",
+  "sha256": "8a443b80282c201f27b2f6979e18db4c4ebbb223cfeee78a28c6e51428b932ed",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo V · De las notificaciones",
+  "derogado": false
+ },
+ "407": {
+  "archivo": "articulos/art-0407.md",
+  "sha256": "eecb938d41276dee26bdc54176a771f63c50b056ccb6adf7888e4635d39d7fe1",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo V · De las notificaciones",
+  "derogado": false
+ },
+ "408": {
+  "archivo": "articulos/art-0408.md",
+  "sha256": "4bae90787fa9df3ab56882e7c7a6c0ec85c80d250a3d87153816d3231406e428",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo V · De las notificaciones",
+  "derogado": false
+ },
+ "409": {
+  "archivo": "articulos/art-0409.md",
+  "sha256": "32b11a2c1c741edac345381f7001e0273bc2d5fb05b9a91fd710ecfcb5b9779c",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo V · De las notificaciones",
+  "derogado": false
+ },
+ "410": {
+  "archivo": "articulos/art-0410.md",
+  "sha256": "583dbf43d339c0a09341b9f88994bdc922f81cf71efd701778d77f0022b42dea",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo V · De las notificaciones",
+  "derogado": false
+ },
+ "411": {
+  "archivo": "articulos/art-0411.md",
+  "sha256": "3e0a84bafe310dd39c42529a8f7f0ae1872dc0b65935bff14fe37868b1e3a1a7",
+  "ubicacion": "Título XV · De los procedimientos administrativos / Capítulo V · De las notificaciones",
+  "derogado": false
+ },
+ "412": {
+  "archivo": "articulos/art-0412.md",
+  "sha256": "75ee888408e76a8514a57e81258fa4ed6867a2a651d4742c94106b378da68fcf",
+  "ubicacion": "Título XVI · Disposiciones finales",
+  "derogado": false
+ },
+ "413": {
+  "archivo": "articulos/art-0413.md",
+  "sha256": "465722cf8e5091c348787f251149bf4ff3d31c0e5fe5a830b34c993cca83e3ec",
+  "ubicacion": "Título XVI · Disposiciones finales",
+  "derogado": false
+ },
+ "414": {
+  "archivo": "articulos/art-0414.md",
+  "sha256": "dad55eb51755ac5002cffe9f7918b98736b826f852d85f470cffd370511a3af1",
+  "ubicacion": "Título XVI · Disposiciones finales",
+  "derogado": false
+ },
+ "415": {
+  "archivo": "articulos/art-0415.md",
+  "sha256": "3c764477b033165c29296f9ea11891b792555f66d3b4644c9c7dd7cc33b3a1b9",
+  "ubicacion": "Título XVI · Disposiciones finales",
+  "derogado": false
+ },
+ "416": {
+  "archivo": "articulos/art-0416.md",
+  "sha256": "68659164eb6ceae30c3d4887d7045d1e841bbf7f2fab4d2068a908253ae9d4aa",
+  "ubicacion": "Título XVI · Disposiciones finales",
+  "derogado": false
+ },
+ "417": {
+  "archivo": "articulos/art-0417.md",
+  "sha256": "7c63aa5a3d53963c04357aad0c1604d11fe79760d68cb2862495e5eaddb85300",
+  "ubicacion": "Título XVI · Disposiciones finales",
+  "derogado": false
+ },
+ "418": {
+  "archivo": "articulos/art-0418.md",
+  "sha256": "16a4c7c6ba55a1519b141db8d013c3accf424011bb1d0767d8c03b24070cd26d",
+  "ubicacion": "Título XVI · Disposiciones finales",
+  "derogado": false
+ },
+ "419": {
+  "archivo": "articulos/art-0419.md",
+  "sha256": "414fed89464289c4be7e80d51ce81fbc85425b69460e623bc93c4da50d1453e1",
+  "ubicacion": "Título XVI · Disposiciones finales",
+  "derogado": false
+ },
+ "420": {
+  "archivo": "articulos/art-0420.md",
+  "sha256": "a6912402102d5d3302162017ed601cb8272d92b3289530d82a17e83b58926b24",
+  "ubicacion": "Título XVI · Disposiciones finales",
+  "derogado": false
+ },
+ "421": {
+  "archivo": "articulos/art-0421.md",
+  "sha256": "e9284cb36b75a9906dc46702799721c165c4969887eeca5c19f5cb1253b71812",
+  "ubicacion": "Título XVI · Disposiciones finales",
+  "derogado": false
+ },
+ "422": {
+  "archivo": "articulos/art-0422.md",
+  "sha256": "bebbe10413b43fd899a36e9c45caea3a225b4099ed5496415f8f6bbf04215a0b",
+  "ubicacion": "Título XVI · Disposiciones finales",
+  "derogado": false
+ },
+ "423": {
+  "archivo": "articulos/art-0423.md",
+  "sha256": "7fb25d81401c78fb06cc986e9da9a288f2dbc9e68072fa28e00d6b1ee41cea53",
+  "ubicacion": "Título XVI · Disposiciones finales",
+  "derogado": false
+ }
+}

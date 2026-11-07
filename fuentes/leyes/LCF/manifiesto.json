@@ -1,0 +1,17 @@
+{
+ "clave": "LCF",
+ "nombre": "Ley de Coordinación Fiscal",
+ "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LCF.pdf",
+ "fuente": "Cámara de Diputados (texto vigente); cotejar contra el DOF",
+ "ultima_reforma_segun_pdf": "2024-01-03",
+ "ultima_reforma_origen": "encabezado del PDF",
+ "descargado": "2026-11-07",
+ "sha256_pdf": "5c89d48167a4e1170c69e0b1e0294260b806a30d861275d8dca09b0334cd09d4",
+ "sha256_texto": "d2850524f7a8d367b2e4af4784c8fa1538e1ae72570a458896af65f262c27956",
+ "cotejado_dof": {
+  "ley_completa": null,
+  "articulos": {}
+ },
+ "articulos": 67,
+ "derogados": 1
+}

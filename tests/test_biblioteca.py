@@ -8,9 +8,12 @@ import pytest
 from conftest import RAIZ
 
 LEYES = RAIZ / "fuentes" / "leyes"
-CLAVES = ["LISR", "LIVA", "LFPIORPI", "LSS", "LINFONAVIT", "LFT", "CFF", "RLISR", "RLIVA"]
+CLAVES = ["LISR", "LIVA", "LFPIORPI", "LSS", "LINFONAVIT", "LFT", "CFF", "RLISR", "RLIVA",
+          "LIEPS", "RLIEPS", "RCFF", "RLFPIORPI", "LIF2026", "LA", "LFD", "LISH", "LFISAN", "LCF", "LMV"]
 CLAVE = {"LISR": ["96", "106", "151", "152"], "LIVA": ["1", "1-a", "5", "32"], "LFPIORPI": ["17"], "LSS": ["27", "28"], "LINFONAVIT": ["29"],
-         "LFT": ["76", "80", "87", "117", "162", "353-ñ"], "CFF": ["17-a", "20", "21", "29", "29-a", "80"], "RLISR": ["1", "174"], "RLIVA": ["1"]}
+         "LFT": ["76", "80", "87", "117", "162", "353-ñ"], "CFF": ["17-a", "20", "21", "29", "29-a", "80"], "RLISR": ["1", "174"], "RLIVA": ["1"],
+         "LIEPS": ["2", "8"], "RLIEPS": ["1"], "RCFF": ["1", "39"], "RLFPIORPI": ["1"], "LIF2026": ["1", "25"], "LA": ["1", "56", "64"],
+         "LFD": ["1"], "LISH": ["1"], "LFISAN": ["1"], "LCF": ["1", "2"], "LMV": ["1"]}
 
 
 def carga(c):
@@ -22,8 +25,8 @@ def carga(c):
 def test_ley_completa(c):
     man, idx, d = carga(c)
     assert man["clave"] == c and man["url"].startswith("https://www.diputados.gob.mx/")
-    assert len(man["sha256_pdf"]) == 64 and man["ultima_reforma_segun_pdf"]
-    assert man["articulos"] == len(idx) >= 60
+    assert len(man["sha256_pdf"]) == 64 and ("ultima_reforma_segun_pdf" in man)
+    assert man["articulos"] == len(idx) >= 14
     assert (d / "transitorios.md").is_file()
     # sin huecos en la numeración base
     nums = sorted({int(k.split("-")[0]) for k in idx})

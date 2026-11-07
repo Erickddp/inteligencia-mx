@@ -1,0 +1,416 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "b44df838460e80bdd756694f5e47d88823f57fd17b34da4547ea85ae41a222c6",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "251ecaf8c887c77639c7bc572055006345c2fc57faa58dc264ce912a2ae0f8ae",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "2-a": {
+  "archivo": "articulos/art-0002-a.md",
+  "sha256": "8f0bc1c66d26ec1e12d6b3ab9bf5869560d3be102f1dda7113ece0864c246b32",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "2-b": {
+  "archivo": "articulos/art-0002-b.md",
+  "sha256": "b4fc2940abe3ee07793fdf9905a439f422934c52789cfc09015ca25d04129b4f",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": true
+ },
+ "2-c": {
+  "archivo": "articulos/art-0002-c.md",
+  "sha256": "a4c1b4553ccd9864e7b19d5ecfb9fd23e24968f06806fa8027c9b95225de3faa",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": true
+ },
+ "2-d": {
+  "archivo": "articulos/art-0002-d.md",
+  "sha256": "3e9e3327178284db16363239d5cbb8ec3a2beea98fa973d1a80a9e605851b1ed",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "2-e": {
+  "archivo": "articulos/art-0002-e.md",
+  "sha256": "9e7e1f72e4b520aa3b2ae2c5e0aa863230fbc45cbdbc1faccb5fde097cd2f874",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "3519627df9235de6c7b3eaf803dda965143c7180f4eb81e1dfa9049fbc38f2d7",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "df8cdfa89007f125443e41f3eae8218ceb0566b268d86aa1f9b9d95f8906486f",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "4-a": {
+  "archivo": "articulos/art-0004-a.md",
+  "sha256": "8d34cfaa4642a842e38e59065700f55b3fc7088923e04679d352c95436985388",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": true
+ },
+ "4-b": {
+  "archivo": "articulos/art-0004-b.md",
+  "sha256": "d3efe99caa515a09ae17f4eec7ad4bb3a34f56e3347f88147d194f6322de0a46",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": true
+ },
+ "4-c": {
+  "archivo": "articulos/art-0004-c.md",
+  "sha256": "44b72bec9660652c88af43cea4378d0d8dcb769c7c59d26a87eb14563b1bbdc3",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": true
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "ba48393824c1b8594b203b95355d267c3e13788d11d8c4268022d5d3650e1d13",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "5-a": {
+  "archivo": "articulos/art-0005-a.md",
+  "sha256": "f7e2786507c5fc8fb96c12312a439f0c0f588571781b701122f57af80039dec7",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "5-a-bis": {
+  "archivo": "articulos/art-0005-a-bis.md",
+  "sha256": "448032584188dda92cc03dc14df9ff8b485191e863439f325fecac788655e45b",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "5-b": {
+  "archivo": "articulos/art-0005-b.md",
+  "sha256": "34c6a165d57acf1cb288f3e5fddfa4f590b900af1179b8eeb1057d8050caf073",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "5-c": {
+  "archivo": "articulos/art-0005-c.md",
+  "sha256": "dd67a8f44df5bcf51d57c1fc007c24a759e5f79e5251b680d999d3aaa3c0067c",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "5-d": {
+  "archivo": "articulos/art-0005-d.md",
+  "sha256": "64be2d289a28cb5edd65b0e27ef4367b371ac9b0ae49acb3bd405cb150bd3c78",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": true
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "d012eb41ed481733878874ac67b0181dfe457d7bed5ebda312c059ffc216528d",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "6-a": {
+  "archivo": "articulos/art-0006-a.md",
+  "sha256": "7279b21137b7ae00559d1eed3dd200ac0c710204f363be7bfe2fc815c9f0a5aa",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo I · Disposiciones Generales",
+  "derogado": true
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "57dfe6845a8690a160eb742e1928b262c99cb5edd501c848f19457b7272020de",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo II · De la Enajenación",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "288c4ca316102143dd3d556402a0ce28998a01d0c44a0ed127049376ffa1faaa",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo II · De la Enajenación",
+  "derogado": true
+ },
+ "8-b": {
+  "archivo": "articulos/art-0008-b.md",
+  "sha256": "00926ea0c711fa5b1933b7d81b0e3610b8f9d869b42aa1cfe588fd702610af1d",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo II · De la Enajenación",
+  "derogado": true
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "6d853f7fc096442475d84a4127fd7e8f5277340f4d09c859c69d508f16dd87a8",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo II · De la Enajenación",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "a8394c15688745948a9c48228cc97f5ac9a83b3ad965a3c10ea7c59ceafc2ada",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo II · De la Enajenación",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "cf06358085f86edafd02c11d8b3d0cd99e539ae979890cb34bb893d03c25d8f5",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo II · De la Enajenación",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "8eab877f8e9b76650782c1d5ca284a414bb3e637a5da2a0de2b91a57734eabc4",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo III · De la Importación de Bienes",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "3b07b6f327fa3e48380682ff9e278a3975c10303444c55e8da9fe0d089041686",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo III · De la Importación de Bienes",
+  "derogado": false
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "03891f4789b6df7350e5ceaceaf925976902e7e54090a6b9129aa551d64b40c7",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo III · De la Importación de Bienes",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "275c47379fbd8f7f09238f78433dfada8c4cc9b4df6bf2e1d4a3da80ba0dfb95",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo III · De la Importación de Bienes",
+  "derogado": false
+ },
+ "15-a": {
+  "archivo": "articulos/art-0015-a.md",
+  "sha256": "02edb1480ca4aa41c3a50a7057a5620ecfed966c325c992e8af37c2035e0cbe6",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo III · De la Importación de Bienes",
+  "derogado": false
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "d5b15e87d42ad1ec54e9986f8020f1509a3d3732477458416146d2b61fb408bd",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo III · De la Importación de Bienes",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "ff97eafff820421ae62f99c4fb7cd45e14eb6332b15b1df272865258e8a208f2",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo IV · De la Prestación de Servicios",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "ec50a399b4628937b2d831f4b7c28e55eadf1bb6e354e46d5af7bab7743bd513",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo IV · De la Prestación de Servicios",
+  "derogado": false
+ },
+ "18-a": {
+  "archivo": "articulos/art-0018-a.md",
+  "sha256": "4b94d4a1119cfd891b09c3f473c101be05e32651e5493728d60886248e73173e",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo IV · De la Prestación de Servicios",
+  "derogado": false
+ },
+ "18-b": {
+  "archivo": "articulos/art-0018-b.md",
+  "sha256": "cabbefb067470e65b413ac780c3483620daaa2dc76d3cbb99cc12db524297cab",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo IV · De la Prestación de Servicios",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "ec6ccdb9fdbfb7d06f7172faa2a546003190ca7c29c8e383c1572397a3e347e6",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo V · De las Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "19-a": {
+  "archivo": "articulos/art-0019-a.md",
+  "sha256": "d288ecac57c54f46c8f850cf1e9d6da45d0a7ba52dfba40affc9a0c1504a266e",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo V · De las Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "20": {
+  "archivo": "articulos/art-0020.md",
+  "sha256": "2c1bb2dd232266265d51f5543d47b6354b44a8d18ce4b5b81bdd890b41105e12",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo V · De las Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "20-a": {
+  "archivo": "articulos/art-0020-a.md",
+  "sha256": "2a8481895dd9d6b932844bf6e646ef782f9b026772cfd94047f7214fe441708b",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo V · De las Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "21": {
+  "archivo": "articulos/art-0021.md",
+  "sha256": "9c1968acdf592beccf1e88b605a4112d7502ca695eee8afce4d496d978ec383f",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo V · De las Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "22": {
+  "archivo": "articulos/art-0022.md",
+  "sha256": "6915abc1d0b8717765041aef4488e4c6dd806ad2c6dce74a38e5f898633f6812",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "23": {
+  "archivo": "articulos/art-0023.md",
+  "sha256": "2e0829b9d46480857036a856d67ac1ebe193c93d1f785dffaa2e00baa95a02d8",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "23-bis": {
+  "archivo": "articulos/art-0023-bis.md",
+  "sha256": "d5778fc30a1c33ffa6a26c40befd6534c6ab01b2e1c1ce8e3750db6610f0086f",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "23-a": {
+  "archivo": "articulos/art-0023-a.md",
+  "sha256": "5d8e722470df7c1774c55bcebc0b9030d40a0289b8a9f7cf31c2218b02df6722",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "23-b": {
+  "archivo": "articulos/art-0023-b.md",
+  "sha256": "5e0a3d841659c05c7110b6566a4d426fb4c6fbb97b5c60b8000093544341d3b8",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "24": {
+  "archivo": "articulos/art-0024.md",
+  "sha256": "3929394dbfad63a559cb0d8dfba6103a709b8038240e47a63b9a9564d885cbe3",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "25": {
+  "archivo": "articulos/art-0025.md",
+  "sha256": "207c71205d10fad10a11da8409adfa68d270b104775c90c7f72b996a6b093c89",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "26": {
+  "archivo": "articulos/art-0026.md",
+  "sha256": "6dc68acca27c9a2d00b4ae73a09d9ae99e82726c9730e3a146ff4e35c68cfac4",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "26-a": {
+  "archivo": "articulos/art-0026-a.md",
+  "sha256": "fd89f6eb8dfc2a3c0114e61b4e5d8345b557f51c2bcf9db73b9123992b2371b0",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "26-b": {
+  "archivo": "articulos/art-0026-b.md",
+  "sha256": "09f62ffa7a5d93c4ff86de1fb00b863beca89dce79654559321b17f61670115e",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "26-c": {
+  "archivo": "articulos/art-0026-c.md",
+  "sha256": "0f44e1bd188d662d0c601eabd3e1d5576b57d73e124f46baa750ae1b0792cc9e",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "26-d": {
+  "archivo": "articulos/art-0026-d.md",
+  "sha256": "d1d5b5c2f60cc7b599978cbd18a4b54a1449ae449e03579a18dd9b220f0ab0db",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "26-e": {
+  "archivo": "articulos/art-0026-e.md",
+  "sha256": "4283772aa746fa2177c426197bfa2705a790d7eaa594a4faf802d6a5640c9bba",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "26-f": {
+  "archivo": "articulos/art-0026-f.md",
+  "sha256": "447738cbce9a7e213624fdc575aa5279cf809d14efc9b58777858858e28e627e",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "26-g": {
+  "archivo": "articulos/art-0026-g.md",
+  "sha256": "53ed3ddc2a6e4956fde1f6112052b642170cf25fd062af85dfbb9e7cb9207da5",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "26-h": {
+  "archivo": "articulos/art-0026-h.md",
+  "sha256": "114cb0fceec26952b75f69c87c66a4e9088e47803473f34479a5201667392414",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "26-i": {
+  "archivo": "articulos/art-0026-i.md",
+  "sha256": "ed4bcbae947851b4db40aa92e234724a0c7f7076589fd5017f6babaebd83998c",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "26-j": {
+  "archivo": "articulos/art-0026-j.md",
+  "sha256": "64c4dd61b72a8e1693c1cd4a6f2cee437122064f636f0bf32ad7bcc189c1ab87",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "26-k": {
+  "archivo": "articulos/art-0026-k.md",
+  "sha256": "e940d54b436ff2d6a9ce93428e88133d47c9bb239f3174f4529d0abb140a0cfd",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "26-l": {
+  "archivo": "articulos/art-0026-l.md",
+  "sha256": "8cfed3d696d7ffbc930104ce365f800588f67115fa4de09d429bb4ab683ec5a2",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "26-m": {
+  "archivo": "articulos/art-0026-m.md",
+  "sha256": "559ce79eeaa896a39b94e39dbdea1d64e9eebc9836b4efbbf37e0915152cd440",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "26-n": {
+  "archivo": "articulos/art-0026-n.md",
+  "sha256": "f574291731ff6905d35758eb94888bab0a119233667b5ca2ba83efc0c7c49593",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "26-ñ": {
+  "archivo": "articulos/art-0026-ñ.md",
+  "sha256": "f2cbcafa27e36c53b7da3dbd3f8cfb66f5dd951888ed4dbf75ad4fe892313a33",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "26-o": {
+  "archivo": "articulos/art-0026-o.md",
+  "sha256": "926df660d857a4d1f4b900c4f86523b3655128fa859f7e5ea1925be0f40280f2",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "26-p": {
+  "archivo": "articulos/art-0026-p.md",
+  "sha256": "df3b8fa15ee58e8eeb243c3a02fecd50fb1b3e3b8198ff140a1bad1cf0f00b58",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VI · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "27": {
+  "archivo": "articulos/art-0027.md",
+  "sha256": "bb2e3b475ebf6a977e7ea82a07324fcd975c27fa19abe1b1ae4a03fc4fc47e5a",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VII · De las Participaciones a las Entidades Federativas Denominación del Capítulo reformada DOF 31-12-1999 (queda como “Título III”). Denominación reformada DOF 01-01-2002 (antes Título III “De las Participaciones a las Entidades Federativas”)",
+  "derogado": false
+ },
+ "28": {
+  "archivo": "articulos/art-0028.md",
+  "sha256": "3d8f6a8b31535b01d8899f7d70db32ec30e57d1e79b740f5cc3a493aa57fc256",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VII · De las Participaciones a las Entidades Federativas Denominación del Capítulo reformada DOF 31-12-1999 (queda como “Título III”). Denominación reformada DOF 01-01-2002 (antes Título III “De las Participaciones a las Entidades Federativas”)",
+  "derogado": false
+ },
+ "29": {
+  "archivo": "articulos/art-0029.md",
+  "sha256": "1be22d66780fc118d8e518e3d16aaf1451eaf5f618a27c4d5f10f08176c205d5",
+  "ubicacion": "Titulo I · Título adicionado DOF 31-12-1999. Denominación del Título suprimida DOF 01-01-2002 / Capitulo VII · De las Participaciones a las Entidades Federativas Denominación del Capítulo reformada DOF 31-12-1999 (queda como “Título III”). Denominación reformada DOF 01-01-2002 (antes Título III “De las Participaciones a las Entidades Federativas”)",
+  "derogado": true
+ }
+}

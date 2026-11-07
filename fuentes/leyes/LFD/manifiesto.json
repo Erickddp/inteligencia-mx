@@ -1,0 +1,17 @@
+{
+ "clave": "LFD",
+ "nombre": "Ley Federal de Derechos",
+ "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFD.pdf",
+ "fuente": "Cámara de Diputados (texto vigente); cotejar contra el DOF",
+ "ultima_reforma_segun_pdf": "2025-11-07",
+ "ultima_reforma_origen": "encabezado del PDF",
+ "descargado": "2026-11-07",
+ "sha256_pdf": "64b08a1ff8e5c71759acf550cf9c8df7eb343ea679a2c2663d0eef3db19f10df",
+ "sha256_texto": "40481518e9e755b4250a7944eefa003ff9635a3db2a975847a636a47b2c79454",
+ "cotejado_dof": {
+  "ley_completa": null,
+  "articulos": {}
+ },
+ "articulos": 699,
+ "derogados": 377
+}

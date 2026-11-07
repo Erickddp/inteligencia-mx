@@ -1,0 +1,17 @@
+{
+ "clave": "RLIEPS",
+ "nombre": "Reglamento de la Ley del Impuesto Especial sobre Producción y Servicios",
+ "url": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIEPS.pdf",
+ "fuente": "Cámara de Diputados (texto vigente); cotejar contra el DOF",
+ "ultima_reforma_segun_pdf": null,
+ "ultima_reforma_origen": "sin dato",
+ "descargado": "2026-11-07",
+ "sha256_pdf": "cb15a70b51a87cff0f6d329d5e8a97617d71c955e46da65921037a77a83ca5f4",
+ "sha256_texto": "a434bcfa53970181ee32734d0ee83c4ff95e031d3244f3f41d25894e2f68570a",
+ "cotejado_dof": {
+  "ley_completa": null,
+  "articulos": {}
+ },
+ "articulos": 19,
+ "derogados": 0
+}

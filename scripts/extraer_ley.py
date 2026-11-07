@@ -32,10 +32,21 @@ LEYES = {
     "CFF": ("pdf/CFF.pdf", "Código Fiscal de la Federación"),
     "RLISR": ("regley/Reg_LISR_060516.pdf", "Reglamento de la Ley del Impuesto sobre la Renta"),
     "RLIVA": ("regley/Reg_LIVA_250914.pdf", "Reglamento de la Ley del Impuesto al Valor Agregado"),
+    "LIEPS": ("pdf/LIEPS.pdf", "Ley del Impuesto Especial sobre Producción y Servicios"),
+    "RLIEPS": ("regley/Reg_LIEPS.pdf", "Reglamento de la Ley del Impuesto Especial sobre Producción y Servicios"),
+    "RCFF": ("regley/Reg_CFF.pdf", "Reglamento del Código Fiscal de la Federación"),
+    "RLFPIORPI": ("regley/Reg_LFPIORPI.pdf", "Reglamento de la Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita"),
+    "LIF2026": ("pdf/LIF_2026.pdf", "Ley de Ingresos de la Federación para el Ejercicio Fiscal de 2026"),
+    "LA": ("pdf/LAdua.pdf", "Ley Aduanera"),
+    "LFD": ("pdf/LFD.pdf", "Ley Federal de Derechos"),
+    "LISH": ("pdf/LIH.pdf", "Ley de Ingresos sobre Hidrocarburos"),
+    "LFISAN": ("pdf/LFISAN.pdf", "Ley Federal del Impuesto sobre Automóviles Nuevos"),
+    "LCF": ("pdf/LCF.pdf", "Ley de Coordinación Fiscal"),
+    "LMV": ("pdf/LMV.pdf", "Ley del Mercado de Valores"),
 }
 
-SUFIJO = r"(?:Bis|Ter|Qu[áa]ter|Quinquies|Sexies|Septies|Octies|Nonies|Decies|Quintus|Sextus|Septimus)"
-INICIO = re.compile(r"^ {0,6}Art[íi]culo\s+(?=\d)")
+SUFIJO = r"(?:Bis|Ter|Qu[áa]ter|Quinquies|Sexies|Septies|Octies|Nonies|Decies|Quintus|Sextus|S[ée]ptimus|Octavus|Nonus|D[ée]cimus)"
+INICIO = re.compile(r"^ {0,6}(?:Art[íi]culo|ART[ÍI]CULO)\s+(?=\d)")  # la Ley Aduanera lo escribe en mayúsculas
 SUF_RE = [re.compile(r"\s*\.?\s*-([A-ZÑ])\b(?!\s+[a-záéíóú])"),                                  # -A
           re.compile(rf"\s*\.?\s*-?\s*({SUFIJO})\b", re.I),                        # Bis, -Quáter, BIS
           re.compile(r"\s+([A-ZÑ])\b(?=\s*[.\-])"),                                   # «5 A.»
@@ -62,7 +73,9 @@ def encabezado(linea: str) -> str | None:
     return "-".join(p.lower().replace("á", "a") for p in partes)
 
 
-ENCABEZADO = re.compile(r"^\s{30,}(LEY|C[ÓO]DIGO|REGLAMENTO) [A-ZÁÉÍÓÚÑ ,]+\s*$|^\s*(C[ÁA]MARA DE DIPUTADOS DEL H\. CONGRESO DE LA UNI[ÓO]N|Secretar[íi]a General|Secretar[íi]a de Servicios Parlamentarios|\d+ de \d+)\s*$|[ÚU]ltima [Rr]eforma",)
+ENCABEZADO = re.compile(r"^\s{30,}(LEY|C[ÓO]DIGO|REGLAMENTO) [A-ZÁÉÍÓÚÑ0-9 ,]+\s*$"
+                        r"|^\s*C[ÁA]MARA DE DIPUTADOS DEL H\. CONGRESO DE LA UNI[ÓO]N\b.*$"   # a veces trae «Nuevo Reglamento DOF …» en la misma línea
+                        r"|^\s*(Secretar[íi]a General|Secretar[íi]a de Servicios Parlamentarios|\d+ de \d+)\s*$|[ÚU]ltima [Rr]eforma",)
 ESTRUCTURA = re.compile(r"^\s*(LIBRO|T[ÍI]TULO|CAP[ÍI]TULO|SECCI[ÓO]N)\s+([IVXLCDM]+|PRIMERO|SEGUNDO|TERCERO|CUARTO|QUINTO|SEXTO|S[ÉE]PTIMO|OCTAVO|NOVENO|D[ÉE]CIMO|[ÚU]NICO|\d+)(\s+(?:Bis|BIS|[A-Z]))?\s*$", re.I)
 TRANSITORIOS = re.compile(r"^\s*(ART[ÍI]CULOS\s+)?TRANSITORIOS\s*$")
 NIVEL = {"LIBRO": 0, "TITULO": 1, "TÍTULO": 1, "CAPITULO": 2, "CAPÍTULO": 2, "SECCION": 3, "SECCIÓN": 3}
@@ -151,9 +164,17 @@ def extrae(texto: str):
     return arts, orden, trans
 
 
-def ultima_reforma(texto: str) -> str | None:
+def ultima_reforma(texto: str):
+    """(fecha, origen). Primero la línea «Última reforma DOF» del encabezado; si no hay, la fecha más reciente de una reforma, adición o
+    derogación citada en el texto (no cuenta una fecha de acuerdo o de cuotas)."""
     m = re.search(r"[ÚU]ltima [Rr]eforma(?: publicada)?\s+DOF\s+(\d{2})-(\d{2})-(\d{4})", texto)
-    return f"{m.group(3)}-{m.group(2)}-{m.group(1)}" if m else None
+    if m:
+        return f"{m.group(3)}-{m.group(2)}-{m.group(1)}", "encabezado del PDF"
+    fechas = []
+    for linea in texto.splitlines():
+        if re.search(r"reformad|adicionad|derogad|Reforma DOF|Fe de erratas", linea, re.I) and not re.search(r"Acuerdo", linea):
+            fechas += [f"{y}-{mo}-{d}" for d, mo, y in re.findall(r"DOF\s+(\d{2})-(\d{2})-(\d{4})", linea)]
+    return (max(fechas), "fecha más reciente citada en el texto (el PDF no trae encabezado de última reforma)") if fechas else (None, "sin dato")
 
 
 def procesa(clave: str, pdf: Path, url: str, out_raiz: Path) -> dict:
@@ -163,13 +184,19 @@ def procesa(clave: str, pdf: Path, url: str, out_raiz: Path) -> dict:
         subprocess.run(["pdftotext", "-layout", str(pdf), str(txt)], check=True)
         texto = txt.read_text(encoding="utf-8", errors="replace")
     arts, orden, trans = extrae(texto)
-    if len(orden) < 20:
+    if len(orden) < 10:
         sys.exit(f"{clave}: solo encontré {len(orden)} artículos; el formato del PDF cambió, revisa el extractor")
+    # auditoría integrada: cada línea que parece encabezado («Artículo N…») debe haberse leído como artículo
+    lineas = limpia_pagina(texto.splitlines())
+    fin = next((i for i, l in enumerate(lineas) if TRANSITORIOS.match(l)), len(lineas))
+    sin_leer = [l.strip()[:60] for l in lineas[:fin] if INICIO.match(l) and not encabezado(l)]
+    if sin_leer:
+        sys.exit(f"{clave}: {len(sin_leer)} encabezados no se leyeron como artículo (ej.: {sin_leer[:3]}); revisa el extractor")
     dest = out_raiz / clave
     (dest / "articulos").mkdir(parents=True, exist_ok=True)
     for viejo in (dest / "articulos").glob("art-*.md"):
         viejo.unlink()
-    reforma = ultima_reforma(texto)
+    reforma, origen_reforma = ultima_reforma(texto)
     previo = {}
     if (dest / "manifiesto.json").exists():  # el cotejo con el DOF lo hace una persona: regenerar no lo borra
         previo = json.loads((dest / "manifiesto.json").read_text(encoding="utf-8")).get("cotejado_dof", {})
@@ -194,7 +221,7 @@ def procesa(clave: str, pdf: Path, url: str, out_raiz: Path) -> dict:
     (dest / "transitorios.md").write_text(f"# {clave} · Transitorios\n\n" + reflow(trans).rstrip() + "\n", encoding="utf-8", newline="\n")
     (dest / "indice.json").write_text(json.dumps(indice, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
     man = {"clave": clave, "nombre": nombre, "url": url, "fuente": "Cámara de Diputados (texto vigente); cotejar contra el DOF",
-           "ultima_reforma_segun_pdf": reforma, "descargado": dt.date.today().isoformat(),
+           "ultima_reforma_segun_pdf": reforma, "ultima_reforma_origen": origen_reforma, "descargado": dt.date.today().isoformat(),
            "sha256_pdf": sha(pdf.read_bytes()), "sha256_texto": sha("".join(indice[a]["sha256"] for a in orden).encode()),
            "cotejado_dof": cotejo, "articulos": len(orden), "derogados": sum(1 for a in indice.values() if a["derogado"])}
     (dest / "manifiesto.json").write_text(json.dumps(man, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")

@@ -1,0 +1,86 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "ff6efeb96bc618158e8e533f8305a18b5ec031e8114822513bb43351558cd05b",
+  "ubicacion": "",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "de523d04a9645bbbb1e09d7bf27f5213b72d83a9138089bee0101f83fef84130",
+  "ubicacion": "",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "43c558cf8285dab8bd8dc3f21f9f6d6b8bf21ef947a0fed036b28f4f747cf0e3",
+  "ubicacion": "",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "c5c5ee7ab7da606a60a191efca2c9879536def4190bc727c2f2e4f3ffa9bbffe",
+  "ubicacion": "",
+  "derogado": false
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "b1e62f09586efdf3db275b6cb94366685df14a1a4031515e4f182162c4b4d2a8",
+  "ubicacion": "",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "d3fbc69b6fb61ccedeb6a385557bff04368c770c011cc2e1120390e469b3c02d",
+  "ubicacion": "",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "5e1c057403701a5491c0ec52b298cf6b850b2e78df8424c384eade6ab54576d2",
+  "ubicacion": "",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "6f0378221815299ade31c54418df9f8835396568fe4a22a00c2eeac1a335decf",
+  "ubicacion": "",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "2ddff4d056b7bc3ee147ad9efe9a3c8f7332ab5c2dbc941cefb715ee06b25697",
+  "ubicacion": "",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "0c5308a5e2612fb33f17f8e011f11b9ed0e9079fb8f2f13b267a7ed4a367ae98",
+  "ubicacion": "",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "a8e7e181a9d722597b4792724e2b45a8c54199f490dafcc5c39a2be548e48465",
+  "ubicacion": "",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "2a9a991991b793a45fbade4402754fadbab5ee72727d367556c70da9aa2a876b",
+  "ubicacion": "",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "ebdd676420f1e59d5166eeec54ca71c12e0101ef83863dfa389c898e18126895",
+  "ubicacion": "",
+  "derogado": false
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "0ee4c17b7d2606c5a370b25aa994697c4d0702a2f51cbc45c0102dbb827949a5",
+  "ubicacion": "",
+  "derogado": false
+ }
+}

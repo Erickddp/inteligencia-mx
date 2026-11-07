@@ -4,7 +4,8 @@
  "url": "https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIVA_250914.pdf",
  "fuente": "Cámara de Diputados (texto vigente); cotejar contra el DOF",
  "ultima_reforma_segun_pdf": "2014-09-25",
- "descargado": "2026-11-06",
+ "ultima_reforma_origen": "encabezado del PDF",
+ "descargado": "2026-11-07",
  "sha256_pdf": "4f46c1f92fb5682281a7679836e517de95975786fa5326848a331c9eb946cc5f",
  "sha256_texto": "b2ce4ecb25426d230539b5df17e35033655496c6dde9c7054c9f6d7622cc5ae8",
  "cotejado_dof": {

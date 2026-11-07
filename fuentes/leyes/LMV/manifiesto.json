@@ -1,0 +1,17 @@
+{
+ "clave": "LMV",
+ "nombre": "Ley del Mercado de Valores",
+ "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LMV.pdf",
+ "fuente": "Cámara de Diputados (texto vigente); cotejar contra el DOF",
+ "ultima_reforma_segun_pdf": "2025-11-14",
+ "ultima_reforma_origen": "encabezado del PDF",
+ "descargado": "2026-11-07",
+ "sha256_pdf": "cc72fd6a12721826b6be40a77e3bb8bc297e5ce7b8794a24486a9aa2ee7c61d9",
+ "sha256_texto": "a742f4eb51ef60ec8dfa95f34d9e25bf7e04121bbbc9e00dcea5f8ac3a8c7bd8",
+ "cotejado_dof": {
+  "ley_completa": null,
+  "articulos": {}
+ },
+ "articulos": 463,
+ "derogados": 1
+}

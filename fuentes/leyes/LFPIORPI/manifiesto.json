@@ -4,7 +4,8 @@
  "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPIORPI.pdf",
  "fuente": "Cámara de Diputados (texto vigente); cotejar contra el DOF",
  "ultima_reforma_segun_pdf": "2025-07-16",
- "descargado": "2026-11-06",
+ "ultima_reforma_origen": "encabezado del PDF",
+ "descargado": "2026-11-07",
  "sha256_pdf": "2e35228bd3100a3a137f313359833c4836f2b4b6d4e52e1ce4fe58a970cd768f",
  "sha256_texto": "69b0bab6094fc525a17ef6e58d70dd49044a3c88bef8f2296b8d688034c70291",
  "cotejado_dof": {

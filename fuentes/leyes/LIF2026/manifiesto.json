@@ -1,0 +1,17 @@
+{
+ "clave": "LIF2026",
+ "nombre": "Ley de Ingresos de la Federación para el Ejercicio Fiscal de 2026",
+ "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIF_2026.pdf",
+ "fuente": "Cámara de Diputados (texto vigente); cotejar contra el DOF",
+ "ultima_reforma_segun_pdf": null,
+ "ultima_reforma_origen": "sin dato",
+ "descargado": "2026-11-07",
+ "sha256_pdf": "a305ca23bba43cddf2275067af29bb0ba35def7aedbbb0d3fc4557da9067a82c",
+ "sha256_texto": "00105f15f91163d36aff494fc4428dc55108a9ef19232dd85b196c86c32b86e7",
+ "cotejado_dof": {
+  "ley_completa": null,
+  "articulos": {}
+ },
+ "articulos": 34,
+ "derogados": 0
+}
