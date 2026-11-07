@@ -877,3 +877,41 @@ reglas:
       - {nombre: "Se acredita meses después del entero", fecha: "2026-07-31", entradas: {iva_retenido: "1066.67", mes_entero: "2026-05", mes_acreditamiento: "2026-07"}, esperado: "D iva_acreditable_pagado 1066.67; H iva_acreditable_pendiente 1066.67"}
       - {nombre: "Cruza de año: entero en diciembre, acreditamiento en enero", fecha: "2026-01-31", entradas: {iva_retenido: "500", mes_entero: "2025-12", mes_acreditamiento: "2026-01"}, esperado: "D iva_acreditable_pagado 500.00; H iva_acreditable_pendiente 500.00"}
       - {nombre: "Límite: en el mismo mes del entero todavía no se acredita", fecha: "2026-05-31", entradas: {iva_retenido: "1066.67", mes_entero: "2026-05", mes_acreditamiento: "2026-05"}, espera_error: SinValor}
+
+  # ───────────── J. Código agrupador del SAT ─────────────
+  - id: R-163
+    nombre: "Código agrupador de cuentas del SAT: catálogo completo (Anexo 24)"
+    estado: NUEVA
+    fase: 4
+    parametros: [CONTA_CODIGO_AGRUPADOR]
+    calculadora: codigo_agrupador
+    fuente: "RMF 2026 regla 2.8.1.5 (catálogo de cuentas con código agrupador, Anexo 24 apartado A inciso a)); catálogo del SAT de dic-2014, sin cotejar con el Anexo 24 vigente"
+    citas: [{ley: RMF, anio: "2026", articulo: "2.8.1.5"}, {ley: CFF, articulo: "28"}]
+    que_dice: "El catálogo de cuentas que se manda al SAT debe asociar cada cuenta con el código agrupador del SAT, a nivel de subcuenta de primer nivel."
+    correcto_si: "Cada cuenta del catálogo del contribuyente apunta a un código que existe en el catálogo del SAT, a nivel de subcuenta (nivel 2)."
+    hallazgo: "El catálogo cargado es el PDF del SAT de dic-2014 (1,075 renglones: 12 rubros, 139 cuentas y 924 subcuentas). No se pudo descargar el Anexo 24 de la RMF 2026 desde aquí, así que el dato queda por_confirmar y el motor lo marca arrastrado: hay que cotejar contra el anexo vigente antes de firmar. Reemplaza el CRITERIO de R-64 para el catálogo."
+    casos:
+      - {nombre: "Subcuenta: 101.01 Caja y efectivo", fecha: "2026-06-30", entradas: {codigo: "101.01"}, esperado: {codigo: "101.01", nombre: "Caja y efectivo", nivel: "2"}}
+      - {nombre: "Cuenta de primer nivel: 105 Clientes", fecha: "2026-06-30", entradas: {codigo: "105"}, esperado: {codigo: "105", nombre: "Clientes", nivel: "1"}}
+      - {nombre: "Límite: un rubro (100 Activo) no tiene nivel", fecha: "2026-06-30", entradas: {codigo: "100"}, esperado: {codigo: "100", nombre: "Activo", nivel: ""}}
+      - {nombre: "Último renglón del catálogo: 899.02", fecha: "2026-06-30", entradas: {codigo: "899.02"}, esperado: {codigo: "899.02", nombre: "Contra cuenta otras cuentas de orden", nivel: "2"}}
+      - {nombre: "Un código que no existe avisa y no inventa", fecha: "2026-06-30", entradas: {codigo: "999.99"}, espera_error: SinValor}
+  - id: R-164
+    nombre: "Conceptos de las pólizas tipo apuntados al código agrupador del SAT"
+    estado: CRITERIO
+    fase: 4
+    parametros: [CONTA_CONCEPTO_AGRUPADOR, CONTA_CODIGO_AGRUPADOR]
+    calculadora: agrupador_de_concepto
+    fuente: "RMF 2026 regla 2.8.1.5; criterio de las pólizas tipo R-150 a R-157 (sin firma)"
+    citas: [{ley: RMF, anio: "2026", articulo: "2.8.1.5"}, {ley: CFF, articulo: "28"}]
+    que_dice: "Cada concepto de las pólizas tipo (clientes, bancos, IVA trasladado cobrado...) tiene un código agrupador del SAT sugerido, para que el catálogo de cualquier app cuadre con el del SAT."
+    correcto_si: "El código sugerido existe en el catálogo del SAT y su nombre corresponde al concepto; cuando la cuenta cambia según el origen (ISR retenido por pagar) se elige por contexto."
+    hallazgo: "Cada código del mapa se verificó contra el catálogo. Hallazgos contra el catálogo de Timbra: 113.08 del SAT es «Otros impuestos a favor», no el IVA retenido por clientes (que es 113.01); 216.04 es solo ISR retenido por servicios profesionales (nómina es 216.01, arrendamiento 216.03); 213.01 es «IVA por pagar» (el ISR por pagar es 213.03); 701.01 es solo la pérdida cambiaria (intereses 701.04 a 701.09, comisiones bancarias 701.10); imss_por_pagar de R-155 mezcla 211.01 (IMSS patronal) con 216.11 (retenciones a trabajadores)."
+    casos:
+      - {nombre: "clientes → 105.01", fecha: "2026-06-30", entradas: {concepto: clientes}, esperado: {concepto: clientes, codigo: "105.01", nombre: "Clientes nacionales", nivel: "2"}}
+      - {nombre: "IVA retenido por clientes → 113.01 (no 113.08)", fecha: "2026-06-30", entradas: {concepto: iva_retenido_por_clientes}, esperado: {concepto: iva_retenido_por_clientes, codigo: "113.01", nombre: "IVA a favor", nivel: "2"}}
+      - {nombre: "ISR retenido por pagar sin contexto → honorarios 216.04", fecha: "2026-06-30", entradas: {concepto: isr_retenido_por_pagar}, esperado: {concepto: isr_retenido_por_pagar, codigo: "216.04", nombre: "Impuestos retenidos de ISR por servicios profesionales", nivel: "2"}}
+      - {nombre: "ISR retenido por pagar en nómina → 216.01", fecha: "2026-06-30", entradas: {concepto: isr_retenido_por_pagar, contexto: sueldos}, esperado: {concepto: isr_retenido_por_pagar, codigo: "216.01", nombre: "Impuestos retenidos de ISR por sueldos y salarios", nivel: "2"}}
+      - {nombre: "ISR retenido por pagar en arrendamiento → 216.03", fecha: "2026-06-30", entradas: {concepto: isr_retenido_por_pagar, contexto: arrendamiento}, esperado: {concepto: isr_retenido_por_pagar, codigo: "216.03", nombre: "Impuestos retenidos de ISR por arrendamiento", nivel: "2"}}
+      - {nombre: "Cuotas patronales → 601.26 Cuotas al IMSS", fecha: "2026-06-30", entradas: {concepto: cuotas_patronales}, esperado: {concepto: cuotas_patronales, codigo: "601.26", nombre: "Cuotas al IMSS", nivel: "2"}}
+      - {nombre: "Un concepto que no existe avisa y no inventa", fecha: "2026-06-30", entradas: {concepto: concepto_inventado}, espera_error: SinValor}

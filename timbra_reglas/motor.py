@@ -609,6 +609,23 @@ def calc_isr_anual_pm(b, f, ingresos_acumulables, deducciones_autorizadas, ptu_p
             "perdidas_por_amortizar": str(red(por_amortizar))}
 
 
+def calc_codigo_agrupador(b, f, codigo):
+    """Busca un código en el catálogo del código agrupador del SAT (Anexo 24). Si no existe, avisa."""
+    cat = {c: (n, nv) for c, n, nv in b.valor("CONTA_CODIGO_AGRUPADOR", f)}
+    if codigo not in cat:
+        raise SinValor(f"CONTA_CODIGO_AGRUPADOR: el código {codigo} no está en el catálogo")
+    return {"codigo": codigo, "nombre": cat[codigo][0], "nivel": cat[codigo][1]}
+
+
+def calc_agrupador_de_concepto(b, f, concepto, contexto=""):
+    """A qué código agrupador del SAT se apunta un concepto de las pólizas tipo (R-150 a R-157)."""
+    filas = {(c, ctx): cod for c, ctx, cod, _ in b.valor("CONTA_CONCEPTO_AGRUPADOR", f)}
+    cod = filas.get((concepto, contexto)) or filas.get((concepto, ""))
+    if not cod:
+        raise SinValor(f"CONTA_CONCEPTO_AGRUPADOR: no hay código agrupador para el concepto {concepto}")
+    return {"concepto": concepto, **calc_codigo_agrupador(b, f, cod)}
+
+
 # ---------- pólizas tipo: «evento → cargos y abonos por concepto» (criterio contable, no cifras de ley) ----------
 # Los conceptos son nombres estables (clientes, iva_trasladado_no_cobrado...), no números de cuenta: cada app
 # los apunta a su propio catálogo, idealmente al código agrupador del SAT. Toda póliza debe cuadrar.

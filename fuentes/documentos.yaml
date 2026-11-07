@@ -1,0 +1,13 @@
+# Índice de documentos oficiales: URL, fecha y huella SHA256 del PDF. El PDF NO se sube al repositorio.
+version: 1
+documentos:
+  - id: sat_codigo_agrupador_2014
+    titulo: "Código agrupador de cuentas del SAT"
+    emisor: SAT
+    url: http://m.sat.gob.mx/fichas_tematicas/buzon_tributario/Documents/codigo_agrupador.pdf
+    publicado: "2014-12-15"   # fecha de creación del PDF (metadatos); sin fecha de publicación oficial
+    paginas: 22
+    sha256: 0268cf9f38d2c87ff9a69d8f8e5061355bce24bd119d630379b0b5a23d9be593
+    usado_en: [CONTA_CODIGO_AGRUPADOR, CONTA_CONCEPTO_AGRUPADOR]
+    cotejado: false
+    nota: "Es la versión de dic-2014. El vigente es el Anexo 24 de la RMF 2026, apartado A, inciso a) (RMF 2.8.1.5); falta descargarlo y cotejarlo."
