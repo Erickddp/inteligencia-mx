@@ -70,17 +70,52 @@ def test_dia_sin_edicion_no_es_error():
     assert "alerta" in vigia.vigila(dt.date(2026, 10, 14), "<html></html>")  # día hábil: avisa
 
 
+VESPERTINA = (
+    '<table><tr><td colspan="3" class="txt"><span>Fecha: 05/11/2026 - Edici&oacute;n Vespertina</span></td></tr>'
+    '<tr><td bgcolor="#B2B2B2" class="txt_blanco2">&nbsp;PODER EJECUTIVO</td></tr>'
+    '<tr><td colspan="3" class="subtitle_azul">&nbsp;SECRETARIA DE HACIENDA Y CREDITO PUBLICO</td></tr>'
+    '<tr><td><a href="/nota_detalle.php?codigo=9999999&amp;fecha=05/11/2026" class="enlaces">'
+    "Decreto por el que se modifica el diverso que otorga el subsidio para el empleo.</a></td></tr></table>"
+)
+MALO = "<html><body>Fecha: 05/11/2026 - Edición Matutina <p>cortado</p></body></html>"
+
+
+def paginas(monkeypatch, por_edicion):
+    llamadas = []
+
+    def falsa(dia, intentos=3, edicion="MAT"):
+        llamadas.append(edicion)
+        v = por_edicion[edicion]
+        return next(v) if hasattr(v, "__next__") else v
+
+    monkeypatch.setattr(vigia, "descarga", falsa)
+    return llamadas
+
+
+def test_lee_todas_las_ediciones_del_dia_y_no_repite_notas(monkeypatch):
+    """El DOF muestra por defecto solo la última edición: el 22-dic-2025 la página traía 1 nota y la matutina 30."""
+    llamadas = paginas(monkeypatch, {"MAT": HTML, "VES": VESPERTINA, "EXT": "<html></html>"})
+    r = vigia.lee_dia(dt.date(2026, 11, 5), None, espera=0)
+    assert llamadas == ["MAT", "VES", "EXT"] and r["ediciones"] == ["MAT", "VES"]
+    assert r["notas_leidas"] == 12
+    subsidio = [n for n in r["posibles_cambios"] if "subsidio" in n["titulo"].lower()]
+    assert len(subsidio) == 1 and subsidio[0]["edicion"] == "VES"  # solo estaba en la vespertina
+
+
+def test_si_el_servidor_repite_la_misma_pagina_para_otra_edicion_no_duplica(monkeypatch):
+    paginas(monkeypatch, {"MAT": HTML, "VES": HTML, "EXT": HTML})  # la etiqueta dice Matutina en las tres
+    r = vigia.lee_dia(dt.date(2026, 11, 5), None, espera=0)
+    assert r["ediciones"] == ["MAT"] and r["notas_leidas"] == 11
+
+
 def test_una_respuesta_incompleta_se_reintenta_una_vez(monkeypatch):
-    malo = "<html><body>Fecha: 05/11/2026 - Edición Matutina <p>cortado</p></body></html>"
-    paginas = iter([malo, HTML])
-    monkeypatch.setattr(vigia, "descarga", lambda dia, intentos=3: next(paginas))
+    paginas(monkeypatch, {"MAT": iter([MALO, HTML]), "VES": "<html></html>", "EXT": "<html></html>"})
     r = vigia.lee_dia(dt.date(2026, 11, 5), None, espera=0)
     assert r["notas_leidas"] == 11  # el segundo intento sí leyó la página
 
 
 def test_si_el_reintento_tambien_falla_la_alarma_es_real(monkeypatch):
-    malo = "<html><body>Fecha: 05/11/2026 - Edición Matutina <p>cortado</p></body></html>"
-    monkeypatch.setattr(vigia, "descarga", lambda dia, intentos=3: malo)
+    paginas(monkeypatch, {"MAT": MALO, "VES": "<html></html>", "EXT": "<html></html>"})
     with pytest.raises(SystemExit):
         vigia.lee_dia(dt.date(2026, 11, 5), None, espera=0)
 

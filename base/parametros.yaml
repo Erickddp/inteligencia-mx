@@ -147,15 +147,13 @@ parametros:
       - valor: "15.59"
         desde: "2026-01-01"
         hasta: "2026-01-31"
-        estado: por_confirmar
-        fuente: "Decreto que modifica el subsidio para el empleo, DOF 31-dic-2025 (transitorio enero, se aplica sobre UMA 2025). NO LOCALIZADO en el DOF: ver nota"
+        fuente: "Decreto que modifica el subsidio para el empleo, DOF 31-dic-2025 (transitorio enero, se aplica sobre UMA 2025)"
       - valor: "15.02"
         desde: "2026-02-01"
         hasta: null
         confirmado_hasta: "2026-12-31"
-        estado: por_confirmar
-        fuente: "Decreto que modifica el subsidio para el empleo, DOF 31-dic-2025. NO LOCALIZADO en el DOF: ver nota"
-    nota: "ALERTA 7-nov-2026: en el DOF del 30 y 31-dic-2025 (47 notas revisadas una por una) NO hay ningún decreto del subsidio para el empleo, y ningún otro entre 2024 y hoy salvo dos: el del 1-may-2024 (11.82 %) y el del 31-dic-2024 (nota 5746529, vigente desde 1-ene-2025: 13.8 % de la UMA mensual, 14.39 % solo en enero de 2025, límite fijo $10,171.00, sin ajuste automático en su texto). Si no existe un decreto posterior, 2026 sería 13.8 % de la UMA mensual (feb-dic: 3,566.22 × 13.8 % = 492.14) con límite $10,171.00, no 15.02 % ni $11,492.66. Los valores de abajo quedan por confirmar hasta que Rick los respalde con la nota del DOF. Nota previa: El considerando del decreto menciona $536.22, pero el artículo segundo (lo que obliga) manda multiplicar la UMA mensual por el %. Enero: 3,439.46 × 15.59% = 536.21; feb-dic: 3,566.22 × 15.02% = 535.65. La semilla del repo (536.22) toma el considerando."
+        fuente: "Decreto que modifica el subsidio para el empleo, DOF 31-dic-2025"
+    nota: "Verificado el 7-nov-2026 contra el texto del decreto en el DOF (31-dic-2025, edición matutina, nota 5777649): 15.02 % de la UMA mensual, 15.59 % en enero de 2026 sobre la UMA de 2025, y límite de ingresos de $11,492.66; los valores de la base coinciden tal cual. Decreto anterior (31-dic-2024, nota 5746529): 13.8 % (14.39 % en enero de 2025) y límite $10,171.00. El considerando del decreto menciona $536.22, pero el artículo segundo (lo que obliga) manda multiplicar la UMA mensual por el %. Enero: 3,439.46 × 15.59% = 536.21; feb-dic: 3,566.22 × 15.02% = 535.65. La semilla del repo (536.22) toma el considerando."
     revisar_antes: "2026-12-20"
     firma: {validado: false, por: null, fecha: null}
 
@@ -174,9 +172,8 @@ parametros:
         desde: "2026-01-01"
         hasta: null
         confirmado_hasta: "2026-12-31"
-        estado: por_confirmar
-        fuente: "Decreto DOF 31-dic-2025. NO LOCALIZADO en el DOF: el decreto vigente (DOF 31-dic-2024) fija $10,171.00"
-    nota: "11,492.66 se parece a 10,171.00 × (315.04 / 278.80) = 11,493.08 (no es idéntico): parece un ajuste por el aumento del salario mínimo que el decreto de 2024 no ordena. Ver la alerta en SUBSIDIO_EMPLEO_PCT_UMA."
+        fuente: "Decreto DOF 31-dic-2025 (nota 5777649), artículo segundo reformado: límite mensual de $11,492.66"
+    nota: "Verificado el 7-nov-2026 contra el texto del decreto en el DOF: el límite es $11,492.66 tal cual. El decreto anterior (31-dic-2024) fijaba $10,171.00."
     revisar_antes: "2026-12-20"
     firma: {validado: false, por: null, fecha: null}
 

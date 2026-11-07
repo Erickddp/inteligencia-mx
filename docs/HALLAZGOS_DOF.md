@@ -1,10 +1,13 @@
 # Hallazgos del barrido del DOF · 7-nov-2026
 
+> **ERRATA (7-nov-2026, noche).** La primera versión de este documento se escribió con un lector del DOF que leía **una sola edición por día**: la página del DOF muestra por defecto solo la última (el 22-dic-2025 traía 1 nota; la matutina tenía 30). Por eso concluí, mal, que no había decreto del subsidio para el empleo 2026. **Sí existe** (DOF 31-dic-2025, nota 5777649) y trae exactamente los valores de la base. Todas las conclusiones del tipo «no encontré decreto» de este documento quedan **en revisión** hasta repetir el barrido con las dos ediciones (en curso). El lector ya está corregido (`lee_dia`).
+
+
 Se leyó el índice del DOF de todos los días del 13-nov-2021 al 5-nov-2026 (unos 1,800) con `scripts/vigia_dof.py`. Un día falló el primer intento (6-may-2025: respuesta incompleta del servidor) y se repasó a mano: 21 notas, ninguna relevante.
 
 **Qué es y qué no es.** Busca por **título y organismo**. Si un decreto trae un título que no dice la ley ni el tema, se le puede escapar (le pasó con las resoluciones de CONASAMI; ya se corrigió). Sirve para decir «no encontré decreto» con cautela, no para afirmar que no existe. Cada hallazgo debe confirmarse con la nota del DOF.
 
-## 1. Cotejo de la biblioteca de leyes contra el DOF
+## 1. Cotejo de la biblioteca de leyes contra el DOF  *(EN REVISIÓN: repetir con las dos ediciones)*
 
 La Cámara de Diputados marca una «última reforma» por ley. Esto es lo que el DOF muestra **después** de esa fecha:
 
@@ -32,17 +35,13 @@ Esto **no** cotea artículo por artículo: dice que no se encontró un decreto p
 
 ## 3. Hallazgos que cambian la base
 
-### 3.1 Subsidio para el empleo 2026: la fuente que cita la base no aparece en el DOF
-- La base cita un «Decreto que modifica el subsidio para el empleo, DOF 31-dic-2025» con 15.59 % (enero), 15.02 % (feb-dic) y límite $11,492.66.
-- En el DOF del 30 y 31-dic-2025 (47 notas leídas una por una) **no hay decreto de subsidio**. En todo el periodo solo hay dos: el del 1-may-2024 (11.82 %) y el del **31-dic-2024** (nota 5746529).
-- El decreto del 31-dic-2024, vigente desde el 1-ene-2025, dice: **13.8 % de la UMA mensual** (14.39 % solo en enero de 2025) y límite **$10,171.00**. Su texto no ordena ajuste automático del límite.
-- Si no existe un decreto posterior, 2026 sería 13.8 % × UMA mensual (feb-dic: 3,566.22 × 13.8 % = **492.14**, no 535.65) y límite $10,171.00 (no $11,492.66).
-- El número $11,492.66 se parece a 10,171 × 315.04 / 278.80 = 11,493.08 (no es idéntico); parece un ajuste por el salario mínimo que el decreto no ordena.
-- **Qué se hizo:** los tres tramos de 2026 quedaron en `por_confirmar` con la alerta en `nota` (los valores no se tocaron; los casos siguen pasando). No se cambian valores sin tu decisión y firma.
-- **Impacto:** la nómina de Timbra calcula el subsidio con estos valores. Si el decreto de 2025 es el vigente, el subsidio está sobrestimado y el ISR retenido subestimado.
-- **Falta:** confirmar con el DOF o con el SAT si hubo un decreto posterior que mi búsqueda no halló. Tampoco hay tramos de 2025 en la base (13.8 % / 14.39 % enero / $10,171.00).
+### 3.1 Subsidio para el empleo 2026: la base estaba bien
+- **Retractación.** La versión anterior de este documento decía que el decreto del 31-dic-2025 no aparecía en el DOF. Era un error del lector (una edición por día). El decreto existe: DOF 31-dic-2025, edición matutina, nota 5777649.
+- Verificado contra su texto: **15.02 % de la UMA mensual**, **15.59 % en enero de 2026** (sobre la UMA de 2025), límite de ingresos **$11,492.66**, y los $536.22 del considerando. La base coincide tal cual; no se cambió ningún valor y se quitó la marca `por_confirmar` que le había puesto.
+- Decretos anteriores, por referencia: 1-may-2024 (11.82 %); 31-dic-2024 (13.8 %, 14.39 % en enero de 2025, límite $10,171.00).
+- Sigue pendiente (no es de este decreto): la base no tiene tramos de 2025 para el subsidio.
 
-### 3.2 Salario mínimo 2025 y 2026: la fecha de DOF no se localizó
+### 3.2 Salario mínimo 2025 y 2026: la fecha de DOF no se localizó  *(EN REVISIÓN: pudo estar en la otra edición)*
 - La base cita «CONASAMI, DOF dic-2024» (278.80) y 2026 (315.04). La nota de CONASAMI del 9-feb-2026 confirma que existe una resolución del 3-dic-2025, pero **no encontré su publicación** en el DOF de diciembre de 2024, ni de diciembre de 2025 a enero de 2026, ni por título ni por organismo.
 - Las cifras (278.80 y 315.04, +13 %) son coherentes con lo conocido, así que **no se tocaron**; falta la nota del DOF que las respalde. Debe buscarse a mano.
 
@@ -52,7 +51,7 @@ Esto **no** cotea artículo por artículo: dice que no se encontró un decreto p
 - CFF (cancelación, plazo): DOF 7-nov-2025. LFT vacaciones: DOF 27-dic-2022. LFT jornada: DOF 1-may-2026 y reforma constitucional 3-mar-2026.
 - Estímulos de frontera: DOF 31-dic-2025 (decreto que modifica los de la región fronteriza norte).
 
-## 4. INPC
+## 4. INPC  *(EN REVISIÓN: los 11 meses faltantes pudieron estar en la otra edición)*
 
 - `series/inpc.yaml`: oct-2021 a sep-2026 (60 meses). **49 meses salen de notas del DOF y coinciden con Banxico (SP1) sin una sola diferencia**; el DOF no se contradice entre notas.
 - **11 meses no se localizaron en el DOF** (2022-07, 2023-04, 2023-07, 2023-12, 2024-01, 2024-10, 2024-11, 2025-01, 2025-06, 2025-09, 2026-05). Entran con el valor de Banxico marcados `cotejado_dof: false`: no se usan para recargos ni se firman hasta cotejarlos.

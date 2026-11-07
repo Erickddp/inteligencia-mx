@@ -17,7 +17,8 @@ IMPORTANTE (qué es y qué NO es):
 """
 import argparse, datetime as dt, html, json, re, sys, time, urllib.request
 
-URL = "https://dof.gob.mx/index_111.php?year={y}&month={m:02d}&day={d:02d}"
+URL = "https://dof.gob.mx/index_111.php?year={y}&month={m:02d}&day={d:02d}&edicion={ed}"
+EDICIONES = ("MAT", "VES", "EXT")  # el DOF muestra por defecto SOLO la última edición del día: hay que pedir cada una
 NOTA = "https://dof.gob.mx/nota_detalle.php?codigo={codigo}&fecha={fecha}"
 
 PODER = re.compile(r'class="txt_blanco2">\s*(?:&nbsp;)*\s*([^<]+?)\s*</td>', re.S)
@@ -116,8 +117,8 @@ def clasifica(n: dict) -> dict | None:
     return {"tipo": "posible_cambio", "nivel": nivel, "temas": temas, **{k: sorted(set(v)) for k, v in toca.items()}}
 
 
-def descarga(dia: dt.date, intentos: int = 3) -> str:
-    url = URL.format(y=dia.year, m=dia.month, d=dia.day)
+def descarga(dia: dt.date, intentos: int = 3, edicion: str = "MAT") -> str:
+    url = URL.format(y=dia.year, m=dia.month, d=dia.day, ed=edicion)
     req = urllib.request.Request(url, headers={"User-Agent": "timbra-reglas-vigia/0.1 (lectura del indice diario del DOF)"})
     for i in range(intentos):
         try:
@@ -125,7 +126,7 @@ def descarga(dia: dt.date, intentos: int = 3) -> str:
                 return r.read().decode("utf-8", errors="replace")
         except Exception as e:
             if i == intentos - 1:
-                raise SystemExit(f"No pude leer el DOF del {dia}: {e}")
+                raise SystemExit(f"No pude leer el DOF del {dia} ({edicion}): {e}")
             time.sleep(2 ** (i + 1))
 
 
@@ -155,18 +156,57 @@ def vigila(dia: dt.date, doc: str, todas: bool = False, bajas: bool = False) -> 
     return out
 
 
+def edicion_de(doc: str) -> str | None:
+    m = EDICION.search(doc)
+    return m.group(2).upper()[:3] if m else None
+
+
 def lee_dia(dia: dt.date, html_local: str | None, todas: bool = False, bajas: bool = False, espera: float = 3.0) -> dict:
-    """Lee y clasifica un día. Una respuesta incompleta del servidor se ve igual que un cambio de formato (edición sin notas): se
-    reintenta una vez con la página bajada de nuevo antes de dar la alarma. Con --html no hay reintento (el archivo es el mismo)."""
+    """Lee TODAS las ediciones del día (matutina, vespertina, extraordinaria) y las junta sin repetir notas.
+    Pedir la página sin edición devuelve solo la última: el 22-dic-2025 mostraba 1 nota y la matutina tenía 30.
+    Una respuesta incompleta se ve igual que un cambio de formato (edición sin notas): se reintenta una vez antes de dar la alarma.
+    Con --html no hay red: el archivo es la edición completa."""
     if html_local:
         return vigila(dia, open(html_local, encoding="utf-8", errors="replace").read(), todas, bajas)
-    try:
-        return vigila(dia, descarga(dia), todas, bajas)
-    except SystemExit as e:
-        if "cero notas" not in str(e):
-            raise
-        time.sleep(espera)
-        return vigila(dia, descarga(dia), todas, bajas)  # si vuelve a fallar, la alarma es real
+    docs = []
+    for ed in EDICIONES:
+        try:
+            doc = descarga(dia, edicion=ed)
+            try:
+                r = vigila(dia, doc, todas, bajas)
+            except SystemExit as e:
+                if "cero notas" not in str(e):
+                    raise
+                time.sleep(espera)
+                doc = descarga(dia, edicion=ed)
+                r = vigila(dia, doc, todas, bajas)  # si vuelve a fallar, la alarma es real
+        except SystemExit:
+            if ed == "MAT":
+                raise
+            continue
+        # la página de otra edición que no existe puede devolver la de otro día/edición: solo cuenta si su etiqueta coincide
+        if r.get("sin_edicion") or (edicion_de(doc) and edicion_de(doc) != ed):
+            continue
+        docs.append((ed, r))
+    if not docs:
+        return vigila(dia, descarga(dia, edicion="MAT"), todas, bajas)
+    return junta(dia, docs)
+
+
+def junta(dia: dt.date, docs: list) -> dict:
+    out = {"fecha": dia.isoformat(), "ediciones": [ed for ed, _ in docs], "notas_leidas": 0, "posibles_cambios": [], "datos_periodicos": [], "otras": 0}
+    vistos = set()
+    for ed, r in docs:
+        out["notas_leidas"] += r["notas_leidas"]
+        out["otras"] += r["otras"]
+        for lista in ("posibles_cambios", "datos_periodicos"):
+            for n in r[lista]:
+                if n["codigo"] not in vistos:
+                    vistos.add(n["codigo"])
+                    out[lista].append(dict(n, edicion=ed))
+        if "descartadas" in r:
+            out.setdefault("descartadas", []).extend(r["descartadas"])
+    return out
 
 
 def main():
