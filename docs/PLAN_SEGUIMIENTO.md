@@ -99,3 +99,12 @@ Hallazgo por verificar: la sesión de factureedp reporta, con datos de Banxico d
 - Falta: Ley del IEPS, Reglamento de la LFPIORPI, RMF 2026 con anexos y modificaciones; cotejo humano artículo por artículo.
 
 - RMF 2026 en la biblioteca (`fuentes/rmf/`, 1,208 reglas, texto del DOF, sin revisión humana). Faltan sus tres modificaciones y los anexos. Una cita de la base estaba equivocada (2.8.1.7 → 2.8.1.6 fracc. II) y se corrigió.
+
+## Actualización 7-nov-2026 (cierre del barrido corregido)
+
+- Barrido del DOF repetido leyendo **todas las ediciones**: 1,819 días, 30,010 notas. Resultados en [HALLAZGOS_DOF.md](HALLAZGOS_DOF.md), que **retira** las dos alertas del primer intento (subsidio 2026 y salario mínimo): ambos existen en el DOF y la base estaba bien.
+- INPC: los 60 meses (oct-2021 a sep-2026) salen del DOF y coinciden con Banxico sin diferencias.
+- **Ley Aduanera desactualizada** en la biblioteca: el DOF la reformó el 23-oct-2026 y el PDF de la Cámara no lo trae (advertencia en su manifiesto).
+- La RMF 2026 tiene **cuatro** modificaciones publicadas (9-jul, 1-oct, 2-oct y 30-oct), no tres; ninguna está en la biblioteca.
+- El Vigía detecta decretos «ómnibus» y lee su texto: el del 1-abr-2024 reformó el art. 79 de la LISR con un título que no la nombra.
+- Pendiente de Rick: abrir hosts de Chihuahua (ISN y Código Fiscal del Estado), y decidir PR único o por tema.

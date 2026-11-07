@@ -6,7 +6,7 @@
   python scripts/extraer_ley.py --todas                  # las leyes del catálogo
 
 Sale en fuentes/leyes/<CLAVE>/:
-  manifiesto.json    url, última reforma (la que dice el PDF), fecha de descarga, SHA256 del PDF y del texto, y `cotejado_dof`
+  manifiesto.json    url, última reforma (la que dice el PDF), fecha de descarga, SHA256 del PDF y del texto, `advertencias` y `cotejado_dof`
                      (quién cotejó contra el DOF y cuándo; lo llena una persona y regenerar no lo borra)
   indice.json        artículo -> SHA256 de su texto y ubicación (título, capítulo, sección)
   articulos/art-0106.md, art-0004-a.md, ...
@@ -201,6 +201,9 @@ def procesa(clave: str, pdf: Path, url: str, out_raiz: Path) -> dict:
     if (dest / "manifiesto.json").exists():  # el cotejo con el DOF lo hace una persona: regenerar no lo borra
         previo = json.loads((dest / "manifiesto.json").read_text(encoding="utf-8")).get("cotejado_dof", {})
     cotejo = {"ley_completa": previo.get("ley_completa"), "articulos": previo.get("articulos", {})}
+    advertencias = []
+    if (dest / "manifiesto.json").exists():  # advertencias puestas por una persona (p. ej. «el DOF publicó una reforma que este texto no trae»)
+        advertencias = json.loads((dest / "manifiesto.json").read_text(encoding="utf-8")).get("advertencias", [])
     indice = {}
     for aid in orden:
         a = arts[aid]
@@ -223,7 +226,7 @@ def procesa(clave: str, pdf: Path, url: str, out_raiz: Path) -> dict:
     man = {"clave": clave, "nombre": nombre, "url": url, "fuente": "Cámara de Diputados (texto vigente); cotejar contra el DOF",
            "ultima_reforma_segun_pdf": reforma, "ultima_reforma_origen": origen_reforma, "descargado": dt.date.today().isoformat(),
            "sha256_pdf": sha(pdf.read_bytes()), "sha256_texto": sha("".join(indice[a]["sha256"] for a in orden).encode()),
-           "cotejado_dof": cotejo, "articulos": len(orden), "derogados": sum(1 for a in indice.values() if a["derogado"])}
+           "cotejado_dof": cotejo, "advertencias": advertencias, "articulos": len(orden), "derogados": sum(1 for a in indice.values() if a["derogado"])}
     (dest / "manifiesto.json").write_text(json.dumps(man, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
     return man
 

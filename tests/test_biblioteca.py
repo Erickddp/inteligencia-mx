@@ -82,3 +82,9 @@ def test_evidencia_conserva_sus_huellas():
         for linea in (d / "SHA256SUMS").read_text(encoding="utf-8").splitlines():
             h, nombre = linea.split(None, 1)
             assert hashlib.sha256((d / nombre.strip().lstrip("*")).read_bytes()).hexdigest() == h, f"{d.name}/{nombre}"
+
+
+def test_la_ley_aduanera_lleva_su_advertencia_de_texto_desactualizado():
+    """El DOF reformó la Ley Aduanera el 23-oct-2026; el PDF de la Cámara no lo trae. Regenerar el texto no debe borrar la advertencia."""
+    man = json.loads((LEYES / "LA" / "manifiesto.json").read_text(encoding="utf-8"))
+    assert any("5802077" in a["fuente"] and "desactualizado" in a["texto"] for a in man["advertencias"])

@@ -1,67 +1,73 @@
 # Hallazgos del barrido del DOF · 7-nov-2026
 
-> **ERRATA (7-nov-2026, noche).** La primera versión de este documento se escribió con un lector del DOF que leía **una sola edición por día**: la página del DOF muestra por defecto solo la última (el 22-dic-2025 traía 1 nota; la matutina tenía 30). Por eso concluí, mal, que no había decreto del subsidio para el empleo 2026. **Sí existe** (DOF 31-dic-2025, nota 5777649) y trae exactamente los valores de la base. Todas las conclusiones del tipo «no encontré decreto» de este documento quedan **en revisión** hasta repetir el barrido con las dos ediciones (en curso). El lector ya está corregido (`lee_dia`).
+Se leyó el DOF de **todos los días del 13-nov-2021 al 5-nov-2026** (1,819 días, 30,010 notas, ediciones matutina y vespertina) con `scripts/vigia_dof.py`. Sin días faltantes y sin fallos; los 7 días hábiles con pocas notas son feriados.
 
+## Cómo leerlo (y qué NO prueba)
 
-Se leyó el índice del DOF de todos los días del 13-nov-2021 al 5-nov-2026 (unos 1,800) con `scripts/vigia_dof.py`. Un día falló el primer intento (6-may-2025: respuesta incompleta del servidor) y se repasó a mano: 21 notas, ninguna relevante.
+- **Es una búsqueda por título y por el texto de los decretos genéricos.** No es una lectura de todo el DOF. Un decreto cuyo título no nombra la ley ni el tema, y que no es de los que el Vigía lee entero, se le puede escapar.
+- **Un «no encontré decreto» es evidencia, no prueba.** Cada hallazgo debe confirmarse con la nota del DOF.
+- El DOF no publica leyes consolidadas, solo decretos. Cotejar una ley es comprobar que no haya decretos posteriores a su fecha de reforma.
 
-**Qué es y qué no es.** Busca por **título y organismo**. Si un decreto trae un título que no dice la ley ni el tema, se le puede escapar (le pasó con las resoluciones de CONASAMI; ya se corrigió). Sirve para decir «no encontré decreto» con cautela, no para afirmar que no existe. Cada hallazgo debe confirmarse con la nota del DOF.
+> **Errata (primer intento, retirada).** La primera versión de este documento se escribió con un lector que leía **una sola edición por día**: la página del DOF muestra por defecto solo la última (el 22-dic-2025 traía 1 nota; la matutina tenía 30). Con eso concluí, mal, que no existía el decreto del subsidio para el empleo 2026 y que no se localizaba la resolución del salario mínimo. **Ambos existen y la base estaba bien.** El lector se corrigió (`lee_dia`), se repitió el barrido y todo lo de abajo sale de la versión corregida. Ese primer intento leyó unas 9,000 notas; el definitivo, 30,010.
+>
+> Una segunda lección: el decreto del 1-abr-2024 que reformó el art. 79 de la LISR se titula «…en materia de pueblos y comunidades indígenas…» y no nombra la ley. Por eso el Vigía ahora lee el texto de los decretos genéricos.
 
-## 1. Cotejo de la biblioteca de leyes contra el DOF  *(EN REVISIÓN: repetir con las dos ediciones)*
+## 1. Cotejo de la biblioteca de leyes contra el DOF
 
-La Cámara de Diputados marca una «última reforma» por ley. Esto es lo que el DOF muestra **después** de esa fecha:
+Para cada ley: la última reforma que declara la Cámara, y los decretos del DOF que la reforman (por título, o por el texto de los decretos genéricos), y si hay alguno **posterior**.
 
-| Ley | Última reforma según la Cámara | Decretos que la reforman, publicados después | Conclusión |
+| Ley | Última reforma según la Cámara | Último decreto que la reforma en el DOF | ¿Posteriores? |
 |---|---|---|---|
-| LISR | 01-abr-2024 | Ninguno encontrado (2-abr-2024 a 5-nov-2026) | El texto parece vigente. Los cambios del paquete 2026 que la base marca «aprobado, sin DOF» siguen sin publicarse |
-| LIVA | 12-nov-2021 | Ninguno encontrado (13-nov-2021 a 5-nov-2026) | Igual |
-| CFF | 09-abr-2026 | Ninguno después. Antes de esa fecha: 16-oct-2025 (con Ley de Amparo), 7-nov-2025 y 9-abr-2026 | Al día |
-| LSS | 15-ene-2026 | Ninguno después | Al día |
-| LFT | 14-may-2026 | Ninguno después (1-may-2026: jornada de 40 horas; 14-may-2026) | Al día |
-| Ley del Infonavit | 21-feb-2025 | Ninguno encontrado | El texto parece vigente |
-| LFPIORPI | 16-jul-2025 | Ninguno después | Al día |
-| RLISR / RLIVA | 06-may-2016 / 25-sep-2014 | No se barrió antes de nov-2021 | Sin cotejar |
+| LISR | 01-abr-2024 | 01-abr-2024 (decreto «pueblos indígenas», art. 79) | No encontrados |
+| LIVA | 12-nov-2021 | Ninguno en 2021-11 a 2026-11 | No encontrados |
+| CFF | 09-abr-2026 | 09-abr-2026 | No encontrados |
+| LSS | 15-ene-2026 | 15-ene-2026 | No encontrados |
+| LFT | 14-may-2026 | 14-may-2026 | No encontrados |
+| Ley del Infonavit | 21-feb-2025 | 21-feb-2025 | No encontrados |
+| LFPIORPI | 16-jul-2025 | 16-jul-2025 | No encontrados |
+| LIEPS | 07-nov-2025 | 07-nov-2025 | No encontrados |
+| LMV | 14-nov-2025 | 14-nov-2025 | No encontrados |
+| LFD | 07-nov-2025 | 07-nov-2025 | No encontrados |
+| **Ley Aduanera** | 19-nov-2025 (PDF) | **23-oct-2026** (nota 5802077) | **Sí: el texto de la biblioteca está desactualizado** |
 
-Esto **no** cotea artículo por artículo: dice que no se encontró un decreto posterior a la fecha de la Cámara. Hasta que una persona lo confirme en el DOF, `cotejado_dof` sigue en «NO».
+- **Ley Aduanera.** El DOF publicó el 23-oct-2026 un decreto que reforma y adiciona la ley. El PDF de la Cámara se modificó por última vez en enero de 2026 y no lo incluye. El manifiesto de `LA` lleva una advertencia. Esa ley no debe usarse para firmar nada hasta regenerar el texto.
+- **Discrepancia índice contra PDF (por revisar).** El índice de la Cámara marca reformas más recientes que el encabezado de los PDF para Ley Aduanera (27-dic-2025), LFD (28-dic-2025), Ley de Ingresos sobre Hidrocarburos (28-dic-2025) y Ley del ISAN (28-dic-2025). En el DOF no encontré decretos de esas leyes en esas fechas, así que no sé si el índice o el PDF van mal.
+- Los decretos de **reglamentos** (del Reglamento de la Ley de Ingresos sobre Hidrocarburos, 3-oct-2025; del Reglamento de la LFPIORPI, 27-mar-2026; del Reglamento de la Ley Aduanera, 23-feb-2026) los marqué aparte: no reforman la ley.
+- Reglamentos del ISR, del IVA, del CFF y de la LIEPS: la Cámara no trae fecha de reforma confiable en los PDF; no se cotejaron.
 
-**Faltan en la biblioteca** (el DOF muestra cambios recientes): Ley del IEPS (reforma 7-nov-2025), Reglamento de la LFPIORPI (reforma 27-mar-2026), y la RMF 2026 con sus modificaciones y anexos.
+Esto **no** es un cotejo artículo por artículo: `cotejado_dof` sigue vacío en todas hasta que una persona lo haga.
 
-## 2. Lista de trabajo de la RMF (de lo que publicó el DOF)
+## 2. Lista de trabajo de la RMF (lo que publicó el DOF)
 
-- RMF 2026: 28-dic-2025, con los anexos 1, 4, 5, 6, 8, 15 y 25 el mismo día; anexo 2 el 29-dic; anexos 3, 7, 10, 11, 12, 13, 14, 16 y 29 el 9-ene-2026; anexo 18 el 19-ene; anexo 19 el 26-ene.
-- Resolución de facilidades administrativas 2026: 17-feb-2026.
-- Modificaciones a la RMF 2026: primera 9-jul-2026; segunda 1-oct-2026 (con anexo 2); tercera 2-oct-2026 (con anexo 7).
-- RMF 2025 (por si hay actos que cotejar): publicada 30-dic-2024, seis modificaciones.
+- **RMF 2026:** 28-dic-2025, con anexos 1, 4, 5, 6, 8, 15 y 25 el mismo día; anexo 2 el 29-dic; anexos 3, 7, 10, 11, 12, 13, 14, 16 y 29 el 9-ene-2026; anexos 17, 21, 22, 23, 24, 27, 28 y 30 el 13-ene; anexo 18 el 19-ene; anexo 19 el 26-ene.
+- **Resolución de facilidades administrativas 2026:** 17-feb-2026.
+- **Modificaciones a la RMF 2026 (cuatro, no tres):** primera 9-jul-2026 (anexos 1, 2, 3, 9, 14, 15, 21, 22 y 29 el 17-jul); segunda 1-oct-2026 (con anexo 2); tercera 2-oct-2026 (con anexo 7); **cuarta 30-oct-2026**. La RMF de la biblioteca es la original: faltan estas cuatro.
 
-## 3. Hallazgos que cambian la base
+## 3. Valores de la base verificados contra el DOF
 
 ### 3.1 Subsidio para el empleo 2026: la base estaba bien
-- **Retractación.** La versión anterior de este documento decía que el decreto del 31-dic-2025 no aparecía en el DOF. Era un error del lector (una edición por día). El decreto existe: DOF 31-dic-2025, edición matutina, nota 5777649.
-- Verificado contra su texto: **15.02 % de la UMA mensual**, **15.59 % en enero de 2026** (sobre la UMA de 2025), límite de ingresos **$11,492.66**, y los $536.22 del considerando. La base coincide tal cual; no se cambió ningún valor y se quitó la marca `por_confirmar` que le había puesto.
+- Decreto **DOF 31-dic-2025**, edición matutina, nota 5777649. Verificado contra su texto: **15.02 %** de la UMA mensual, **15.59 %** en enero de 2026 (sobre la UMA de 2025), límite **$11,492.66**, y los $536.22 del considerando. La base coincide tal cual; no se cambió ningún valor.
 - Decretos anteriores, por referencia: 1-may-2024 (11.82 %); 31-dic-2024 (13.8 %, 14.39 % en enero de 2025, límite $10,171.00).
 - Sigue pendiente (no es de este decreto): la base no tiene tramos de 2025 para el subsidio.
 
 ### 3.2 Salario mínimo 2025 y 2026: la base estaba bien
-- **Retractación.** La versión anterior decía que no se localizaba la publicación. Estaba en la edición matutina que el primer lector no leía.
-- Resolución del H. Consejo de Representantes de CONASAMI, **DOF 19-dic-2024** (nota 5745678): salarios de 2025, **278.80** (zona general) y **419.88** (frontera norte). Verificado contra el texto (archivo Word).
-- Resolución del 3-dic-2025, **DOF 9-dic-2025** (nota 5775534): salarios de 2026, **315.04** (zona general, +13.0 %) y **440.87** (frontera norte, +5.0 %). Verificado contra el texto.
+- Resolución del H. Consejo de Representantes de CONASAMI, **DOF 19-dic-2024** (nota 5745678): **278.80** (zona general) y **419.88** (frontera norte) para 2025.
+- Resolución del 3-dic-2025, **DOF 9-dic-2025** (nota 5775534): **315.04** (zona general, +13.0 %) y **440.87** (frontera norte, +5.0 %) para 2026.
 - Se precisaron las cuatro citas de la base; los valores no cambian.
 
-### 3.3 Lo que sí cuadra
-- UMA 2026: DOF 9-ene-2026 («Unidad de medida y actualización»; la nota existe, no leí su texto). UMA 2025: el DOF del 10-ene-2025 tiene notas relacionadas; no leí su texto.
-- RMF 2026 y Anexo 8: el DOF del 28-dic-2025 los trae por título. Anexo 8 de 2025: DOF 30-dic-2024 (por título; no cotejé los números aquí, eso ya lo hizo el cotejo contra el PDF del SAT).
-- CFF (cancelación, plazo): DOF 7-nov-2025. LFT vacaciones: DOF 27-dic-2022. LFT jornada: DOF 1-may-2026 y reforma constitucional 3-mar-2026.
-- Estímulos de frontera: DOF 31-dic-2025 (decreto que modifica los de la región fronteriza norte).
+### 3.3 Lo que sí cuadra por fecha
+- UMA 2026: DOF 9-ene-2026 (la nota existe; no leí su texto). UMA 2025: el DOF del 10-ene-2025 tiene notas relacionadas.
+- RMF 2026 y Anexo 8: DOF 28-dic-2025. Anexo 8 de 2025: DOF 30-dic-2024.
+- CFF (cancelación, plazo): DOF 7-nov-2025. LFT vacaciones: DOF 27-dic-2022. LFT jornada: DOF 1-may-2026.
+- Estímulos de frontera: DOF 31-dic-2025.
 
-## 4. INPC  *(EN REVISIÓN: los 11 meses faltantes pudieron estar en la otra edición)*
+## 4. INPC
 
-- `series/inpc.yaml`: oct-2021 a sep-2026 (60 meses). **49 meses salen de notas del DOF y coinciden con Banxico (SP1) sin una sola diferencia**; el DOF no se contradice entre notas.
-- **11 meses no se localizaron en el DOF** (2022-07, 2023-04, 2023-07, 2023-12, 2024-01, 2024-10, 2024-11, 2025-01, 2025-06, 2025-09, 2026-05). Entran con el valor de Banxico marcados `cotejado_dof: false`: no se usan para recargos ni se firman hasta cotejarlos.
+- `series/inpc.yaml`: oct-2021 a sep-2026 (60 meses). **Los 60 meses salen de notas del DOF y coinciden con Banxico (SP1) sin una sola diferencia**, y el DOF no se contradice entre notas.
+- Con la primera lectura faltaban 11 meses; eran notas de la edición que no se leía.
 - Antes de oct-2021 no se barrió el DOF.
 
 ## 5. RMF 2026: citas de la base verificadas contra el texto
-
-Con la RMF 2026 en `fuentes/rmf/` (1,208 reglas) se comprobaron las seis reglas que cita la base:
 
 | Regla | La base dice | El texto del DOF |
 |---|---|---|
@@ -72,9 +78,9 @@ Con la RMF 2026 en `fuentes/rmf/` (1,208 reglas) se comprobaron las seis reglas 
 | 2.8.1.17 | Relevo para PF con ingresos hasta 4 millones | Confirmado: «$4'000,000.00»; releva de contabilidad electrónica y DIOT |
 | 3.13.x | RESICO PM relevado de contabilidad electrónica | Sigue «por confirmar» en la base |
 
-Faltan las tres modificaciones a la RMF 2026 (9-jul, 1-oct y 2-oct de 2026): una regla citada arriba pudo cambiar después.
+Las cuatro modificaciones a la RMF 2026 (sección 2) aún no están en la biblioteca: una regla citada arriba pudo cambiar después.
 
-## 6. IMSS e Infonavit: parámetros cotejados contra la ley y el DOF (7-nov-2026)
+## 6. IMSS e Infonavit: parámetros cotejados contra la ley y el DOF
 
 Cotejo contra el texto de la LSS y de la Ley del Infonavit de `fuentes/leyes/` y contra los decretos del DOF. **Ningún valor cambia.**
 
@@ -92,7 +98,5 @@ Cotejo contra el texto de la LSS y de la Ley del Infonavit de `fuentes/leyes/` y
 | `SBC_TOPE_VECES_UMA` | 25 | LSS 28 dice «veinticinco veces el salario mínimo» | ✔ con el decreto DOF 27-ene-2016, transitorio tercero (las menciones al salario mínimo como referencia se entienden hechas a la UMA) |
 | `INFONAVIT_APORTACION_PATRON` | 5 % | Ley del Infonavit 29 fr. II | ✔ |
 | `DIAS_POR_MES_SM` | 30.4 | Decreto DOF 27-ene-2016, transitorio segundo: valor mensual de la UMA = diario × 30.4 | ✔ fuente primaria (se corrigió la cita y el inicio de vigencia a 28-ene-2016) |
-
-Se precisaron las citas de esos parámetros. Ninguno estaba `por_confirmar`, así que no hubo nada que pasar a vigente. Los textos de ley siguen sin cotejo humano contra el DOF.
 
 **Chihuahua (ISN, otros gravámenes estatales y Código Fiscal del Estado): sin hacer.** Los sitios del Congreso, del gobierno y del Periódico Oficial de Chihuahua no responden desde el entorno de trabajo (solo están permitidos los de leyes federales, DOF, SAT, IMSS e Infonavit). Hace falta abrir esos hosts.
