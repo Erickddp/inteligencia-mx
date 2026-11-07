@@ -57,7 +57,10 @@ jobs:
           fi
           # release.py no debe haber tocado nada versionado: el tag ya traía la versión correcta
           git diff --exit-code
+      - name: Probar el paquete plano SOLO, sin el repositorio (huellas de SHA256SUMS y motor.py probar)
+        run: python scripts/probar_paquete.py "$RUNNER_TEMP/salida"
       - name: Publicar el GitHub Release
         run: |
           V="${TAG#v}"
-          gh release create "$TAG" "$RUNNER_TEMP"/salida/* --title "$TAG" --notes-file "$RUNNER_TEMP/salida/ORDEN_CAMBIO_v$V.txt" --verify-tag
+          # los assets de un release son planos: solo archivos (la carpeta series/ viaja como series_<id>.yaml)
+          gh release create "$TAG" $(find "$RUNNER_TEMP/salida" -maxdepth 1 -type f) --title "$TAG" --notes-file "$RUNNER_TEMP/salida/ORDEN_CAMBIO_v$V.txt" --verify-tag

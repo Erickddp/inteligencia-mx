@@ -30,6 +30,12 @@ jobs:
         run: python -m pytest -q
       - name: Reglas de oro
         run: python scripts/validar_oro.py
+      - name: El paquete plano funciona SOLO, sin el repositorio
+        run: |
+          V=$(python -c "from timbra_reglas.motor import VERSION_MOTOR; print(VERSION_MOTOR)")
+          python scripts/release.py --raiz . --version "$V" --out "$RUNNER_TEMP/paquete"
+          git diff --exit-code
+          python scripts/probar_paquete.py "$RUNNER_TEMP/paquete"
 
   diferencias:
     name: Diferencias contra main

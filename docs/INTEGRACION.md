@@ -7,18 +7,24 @@ Cada release trae un **paquete plano** y un **`integracion_vX.json`**. La app no
 | Archivo | Para qué |
 |---|---|
 | `parametros.yaml`, `reglas.yaml`, `motor.py`, `FASES.md` | Los 4 archivos que la app copia (nombre plano, sin sufijo de versión) |
-| `SHA256SUMS` | Huella de esos 4 archivos |
+| `series/<id>.yaml` (en el release: `series_<id>.yaml`) | Las series de datos (INPC hoy; tipo de cambio después). El motor las busca en `series/` junto a `motor.py`: sin ellas, las calculadoras que leen una serie avisan con `SinValor` |
+| `SHA256SUMS` | Huella de esos 4 archivos **y de cada serie** (las series con su ruta `series/<id>.yaml`) |
 | `integracion_vX.json` | Qué cambió, con IDs, antes y después, y qué firmas se caen |
 | `*_vX.Y.Z.*`, `ORDEN_CAMBIO_vX.Y.Z.txt`, `timbra-reglas-vX.Y.Z.zip` | Copias con sufijo, la orden de cambio para leer y el zip |
 
 La app verifica cada archivo contra `SHA256SUMS` **antes** de copiarlo, y fija en su `VERSION.json`: repo, tag, commit y huellas.
+
+**El contrato es «4 archivos + `series/*.yaml`».** Los assets de un release de GitHub son planos, así que una serie se publica como `series_<id>.yaml`; en el paquete, en `SHA256SUMS`, en el zip y en `huellas` su ruta es `series/<id>.yaml`. El campo `assets` de `integracion_vX.json` traduce de una a otra. La app copia `series_inpc.yaml` a `app/reglas/series/inpc.yaml`.
+
+**El paquete se prueba solo.** Antes de publicar, el CI copia a una carpeta vacía exactamente los archivos que lista `SHA256SUMS`, verifica cada huella y corre `python -I motor.py probar` ahí, sin el repositorio al lado (`scripts/probar_paquete.py`). Un paquete al que le falte algo no se publica.
 
 ## `integracion_vX.json` (schema 1)
 
 | Campo | Contenido |
 |---|---|
 | `version`, `tag`, `commit`, `generado`, `anterior` | Identidad de la versión y de la anterior (`version_base`) |
-| `huellas` | `{archivo: sha256}` de los 4 archivos planos |
+| `huellas` | `{ruta en el paquete: sha256}` de los 4 archivos planos y de cada serie (`series/inpc.yaml`) |
+| `assets` | `{ruta en el paquete: nombre del asset en el release}`; solo difiere en las series (`series/inpc.yaml` → `series_inpc.yaml`) |
 | `pruebas` | Resumen de `timbra-reglas probar` |
 | `parametros_nuevos` | `{id, nombre, tipo, formula}` |
 | `parametros_quitados` | IDs |

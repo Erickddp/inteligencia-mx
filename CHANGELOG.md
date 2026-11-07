@@ -12,6 +12,7 @@ Sin cambios de valores: no cae ninguna firma. Se agregan reglas, calculadoras, p
 - **Fiscal:** plataformas digitales (R-160) separando personas físicas (LISR 113-A) y morales (LIF 2026 art. 25 fr. VI), con pago definitivo y sin RFC; anual de personas morales (R-161); actualización con INPC real y recargos (R-162) con `serie(id, fecha)` y la serie INPC del DOF.
 - **Fundamento:** `citas`, `que_dice` y `correcto_si` en las reglas nuevas y en R-20, R-22, R-110, R-111, R-113, R-114, R-118, R-120 y R-131.
 - **Parámetros nuevos, por confirmar contra el DOF:** `PLATAFORMAS_ISR_PF_TABLA`, `PLATAFORMAS_ISR_PM_TABLA` y `PLATAFORMAS_PD_TOPE_ANUAL`. Se corrige además un dato que ya estaba en la base: el 2.5 % de plataformas es de personas morales; a las personas físicas la LISR les retiene 1 %.
+- **Paquete:** el paquete plano del release ahora trae `series/*.yaml` además de los 4 archivos (en el release, la serie se publica como `series_<id>.yaml`), con sus huellas en `SHA256SUMS` y en `integracion_vX.json`, y el CI prueba el paquete SOLO, sin el repositorio.
 - **Motor:** `integracion_vX.json` en cada release, `exportar` corregido para la tabla acumulada del art. 106 y consola de Windows en UTF-8.
 
 ### Estados cambiados

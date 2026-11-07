@@ -150,6 +150,7 @@ def test_release_publica_los_cuatro_archivos_con_nombre_plano_ademas_del_sufijo(
         plano, con_sufijo = out / nombre, out / f"{stem}_v9.9.9.{suf}"
         assert plano.read_bytes() == con_sufijo.read_bytes()
     sumas = dict(l.split("  ")[::-1] for l in (out / "SHA256SUMS").read_text(encoding="utf-8").splitlines())
-    assert set(sumas) == {"parametros.yaml", "reglas.yaml", "motor.py", "FASES.md"}
+    # contrato: 4 archivos + series/*.yaml (la serie con su ruta; el asset plano del release se llama series_<id>.yaml)
+    assert set(sumas) == {"parametros.yaml", "reglas.yaml", "motor.py", "FASES.md", "series/inpc.yaml"}
     for nombre, h in sumas.items():
         assert hashlib.sha256((out / nombre).read_bytes()).hexdigest() == h

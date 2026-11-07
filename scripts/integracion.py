@@ -4,7 +4,8 @@
   python scripts/integracion.py --anterior DIR_BASE_ANTERIOR --nuevo base --version 0.5.0 [--commit SHA] > integracion.json
 
 Lo genera release.py en cada release. Contrato (schema 1), todo en JSON:
-  version, commit, tag, generado, anterior (version_base anterior o null), huellas {archivo: sha256}, pruebas,
+  version, commit, tag, generado, anterior (version_base anterior o null), huellas {ruta en el paquete: sha256},
+  assets {ruta en el paquete: nombre del asset en el release}, pruebas,
   parametros_nuevos, parametros_quitados, tramos_nuevos, valores_cambiados (antes y después, con las huellas
   del valor), formulas_cambiadas, vigencias_cambiadas, estados_cambiados, reglas_nuevas, reglas_quitadas,
   reglas_estado, calculadoras_nuevas, meta_cambiada (citas, que_dice, correcto_si), firmas_que_se_caen y ids_afectados (todos los IDs tocados).
@@ -39,11 +40,11 @@ def hash_valor(pid: str, desde: str, valor) -> str:
 
 
 def integracion(ant: Path | None, nue: Path, version: str, commit: str = "", huellas: dict | None = None,
-                pruebas: str = "", generado: str | None = None) -> dict:
+                pruebas: str = "", generado: str | None = None, assets: dict | None = None) -> dict:
     Pn, Rn, _ = carga(nue)
     Pa, Ra, vant = carga(ant) if ant else ({}, {}, None)
     out = {"schema": SCHEMA, "version": version, "tag": f"v{version}", "commit": commit,
-           "generado": generado or dt.date.today().isoformat(), "anterior": vant, "huellas": huellas or {}, "pruebas": pruebas,
+           "generado": generado or dt.date.today().isoformat(), "anterior": vant, "huellas": huellas or {}, "assets": assets or {}, "pruebas": pruebas,
            "parametros_nuevos": [{"id": i, "nombre": Pn[i].get("nombre"), "tipo": Pn[i].get("tipo"), "formula": Pn[i].get("formula")}
                                  for i in sorted(set(Pn) - set(Pa))] if ant else [],
            "parametros_quitados": sorted(set(Pa) - set(Pn)),

@@ -134,13 +134,23 @@ def main():
     for nombre, ruta in ARCH.items():
         shutil.copy(raiz / ruta, out / nombre)
         planos.append(out / nombre)
-    (out / "SHA256SUMS").write_text("\n".join(f"{hashlib.sha256(c.read_bytes()).hexdigest()}  {c.name}" for c in planos) + "\n", encoding="utf-8", newline="\n")
+    # Las series (INPC, tipo de cambio) viajan en el paquete: ruta series/<id>.yaml. Como asset del release, que es plano,
+    # se llaman series_<id>.yaml. El motor las busca en series/ junto a motor.py.
+    (out / "series").mkdir(exist_ok=True)
+    series = {}
+    for s in sorted((raiz / "series").glob("*.yaml")):
+        shutil.copy(s, out / "series" / s.name)
+        shutil.copy(s, out / f"series_{s.name}")
+        series[f"series/{s.name}"] = f"series_{s.name}"
+    sumas = [(c.name, c) for c in planos] + [(ruta, out / ruta) for ruta in series]
+    (out / "SHA256SUMS").write_text("\n".join(f"{hashlib.sha256(c.read_bytes()).hexdigest()}  {n}" for n, c in sumas) + "\n", encoding="utf-8", newline="\n")
+    huellas += "".join(f"\n{hashlib.sha256((out / ruta).read_bytes()).hexdigest()}  {ruta}" for ruta in series)
 
     L = [f"ORDEN DE CAMBIO · Base fiscal v{v}", "Autoriza: Rick (C.P.).", "",
          "=== HUELLAS (verifica con sha256sum ANTES de cargar; si una no coincide, no cargues nada) ===", huellas, "",
          "=== CÓMO CARGAR ===",
          f"1) Verifica las huellas. 2) Revisa version_base \"{v}\" y VERSION_MOTOR \"{v}\".",
-         "3) Quita el sufijo de versión, copia los 4 archivos a app/reglas/ y vuelve a fijar VERSION.json (tag, commit y huellas).",
+         "3) Quita el sufijo de versión, copia los 4 archivos y series/<id>.yaml a app/reglas/ (en el release, la serie se llama series_<id>.yaml) y vuelve a fijar VERSION.json (tag, commit y huellas).",
          "4) Corre el CI de Timbra: su revisión sin red compara con VERSION.json y la de red con los assets de este release.",
          f"5) Resultado esperado de timbra-reglas probar: {resumen}", ""]
     if dif:
@@ -171,13 +181,16 @@ def main():
         sys.path.insert(0, str(Path(__file__).resolve().parent))
     import integracion
     commit = os.environ.get("GITHUB_SHA") or integracion.commit_actual()
-    huellas_planas = {c.name: hashlib.sha256(c.read_bytes()).hexdigest() for c in planos}
-    datos = integracion.integracion(Path(x.anterior) if x.anterior else None, raiz / "base", v, commit, huellas_planas, resumen)
+    huellas_planas = {n: hashlib.sha256(c.read_bytes()).hexdigest() for n, c in sumas}
+    datos = integracion.integracion(Path(x.anterior) if x.anterior else None, raiz / "base", v, commit, huellas_planas, resumen,
+                                    assets={**{c.name: c.name for c in planos}, **series})
     (out / f"integracion_v{v}.json").write_text(json.dumps(datos, ensure_ascii=False, indent=1, default=str) + "\n", encoding="utf-8", newline="\n")
     z = out / f"timbra-reglas-v{v}.zip"
     with zipfile.ZipFile(z, "w", zipfile.ZIP_DEFLATED) as zf:
         for c in copias + [orden, out / f"SHA256_v{v}.txt"]:
             zf.write(c, c.name)
+        for ruta in series:
+            zf.write(out / ruta, ruta)
     print(f"PUBLICADA v{v}: {resumen}\n{z}\n")
     print("MENSAJE PARA CLAUDE CODE:\n"
           f"Va la v{v}. Las huellas vienen dentro de ORDEN_CAMBIO_v{v}.txt (y en SHA256_v{v}.txt). "
