@@ -11,7 +11,7 @@ anterior -> copia con sufijo de versión (y copia con el nombre plano + SHA256SU
 -> SHA256 -> ORDEN_CAMBIO con las huellas DENTRO -> zip.
 El paquete que sale es PLANO (los 4 archivos juntos): es lo que Timbra vendoriza y verifica por huella.
 """
-import argparse, datetime as dt, hashlib, os, re, shutil, subprocess, sys, zipfile
+import argparse, datetime as dt, hashlib, json, os, re, shutil, subprocess, sys, zipfile
 from pathlib import Path
 import yaml
 
@@ -65,6 +65,32 @@ def compara(ant: Path, nue: Path):
         if Ra[rid].get("estado") != Rn[rid].get("estado"):
             out["regla_estado"].append(f"{rid}: {Ra[rid].get('estado')} -> {Rn[rid].get('estado')}")
     return out
+
+
+def integracion(v: str, raiz: Path, anterior: Path | None, dif) -> dict:
+    """integracion_vX.json: la lista de IDs que cambió esta versión (parámetros, reglas, calculadoras) para las apps conectadas.
+    Una app como Timbra la lee para saber qué parte de su código toca y qué firmas se caen, sin diferenciar los YAML a mano."""
+    Pn, Rn = carga(raiz / "base")
+    cn = {r["calculadora"] for r in Rn.values() if r.get("calculadora")}
+    if anterior is None or dif is None:  # primera versión: todo es nuevo
+        ver_ant, ca = None, set()
+        param = sorted(Pn)
+        reglas = sorted(Rn)
+        det = None
+    else:
+        Pa, Ra = carga(anterior)
+        ver_ant = str(yaml.safe_load((anterior / "parametros.yaml").read_text(encoding="utf-8")).get("version_base") or "") or None
+        ca = {r["calculadora"] for r in Ra.values() if r.get("calculadora")}
+        det = dif
+        ident = lambda s: re.match(r"[A-Za-z][A-Za-z0-9_\-]*", s).group(0)
+        param = sorted({ident(s) for k in ("param_nuevos", "param_quitados", "valor_cambiado", "estado_cambiado", "vigencia_cambiada", "tramos_nuevos")
+                        for s in dif[k]})
+        reglas = sorted({ident(s) for k in ("reglas_nuevas", "reglas_quitadas", "regla_estado") for s in dif[k]})
+    return {"version": v, "version_anterior": ver_ant,
+            "ids_tocados": {"parametros": param, "reglas": reglas, "calculadoras": sorted(cn ^ ca)},
+            "calculadoras": {"nuevas": sorted(cn - ca), "quitadas": sorted(ca - cn)},
+            "firmas_que_se_caen": det["valor_cambiado"] if det else [],
+            "detalle": det}
 
 
 def entrada_changelog(v: str, dif, resumen: str, fecha: str, notas: str = "") -> str:
@@ -141,7 +167,8 @@ def main():
          f"1) Verifica las huellas. 2) Revisa version_base \"{v}\" y VERSION_MOTOR \"{v}\".",
          "3) Quita el sufijo de versión, copia los 4 archivos a app/reglas/ y vuelve a fijar VERSION.json (tag, commit y huellas).",
          "4) Corre el CI de Timbra: su revisión sin red compara con VERSION.json y la de red con los assets de este release.",
-         f"5) Resultado esperado de timbra-reglas probar: {resumen}", ""]
+         f"5) Resultado esperado de timbra-reglas probar: {resumen}",
+         f"6) integracion_v{v}.json lista los IDs que cambió esta versión (parámetros, reglas, calculadoras) y las firmas que se caen.", ""]
     if dif:
         def bloque(titulo, items):
             L.append(f"--- {titulo} ({len(items)}) ---")
@@ -162,12 +189,14 @@ def main():
     if x.changelog:
         notas = Path(x.notas).read_text(encoding="utf-8") if x.notas else ""
         escribe_changelog(raiz, entrada_changelog(v, dif, resumen, dt.date.today().isoformat(), notas), v)
+    integ = out / f"integracion_v{v}.json"
+    integ.write_text(json.dumps(integracion(v, raiz, Path(x.anterior) if x.anterior else None, dif), ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     orden = out / f"ORDEN_CAMBIO_v{v}.txt"
     orden.write_text("\n".join(L), encoding="utf-8")
     (out / f"SHA256_v{v}.txt").write_text(huellas + "\n", encoding="utf-8")
     z = out / f"timbra-reglas-v{v}.zip"
     with zipfile.ZipFile(z, "w", zipfile.ZIP_DEFLATED) as zf:
-        for c in copias + [orden, out / f"SHA256_v{v}.txt"]:
+        for c in copias + [orden, out / f"SHA256_v{v}.txt", integ]:
             zf.write(c, c.name)
     print(f"PUBLICADA v{v}: {resumen}\n{z}\n")
     print("MENSAJE PARA CLAUDE CODE:\n"

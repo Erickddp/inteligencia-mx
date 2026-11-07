@@ -152,3 +152,37 @@ def test_release_publica_los_cuatro_archivos_con_nombre_plano_ademas_del_sufijo(
     assert set(sumas) == {"parametros.yaml", "reglas.yaml", "motor.py", "FASES.md"}
     for nombre, h in sumas.items():
         assert hashlib.sha256((out / nombre).read_bytes()).hexdigest() == h
+
+
+def test_release_emite_integracion_con_los_ids_tocados(tmp_path):
+    """integracion_vX.json: lo que leen las apps conectadas para saber qué cambió y qué firmas se caen."""
+    import json
+    import os
+    import subprocess
+    import sys
+    raiz = tmp_path / "raiz"
+    shutil.copytree(BASE, raiz / "base")
+    (raiz / "timbra_reglas").mkdir()
+    for f in (RAIZ / "timbra_reglas").glob("*.py"):
+        shutil.copy(f, raiz / "timbra_reglas" / f.name)
+    shutil.copytree(RAIZ / "scripts", raiz / "scripts")
+    # versión anterior inventada: un valor distinto y una regla con otro estado
+    ant = tmp_path / "anterior"
+    ant.mkdir()
+    p = (BASE / "parametros.yaml").read_text(encoding="utf-8")
+    assert p.count('valor: "117.31"') == 1
+    (ant / "parametros.yaml").write_text(p.replace('valor: "117.31"', 'valor: "117.30"').replace('version_base: "', 'version_base: "0.0.1-', 1), encoding="utf-8")
+    r = (BASE / "reglas.yaml").read_text(encoding="utf-8")
+    i = r.index("  - id: R-17\n")
+    j = r.index("    estado: NUEVA", i)
+    (ant / "reglas.yaml").write_text(r[:j] + "    estado: OK" + r[j + len("    estado: NUEVA"):], encoding="utf-8")
+    out = tmp_path / "out"
+    res = subprocess.run([sys.executable, str(raiz / "scripts" / "release.py"), "--raiz", str(raiz), "--version", "9.9.9", "--anterior", str(ant), "--out", str(out)],
+                         capture_output=True, text=True, env={**os.environ, "PYTHONPATH": str(raiz)})
+    assert res.returncode == 0, res.stdout + res.stderr
+    integ = json.loads((out / "integracion_v9.9.9.json").read_text(encoding="utf-8"))
+    assert integ["version"] == "9.9.9" and integ["version_anterior"].startswith("0.0.1-")
+    assert "UMA_DIARIA" in integ["ids_tocados"]["parametros"] and "R-17" in integ["ids_tocados"]["reglas"]
+    assert "UMA_DIARIA desde 2026-02-01" in integ["firmas_que_se_caen"]
+    assert integ["calculadoras"] == {"nuevas": [], "quitadas": []}
+    assert "integracion_v9.9.9.json" in subprocess.run(["unzip", "-l", str(out / "timbra-reglas-v9.9.9.zip")], capture_output=True, text=True).stdout

@@ -1,11 +1,11 @@
 ---
-name: aportar-regla
-description: Aportar a timbra-reglas (base fiscal abierta de México) una regla, un valor de ley, un caso o un texto de ley desde Claude Code. Úsala cuando alguien quiera agregar o corregir un parámetro (UMA, salario mínimo, tarifas del Anexo 8, tasas, topes, recargos, subsidio, INPC, tipo de cambio), una regla con su fórmula y sus casos, reportar un error de cálculo, o cotejar un artículo de ley contra el DOF. Guía paso a paso desde la fuente primaria hasta el PR firmado.
+name: anadir-inteligencia-mx
+description: Añadir a inteligencia-mx (antes timbra-reglas; la base legal y fiscal abierta de México) una regla, un valor de ley, un caso o un texto de ley desde Claude Code. Úsala cuando alguien quiera agregar o corregir un parámetro (UMA, salario mínimo, tarifas del Anexo 8, tasas, topes, recargos, subsidio, INPC, tipo de cambio), una regla con su fórmula y sus casos, reportar un error de cálculo, o cotejar un artículo de ley contra el DOF. Guía paso a paso desde la fuente primaria hasta el PR firmado.
 ---
 
-# aportar-regla: llevar un dato fiscal de la fuente al PR
+# añadir-inteligencia-mx: llevar un dato legal o fiscal de la fuente al PR
 
-timbra-reglas es la **inteligencia fiscal abierta**: la usan apps como Timbra, que la fijan por versión y huella. Un número equivocado aquí
+inteligencia-mx (antes timbra-reglas) es la **inteligencia legal y fiscal abierta de México**: la usan apps como Timbra, que la fijan por versión y huella. Un número equivocado aquí
 termina en la declaración de alguien. Por eso aquí nada entra sin **fuente primaria**, **casos al centavo** y la **firma** del CODEOWNER.
 Lee `CONTRIBUTING.md` y `AVISO.md` del repo antes de empezar; esta skill es el camino práctico para seguirlos con Claude Code.
 
@@ -70,6 +70,9 @@ python scripts/validar_oro.py
   - los casos agregados;
   - el nivel A o B (`base/niveles.yaml` aún no existe: di cuál propones y decide el CODEOWNER);
   - **qué firmas se caen**: cada valor cambiado es una firma de Rick que se cae en las apps que usan la base, y el CI lo comenta en el PR.
+- **Termina siempre con la lista de IDs que tocaste** (parámetros, reglas y calculadoras: nuevos, cambiados y con estado cambiado). Esa lista es lo
+  que reciben las apps conectadas: `release.py` la junta en `integracion_vX.json` de cada release, y apps como Timbra la leen para saber qué
+  cambió y qué firmas se caen.
 - Tú no mezclas ni publicas releases: eso lo hace el CODEOWNER. Aprobar el PR es firmar la base.
 
 ## 7. Cotejar un artículo de ley con el DOF (`fuentes/leyes/`, `fuentes/rmf/`)
