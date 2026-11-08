@@ -1,0 +1,49 @@
+# Sinónimos del lenguaje fiscal y contable de México: cómo lo dice la gente y cómo lo dice la ley.
+# Sirven para acercar una pregunta («aguinaldo») al texto oficial («gratificaciones»). Cada grupo trae EVIDENCIA: un artículo de la
+# biblioteca y la palabra o frase que ese artículo contiene; una prueba verifica que de verdad esté ahí.
+# Para aportar un grupo: agrega los términos y al menos una evidencia; `python -m pytest -q tests/test_mejoras.py` la comprueba.
+version: 1
+grupos:
+  - terminos: [aguinaldo, gratificación anual, gratificaciones]
+    evidencia:
+      - {ley: LFT, articulo: "87", contiene: "aguinaldo"}
+      - {ley: LISR, articulo: "93", contiene: "gratificaciones"}
+  - terminos: [PTU, participación de los trabajadores en las utilidades, reparto de utilidades]
+    evidencia:
+      - {ley: LISR, articulo: "9", contiene: "participación de los trabajadores en las utilidades"}
+      - {ley: LFT, articulo: "117", contiene: "participarán en las utilidades"}
+  - terminos: [público en general, RFC genérico, XAXX010101000]
+    evidencia:
+      - {ley: RMF, anio: "2026", articulo: "2.7.1.45", contiene: "XAXX010101000"}
+  - terminos: [RESICO, Régimen Simplificado de Confianza]
+    evidencia:
+      - {ley: RMF, anio: "2026", articulo: "3.13.29", contiene: "Régimen Simplificado de Confianza"}
+  - terminos: [factura global, CFDI global, comprobante de operaciones con el público en general]
+    evidencia:
+      - {ley: RMF, anio: "2026", articulo: "3.13.29", contiene: "CFDI globales"}
+      - {ley: RMF, anio: "2026", articulo: "2.7.1.21", contiene: "público en general"}
+  - terminos: [plataformas digitales, plataformas tecnológicas, aplicaciones informáticas]
+    evidencia:
+      - {ley: LISR, articulo: "113-a", contiene: "plataformas tecnológicas"}
+  - terminos: [renta de inmuebles, arrendamiento, uso o goce temporal de bienes inmuebles]
+    evidencia:
+      - {ley: LISR, articulo: "115", contiene: "uso o goce temporal de bienes inmuebles"}
+  - terminos: [servicios médicos, servicios profesionales de medicina, honorarios médicos]
+    evidencia:
+      - {ley: LIVA, articulo: "15", contiene: "servicios profesionales de medicina"}
+  - terminos: [saldo a favor, devolución de IVA]
+    evidencia:
+      - {ley: LIVA, articulo: "6", contiene: "devolución"}
+  - terminos: [recargos, intereses por pago tardío, mora]
+    evidencia:
+      - {ley: CFF, articulo: "21", contiene: "recargos"}
+  - terminos: [actualización, factor de actualización, INPC]
+    evidencia:
+      - {ley: CFF, articulo: "17-a", contiene: "factor de actualización"}
+  - terminos: [prima de antigüedad, indemnización]
+    evidencia:
+      - {ley: LFT, articulo: "162", contiene: "prima de antigüedad"}
+      - {ley: LFT, articulo: "50", contiene: "indemnizaciones"}
+  - terminos: [IVA acreditable, acreditamiento, IVA efectivamente pagado]
+    evidencia:
+      - {ley: LIVA, articulo: "5", contiene: "efectivamente pagado"}

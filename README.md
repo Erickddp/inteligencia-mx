@@ -45,6 +45,10 @@ timbra-reglas exportar 2026-01 2026-12                # JSON mes por mes
 
 Cada release publica un paquete plano (`parametros`, `reglas`, `motor`, `FASES`) con sus huellas SHA256, para que quien lo use verifique cada archivo.
 
+## Mejorar el proyecto
+
+El [plan de mejora](docs/PLAN_DE_MEJORA.md) es un documento vivo: tres fases (verificar lo que hay, medir y buscar) y un [backlog](mejoras/backlog.yaml) donde cualquiera puede proponer o tomar una mejora. Los [datos abiertos](datos_abiertos/README.md) (CSV con huella, licencia CC BY 4.0) y la carpeta de [búsqueda](busqueda/README.md) (modos, sinónimos y preguntas doradas que cualquiera puede ajustar) son el punto de partida. La inteligencia **lee**; las cifras se verifican y las firma una persona.
+
 ## Aportar con Claude Code
 
 Dentro de este repositorio, en Claude Code, basta decir qué falta:

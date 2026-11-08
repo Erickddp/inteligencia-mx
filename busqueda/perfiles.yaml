@@ -1,0 +1,71 @@
+# Modos de búsqueda: un perfil dice CÓMO se busca. Se puede agregar o ajustar uno sin tocar código.
+# Cada cambio se mide con busqueda/preguntas_doradas.yaml: un perfil nuevo o ajustado no debe empeorar lo que ya acierta.
+# La búsqueda LEE el corpus (datos_abiertos + scripts/exportar_datos_abiertos.py --corpus) y NUNCA escribe cifras de la base.
+version: 1
+metodos:
+  palabras_clave:
+    estado: planeado
+    fase: "3b"
+    descripcion: "Coincidencia literal de palabras, números de artículo y siglas. Sin dependencias."
+  bm25:
+    estado: planeado
+    fase: "3b"
+    descripcion: "Palabras clave con peso por rareza (BM25). Sin dependencias pesadas: se programa en Python puro."
+  semantico:
+    estado: opcional
+    fase: "3d"
+    descripcion: "Búsqueda por significado con embeddings. Requiere un modelo, cualquiera; el repositorio no fija uno."
+  hibrido:
+    estado: opcional
+    fase: "3d"
+    descripcion: "BM25 más búsqueda semántica combinadas. Sin modelo disponible, cae a BM25."
+perfiles:
+  - id: exacto
+    descripcion: "Se sabe qué ley y qué artículo: números de artículo, siglas y frases literales."
+    metodo: palabras_clave
+    filtros: {}
+    campos: {numero: 5, ubicacion: 2, texto: 1}
+    expandir_sinonimos: false
+    k: 5
+  - id: amplio
+    descripcion: "Pregunta en lenguaje de persona, sin saber la ley. Usa sinónimos para acercar «aguinaldo» a «gratificación»."
+    metodo: bm25
+    filtros: {}
+    campos: {ubicacion: 2, texto: 1}
+    expandir_sinonimos: true
+    k: 10
+  - id: fiscal
+    descripcion: "Solo materia fiscal, de cualquier ámbito (federal, estatal o municipal)."
+    metodo: bm25
+    filtros: {materia: fiscal}
+    campos: {ubicacion: 2, texto: 1}
+    expandir_sinonimos: true
+    k: 10
+  - id: estatal
+    descripcion: "Solo leyes de un estado o municipio. Se combina con el filtro de entidad (por ejemplo CMX para la Ciudad de México)."
+    metodo: bm25
+    filtros: {ambito: estatal}
+    campos: {ubicacion: 2, texto: 1}
+    expandir_sinonimos: true
+    k: 10
+  - id: vigente
+    descripcion: "Excluye artículos derogados."
+    metodo: bm25
+    filtros: {derogado: false}
+    campos: {ubicacion: 2, texto: 1}
+    expandir_sinonimos: true
+    k: 10
+  - id: cotejado
+    descripcion: "Solo artículos que una persona ya cotejó con el diario oficial. Hoy no hay ninguno: el perfil existe para cuando empiece el cotejo (fase 1)."
+    metodo: bm25
+    filtros: {cotejado: true}
+    campos: {ubicacion: 2, texto: 1}
+    expandir_sinonimos: true
+    k: 10
+  - id: significado
+    descripcion: "Experimental: combina palabras y significado cuando hay un modelo de embeddings disponible."
+    metodo: hibrido
+    filtros: {}
+    campos: {ubicacion: 2, texto: 1}
+    expandir_sinonimos: true
+    k: 10

@@ -1,0 +1,205 @@
+# Backlog de mejora de inteligencia-mx, legible por personas y por máquinas.
+# El plan que lo explica es docs/PLAN_DE_MEJORA.md. Cualquiera puede proponer un cambio con un PR a este archivo o con la
+# plantilla de issue «Propuesta de mejora».
+#
+# fase:    1 verificar lo que ya hay · 2 medir · 3 buscar (la capa que lee) · futuro
+# estado:  abierta | en_curso | hecha
+# quien:   abierto = cualquier persona · dueno = quien mantiene el repositorio (firma o decisión)
+# rama:    rama donde se trabaja (se crea desde main; se rebasa sobre main antes de abrir el PR) o null
+# datos:   archivos del repositorio con los que se trabaja o que muestran el avance
+version: 1
+mejoras:
+  # ───────── Fase 1 · Verificar lo que ya hay ─────────
+  - id: M-101
+    fase: 1
+    titulo: Proteger la rama main
+    que_es: "Hoy main acepta push directo. Activar el ruleset (PR obligatorio, CI verde, revisión de CODEOWNERS, tags inmutables)."
+    criterio_de_aceptacion: "Un push directo a main es rechazado por GitHub; un PR sin CI verde no se puede mezclar."
+    estado: abierta
+    quien: dueno
+    rama: null
+    datos: [docs/PROTECCION_DE_MAIN.md]
+    como_aportar: "Solo quien administra el repositorio. Sigue las casillas de docs/PROTECCION_DE_MAIN.md."
+  - id: M-102
+    fase: 1
+    titulo: Cotejo humano de los artículos que la base cita
+    que_es: "Ninguna ley tiene cotejo humano contra el diario oficial. No hay que cotejar los 10,830 artículos: solo los que la base cita (ver cotejo_pendiente.csv), empezando por los que más cosas sostienen."
+    criterio_de_aceptacion: "Cada artículo cotejado queda en el manifiesto con fecha, decreto y persona; los parámetros que solo citan artículos cotejados pueden firmarse."
+    estado: abierta
+    quien: abierto
+    rama: mejora/fase1-verificar
+    datos: [datos_abiertos/cotejo_pendiente.csv]
+    como_aportar: "Elige artículos de arriba hacia abajo en cotejo_pendiente.csv, compáralos con el diario oficial y registra el cotejo. Una herramienta para registrarlo sin editar JSON a mano es parte de esta mejora."
+  - id: M-103
+    fase: 1
+    titulo: Cerrar la deuda de las reglas de oro
+    que_es: "81 violaciones heredadas: tramos sin confirmado_hasta, reglas con un solo caso, RFC no genéricos y un ID con año."
+    criterio_de_aceptacion: "scripts/deuda_oro.json baja; ningún PR la sube."
+    estado: abierta
+    quien: abierto
+    rama: mejora/fase1-verificar
+    datos: [scripts/deuda_oro.json]
+    como_aportar: "Resuelve una violación con fuente y casos, quítala de la lista con python scripts/validar_oro.py --actualizar-deuda."
+  - id: M-104
+    fase: 1
+    titulo: Citas estructuradas en las reglas restantes
+    que_es: "Más de la mitad de las reglas aún no traen citas, que_dice ni correcto_si; el círculo de fundamento de las apps las necesita."
+    criterio_de_aceptacion: "Cada regla con fundamento en la biblioteca trae citas verificadas; las que no tienen fundamento lo dicen."
+    estado: abierta
+    quien: abierto
+    rama: mejora/fase1-verificar
+    datos: [datos_abiertos/reglas.csv, datos_abiertos/citas.csv]
+    como_aportar: "Elige reglas con citas=0 en reglas.csv, lee el artículo y escribe citas, que_dice y correcto_si."
+  - id: M-105
+    fase: 1
+    titulo: Subir de por_confirmar a vigente con evidencia
+    que_es: "Plataformas digitales (tasas), código agrupador (versión de 2014, falta el Anexo 24 vigente) y otros datos aplican con aviso."
+    criterio_de_aceptacion: "Cada dato pasa a vigente con su fuente cotejada, o queda documentado por qué no."
+    estado: abierta
+    quien: abierto
+    rama: mejora/fase1-verificar
+    datos: [datos_abiertos/parametros.csv]
+    como_aportar: "Filtra estado_ultimo=por_confirmar en parametros.csv y agrega el tramo con la fuente primaria."
+  # ───────── Fase 2 · Medir ─────────
+  - id: M-201
+    fase: 2
+    titulo: Casos firmados por contadores
+    que_es: "Hoy los casos los calcula el asistente y el motor coincide. Hace falta una referencia independiente: casos con cifra, fecha y fuente que una persona contadora firmó."
+    criterio_de_aceptacion: "Existe un formato y una carpeta de casos firmados, y el CI los corre contra el motor."
+    estado: abierta
+    quien: abierto
+    rama: mejora/fase2-medir
+    datos: []
+    como_aportar: "Propón el formato en un PR y aporta casos con RFC genéricos, cifra, fecha, fuente y firmante. Nunca datos de clientes."
+  - id: M-202
+    fase: 2
+    titulo: Pruebas por propiedades
+    que_es: "Hoy solo hay casos puntuales. Propiedades: toda póliza cuadra, una tarifa nunca baja al subir la base, un valor no se aplica fuera de su vigencia."
+    criterio_de_aceptacion: "Pruebas con datos generados al azar corren en el CI sin hacerlo lento."
+    estado: abierta
+    quien: abierto
+    rama: mejora/fase2-medir
+    datos: []
+    como_aportar: "Agrega una propiedad en tests/ y explica por qué debe ser siempre cierta."
+  - id: M-203
+    fase: 2
+    titulo: Comparar contra una referencia independiente
+    que_es: "Contrastar calculadoras con las tablas y ejemplos oficiales del SAT, IMSS o INEGI, no con el propio motor."
+    criterio_de_aceptacion: "Cada calculadora principal tiene al menos un caso sacado de un documento oficial, citado."
+    estado: abierta
+    quien: abierto
+    rama: mejora/fase2-medir
+    datos: []
+    como_aportar: "Elige una calculadora, busca un ejemplo oficial y agrégalo como caso con su fuente."
+  # ───────── Fase 3 · Buscar (la capa que lee) ─────────
+  - id: M-301
+    fase: 3
+    titulo: Corpus abierto en JSONL
+    que_es: "El texto de cada artículo y regla, un JSON por línea, como entrada de cualquier búsqueda."
+    criterio_de_aceptacion: "El script lo genera de forma determinista; se publica como asset de un release (no se versiona)."
+    estado: en_curso
+    quien: abierto
+    rama: mejora/fase3-busqueda
+    datos: [scripts/exportar_datos_abiertos.py]
+    como_aportar: "El script ya lo genera (--corpus). Falta publicarlo como asset del release."
+  - id: M-302
+    fase: 3
+    titulo: Búsqueda base por palabras clave y BM25
+    que_es: "Un buscador en Python puro, sin dependencias pesadas, que lea los perfiles de busqueda/perfiles.yaml."
+    criterio_de_aceptacion: "Dada una pregunta y un perfil, regresa artículos con su ley, si están cotejados y si están derogados."
+    estado: abierta
+    quien: abierto
+    rama: mejora/fase3-busqueda
+    datos: [busqueda/perfiles.yaml, busqueda/sinonimos.yaml]
+    como_aportar: "Implementa un método de perfiles.yaml; no cambies los perfiles sin medirlo con las preguntas doradas."
+  - id: M-303
+    fase: 3
+    titulo: Medir la búsqueda con las preguntas doradas
+    que_es: "Calcular recall@k sobre busqueda/preguntas_doradas.yaml y volverlo una puerta de calidad: una mejora no puede empeorarlo."
+    criterio_de_aceptacion: "El CI calcula recall@k por perfil y falla si baja contra la línea base guardada."
+    estado: abierta
+    quien: abierto
+    rama: mejora/fase3-busqueda
+    datos: [busqueda/preguntas_doradas.yaml]
+    como_aportar: "Agrega preguntas reales que hoy fallen; son la mejor contribución a la búsqueda."
+  - id: M-304
+    fase: 3
+    titulo: Backend semántico opcional y enchufable
+    que_es: "Búsqueda por significado con embeddings, para cualquier modelo, sin que el repositorio se case con uno."
+    criterio_de_aceptacion: "Con un modelo disponible el perfil «significado» mejora el recall@k; sin modelo, todo funciona igual con BM25."
+    estado: abierta
+    quien: abierto
+    rama: mejora/fase3-busqueda
+    datos: [busqueda/perfiles.yaml]
+    como_aportar: "Implementa el método semantico con un modelo a tu elección y registra cuál (nombre, versión y huella)."
+  # ───────── Futuro ─────────
+  - id: M-401
+    fase: futuro
+    titulo: Historia de las leyes por fecha
+    que_es: "Hoy se guarda el texto vigente. Para saber qué ley aplicaba en una fecha hay que guardar versiones consolidadas por decreto del DOF."
+    criterio_de_aceptacion: "Dado un artículo y una fecha, se obtiene el texto que regía ese día."
+    estado: abierta
+    quien: abierto
+    rama: mejora/historia-por-fecha
+    datos: []
+    como_aportar: "Propón el formato de versiones en un PR de diseño antes de cargar datos."
+  - id: M-402
+    fase: futuro
+    titulo: Escalar la estructura
+    que_es: "Partir parametros.yaml por materia, agregar materia, ámbito y jurisdicción a cada dato y separar el corpus de leyes a otro repositorio cuando se acerque a 1 GB."
+    criterio_de_aceptacion: "El release sigue entregando el paquete plano y ningún ID publicado se renombra."
+    estado: abierta
+    quien: abierto
+    rama: mejora/escalar-estructura
+    datos: [datos_abiertos/catalogo.json]
+    como_aportar: "Propón la partición en un PR de diseño; no renombres IDs."
+  - id: M-403
+    fase: futuro
+    titulo: Plugin y skills en un repositorio aparte
+    que_es: "Empaquetar /inteligencia-fiscal y /aportar-inteligencia-mx para instalarlas sin clonar el corpus. Va en un repositorio pequeño."
+    criterio_de_aceptacion: "Una persona instala el plugin con un comando y la skill la guía a hacer su fork con clon parcial."
+    estado: abierta
+    quien: dueno
+    rama: mejora/plugin-skills
+    datos: [.claude/skills]
+    como_aportar: "Después de proteger main (M-101). Confirmar antes el formato vigente de plugins y marketplaces en la documentación."
+  - id: M-404
+    fase: futuro
+    titulo: Más leyes, reglamentos y estados
+    que_es: "Leyes y reglamentos pendientes de la CDMX (el portal declara 180 leyes y 158 reglamentos) y las de otros estados."
+    criterio_de_aceptacion: "Cada ley se registra con /inteligencia-fiscal y pasa scripts/validar_aportacion.py."
+    estado: en_curso
+    quien: abierto
+    rama: mejora/mas-leyes
+    datos: [fuentes/leyes/README.md, docs/ESTANDAR_APORTACION.md]
+    como_aportar: "Usa /inteligencia-fiscal con el estado y la materia; un PR por ley o por grupo de leyes."
+  - id: M-405
+    fase: futuro
+    titulo: Clasificadores con revisión humana
+    que_es: "Sugerir el código agrupador de una cuenta, el régimen o la clave de producto del SAT. Siempre una sugerencia que una persona confirma."
+    criterio_de_aceptacion: "Una sugerencia trae su fundamento y un porcentaje de acierto medido contra casos firmados."
+    estado: abierta
+    quien: abierto
+    rama: mejora/clasificadores-y-vigilancia
+    datos: [base/parametros.yaml]
+    como_aportar: "Primero aporta los casos firmados (M-201); sin vara de medir no se entrena nada."
+  - id: M-406
+    fase: futuro
+    titulo: Vigilancia de cambios con un modelo de lenguaje
+    que_es: "El Vigía del DOF busca por palabras clave. Un modelo puede leer decretos ómnibus cuyo título no nombra la ley. Solo avisa; nunca escribe valores."
+    criterio_de_aceptacion: "Detecta decretos que reforman leyes de la biblioteca aunque su título no las nombre, sin falsos avisos que cansen."
+    estado: abierta
+    quien: abierto
+    rama: mejora/clasificadores-y-vigilancia
+    datos: [scripts/vigia_dof.py, docs/HALLAZGOS_DOF.md]
+    como_aportar: "Mejora scripts/vigia_dof.py con pruebas sobre los decretos de docs/HALLAZGOS_DOF.md."
+  - id: M-407
+    fase: futuro
+    titulo: Limpiar las ramas ya mezcladas
+    que_es: "Quedan ramas de trabajo viejas en GitHub, ya mezcladas a main."
+    criterio_de_aceptacion: "Solo quedan main y las ramas de mejora vigentes."
+    estado: abierta
+    quien: dueno
+    rama: null
+    datos: []
+    como_aportar: "Solo quien administra el repositorio; borrar una rama mezclada no pierde nada."

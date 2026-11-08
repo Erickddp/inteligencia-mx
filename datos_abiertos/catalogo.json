@@ -1,0 +1,89 @@
+{
+ "nombre": "Datos abiertos de inteligencia-mx",
+ "licencia": "CC BY 4.0",
+ "version_base": "0.4.2",
+ "archivos": {
+  "parametros.csv": {
+   "descripcion": "Cada parámetro de ley con sus tramos, estado y vigencia (valor solo si es un dato simple).",
+   "columnas": [
+    "id",
+    "nombre",
+    "tipo",
+    "unidad",
+    "tramos",
+    "estados",
+    "desde_ultimo",
+    "hasta_ultimo",
+    "confirmado_hasta_ultimo",
+    "estado_ultimo",
+    "valor_ultimo",
+    "formula",
+    "fuente_ultimo"
+   ],
+   "filas": 122,
+   "sha256": "6773ec8fb67b07dd9da757dd62ab6d6fa02679594fb46b630b7876b1377510e4"
+  },
+  "reglas.csv": {
+   "descripcion": "Cada regla R-xx con su estado, calculadora, número de casos y citas.",
+   "columnas": [
+    "id",
+    "nombre",
+    "estado",
+    "fase",
+    "calculadora",
+    "casos",
+    "parametros",
+    "citas",
+    "tiene_que_dice",
+    "fuente"
+   ],
+   "filas": 106,
+   "sha256": "721493306fa53d9c6e6f9578ead462ead322d59dc9f99f146aae5fa4ed2b0c64"
+  },
+  "leyes.csv": {
+   "descripcion": "Cada ley, código o reglamento de la biblioteca con su ámbito, materia, huella y si tiene cotejo humano.",
+   "columnas": [
+    "clave",
+    "nombre",
+    "ambito",
+    "entidad",
+    "materia",
+    "emisor",
+    "url",
+    "ultima_reforma",
+    "articulos",
+    "derogados",
+    "cotejo_humano",
+    "sha256_pdf"
+   ],
+   "filas": 27,
+   "sha256": "6db1c5f3faa2f63bba39344890ac4795f4e60f74228fd362bdc34790362a3823"
+  },
+  "citas.csv": {
+   "descripcion": "Citas estructuradas de reglas y parámetros a artículos de la biblioteca.",
+   "columnas": [
+    "origen_tipo",
+    "origen_id",
+    "ley",
+    "anio",
+    "articulo",
+    "existe_en_biblioteca"
+   ],
+   "filas": 138,
+   "sha256": "36b1431d2727fe88d76b1386785846a695e4fd3e5a1da83cc33c07df10cf05f1"
+  },
+  "cotejo_pendiente.csv": {
+   "descripcion": "Artículos citados por la base que nadie ha cotejado con el diario oficial, por prioridad.",
+   "columnas": [
+    "ley",
+    "articulo",
+    "ambito",
+    "citado_por",
+    "origenes",
+    "cotejado"
+   ],
+   "filas": 73,
+   "sha256": "3b8cf3aae1e1970c3938921d7d325e7739762429c3aed20a9adf3018fb671a5e"
+  }
+ }
+}

@@ -1,0 +1,48 @@
+name: Propuesta de mejora
+description: Una idea para que inteligencia-mx sea más correcta, más fácil de buscar o más fácil de aportar
+title: "Mejora: "
+labels: ["mejora"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Lee antes el [plan de mejora](../blob/main/docs/PLAN_DE_MEJORA.md) y el [backlog](../blob/main/mejoras/backlog.yaml): tu idea puede ya estar ahí y solo necesita manos.
+        **No pongas datos de clientes ni RFC reales.**
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      options:
+        - Verificar lo que ya hay (cotejo, citas, deuda)
+        - Medir (casos firmados, pruebas, referencias independientes)
+        - Buscar (corpus, perfiles de búsqueda, sinónimos, preguntas doradas)
+        - Estructura y escala
+        - Datos abiertos
+        - Otra
+    validations:
+      required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: Qué problema ves
+      description: Con un ejemplo concreto, de preferencia una pregunta que la búsqueda no contesta bien o un dato que no se puede verificar.
+    validations:
+      required: true
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Qué propones
+    validations:
+      required: true
+  - type: textarea
+    id: medida
+    attributes:
+      label: Cómo se sabrá que mejoró
+      description: Una pregunta dorada nueva, una prueba, un dato abierto o una cifra de datos_abiertos/ que cambiaría. Si no se puede medir, cuéntanos por qué.
+    validations:
+      required: true
+  - type: textarea
+    id: fuentes
+    attributes:
+      label: Fuentes o datos que usarías
+      description: Solo fuentes oficiales (dominios .gob.mx, INEGI, Banxico). Si usarías un modelo, di cuál.

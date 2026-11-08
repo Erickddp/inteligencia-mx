@@ -1,0 +1,26 @@
+# Preguntas doradas: una pregunta como la haría una persona y el artículo donde está la respuesta.
+# Son la vara con la que se mide cualquier mejora de la búsqueda (perfil nuevo, sinónimos, modelo): no debe fallar lo que ya acertaba.
+# Cada par lo verificó una persona o un asistente LEYENDO el texto del artículo; una prueba comprueba que el artículo exista en la biblioteca.
+# Para aportar una: pregunta en palabras de persona, uno o más artículos esperados y una nota de por qué. Nunca datos de clientes.
+version: 1
+preguntas:
+  - {id: G-001, pregunta: "¿Cuándo se considera cobrada una operación para el IVA?", materia: fiscal, esperado: [{ley: LIVA, articulo: "1-b"}]}
+  - {id: G-002, pregunta: "¿Qué retención de IVA se hace a quien da servicios personales a una persona moral?", materia: fiscal, esperado: [{ley: LIVA, articulo: "1-a"}]}
+  - {id: G-003, pregunta: "¿Qué pasa con un saldo a favor de IVA?", materia: fiscal, esperado: [{ley: LIVA, articulo: "6"}]}
+  - {id: G-004, pregunta: "¿Qué requisitos tiene el IVA para poder acreditarse?", materia: fiscal, esperado: [{ley: LIVA, articulo: "5"}]}
+  - {id: G-005, pregunta: "¿Cuánto del aguinaldo está exento de ISR?", materia: fiscal, esperado: [{ley: LISR, articulo: "93"}]}
+  - {id: G-006, pregunta: "¿Los pagos provisionales del arrendamiento pueden ser trimestrales?", materia: fiscal, esperado: [{ley: LISR, articulo: "116"}]}
+  - {id: G-007, pregunta: "¿Qué deducción opcional tiene quien renta inmuebles?", materia: fiscal, esperado: [{ley: LISR, articulo: "115"}]}
+  - {id: G-008, pregunta: "¿Qué retención le hace una persona moral a una persona física de RESICO?", materia: fiscal, esperado: [{ley: LISR, articulo: "113-j"}]}
+  - {id: G-009, pregunta: "¿Cuánto se puede deducir de la compra de un automóvil?", materia: fiscal, esperado: [{ley: LISR, articulo: "36"}]}
+  - {id: G-010, pregunta: "¿En cuántas horas se envía la factura global?", materia: fiscal, esperado: [{ley: RMF, anio: "2026", articulo: "2.7.1.21"}]}
+  - {id: G-011, pregunta: "¿Hasta cuándo puede cancelar su factura global un contribuyente de RESICO?", materia: fiscal, esperado: [{ley: RMF, anio: "2026", articulo: "3.13.29"}]}
+  - {id: G-012, pregunta: "¿Qué retención hacen las plataformas digitales a las personas físicas?", materia: fiscal, esperado: [{ley: LISR, articulo: "113-a"}]}
+  - {id: G-013, pregunta: "¿Los servicios de un médico causan IVA?", materia: fiscal, esperado: [{ley: LIVA, articulo: "15"}, {ley: RLIVA, articulo: "41"}]}
+  - {id: G-014, pregunta: "¿Cuántos días de aguinaldo da la ley como mínimo?", materia: laboral, esperado: [{ley: LFT, articulo: "87"}]}
+  - {id: G-015, pregunta: "¿Cuál es el límite del reparto de utilidades por trabajador?", materia: laboral, esperado: [{ley: LFT, articulo: "127"}]}
+  - {id: G-016, pregunta: "¿En qué consiste la prima de antigüedad?", materia: laboral, esperado: [{ley: LFT, articulo: "162"}]}
+  - {id: G-017, pregunta: "¿Cómo se actualizan las contribuciones que se pagan tarde?", materia: fiscal, esperado: [{ley: CFF, articulo: "17-a"}]}
+  - {id: G-018, pregunta: "¿Cómo se calculan los recargos por pagar fuera de plazo?", materia: fiscal, esperado: [{ley: CFF, articulo: "21"}]}
+  - {id: G-019, pregunta: "¿Qué comprende la contabilidad para efectos fiscales?", materia: contable, esperado: [{ley: CFF, articulo: "28"}]}
+  - {id: G-020, pregunta: "¿Cuándo comete delito de corrupción inmobiliaria un servidor público en la Ciudad de México?", materia: penal, esperado: [{ley: CMX-CP, articulo: "276-quater"}]}

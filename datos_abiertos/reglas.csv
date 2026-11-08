@@ -1,0 +1,107 @@
+id,nombre,estado,fase,calculadora,casos,parametros,citas,tiene_que_dice,fuente
+R-01,"Montos sin IVA, menos descuento, en pesos",OK,1,,0,,0,no,
+R-02,Solo CFDI vigentes; REP no suma a ingresos ni gastos,OK,1,,0,,0,no,
+R-03,Mes del CFDI y de la factura global (InformacionGlobal),CORREGIR,2,,0,CFDI_GLOBAL_HORAS_MAX,0,no,RMF 2026 regla 2.7.1.21
+R-04,Facturado a cuenta de terceros no es ingreso del mandatario,OK,1,,0,,0,no,
+R-05,Sin obligación antes de la constitución ni en meses futuros,OK,1,,0,,0,no,
+R-10,IVA a flujo (PUE al emitir; PPD con REP),CORREGIR,2,,0,,0,no,LIVA arts. 1-B y 5 fr. III; LISR art. 102 (PF acumulan al cobrar)
+R-100,Actualización y recargos por pago tardío,NUEVA,2,parametro,6,RECARGOS_MORA_MENSUAL;RECARGOS_PRORROGA_MENSUAL;RECARGOS_PARCIALIDADES_12M;RECARGOS_PARCIALIDADES_24M;RECARGOS_PARCIALIDADES_MAS24M;ACTUALIZACION_FACTOR_DECIMALES,2,si,
+R-101,Contabilidad electrónica (Anexo 24),NUEVA,2,,0,CONTA_ELEC_DIA_ENVIO_PM;CONTA_ELEC_DIA_ENVIO_PF;CONTA_ELEC_BALANZA_AJUSTADA_PM;CONTA_ELEC_BALANZA_AJUSTADA_PF;CONTA_ELEC_RELEVO_PF_INGRESOS,0,no,
+R-102,ISN por entidad (ampliada),REVISAR,4,isn,3,ISN_TASA_TABLA,0,no,
+R-103,Estímulo ISR región fronteriza (ampliada),NUEVA,3,estimulo_frontera_isr,3,FRONTERA_ISR_DIVISOR;FRONTERA_ISR_PROPORCION_MIN,0,no,
+R-104,Declaraciones anuales PF y PM,NUEVA,3,,0,,0,no,
+R-105,"PTU (10%, topes por trabajador)",NUEVA,4,,0,,0,no,
+R-106,Alertas de vigencia y propuestas de ley,NUEVA,1,parametro,3,RESICO_PF_TOPE_ANUAL;IVA_RESICO_PF_OPCION_TASA;RESICO_PM_TOPE_ANUAL;INTERESES_NETOS_LIMITE_PCT;ISR_RET_INTERESES,0,no,
+R-107,"Resolución por FECHA, nunca por año",NUEVA,2,parametro,2,UMA_DIARIA,0,no,
+R-108,Ajuste a pesos en el pago,NUEVA,2,ajuste_pesos,2,,1,si,CFF art. 20
+R-109,Matriz régimen × obligación,NUEVA,3,,0,CONTA_ELEC_RELEVO_PF_INGRESOS;ARREND_TRIMESTRAL_VECES_UMA;UMA_MENSUAL,0,no,
+R-11,IVA acreditable,OK,2,,0,DEDUCCION_EFECTIVO_TOPE,0,no,
+R-110,Provisional 612 (enero = tarifa mensual),NUEVA,3,isr_tarifa,2,ISR_TARIFA_MENSUAL,1,si,
+R-111,Provisional 606 con ciega y predial,NUEVA,3,isr_606,3,ARREND_DEDUCCION_CIEGA_PCT;ISR_TARIFA_MENSUAL,2,si,
+R-113,Provisional RESICO PM,NUEVA,3,resico_pm_provisional,2,ISR_PM_TASA;RESICO_PM_TOPE_ANUAL,4,si,"LISR art. 206, 207, 208 y 211 (texto de la Cámara; sin cotejar con el DOF)"
+R-114,Provisional 601 con coeficiente y PTU de mayo a diciembre,NUEVA,3,pm_coeficiente_provisional,2,ISR_PM_TASA,2,si,
+R-117,Donatarias y tope de donativos,NUEVA,3,tope_donativos,1,DONATIVOS_DEDUCIBLE_PCT;DONATARIA_INGRESOS_NO_RELACIONADOS_PCT;DONATARIA_GASTOS_ADMIN_PCT,4,si,
+R-118,Retenciones de plataformas digitales,NUEVA,3,retencion_plataforma,2,PLATAFORMAS_ISR_TABLA;PLATAFORMAS_IVA_RET_PCT,3,si,
+R-12,No deducible / no acreditable,OK,2,,0,DEDUCCION_EFECTIVO_TOPE,0,no,
+R-120,Anual personas físicas,NUEVA,3,isr_tarifa,2,ISR_TARIFA_ANUAL;DED_PERS_VECES_UMA_ANUAL;DED_PERS_PCT_INGRESO,2,si,
+R-121,Depreciación fiscal,NUEVA,3,depreciacion,2,DEPRECIACION_TASAS_ART34;AUTO_TOPE_DEDUCCION,3,si,
+R-125,Aguinaldo (monto),NUEVA,4,aguinaldo_monto,2,LFT_AGUINALDO_DIAS,1,si,
+R-126,ISR del aguinaldo (art. 96 y RLISR 174),NUEVA,4,isr_aguinaldo,3,EXENTO_AGUINALDO_IMPORTE;ISR_TARIFA_MENSUAL,2,si,
+R-127,CFDI de nómina 1.2 revisión E y NOM111,REVISAR,4,,0,,0,no,
+R-128,Cuotas IMSS e Infonavit,NUEVA,4,imss_cuotas,2,IMSS_EYM_CUOTA_FIJA_PATRON;IMSS_EYM_EXCEDENTE_PATRON;IMSS_EYM_EXCEDENTE_OBRERO;IMSS_PD_PATRON;IMSS_PD_OBRERO;IMSS_GMP_PATRON;IMSS_GMP_OBRERO;IMSS_IV_PATRON;IMSS_IV_OBRERO;IMSS_GUARDERIAS_PATRON;IMSS_RETIRO_PATRON;IMSS_CEAV_OBRERO;IMSS_CEAV_PATRON_TABLA;INFONAVIT_APORTACION_PATRON;SBC_TOPE_IMPORTE;UMA_DIARIA;SM_GENERAL_DIARIO,3,si,
+R-13,IVA a cargo del mes,CORREGIR,1,iva_mes,2,,3,si,
+R-130,SBC con factor de integración por antigüedad,NUEVA,4,sbc,2,LFT_VACACIONES_TABLA;LFT_AGUINALDO_DIAS;LFT_PRIMA_VACACIONAL_PCT;SBC_TOPE_IMPORTE,5,si,
+R-131,Retención por periodicidad con tarifa oficial y subsidio,NUEVA,4,isr_periodo_con_subsidio,3,ISR_TARIFA_QUINCENAL;ISR_TARIFA_SEMANAL;ISR_TARIFA_DECENAL;ISR_TARIFA_DIARIA;SUBSIDIO_EMPLEO_MENSUAL;SUBSIDIO_EMPLEO_LIMITE_INGRESO,1,si,
+R-133,"PTU, tope individual",NUEVA,4,ptu_tope,2,PTU_PCT;PTU_TOPE_MESES_SALARIO;EXENTO_PTU_IMPORTE,3,si,
+R-134,Finiquito y liquidación (ISR por separación),NUEVA,4,separacion_isr,2,EXENTO_SEPARACION_IMPORTE_ANUAL;ISR_TARIFA_MENSUAL;LFT_PRIMA_ANTIGUEDAD_DIAS;LFT_PRIMA_ANTIGUEDAD_TOPE_SM;LFT_INDEMNIZACION_DIAS,3,si,
+R-136,Vacaciones y jornada,NUEVA,4,vacaciones_dias,3,LFT_VACACIONES_TABLA;LFT_JORNADA_MAX_SEMANAL,2,si,
+R-137,Plazo del complemento de pago,OK,2,rep_fecha_limite,2,REP_DIA_LIMITE,1,si,RMF 2026 regla 2.7.1.32
+R-138,Serie de tipo de cambio para CFF 20,OK,2,,0,BANXICO_SERIE_TC_CFF20;TIPO_CAMBIO_REGLA,0,no,
+R-14,Saldo a favor de IVA,CORREGIR,2,iva_mes,1,,1,si,LIVA art. 6
+R-140,Integridad de tarifas por periodo (diaria × días),OK,4,tarifa_periodica_es_diaria_por_dias,3,ISR_TARIFA_DIARIA;ISR_TARIFA_SEMANAL;ISR_TARIFA_DECENAL;ISR_TARIFA_QUINCENAL,0,no,Anexo 8 RMF 2026 apartado B fr. I a IV (PDF oficial)
+R-15,"Tasas de IVA (16, 8 frontera, 0, exento)",LISTO_FIRMA,1,parametro,2,IVA_TASA_GENERAL;IVA_TASA_FRONTERA_NORTE,1,si,
+R-150,"Póliza tipo: CFDI emitido (clientes, ingreso por tasa, IVA trasladado no cobrado)",CRITERIO,4,poliza_emitido,3,,5,si,CFF art. 28; RCFF art. 33; LIVA art. 1-B; NIF D-1 y C-3 (referencia)
+R-151,"Póliza tipo: cobro (banco o caja, IVA cobrado y diferencia cambiaria)",CRITERIO,4,poliza_cobro,6,,5,si,"LIVA art. 1-B; CFF art. 28; NIF C-3, C-1 y B-15 (referencia)"
+R-152,"Póliza tipo: CFDI recibido (gasto o inventario, IVA acreditable pendiente, proveedores)",CRITERIO,4,poliza_recibido,4,,5,si,CFF art. 28; RCFF art. 33; LIVA art. 5; NIF C-4 y A-2 (referencia)
+R-153,Póliza tipo: pago a proveedor (banco o caja e IVA acreditable pagado),CRITERIO,4,poliza_pago,5,,4,si,LIVA art. 5 fr. III; CFF art. 28; NIF C-1 y B-15 (referencia)
+R-154,"Póliza tipo: nota de crédito emitida (lo inverso del CFDI, con devoluciones y descuentos)",CRITERIO,4,poliza_nota_credito_emitida,2,,4,si,CFF art. 28; RCFF art. 33; NIF D-1 y B-3 (referencia)
+R-155,"Póliza tipo: nómina pagada con provisión de ISR retenido, IMSS e Infonavit",CRITERIO,4,poliza_nomina,2,,3,si,CFF art. 28; LISR art. 96; NIF D-3 (referencia)
+R-156,Póliza tipo: entero al SAT del ISR y del IVA retenidos (banco o caja),CRITERIO,4,poliza_entero_retenciones,3,,4,si,LIVA art. 1-A y 5 fr. IV; CFF art. 28; NIF C-19 (referencia)
+R-157,Póliza tipo: acreditamiento del IVA retenido y enterado (declaración siguiente),CRITERIO,4,poliza_acreditamiento_iva_retenido,4,,2,si,LIVA art. 5 fr. IV; CFF art. 28
+R-16,Retenciones de IVA,OK,1,retencion_iva,2,IVA_RET_DOS_TERCIOS;IVA_RET_SERV_ESPECIALIZADOS;IVA_RET_AUTOTRANSPORTE,2,si,
+R-160,"Plataformas digitales (625): retención de ISR e IVA, pago definitivo y sin RFC",NUEVA,3,isr_plataformas,10,PLATAFORMAS_ISR_PF_TABLA;PLATAFORMAS_ISR_PM_TABLA;PLATAFORMAS_IVA_RET_PCT;PLATAFORMAS_PD_TOPE_ANUAL,5,si,"LISR art. 113-A, 113-B y 113-C; LIVA art. 18-J; LIF 2026 art. 25 fr. VI (texto de la Cámara; sin cotejar con el DOF)"
+R-161,"Declaración anual de personas morales: resultado fiscal, ISR del ejercicio y pagos provisionales acreditables",NUEVA,3,isr_anual_pm,5,ISR_PM_TASA,3,si,"LISR art. 9, 14 y 57 (texto de la Cámara; sin cotejar con el DOF)"
+R-162,Actualización con INPC real (CFF 17-A) y recargos sobre el monto actualizado (CFF 21),NUEVA,2,actualizacion_inpc,5,ACTUALIZACION_FACTOR_DECIMALES;RECARGOS_MORA_MENSUAL,2,si,"CFF art. 17-A y 21; INPC del DOF (series/inpc.yaml, cotejado con Banxico)"
+R-163,Código agrupador de cuentas del SAT: catálogo completo (Anexo 24),NUEVA,4,codigo_agrupador,5,CONTA_CODIGO_AGRUPADOR,2,si,"RMF 2026 regla 2.8.1.5 (catálogo de cuentas con código agrupador, Anexo 24 apartado A inciso a)); catálogo del SAT de dic-2014, sin cotejar con el Anexo 24 vigente"
+R-164,Conceptos de las pólizas tipo apuntados al código agrupador del SAT,CRITERIO,4,agrupador_de_concepto,7,CONTA_CONCEPTO_AGRUPADOR;CONTA_CODIGO_AGRUPADOR,2,si,RMF 2026 regla 2.8.1.5; criterio de las pólizas tipo R-150 a R-157 (sin firma)
+R-165,"Factura global: periodicidades por régimen, cómo se detalla y plazo de emisión",NUEVA,3,factura_global,7,GLOBAL_PERIODICIDAD_POR_REGIMEN;CFDI_GLOBAL_HORAS_MAX,3,si,RMF 2026 regla 2.7.1.21 y 2.7.1.45; CFF art. 29-A (texto del DOF sin revisión humana)
+R-166,Venta de mostrador de menos de $100: no hay que expedir comprobante si no lo piden,NUEVA,3,comprobante_publico_general,3,GLOBAL_COMPROBANTE_MINIMO,1,si,RMF 2026 regla 2.7.1.21 (texto del DOF sin revisión humana)
+R-167,Factura global con pagos parciales o diferidos: qué monto lleva,NUEVA,3,monto_en_global,3,,1,si,RMF 2026 regla 2.7.1.21 (texto del DOF sin revisión humana)
+R-168,RESICO PF: plazo para cancelar su factura global,NUEVA,3,cancelacion_global_resico,4,RESICO_GLOBAL_CANCELACION_MES,3,si,RMF 2026 regla 3.13.29; LISR art. 113-G (texto del DOF sin revisión humana)
+R-169,IVA de los servicios médicos: exento o gravado,NUEVA,3,iva_servicio_medico,5,IVA_EXENTO_PROFESIONES_MEDICAS;IVA_EXENTO_PRESTADORES_MEDICOS,2,si,"LIVA art. 15 fr. XIV; RLIVA art. 41 (texto de la Cámara, sin cotejar con el DOF)"
+R-17,Proporción de IVA acreditable con actividades exentas o no objeto,NUEVA,2,proporcion_iva,5,,4,si,"LIVA art. 5 fr. V incisos c) y d), 4-A, 5-B y 5-C"
+R-170,RESICO PF: retención de 1.25 % cuando factura a una persona moral,NUEVA,3,retencion_resico_pf,5,RESICO_PF_RETENCION_PM,3,si,"LISR art. 113-J y 113-E; RMF 2026 regla 2.7.1.45 (texto de la Cámara y del DOF, sin cotejar)"
+R-171,Póliza tipo: cobro con tarjeta (la terminal deposita neto de comisión),CRITERIO,4,poliza_cobro_terminal,4,,4,si,LIVA art. 5 fr. II; LISR art. 27; CFF art. 28; NIF B-3 (referencia)
+R-18,Saldo a favor solicitado en devolución vs acreditado,OK,2,,0,,0,no,
+R-19,IVA de importaciones (pedimentos),NUEVA,2,,0,,0,no,
+R-20,Provisional 612 con tarifa acumulada oficial,OK,3,isr_art96_acumulada,3,ISR_TARIFA_MENSUAL;ISR_TARIFA_ACUMULADA_106;ISR_TARIFA_ANUAL,1,si,LISR art. 106; Anexo 8 RMF 2026 apartado B fr. VI (PDF oficial)
+R-21,Provisional 606 arrendamiento,CORREGIR,3,,0,ARREND_DEDUCCION_CIEGA_PCT;ARREND_TRIMESTRAL_VECES_UMA;ISR_RET_ARRENDAMIENTO_PM;ISR_TARIFA_MENSUAL;UMA_MENSUAL,0,no,
+R-22,RESICO PF pago mensual,OK,1,resico_pf_mensual,4,RESICO_PF_TABLA;RESICO_PF_TOPE_ANUAL;RESICO_PF_RETENCION_PM,2,si,
+R-23,RESICO PM provisional,REVISAR,3,,0,ISR_PM_TASA;RESICO_PM_TOPE_ANUAL,0,no,
+R-24,601 provisional con coeficiente de utilidad,REVISAR,3,,0,ISR_PM_TASA,0,no,
+R-25,605 / deducciones personales,OK,1,tope_deducciones_personales,2,DED_PERS_VECES_UMA_ANUAL;DED_PERS_PCT_INGRESO;UMA_ANUAL,1,si,
+R-26,Tarifa art. 96 y UMA 2026,CORREGIR,1,isr_art96_mensual,6,ISR_TARIFA_MENSUAL;UMA_DIARIA;UMA_MENSUAL;UMA_ANUAL,2,si,
+R-27,Vencimiento día 17 y días extra por sexto dígito del RFC,LISTO_FIRMA,2,dias_extra_sexto_digito,3,DIA_VENCIMIENTO_MENSUAL;DIAS_EXTRA_SEXTO_DIGITO,4,si,
+R-28,625 plataformas y 621,REVISAR,3,,0,,0,no,
+R-30,DIOT: layout y criterio de pagado,LISTO_FIRMA,2,diot_renglon,1,DIOT_NUM_CAMPOS;DIOT_LAYOUT_2025,1,si,
+R-31,DIOT: no acreditable y 69-B,OK,1,,0,,0,no,
+R-32,DIOT: tipo de tercero y tipo de operación,CORREGIR,2,,0,,0,no,
+R-40,Sugerencia de deducible,CRITERIO,2,,0,,0,no,
+R-41,EFOS 69-B,OK,1,,0,,0,no,
+R-50,Conciliar 1 movimiento ↔ 1 CFDI,OK,1,,0,,0,no,
+R-51,Cuadre de saldos del estado de cuenta,OK,1,,0,,0,no,
+R-52,Dólares y tipo de cambio,OK,2,tipo_cambio_dof_anterior,4,TIPO_CAMBIO_REGLA;BANXICO_SERIE_TC_CFF20,1,si,"CFF art. 20, tercer párrafo; Banxico SIE SF43718 y SF60653"
+R-53,Depósito sin CFDI / pago sin CFDI,OK,2,,0,,0,no,
+R-54,Clasificación de movimientos por cliente,CRITERIO,2,,0,,0,no,
+R-60,Póliza de diario por CFDI,OK,2,,0,,0,no,
+R-61,Pólizas Ig/Eg por banco,OK,2,,0,,0,no,
+R-62,Efectivo a Caja,OK,1,,0,,0,no,
+R-63,Póliza cuadra y lleva UUID/RFC,OK,1,,0,,0,no,
+R-64,Catálogo con código agrupador SAT,CRITERIO,2,,0,,0,no,
+R-65,"Saldos iniciales, depreciación, provisión de impuestos",FALTA,3,,0,,0,no,
+R-70,Estado de resultados,REVISAR,3,,0,,0,no,
+R-71,Flujo de efectivo,OK,1,,0,,0,no,
+R-72,Balance,REVISAR,3,,0,,0,no,
+R-73,Depreciación,REVISAR,3,,0,AUTO_TOPE_DEDUCCION,0,no,
+R-74,Inventarios y costo de ventas,REVISAR,3,,0,,0,no,
+R-75,ISR estimado PM en estados financieros,CORREGIR,1,,0,ISR_PM_TASA,0,no,
+R-76,Listo para presentar,OK,1,,0,,0,no,
+R-80,Parámetros de nómina con vigencia por fecha de pago,REVISAR,4,,0,,0,no,
+R-81,SDI y factor de integración,OK,1,parametro,1,FACTOR_INTEGRACION_PRIMER_ANIO;SBC_TOPE_VECES_UMA;UMA_DIARIA,5,si,
+R-82,ISR de nómina y subsidio para el empleo,OK,1,parametro,4,ISR_TARIFA_MENSUAL;SUBSIDIO_EMPLEO_MENSUAL;SUBSIDIO_EMPLEO_LIMITE_INGRESO;DIAS_POR_MES_SM,1,si,
+R-83,"Exentos de aguinaldo, prima vacacional y PTU",OK,1,exento_veces_uma,1,EXENTO_AGUINALDO_VECES_UMA;EXENTO_PRIMA_VAC_VECES_UMA;EXENTO_PTU_VECES_UMA;UMA_DIARIA,1,si,
+R-84,Cuotas IMSS obrero-patronales,CORREGIR,4,,0,PRIMA_RIESGO_INICIAL_POR_CLASE;PRIMA_RIESGO_MINIMA;PRIMA_RIESGO_MAXIMA,0,no,
+R-85,Infonavit,REVISAR,4,,0,,0,no,
+R-86,Asimilados,OK,1,,0,,0,no,
+R-87,"Ajuste anual, finiquito, SUA/IDSE, ISN, póliza de nómina",FALTA,4,,0,,0,no,
+R-90,Validaciones antes de timbrar y cancelación,LISTO_FIRMA,2,,0,CFDI_CANCELACION_MES_LIMITE_PM;CFDI_CANCELACION_MES_LIMITE_PF;RESICO_PF_RETENCION_PM;REP_DIA_LIMITE;CFDI_EMISION_HORAS_MAX,0,no,
