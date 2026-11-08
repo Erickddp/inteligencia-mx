@@ -1,0 +1,146 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "f188511f190430f27496f18da525ca5bd25919b38d279febc2baea331934f870",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "8f527e4519fb085cc91a46a8b1459ad07e37327233d55ab7f818d0808787e731",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "56bea3f38027acc0c539cbce16490157051792ad017b3030408fccf74191ebed",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "17922ca0b87e3da40600a0e0254f4563ab1502144bfa66371ae20cf40ec02a1a",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo II · PRINCIPIOS RECTORES DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "d381fb900f6966e1f585c0874542d2fad566a84398e7c64589f0d44be00a3d14",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo II · PRINCIPIOS RECTORES DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "e0aa18e79d9b67c3cd882df85afc0fcd79f80b1a9a33f7881716142c51e310d7",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo II · PRINCIPIOS RECTORES DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "47f6ed52655a211ae4d45e66e048b7d08be44d577eab48c02646723986872408",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo II · PRINCIPIOS RECTORES DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "f69aa3973a8eed955ba770589f0f98f09992a4cdc7680a404700373be3c6599e",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo II · PRINCIPIOS RECTORES DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "327952d188f530ff3a2ed8b796d77b539167d419674f73b496022548fc43a00c",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo II · PRINCIPIOS RECTORES DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "0179ada38355cba2c9a3b3f29b44d9450fc30976edbba84925bc29c45ec18364",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo II · PRINCIPIOS RECTORES DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "86766cedb4c2b473d43969bf623356ebb6ea051dc066311e3ea6c23b778d3609",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo II · PRINCIPIOS RECTORES DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "c739c58f8570be1afac3122219a59bfb686eab116bba2c52734018bc60db8faa",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo II · PRINCIPIOS RECTORES DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "7fdc87501742fc58179d50613ea05f4b25fe3a4a1d6be61960fccb4574b7f2c4",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo III · VALORES DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "b81a691ca8dc354c6accf378c675d4a107a6765264c2f8f9c8865487e45f6aa0",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo III · VALORES DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "73daa38b17da39b811ea44effbb6e9c511dda883aba2e2d07d11eea0b268289d",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo III · VALORES DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "e8c28fc8edd7638663e2fcdf7190d50f6c5b2ca408e95dbce59239cd2a05ee38",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo III · VALORES DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "b63e8dbd2fc609153bc157878f00e155a1d49def52e4eef2f2dd465279467147",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo III · VALORES DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "383145ec9c02820fb0815bec19ac685d5659bab7ad526cd1cb6d7c0a8d33226c",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo IV · COMPROMISOS DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "40bc5299a8427f8322c3b3b0e81139125e1594f068475a29455ad770bccb8359",
+  "ubicacion": "Título PRIMERO · LA ÉTICA DEL SERVICIO PÚBLICO / Capítulo V · REGLAS DE INTEGRIDAD",
+  "derogado": false
+ },
+ "20": {
+  "archivo": "articulos/art-0020.md",
+  "sha256": "b079aeda4ba33a8a2088eb1898c473dd287109ef82d94639307577efe6bbf9e1",
+  "ubicacion": "Titulo SEGUNDO · OBLIGACIONES INSTITUCIONALES E IMPLEMENTACIÓN / Capítulo I · OBLIGACIONES INSTITUCIONALES",
+  "derogado": false
+ },
+ "21": {
+  "archivo": "articulos/art-0021.md",
+  "sha256": "5374b5ae26e7ea0a99c92ea13cf2848a8295177d83a3c7afc5ff32644b6ed5c3",
+  "ubicacion": "Titulo SEGUNDO · OBLIGACIONES INSTITUCIONALES E IMPLEMENTACIÓN / Capítulo II · IMPLEMENTACIÓN DEL CÓDIGO DE ÉTICA",
+  "derogado": false
+ },
+ "22": {
+  "archivo": "articulos/art-0022.md",
+  "sha256": "c19620facc7dd0ebb1378355a45789e2f22483cda8c975a366f899f855e0cdab",
+  "ubicacion": "Titulo SEGUNDO · OBLIGACIONES INSTITUCIONALES E IMPLEMENTACIÓN / Capítulo II · IMPLEMENTACIÓN DEL CÓDIGO DE ÉTICA",
+  "derogado": false
+ },
+ "23": {
+  "archivo": "articulos/art-0023.md",
+  "sha256": "6b696df159ca3898c35f918af3deecd31ff1c6ff7cc5c999245344044c6242ee",
+  "ubicacion": "Titulo SEGUNDO · OBLIGACIONES INSTITUCIONALES E IMPLEMENTACIÓN / Capítulo II · IMPLEMENTACIÓN DEL CÓDIGO DE ÉTICA",
+  "derogado": false
+ },
+ "24": {
+  "archivo": "articulos/art-0024.md",
+  "sha256": "9d6b9647e494a7b9a3002327e68b1f606fa9ad23ebce18833536dc61e73e0008",
+  "ubicacion": "Titulo SEGUNDO · OBLIGACIONES INSTITUCIONALES E IMPLEMENTACIÓN / Capítulo II · IMPLEMENTACIÓN DEL CÓDIGO DE ÉTICA",
+  "derogado": false
+ }
+}

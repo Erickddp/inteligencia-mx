@@ -1,0 +1,2870 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "0ba07995fb89b925b905cbe5867557bedcb12aebf592c910eb814fe065a46510",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "98b15c9b1388e77fc9f55a51d13e1dc94ffc560b82be31b272f6033552105abe",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "8db9c937ca0bb203623edcfc68a3335920f6ed2b9de59abdcb7fc9696d1eb69b",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "771869edc330f0d530c27a61d9f56156c1423c893fb4cc05bac8406fceb7a5e1",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "0fd9b2aec223cea46b1774ca2d8fcc9848808b308f35901eaa776959de4012d1",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "270409e8420a90c7232d73b1dd56d6f889144b75bacbd2a10eb96e3795f0dd2f",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "f6bb6b2eec6650801fadca8607d10cf508efbe7f8771c8245e6b1c3bf627bb23",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título PRIMERO · LA LEY PENAL / Capítulo I · APLICACIÓN ESPACIAL DE LA LEY",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "f038a217423a39997c308a56737ba7f14f4dfbc896843d87daa3593b4eca56c6",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título PRIMERO · LA LEY PENAL / Capítulo I · APLICACIÓN ESPACIAL DE LA LEY",
+  "derogado": false
+ },
+ "8-bis": {
+  "archivo": "articulos/art-0008-bis.md",
+  "sha256": "d8a29b88367a2c88f68fe9d78129014b671f0fa85637b18904a4e5829ea2d928",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título PRIMERO · LA LEY PENAL / Capítulo I · APLICACIÓN ESPACIAL DE LA LEY",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "71dcc0dd52bd34130e3a4984fdbf6199ae6b29792c52610cba277497f33360ea",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título PRIMERO · LA LEY PENAL / Capítulo II · APLICACIÓN TEMPORAL DE LA LEY",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "5c2228cf342d4d7e4ffd76e7f1575874abee010aa4fd7581a7064edec7b5f085",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título PRIMERO · LA LEY PENAL / Capítulo II · APLICACIÓN TEMPORAL DE LA LEY",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "7204c289f4b79a67c9d4fddedb59d20e4e26f30f4ad82f1304aa679ca466ae15",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título PRIMERO · LA LEY PENAL / Capítulo II · APLICACIÓN TEMPORAL DE LA LEY",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "08c46102b8a121cb2e02919657cdf0f9fc953bb600937d57becb5eaa4bac30c7",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título PRIMERO · LA LEY PENAL / Capítulo III · APLICACIÓN PERSONAL DE LA LEY",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "9eab2e531a32cd258e32da515875f2e5cd2ca7179bdec622e43ded43b8ad0cbf",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título PRIMERO · LA LEY PENAL / Capítulo IV · CONCURSO APARENTE DE NORMAS",
+  "derogado": false
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "26e721b5c6d968f97595ef1cddc7bdb88451622978437ca6c121b8a0a582cbbb",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título PRIMERO · LA LEY PENAL / Capítulo V · LEYES ESPECIALES",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "549a4b7ff1b6ac0fe798966fa0e42b02dd1493c597683df2c80e458132a36cee",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo I · FORMAS DE COMISIÓN",
+  "derogado": false
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "6ec80bccb66fcb87e34e7e91249bd3ccde59246a683584b6a95df5267511f21f",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo I · FORMAS DE COMISIÓN",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "5ce35adaca569e32523a0c69e5200caf492d3fb4a8a3875d23e73a767c6b14cc",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo I · FORMAS DE COMISIÓN",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "897426456f93765a5c170e3bdddaaba31e01bcce0f9579e331d74ab333b54b14",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo I · FORMAS DE COMISIÓN",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "79657ca49696a6b544cccb5657dfddd47526907efdbfe183c2947493ab2de2d3",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo I · FORMAS DE COMISIÓN",
+  "derogado": false
+ },
+ "20": {
+  "archivo": "articulos/art-0020.md",
+  "sha256": "1f10a09fcd1532b3348738bf06b027b020696044e0220abc7236ee98ea5a933a",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo II · TENTATIVA",
+  "derogado": false
+ },
+ "21": {
+  "archivo": "articulos/art-0021.md",
+  "sha256": "1f898f54886747a908f9718c8cb882a28258c33e00657ecf61bbf9b37be9f5cf",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo II · TENTATIVA",
+  "derogado": false
+ },
+ "22": {
+  "archivo": "articulos/art-0022.md",
+  "sha256": "2c9d819cd0750be449d3c690a3d8cb80398aeefafff8bf93fe2c206ff39e3b00",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo III · AUTORÍA Y PARTICIPACIÓN",
+  "derogado": false
+ },
+ "23": {
+  "archivo": "articulos/art-0023.md",
+  "sha256": "e3089d1e4af667202d95ba0fcb59760074dd9c6c5e2afa3f7386168f2fc15b5a",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo III · AUTORÍA Y PARTICIPACIÓN",
+  "derogado": false
+ },
+ "24": {
+  "archivo": "articulos/art-0024.md",
+  "sha256": "20e9ab4c237a22d11d080515db34e0ba3032c0d6fd4eace2c4b12a056a1eadaf",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo III · AUTORÍA Y PARTICIPACIÓN",
+  "derogado": false
+ },
+ "25": {
+  "archivo": "articulos/art-0025.md",
+  "sha256": "f9c5e0e0347f63ba89bd7064c0fa3e5283b4870648eb80f6a63b9fa1153ab9cd",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo III · AUTORÍA Y PARTICIPACIÓN",
+  "derogado": false
+ },
+ "26": {
+  "archivo": "articulos/art-0026.md",
+  "sha256": "7fd06db773f7d2e594ed9b8e9ed2ec3045ea8658f8470ba2bf3e7ca78b9a64b4",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo III · AUTORÍA Y PARTICIPACIÓN",
+  "derogado": false
+ },
+ "27": {
+  "archivo": "articulos/art-0027.md",
+  "sha256": "886c4fde61570f704bcf789473ea14caa1f8facca0b1059b5449b1e0dd6b8147",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo III · AUTORÍA Y PARTICIPACIÓN",
+  "derogado": false
+ },
+ "27-bis": {
+  "archivo": "articulos/art-0027-bis.md",
+  "sha256": "7a9ffb00b53c32281fbbf67927574728772658d5c6ce8a82d6d0983053f0c857",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo III · AUTORÍA Y PARTICIPACIÓN",
+  "derogado": false
+ },
+ "27-ter": {
+  "archivo": "articulos/art-0027-ter.md",
+  "sha256": "367f40c70b2ac5553686ae44b8828a70d46cd8f7c49f5459490f37db2582baad",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo III · AUTORÍA Y PARTICIPACIÓN",
+  "derogado": false
+ },
+ "27-quater": {
+  "archivo": "articulos/art-0027-quater.md",
+  "sha256": "2de0f6a31470347f37914a6ea3826ee224d98cb9a4381703e5c050289da01142",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo III · AUTORÍA Y PARTICIPACIÓN",
+  "derogado": false
+ },
+ "27-quintus": {
+  "archivo": "articulos/art-0027-quintus.md",
+  "sha256": "72624ee4181b32bef8c0c4a491654955450c9367b8dc514d3a8e5ea1868816dc",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo III · AUTORÍA Y PARTICIPACIÓN",
+  "derogado": false
+ },
+ "28": {
+  "archivo": "articulos/art-0028.md",
+  "sha256": "f2d67acd2fa4d6d82866bd36375ac7d98025f7ce86914e823b8b7325b77628a1",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo IV · CONCURSO DE DELITOS",
+  "derogado": false
+ },
+ "29": {
+  "archivo": "articulos/art-0029.md",
+  "sha256": "ca7464d340e302e3ab079a122aa4c0f2329b8b3872368dd2a8b32b2b9810208a",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo V · CAUSAS DE EXCLUSIÓN DEL DELITO",
+  "derogado": false
+ },
+ "29-bis": {
+  "archivo": "articulos/art-0029-bis.md",
+  "sha256": "35c4e13427695dea40b71c22afc11e8e32336609e80efbe81fd6d059196c42b2",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo V · CAUSAS DE EXCLUSIÓN DEL DELITO",
+  "derogado": false
+ },
+ "29-ter": {
+  "archivo": "articulos/art-0029-ter.md",
+  "sha256": "aa7b38d2b7449a7840f05f69716e9d7f571e63cf10ee63253468d2f616466f79",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · EL DELITO / Capítulo V · CAUSAS DE EXCLUSIÓN DEL DELITO",
+  "derogado": false
+ },
+ "30": {
+  "archivo": "articulos/art-0030.md",
+  "sha256": "bb6cc9808423cc280569bb9478b415384ca2a5ca6980011965054fb6ed9c9d16",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo I · CATÁLOGO DE PENAS Y MEDIDAS DE SEGURIDAD Y DE CONSECUENCIAS JURÍDICAS PARA LAS PERSONAS MORALES",
+  "derogado": false
+ },
+ "31": {
+  "archivo": "articulos/art-0031.md",
+  "sha256": "c8b36285510e9ee4d3d87c661da7ce2476577c8b2be50f6daa3920f532bf915c",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo I · CATÁLOGO DE PENAS Y MEDIDAS DE SEGURIDAD Y DE CONSECUENCIAS JURÍDICAS PARA LAS PERSONAS MORALES",
+  "derogado": false
+ },
+ "32": {
+  "archivo": "articulos/art-0032.md",
+  "sha256": "8be0fe20a19917c22382f8ae3497852a4be56421e533ec73baed837da751ff3a",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo I · CATÁLOGO DE PENAS Y MEDIDAS DE SEGURIDAD Y DE CONSECUENCIAS JURÍDICAS PARA LAS PERSONAS MORALES",
+  "derogado": false
+ },
+ "33": {
+  "archivo": "articulos/art-0033.md",
+  "sha256": "168d3bb77d6ee5e1cc045321117c2b2802dfbcf692456f1e0f6491d0ec83dabc",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo II · PRISIÓN",
+  "derogado": false
+ },
+ "34": {
+  "archivo": "articulos/art-0034.md",
+  "sha256": "14322546c9c807c2b29f5b643a5ee7a29416410986913b74b7c9766af4b7a2d2",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo III · TRATAMIENTO EN LIBERTAD DE IMPUTABLES",
+  "derogado": false
+ },
+ "35": {
+  "archivo": "articulos/art-0035.md",
+  "sha256": "07abdc1c6029eddb4584cff1d8d29a764effd51b4f9c332f44a9c7359dc902e4",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo IV · SEMILIBERTAD",
+  "derogado": false
+ },
+ "36": {
+  "archivo": "articulos/art-0036.md",
+  "sha256": "b2520cd8bc83cad22610ef554b8c01fa88585d4ce01c9227d9d17fc1cbac8461",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo V · TRABAJO A FAVOR DE LA VÍCTIMA O A FAVOR DE LA COMUNIDAD",
+  "derogado": false
+ },
+ "37": {
+  "archivo": "articulos/art-0037.md",
+  "sha256": "58e79bb635af293bb3365ee5e563bbffd66074c1a72926c4c7660a686441317c",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VI · SANCIÓN PECUNIARIA",
+  "derogado": false
+ },
+ "38": {
+  "archivo": "articulos/art-0038.md",
+  "sha256": "98fbba8844d08c4be8e08b68c28303118e0a36f505d44767e05f3d88f1e3b365",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VI · SANCIÓN PECUNIARIA",
+  "derogado": false
+ },
+ "38-bis": {
+  "archivo": "articulos/art-0038-bis.md",
+  "sha256": "f0cad91dfd9bca0ec4985ea2a399120c8f832adf7847b7aca2bb7f3fb93fc87a",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VI · SANCIÓN PECUNIARIA",
+  "derogado": false
+ },
+ "39": {
+  "archivo": "articulos/art-0039.md",
+  "sha256": "3da83a629e0fec90f9205ac29e1ac68a140d537997c3f6a70d43e2d774b61e13",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VI · SANCIÓN PECUNIARIA",
+  "derogado": false
+ },
+ "40": {
+  "archivo": "articulos/art-0040.md",
+  "sha256": "d43d7b02d24490e09a29cb60217692d005b0fafd003607fe542e1df9b3c77ec4",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VI · SANCIÓN PECUNIARIA",
+  "derogado": false
+ },
+ "41": {
+  "archivo": "articulos/art-0041.md",
+  "sha256": "b69177845a85db1d024fbaede31c16bbdac264dd0c0e648eab93bd48061ea664",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VI · SANCIÓN PECUNIARIA",
+  "derogado": false
+ },
+ "42": {
+  "archivo": "articulos/art-0042.md",
+  "sha256": "4e4fa56bee18a861681ef58d7b0857d64d39d5b25e5c3d6563c9865bab8888cd",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VI · SANCIÓN PECUNIARIA",
+  "derogado": false
+ },
+ "43": {
+  "archivo": "articulos/art-0043.md",
+  "sha256": "2edf07ae536777d5391cbb8ddfde85aab654da46d923ea634ff00525d8ac8b8d",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VI · SANCIÓN PECUNIARIA",
+  "derogado": false
+ },
+ "44": {
+  "archivo": "articulos/art-0044.md",
+  "sha256": "3e677143f39f8778fb0e80539f42f1837439154419dd999ae36a35c4c64b13a5",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VI · SANCIÓN PECUNIARIA",
+  "derogado": false
+ },
+ "45": {
+  "archivo": "articulos/art-0045.md",
+  "sha256": "10fb646611cc21552d0e1af0040bdab587b46e094f88d8d0de71104d35dc8d90",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VI · SANCIÓN PECUNIARIA",
+  "derogado": false
+ },
+ "46": {
+  "archivo": "articulos/art-0046.md",
+  "sha256": "5671b91dc07699a91da8e2d245fee8a2261b2726009100190f3a1c5b6b48189d",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VI · SANCIÓN PECUNIARIA",
+  "derogado": false
+ },
+ "47": {
+  "archivo": "articulos/art-0047.md",
+  "sha256": "42e425fdb3a9534c800e0f85706d23b2a1f639818d018be834399acbda819379",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VI · SANCIÓN PECUNIARIA",
+  "derogado": false
+ },
+ "48": {
+  "archivo": "articulos/art-0048.md",
+  "sha256": "c556159e4a1f4f227c5cbe4b840eb15ea5245c42986f9207cc031e2f73f2813f",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VI · SANCIÓN PECUNIARIA",
+  "derogado": false
+ },
+ "49": {
+  "archivo": "articulos/art-0049.md",
+  "sha256": "8284040fa32daf5acef811b9fa371a6a6dd9dd847f58fab52094a1a6266eadcc",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VI · SANCIÓN PECUNIARIA",
+  "derogado": false
+ },
+ "50-bis": {
+  "archivo": "articulos/art-0050-bis.md",
+  "sha256": "0138a56a24bb29983876a96320c45387663debd05401cb7c4deb94469d4291f3",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VI · SANCIÓN PECUNIARIA",
+  "derogado": false
+ },
+ "51": {
+  "archivo": "articulos/art-0051.md",
+  "sha256": "ae3df0e52d81746412b7b17ddce4c7392fc39fdd09a16f3ab3e46632ea3406d2",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VI · SANCIÓN PECUNIARIA",
+  "derogado": false
+ },
+ "52": {
+  "archivo": "articulos/art-0052.md",
+  "sha256": "df1a457d130f342aacdafb5ea01a8be8e06c4367240768c88a40a204550f80f0",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VI · SANCIÓN PECUNIARIA",
+  "derogado": false
+ },
+ "53": {
+  "archivo": "articulos/art-0053.md",
+  "sha256": "d2cd0494f35215b31e6fedd3b3dab48f41d5df47ba3c0ce17334b0bd41c4b541",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capitulo VII · ASEGURAMIENTO Y DECOMISO DE INSTRUMENTOS, OBJETOS Y PRODUCTOS DEL DELITO",
+  "derogado": false
+ },
+ "54": {
+  "archivo": "articulos/art-0054.md",
+  "sha256": "ae7f40339cfa75160f583ab1391dd1d4bca3d8094aab87a730e9795b817091a6",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capitulo VII · ASEGURAMIENTO Y DECOMISO DE INSTRUMENTOS, OBJETOS Y PRODUCTOS DEL DELITO",
+  "derogado": false
+ },
+ "55": {
+  "archivo": "articulos/art-0055.md",
+  "sha256": "63a0e7e0c44cf9834541d6e0a63fa880f32ffb5dd05a56aab025a1cff57b5712",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capitulo VII · ASEGURAMIENTO Y DECOMISO DE INSTRUMENTOS, OBJETOS Y PRODUCTOS DEL DELITO",
+  "derogado": false
+ },
+ "56": {
+  "archivo": "articulos/art-0056.md",
+  "sha256": "38f3a9332ea5224116129d61020016c71242e21edd606a694733e960674292dc",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VIII · SUSPENSIÓN O PRIVACIÓN DE DERECHOS, DESTITUCIÓN E INHABILITACIÓN PARA EL DESEMPEÑO DE CARGOS, COMISIONES O EMPLEOS",
+  "derogado": false
+ },
+ "57": {
+  "archivo": "articulos/art-0057.md",
+  "sha256": "0057e36f68d9048c4f7a9bac91001a0a6071fbbde3493c2be1aab0888bb32c16",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VIII · SUSPENSIÓN O PRIVACIÓN DE DERECHOS, DESTITUCIÓN E INHABILITACIÓN PARA EL DESEMPEÑO DE CARGOS, COMISIONES O EMPLEOS",
+  "derogado": false
+ },
+ "58": {
+  "archivo": "articulos/art-0058.md",
+  "sha256": "b114e3d980679ce2e24f75987fbfb0dddb8bec84de9db6cd888fa78a34ebcde0",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VIII · SUSPENSIÓN O PRIVACIÓN DE DERECHOS, DESTITUCIÓN E INHABILITACIÓN PARA EL DESEMPEÑO DE CARGOS, COMISIONES O EMPLEOS",
+  "derogado": false
+ },
+ "59": {
+  "archivo": "articulos/art-0059.md",
+  "sha256": "c88bea0ba5b4eb0ee7c84b4f0c72dc21667746066486b4040700881037b8f278",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo VIII · SUSPENSIÓN O PRIVACIÓN DE DERECHOS, DESTITUCIÓN E INHABILITACIÓN PARA EL DESEMPEÑO DE CARGOS, COMISIONES O EMPLEOS",
+  "derogado": false
+ },
+ "60": {
+  "archivo": "articulos/art-0060.md",
+  "sha256": "35d73d948bb2e2adc17d2aebf76500dc74ab74776efe4f9b084cab700c123103",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo IX · SUPERVISIÓN DE LA AUTORIDAD",
+  "derogado": false
+ },
+ "61": {
+  "archivo": "articulos/art-0061.md",
+  "sha256": "432f27fe82b9b3395fa8e3f5998867a7b6004e47c81a8652c10aeda4714f4509",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo X · PROHIBICIÓN DE IR A UN LUGAR DETERMINADO O RESIDIR EN ÉL",
+  "derogado": false
+ },
+ "62": {
+  "archivo": "articulos/art-0062.md",
+  "sha256": "9d58f36e4594c66028dea5b58c71c68eab9fe03a6123c7fab632d7037e411995",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo XI · TRATAMIENTO DE INIMPUTABLES O DE IMPUTABLES DISMINUIDOS",
+  "derogado": false
+ },
+ "63": {
+  "archivo": "articulos/art-0063.md",
+  "sha256": "f15c0669a60ca11f5854b9740c479fa2c795a8e4345714c9c1276dde35af63bb",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo XI · TRATAMIENTO DE INIMPUTABLES O DE IMPUTABLES DISMINUIDOS",
+  "derogado": false
+ },
+ "64": {
+  "archivo": "articulos/art-0064.md",
+  "sha256": "e6207e3ec0624c49f8e30b28c30dfab794e9cb2d27249c491211f315fedc1c48",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo XI · TRATAMIENTO DE INIMPUTABLES O DE IMPUTABLES DISMINUIDOS",
+  "derogado": false
+ },
+ "65": {
+  "archivo": "articulos/art-0065.md",
+  "sha256": "65d2faa589627e9534358b854148a31abbef9618df555329051785fa3c32a898",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo XI · TRATAMIENTO DE INIMPUTABLES O DE IMPUTABLES DISMINUIDOS",
+  "derogado": false
+ },
+ "66": {
+  "archivo": "articulos/art-0066.md",
+  "sha256": "016d87cae7324fe18927e85fcb1af055e6bce9ee08315a27a8d38d7f8de3dee7",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo XI · TRATAMIENTO DE INIMPUTABLES O DE IMPUTABLES DISMINUIDOS",
+  "derogado": false
+ },
+ "67": {
+  "archivo": "articulos/art-0067.md",
+  "sha256": "f08a30e51866df49d20f437a072cb8f7baa88acc81f27a460e8dc4b9e5c39e9b",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo XII · TRATAMIENTO DE DESHABITUACIÓN O DESINTOXICACIÓN",
+  "derogado": false
+ },
+ "68": {
+  "archivo": "articulos/art-0068.md",
+  "sha256": "0548c4c99dde0715bb417b0eebadb30a2fd6a93b467ff9c8bfa4ddddc17849ca",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo XIII",
+  "derogado": false
+ },
+ "69": {
+  "archivo": "articulos/art-0069.md",
+  "sha256": "a3c14f471968375d3ac084d6d5496439e1700502b2a19cfaf784ba3a64e370c3",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo XIII",
+  "derogado": false
+ },
+ "69-bis": {
+  "archivo": "articulos/art-0069-bis.md",
+  "sha256": "86280e7f75675520f54c5c08cdd1a6454de104d2965263a6a4e20ea68aa6d297",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capítulo XIV · PROHIBICIÓN DE COMUNICACIÓN CON PERSONA DETERMINADA",
+  "derogado": false
+ },
+ "69-ter": {
+  "archivo": "articulos/art-0069-ter.md",
+  "sha256": "bc4e8bbe5c809ea83ea07ef40395925a3ffad50a72eea23386e5e1fbd6d2d427",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capitulo XV · REGISTRO PÚBLICO DE PERSONAS AGRESORAS SEXUALES",
+  "derogado": false
+ },
+ "69-quater": {
+  "archivo": "articulos/art-0069-quater.md",
+  "sha256": "4e4dfe065dead4d80afd402a4e05282a3308e647dabc4bbdf1cbd4e635345ff7",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · CONSECUENCIAS JURÍDICAS DEL DELITO / Capitulo XV · REGISTRO PÚBLICO DE PERSONAS AGRESORAS SEXUALES",
+  "derogado": false
+ },
+ "70": {
+  "archivo": "articulos/art-0070.md",
+  "sha256": "d1215b04ed9eb53ff29c6d77918e0e5af865a279c2073f996d4964a306955a16",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo I · REGLAS GENERALES",
+  "derogado": false
+ },
+ "71": {
+  "archivo": "articulos/art-0071.md",
+  "sha256": "4535d5fce0559c9e0d3954508d9679270963aa9265b4040421be8007652c7a1b",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo I · REGLAS GENERALES",
+  "derogado": false
+ },
+ "71-bis": {
+  "archivo": "articulos/art-0071-bis.md",
+  "sha256": "12e9bd7d0c56926d554a534be54593351d63f5348c71a3705bea5778c1439aa6",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo I · REGLAS GENERALES",
+  "derogado": false
+ },
+ "71-ter": {
+  "archivo": "articulos/art-0071-ter.md",
+  "sha256": "58115a166b5a177b3f065d76381bb8de9f53a56cc2ca7d694cf1bf1d8fb7972c",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo I · REGLAS GENERALES",
+  "derogado": false
+ },
+ "71-quater": {
+  "archivo": "articulos/art-0071-quater.md",
+  "sha256": "da8b61124291370f8d502cf467dd32f36331cb30f49bfc9108576a571142911c",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo I · REGLAS GENERALES",
+  "derogado": false
+ },
+ "72": {
+  "archivo": "articulos/art-0072.md",
+  "sha256": "f39a74b18292008376f2d390b327ec2a117eb3696962bbdb456469cdb8a3f382",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo I · REGLAS GENERALES",
+  "derogado": false
+ },
+ "72-bis": {
+  "archivo": "articulos/art-0072-bis.md",
+  "sha256": "8aad844c21db44c5598bb65051eccacd1463811d179d88d2955028ad6d78ea8d",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo I · REGLAS GENERALES",
+  "derogado": false
+ },
+ "73": {
+  "archivo": "articulos/art-0073.md",
+  "sha256": "1723f0504929114cf08d9c8a09b0c84c37e12a4d569317c2190904a512109aac",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo I · REGLAS GENERALES",
+  "derogado": false
+ },
+ "74": {
+  "archivo": "articulos/art-0074.md",
+  "sha256": "de52e0fd51e8885f4a69a5da620169a31fff3e0d067b94c604d471e5fb991f29",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo I · REGLAS GENERALES",
+  "derogado": false
+ },
+ "75": {
+  "archivo": "articulos/art-0075.md",
+  "sha256": "3ae5da68711f231de10498fd2559e53adf66e2dd89a521560eb1753f9f7d5030",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo I · REGLAS GENERALES",
+  "derogado": false
+ },
+ "75-bis": {
+  "archivo": "articulos/art-0075-bis.md",
+  "sha256": "50daf1f77b5cf218f2e1fa6845d5bba98c47e86d62f68752bb93c36da306f8bc",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo I · REGLAS GENERALES",
+  "derogado": false
+ },
+ "76": {
+  "archivo": "articulos/art-0076.md",
+  "sha256": "0c655bb9b41996a25dec1b097ef93d6b87a91387c701c8b5bd166d1c172fc39e",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo II · PUNIBILIDAD DE LOS DELITOS CULPOSOS",
+  "derogado": false
+ },
+ "77": {
+  "archivo": "articulos/art-0077.md",
+  "sha256": "2a4bb2cc302e4869c6b06a51b3c5a97f916ee1550b41ed365d4763dd83b86b55",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo II · PUNIBILIDAD DE LOS DELITOS CULPOSOS",
+  "derogado": false
+ },
+ "78": {
+  "archivo": "articulos/art-0078.md",
+  "sha256": "a24aadc82a7b9c7579654551aa8689750ba5fcfc0a87db4817bea83ca2effe00",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo III · PUNIBILIDAD DE LA TENTATIVA",
+  "derogado": false
+ },
+ "79": {
+  "archivo": "articulos/art-0079.md",
+  "sha256": "9bbbe23d235ff465d4120e1d9fc0303c8e163500cb09ff7b6a34c95faeb16fd5",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo IV · PUNIBILIDAD EN EL CASO DE CONCURSO DE DELITOS Y DELITO CONTINUADO",
+  "derogado": false
+ },
+ "80": {
+  "archivo": "articulos/art-0080.md",
+  "sha256": "5ef70d62f99fd5204bcc0d0b59dae0d17e13035ad5bc941e06101c6945b2bdbb",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo IV · PUNIBILIDAD EN EL CASO DE CONCURSO DE DELITOS Y DELITO CONTINUADO",
+  "derogado": false
+ },
+ "81": {
+  "archivo": "articulos/art-0081.md",
+  "sha256": "42ff16181340d03e557619ba45cbf6e9e87dade61fa0dbbba694501fe2435ebd",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo V · PUNIBILIDAD DE LA COMPLICIDAD, AUXILIO EN CUMPLIMIENTO",
+  "derogado": false
+ },
+ "82": {
+  "archivo": "articulos/art-0082.md",
+  "sha256": "970c2fe0e75fd565fe2444cc619f1d0f6d3553ade7f25adeec8886ed6c83261e",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo V · PUNIBILIDAD DE LA COMPLICIDAD, AUXILIO EN CUMPLIMIENTO",
+  "derogado": false
+ },
+ "83": {
+  "archivo": "articulos/art-0083.md",
+  "sha256": "48532129e1c6926305fe460a387dc39e652e0a0ed05472c05b2cc23965bee3c8",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo VI · ERROR VENCIBLE Y EXCESO EN LAS CAUSAS DE LICITUD",
+  "derogado": false
+ },
+ "84": {
+  "archivo": "articulos/art-0084.md",
+  "sha256": "486abf361d7045bf51a6b2beb3906e71e9c1dac34e0fc8745d4daf633a5457ec",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo VII · SUSTITUCIÓN DE PENAS",
+  "derogado": false
+ },
+ "85": {
+  "archivo": "articulos/art-0085.md",
+  "sha256": "9cf215943ae0446f47e2c74688e2e333815e431d1ec862d39918a803437d55b9",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo VII · SUSTITUCIÓN DE PENAS",
+  "derogado": false
+ },
+ "86": {
+  "archivo": "articulos/art-0086.md",
+  "sha256": "d4ea066ed6d3c11a48760db0ef2d3f8d1ce5cba23e56a4dbf5fd449361530618",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo VII · SUSTITUCIÓN DE PENAS",
+  "derogado": false
+ },
+ "87": {
+  "archivo": "articulos/art-0087.md",
+  "sha256": "5f8c43e77970d23ed1f4ada20c08d2b2805013afa5f6b6e6d217fd1da3d5a789",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo VII · SUSTITUCIÓN DE PENAS",
+  "derogado": false
+ },
+ "88": {
+  "archivo": "articulos/art-0088.md",
+  "sha256": "5541cfb8fb8f8b36d06d36eb093a316bf49b496a3d77c08bbfadc41d57db5ee4",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo VII · SUSTITUCIÓN DE PENAS",
+  "derogado": false
+ },
+ "89": {
+  "archivo": "articulos/art-0089.md",
+  "sha256": "fb49731ce79208f957becf2c1c1893d4fa4961970b39510da30c8e56588feb08",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo VIII · SUSPENSIÓN CONDICIONAL DE LA EJECUCIÓN DE LA PENA",
+  "derogado": false
+ },
+ "90": {
+  "archivo": "articulos/art-0090.md",
+  "sha256": "bc4594dc738594d3877655c358042e6460fcba8a776547eef7fd481f8d832bef",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo VIII · SUSPENSIÓN CONDICIONAL DE LA EJECUCIÓN DE LA PENA",
+  "derogado": false
+ },
+ "91": {
+  "archivo": "articulos/art-0091.md",
+  "sha256": "603e32494115911b2e193cb1cbec05697187e1d0a092b6d41bf5289025689480",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo VIII · SUSPENSIÓN CONDICIONAL DE LA EJECUCIÓN DE LA PENA",
+  "derogado": false
+ },
+ "92": {
+  "archivo": "articulos/art-0092.md",
+  "sha256": "e49cc61569aa3b97c06590efa029785b876527c8a087dafff2ee731cb323e233",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo IX · REGLAS GENERALES PARA LA SUSTITUCIÓN Y SUSPENSIÓN DE SANCIONES",
+  "derogado": false
+ },
+ "93": {
+  "archivo": "articulos/art-0093.md",
+  "sha256": "2b151eca1dd33b36bd2f445c355103ffd43dcbd4a160f999afd13f2e36a38041",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · APLICACIÓN DE PENAS Y MEDIDAS DE SEGURIDAD / Capítulo IX · REGLAS GENERALES PARA LA SUSTITUCIÓN Y SUSPENSIÓN DE SANCIONES",
+  "derogado": false
+ },
+ "94": {
+  "archivo": "articulos/art-0094.md",
+  "sha256": "4a2fcfdad7b86abc9129098e3a941e9a7400e85fbbafc6c94b83f732f3e8f7f0",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo I · REGLAS GENERALES",
+  "derogado": false
+ },
+ "95": {
+  "archivo": "articulos/art-0095.md",
+  "sha256": "69c65c097dc392350f3dba6aa1e020671c42efbe5669d9635f6974e9bc7e9d1e",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo I · REGLAS GENERALES",
+  "derogado": false
+ },
+ "96": {
+  "archivo": "articulos/art-0096.md",
+  "sha256": "0dfe2067456a6ce168947d543200946ec241be937fbfda7a436269587d9e731d",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo I · REGLAS GENERALES",
+  "derogado": false
+ },
+ "97": {
+  "archivo": "articulos/art-0097.md",
+  "sha256": "0106d8adbc8ad0bf98929286751a9b2bedca6f86bd06a69e5cdc2587faec362f",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo II · CUMPLIMIENTO DE LA PENA O MEDIDA DE SEGURIDAD",
+  "derogado": false
+ },
+ "98": {
+  "archivo": "articulos/art-0098.md",
+  "sha256": "a522c4e9ed84fe66227ba2784410c44b7e3229d3a6a2b10e2c9b32e43ecb04f2",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo III · MUERTE DEL INCULPADO O SENTENCIADO",
+  "derogado": false
+ },
+ "99": {
+  "archivo": "articulos/art-0099.md",
+  "sha256": "09a87ca9a240680c531bb6c173b409b0c64c5c789d70d856fe220a11ca9f2533",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo IV · RECONOCIMIENTO DE INOCENCIA",
+  "derogado": false
+ },
+ "100": {
+  "archivo": "articulos/art-0100.md",
+  "sha256": "65effbbe65cb449b8c08b8c5694bdb61c6d8a52e87271805816d0ad98c0f02ec",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo V · PERDÓN QUE OTORGA EL OFENDIDO EN LOS DELITOS DE QUERELLA",
+  "derogado": false
+ },
+ "101": {
+  "archivo": "articulos/art-0101.md",
+  "sha256": "d6e4b2bbd557a13e70deaa1bae5bfba189214645dbbb479d88301d0720c5c579",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo VI · REHABILITACIÓN",
+  "derogado": false
+ },
+ "102": {
+  "archivo": "articulos/art-0102.md",
+  "sha256": "dc393d7cecedee6ffbffefa0d2e7896fa7d497388c73c9c7bf1d32c11d57b984",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo VII · CONCLUSIÓN DEL TRATAMIENTO DE INIMPUTABLES",
+  "derogado": false
+ },
+ "103": {
+  "archivo": "articulos/art-0103.md",
+  "sha256": "e69ac31e74c88b46c2d3af98a6677fac759f1db893dd305dc43d5c2f2f3bfb46",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo VIII · INDULTO",
+  "derogado": false
+ },
+ "104": {
+  "archivo": "articulos/art-0104.md",
+  "sha256": "ee4664dfe516226952f4c97ccca138e4351968386bd42a146cc7887d03ec4538",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo IX · AMNISTÍA",
+  "derogado": false
+ },
+ "105": {
+  "archivo": "articulos/art-0105.md",
+  "sha256": "0e57242196360780360cfa4214b755c4297b7eaa2a8eee30af217de653f3f057",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo X · PRESCRIPCIÓN",
+  "derogado": false
+ },
+ "106": {
+  "archivo": "articulos/art-0106.md",
+  "sha256": "0b085f5249e31dea700c8d13e8af53cfbbdd662ea1bf7edda5ce8e4269fa4de7",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo X · PRESCRIPCIÓN",
+  "derogado": false
+ },
+ "107": {
+  "archivo": "articulos/art-0107.md",
+  "sha256": "de26f636657765c8e1c1a9ad75446affd020c527894d36533c8b1c4adaa417f6",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo X · PRESCRIPCIÓN",
+  "derogado": false
+ },
+ "108": {
+  "archivo": "articulos/art-0108.md",
+  "sha256": "4a551e97ea526c5394c5cfe9d33b9be8197c1ff3df94231bbbaa465b9fb8a82b",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo X · PRESCRIPCIÓN",
+  "derogado": false
+ },
+ "109": {
+  "archivo": "articulos/art-0109.md",
+  "sha256": "fd9f5b77829b1b99c418e020d87f623b0fe9a6fa914dc96d63171fb46dbad680",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo X · PRESCRIPCIÓN",
+  "derogado": false
+ },
+ "110": {
+  "archivo": "articulos/art-0110.md",
+  "sha256": "648bf8c2507861dea62056d52b99ba8c719fec692368c85d38051f1e93ece92b",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo X · PRESCRIPCIÓN",
+  "derogado": false
+ },
+ "111": {
+  "archivo": "articulos/art-0111.md",
+  "sha256": "3657168e07fa8e8396d877b4be3c73b34f21b785c55f5673a62e43fd703ed7c1",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo X · PRESCRIPCIÓN",
+  "derogado": false
+ },
+ "111-bis": {
+  "archivo": "articulos/art-0111-bis.md",
+  "sha256": "a145e5fe63b7f07f3f7ce4330df832ffc1aaa00532f00f77db7e64f8ee31d023",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo X · PRESCRIPCIÓN",
+  "derogado": false
+ },
+ "112": {
+  "archivo": "articulos/art-0112.md",
+  "sha256": "708d2d4ff77a5f733c516b6e8bc5526663e9e66ae80863d035da352a9329dbbf",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo X · PRESCRIPCIÓN",
+  "derogado": false
+ },
+ "113": {
+  "archivo": "articulos/art-0113.md",
+  "sha256": "93b85ee3331b08c415b66328238502c40d13976bc27665f44a5eff6691d48aa4",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo X · PRESCRIPCIÓN",
+  "derogado": false
+ },
+ "114": {
+  "archivo": "articulos/art-0114.md",
+  "sha256": "987dee954c5c004b5c5a64ae02c6f38487bc4bbc1e02f6b503940d0bdec181e5",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo X · PRESCRIPCIÓN",
+  "derogado": false
+ },
+ "115": {
+  "archivo": "articulos/art-0115.md",
+  "sha256": "a8184f4194f256041a4a5baaece102e90ccc2822b4c543500744aca4d836671e",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo X · PRESCRIPCIÓN",
+  "derogado": false
+ },
+ "116": {
+  "archivo": "articulos/art-0116.md",
+  "sha256": "d592e24bb0329d416854941f05bf6046f352301dae21450e82da74c358093994",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo X · PRESCRIPCIÓN",
+  "derogado": false
+ },
+ "117": {
+  "archivo": "articulos/art-0117.md",
+  "sha256": "2f2c14abb37bc6447e7a51d4b83d0afe90be4ab81e6dbc15256a060301bbc1c3",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo X · PRESCRIPCIÓN",
+  "derogado": false
+ },
+ "118": {
+  "archivo": "articulos/art-0118.md",
+  "sha256": "32adb0a6703a2c01d90452f7b6edbe7fdb23e2a72cc4614b950ee90444603086",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo X · PRESCRIPCIÓN",
+  "derogado": false
+ },
+ "119": {
+  "archivo": "articulos/art-0119.md",
+  "sha256": "f28a7157258975da0f237262ef58b3d9b1b7f699b1e53986f9a50412f45680a6",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo X · PRESCRIPCIÓN",
+  "derogado": false
+ },
+ "120": {
+  "archivo": "articulos/art-0120.md",
+  "sha256": "a5ea975adceadce94c12999266dfd1bc58cd566d5d5b18f1a97e0cd9c9098b25",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo X · PRESCRIPCIÓN",
+  "derogado": false
+ },
+ "121": {
+  "archivo": "articulos/art-0121.md",
+  "sha256": "485c650659c84dc0b47645704bd11d522a2a63d2802b6c95725cb0d40a66574b",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo XI · SUPRESIÓN DEL TIPO PENAL",
+  "derogado": false
+ },
+ "122": {
+  "archivo": "articulos/art-0122.md",
+  "sha256": "3c8a717813e2ccdbe0be9f66cf94607bc373e24941ad9fb52fe5877228898aec",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · EXTINCIÓN DE LA PRETENSIÓN PUNITIVA Y DE LA POTESTAD / Capítulo XII · EXISTENCIA DE UNA SENTENCIA ANTERIOR DICTADA EN PROCESO SEGUIDO POR LOS MISMOS HECHOS",
+  "derogado": false
+ },
+ "123": {
+  "archivo": "articulos/art-0123.md",
+  "sha256": "0fff1ec1753c9c1d2703f67749ca397af1ec3cf07253101776618e30dc4a095f",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo I · HOMICIDIO",
+  "derogado": false
+ },
+ "124": {
+  "archivo": "articulos/art-0124.md",
+  "sha256": "8bb63d03364326e428de1091f7c8a783253061109f4bb191525049b5fab19472",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo I · HOMICIDIO",
+  "derogado": false
+ },
+ "125": {
+  "archivo": "articulos/art-0125.md",
+  "sha256": "82af9d5a528514b42422c5d5eeac687251cc63f76b106cb9ab33259ae558f529",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo I · HOMICIDIO",
+  "derogado": false
+ },
+ "125-bis": {
+  "archivo": "articulos/art-0125-bis.md",
+  "sha256": "67d9ef88dd56ccbd234d22d7091d9b7ce4f0c0eab65ec9e4394d8280c9ec6ff9",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo I · HOMICIDIO",
+  "derogado": false
+ },
+ "126": {
+  "archivo": "articulos/art-0126.md",
+  "sha256": "5dc0d99f7b10c8a4d5d25aaa6e38b05c5b9302ef7c0861579e20ca5070a077b6",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo I · HOMICIDIO",
+  "derogado": false
+ },
+ "127": {
+  "archivo": "articulos/art-0127.md",
+  "sha256": "fbf32718ac700aa007f8addc36fd6fbff36839dd36ade239ea774a2da488f3df",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo I · HOMICIDIO",
+  "derogado": false
+ },
+ "128": {
+  "archivo": "articulos/art-0128.md",
+  "sha256": "50a229125944e392433559400fa84bd5c00263523ed20046382f710449fee9d2",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo I · HOMICIDIO",
+  "derogado": false
+ },
+ "129": {
+  "archivo": "articulos/art-0129.md",
+  "sha256": "920c4888dfca57bf5c9b3de0204ca8d5abf43127313e9e36331c62d9eca2fcca",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo I · HOMICIDIO",
+  "derogado": false
+ },
+ "130": {
+  "archivo": "articulos/art-0130.md",
+  "sha256": "791924df8e66299f41b426cfc1f509fbeae580d3da32817ba145b1dafd9487aa",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo II · LESIONES",
+  "derogado": true
+ },
+ "131": {
+  "archivo": "articulos/art-0131.md",
+  "sha256": "68bf8cfa218c5d3b5e6fb4fa21e67db2119166efbfedbebcc46b42b47af98e0d",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo II · LESIONES",
+  "derogado": false
+ },
+ "131-bis": {
+  "archivo": "articulos/art-0131-bis.md",
+  "sha256": "fe56d6d058809f8eb35900135afae9891eb0c3a67d8dfb6f38b83d85c9e7a973",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo II · LESIONES",
+  "derogado": false
+ },
+ "132": {
+  "archivo": "articulos/art-0132.md",
+  "sha256": "f5b9a93a6296d648ec8702b6e7c2b33b5cde2d2255ca75abaf7ff0ac407844ad",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo II · LESIONES",
+  "derogado": false
+ },
+ "133": {
+  "archivo": "articulos/art-0133.md",
+  "sha256": "b64134b973cb96f8a95f34fba64fb5a77ddd47bd064ad17fe7e1ee0c637701c6",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo II · LESIONES",
+  "derogado": false
+ },
+ "134": {
+  "archivo": "articulos/art-0134.md",
+  "sha256": "3271c6aeba3d1933d85e0fac6df49e6c69457db576517613b87139c8bb9dc2b0",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo II · LESIONES",
+  "derogado": false
+ },
+ "135": {
+  "archivo": "articulos/art-0135.md",
+  "sha256": "4a43a6f7ecead6866c8a14c08d854fcc30f8c13ab8b3bedf92e25a16cbf97a7f",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo II · LESIONES",
+  "derogado": false
+ },
+ "135-bis": {
+  "archivo": "articulos/art-0135-bis.md",
+  "sha256": "0729a904fa432aec4bac194860e233441d9a0b15c5e58710880c8587a6fc2995",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo II BIS · LESIONES POR ATAQUES CON ÁCIDO, SUSTANCIAS QUÍMICAS O CORROSIVAS",
+  "derogado": false
+ },
+ "135-ter": {
+  "archivo": "articulos/art-0135-ter.md",
+  "sha256": "8b25b84acb69bfa4247848cd0e1877720897ae6dcae5dbb33f0a313797dce2da",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo II BIS · LESIONES POR ATAQUES CON ÁCIDO, SUSTANCIAS QUÍMICAS O CORROSIVAS",
+  "derogado": false
+ },
+ "135-quinquies": {
+  "archivo": "articulos/art-0135-quinquies.md",
+  "sha256": "3d864db2d7017ef0df2399cb6eb8d294084f4e59883eebaac57cc46bbc422648",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo II BIS · LESIONES POR ATAQUES CON ÁCIDO, SUSTANCIAS QUÍMICAS O CORROSIVAS",
+  "derogado": false
+ },
+ "136": {
+  "archivo": "articulos/art-0136.md",
+  "sha256": "cc0155ca7876ba80f7955f6c4c3a276fa50ba432fd55c1466994c3e97450ba31",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo III · REGLAS COMUNES PARA LOS DELITOS DE HOMICIDIO Y LESIONES",
+  "derogado": false
+ },
+ "137": {
+  "archivo": "articulos/art-0137.md",
+  "sha256": "a9e67bba1acf7f2a87a833f9ff7b1f2586bcda479fcb61d1e68bb9242f6c10c6",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo III · REGLAS COMUNES PARA LOS DELITOS DE HOMICIDIO Y LESIONES",
+  "derogado": false
+ },
+ "138": {
+  "archivo": "articulos/art-0138.md",
+  "sha256": "53e69071076cc6dff0779dc7ce6fbe6a69ed2dd2a6325761fbb38eb9fcf7013e",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo III · REGLAS COMUNES PARA LOS DELITOS DE HOMICIDIO Y LESIONES",
+  "derogado": false
+ },
+ "138-bis": {
+  "archivo": "articulos/art-0138-bis.md",
+  "sha256": "70a67677aa21cd4f2d3492560a7b01076423db8a2ed1856445c21bada469934c",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo III · REGLAS COMUNES PARA LOS DELITOS DE HOMICIDIO Y LESIONES",
+  "derogado": false
+ },
+ "139": {
+  "archivo": "articulos/art-0139.md",
+  "sha256": "5ad074cc453334e455ae5c4aebfa2065097c2f4784de6f84d35bae83f8a50bc7",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo III · REGLAS COMUNES PARA LOS DELITOS DE HOMICIDIO Y LESIONES",
+  "derogado": false
+ },
+ "140": {
+  "archivo": "articulos/art-0140.md",
+  "sha256": "96bb54a2113abdc583863751bb44c6eb8dae238b843591492ba2aa58380d8771",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo III · REGLAS COMUNES PARA LOS DELITOS DE HOMICIDIO Y LESIONES",
+  "derogado": false
+ },
+ "141": {
+  "archivo": "articulos/art-0141.md",
+  "sha256": "f4633cc2927c60fa00295a7a26b4505472ab494c3b5f871ced6fad1d952a7868",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo III · REGLAS COMUNES PARA LOS DELITOS DE HOMICIDIO Y LESIONES",
+  "derogado": false
+ },
+ "141-bis": {
+  "archivo": "articulos/art-0141-bis.md",
+  "sha256": "fd1e293adad330cfb1effe197ab297f72efbabc1f574af7a08fc5e4205a01abf",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo III BIS · APLICACIÓN DE SUSTANCIAS MODELANTES NO AUTORIZADAS CON FINES ESTÉTICOS",
+  "derogado": false
+ },
+ "141-ter": {
+  "archivo": "articulos/art-0141-ter.md",
+  "sha256": "ee351924b63c3c88b93db52cfc418440fe66db206c109696e3c4b11241695974",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo III BIS · APLICACIÓN DE SUSTANCIAS MODELANTES NO AUTORIZADAS CON FINES ESTÉTICOS",
+  "derogado": false
+ },
+ "141-quater": {
+  "archivo": "articulos/art-0141-quater.md",
+  "sha256": "71982e6b9918037d1e1dda302d6464cc81f50bda86973ce46e9d6608e8c1dfb0",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo III BIS · APLICACIÓN DE SUSTANCIAS MODELANTES NO AUTORIZADAS CON FINES ESTÉTICOS",
+  "derogado": false
+ },
+ "142": {
+  "archivo": "articulos/art-0142.md",
+  "sha256": "fdcb3c29f28efba74803bfb00591bd7234d872120405c838d5c365e6f7e8b8a8",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo IV · AYUDA O INDUCCIÓN AL SUICIDIO",
+  "derogado": false
+ },
+ "143": {
+  "archivo": "articulos/art-0143.md",
+  "sha256": "8baa73a33647ed1129e9429e697cb6bb20d72ae1b0d5dbdd76898fd395488c70",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo IV · AYUDA O INDUCCIÓN AL SUICIDIO",
+  "derogado": false
+ },
+ "143-bis": {
+  "archivo": "articulos/art-0143-bis.md",
+  "sha256": "afb0579e29f9826ca8b205d751f413bf34f60008562179b7ca688f38e10079dc",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo IV · AYUDA O INDUCCIÓN AL SUICIDIO",
+  "derogado": false
+ },
+ "144": {
+  "archivo": "articulos/art-0144.md",
+  "sha256": "f4c863946ab99c3f0eca57d84030ac1dfb8af9a878453e44bda0c7fcddbc63ed",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo V · ABORTO",
+  "derogado": false
+ },
+ "145": {
+  "archivo": "articulos/art-0145.md",
+  "sha256": "282ac6698248e02e2e1e037bbc157ef0a3e2ec4cff517d67a3a731d634131a53",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo V · ABORTO",
+  "derogado": false
+ },
+ "146": {
+  "archivo": "articulos/art-0146.md",
+  "sha256": "5d5c1bb1bde01ccb47e9a65aaa25a8b9c8e65aa38c77491f1fa204752eadc820",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo V · ABORTO",
+  "derogado": false
+ },
+ "147": {
+  "archivo": "articulos/art-0147.md",
+  "sha256": "e5847efb240c75864610ccf15b56cb0c84dac603d4bc5e09750d0c98e5eb7ced",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo V · ABORTO",
+  "derogado": false
+ },
+ "148": {
+  "archivo": "articulos/art-0148.md",
+  "sha256": "656fde65b504fbcfe354d4eadcd1d56deabef9b86db9bf612e31329838cbd1a6",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo V · ABORTO",
+  "derogado": false
+ },
+ "148-bis": {
+  "archivo": "articulos/art-0148-bis.md",
+  "sha256": "80ef0917443612fba4d8a2a6e3528a8c91b4dc48eb95539c23fe2244588aac04",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capitulo VI · FEMINICIDIO",
+  "derogado": false
+ },
+ "148-ter": {
+  "archivo": "articulos/art-0148-ter.md",
+  "sha256": "e23b327b9e04c15474a570f5de8c1ee3e4731ee1f4462962426c49e60dcb129d",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo VII · TRANSFEMINICIDIO",
+  "derogado": false
+ },
+ "148-quater": {
+  "archivo": "articulos/art-0148-quater.md",
+  "sha256": "35216aa1e0191bced300b014a3687910fdbaa8b43ced7b9b3517ea92650f7f5d",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capítulo VIII · Se deroga.",
+  "derogado": true
+ },
+ "148-quinquies": {
+  "archivo": "articulos/art-0148-quinquies.md",
+  "sha256": "5c9a23b97459444ff29ddd0809ee46e8af02ebf0a0a88b8432606be69f65093d",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título PRIMERO · DELITOS CONTRA LA VIDA, LA INTEGRIDAD CORPORAL, LA DIGNIDAD Y EL ACCESO A UNA VIDA LIBRE DE VIOLENCIA / Capitulo IX · COBRANZA ILEGÍTIMA",
+  "derogado": false
+ },
+ "149": {
+  "archivo": "articulos/art-0149.md",
+  "sha256": "e1735b54b307bd44a56c07d682777bc0c7f38aeeaece2c110ba3e9ffb8b3f50d",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEGUNDO · DELITOS CONTRA LA LIBERTAD REPRODUCTIVA / Capítulo I · PROCREACIÓN ASISTIDA, INSEMINACIÓN ARTIFICIAL Y ESTERILIZACIÓN FORZADA",
+  "derogado": false
+ },
+ "150": {
+  "archivo": "articulos/art-0150.md",
+  "sha256": "7188c9f90de15c6492ef28b46311b6d7bda46882d7d37a572524c5ca0899a1b0",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEGUNDO · DELITOS CONTRA LA LIBERTAD REPRODUCTIVA / Capítulo I · PROCREACIÓN ASISTIDA, INSEMINACIÓN ARTIFICIAL Y ESTERILIZACIÓN FORZADA",
+  "derogado": false
+ },
+ "151": {
+  "archivo": "articulos/art-0151.md",
+  "sha256": "5fa35b6714ea716d7ce65903d3da63c4cab8f40751c6431191decacb18b2f5a2",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEGUNDO · DELITOS CONTRA LA LIBERTAD REPRODUCTIVA / Capítulo I · PROCREACIÓN ASISTIDA, INSEMINACIÓN ARTIFICIAL Y ESTERILIZACIÓN FORZADA",
+  "derogado": false
+ },
+ "151-bis": {
+  "archivo": "articulos/art-0151-bis.md",
+  "sha256": "d88bcc03ac68dc8a99f3d1ef004f0458997d05a0d8460020d82c8222137f8315",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEGUNDO · DELITOS CONTRA LA LIBERTAD REPRODUCTIVA / Capítulo I · PROCREACIÓN ASISTIDA, INSEMINACIÓN ARTIFICIAL Y ESTERILIZACIÓN FORZADA",
+  "derogado": false
+ },
+ "151-ter": {
+  "archivo": "articulos/art-0151-ter.md",
+  "sha256": "9ee19a7158ea50dcd19bdd331af7b5071cf57d5ebf177b0c81a43968bd79ebc7",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEGUNDO · DELITOS CONTRA LA LIBERTAD REPRODUCTIVA / Capítulo I · PROCREACIÓN ASISTIDA, INSEMINACIÓN ARTIFICIAL Y ESTERILIZACIÓN FORZADA",
+  "derogado": false
+ },
+ "152": {
+  "archivo": "articulos/art-0152.md",
+  "sha256": "539ccb6b498024826f92469bd338153d7f912839692d9f4dd8741cd25cb3e721",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEGUNDO · DELITOS CONTRA LA LIBERTAD REPRODUCTIVA / Capítulo I · PROCREACIÓN ASISTIDA, INSEMINACIÓN ARTIFICIAL Y ESTERILIZACIÓN FORZADA",
+  "derogado": false
+ },
+ "153": {
+  "archivo": "articulos/art-0153.md",
+  "sha256": "d9931d4fe76c30409f3d1021f1ee3da1bed295b8ec5a497b498e7955cc3e6edc",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEGUNDO · DELITOS CONTRA LA LIBERTAD REPRODUCTIVA / Capítulo I · PROCREACIÓN ASISTIDA, INSEMINACIÓN ARTIFICIAL Y ESTERILIZACIÓN FORZADA",
+  "derogado": false
+ },
+ "154": {
+  "archivo": "articulos/art-0154.md",
+  "sha256": "751cf43c550f26dc807b0996360baf60c235d309963cd8584b4dd7fdd94a4149",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEGUNDO · DELITOS CONTRA LA LIBERTAD REPRODUCTIVA / Capítulo II · MANIPULACIÓN GENÉTICA",
+  "derogado": false
+ },
+ "155": {
+  "archivo": "articulos/art-0155.md",
+  "sha256": "24488ff06ea9039cd0f42e97d8679a1538ff4f9673211dd3c9e4a9b233b5e8c1",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEGUNDO · DELITOS CONTRA LA LIBERTAD REPRODUCTIVA / Capítulo II · MANIPULACIÓN GENÉTICA",
+  "derogado": false
+ },
+ "156": {
+  "archivo": "articulos/art-0156.md",
+  "sha256": "73f35b82913d18a9c96e5f48c4f87fabba43c352577c1252c02b52f9c8cf7c72",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título TERCERO · DELITOS DE PELIGRO PARA LA VIDA O LA SALUD DE LAS PERSONAS / Capítulo I · OMISIÓN DE AUXILIO O DE CUIDADO",
+  "derogado": false
+ },
+ "157": {
+  "archivo": "articulos/art-0157.md",
+  "sha256": "fb4c617e12b08bce1600cf449e8a22dcd6e6223471c7e241d5f32a2cc4382e6f",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título TERCERO · DELITOS DE PELIGRO PARA LA VIDA O LA SALUD DE LAS PERSONAS / Capítulo I · OMISIÓN DE AUXILIO O DE CUIDADO",
+  "derogado": false
+ },
+ "157-bis": {
+  "archivo": "articulos/art-0157-bis.md",
+  "sha256": "7dd9e409a7a546116c16fb91adbbb9be49c0a90144187fdbf6dfc323b72e5aa9",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título TERCERO · DELITOS DE PELIGRO PARA LA VIDA O LA SALUD DE LAS PERSONAS / Capítulo I · OMISIÓN DE AUXILIO O DE CUIDADO",
+  "derogado": false
+ },
+ "158": {
+  "archivo": "articulos/art-0158.md",
+  "sha256": "90d66123b87a7e2ee09f523dca068dbe64358edc162d792b97e7926cd43cb024",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título TERCERO · DELITOS DE PELIGRO PARA LA VIDA O LA SALUD DE LAS PERSONAS / Capítulo I · OMISIÓN DE AUXILIO O DE CUIDADO",
+  "derogado": false
+ },
+ "158-bis": {
+  "archivo": "articulos/art-0158-bis.md",
+  "sha256": "ae3aacccee9ed35709df59187e2e2cce5971fe6db4af375883eb51536c390042",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título TERCERO · DELITOS DE PELIGRO PARA LA VIDA O LA SALUD DE LAS PERSONAS / Capítulo I · OMISIÓN DE AUXILIO O DE CUIDADO",
+  "derogado": false
+ },
+ "159": {
+  "archivo": "articulos/art-0159.md",
+  "sha256": "a89b9a93365062b66fe71e60b46df966240ca9c4aa8a99802003edf54cee4e17",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título TERCERO · DELITOS DE PELIGRO PARA LA VIDA O LA SALUD DE LAS PERSONAS / Capítulo II · PELIGRO DE CONTAGIO",
+  "derogado": true
+ },
+ "160": {
+  "archivo": "articulos/art-0160.md",
+  "sha256": "6385cdb6a380d7757bbae5b65341d25597d936e877d85062471029f6ca152763",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título CUARTO · DELITOS CONTRA LA LIBERTAD PERSONAL / Capítulo I · PRIVACIÓN DE LA LIBERTAD PERSONAL",
+  "derogado": false
+ },
+ "161": {
+  "archivo": "articulos/art-0161.md",
+  "sha256": "9011abfa61b03264b5efef97506798f68aca973d811c67ce3b0f421c0538dc25",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título CUARTO · DELITOS CONTRA LA LIBERTAD PERSONAL / Capítulo I · PRIVACIÓN DE LA LIBERTAD PERSONAL",
+  "derogado": false
+ },
+ "162": {
+  "archivo": "articulos/art-0162.md",
+  "sha256": "970e426668a6bc3868f0fe8bf82c0fc321ec7c30cc9b30ebac3b7db21b96303d",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título CUARTO · DELITOS CONTRA LA LIBERTAD PERSONAL / Capítulo II · PRIVACIÓN DE LA LIBERTAD CON FINES SEXUALES",
+  "derogado": false
+ },
+ "163": {
+  "archivo": "articulos/art-0163.md",
+  "sha256": "b268efcea1ba85a15768bb5b0da1eff4696d14934c2e8c07027137997b9b3b8e",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título CUARTO · DELITOS CONTRA LA LIBERTAD PERSONAL / Capítulo III · SECUESTRO",
+  "derogado": false
+ },
+ "163-bis": {
+  "archivo": "articulos/art-0163-bis.md",
+  "sha256": "14bea4968b5c3d93a2bf1ab6fb01ba1df6732b2fd87aa5f47a6e2eb6c83b2b92",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título CUARTO · DELITOS CONTRA LA LIBERTAD PERSONAL / Capítulo III · SECUESTRO",
+  "derogado": false
+ },
+ "164": {
+  "archivo": "articulos/art-0164.md",
+  "sha256": "7993363478d380c96259ee6381802e48600c65ef16036148cc4d15d8aa9b71ed",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título CUARTO · DELITOS CONTRA LA LIBERTAD PERSONAL / Capítulo III · SECUESTRO",
+  "derogado": false
+ },
+ "165": {
+  "archivo": "articulos/art-0165.md",
+  "sha256": "b9389095a8b20543360b286f45ffd46e1439307c43ecf253ad873c561ff80bde",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título CUARTO · DELITOS CONTRA LA LIBERTAD PERSONAL / Capítulo III · SECUESTRO",
+  "derogado": false
+ },
+ "166": {
+  "archivo": "articulos/art-0166.md",
+  "sha256": "2d41a5b833b3949ba9fe1113438819ad4b09d3d8073e517e5d5d8cfbb72d10c6",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título CUARTO · DELITOS CONTRA LA LIBERTAD PERSONAL / Capítulo III · SECUESTRO",
+  "derogado": false
+ },
+ "166-bis": {
+  "archivo": "articulos/art-0166-bis.md",
+  "sha256": "4901ce01f5a6ccd76adcc1c219d27800af728e414ac7f33468b5c4fd6d434f12",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título CUARTO · DELITOS CONTRA LA LIBERTAD PERSONAL / Capítulo III · SECUESTRO",
+  "derogado": false
+ },
+ "167": {
+  "archivo": "articulos/art-0167.md",
+  "sha256": "d0d65f9395bea4f573a908a2a0824cf75ab8aa19195c7154411b6d6501df0036",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título CUARTO · DELITOS CONTRA LA LIBERTAD PERSONAL / Capítulo III · SECUESTRO",
+  "derogado": false
+ },
+ "168": {
+  "archivo": "articulos/art-0168.md",
+  "sha256": "a9b16e8baa16a2b8b8540ffb210d3fe59752e9f33432f7c1438d6508393932fd",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título CUARTO · DELITOS CONTRA LA LIBERTAD PERSONAL / Capítulo IV · DESAPARICIÓN FORZADA DE PERSONAS",
+  "derogado": false
+ },
+ "169": {
+  "archivo": "articulos/art-0169.md",
+  "sha256": "bfd0fa86621f42076c67f79ef534014101f72568ca324e76d3cc4e957d1e5c16",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título CUARTO · DELITOS CONTRA LA LIBERTAD PERSONAL / Capítulo V · TRÁFICO DE MENORES",
+  "derogado": false
+ },
+ "170": {
+  "archivo": "articulos/art-0170.md",
+  "sha256": "538357bef98df439c89abcdcda9e281aa8c71a0042453cbd34566bc023061672",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título CUARTO · DELITOS CONTRA LA LIBERTAD PERSONAL / Capítulo V · TRÁFICO DE MENORES",
+  "derogado": false
+ },
+ "171": {
+  "archivo": "articulos/art-0171.md",
+  "sha256": "ce991bda50e27f410bb7a093add696297e20ffec6212bdd05deec63b4188db95",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título CUARTO · DELITOS CONTRA LA LIBERTAD PERSONAL / Capítulo VI · RETENCIÓN Y SUSTRACCIÓN DE MENORES O INCAPACES",
+  "derogado": false
+ },
+ "172": {
+  "archivo": "articulos/art-0172.md",
+  "sha256": "76a9b9dd218c5165937ac52fcbd2f109409cbfacd192e93cebf3ccb63caae387",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título CUARTO · DELITOS CONTRA LA LIBERTAD PERSONAL / Capítulo VI · RETENCIÓN Y SUSTRACCIÓN DE MENORES O INCAPACES",
+  "derogado": false
+ },
+ "173": {
+  "archivo": "articulos/art-0173.md",
+  "sha256": "b3d431d1095408ceca59edf7de5c66c48d478a20db87fd533636b6a9d970f18c",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título CUARTO · DELITOS CONTRA LA LIBERTAD PERSONAL / Capítulo VI · RETENCIÓN Y SUSTRACCIÓN DE MENORES O INCAPACES",
+  "derogado": false
+ },
+ "174": {
+  "archivo": "articulos/art-0174.md",
+  "sha256": "68d6bfc4145cac706fbc44bdc7289f9af5405f8c5f78fbfa8edef14cb1c3af00",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título QUINTO · DELITOS CONTRA LA LIBERTAD Y LA SEGURIDAD SEXUALES Y EL NORMAL DESARROLLO PSICOSEXUAL / Capítulo I · VIOLACIÓN",
+  "derogado": false
+ },
+ "175": {
+  "archivo": "articulos/art-0175.md",
+  "sha256": "8ff59d26cade36dea3cbe35fec3fcb0504383f0130a1797cb57e74f66bce6a24",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título QUINTO · DELITOS CONTRA LA LIBERTAD Y LA SEGURIDAD SEXUALES Y EL NORMAL DESARROLLO PSICOSEXUAL / Capítulo I · VIOLACIÓN",
+  "derogado": false
+ },
+ "176": {
+  "archivo": "articulos/art-0176.md",
+  "sha256": "fc4ec1c2183309461efae846495545bc7a6ddfb29e17030d5ec9415b05756f1a",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título QUINTO · DELITOS CONTRA LA LIBERTAD Y LA SEGURIDAD SEXUALES Y EL NORMAL DESARROLLO PSICOSEXUAL / Capítulo II · ABUSO SEXUAL",
+  "derogado": false
+ },
+ "176-bis": {
+  "archivo": "articulos/art-0176-bis.md",
+  "sha256": "50b8c097cf62e9aafe3b750c3c0731bf62e05b12f3f552800f7cfb2e94f9efff",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título QUINTO · DELITOS CONTRA LA LIBERTAD Y LA SEGURIDAD SEXUALES Y EL NORMAL DESARROLLO PSICOSEXUAL / Capítulo II · ABUSO SEXUAL",
+  "derogado": false
+ },
+ "177": {
+  "archivo": "articulos/art-0177.md",
+  "sha256": "f06ce60ba075b1f4c6a57fe4d5fb80fd59c408fee47ce1521477616a8b013de0",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título QUINTO · DELITOS CONTRA LA LIBERTAD Y LA SEGURIDAD SEXUALES Y EL NORMAL DESARROLLO PSICOSEXUAL / Capítulo II · ABUSO SEXUAL",
+  "derogado": false
+ },
+ "178": {
+  "archivo": "articulos/art-0178.md",
+  "sha256": "1f67ce45dcab27eb6a15bb65365f7298e5a2ad82cde6275082b6dd63df0bc00f",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título QUINTO · DELITOS CONTRA LA LIBERTAD Y LA SEGURIDAD SEXUALES Y EL NORMAL DESARROLLO PSICOSEXUAL / Capítulo II · ABUSO SEXUAL",
+  "derogado": false
+ },
+ "178-bis": {
+  "archivo": "articulos/art-0178-bis.md",
+  "sha256": "b5c76440dcfabd678b3a3862503e58169fb1be74ac9c99483fa80ac1c6e5ccac",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título QUINTO · DELITOS CONTRA LA LIBERTAD Y LA SEGURIDAD SEXUALES Y EL NORMAL DESARROLLO PSICOSEXUAL / Capítulo II · ABUSO SEXUAL",
+  "derogado": false
+ },
+ "179": {
+  "archivo": "articulos/art-0179.md",
+  "sha256": "1cd9bf86ce2605499a7d5137bce4397c77c1021debe55d607be1eddd503070ee",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título QUINTO · DELITOS CONTRA LA LIBERTAD Y LA SEGURIDAD SEXUALES Y EL NORMAL DESARROLLO PSICOSEXUAL / Capítulo III · ACOSO SEXUAL",
+  "derogado": false
+ },
+ "179-bis": {
+  "archivo": "articulos/art-0179-bis.md",
+  "sha256": "546174016d207955fa0a8bb141a9d3db6beeb669826d63e020ee1e2d62587f76",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título QUINTO · DELITOS CONTRA LA LIBERTAD Y LA SEGURIDAD SEXUALES Y EL NORMAL DESARROLLO PSICOSEXUAL / Capítulo III · ACOSO SEXUAL",
+  "derogado": false
+ },
+ "180": {
+  "archivo": "articulos/art-0180.md",
+  "sha256": "e3526acc7704fa51264f71abe40a041e2baf5d04ae0baa17565197ed954513ad",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título QUINTO · DELITOS CONTRA LA LIBERTAD Y LA SEGURIDAD SEXUALES Y EL NORMAL DESARROLLO PSICOSEXUAL / Capítulo IV · ESTUPRO",
+  "derogado": false
+ },
+ "181": {
+  "archivo": "articulos/art-0181.md",
+  "sha256": "ea9b16db76b021c3e47d51e8e37424579b898695db30b8bad18e11bdd225e23b",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título QUINTO · DELITOS CONTRA LA LIBERTAD Y LA SEGURIDAD SEXUALES Y EL NORMAL DESARROLLO PSICOSEXUAL / Capítulo V · INCESTO",
+  "derogado": false
+ },
+ "181-bis": {
+  "archivo": "articulos/art-0181-bis.md",
+  "sha256": "3a228b13e1b2bd75c1a68540f9b6cfca03336b1200def91be8e14fd5df26be94",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título QUINTO · DELITOS CONTRA LA LIBERTAD Y LA SEGURIDAD SEXUALES Y EL NORMAL DESARROLLO PSICOSEXUAL / Capítulo VI · VIOLACIÓN, ABUSO SEXUAL Y ACOSO SEXUAL, COMETIDO A MENORES DE EDAD",
+  "derogado": false
+ },
+ "181-ter": {
+  "archivo": "articulos/art-0181-ter.md",
+  "sha256": "f39a76d04a35a90ee1173e8cffc0390a920fa3ab19a4fe645bfca8a48429d544",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título QUINTO · DELITOS CONTRA LA LIBERTAD Y LA SEGURIDAD SEXUALES Y EL NORMAL DESARROLLO PSICOSEXUAL / Capítulo VI · VIOLACIÓN, ABUSO SEXUAL Y ACOSO SEXUAL, COMETIDO A MENORES DE EDAD",
+  "derogado": false
+ },
+ "181-quater": {
+  "archivo": "articulos/art-0181-quater.md",
+  "sha256": "76de2079a8d9cc9094ccb95210f823f29d7ef7e1f70f12a9dc6f7f22989d88c2",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título QUINTO · DELITOS CONTRA LA LIBERTAD Y LA SEGURIDAD SEXUALES Y EL NORMAL DESARROLLO PSICOSEXUAL / Capítulo VI · VIOLACIÓN, ABUSO SEXUAL Y ACOSO SEXUAL, COMETIDO A MENORES DE EDAD",
+  "derogado": false
+ },
+ "181-quintus": {
+  "archivo": "articulos/art-0181-quintus.md",
+  "sha256": "1d4cd3708518b6736b69e43ba530683333a09137d2a1430241a978ada2990cb0",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título QUINTO · DELITOS CONTRA LA LIBERTAD Y LA SEGURIDAD SEXUALES Y EL NORMAL DESARROLLO PSICOSEXUAL / Capítulo VII · CONTRA LA INTIMIDAD SEXUAL",
+  "derogado": false
+ },
+ "182": {
+  "archivo": "articulos/art-0182.md",
+  "sha256": "08cae4c2ef02bc7f77a3e749ee7657a46a7703ffdb021d44a9daf3903fb0b954",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título QUINTO · DELITOS CONTRA LA LIBERTAD Y LA SEGURIDAD SEXUALES Y EL NORMAL DESARROLLO PSICOSEXUAL / Capítulo VIII · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "183": {
+  "archivo": "articulos/art-0183.md",
+  "sha256": "31d8cd3b16601c3fd5da2fd158483f8393e8cf37ae8a4069b84c6c9a3cc27cc8",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEXTO / Capítulo I · CORRUPCIÓN DE PERSONAS MENORES DE EDAD O PERSONAS QUE NO TENGAN CAPACIDAD PARA COMPRENDER EL SIGNIFICADO DEL HECHO O DE PERSONAS QUE NO TENGAN CAPACIDAD DE RESISTIR LA CONDUCTA",
+  "derogado": false
+ },
+ "184": {
+  "archivo": "articulos/art-0184.md",
+  "sha256": "dcbd16d6ee82f38d8567666d647040e68fb79318e134fe1674ca7273a4c8fdfb",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEXTO / Capítulo I · CORRUPCIÓN DE PERSONAS MENORES DE EDAD O PERSONAS QUE NO TENGAN CAPACIDAD PARA COMPRENDER EL SIGNIFICADO DEL HECHO O DE PERSONAS QUE NO TENGAN CAPACIDAD DE RESISTIR LA CONDUCTA",
+  "derogado": false
+ },
+ "185": {
+  "archivo": "articulos/art-0185.md",
+  "sha256": "d0fc49161bf241d581ca430a5d487b0363b4f1f9ac16b3efcfd9012739b0470a",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEXTO / Capítulo I · CORRUPCIÓN DE PERSONAS MENORES DE EDAD O PERSONAS QUE NO TENGAN CAPACIDAD PARA COMPRENDER EL SIGNIFICADO DEL HECHO O DE PERSONAS QUE NO TENGAN CAPACIDAD DE RESISTIR LA CONDUCTA",
+  "derogado": false
+ },
+ "186": {
+  "archivo": "articulos/art-0186.md",
+  "sha256": "5bfce9a76eae93954788949d8666b740aa979f0988ab2b0de911706d05a3dfb5",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEXTO / Capítulo II · TURISMO SEXUAL",
+  "derogado": false
+ },
+ "187": {
+  "archivo": "articulos/art-0187.md",
+  "sha256": "9bbb99718573b5260e7d67436257a35a4719a5b71a49a832ef85b978e0cdd6dc",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEXTO / Capítulo III · PORNOGRAFÍA",
+  "derogado": false
+ },
+ "188": {
+  "archivo": "articulos/art-0188.md",
+  "sha256": "def21cd301ce28b9ed1cfb9408f93565711cad2bc0a874e60c9013dbd451f567",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEXTO / Capítulo III · PORNOGRAFÍA",
+  "derogado": false
+ },
+ "188-bis": {
+  "archivo": "articulos/art-0188-bis.md",
+  "sha256": "056f763e100064a305f9cc7b11681a913c6c7db880325a73ddd46fc37b4965cf",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEXTO / Capítulo IV · TRATA DE PERSONAS",
+  "derogado": false
+ },
+ "189": {
+  "archivo": "articulos/art-0189.md",
+  "sha256": "dea967b5687548114d036a3a6c7038f1e35d6390531043aabb5384b1c11e2a80",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEXTO / Capítulo V · LENOCINIO",
+  "derogado": false
+ },
+ "189-bis": {
+  "archivo": "articulos/art-0189-bis.md",
+  "sha256": "be5ef7ac04a6d04749856e5fae9986c80b0310334934e156d27caac0e651444e",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEXTO / Capítulo V · LENOCINIO",
+  "derogado": false
+ },
+ "190": {
+  "archivo": "articulos/art-0190.md",
+  "sha256": "3e902d1ba1ce4f8c6d08d43169bc769e0bf32869e3480d890aa9865d23ffab5f",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEXTO / Capítulo V · LENOCINIO",
+  "derogado": false
+ },
+ "190-bis": {
+  "archivo": "articulos/art-0190-bis.md",
+  "sha256": "bb6ea42b8e47e25f27231e6f440d52d1a051f6de0446fa9a148018f82651e820",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEXTO / Capitulo VI · EXPLOTACIÓN LABORAL DE MENORES, PERSONAS CON DISCAPACIDAD FÍSICA O MENTAL Y ADULTOS MAYORES",
+  "derogado": false
+ },
+ "190-ter": {
+  "archivo": "articulos/art-0190-ter.md",
+  "sha256": "547668a78bb617b4dfb2e5a450c75dda3f44edc6721e26668fd2b039487ae944",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEXTO / Capitulo VI · EXPLOTACIÓN LABORAL DE MENORES, PERSONAS CON DISCAPACIDAD FÍSICA O MENTAL Y ADULTOS MAYORES",
+  "derogado": false
+ },
+ "190-quater": {
+  "archivo": "articulos/art-0190-quater.md",
+  "sha256": "31d607950eb4842200a006835c3c42aca444ecfb983cd75181b0b114d181d20b",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEXTO / Capítulo VII · Delitos contra el libre desarrollo de la personalidad y la Identidad Sexual",
+  "derogado": false
+ },
+ "191": {
+  "archivo": "articulos/art-0191.md",
+  "sha256": "110cb3feaf831f4045ad1e0c4044c5acf2122cfcf1cb52f885e9b4ef913794ee",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEXTO / Capítulo VIII · DISPOSICIONES COMUNES",
+  "derogado": false
+ },
+ "192": {
+  "archivo": "articulos/art-0192.md",
+  "sha256": "6b0979da6c47e62ae6ba8b870962469b687f493895fd7520d1c162e890455d7b",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título SEXTO / Capítulo VIII · DISPOSICIONES COMUNES",
+  "derogado": false
+ },
+ "193": {
+  "archivo": "articulos/art-0193.md",
+  "sha256": "caa62681218edd52ed65b9c11da7bec04f8a8d06e1fab57efee6ef3bdc4a0505",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Titulo SÉPTIMO · DELITOS QUE ATENTAN CONTRA EL CUMPLIMIENTO DE LA OBLIGACIÓN ALIMENTARIA / Capitulo ÚNICO",
+  "derogado": false
+ },
+ "194": {
+  "archivo": "articulos/art-0194.md",
+  "sha256": "500d1595866a42fa7ded00087b5250c4dd9fb989781e6fe9451fb15993e363c3",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Titulo SÉPTIMO · DELITOS QUE ATENTAN CONTRA EL CUMPLIMIENTO DE LA OBLIGACIÓN ALIMENTARIA / Capitulo ÚNICO",
+  "derogado": false
+ },
+ "195": {
+  "archivo": "articulos/art-0195.md",
+  "sha256": "95a910286e58d373321820e0dcb5e33d158c58f0d8c8a93bd81389f82ecd76e6",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Titulo SÉPTIMO · DELITOS QUE ATENTAN CONTRA EL CUMPLIMIENTO DE LA OBLIGACIÓN ALIMENTARIA / Capitulo ÚNICO",
+  "derogado": false
+ },
+ "196": {
+  "archivo": "articulos/art-0196.md",
+  "sha256": "53ab22a2729dd1d2762e3b157f5a97ec0f0044524f2e74b8f7ad4a494665c78c",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Titulo SÉPTIMO · DELITOS QUE ATENTAN CONTRA EL CUMPLIMIENTO DE LA OBLIGACIÓN ALIMENTARIA / Capitulo ÚNICO",
+  "derogado": false
+ },
+ "197": {
+  "archivo": "articulos/art-0197.md",
+  "sha256": "13096d7bd83e1cfa911a18332406b54006c619e89f1744880013da0a93e4b4f9",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Titulo SÉPTIMO · DELITOS QUE ATENTAN CONTRA EL CUMPLIMIENTO DE LA OBLIGACIÓN ALIMENTARIA / Capitulo ÚNICO",
+  "derogado": false
+ },
+ "198": {
+  "archivo": "articulos/art-0198.md",
+  "sha256": "986e818e132d3f896bc32024b201925de2b68c7238fbb03cdeff9e330d008873",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Titulo SÉPTIMO · DELITOS QUE ATENTAN CONTRA EL CUMPLIMIENTO DE LA OBLIGACIÓN ALIMENTARIA / Capitulo ÚNICO",
+  "derogado": true
+ },
+ "199": {
+  "archivo": "articulos/art-0199.md",
+  "sha256": "bc738257202d18788f36ee76c47d375fcd3ccdac0102ba1afb0aa7c1862fdf78",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Titulo SÉPTIMO · DELITOS QUE ATENTAN CONTRA EL CUMPLIMIENTO DE LA OBLIGACIÓN ALIMENTARIA / Capitulo ÚNICO",
+  "derogado": false
+ },
+ "200": {
+  "archivo": "articulos/art-0200.md",
+  "sha256": "7c9de6a2fc1f970a9ef765c6de02c8f6b992d3bec152414493ecaea639533eb8",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Titulo OCTAVO · DELITOS CONTRA EL DERECHO DE LOS INTEGRANTES DE LA FAMILIA A VIVIR UNA VIDA LIBRE DE VIOLENCIA / Capitulo I · VIOLENCIA FAMILIAR ENTRE PAREJA",
+  "derogado": false
+ },
+ "200-bis": {
+  "archivo": "articulos/art-0200-bis.md",
+  "sha256": "3a0268ee394156a712bbc1b0b8933e3fb7a8cdfc8eaffeefd6eaed17b1ceb9b8",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Titulo OCTAVO · DELITOS CONTRA EL DERECHO DE LOS INTEGRANTES DE LA FAMILIA A VIVIR UNA VIDA LIBRE DE VIOLENCIA / Capitulo I · VIOLENCIA FAMILIAR ENTRE PAREJA",
+  "derogado": false
+ },
+ "200-ter": {
+  "archivo": "articulos/art-0200-ter.md",
+  "sha256": "e360b385dd1a73818482eada67c97d578c37455a3838b2ca56d94d199c2bfd3d",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Titulo OCTAVO · DELITOS CONTRA EL DERECHO DE LOS INTEGRANTES DE LA FAMILIA A VIVIR UNA VIDA LIBRE DE VIOLENCIA / Capitulo I · VIOLENCIA FAMILIAR ENTRE PAREJA",
+  "derogado": false
+ },
+ "200-quater": {
+  "archivo": "articulos/art-0200-quater.md",
+  "sha256": "2c6d769b6759a3368f89c48b2af42e45479b8a3ba949bef9344d5aac0b094e5a",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Titulo OCTAVO · DELITOS CONTRA EL DERECHO DE LOS INTEGRANTES DE LA FAMILIA A VIVIR UNA VIDA LIBRE DE VIOLENCIA / Capitulo I · VIOLENCIA FAMILIAR ENTRE PAREJA",
+  "derogado": false
+ },
+ "201": {
+  "archivo": "articulos/art-0201.md",
+  "sha256": "ad7a0b4c2681ce3eac638c891bcf7e63f4786c35b3896cb06fcd72217acfe037",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Titulo OCTAVO · DELITOS CONTRA EL DERECHO DE LOS INTEGRANTES DE LA FAMILIA A VIVIR UNA VIDA LIBRE DE VIOLENCIA / Capitulo I · VIOLENCIA FAMILIAR ENTRE PAREJA",
+  "derogado": false
+ },
+ "201-bis": {
+  "archivo": "articulos/art-0201-bis.md",
+  "sha256": "028927ddbe62235e4e86bcadaab5f814aad6870bf4c002e45b2e442d0876dddb",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Titulo OCTAVO · DELITOS CONTRA EL DERECHO DE LOS INTEGRANTES DE LA FAMILIA A VIVIR UNA VIDA LIBRE DE VIOLENCIA / Capitulo I · VIOLENCIA FAMILIAR ENTRE PAREJA",
+  "derogado": false
+ },
+ "201-ter": {
+  "archivo": "articulos/art-0201-ter.md",
+  "sha256": "70041846736d3dcfda90e8e84e468b9ab40ee08df33ceea280f8d100054bb9da",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Titulo OCTAVO · DELITOS CONTRA EL DERECHO DE LOS INTEGRANTES DE LA FAMILIA A VIVIR UNA VIDA LIBRE DE VIOLENCIA / Capítulo II · VIOLENCIA VICARIA",
+  "derogado": false
+ },
+ "202": {
+  "archivo": "articulos/art-0202.md",
+  "sha256": "33d09b7556a9b01560416010c71ec21c7333b3756e93952f076e5c0fc12b2cc4",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Titulo OCTAVO · DELITOS CONTRA EL DERECHO DE LOS INTEGRANTES DE LA FAMILIA A VIVIR UNA VIDA LIBRE DE VIOLENCIA / Capítulo II · VIOLENCIA VICARIA",
+  "derogado": false
+ },
+ "203": {
+  "archivo": "articulos/art-0203.md",
+  "sha256": "52cb54b216df11286f29442ea73ee8c30f6588a6ad46cf3f38282cce33f20698",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título NOVENO · DELITOS CONTRA LA FILIACIÓN Y LA INSTITUCIÓN DEL MATRIMONIO / Capítulo I · ESTADO CIVIL",
+  "derogado": false
+ },
+ "204": {
+  "archivo": "articulos/art-0204.md",
+  "sha256": "612e0507bd46da6602a4366243d62ae84c6baef20087505b5508ded4033a73bc",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título NOVENO · DELITOS CONTRA LA FILIACIÓN Y LA INSTITUCIÓN DEL MATRIMONIO / Capítulo I · ESTADO CIVIL",
+  "derogado": false
+ },
+ "205": {
+  "archivo": "articulos/art-0205.md",
+  "sha256": "5c0634ea1db940be62c045eb47a1b0d466656143e58e82bdb61eb1f7a4f5c584",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título NOVENO · DELITOS CONTRA LA FILIACIÓN Y LA INSTITUCIÓN DEL MATRIMONIO / Capítulo II · BIGAMIA",
+  "derogado": false
+ },
+ "206": {
+  "archivo": "articulos/art-0206.md",
+  "sha256": "1589333f3e199aa351ecedf3aeaa82b7e6d1092407413932626f45e76cb3f1e6",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DISCRIMINACIÓN",
+  "derogado": false
+ },
+ "206-bis": {
+  "archivo": "articulos/art-0206-bis.md",
+  "sha256": "c01fc40baa6005c45ec5c892495d2ffcb300d6d476b311423771b308a1e79497",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · TORTURA",
+  "derogado": false
+ },
+ "206-ter": {
+  "archivo": "articulos/art-0206-ter.md",
+  "sha256": "2f0503a752625b49bed61691111521ea37feb722e68df2a3045feae3bdf30c6c",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · TORTURA",
+  "derogado": false
+ },
+ "206-quater": {
+  "archivo": "articulos/art-0206-quater.md",
+  "sha256": "a7dfc228d6cc9a979c5e99bdd5024a22b3ce701436dc2d1d9a12fc0237339ba5",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · TORTURA",
+  "derogado": false
+ },
+ "206-quinquies": {
+  "archivo": "articulos/art-0206-quinquies.md",
+  "sha256": "81cad009bea7b3e5f74c3b4d454de78a5a684e4d4f88d17da524217b92b4fab6",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · TORTURA",
+  "derogado": false
+ },
+ "207": {
+  "archivo": "articulos/art-0207.md",
+  "sha256": "a2b711f6f1014a8de85d636fbb01df3abf1606c8abe75ff509613fc0747acf3d",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · INHUMACIÓN, EXHUMACIÓN Y RESPETO A LOS CADÁVERES O RESTOS HUMANOS",
+  "derogado": false
+ },
+ "208": {
+  "archivo": "articulos/art-0208.md",
+  "sha256": "d731ce02925d3a634042a3bacf398266440b4b21fcb2ede6cdd23073a5ca35eb",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · INHUMACIÓN, EXHUMACIÓN Y RESPETO A LOS CADÁVERES O RESTOS HUMANOS",
+  "derogado": false
+ },
+ "209": {
+  "archivo": "articulos/art-0209.md",
+  "sha256": "0f3efca7cfb84a2ac28ad541b0ac70762aef6993240d8504946e112bbaa98d95",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · AMENAZAS",
+  "derogado": false
+ },
+ "209-bis": {
+  "archivo": "articulos/art-0209-bis.md",
+  "sha256": "6cb690cf859a835d013bafe24b1e8ab6b698b0e6532bfb498ead8338b6fb6196",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · AMENAZAS",
+  "derogado": true
+ },
+ "209-ter": {
+  "archivo": "articulos/art-0209-ter.md",
+  "sha256": "7b6251cf5623c143dd381fc9c60fb1f110a4c0201b5cf708632eb0285d966427",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I BIS · HOSTIGAMIENTO COERCITIVO",
+  "derogado": false
+ },
+ "210": {
+  "archivo": "articulos/art-0210.md",
+  "sha256": "82fbc3d55877213c76a402fbc2796e0a1ffadf2fbf28041ac62cfd4c353785cc",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · ALLANAMIENTO DE MORADA, DESPACHO, OFICINA O ESTABLECIMIENTO MERCANTIL",
+  "derogado": false
+ },
+ "211": {
+  "archivo": "articulos/art-0211.md",
+  "sha256": "703e6bebf61ca2cb7b36a6a51a7664f65b44a8cb53ec6ae13e7fde0e19830958",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · ALLANAMIENTO DE MORADA, DESPACHO, OFICINA O ESTABLECIMIENTO MERCANTIL",
+  "derogado": false
+ },
+ "211-bis": {
+  "archivo": "articulos/art-0211-bis.md",
+  "sha256": "6a2013b46d527095b5f350b85eee804af702358ded1db0391c595cfbc307df47",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · USURPACIÓN DE IDENTIDAD",
+  "derogado": false
+ },
+ "211-ter": {
+  "archivo": "articulos/art-0211-ter.md",
+  "sha256": "034825fed21ea36ac7ce55e02bc9f06527c84715e8548f3f5faf354b9bbae016",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · DISPARO DE ARMA DE FUEGO",
+  "derogado": false
+ },
+ "211-quater": {
+  "archivo": "articulos/art-0211-quater.md",
+  "sha256": "2631472ed4454cdf982a4a42254b89885576a34fab9f74abb93030447fdd7f48",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo V · USO INDEBIDO DE LOS SERVICIOS DE LLAMADAS DE EMERGENCIA",
+  "derogado": false
+ },
+ "212": {
+  "archivo": "articulos/art-0212.md",
+  "sha256": "dcd23150094c0484e0dcf84c1d761e716556d7c63e5df09fde6f583a4f62f6e8",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · VIOLACIÓN DE LA INTIMIDAD PERSONAL",
+  "derogado": false
+ },
+ "213": {
+  "archivo": "articulos/art-0213.md",
+  "sha256": "f1adea3a4500fce20aa44f44bc07a7e0739e8ec72ecfc91b1c34e1e3c4bb7f9d",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · REVELACIÓN DE SECRETOS",
+  "derogado": false
+ },
+ "214": {
+  "archivo": "articulos/art-0214.md",
+  "sha256": "59d0d3d1c082f17eb5751013bc56cc3ee8e452c455667e293af2e15ef33e91a4",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DIFAMACIÓN",
+  "derogado": false
+ },
+ "215": {
+  "archivo": "articulos/art-0215.md",
+  "sha256": "9b61c1f8446fa4f0fdcf94824d6503b697912d77ec32b72abd4ecb192f301c03",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DIFAMACIÓN",
+  "derogado": false
+ },
+ "216": {
+  "archivo": "articulos/art-0216.md",
+  "sha256": "7eaa8ce5b5e8482ec769965ca116ca5b4d740e81b48fefafe5070be20126e0dc",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · CALUMNIA",
+  "derogado": false
+ },
+ "217": {
+  "archivo": "articulos/art-0217.md",
+  "sha256": "e5a524e278b864a44e6f93e249fac35bfc1f84775197c3f54dc6b55b27e0f164",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · CALUMNIA",
+  "derogado": false
+ },
+ "218": {
+  "archivo": "articulos/art-0218.md",
+  "sha256": "44d6f7335d1e5f39845fdd95746d03d94be044a6a02db00dd0f5ec22e4eb2772",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · CALUMNIA",
+  "derogado": false
+ },
+ "219": {
+  "archivo": "articulos/art-0219.md",
+  "sha256": "ef9164a3a30d5ab4e7d8d11e8b781f23ab4d6a7c6b930fa5e49ea310ebe99359",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · DISPOSICIONES COMUNES",
+  "derogado": false
+ },
+ "220": {
+  "archivo": "articulos/art-0220.md",
+  "sha256": "4489284fac9b2885ccda9ad296cd47f5b6ec5e55916a7239b630744732e10c0c",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · ROBO",
+  "derogado": true
+ },
+ "221": {
+  "archivo": "articulos/art-0221.md",
+  "sha256": "821e3ab096c5cf876a96d03060aca7415b60d9568b6b8c2b4e5a6e991a0a49f7",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · ROBO",
+  "derogado": false
+ },
+ "222": {
+  "archivo": "articulos/art-0222.md",
+  "sha256": "54dd6290fc54406800bec37b0a189ca39580631ec974ef92ac590d1141e920ce",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · ROBO",
+  "derogado": false
+ },
+ "223": {
+  "archivo": "articulos/art-0223.md",
+  "sha256": "485348940504802ec388cbdd11ef6180f388d1fb5bddd4053b3de027c0caa572",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · ROBO",
+  "derogado": true
+ },
+ "224": {
+  "archivo": "articulos/art-0224.md",
+  "sha256": "7607be052d8d65c3dec7e0b081eef0612394dd9fa9f4c624b07069d11447ce6d",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · ROBO",
+  "derogado": true
+ },
+ "225": {
+  "archivo": "articulos/art-0225.md",
+  "sha256": "a376628ecf3582a0b4dcad5c297d522e4b39521cec8bf436de377ab9dc81bc6b",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · ROBO",
+  "derogado": false
+ },
+ "226": {
+  "archivo": "articulos/art-0226.md",
+  "sha256": "5464b6aa72db4a22752e85f33e300a420e92d5b8da8a73745b72669ce6d5d5df",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · ROBO",
+  "derogado": false
+ },
+ "226-bis": {
+  "archivo": "articulos/art-0226-bis.md",
+  "sha256": "6084ad018f7d56324976b6bfeec1f581a4b5a88a84d6aa588c40a49b2b75baef",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · ROBO",
+  "derogado": false
+ },
+ "226-ter": {
+  "archivo": "articulos/art-0226-ter.md",
+  "sha256": "87592f38f7124d2e2c0f698399edcdc1c10128b22d2f826a188af9090ed0a0dc",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · ROBO",
+  "derogado": false
+ },
+ "226-quater": {
+  "archivo": "articulos/art-0226-quater.md",
+  "sha256": "023c59b7020b3de2b377c6d3977382aabe1248615634cdb37d649d9e4b309df0",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · ROBO",
+  "derogado": false
+ },
+ "226-quinquies": {
+  "archivo": "articulos/art-0226-quinquies.md",
+  "sha256": "f0a9a0db99be63ca9a9521980c0adc181cf067d391dc28cea32107608242cbf5",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · ROBO",
+  "derogado": false
+ },
+ "227": {
+  "archivo": "articulos/art-0227.md",
+  "sha256": "53caf7582cf339508e425c5946b85b836a1812ef79a6323e87f4f7f438478209",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · ABUSO DE CONFIANZA",
+  "derogado": false
+ },
+ "228": {
+  "archivo": "articulos/art-0228.md",
+  "sha256": "fec89bcaa6a63b2d8e541f05c63024a3aeadb69b3b6012322bab0e119c668a22",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · ABUSO DE CONFIANZA",
+  "derogado": false
+ },
+ "229": {
+  "archivo": "articulos/art-0229.md",
+  "sha256": "c33ca3b1bd49192935a5d9fc7b93b105bff4baebc409dbdad05667815db4b307",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · ABUSO DE CONFIANZA",
+  "derogado": false
+ },
+ "230": {
+  "archivo": "articulos/art-0230.md",
+  "sha256": "9f776a4dd8c7d7d5cbed1247b8b0ef29c319bcfb6deea8d8d3eb63eeab7e5b14",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · FRAUDE",
+  "derogado": false
+ },
+ "231": {
+  "archivo": "articulos/art-0231.md",
+  "sha256": "2f80502a8b4bb87761cf78a6ef2cba120d5bf7665c4a09af46df20d492c0e30f",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · FRAUDE",
+  "derogado": false
+ },
+ "231-bis": {
+  "archivo": "articulos/art-0231-bis.md",
+  "sha256": "ebca28178723d922cf5c815ad470ba08ba9b3cccad8e03c93c5e2b0fa99e345f",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · FRAUDE",
+  "derogado": false
+ },
+ "232": {
+  "archivo": "articulos/art-0232.md",
+  "sha256": "126e49af42a89044015669ed21eb991789ad7ac655bd89cef16f2e9ab83fa733",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · FRAUDE",
+  "derogado": false
+ },
+ "232-bis": {
+  "archivo": "articulos/art-0232-bis.md",
+  "sha256": "1f34ca8434a2b7fd225a272e2e8577db03e91e9d59976e0086a9150aebc55b3f",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · FRAUDE",
+  "derogado": false
+ },
+ "233": {
+  "archivo": "articulos/art-0233.md",
+  "sha256": "c8f49bc291d8513e300c73a003455cef95b4c99754493cd13aaaf04a77e8c693",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · FRAUDE",
+  "derogado": false
+ },
+ "233-bis": {
+  "archivo": "articulos/art-0233-bis.md",
+  "sha256": "1cda98186eeeb8b87485c54295e136dd234c473e021e80189a21b2337071e629",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · FRAUDE",
+  "derogado": false
+ },
+ "234": {
+  "archivo": "articulos/art-0234.md",
+  "sha256": "0e4f0b7067b7b0f569c429eb9eac693c743d2475bb3fb51621b5d24ffda80b6f",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · ADMINISTRACIÓN FRAUDULENTA",
+  "derogado": false
+ },
+ "235": {
+  "archivo": "articulos/art-0235.md",
+  "sha256": "949e95e58dc5641f3ff3077772dab4d72e2666ff4dacb30dabf17137ce4060b3",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo V · INSOLVENCIA FRAUDULENTA EN PERJUICIO DE ACREEDORES",
+  "derogado": false
+ },
+ "236": {
+  "archivo": "articulos/art-0236.md",
+  "sha256": "ea238db91ee72c0e46cd003f85e421ddc0f005b6b3ab9dfc63ec18e5ab073449",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VI · EXTORSIÓN",
+  "derogado": false
+ },
+ "237": {
+  "archivo": "articulos/art-0237.md",
+  "sha256": "a8550c33dfb112ee25f27ea2a2922b8f6d29ecd4ac86de95092c8460c9dc1445",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VII · DESPOJO",
+  "derogado": false
+ },
+ "238": {
+  "archivo": "articulos/art-0238.md",
+  "sha256": "c78c928c7989e341f88d415e2368ced15fc3e09c79ce3ea29353a4fb6e32901a",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VII · DESPOJO",
+  "derogado": false
+ },
+ "238-bis": {
+  "archivo": "articulos/art-0238-bis.md",
+  "sha256": "5845c4d48ceb70a6c4640cfa059b529dec10d51b5d1c77ec7a3db5a932a2912b",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VII · DESPOJO",
+  "derogado": false
+ },
+ "239": {
+  "archivo": "articulos/art-0239.md",
+  "sha256": "48616d8256f6f298ff70452a761607194d28049f5ce07b114dee4939fe98f907",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VIII · DAÑO A LA PROPIEDAD",
+  "derogado": false
+ },
+ "240": {
+  "archivo": "articulos/art-0240.md",
+  "sha256": "1ec9fbaefca560240c0d82c231da57568d113af66f902102694872ff2b367770",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VIII · DAÑO A LA PROPIEDAD",
+  "derogado": false
+ },
+ "241": {
+  "archivo": "articulos/art-0241.md",
+  "sha256": "b72095287d2f59f9cef0b3b9ac003d44d274bf8e5e961fc4fef7dbedaa98af0b",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VIII · DAÑO A LA PROPIEDAD",
+  "derogado": false
+ },
+ "241-bis": {
+  "archivo": "articulos/art-0241-bis.md",
+  "sha256": "08165f1d23a59b90d60781fcc37f6f70b23383020f1836081b22415845a98a99",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VIII · DAÑO A LA PROPIEDAD",
+  "derogado": false
+ },
+ "242": {
+  "archivo": "articulos/art-0242.md",
+  "sha256": "286c5251a811138030eb680a7d3c4e4d5002a25d1256bd8113af69f362b518f6",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VIII · DAÑO A LA PROPIEDAD",
+  "derogado": false
+ },
+ "243": {
+  "archivo": "articulos/art-0243.md",
+  "sha256": "d7dac0b28bd97581d9987a135b8376abf07fab334cb4e28f83ecd92a3a91239c",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IX · ENCUBRIMIENTO POR RECEPTACIÓN",
+  "derogado": false
+ },
+ "244": {
+  "archivo": "articulos/art-0244.md",
+  "sha256": "d207daa04e904888358dac4cc2631b8a1fda8ac4b4ae19a2249b914e2ee619f8",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IX · ENCUBRIMIENTO POR RECEPTACIÓN",
+  "derogado": false
+ },
+ "245": {
+  "archivo": "articulos/art-0245.md",
+  "sha256": "c8cc9ecd6c638f9257767b729b2a5aa24bee79d2ec2736075f40120269920e1f",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IX · ENCUBRIMIENTO POR RECEPTACIÓN",
+  "derogado": false
+ },
+ "246": {
+  "archivo": "articulos/art-0246.md",
+  "sha256": "1667b8e8ed22914ca0625dca0db93bd38cd376624c6dcfe113f9a19ce23ab6a2",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo X · DISPOSICIONES COMUNES",
+  "derogado": false
+ },
+ "247": {
+  "archivo": "articulos/art-0247.md",
+  "sha256": "f3274e8a61b9056f1bc6be34a384f59842842840e3b1c3751e233cdc5a9a7e8e",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo X · DISPOSICIONES COMUNES",
+  "derogado": false
+ },
+ "248": {
+  "archivo": "articulos/art-0248.md",
+  "sha256": "4ada54e89076df0fd89fc8acf2118f0e56c4cbefc324acc8ab354c51258fbb68",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo X · DISPOSICIONES COMUNES",
+  "derogado": false
+ },
+ "249": {
+  "archivo": "articulos/art-0249.md",
+  "sha256": "c5d0e4ba014dbfe13452d82ba5b21ec9fc68073830a951f6b0add985661e6953",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo X · DISPOSICIONES COMUNES",
+  "derogado": false
+ },
+ "250": {
+  "archivo": "articulos/art-0250.md",
+  "sha256": "970efd9514cc3f2a23c3fcc6da7e6c7c73bb89427aa76cfd877d3279fe11b858",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · OPERACIONES CON RECURSOS DE PROCEDENCIA ILÍCITA",
+  "derogado": false
+ },
+ "251": {
+  "archivo": "articulos/art-0251.md",
+  "sha256": "888600b1536991b537f1eadf50d58c65b521c98ddc2b5f83166da5d94b817733",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · PORTACIÓN, FABRICACIÓN E IMPORTACIÓN DE OBJETOS APTOS PARA AGREDIR",
+  "derogado": false
+ },
+ "252": {
+  "archivo": "articulos/art-0252.md",
+  "sha256": "2d60392694cae71e9eaa7edb3bfcb5fd1c920796c382560c3b272af173a0cd39",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · PANDILLA, ASOCIACIÓN DELICTUOSA Y DELINCUENCIA ORGANIZADA",
+  "derogado": false
+ },
+ "253": {
+  "archivo": "articulos/art-0253.md",
+  "sha256": "eddb8dcc693372262cc319f6712538507868c496a7faf22e24d7fc8fe04cda1a",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · PANDILLA, ASOCIACIÓN DELICTUOSA Y DELINCUENCIA ORGANIZADA",
+  "derogado": false
+ },
+ "254": {
+  "archivo": "articulos/art-0254.md",
+  "sha256": "93636ae5a7b8660c00e817b16d00212465e0ea9081b3bdfc96f9bf2b6dc87985",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · PANDILLA, ASOCIACIÓN DELICTUOSA Y DELINCUENCIA ORGANIZADA",
+  "derogado": false
+ },
+ "255": {
+  "archivo": "articulos/art-0255.md",
+  "sha256": "6904ee688ad8e57aef72ba13240c3d3d9178694c5be0dded305bbe24aa9dcc7b",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · PANDILLA, ASOCIACIÓN DELICTUOSA Y DELINCUENCIA ORGANIZADA",
+  "derogado": false
+ },
+ "256": {
+  "archivo": "articulos/art-0256.md",
+  "sha256": "8e8e27c789e6bc9d3d75c1d8e560e070949734ff066033c1b39b9fea838f5857",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DISPOSICIONES GENERALES SOBRE SERVIDORES PÚBLICOS",
+  "derogado": false
+ },
+ "256-bis": {
+  "archivo": "articulos/art-0256-bis.md",
+  "sha256": "9c98ba6a4ec7005036d99a81353fee50b2ef91b8eb15e58ee25b0018cbe151a2",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DISPOSICIONES GENERALES SOBRE SERVIDORES PÚBLICOS",
+  "derogado": false
+ },
+ "257": {
+  "archivo": "articulos/art-0257.md",
+  "sha256": "5e9b19a6cc82698e34bb2d303371c76eb722f6b816f90274d89587e0d9579289",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DISPOSICIONES GENERALES SOBRE SERVIDORES PÚBLICOS",
+  "derogado": false
+ },
+ "257-bis": {
+  "archivo": "articulos/art-0257-bis.md",
+  "sha256": "2bb23ba8e5cf224f883e60d37922861bf6a07ed9eb0784c6674a0b9911299939",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DISPOSICIONES GENERALES SOBRE SERVIDORES PÚBLICOS",
+  "derogado": false
+ },
+ "258": {
+  "archivo": "articulos/art-0258.md",
+  "sha256": "4bebce08c8d97f65b6d7046d145bf0b91a558b8b81e2e8c8f19212807f4fdbbd",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DISPOSICIONES GENERALES SOBRE SERVIDORES PÚBLICOS",
+  "derogado": false
+ },
+ "259": {
+  "archivo": "articulos/art-0259.md",
+  "sha256": "8ca7b9404fc83958d7741ca94404fb9a721e4ee7d94304abe328b77ca5d37f07",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · EJERCICIO ILEGAL Y ABANDONO DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "260": {
+  "archivo": "articulos/art-0260.md",
+  "sha256": "2e5c0fadbad8077fc41b5df3b3a99fdba1ef951727df9304a1026b66d10285b0",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · EJERCICIO ILEGAL Y ABANDONO DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "261": {
+  "archivo": "articulos/art-0261.md",
+  "sha256": "453ff37b7e1df3692f713c21212d586dfdc9c0f0f6d524a1df596122475f37bb",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · EJERCICIO ILEGAL Y ABANDONO DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "262": {
+  "archivo": "articulos/art-0262.md",
+  "sha256": "f6550fbd3b73a5cf89585772286b269de5a383b5e75d5b12a2569d308dc293f0",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · ABUSO DE AUTORIDAD Y USO ILEGAL DE LA FUERZA PÚBLICA",
+  "derogado": false
+ },
+ "263": {
+  "archivo": "articulos/art-0263.md",
+  "sha256": "d32cb6fdda62a3aeb05cfdabab6703100b3e646e3bd23298575eddd305fbc5cb",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · ABUSO DE AUTORIDAD Y USO ILEGAL DE LA FUERZA PÚBLICA",
+  "derogado": false
+ },
+ "264": {
+  "archivo": "articulos/art-0264.md",
+  "sha256": "8b303c02fa1d91ea24b3ca93c58372f1840703d3039692cedac3420ebf67e876",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · ABUSO DE AUTORIDAD Y USO ILEGAL DE LA FUERZA PÚBLICA",
+  "derogado": false
+ },
+ "265": {
+  "archivo": "articulos/art-0265.md",
+  "sha256": "30b571439b811625425ae66db71d14ca2a3fbec69afad6b89e6d3751ace4f248",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · ABUSO DE AUTORIDAD Y USO ILEGAL DE LA FUERZA PÚBLICA",
+  "derogado": false
+ },
+ "266": {
+  "archivo": "articulos/art-0266.md",
+  "sha256": "935db0f65515f7f360ba8a5a354e623f68c61d51786c7411fd13443370b5773b",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · COALICIÓN DE SERVIDORES PÚBLICOS",
+  "derogado": false
+ },
+ "267": {
+  "archivo": "articulos/art-0267.md",
+  "sha256": "dbac35f208cf5e68cecefe4c6b6189c781acdeda85f0c30fafc0051b0c133aba",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo V · EJERCICIO ABUSIVO DE FUNCIONES",
+  "derogado": false
+ },
+ "268": {
+  "archivo": "articulos/art-0268.md",
+  "sha256": "b5f555a159e8c362870e6e762c7e94a2bbf576fb9ef0a1acfdb78b9067c87781",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo V · EJERCICIO ABUSIVO DE FUNCIONES",
+  "derogado": false
+ },
+ "269": {
+  "archivo": "articulos/art-0269.md",
+  "sha256": "090ef0116a72467f45c3593440295e90fdd4ba7b8036e54cd510bbf030c6595d",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VI · INTIMIDACIÓN",
+  "derogado": false
+ },
+ "270": {
+  "archivo": "articulos/art-0270.md",
+  "sha256": "e2c9597ca0fa687a2a6f20f604adb09273453df72094775e5766bfff67e38fb9",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VII · NEGACIÓN DEL SERVICIO PÚBLICO",
+  "derogado": false
+ },
+ "271": {
+  "archivo": "articulos/art-0271.md",
+  "sha256": "2561779bcb0b5cdf7ed1e267bd2a84431473f01be14ea7644654f3a81dd7e346",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VIII · TRÁFICO DE INFLUENCIA",
+  "derogado": false
+ },
+ "272": {
+  "archivo": "articulos/art-0272.md",
+  "sha256": "4a4ccbede48be666275a09018a37f1d84ca7694cf9f173ae9e03c7f76cfad573",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IX · COHECHO",
+  "derogado": false
+ },
+ "273": {
+  "archivo": "articulos/art-0273.md",
+  "sha256": "b56df0b957fbbdb720cebf61f7e5d6eccb0e161d411511500f85ffb99f78c91c",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo X · PECULADO",
+  "derogado": false
+ },
+ "274": {
+  "archivo": "articulos/art-0274.md",
+  "sha256": "ed696875f7f0f6a95079895fc3eed9bce6a31c7d31126d377cfa69447126460c",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo XI · CONCUSIÓN",
+  "derogado": false
+ },
+ "275": {
+  "archivo": "articulos/art-0275.md",
+  "sha256": "c72d14aa262d85ac640b81d77cdb02c5c065bde3542c93ef2cd69d975be507b7",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo XII · ENRIQUECIMIENTO ILÍCITO",
+  "derogado": false
+ },
+ "276": {
+  "archivo": "articulos/art-0276.md",
+  "sha256": "d5a5b8af18d4195073e850ade70828e4d16a05481a89d9e0ac38803ec5a4d551",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo XIII · USURPACIÓN DE FUNCIONES PÚBLICAS",
+  "derogado": false
+ },
+ "276-bis": {
+  "archivo": "articulos/art-0276-bis.md",
+  "sha256": "260a7899d2e281395a3ad980c262da4ae8c2ac2e6a836f0e2f59ed4ae620e91f",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo XIV · REMUNERACIÓN ILICITA",
+  "derogado": false
+ },
+ "276-ter": {
+  "archivo": "articulos/art-0276-ter.md",
+  "sha256": "f3ddcd361ed84a0ef26f3218db25d59bbb5aebd4a62eed9eaf6cbdd6993275b2",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo XIV · REMUNERACIÓN ILICITA",
+  "derogado": false
+ },
+ "276-quater": {
+  "archivo": "articulos/art-0276-quater.md",
+  "sha256": "dd9123133362b8e5b29288a8aef12b1a3a8c1febca5c61bb69f3adc88637c766",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo XV · CORRUPCIÓN INMOBILIARIA",
+  "derogado": false
+ },
+ "277": {
+  "archivo": "articulos/art-0277.md",
+  "sha256": "9bc5cbda4f022c22144c5d17447273bd887b0db836240a74c6d0a91c50abb59b",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · PROMOCIÓN DE CONDUCTAS ILÍCITAS, COHECHO",
+  "derogado": false
+ },
+ "278": {
+  "archivo": "articulos/art-0278.md",
+  "sha256": "b881d8b6fab8dad0436487cd4c6f09be51a9e2ea7fee7ec7d1eb2cc93c3485be",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · PROMOCIÓN DE CONDUCTAS ILÍCITAS, COHECHO",
+  "derogado": false
+ },
+ "279": {
+  "archivo": "articulos/art-0279.md",
+  "sha256": "2af512999a54581a2932700d30f6819ad4bf3da8247d83220bb6e6a20a921f5a",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · PROMOCIÓN DE CONDUCTAS ILÍCITAS, COHECHO",
+  "derogado": false
+ },
+ "280": {
+  "archivo": "articulos/art-0280.md",
+  "sha256": "bba63febda88bb16f16f03da3b81e3e795a8134f0260164295041d69a56f2fd4",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · PROMOCIÓN DE CONDUCTAS ILÍCITAS, COHECHO",
+  "derogado": false
+ },
+ "281": {
+  "archivo": "articulos/art-0281.md",
+  "sha256": "66592070d56fcd276f9a8b6073061931b13d4a9e02ba3ea4f49e105e38dee5e3",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · DESOBEDIENCIA Y RESISTENCIA DE PARTICULARES",
+  "derogado": false
+ },
+ "282": {
+  "archivo": "articulos/art-0282.md",
+  "sha256": "5cafcd1262d863dd3495157095c0667d4dfb2a1c121e765de2e221f561e6f4dc",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · DESOBEDIENCIA Y RESISTENCIA DE PARTICULARES",
+  "derogado": false
+ },
+ "283": {
+  "archivo": "articulos/art-0283.md",
+  "sha256": "8b1c4ab41b1cc969577fd7660808a7445eb185901e071d3c8d63dbf3e526bb4c",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · DESOBEDIENCIA Y RESISTENCIA DE PARTICULARES",
+  "derogado": false
+ },
+ "284": {
+  "archivo": "articulos/art-0284.md",
+  "sha256": "d3750c91a0e040d00abda0474fb3e3e24c634209b60aa937d79752259850d69c",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · DESOBEDIENCIA Y RESISTENCIA DE PARTICULARES",
+  "derogado": false
+ },
+ "285": {
+  "archivo": "articulos/art-0285.md",
+  "sha256": "6c5c6360a887768c20ea62829e6997828b9ce3cf626dcc7eeea74e8e59b24c3b",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · OPOSICIÓN A QUE SE EJECUTE ALGUNA OBRA O TRABAJO PÚBLICOS",
+  "derogado": false
+ },
+ "286": {
+  "archivo": "articulos/art-0286.md",
+  "sha256": "58a2ea8d354b04a126e8d36b609d04c107721a2aa712e3143ee26e59587bb0f8",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · QUEBRANTAMIENTO DE SELLOS",
+  "derogado": false
+ },
+ "286-bis": {
+  "archivo": "articulos/art-0286-bis.md",
+  "sha256": "3c4a61e7fb1a62f1583ad8e9c326992abeaa999e6607c0b4738defbd4ba5f240",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · QUEBRANTAMIENTO DE SELLOS",
+  "derogado": false
+ },
+ "287": {
+  "archivo": "articulos/art-0287.md",
+  "sha256": "12a7fd48b00646f7147a41ae80ce72973ecf6bef72f939118673d963c2beac29",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo V · ULTRAJES A LA AUTORIDAD",
+  "derogado": true
+ },
+ "288": {
+  "archivo": "articulos/art-0288.md",
+  "sha256": "2fbc6066a739fb1d90375c331509f9329f480be4cf9376a09db8ce15730788e1",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VI · EJERCICIO ILEGAL DEL PROPIO DERECHO",
+  "derogado": false
+ },
+ "289": {
+  "archivo": "articulos/art-0289.md",
+  "sha256": "deb30e1fecacbee90dcac4d047fa5b76c5cc018b3bae7f41579a3008ab6f5c86",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VII · REGLAS COMUNES PARA LOS DELITOS CONTRA EL EJERCICIO LEGÍTIMO DE LA AUTORIDAD",
+  "derogado": false
+ },
+ "289-bis": {
+  "archivo": "articulos/art-0289-bis.md",
+  "sha256": "5cc7e933bdc45d757cae5b4acbbde20bb6725bfc87ca0aac9a7c35ec191a678c",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VIII · FABRICACIÓN, COMERCIALIZACIÓN Y USO INDEBIDO DE INSIGNIAS Y UNIFORMES",
+  "derogado": false
+ },
+ "289-ter": {
+  "archivo": "articulos/art-0289-ter.md",
+  "sha256": "c34d96a241c552c01bac6e3f58e3dd709a50c1976e3447ee93869553396e79b5",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VIII · FABRICACIÓN, COMERCIALIZACIÓN Y USO INDEBIDO DE INSIGNIAS Y UNIFORMES",
+  "derogado": false
+ },
+ "290": {
+  "archivo": "articulos/art-0290.md",
+  "sha256": "8164c059dde9220ad735a4552a325f96c68ca9847f7e67a8840bd3e5102bc7d1",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DENEGACIÓN O RETARDO DE JUSTICIA Y PREVARICACIÓN",
+  "derogado": false
+ },
+ "291": {
+  "archivo": "articulos/art-0291.md",
+  "sha256": "972a3170cfb0f07bef1ecb3feb1efa19a8b9fece0d618e23e7342f47fd7f9072",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DENEGACIÓN O RETARDO DE JUSTICIA Y PREVARICACIÓN",
+  "derogado": false
+ },
+ "292": {
+  "archivo": "articulos/art-0292.md",
+  "sha256": "2083351dda2f94d218752b9b377d8e02298ded4bd2a86ddba90621970f649cf5",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DENEGACIÓN O RETARDO DE JUSTICIA Y PREVARICACIÓN",
+  "derogado": false
+ },
+ "292-bis": {
+  "archivo": "articulos/art-0292-bis.md",
+  "sha256": "39e24740a4cc57d3ce34cc8cd91d8fd26919db79c590cc0cb43aff82a302f28a",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DENEGACIÓN O RETARDO DE JUSTICIA Y PREVARICACIÓN",
+  "derogado": false
+ },
+ "293": {
+  "archivo": "articulos/art-0293.md",
+  "sha256": "c351841d41f1ee9500fb527952d17919b7777a023c10e4a5961dd675ca535924",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · DELITOS EN EL ÁMBITO DE LA PROCURACIÓN DE JUSTICIA",
+  "derogado": true
+ },
+ "293-bis": {
+  "archivo": "articulos/art-0293-bis.md",
+  "sha256": "7daa7508ef4cfda8809dcf6b358b6093301b31d5c95982adb710bd9523591788",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · DELITOS EN EL ÁMBITO DE LA PROCURACIÓN DE JUSTICIA",
+  "derogado": false
+ },
+ "293-ter": {
+  "archivo": "articulos/art-0293-ter.md",
+  "sha256": "a8c3de62416305d26f13cb9c4210e6a67baa2a87c99bde08a1afdcf37d10e11c",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · DELITOS EN EL ÁMBITO DE LA PROCURACIÓN DE JUSTICIA",
+  "derogado": false
+ },
+ "293-quater": {
+  "archivo": "articulos/art-0293-quater.md",
+  "sha256": "f08db1e8e1746fdc175963600e9690db9e2280cea20233728dbe885afba8bd8f",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · DELITOS EN EL ÁMBITO DE LA PROCURACIÓN DE JUSTICIA",
+  "derogado": false
+ },
+ "294": {
+  "archivo": "articulos/art-0294.md",
+  "sha256": "dcfdd36f1a3a670f14589fd1c33fc8e8586d332b8d823addcb192b08443da80b",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · TORTURA (Derogado)",
+  "derogado": false
+ },
+ "295": {
+  "archivo": "articulos/art-0295.md",
+  "sha256": "bf74283069d112c7b2fdbc2400ccef6ca6dc1556a3331a2dedfa39de5ad82d9d",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · TORTURA (Derogado)",
+  "derogado": false
+ },
+ "296": {
+  "archivo": "articulos/art-0296.md",
+  "sha256": "075e8a4aebcc7ad37c9d8741fa31777526534cbafbbb3526a4cd408e4f685d32",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · TORTURA (Derogado)",
+  "derogado": false
+ },
+ "297": {
+  "archivo": "articulos/art-0297.md",
+  "sha256": "be3315c1699d9f0c3afe127443c4a79be16b718b55642a4c5cdc485b951ef6f6",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · TORTURA (Derogado)",
+  "derogado": false
+ },
+ "298": {
+  "archivo": "articulos/art-0298.md",
+  "sha256": "f3af0d6a73700866282a739842c35d1cf3a83b55545c32defe03130f1a272aef",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · TORTURA (Derogado)",
+  "derogado": false
+ },
+ "299": {
+  "archivo": "articulos/art-0299.md",
+  "sha256": "6138180f906f5cc961fd88787e45c0b93be227d031f55f6bc0cd756fb54dc272",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · DELITOS COMETIDOS EN EL ÁMBITO DE LA ADMINISTRACIÓN DE JUSTICIA",
+  "derogado": false
+ },
+ "299-bis": {
+  "archivo": "articulos/art-0299-bis.md",
+  "sha256": "8efb318a754139365e9278acdc1d0a4a98889752a7291610ff7d2cb10648f468",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · DELITOS COMETIDOS EN EL ÁMBITO DE LA ADMINISTRACIÓN DE JUSTICIA",
+  "derogado": false
+ },
+ "299-ter": {
+  "archivo": "articulos/art-0299-ter.md",
+  "sha256": "cea86932fa2f0eefb334630db840324a6c0b4bf0e3132551b5cb7e6a183649f7",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · DELITOS COMETIDOS EN EL ÁMBITO DE LA ADMINISTRACIÓN DE JUSTICIA",
+  "derogado": false
+ },
+ "300": {
+  "archivo": "articulos/art-0300.md",
+  "sha256": "8992096268164c607a05696f7a763d5afc87b1c2ca4557ba43b49d90b58693bc",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · DELITOS COMETIDOS EN EL ÁMBITO DE LA ADMINISTRACIÓN DE JUSTICIA",
+  "derogado": false
+ },
+ "301": {
+  "archivo": "articulos/art-0301.md",
+  "sha256": "0609486c18109d5ef1e890850fba66a9ca46f29f222b086ab91dbefe7d4a04d3",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo V · OMISIÓN DE INFORMES MÉDICO FORENSES",
+  "derogado": false
+ },
+ "302": {
+  "archivo": "articulos/art-0302.md",
+  "sha256": "62d063718d1ca2d0baf78921aa9e3ac7a0418e917ef0f39d85aa8ae42b8837a1",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo V · OMISIÓN DE INFORMES MÉDICO FORENSES",
+  "derogado": false
+ },
+ "303": {
+  "archivo": "articulos/art-0303.md",
+  "sha256": "c71f91dd3836d422359101ae6ab6f091c73edc3e22107719aa1dccb2586e46da",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VI · DELITOS COMETIDOS EN EL ÁMBITO DE LA EJECUCIÓN PENAL",
+  "derogado": false
+ },
+ "304": {
+  "archivo": "articulos/art-0304.md",
+  "sha256": "3dc9fe298b5cdedfe5385b0af0a2cb7c83dc4b96ad480b786cd3dac1babed141",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VII · EVASIÓN DE PRESOS",
+  "derogado": false
+ },
+ "305": {
+  "archivo": "articulos/art-0305.md",
+  "sha256": "862906a6820a67c2e325a7eda79a013b3456aedbea6e94c7fa9f7d055fbb3454",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VII · EVASIÓN DE PRESOS",
+  "derogado": false
+ },
+ "305-bis": {
+  "archivo": "articulos/art-0305-bis.md",
+  "sha256": "1268751ad240badd2ec645aee7af54fb0bd83c8f396c9f401f1102df4d5dd6bc",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VII · EVASIÓN DE PRESOS",
+  "derogado": false
+ },
+ "306": {
+  "archivo": "articulos/art-0306.md",
+  "sha256": "2f071dee0ce824dbbe61a09fa84fd67d0fba95162c4bf126cfcb65091a877144",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VII · EVASIÓN DE PRESOS",
+  "derogado": false
+ },
+ "307": {
+  "archivo": "articulos/art-0307.md",
+  "sha256": "be637221d02bed0691c053f290624d8144b5b4506bd5a06a708886482abf6a25",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VII · EVASIÓN DE PRESOS",
+  "derogado": false
+ },
+ "308": {
+  "archivo": "articulos/art-0308.md",
+  "sha256": "ee906b1c36b108f7015db8616289a296fe5f199a7559c73be528373013187af2",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VII · EVASIÓN DE PRESOS",
+  "derogado": false
+ },
+ "309": {
+  "archivo": "articulos/art-0309.md",
+  "sha256": "badb81390d962eb4cda37600ef9a0f082f0795fb7b08d2e77a85c7c8dc27ebc9",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VII · EVASIÓN DE PRESOS",
+  "derogado": false
+ },
+ "310": {
+  "archivo": "articulos/art-0310.md",
+  "sha256": "af0239de56ead84d3c0073d04950d8016972445eafbc7a7e553305582b797296",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · FRAUDE PROCESAL",
+  "derogado": false
+ },
+ "310-bis": {
+  "archivo": "articulos/art-0310-bis.md",
+  "sha256": "727f1536bc07181562e3b109c68a89aac1193944ca1f63a301678242c69a0fd8",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · FRAUDE PROCESAL",
+  "derogado": false
+ },
+ "311": {
+  "archivo": "articulos/art-0311.md",
+  "sha256": "5ce466a9d7fc041adc7627a12aa05604a14509cd6ccfd25c7a3bf407430468a3",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · FALSEDAD ANTE AUTORIDADES",
+  "derogado": false
+ },
+ "312": {
+  "archivo": "articulos/art-0312.md",
+  "sha256": "79cfadb669ef4af68ffe9e181a540b046e12a6e8a157f325d6bfde7f27537bf9",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · FALSEDAD ANTE AUTORIDADES",
+  "derogado": false
+ },
+ "313": {
+  "archivo": "articulos/art-0313.md",
+  "sha256": "3913adb146844c1a15384fccafe9dfb79ecd300c376a0b9af50ccea8223b5244",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · FALSEDAD ANTE AUTORIDADES",
+  "derogado": false
+ },
+ "314": {
+  "archivo": "articulos/art-0314.md",
+  "sha256": "301f4303b8af8e6ca2a1edfcf1710f66746c5d559a088467b2590183524c8fb4",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · FALSEDAD ANTE AUTORIDADES",
+  "derogado": false
+ },
+ "315": {
+  "archivo": "articulos/art-0315.md",
+  "sha256": "3602fd1688932103eb9ce2e12b5a3c170248725920017021cb3fa6a513b1685c",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · FALSEDAD ANTE AUTORIDADES",
+  "derogado": false
+ },
+ "316": {
+  "archivo": "articulos/art-0316.md",
+  "sha256": "102a699459683f9fa0ff942112d01ef88d69fc7ea60c403e87ff0a7557a6a0b9",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · FALSEDAD ANTE AUTORIDADES",
+  "derogado": false
+ },
+ "317": {
+  "archivo": "articulos/art-0317.md",
+  "sha256": "c19082b521a925a4c0037fcbbf8b05436f8ff9f685cff4812c4351f57fa25afc",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · VARIACIÓN DEL NOMBRE O DOMICILIO",
+  "derogado": false
+ },
+ "318": {
+  "archivo": "articulos/art-0318.md",
+  "sha256": "f27c4ff7afa1493eaf8e71f4b8114905ebc3024acbf1dbd829bd5efa56094457",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · SIMULACIÓN DE ELEMENTOS DE PRUEBA",
+  "derogado": false
+ },
+ "319": {
+  "archivo": "articulos/art-0319.md",
+  "sha256": "0c3f96f1b8854f29b13cc6ff0cef9d3c8625897db5a480d9a11caf03571f6138",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo V · DELITOS DE ABOGADOS, PATRONOS, LITIGANTES Y ASESORES JURÍDICOS",
+  "derogado": false
+ },
+ "320": {
+  "archivo": "articulos/art-0320.md",
+  "sha256": "7b3f176254752b782e85ec2c4149f80e87834e9166db14d9dea89a80c2ffde52",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VI · ENCUBRIMIENTO POR FAVORECIMIENTO",
+  "derogado": false
+ },
+ "321": {
+  "archivo": "articulos/art-0321.md",
+  "sha256": "0bd51edaf0ea22fc2a84b5527594d4eda718d4095c22cbee74e06aad802c0b62",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VI · ENCUBRIMIENTO POR FAVORECIMIENTO",
+  "derogado": false
+ },
+ "321-bis": {
+  "archivo": "articulos/art-0321-bis.md",
+  "sha256": "34a5930cbab2a6a4a48bada6e8510a68e560c0118f617b2fee89dae665627d0b",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VI · ENCUBRIMIENTO POR FAVORECIMIENTO",
+  "derogado": false
+ },
+ "322": {
+  "archivo": "articulos/art-0322.md",
+  "sha256": "46d37950ff5e3f74d6052df5043c8f735ce205d9b0529322a192f01ea1f7e0fe",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · RESPONSABILIDAD PROFESIONAL Y TÉCNICA",
+  "derogado": false
+ },
+ "323": {
+  "archivo": "articulos/art-0323.md",
+  "sha256": "607a39df2baea427753602870349363307b43c250529024326719d6bcd5d2216",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · USURPACIÓN DE PROFESIÓN",
+  "derogado": false
+ },
+ "324": {
+  "archivo": "articulos/art-0324.md",
+  "sha256": "d372bf1e053f2f00e7aa36580ae8479d68b5d2dc2d6315d654f46ee4456e7500",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · ABANDONO, NEGACIÓN Y PRÁCTICA INDEBIDA DEL SERVICIO MÉDICO",
+  "derogado": false
+ },
+ "325": {
+  "archivo": "articulos/art-0325.md",
+  "sha256": "72c21eaeefe2f6e1ca3dc7ca9f2314fbfc6370a644a0efa306bf4e6cea6471f9",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · ABANDONO, NEGACIÓN Y PRÁCTICA INDEBIDA DEL SERVICIO MÉDICO",
+  "derogado": false
+ },
+ "326": {
+  "archivo": "articulos/art-0326.md",
+  "sha256": "b751595d050ccb4b294040ab8fd697b44f1a58486b0ed1493b6db9850e5befb8",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · ABANDONO, NEGACIÓN Y PRÁCTICA INDEBIDA DEL SERVICIO MÉDICO",
+  "derogado": false
+ },
+ "327": {
+  "archivo": "articulos/art-0327.md",
+  "sha256": "70630ddb5be5f656eb2d342349145c6efc88e5a0f7beb1257c562a377d9461e1",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · RESPONSABILIDAD DE DIRECTORES, ENCARGADOS, ADMINISTRADORES O EMPLEADOS DE CENTROS DE SALUD Y AGENCIAS FUNERARIAS, POR REQUERIMIENTO ARBITRARIO DE LA CONTRAPRESTACIÓN",
+  "derogado": false
+ },
+ "328": {
+  "archivo": "articulos/art-0328.md",
+  "sha256": "131b8fd12c4aa5e21d359986414c04fbf226c5ec2cb3ca486d43b63effeb5aa9",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo V · SUMINISTRO DE MEDICINAS NOCIVAS O INAPROPIADAS",
+  "derogado": false
+ },
+ "329": {
+  "archivo": "articulos/art-0329.md",
+  "sha256": "bd307e05fa5951265b75369b79e5e9121d5807421ae46e7666c12518add7599d",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo V · SUMINISTRO DE MEDICINAS NOCIVAS O INAPROPIADAS",
+  "derogado": false
+ },
+ "329-bis": {
+  "archivo": "articulos/art-0329-bis.md",
+  "sha256": "14513614d87aa2d60f82c2c999cc18c6007a2243a718d4531bc8dce63d165223",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo VI · RESPONSABILIDAD DE LOS DIRECTORES RESPONSABLES DE OBRA O CORRESPONSABLES",
+  "derogado": false
+ },
+ "330": {
+  "archivo": "articulos/art-0330.md",
+  "sha256": "55127ad2cbfd7d477eae7998e294bc2281c06339480de1a3c4c2445bfd0870d1",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · ATAQUES A LAS VÍAS DE COMUNICACIÓN Y A LOS MEDIOS DE TRANSPORTE",
+  "derogado": false
+ },
+ "331": {
+  "archivo": "articulos/art-0331.md",
+  "sha256": "b3dda64def27e1b5e025c8fc57e88bc724920c021aaf7ea7fecb783119e3f540",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · ATAQUES A LAS VÍAS DE COMUNICACIÓN Y A LOS MEDIOS DE TRANSPORTE",
+  "derogado": false
+ },
+ "332": {
+  "archivo": "articulos/art-0332.md",
+  "sha256": "7d237d20fe4db083739b9c16c6a55397b1e997669f4d91d256c0e423a956f300",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · DELITOS CONTRA LA SEGURIDAD DEL TRÁNSITO DE VEHÍCULOS",
+  "derogado": false
+ },
+ "333": {
+  "archivo": "articulos/art-0333.md",
+  "sha256": "99c1decf5a2dbde70d658148b8be6397e5292a87b70d01d0c018859b6c85dcc9",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · VIOLACIÓN DE CORRESPONDENCIA",
+  "derogado": false
+ },
+ "334": {
+  "archivo": "articulos/art-0334.md",
+  "sha256": "167c2b084d2b6feb020d2735ca27be590175b1ad7b73973838ee8533abb0e7ae",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · VIOLACIÓN DE LA COMUNICACIÓN PRIVADA",
+  "derogado": false
+ },
+ "335": {
+  "archivo": "articulos/art-0335.md",
+  "sha256": "a8afb8114cba53eb31940d9b162635b544870bb5cd0df69f0f30d089c318721e",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · PRODUCCIÓN, IMPRESIÓN, ENAJENACIÓN, DISTRIBUCIÓN, ALTERACIÓN O FALSIFICACIÓN DE TÍTULOS AL PORTADOR, DOCUMENTOS DE CRÉDITO PÚBLICOS O VALES DE CANJE.",
+  "derogado": false
+ },
+ "336": {
+  "archivo": "articulos/art-0336.md",
+  "sha256": "861bc645ae9c23241c9a520026f57d8926b09cc749ae2bf423792f03e421cac6",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · PRODUCCIÓN, IMPRESIÓN, ENAJENACIÓN, DISTRIBUCIÓN, ALTERACIÓN O FALSIFICACIÓN DE TÍTULOS AL PORTADOR, DOCUMENTOS DE CRÉDITO PÚBLICOS O VALES DE CANJE.",
+  "derogado": false
+ },
+ "337": {
+  "archivo": "articulos/art-0337.md",
+  "sha256": "978ae65d585c13c297a55b25a0561d6b42ac5e2fef001981b6a2548b64ce725e",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · FALSIFICACIÓN DE SELLOS, MARCAS, LLAVES, CUÑOS, TROQUELES, CONTRASEÑAS Y OTROS",
+  "derogado": false
+ },
+ "338": {
+  "archivo": "articulos/art-0338.md",
+  "sha256": "ce00b832cf57d02e370509a9f7245ed12a92cc991ed1cfc66dea4db6f51358bb",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · ELABORACIÓN O ALTERACIÓN Y USO INDEBIDO DE",
+  "derogado": false
+ },
+ "339": {
+  "archivo": "articulos/art-0339.md",
+  "sha256": "ff388c8e88be1d7f907368d3b3c8cca426cfe169e6771a8882900c54a37ff052",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · FALSIFICACIÓN O ALTERACIÓN Y USO INDEBIDO DE DOCUMENTOS",
+  "derogado": false
+ },
+ "340": {
+  "archivo": "articulos/art-0340.md",
+  "sha256": "2f2a5631fb0e8d1c14ff6c891633c8cc0d53b33156217e90a725dd3871afe616",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · FALSIFICACIÓN O ALTERACIÓN Y USO INDEBIDO DE DOCUMENTOS",
+  "derogado": false
+ },
+ "341": {
+  "archivo": "articulos/art-0341.md",
+  "sha256": "48c960c2573ace74766c7532fe795519a1bde3457195405e0389245cd04ce1c2",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · FALSIFICACIÓN O ALTERACIÓN Y USO INDEBIDO DE DOCUMENTOS",
+  "derogado": false
+ },
+ "342": {
+  "archivo": "articulos/art-0342.md",
+  "sha256": "96d64a21d84d25fe3a9530b871d5d9a7f82e8024365d9a6e8cbe7b0c98500d9e",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · FALSIFICACIÓN O ALTERACIÓN Y USO INDEBIDO DE DOCUMENTOS",
+  "derogado": false
+ },
+ "343": {
+  "archivo": "articulos/art-0343.md",
+  "sha256": "7fa28602702e674660df4b5356e55a5c6e1f53a83c5a53053484e4b963a336e4",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DELITOS CONTRA EL AMBIENTE",
+  "derogado": false
+ },
+ "343-bis": {
+  "archivo": "articulos/art-0343-bis.md",
+  "sha256": "ac1b5edaad5bc10046496f2c5542eef78742e429e7796e534fce409b512571c3",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DELITOS CONTRA EL AMBIENTE",
+  "derogado": false
+ },
+ "344": {
+  "archivo": "articulos/art-0344.md",
+  "sha256": "6cfd496718c3e0476b91dbb4e976c24c1406261fdd445438c824569dd65d88d6",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DELITOS CONTRA EL AMBIENTE",
+  "derogado": false
+ },
+ "344-bis": {
+  "archivo": "articulos/art-0344-bis.md",
+  "sha256": "fdf6d931bffdf4805bac5d67a00eab066a6751a696430cc21261b524f8c73398",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DELITOS CONTRA EL AMBIENTE",
+  "derogado": false
+ },
+ "345": {
+  "archivo": "articulos/art-0345.md",
+  "sha256": "f36adacb0ebfe91b0db9a0e7c894f640d6fec19612bf201e45ad6b2507e5c562",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DELITOS CONTRA EL AMBIENTE",
+  "derogado": false
+ },
+ "345-bis": {
+  "archivo": "articulos/art-0345-bis.md",
+  "sha256": "eb3218f193cee6e6926d2f7fc4114392807476d967482be83a2bb2c949e13199",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DELITOS CONTRA EL AMBIENTE",
+  "derogado": false
+ },
+ "345-ter": {
+  "archivo": "articulos/art-0345-ter.md",
+  "sha256": "6d9d81347effc776d66dc733286e96883dadb0f19d146f9fa92cceeb35c9751a",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DELITOS CONTRA EL AMBIENTE",
+  "derogado": false
+ },
+ "346": {
+  "archivo": "articulos/art-0346.md",
+  "sha256": "01fc2114bc017cb4e7b47d2bd3ca8ef1dc22f8297cb5bb323745df18a83a0662",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DELITOS CONTRA EL AMBIENTE",
+  "derogado": false
+ },
+ "346-bis": {
+  "archivo": "articulos/art-0346-bis.md",
+  "sha256": "3059eb98fb6e2df97abffcf60765a88b6dd816d3ef58a026cb50d84a66de5256",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · DELITOS CONTRA EL AMBIENTE",
+  "derogado": false
+ },
+ "347": {
+  "archivo": "articulos/art-0347.md",
+  "sha256": "ba8a2600021d5af44f48266242c6c1e86cd8bc6cd6addc613f23df4ce5ea95cd",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · DELITOS CONTRA LA GESTIÓN AMBIENTAL",
+  "derogado": false
+ },
+ "347-bis": {
+  "archivo": "articulos/art-0347-bis.md",
+  "sha256": "546b3a994157cd37c6eb207c0001427447f9f23d5b79c5c7e4464e2af13003ea",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · DELITOS CONTRA LA GESTIÓN AMBIENTAL",
+  "derogado": false
+ },
+ "347-ter": {
+  "archivo": "articulos/art-0347-ter.md",
+  "sha256": "2b681d6d60e593faedcc95a8e434bb1e6e8a9d77cccdb5ea5318f665385e0401",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · DELITOS CONTRA LA GESTIÓN AMBIENTAL",
+  "derogado": false
+ },
+ "347-quater": {
+  "archivo": "articulos/art-0347-quater.md",
+  "sha256": "e6a6f8df7d995a757292c047761ef62ff41cd0d622d2c1d6d8b3f9038da873ae",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · DELITOS CONTRA LA GESTIÓN AMBIENTAL",
+  "derogado": false
+ },
+ "347-quintus": {
+  "archivo": "articulos/art-0347-quintus.md",
+  "sha256": "a36009f3d38a862eb7005a73b74141d48ff27b5ed49bd12c47133cc6543f23c7",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · DELITOS CONTRA LA GESTIÓN AMBIENTAL",
+  "derogado": false
+ },
+ "348": {
+  "archivo": "articulos/art-0348.md",
+  "sha256": "00050719aa4adbb3b4f9631ae4e094b56dd952e3b0fcc3b1ac6c3d7a0413cea0",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · DISPOSICIONES COMUNES A LOS DELITOS PREVISTOS EN EL PRESENTE TÍTULO",
+  "derogado": false
+ },
+ "349": {
+  "archivo": "articulos/art-0349.md",
+  "sha256": "df9c55ae501f5405f6244aa697970c3a1fa8c36e9ac1fd845b35ccda31b85ddd",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · DISPOSICIONES COMUNES A LOS DELITOS PREVISTOS EN EL PRESENTE TÍTULO",
+  "derogado": false
+ },
+ "349-bis": {
+  "archivo": "articulos/art-0349-bis.md",
+  "sha256": "5dbc42c676b58dcfa587c78771dc370ebd13b5b4cfa70e1fbc365e0d20a05abb",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · DISPOSICIONES COMUNES A LOS DELITOS PREVISTOS EN EL PRESENTE TÍTULO",
+  "derogado": false
+ },
+ "349-ter": {
+  "archivo": "articulos/art-0349-ter.md",
+  "sha256": "b502fbd69d1c58d6139de1b914cd7953531595e2a9a5149c7c1879f8265bb8ae",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · DISPOSICIONES COMUNES A LOS DELITOS PREVISTOS EN EL PRESENTE TÍTULO",
+  "derogado": false
+ },
+ "350": {
+  "archivo": "articulos/art-0350.md",
+  "sha256": "68919bd76bf5d3042e651bf6ab7d041c96aa5444daf7b0dea4c99b20870ac61f",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · DISPOSICIONES COMUNES A LOS DELITOS PREVISTOS EN EL PRESENTE TÍTULO",
+  "derogado": false
+ },
+ "350-bis": {
+  "archivo": "articulos/art-0350-bis.md",
+  "sha256": "d2313687512e9b5d33c63f710f2c36959dbc918d22c89966015d531d5683f336",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · DELITOS COMETIDOS POR ACTOS DE MALTRATO O CRUELDAD EN CONTRA DE ANIMALES NO HUMANOS",
+  "derogado": false
+ },
+ "350-ter": {
+  "archivo": "articulos/art-0350-ter.md",
+  "sha256": "8b6b85496e672e316a9c410b64c1ef40134d4fc318f386e7a18590a37e442077",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · DELITOS COMETIDOS POR ACTOS DE MALTRATO O CRUELDAD EN CONTRA DE ANIMALES NO HUMANOS",
+  "derogado": false
+ },
+ "350-quater": {
+  "archivo": "articulos/art-0350-quater.md",
+  "sha256": "e6bc040e0e6eb72939e101770499fe3ca03bdb151ef1c1f6566515bac15ad78a",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · DELITOS COMETIDOS POR ACTOS DE MALTRATO O CRUELDAD EN CONTRA DE ANIMALES NO HUMANOS",
+  "derogado": false
+ },
+ "350-quinquies": {
+  "archivo": "articulos/art-0350-quinquies.md",
+  "sha256": "c3f20fd3bbb72423aef5e7577091aeaf48eee2b3b269ab0cde089e06192ffacd",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · DELITOS COMETIDOS POR ACTOS DE MALTRATO O CRUELDAD EN CONTRA DE ANIMALES NO HUMANOS",
+  "derogado": false
+ },
+ "351": {
+  "archivo": "articulos/art-0351.md",
+  "sha256": "5c75e55c4e6b84d8340c53a09fe30973eb43add5a210bcffb24b0136eb36ade7",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DELITOS ELECTORALES",
+  "derogado": false
+ },
+ "352": {
+  "archivo": "articulos/art-0352.md",
+  "sha256": "b78c22bba1e49aa33bef54fcd551472095f5da8732907e1887bd263354604326",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DELITOS ELECTORALES",
+  "derogado": false
+ },
+ "353": {
+  "archivo": "articulos/art-0353.md",
+  "sha256": "82109df9bb9dc2b82bd9e30ffd0ef194e9251747c049eb42bda90345f76b34af",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DELITOS ELECTORALES",
+  "derogado": false
+ },
+ "354": {
+  "archivo": "articulos/art-0354.md",
+  "sha256": "e214f1a3487987a42a25d0195816d17ba94182dbcf15f5112cce0b00052c12f1",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DELITOS ELECTORALES",
+  "derogado": false
+ },
+ "355": {
+  "archivo": "articulos/art-0355.md",
+  "sha256": "7b6b843215908f27a8f27c32389b28fc91a1c99ed65eb9c6eb0ca48d6baebee9",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DELITOS ELECTORALES",
+  "derogado": false
+ },
+ "356": {
+  "archivo": "articulos/art-0356.md",
+  "sha256": "db3316123ed04a2cb2cc88b57087f848783e5baa5167d1536a2c9499012731d9",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DELITOS ELECTORALES",
+  "derogado": false
+ },
+ "356-bis": {
+  "archivo": "articulos/art-0356-bis.md",
+  "sha256": "5778f335beda91e32e109aa452a59bef9ff87ba10fc5a6894801a107aab8b7ed",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DELITOS ELECTORALES",
+  "derogado": false
+ },
+ "356-ter": {
+  "archivo": "articulos/art-0356-ter.md",
+  "sha256": "737731207a24140404204f9e61ea8de3f8e6ae6c80395d4a0c0e8e6decfed66a",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DELITOS ELECTORALES",
+  "derogado": false
+ },
+ "356-cuarter": {
+  "archivo": "articulos/art-0356-cuarter.md",
+  "sha256": "f0b8d86b62720f69ce9132b1e6d2844575b232f8c836d5c25a8ba84be4be7278",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DELITOS ELECTORALES",
+  "derogado": false
+ },
+ "357": {
+  "archivo": "articulos/art-0357.md",
+  "sha256": "00ea59f8e09942716246d0bb1a6d197b3dca990eb93023239362b5bb36e178d1",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DELITOS ELECTORALES",
+  "derogado": false
+ },
+ "358": {
+  "archivo": "articulos/art-0358.md",
+  "sha256": "840453842846b7bd588b02916ba2dc3ba5ffd9f7038853bda42fbfd10c3c9cf5",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DELITOS ELECTORALES",
+  "derogado": false
+ },
+ "358-bis": {
+  "archivo": "articulos/art-0358-bis.md",
+  "sha256": "e8a34d42a8022df207337977a7832a180ac53efe190c6b79640686dfbd8391ef",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DELITOS ELECTORALES",
+  "derogado": false
+ },
+ "358-ter": {
+  "archivo": "articulos/art-0358-ter.md",
+  "sha256": "7c179e9be6ae21d0626a1a9d92b3c79b4f66161f05a5539abd7756603b54ce8b",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DELITOS ELECTORALES",
+  "derogado": false
+ },
+ "358-quater": {
+  "archivo": "articulos/art-0358-quater.md",
+  "sha256": "64ee8769ea5bc2220c10f1a025157e27dc0c6363a6d000476f07504fa0ec36ec",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DELITOS ELECTORALES",
+  "derogado": false
+ },
+ "359": {
+  "archivo": "articulos/art-0359.md",
+  "sha256": "997710d1cfeb6978a205859accdca53bdb6460e61bcd5c40e944cfb6b7db505f",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DELITOS ELECTORALES",
+  "derogado": false
+ },
+ "360": {
+  "archivo": "articulos/art-0360.md",
+  "sha256": "52675320bd836279a370497f0cf05496527bea8e93a76b9e86cfa796432836e8",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DELITOS ELECTORALES",
+  "derogado": false
+ },
+ "360-bis": {
+  "archivo": "articulos/art-0360-bis.md",
+  "sha256": "63887f2edc2cccc3d9dfc066afa58b602b353898d181a18d03c3721ff657973c",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DELITOS ELECTORALES",
+  "derogado": false
+ },
+ "360-ter": {
+  "archivo": "articulos/art-0360-ter.md",
+  "sha256": "7236c15cc2a8f1ae1af712125564b0c3973b2da4597f031f94fe3ae60522e157",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo ÚNICO · DELITOS ELECTORALES",
+  "derogado": false
+ },
+ "361": {
+  "archivo": "articulos/art-0361.md",
+  "sha256": "f636c4a116b29f1fef046b9127d50d2ddd0ac06ee6b00dfbd8e53b322b114f39",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo I · REBELIÓN",
+  "derogado": false
+ },
+ "362": {
+  "archivo": "articulos/art-0362.md",
+  "sha256": "bcff96a9add6ad01ffdb4bbdb61d40b1fb62a4590a3edfacd1e29446efc030b7",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo II · ATAQUES A LA PAZ PÚBLICA",
+  "derogado": false
+ },
+ "363": {
+  "archivo": "articulos/art-0363.md",
+  "sha256": "0172c776040d19bc4a9914a07c62d973661e334435a5c0f7d5e2e29b96547349",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo III · SABOTAJE",
+  "derogado": false
+ },
+ "364": {
+  "archivo": "articulos/art-0364.md",
+  "sha256": "a3cb6128c4251dbbba53480b0960b0d488c0dca7aba79090ab5f6745e2548a15",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo IV · MOTÍN",
+  "derogado": false
+ },
+ "365": {
+  "archivo": "articulos/art-0365.md",
+  "sha256": "8a4902c1acab7b778b3a5e661f92d0193305cd56a8aec9a9e2056aa63aebcbd0",
+  "ubicacion": "Libro SEGUNDO · PARTE ESPECIAL / Título DÉCIMO · DELITOS CONTRA LA DIGNIDAD DE LAS PERSONAS / Capítulo V · SEDICIÓN",
+  "derogado": false
+ }
+}

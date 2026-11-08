@@ -22,7 +22,7 @@ import yaml
 
 RAIZ = Path(__file__).resolve().parent.parent
 AMBITOS = {"federal", "estatal", "municipal"}
-MATERIAS = {"fiscal", "contable", "laboral", "seguridad_social", "mercantil", "civil", "penal", "administrativo", "otra"}
+MATERIAS = {"fiscal", "contable", "laboral", "seguridad_social", "mercantil", "civil", "penal", "electoral", "administrativo", "otra"}
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
 FECHA = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 

@@ -1,0 +1,23 @@
+{
+ "clave": "CMX-CRP",
+ "nombre": "Código de Responsabilidad Parlamentaria del Congreso de la Ciudad de México",
+ "url": "https://data.consejeria.cdmx.gob.mx/images/leyes/codigos/CODIGO_DE_RESPONSABILIDAD_PARLAMENTARIA_DEL_CONGRESO_DE_LA_CIUDAD_DE_MEXICO_2.1.pdf",
+ "fuente": "Consejería Jurídica y de Servicios Legales de la Ciudad de México (texto vigente); cotejar contra Gaceta Oficial de la Ciudad de México",
+ "ultima_reforma_segun_pdf": null,
+ "ultima_reforma_origen": "sin dato",
+ "descargado": "2026-11-07",
+ "sha256_pdf": "506ed17524a2af8131d01166ee5c022be084fd9861ae4fab4c15e1391039c089",
+ "sha256_texto": "ff8c0b045e8709c1336a624fd7c674767111de6aaae0233b254c2388870dafa9",
+ "cotejado_dof": {
+  "ley_completa": null,
+  "articulos": {}
+ },
+ "advertencias": [],
+ "articulos": 42,
+ "derogados": 0,
+ "ambito": "estatal",
+ "entidad": "CMX",
+ "materia": "electoral",
+ "emisor": "Consejería Jurídica y de Servicios Legales de la Ciudad de México",
+ "diario": "Gaceta Oficial de la Ciudad de México"
+}

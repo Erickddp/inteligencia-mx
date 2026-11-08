@@ -1,0 +1,23 @@
+{
+ "clave": "CMX-CPC",
+ "nombre": "Código de Procedimientos Civiles para el Distrito Federal",
+ "url": "https://data.consejeria.cdmx.gob.mx/images/leyes/codigos/Codigo_Procedimientos_Civiles_DF_2.2.pdf",
+ "fuente": "Consejería Jurídica y de Servicios Legales de la Ciudad de México (texto vigente); cotejar contra Gaceta Oficial de la Ciudad de México",
+ "ultima_reforma_segun_pdf": "2018-07-18",
+ "ultima_reforma_origen": "encabezado del PDF (Gaceta Oficial)",
+ "descargado": "2026-11-07",
+ "sha256_pdf": "e066fbe27efcc93f265926cfbbc4f9b379da693008e67571b5410f65c7b12082",
+ "sha256_texto": "43ec672bc930cb7954f06b9730632550ea54ef4b5d07bd7a21e86b93d513eb72",
+ "cotejado_dof": {
+  "ley_completa": null,
+  "articulos": {}
+ },
+ "advertencias": [],
+ "articulos": 1137,
+ "derogados": 120,
+ "ambito": "estatal",
+ "entidad": "CMX",
+ "materia": "civil",
+ "emisor": "Consejería Jurídica y de Servicios Legales de la Ciudad de México",
+ "diario": "Gaceta Oficial de la Ciudad de México"
+}

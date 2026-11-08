@@ -1,0 +1,3146 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "dfdad08526f3e6a68a21036a5c896b57789cef235a8ea754519d97f2d2800a25",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título PRIMERO · OBJETO Y SUJETOS DEL CÓDIGO / Capítulo ÚNICO",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "5cc61d2da5c0c1fed4fe58392be5e2fded10ea02dfd75260252491c4a8290889",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título PRIMERO · OBJETO Y SUJETOS DEL CÓDIGO / Capítulo ÚNICO",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "f7dcf18addb18a903d3ee788ba3280bcf517a4cc39a6a40bd2b63b4a66837345",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título PRIMERO · OBJETO Y SUJETOS DEL CÓDIGO / Capítulo ÚNICO",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "dc59300732aba3003bc6dc755fc349dbce88db44ee2798b1ff80a2403d77be11",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título PRIMERO · OBJETO Y SUJETOS DEL CÓDIGO / Capítulo ÚNICO",
+  "derogado": false
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "790f0a0f31e2e640ad997bdb6160da601dde23dca1df6bd963e5023a166ddb00",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título PRIMERO · OBJETO Y SUJETOS DEL CÓDIGO / Capítulo ÚNICO",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "fa6889b40517b78a528070e4cfccdda5bf20f6e22a1717f40656eed5b3f789d6",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · DE LA PARTICIPACIÓN POLÍTICA DE LA CIUDADANÍA / Capítulo ÚNICO · DE LOS DERECHOS Y OBLIGACIONES",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "78f45558bb4121a8cdf4200b5b4092154ea8b6182750d8a25bf8cd4d8d984d7f",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEGUNDO · DE LA PARTICIPACIÓN POLÍTICA DE LA CIUDADANÍA / Capítulo ÚNICO · DE LOS DERECHOS Y OBLIGACIONES",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "213342dda1b2aecb739b2b69a7eb8420164a632ed5b344728d8be3a0d5b4c15c",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · DEL RÉGIMEN POLÍTICO ELECTORAL / Capítulo ÚNICO · DE LOS FINES DE LA DEMOCRACIA ELECTORAL",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "8d90776edc6a1d7b1f11f12f3d8383ff768bbba3f6fe7c65ab8ec795b51b65c0",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · DEL RÉGIMEN POLÍTICO ELECTORAL / Capítulo ÚNICO · DE LOS FINES DE LA DEMOCRACIA ELECTORAL",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "5bc3159633afb963116796fa5e813eda5943b887d5a66809a4cf0a6a70425709",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título TERCERO · DEL RÉGIMEN POLÍTICO ELECTORAL / Capítulo ÚNICO · DE LOS FINES DE LA DEMOCRACIA ELECTORAL",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "8e8175bc5f505345bbcb936c0b9c7e6313f754a38c32ac35f1f5412a28356626",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · DE LOS CARGOS DE ELECCIÓN POPULAR / Capítulo PRIMERO · DE LA INTEGRACIÓN DEL CONGRESO LOCAL",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "cd156b83935936d3d358b9f0bbaf886842f1a0a8a7d8a0b0e2efd0cf17b2d8f7",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · DE LOS CARGOS DE ELECCIÓN POPULAR / Capítulo PRIMERO · DE LA INTEGRACIÓN DEL CONGRESO LOCAL",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "ff8420d82e12615e72bc427ed2646c79b514eb2c559ebbd8ed24b976d2026b6f",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · DE LOS CARGOS DE ELECCIÓN POPULAR / Capítulo PRIMERO · DE LA INTEGRACIÓN DEL CONGRESO LOCAL",
+  "derogado": false
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "b807c1418883e0d2079ff314c9f5585f923e61685bd0b49c83c9c27b5be00f04",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · DE LOS CARGOS DE ELECCIÓN POPULAR / Capítulo PRIMERO · DE LA INTEGRACIÓN DEL CONGRESO LOCAL",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "181e667f9887f401c3dd0c6b6d75ddd22d815879108a917627cce6c442cbb944",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · DE LOS CARGOS DE ELECCIÓN POPULAR / Capítulo SEGUNDO · DEL PODER EJECUTIVO LOCAL",
+  "derogado": false
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "ca3e4664ccc5a879b19cf951000e4fc89bf02566737476a4d09d3e3704bbaa4a",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · DE LOS CARGOS DE ELECCIÓN POPULAR / Capítulo TERCERO · DE LAS ALCALDÍAS",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "826a905bd35ea5a599e8e5ef1e9a4ec2389a489c2459ed4cedff43cd65f06c60",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título CUARTO · DE LOS CARGOS DE ELECCIÓN POPULAR / Capítulo TERCERO · DE LAS ALCALDÍAS",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "953546330cd61c0429052a0c6ac61636df705a9168d8f7d17bfc3683cb3d7897",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · REQUISITOS DE ELEGIBILIDAD PARA OCUPAR CARGOS DE ELECCIÓN POPULAR / Capitulo ÚNICO · REQUISITOS DE ELEGIBILIDAD PARA OCUPAR CARGOS DE ELECCIÓN POPULAR",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "52e1fed9b1a6c923e517e121424d51891343ee32756a2d2dd327258279e7cc32",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · REQUISITOS DE ELEGIBILIDAD PARA OCUPAR CARGOS DE ELECCIÓN POPULAR / Capitulo ÚNICO · REQUISITOS DE ELEGIBILIDAD PARA OCUPAR CARGOS DE ELECCIÓN POPULAR",
+  "derogado": false
+ },
+ "20": {
+  "archivo": "articulos/art-0020.md",
+  "sha256": "d0320e252097e7aebe2f01a48cdef7d655d1ac48847e5f778b4a97c6b94104ed",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · REQUISITOS DE ELEGIBILIDAD PARA OCUPAR CARGOS DE ELECCIÓN POPULAR / Capitulo ÚNICO · REQUISITOS DE ELEGIBILIDAD PARA OCUPAR CARGOS DE ELECCIÓN POPULAR",
+  "derogado": false
+ },
+ "21": {
+  "archivo": "articulos/art-0021.md",
+  "sha256": "1edb63ad861a47c24eafa965d9354844eb8636dc8ea4fbae324ed54dc158b0d1",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · REQUISITOS DE ELEGIBILIDAD PARA OCUPAR CARGOS DE ELECCIÓN POPULAR / Capitulo ÚNICO · REQUISITOS DE ELEGIBILIDAD PARA OCUPAR CARGOS DE ELECCIÓN POPULAR",
+  "derogado": false
+ },
+ "21-bis": {
+  "archivo": "articulos/art-0021-bis.md",
+  "sha256": "0bc6dfedc33db171e328238160b51957ee9cf33ca4fcff4a2e2aba1ac3e77fba",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · REQUISITOS DE ELEGIBILIDAD PARA OCUPAR CARGOS DE ELECCIÓN POPULAR / Capitulo ÚNICO · REQUISITOS DE ELEGIBILIDAD PARA OCUPAR CARGOS DE ELECCIÓN POPULAR",
+  "derogado": false
+ },
+ "22": {
+  "archivo": "articulos/art-0022.md",
+  "sha256": "1d5c7f92954a3f882721bd552cc3222e83733f1878bf72b247d35e98da13b281",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · REQUISITOS DE ELEGIBILIDAD PARA OCUPAR CARGOS DE ELECCIÓN POPULAR / Capitulo ÚNICO · REQUISITOS DE ELEGIBILIDAD PARA OCUPAR CARGOS DE ELECCIÓN POPULAR",
+  "derogado": false
+ },
+ "23": {
+  "archivo": "articulos/art-0023.md",
+  "sha256": "0e5199c5810607805f9eb3dd4dc12d37c9c57d4c713fb66d043193057b24d794",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título QUINTO · REQUISITOS DE ELEGIBILIDAD PARA OCUPAR CARGOS DE ELECCIÓN POPULAR / Capitulo ÚNICO · REQUISITOS DE ELEGIBILIDAD PARA OCUPAR CARGOS DE ELECCIÓN POPULAR",
+  "derogado": false
+ },
+ "24": {
+  "archivo": "articulos/art-0024.md",
+  "sha256": "277870a35e6807482319ca7e3456fd1786d991ff9d5fc58bc60d6f781e55fcd7",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEXTO · DE LA REPRESENTACIÓN PROPORCIONAL / Capitulo I · PRINCIPIOS DE ASIGNACIÓN POR REPRESENTACIÓN PROPORCIONAL",
+  "derogado": false
+ },
+ "25": {
+  "archivo": "articulos/art-0025.md",
+  "sha256": "b8563ec2c29cbbf476ac6d0f3d055b99aad980f686ac22df4a21bc764eeec170",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEXTO · DE LA REPRESENTACIÓN PROPORCIONAL / Capitulo I · PRINCIPIOS DE ASIGNACIÓN POR REPRESENTACIÓN PROPORCIONAL",
+  "derogado": false
+ },
+ "26": {
+  "archivo": "articulos/art-0026.md",
+  "sha256": "f781b13b3b1b2d62ed5ad44083fb10fba4d6e7c1724805aafb25a3b845133998",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEXTO · DE LA REPRESENTACIÓN PROPORCIONAL / Capitulo II · DE LA INTEGRACIÓN DEL CONGRESO DE LA CIUDAD DE MÉXICO POR EL",
+  "derogado": false
+ },
+ "27": {
+  "archivo": "articulos/art-0027.md",
+  "sha256": "8c75376a19482ee8f4e50ebfef85046e973e0c0614f9f1707e1d7d95c228d2c1",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEXTO · DE LA REPRESENTACIÓN PROPORCIONAL / Capitulo II · DE LA INTEGRACIÓN DEL CONGRESO DE LA CIUDAD DE MÉXICO POR EL",
+  "derogado": false
+ },
+ "28": {
+  "archivo": "articulos/art-0028.md",
+  "sha256": "e6a48a38763c0767298c99c6345b98989c63be90dc64e6760e5b04fde5cb5c14",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEXTO · DE LA REPRESENTACIÓN PROPORCIONAL / Capítulo III · DE LA INTEGRACIÓN DEL LAS ALCALDÍAS POR EL PRINCIPIO DE",
+  "derogado": false
+ },
+ "29": {
+  "archivo": "articulos/art-0029.md",
+  "sha256": "26fd54f82638c3b019d12c9e2cbd71ad4bd0a7c40f906c0c63067c873e0f06a0",
+  "ubicacion": "Libro PRIMERO · DISPOSICIONES GENERALES / Título SEXTO · DE LA REPRESENTACIÓN PROPORCIONAL / Capítulo III · DE LA INTEGRACIÓN DEL LAS ALCALDÍAS POR EL PRINCIPIO DE",
+  "derogado": false
+ },
+ "30": {
+  "archivo": "articulos/art-0030.md",
+  "sha256": "cdc36ee4dfa98138e9c4818a887a669450134c9d58a4c26d5cd8c6848869bd1c",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título PRIMERO · DISPOSICIONES COMUNES",
+  "derogado": false
+ },
+ "31": {
+  "archivo": "articulos/art-0031.md",
+  "sha256": "22f0e8b4f0b68ff4bfb932777978af36ba3b3f399b70c815b66156de80ffc6fb",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título PRIMERO · DISPOSICIONES COMUNES",
+  "derogado": false
+ },
+ "32": {
+  "archivo": "articulos/art-0032.md",
+  "sha256": "a0c63ad4eec416a3b941b41560574cb51963dd3a5d6d222da4440ee0985d091a",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título PRIMERO · DISPOSICIONES COMUNES",
+  "derogado": false
+ },
+ "33": {
+  "archivo": "articulos/art-0033.md",
+  "sha256": "fe765615da02c803a40228d1bb659520c325f93b88afb625cde474ce0e710e10",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título PRIMERO · DISPOSICIONES COMUNES",
+  "derogado": false
+ },
+ "34": {
+  "archivo": "articulos/art-0034.md",
+  "sha256": "be502f28f6c216789973902fe16ac772909de76f179b5d6c4ad84b3be6f1f048",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título PRIMERO · DISPOSICIONES COMUNES",
+  "derogado": false
+ },
+ "35": {
+  "archivo": "articulos/art-0035.md",
+  "sha256": "44d619d7174edd2ec7b851bf74fc69485fe33d604886a2e3ef67cee8a43e2856",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título PRIMERO · DISPOSICIONES COMUNES",
+  "derogado": false
+ },
+ "36": {
+  "archivo": "articulos/art-0036.md",
+  "sha256": "84ba7965620e9244e367543b1ab4f2895b76939de8410ea519f638cc67ade5d3",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "37": {
+  "archivo": "articulos/art-0037.md",
+  "sha256": "311f20255edfdef36b35bbff6a438436760db761e756fece4fef2bd4942ca57b",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "38": {
+  "archivo": "articulos/art-0038.md",
+  "sha256": "564606aab7849607431c0e6698f92d13df2c4b9b6253534089b3afc426d06202",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "39": {
+  "archivo": "articulos/art-0039.md",
+  "sha256": "06885d248cf3fd07c493c90f4b44c61bb2fc86d21ac6a60825ed88fa1122cf2a",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "40": {
+  "archivo": "articulos/art-0040.md",
+  "sha256": "6e10479c109a1c222f74dee7707acb0b53a29e632da513f32bd7ce234cf690e8",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "41": {
+  "archivo": "articulos/art-0041.md",
+  "sha256": "a7b1c9986b2b74f50b01f1ee2d98405dbd5f30d7e32cba903688240803f6aaf7",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DE LA INTEGRACIÓN Y FUNCIONAMIENTO DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "42": {
+  "archivo": "articulos/art-0042.md",
+  "sha256": "dc74134de367ff9d315002a6ecca9fddb840dfa9b965f6843945600ab200a5ef",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DE LA INTEGRACIÓN Y FUNCIONAMIENTO DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "43": {
+  "archivo": "articulos/art-0043.md",
+  "sha256": "6bb590f3315055ac607ea9b6dfe49964150e71db50e237f125d9b570f7c65dc1",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DE LA INTEGRACIÓN Y FUNCIONAMIENTO DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "44": {
+  "archivo": "articulos/art-0044.md",
+  "sha256": "87917f38f6d9081531a0e8d6a5494b03786c79a90c49dff8769cf75e36fb48b0",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DE LA INTEGRACIÓN Y FUNCIONAMIENTO DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "45": {
+  "archivo": "articulos/art-0045.md",
+  "sha256": "9ec784b4acf8fb4a06c3a9b0f51081d40de1c4610b53a6d59a723343be001d1a",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DE LA INTEGRACIÓN Y FUNCIONAMIENTO DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "46": {
+  "archivo": "articulos/art-0046.md",
+  "sha256": "c17ec643c0ef702928a4a7676bd118507484f861e6d7be701e837ce28c1fb8c0",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DE LA INTEGRACIÓN Y FUNCIONAMIENTO DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "47": {
+  "archivo": "articulos/art-0047.md",
+  "sha256": "4fe826e75cf32c59b97778e2dbd10baefa67cb8741106e6ac57e4cc3d08bd8b0",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DE LA INTEGRACIÓN Y FUNCIONAMIENTO DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "48": {
+  "archivo": "articulos/art-0048.md",
+  "sha256": "09403bd8a28f23431d4eb42d6e14a60190d6f59057d65b6b5e04a0dcbc7a1e0f",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DE LA INTEGRACIÓN Y FUNCIONAMIENTO DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "49": {
+  "archivo": "articulos/art-0049.md",
+  "sha256": "cce1fbba079555e67a75d11ebadef2c18dec768ba6abd0bfbcb01bcf47b273f5",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DE LA INTEGRACIÓN Y FUNCIONAMIENTO DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "50": {
+  "archivo": "articulos/art-0050.md",
+  "sha256": "0027954a70dbf617f0fc74bcb26a808e52f9843821a92bea8d0dac32bca9ce1a",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DE LA INTEGRACIÓN Y FUNCIONAMIENTO DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "51": {
+  "archivo": "articulos/art-0051.md",
+  "sha256": "89235e5b7ddb482853cc852c6932407e51a4b453cb51255f683473d01db9ca2a",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DE LA INTEGRACIÓN Y FUNCIONAMIENTO DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "52": {
+  "archivo": "articulos/art-0052.md",
+  "sha256": "718bfd6c8578ab5dd12a3b7c58cb1558bfc3564b455b02286cd4ada014966f94",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "53": {
+  "archivo": "articulos/art-0053.md",
+  "sha256": "b8d9e123a8cadbc245e541a8e57ccfaef38981415a15a806fc825bf2f62dd8f6",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "54": {
+  "archivo": "articulos/art-0054.md",
+  "sha256": "452dd64431405afb08e2d470d53ebb40d38461133039a703d7d202050b9f19dc",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "55": {
+  "archivo": "articulos/art-0055.md",
+  "sha256": "a9901028897b1f2a2bb75e09c5fc787522c6b6fd59cafad201836a0357af14f4",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "56": {
+  "archivo": "articulos/art-0056.md",
+  "sha256": "343cabb2532c9c1ef1211633ca98166d99c1d0f4e07aa6bb70b53ca92a1f3a61",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "57": {
+  "archivo": "articulos/art-0057.md",
+  "sha256": "7a74777ad39b6c3baebc9c7b7f50b3a301cd01e66dae0b2bf022d18271dd0385",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "58": {
+  "archivo": "articulos/art-0058.md",
+  "sha256": "0394d00fa037f48a23af99581181a354a044adfcfc8c89164c2f3741b7d943c0",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "59": {
+  "archivo": "articulos/art-0059.md",
+  "sha256": "c527505e25008935a037d1b38e8ca05618686dd7536316a6186a4bc94007bfec",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "60": {
+  "archivo": "articulos/art-0060.md",
+  "sha256": "c18f813d1ef9c27455551dad827a54468eea57e8f08dae504802295662f32a21",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "60-bis": {
+  "archivo": "articulos/art-0060-bis.md",
+  "sha256": "741247f5c48c3010ba1444d16ba1b6ab2f0f0513a4c9a41e3ba9c857314a1b31",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "61": {
+  "archivo": "articulos/art-0061.md",
+  "sha256": "6c1431c3b756dba9c16fdf8779daa6fe30aba93ffc663a4ffc2a7a315d9e22a3",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "62": {
+  "archivo": "articulos/art-0062.md",
+  "sha256": "629ca215bec76ff9e94e70c94642162d5d02d1dd9d82324fdc801f70295cf950",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "63": {
+  "archivo": "articulos/art-0063.md",
+  "sha256": "8150bfee0bcc4924ab8235e63849f08c99dd85c7e2c8232ef01c497f32fca539",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "64": {
+  "archivo": "articulos/art-0064.md",
+  "sha256": "5a547aa561c8a220bc6bd320cd12bdd9683541520b3359cdc449ac11e84084a4",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "65": {
+  "archivo": "articulos/art-0065.md",
+  "sha256": "ac4ccd1abd1e16e48e693666ed6e8ecb80d75a612dc4db8492e8385fa1a0d47c",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": true
+ },
+ "66": {
+  "archivo": "articulos/art-0066.md",
+  "sha256": "bc295b0eec843360001512b86b44d3137426f025ef6fc234cf5dfdfab64c542f",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "67": {
+  "archivo": "articulos/art-0067.md",
+  "sha256": "e62be28905e01329d0eeffffd4624f20c7a2d880f896ef368670d9091423e9fc",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "68": {
+  "archivo": "articulos/art-0068.md",
+  "sha256": "d11b9f3b40bd49021b417710698b4a3e797e9eead60649aff42e50a788ac1708",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": true
+ },
+ "69": {
+  "archivo": "articulos/art-0069.md",
+  "sha256": "2bcbcbee7ff3d5f2e770dd9906f3eb6256e86386b633be5559d72b02cb7377cf",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "70": {
+  "archivo": "articulos/art-0070.md",
+  "sha256": "16d1dc391e553985516d258c0535263131071da00ed1fe2f8458cb4ce561b01e",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "70-bis": {
+  "archivo": "articulos/art-0070-bis.md",
+  "sha256": "51e0beb10468f0aaecafd0ed4067dcb2925c54eb618362220c849617fdd4258d",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "71": {
+  "archivo": "articulos/art-0071.md",
+  "sha256": "30875517240cd8b72317a20c27baa810579c8437a186093bfe3df42a048c7c23",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "72": {
+  "archivo": "articulos/art-0072.md",
+  "sha256": "66bc763e9d722b1dbb9e2b5fa7b0855ef1a982e13b7adf5e17a50d606ab6025b",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "73": {
+  "archivo": "articulos/art-0073.md",
+  "sha256": "8fa83d930f4c544fa453d61a7ccad46b5f2e8ea5671602c8e12fc55c51e51b23",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "74": {
+  "archivo": "articulos/art-0074.md",
+  "sha256": "31260bea73ab0e5e84f62d7d27ed974b572b151d3cded5de3521847fc611f886",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "75": {
+  "archivo": "articulos/art-0075.md",
+  "sha256": "1c995b9348faf4dd2fc7839d473b2dad37d56440250c2d79345765e136d0c4ac",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "76": {
+  "archivo": "articulos/art-0076.md",
+  "sha256": "1aff88007869d27ec6c4583c47988e6b7ea96ca6793345f7afce9abcb7a4fde0",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS COMISIONES Y COMITÉS DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "77": {
+  "archivo": "articulos/art-0077.md",
+  "sha256": "873fe96efb0ca87826636f30dbb18761da287e105ebee5895a8367596e713b8c",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LAS ATRIBUCIONES DE LOS INTEGRANTES DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "78": {
+  "archivo": "articulos/art-0078.md",
+  "sha256": "886e59d5c91544990b778046fcff9feb77df06eb3161086b8e9aaa31753824a4",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LAS ATRIBUCIONES DE LOS INTEGRANTES DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "79": {
+  "archivo": "articulos/art-0079.md",
+  "sha256": "cfa494d16470f1bf7eddc51e11508ee2b314c4f2d5bbae3d8c178fe8b73e1aae",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LAS ATRIBUCIONES DE LOS INTEGRANTES DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "80": {
+  "archivo": "articulos/art-0080.md",
+  "sha256": "74fbb496577962ae1f8a7a429be68806e8b03b25491321e1181fcb0a16176b6d",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LAS ATRIBUCIONES DE LOS INTEGRANTES DEL CONSEJO GENERAL",
+  "derogado": false
+ },
+ "81": {
+  "archivo": "articulos/art-0081.md",
+  "sha256": "c1e48c5966f5d02add5f3d5df3e23aaa01d9ca470ecc42c4a2abdf2d59c42b5f",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo V · DE LA JUNTA ADMINISTRATIVA",
+  "derogado": false
+ },
+ "82": {
+  "archivo": "articulos/art-0082.md",
+  "sha256": "143cab09fcf0eda0a8db09fb4d59b2adec613eab7c50d1585bd8fd553e70da12",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo V · DE LA JUNTA ADMINISTRATIVA",
+  "derogado": false
+ },
+ "83": {
+  "archivo": "articulos/art-0083.md",
+  "sha256": "4359a113aac7241cf4cfcb57b1b9471c0c55da80182935706a9827b3fd3ef228",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo V · DE LA JUNTA ADMINISTRATIVA",
+  "derogado": false
+ },
+ "84": {
+  "archivo": "articulos/art-0084.md",
+  "sha256": "5085661f7f8e893d2391a9d286975ec9098d40f85f81b7f6fd2639a5e61bbf12",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": true
+ },
+ "85": {
+  "archivo": "articulos/art-0085.md",
+  "sha256": "f36059d7ed08ee2dd2fb3310498a268c4c8a01605109692bf243ace2b8cba723",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "86": {
+  "archivo": "articulos/art-0086.md",
+  "sha256": "0faba7ce170d3c73002d49a27bb201288935f08f02ea8dccb519359dd1602129",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "87": {
+  "archivo": "articulos/art-0087.md",
+  "sha256": "8d99dc32ebe498c325077d17668fa0c5610b6901c951aec1d957387131efe0af",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "88": {
+  "archivo": "articulos/art-0088.md",
+  "sha256": "f577fadf53e1b9abf1a3722dba0bc0276adf8a67b0a287dd7debf1f9a6bcfd76",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "89": {
+  "archivo": "articulos/art-0089.md",
+  "sha256": "c30f8e7889a0a6eb9c8e5c71cd76bbf01b7312163257ea7923fa92867b82e574",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "90": {
+  "archivo": "articulos/art-0090.md",
+  "sha256": "ff39afcd8bc9aa638d93777f51359b9364856712287771f50a98a52de38c934c",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "91": {
+  "archivo": "articulos/art-0091.md",
+  "sha256": "dd049b450fbceb47f9c1bca8e05e6712f8dbecf2cd85ffa34f53873584bacb1f",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "92": {
+  "archivo": "articulos/art-0092.md",
+  "sha256": "b5ff43685a03eaf791ce5cd3876f06ffbf0a71b60b23fe7d70f72a9b114cb7d9",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "93": {
+  "archivo": "articulos/art-0093.md",
+  "sha256": "cd49c523d5b6942dd29702561fd64cd40567ba3165bbf76d17cfaa44811034ce",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "94": {
+  "archivo": "articulos/art-0094.md",
+  "sha256": "228946d9f294e891b2c965ba0b1b3677460f66dcf27eb32ac57f0ec5bc99482b",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "95": {
+  "archivo": "articulos/art-0095.md",
+  "sha256": "ad1dd6507e3c4e6bd5dbbc6bf0fb7dfe2cd2e9ea540a95eefd6534cf99583f3e",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "96": {
+  "archivo": "articulos/art-0096.md",
+  "sha256": "c660746d97b6d997badaf3e0a84e44b54e5b059e351d659abcdcffe19f647493",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "97": {
+  "archivo": "articulos/art-0097.md",
+  "sha256": "571e94ebbaafa56b23de7ba00f1c0831de235ce97af3de9c4cdbfadfa0aca00e",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "98": {
+  "archivo": "articulos/art-0098.md",
+  "sha256": "dd603877e2fef18d0eed3c9600e277cf7925fd936eb34d3362fcf330e35ec37b",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": true
+ },
+ "99": {
+  "archivo": "articulos/art-0099.md",
+  "sha256": "b1b45cb3754af64002cb20db7b58e41e5ae0bb4c2b3fd0f7c7bf3cd42e588681",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "100": {
+  "archivo": "articulos/art-0100.md",
+  "sha256": "3597aa2c999a8ced342a7005509548a06ee7700987930867a75851825ee7e788",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "101": {
+  "archivo": "articulos/art-0101.md",
+  "sha256": "1d5a540ca8098c6634d54090599d3b620541053103781505489c7cdedee8ed18",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "102": {
+  "archivo": "articulos/art-0102.md",
+  "sha256": "6e33e1f06918f302218225a490763edaff628e862e8d3ef513c8d4eaf8b7691e",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · ÓRGANOS CON AUTONOMÍA TÉCNICA Y DE GESTIÓN",
+  "derogado": false
+ },
+ "103": {
+  "archivo": "articulos/art-0103.md",
+  "sha256": "afb64d5c4ad0f7c39adc1472abf6196f4df3fb38560ade77c8e66b01d6ba9f7f",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · ÓRGANOS CON AUTONOMÍA TÉCNICA Y DE GESTIÓN",
+  "derogado": false
+ },
+ "104": {
+  "archivo": "articulos/art-0104.md",
+  "sha256": "136c2f883d6a915ab169f17466fb598916bc83b6415488609e4fc3781245caba",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · ÓRGANOS CON AUTONOMÍA TÉCNICA Y DE GESTIÓN",
+  "derogado": false
+ },
+ "105": {
+  "archivo": "articulos/art-0105.md",
+  "sha256": "9d54c63aec6e65a13e4160fb4c90ffb4a9fd788fca62d16739d711869322272f",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · ÓRGANOS CON AUTONOMÍA TÉCNICA Y DE GESTIÓN",
+  "derogado": false
+ },
+ "106": {
+  "archivo": "articulos/art-0106.md",
+  "sha256": "05f028bcb040e25beeafd3203abcc1ac34fa17b0c91dbebb8739a18e7694f3d6",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · ÓRGANOS CON AUTONOMÍA TÉCNICA Y DE GESTIÓN",
+  "derogado": false
+ },
+ "106-bis": {
+  "archivo": "articulos/art-0106-bis.md",
+  "sha256": "357d9a0555a229ceff9fa549565cd21266974ec695d50045240a1051c3570a9e",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · ÓRGANOS CON AUTONOMÍA TÉCNICA Y DE GESTIÓN",
+  "derogado": false
+ },
+ "107": {
+  "archivo": "articulos/art-0107.md",
+  "sha256": "a160bc6cc3322b6bd32805943088439b93185db479100f42f7a7d60685a447f0",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · ÓRGANOS CON AUTONOMÍA TÉCNICA Y DE GESTIÓN",
+  "derogado": false
+ },
+ "108": {
+  "archivo": "articulos/art-0108.md",
+  "sha256": "e05caf66f6c4c12e2ee8eb4ac2cbd155d3dfdc0884dbe44be6e2c8c0d7aab49d",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · ÓRGANOS CON AUTONOMÍA TÉCNICA Y DE GESTIÓN",
+  "derogado": true
+ },
+ "109": {
+  "archivo": "articulos/art-0109.md",
+  "sha256": "179206e50a48a2a05490dc2dd5fc84e7b86810d21f8536f3913b28161c416a8a",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · ÓRGANOS CON AUTONOMÍA TÉCNICA Y DE GESTIÓN",
+  "derogado": true
+ },
+ "110": {
+  "archivo": "articulos/art-0110.md",
+  "sha256": "a6e68060c629ff58d26d63a9eec293931d5656320d62eaac510c4d6371cc66db",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VIII · DE LOS ÓRGANOS DESCONCENTRADOS",
+  "derogado": false
+ },
+ "111": {
+  "archivo": "articulos/art-0111.md",
+  "sha256": "eed0490beba911ee0a05cb36cfc0eb5390cb21bff74eb03bcec87d694ff4897f",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "112": {
+  "archivo": "articulos/art-0112.md",
+  "sha256": "d88511e5fcca79c6ca3fef69ded6363b2c3788de296a0cc16f07d0f54cc0a835",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "113": {
+  "archivo": "articulos/art-0113.md",
+  "sha256": "9126973b33dd41b79aa71def66b6d6f2fd0e5c02b4560f9ccbf8f41e63b20f46",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "114": {
+  "archivo": "articulos/art-0114.md",
+  "sha256": "32bbfa80f7a956237ffe5fea7e67759859fd4352151d837fee8f7b1a1e878ff5",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "115": {
+  "archivo": "articulos/art-0115.md",
+  "sha256": "356f869a274bd0a76d3fae1abd4b149e9112976a0dcc2c9c41ec43834c35eaf0",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "116": {
+  "archivo": "articulos/art-0116.md",
+  "sha256": "7469b6f9b5facea028702cbb4fa7dd6fdf51762f2c12385f159885b90a02af5e",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "117": {
+  "archivo": "articulos/art-0117.md",
+  "sha256": "76c2e2e6a82d8c74757a6abda96c2d9055bccbc37507222d226a16c0a884df61",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "118": {
+  "archivo": "articulos/art-0118.md",
+  "sha256": "1225b5ecb2b407e0318f7815d00d239fe2c64bf55ebdc3a89eed1abbbe9cf741",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "119": {
+  "archivo": "articulos/art-0119.md",
+  "sha256": "2193a56e05bf69e9107c336d6ec4fc9bbdabc77acf8fa2fe4ff5144ce60edba7",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "120": {
+  "archivo": "articulos/art-0120.md",
+  "sha256": "0b8ea95f9f2699ba6fdd85c865cc4926c22e2b5fc5fcddaab5a9cd1ddf99252b",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "121": {
+  "archivo": "articulos/art-0121.md",
+  "sha256": "836ca381f492e0f6b70af416c4b1927d401443244b78c031013e92024a535190",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "122": {
+  "archivo": "articulos/art-0122.md",
+  "sha256": "9636eaaa5951a9ab162d9b0223da06946f340c41e74ab85edd4bac1856a85b42",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "123": {
+  "archivo": "articulos/art-0123.md",
+  "sha256": "17be2ddb14cb37f27154fd91694a4e139ab7360d7dd0a1c9306c06674493710b",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "124": {
+  "archivo": "articulos/art-0124.md",
+  "sha256": "4ba30d8c4f2ecb22c75da05814be80b70ab36762a3ca6be352912903b42fd01a",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "125": {
+  "archivo": "articulos/art-0125.md",
+  "sha256": "7a7233eeab15e87388477ae2ce732b4ca92aac77f2993b8c96b07d20e5c3e099",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "126": {
+  "archivo": "articulos/art-0126.md",
+  "sha256": "2cdfceec49a86fecebf45d873f4d766452fa1b459af80e73769065bdfb775b44",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "127": {
+  "archivo": "articulos/art-0127.md",
+  "sha256": "33960ba345af2de737dc74917a9415786267e944d7d8bddc909e4a9d8ca54aa0",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "128": {
+  "archivo": "articulos/art-0128.md",
+  "sha256": "b1f274f54a4b714698a62ee9624039335275157978f7967400c092557f036a76",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "129": {
+  "archivo": "articulos/art-0129.md",
+  "sha256": "259e11f68b27f65b0e386b33ba51f0268746f3f18ae39d6bb87feefcc31c90ed",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "130": {
+  "archivo": "articulos/art-0130.md",
+  "sha256": "429d6d84daf0baeb71df0f7b7bca1dafcd48355978f5d920fd0c6faf112f24f2",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS DIRECCIONES DISTRITALES",
+  "derogado": false
+ },
+ "131": {
+  "archivo": "articulos/art-0131.md",
+  "sha256": "3c3f3cae45e27b1a1197168403e8d3dd0ec8165e5fb6ad08b8a525392e6a34c2",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo X · DE LAS MESAS DIRECTIVAS DE CASILLA",
+  "derogado": false
+ },
+ "132": {
+  "archivo": "articulos/art-0132.md",
+  "sha256": "16f6ec49c00f67abbe9767b2a648809a09d47e732ee994458c228a57896628ad",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo X · DE LAS MESAS DIRECTIVAS DE CASILLA",
+  "derogado": false
+ },
+ "133": {
+  "archivo": "articulos/art-0133.md",
+  "sha256": "3f444df905cc08890f7c5ca3d84103ae2a50c6e805d0f900703de85a51b21f7b",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo X · DE LAS MESAS DIRECTIVAS DE CASILLA",
+  "derogado": false
+ },
+ "134": {
+  "archivo": "articulos/art-0134.md",
+  "sha256": "2aabe4e2bc94e47e3dbaa7b5ce6c9dfd58a03621457fba96323c0e1bf12016e0",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo X · DE LAS MESAS DIRECTIVAS DE CASILLA",
+  "derogado": false
+ },
+ "135": {
+  "archivo": "articulos/art-0135.md",
+  "sha256": "9c468303b02da0d5774646ae88fd640c5c76bb8f514ec0081ae228478ffa8c42",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo X · DE LAS MESAS DIRECTIVAS DE CASILLA",
+  "derogado": false
+ },
+ "136": {
+  "archivo": "articulos/art-0136.md",
+  "sha256": "aad7161c68c316ce49b05b983617e15f22a743af3732e31adc738f1c6c59e63e",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo X · DE LAS MESAS DIRECTIVAS DE CASILLA",
+  "derogado": false
+ },
+ "137": {
+  "archivo": "articulos/art-0137.md",
+  "sha256": "6f3b1b1c9c8eab731e17128c8e8fbd11ec88738a33c89ded3fe9dd43f0070a01",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo X · DE LAS MESAS DIRECTIVAS DE CASILLA",
+  "derogado": false
+ },
+ "138": {
+  "archivo": "articulos/art-0138.md",
+  "sha256": "05abd354d32b764f2c6f56e3d533624994b210c7f2d2a1bd89df7f572411ca20",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo X · DE LAS MESAS DIRECTIVAS DE CASILLA",
+  "derogado": false
+ },
+ "139": {
+  "archivo": "articulos/art-0139.md",
+  "sha256": "0fd6b3fca397afc614eee36a7e931057bf4cf03bb1742521ebb5a7d523c6e210",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "140": {
+  "archivo": "articulos/art-0140.md",
+  "sha256": "ddef2cccfdb56593e2d34cb26879f06427af1aea4e968e06a5a06eff7a59ef4f",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "141": {
+  "archivo": "articulos/art-0141.md",
+  "sha256": "a655a49cfca4181042d9cfa1d6fd567a89f360a2b39e08b174e001eb59710939",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "142": {
+  "archivo": "articulos/art-0142.md",
+  "sha256": "5dd1707f312db8859eb4b1c5008512a7ff2926a93b1b3cb93af09d3f1b5c6078",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "143": {
+  "archivo": "articulos/art-0143.md",
+  "sha256": "7988d919df1684a6d7dec7682d8fa93076e4d779d703a67a9e83861d26674e05",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "144": {
+  "archivo": "articulos/art-0144.md",
+  "sha256": "5275cfc3008d9db07d06258a7c95da3c2862b55ae7091d51e8ccacf92dec1a5b",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "145": {
+  "archivo": "articulos/art-0145.md",
+  "sha256": "17783247ee316910a36ace9ebd2cab88ca7421353bc610d283f1ecd04c78e917",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "146": {
+  "archivo": "articulos/art-0146.md",
+  "sha256": "a3091ff256a8fa9f184f381260430569aa2caeb8f2b4278608252e67d9856aec",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "147": {
+  "archivo": "articulos/art-0147.md",
+  "sha256": "285d6a2e37416c83166d3c9199333d6d796a219c497a1308e14a5de6b38a54d7",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "148": {
+  "archivo": "articulos/art-0148.md",
+  "sha256": "70b6c168073b8d88601396a40292c0ee92d669661b889872f10635eb8fefbdf2",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "149": {
+  "archivo": "articulos/art-0149.md",
+  "sha256": "ab55d10e37894ff329f9d1c02284ee79f28fde30dc1a7af6aa6204e9038d1cbe",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "150": {
+  "archivo": "articulos/art-0150.md",
+  "sha256": "8e523471af3b88d608fed9b8b9391f88f0bcadaad519bd073784e18b8d8088c9",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "151": {
+  "archivo": "articulos/art-0151.md",
+  "sha256": "f3074f79f8fbdadb587ac64d0d7fcbf79d41c9644bf9b22a618b681d8c1f5bd0",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "152": {
+  "archivo": "articulos/art-0152.md",
+  "sha256": "71c5946ec0c5df9c6af62a6a7aa542dc4e939ac728ca1370d6b3baf9395f2505",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "153": {
+  "archivo": "articulos/art-0153.md",
+  "sha256": "0b2fdbd607b9cdd85630a59df989837a47572d6102c700f753529c61fbe3844d",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "154": {
+  "archivo": "articulos/art-0154.md",
+  "sha256": "751dc6a564766a5286ba8d37900320d7545a2d5c660248e92803c333dd01f678",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "155": {
+  "archivo": "articulos/art-0155.md",
+  "sha256": "65ed44e9730705251d34f0e8ee1f963eb0cee75e4c9e437e8a2eb6ff244414b0",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "156": {
+  "archivo": "articulos/art-0156.md",
+  "sha256": "37ea82a8341be6e73b3b147d9b12e45077ad5b9a715b0bbce60c8386e4ae8bf7",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "157": {
+  "archivo": "articulos/art-0157.md",
+  "sha256": "55a08803bb5746e28806e96600c736eebec829b520ade00069b036112ef86222",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "158": {
+  "archivo": "articulos/art-0158.md",
+  "sha256": "c7ab960df2876b2eda7818a1b0274c7af6d7fede8db536b5909f790961705ba9",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "159": {
+  "archivo": "articulos/art-0159.md",
+  "sha256": "c76d1bd03ef0ae8ee0846f83513aee1f7ca1658d217e6e693f45af8619448bd8",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "160": {
+  "archivo": "articulos/art-0160.md",
+  "sha256": "09ea8a635fdb9fc5a1d3ae8b8922bb1f6bb5cca5f71372b7e77115b1a1902251",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "161": {
+  "archivo": "articulos/art-0161.md",
+  "sha256": "7b8cc3a84b3b423d450b499846b507151dc3b9d4c0b5e6b369786a474cca06b2",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "162": {
+  "archivo": "articulos/art-0162.md",
+  "sha256": "5d89ba297525193237f77ffdab094f1ab674d3e50033af063b14cfa4a45b323e",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capitulo XI · DE LOS SERVIDORES DEL INSTITUTO ELECTORAL",
+  "derogado": false
+ },
+ "163": {
+  "archivo": "articulos/art-0163.md",
+  "sha256": "c4eaa849a76c42f11e3f7a2e9afe225d8dec7d2900ed7aae84595ce975590d69",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo XII · RAMA ADMINISTRATIVA",
+  "derogado": false
+ },
+ "164": {
+  "archivo": "articulos/art-0164.md",
+  "sha256": "3f59e6e1ca0afedc47ff7cb752fc1414447094ceda52ed1b74ba746bd7ed4a7e",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título SEGUNDO · DEL INSTITUTO ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo XII · RAMA ADMINISTRATIVA",
+  "derogado": false
+ },
+ "165": {
+  "archivo": "articulos/art-0165.md",
+  "sha256": "0d512f3c9f28e63b39a0629bbe6d59a8425c8fb3bab1c486a8ac240eb799a03f",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "166": {
+  "archivo": "articulos/art-0166.md",
+  "sha256": "cee546f9984e8e1b6f0b1db3f46e58906ff342c46774604e097a0cb1cad01847",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "167": {
+  "archivo": "articulos/art-0167.md",
+  "sha256": "1c1b6fa7865f6ebcc301572e0e9bf41b64280bd875c814ead57464791f0411e6",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "168": {
+  "archivo": "articulos/art-0168.md",
+  "sha256": "6101cdb154090789cb5e7a418e08f38dab5a5c3829214bf7d51f9d3bf1ddc002",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "169": {
+  "archivo": "articulos/art-0169.md",
+  "sha256": "24e8d07966bdc39c107a69aa10ebc57b33f120a710e3eb7c1f412506f99d2d54",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "170": {
+  "archivo": "articulos/art-0170.md",
+  "sha256": "b0b57e36286082c7be60ca7f33a27d03a0ca3bf60210ef61720296c0b931686f",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "171": {
+  "archivo": "articulos/art-0171.md",
+  "sha256": "d93bbbaab202bf18537c8722d743d1adb30268df8bf070228be8c242df64e0f3",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DEL PLENO",
+  "derogado": false
+ },
+ "172": {
+  "archivo": "articulos/art-0172.md",
+  "sha256": "0d460c43eaa4f3fab1f19331f6134a9b50bac2db94cd651d339e249655665953",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DEL PLENO",
+  "derogado": false
+ },
+ "173": {
+  "archivo": "articulos/art-0173.md",
+  "sha256": "5f3896db3afee30bc8fc41b813efd4e8dc44c206176d4b50cfe221b6cc4a62b1",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DEL PLENO",
+  "derogado": false
+ },
+ "174": {
+  "archivo": "articulos/art-0174.md",
+  "sha256": "0096ad1bf2a6ff6eb69d62f77a52764b5605eeb37d0bbbe08f3c9c6b72549a11",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DEL PLENO",
+  "derogado": false
+ },
+ "176": {
+  "archivo": "articulos/art-0176.md",
+  "sha256": "2885cb88d566a668f44a82ed88b951b1ac6c5c0a3c677927e94d224a1d6815d8",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DEL PLENO",
+  "derogado": false
+ },
+ "177": {
+  "archivo": "articulos/art-0177.md",
+  "sha256": "c21f06900c94dfd5554eaec85b64c0db0d9ff5b5f748e0df004cf3e812a12b78",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DEL PLENO",
+  "derogado": false
+ },
+ "178": {
+  "archivo": "articulos/art-0178.md",
+  "sha256": "07747f992ddb773dcbf7b546d071355acfb611a74a7ee76e701d49ba3aaf7871",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DEL PLENO",
+  "derogado": false
+ },
+ "179": {
+  "archivo": "articulos/art-0179.md",
+  "sha256": "230543ca3ba0263cd7fa9b19b9c3a4435a178073579f17cdfbe4f68b0c7abec4",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DEL PLENO",
+  "derogado": false
+ },
+ "180": {
+  "archivo": "articulos/art-0180.md",
+  "sha256": "572bd8809e18986182ffb4b2b1753670fbc1ed0af05d360d937502e8ee1bcbe6",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DEL PLENO",
+  "derogado": false
+ },
+ "181": {
+  "archivo": "articulos/art-0181.md",
+  "sha256": "e42523af576810d534f8eb596092333deae13d8a7ce0674ab4c289d2b587c305",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DEL PLENO",
+  "derogado": false
+ },
+ "182": {
+  "archivo": "articulos/art-0182.md",
+  "sha256": "c3f6cd64d3601ab66c63b4d95f7c234bd2a10d7c850728f67d1c11808b5c2313",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DEL PLENO",
+  "derogado": false
+ },
+ "183": {
+  "archivo": "articulos/art-0183.md",
+  "sha256": "01d310e83e312d19d6b90e9fe1a77305541e744ea1e74235b83745c1c8ef3db2",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DEL PLENO",
+  "derogado": false
+ },
+ "184": {
+  "archivo": "articulos/art-0184.md",
+  "sha256": "5abf53da35a08af0c9021917388885f05b635391d3faf494daf4e38de0c380bd",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DEL PLENO",
+  "derogado": false
+ },
+ "185": {
+  "archivo": "articulos/art-0185.md",
+  "sha256": "74944d3df67480f3dca39436171586feac62c972bb1edf0e237063f57ce1bd9b",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo II · DEL PLENO",
+  "derogado": false
+ },
+ "186": {
+  "archivo": "articulos/art-0186.md",
+  "sha256": "b774bc35eb69b7f054a9f6ad021fc874a66ee01040995a171f4f2ba4e9ee8802",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS PONENCIAS",
+  "derogado": false
+ },
+ "187": {
+  "archivo": "articulos/art-0187.md",
+  "sha256": "d8056cb6fb5442a5f0f4e544dcb0e2c417b8f985f7c6c52f1e39b3a833ac157a",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS PONENCIAS",
+  "derogado": false
+ },
+ "188": {
+  "archivo": "articulos/art-0188.md",
+  "sha256": "67b57a7a7082c1f92d4d63de0c2c3827be1180075105ea758e6a69c8f521a0e9",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS PONENCIAS",
+  "derogado": false
+ },
+ "189": {
+  "archivo": "articulos/art-0189.md",
+  "sha256": "d01908dfcf86d907a4dd6b41ef3af6871345081c54090d00a10aafb38e2a37c3",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS PONENCIAS",
+  "derogado": false
+ },
+ "190": {
+  "archivo": "articulos/art-0190.md",
+  "sha256": "8c280d04f4ee1e677c3a6bc070372e83519e6360ba43ca257cfb79712ba12903",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS PONENCIAS",
+  "derogado": false
+ },
+ "191": {
+  "archivo": "articulos/art-0191.md",
+  "sha256": "4c7a969d738e4aef1c8522d8bc2b35631446885e89f3b8341d59381964ae871c",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LAS PONENCIAS",
+  "derogado": false
+ },
+ "192": {
+  "archivo": "articulos/art-0192.md",
+  "sha256": "9d4366e301feacf109d906cf36712d98183f90e9d0b1d93040ef7a73a9136f1a",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LA DEFENSORÍA PÚBLICA DE PARTICIPACIÓN CIUDADANA Y",
+  "derogado": false
+ },
+ "193": {
+  "archivo": "articulos/art-0193.md",
+  "sha256": "05784fa1a6c1056b4428f7a5ca1c76805fe6381f7f18d4276f4ac171a703564b",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LA DEFENSORÍA PÚBLICA DE PARTICIPACIÓN CIUDADANA Y",
+  "derogado": false
+ },
+ "194": {
+  "archivo": "articulos/art-0194.md",
+  "sha256": "d722c96e066e88b3317518fea9d6c9e47fa9df7681c4283e2c4063834886f2d3",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LA DEFENSORÍA PÚBLICA DE PARTICIPACIÓN CIUDADANA Y",
+  "derogado": false
+ },
+ "195": {
+  "archivo": "articulos/art-0195.md",
+  "sha256": "65c7a04a9672e68ad858d9bdec97fd89f0ccfbc67713976f7d39473244bc7e5e",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LA DEFENSORÍA PÚBLICA DE PARTICIPACIÓN CIUDADANA Y",
+  "derogado": false
+ },
+ "196": {
+  "archivo": "articulos/art-0196.md",
+  "sha256": "25c8638322071b106fab2b8f1a7a6c374b929d2c76d2915ffb415e7a42cdc8fb",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LA DEFENSORÍA PÚBLICA DE PARTICIPACIÓN CIUDADANA Y",
+  "derogado": false
+ },
+ "197": {
+  "archivo": "articulos/art-0197.md",
+  "sha256": "4efc91015a902f4183bda1f381417ad685d5f05027ea4c1d9f63da2890df4181",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LA DEFENSORÍA PÚBLICA DE PARTICIPACIÓN CIUDADANA Y",
+  "derogado": false
+ },
+ "198": {
+  "archivo": "articulos/art-0198.md",
+  "sha256": "a92c820302140f3aef6c7972160c37f025bcefde202cfa1a35b3f33e7660f337",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LA DEFENSORÍA PÚBLICA DE PARTICIPACIÓN CIUDADANA Y",
+  "derogado": false
+ },
+ "199": {
+  "archivo": "articulos/art-0199.md",
+  "sha256": "40663e2a4e68643176f51924d6814a41a269f7ae474e8f3ca4324fdb05041103",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LA DEFENSORÍA PÚBLICA DE PARTICIPACIÓN CIUDADANA Y",
+  "derogado": false
+ },
+ "200": {
+  "archivo": "articulos/art-0200.md",
+  "sha256": "8f63897f0e6efa74cffe2e79a7c203827a23059e4d8ad11af0c76ffa09c8807c",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo V · DE LA CONTRALORÍA INTERNA DEL TRIBUNAL ELECTORAL",
+  "derogado": false
+ },
+ "201": {
+  "archivo": "articulos/art-0201.md",
+  "sha256": "79471727e0e4419800c5844b22a8708e8baa127b05145a1a8301294ec4dced5e",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo V · DE LA CONTRALORÍA INTERNA DEL TRIBUNAL ELECTORAL",
+  "derogado": false
+ },
+ "202": {
+  "archivo": "articulos/art-0202.md",
+  "sha256": "c7a4f600c4f9bb959c388442fc5c25815b0ab1b05d16a49293860583c9d61569",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo V · DE LA CONTRALORÍA INTERNA DEL TRIBUNAL ELECTORAL",
+  "derogado": false
+ },
+ "202-bis": {
+  "archivo": "articulos/art-0202-bis.md",
+  "sha256": "18689350fcd4df85b21d3db2c0228515ed633675d2632f59fc55ed8a43f780dc",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo V BIS · De la Integración al Comité del Subsistema de Transparencia de la Ciudad de México y de las",
+  "derogado": false
+ },
+ "203": {
+  "archivo": "articulos/art-0203.md",
+  "sha256": "d46f976ac288ffeb4fbfae48843833da3370310e9249513406d6d1d83f73bf92",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "204": {
+  "archivo": "articulos/art-0204.md",
+  "sha256": "254c6598ec2bbc5ab57018de32621c07a0116421e76e3eecaaa94c79d719d5f3",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "205": {
+  "archivo": "articulos/art-0205.md",
+  "sha256": "00479cb1bf33df3152434f1b4c16e8d619168bc944ee0fedefaa6f180a5b7975",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "206": {
+  "archivo": "articulos/art-0206.md",
+  "sha256": "64e70089fe3c162c357eef3f07dc819239ac13c24374f7ae1640e1fdb6ce6c2d",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "207": {
+  "archivo": "articulos/art-0207.md",
+  "sha256": "b3d20f6e2773a4c409390443a1a7207e7be2e795ba784939d2ae4f172d9cfd42",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "208": {
+  "archivo": "articulos/art-0208.md",
+  "sha256": "5c73861f3b10128cb2fd14088234d07c6402ab988ec7dec9599da55579982217",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "209": {
+  "archivo": "articulos/art-0209.md",
+  "sha256": "b3fad48dcf5a159307cd58855c4f7b572748abfec565f8add0fb1710ad41434a",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "210": {
+  "archivo": "articulos/art-0210.md",
+  "sha256": "b09424955fba13b00cc19dec1cf97dc36533f45364e5a55f41a31f79b6023f8d",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS ÓRGANOS EJECUTIVOS",
+  "derogado": false
+ },
+ "211": {
+  "archivo": "articulos/art-0211.md",
+  "sha256": "7ccd373db268706c2074c200590863edb65d1dc519fad1e9a0598ee3f10d040a",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · DE LOS ÓRGANOS AUXILIARES",
+  "derogado": false
+ },
+ "212": {
+  "archivo": "articulos/art-0212.md",
+  "sha256": "34e3204bc928f863c2cac568e21e257606d491475cd0c396323b1e6e9be0353e",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · DE LOS ÓRGANOS AUXILIARES",
+  "derogado": false
+ },
+ "213": {
+  "archivo": "articulos/art-0213.md",
+  "sha256": "0a036d6145f31c355107152c0711bd8e712df3597964916bd4021c9754d8fa4c",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · DE LOS ÓRGANOS AUXILIARES",
+  "derogado": false
+ },
+ "214": {
+  "archivo": "articulos/art-0214.md",
+  "sha256": "7110fe29fae88bd902d55f90a8143897dbaa3c842d45ffbf42c359a93f0f738d",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · DE LOS ÓRGANOS AUXILIARES",
+  "derogado": false
+ },
+ "215": {
+  "archivo": "articulos/art-0215.md",
+  "sha256": "52a8b1c4c2c630537b41bcd0bbe3d2bf7bc4464da552b1442d62468c22aa5b99",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · DE LOS ÓRGANOS AUXILIARES",
+  "derogado": false
+ },
+ "216": {
+  "archivo": "articulos/art-0216.md",
+  "sha256": "1ed9c3d27af45ae50b2f04ca1c2661d5fc52b243982bf68cc64f60343cf5c24a",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · DE LOS ÓRGANOS AUXILIARES",
+  "derogado": false
+ },
+ "217": {
+  "archivo": "articulos/art-0217.md",
+  "sha256": "a374c2bd7e86fe7eda5a268b35da36c31eaef442f321719cc1d54a10cf898ce5",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · DE LOS ÓRGANOS AUXILIARES",
+  "derogado": false
+ },
+ "218": {
+  "archivo": "articulos/art-0218.md",
+  "sha256": "a0ca64c2c9184ca8ac64be675588b23802247115d0236907993f4aac1b0c50d5",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · DE LOS ÓRGANOS AUXILIARES",
+  "derogado": false
+ },
+ "219": {
+  "archivo": "articulos/art-0219.md",
+  "sha256": "059a187d05ddd6bbb1b774cf56b250f2b636e1c397903652c110a5e92d959942",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · DE LOS ÓRGANOS AUXILIARES",
+  "derogado": false
+ },
+ "220": {
+  "archivo": "articulos/art-0220.md",
+  "sha256": "96ca42414e1f4278b7661047533774eb8f704c0531b108ddc81955573d231ab7",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VII · DE LOS ÓRGANOS AUXILIARES",
+  "derogado": false
+ },
+ "221": {
+  "archivo": "articulos/art-0221.md",
+  "sha256": "c05bc6cf25926a3f4ade0b4f1ab08bd1ed040a1b43c92641c8a5a9d3489c7e2e",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VIII · DE LAS UNIDADES TÉCNICAS DEL TRIBUNAL ELECTORAL",
+  "derogado": false
+ },
+ "222": {
+  "archivo": "articulos/art-0222.md",
+  "sha256": "5261235a5933597e4e468d85013556856bcb96f148986d0e65664e6c33025fdc",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VIII · DE LAS UNIDADES TÉCNICAS DEL TRIBUNAL ELECTORAL",
+  "derogado": false
+ },
+ "223": {
+  "archivo": "articulos/art-0223.md",
+  "sha256": "2270263a2a62e6ad312f7f2b0a1eb315d3219c43a4e323fca8b667411d8ca8fa",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VIII · DE LAS UNIDADES TÉCNICAS DEL TRIBUNAL ELECTORAL",
+  "derogado": false
+ },
+ "224": {
+  "archivo": "articulos/art-0224.md",
+  "sha256": "35aaaff23e1d8ea0ecae34ad7d6500c1fabf54c473e02fa0be50f2ba46b930a8",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VIII · DE LAS UNIDADES TÉCNICAS DEL TRIBUNAL ELECTORAL",
+  "derogado": false
+ },
+ "225": {
+  "archivo": "articulos/art-0225.md",
+  "sha256": "5d349e875f97412e15c024b127a0b21ee99857b6d156649dfe17c18595e6fa3f",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VIII · DE LAS UNIDADES TÉCNICAS DEL TRIBUNAL ELECTORAL",
+  "derogado": false
+ },
+ "226": {
+  "archivo": "articulos/art-0226.md",
+  "sha256": "dce3f90a49216fb9b29a3e09ca076d7e21062a9ee3d800b2ee1c850acfe40fce",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VIII · DE LAS UNIDADES TÉCNICAS DEL TRIBUNAL ELECTORAL",
+  "derogado": false
+ },
+ "227": {
+  "archivo": "articulos/art-0227.md",
+  "sha256": "61f163a9224589d1f64a9730ea7b394ebf226d1b01d4749395364854edb30a8c",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VIII · DE LAS UNIDADES TÉCNICAS DEL TRIBUNAL ELECTORAL",
+  "derogado": false
+ },
+ "228": {
+  "archivo": "articulos/art-0228.md",
+  "sha256": "817f7a2aa63282bd7429825c01c6ebfde9556cb3a33181d56af2f1ce3c5b1997",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo VIII · DE LAS UNIDADES TÉCNICAS DEL TRIBUNAL ELECTORAL",
+  "derogado": false
+ },
+ "229": {
+  "archivo": "articulos/art-0229.md",
+  "sha256": "c2d683395908b0d1fbd0f88cbec55911311fbd66106fb582109d8b6b130180c6",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS RELACIONES LABORALES",
+  "derogado": false
+ },
+ "230": {
+  "archivo": "articulos/art-0230.md",
+  "sha256": "1c404787a07ced2b82bdf59a0476bcc656fc9a9328041892ec031e63501d6a34",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS RELACIONES LABORALES",
+  "derogado": false
+ },
+ "231": {
+  "archivo": "articulos/art-0231.md",
+  "sha256": "e7d1e0dfc0b4bf4e0c17efd1727757b487ff14fbf142740de30d13c3356fc0a4",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS RELACIONES LABORALES",
+  "derogado": false
+ },
+ "232": {
+  "archivo": "articulos/art-0232.md",
+  "sha256": "682ad9d8d7c5fbc768942202631951b97ec0a90a72f0101499e3e72250177d87",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS RELACIONES LABORALES",
+  "derogado": false
+ },
+ "233": {
+  "archivo": "articulos/art-0233.md",
+  "sha256": "6bb15559b9a54a80ec144ad4c3c9623479b871c14144a474560f0cd9123f3ab1",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS RELACIONES LABORALES",
+  "derogado": false
+ },
+ "234": {
+  "archivo": "articulos/art-0234.md",
+  "sha256": "a7804774dd7bbe10e1840bd554d69118f4b0fe7ac876d56c04752f5099c6c9cf",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS RELACIONES LABORALES",
+  "derogado": false
+ },
+ "235": {
+  "archivo": "articulos/art-0235.md",
+  "sha256": "1efb65680a6a6419d4d510afb919c4a0643bbebc6427d7041d503f54827dc602",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS RELACIONES LABORALES",
+  "derogado": false
+ },
+ "236": {
+  "archivo": "articulos/art-0236.md",
+  "sha256": "c013cab089e172bd33425c81d6a84ab1d9dc54de5ddb902ebcb058c7f2ee3b46",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS RELACIONES LABORALES",
+  "derogado": false
+ },
+ "237": {
+  "archivo": "articulos/art-0237.md",
+  "sha256": "7dcd504d12055f62c22bc076ee4be5371de6d9f5dc2a0846e942919464b2f0aa",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS RELACIONES LABORALES",
+  "derogado": false
+ },
+ "238": {
+  "archivo": "articulos/art-0238.md",
+  "sha256": "dc43e2ab85444a5ab1dfdf6030e36f7a81c7305ae78eecd0d102967e991b4088",
+  "ubicacion": "Libro SEGUNDO · DE LAS AUTORIDADES ELECTORALES / Título TERCERO · DEL TRIBUNAL ELECTORAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS RELACIONES LABORALES",
+  "derogado": false
+ },
+ "239": {
+  "archivo": "articulos/art-0239.md",
+  "sha256": "4ea264c57b6d2201da33553b2ffa2412a3e1ec630b63ef300ed431f23d93067d",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título PRIMERO · DISPOSICIONES PRELIMINARES",
+  "derogado": false
+ },
+ "240": {
+  "archivo": "articulos/art-0240.md",
+  "sha256": "24f6c7e433f36c0575788a6c69ba4723e9d013e449255e44b1109f4b70348004",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título PRIMERO · DISPOSICIONES PRELIMINARES",
+  "derogado": false
+ },
+ "241": {
+  "archivo": "articulos/art-0241.md",
+  "sha256": "782be3c162b6a9ae42404de21b236627465f060d580af9929e9d424edeb5e75d",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título PRIMERO · DISPOSICIONES PRELIMINARES",
+  "derogado": false
+ },
+ "242": {
+  "archivo": "articulos/art-0242.md",
+  "sha256": "4843ddfa50e88386f7532ba2fc881e29f8ef3851d07dd32e619cbf6adecf75c1",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título PRIMERO · DISPOSICIONES PRELIMINARES",
+  "derogado": false
+ },
+ "243": {
+  "archivo": "articulos/art-0243.md",
+  "sha256": "1ecfa3974f3e1b5980f552ed360f8624496d97af64c7df1279c8ec710de53385",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título SEGUNDO · DE LA NATURALEZA, CONSTITUCIÓN Y REGISTRO DE LAS ASOCIACIONES POLÍTICAS / Capítulo ÚNICO · DE LAS AGRUPACIONES POLÍTICAS LOCALES",
+  "derogado": false
+ },
+ "244": {
+  "archivo": "articulos/art-0244.md",
+  "sha256": "ae7df9950c7ed51b538beb44aabc1fcee1de9d6ca89503cbb9d2d3957126a4ef",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título SEGUNDO · DE LA NATURALEZA, CONSTITUCIÓN Y REGISTRO DE LAS ASOCIACIONES POLÍTICAS / Capítulo ÚNICO · DE LAS AGRUPACIONES POLÍTICAS LOCALES",
+  "derogado": false
+ },
+ "245": {
+  "archivo": "articulos/art-0245.md",
+  "sha256": "3529b5dae93e863bdbe4d51a266f1076cb116beea1029e01a824f893a896543d",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título SEGUNDO · DE LA NATURALEZA, CONSTITUCIÓN Y REGISTRO DE LAS ASOCIACIONES POLÍTICAS / Capítulo ÚNICO · DE LAS AGRUPACIONES POLÍTICAS LOCALES",
+  "derogado": false
+ },
+ "246": {
+  "archivo": "articulos/art-0246.md",
+  "sha256": "6bf95c97c6257b35e5c58171f6fb099ddeb2ac4d60f2fb44815e142a863a67e8",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título SEGUNDO · DE LA NATURALEZA, CONSTITUCIÓN Y REGISTRO DE LAS ASOCIACIONES POLÍTICAS / Capítulo ÚNICO · DE LAS AGRUPACIONES POLÍTICAS LOCALES",
+  "derogado": false
+ },
+ "247": {
+  "archivo": "articulos/art-0247.md",
+  "sha256": "697b872fb8b54e5414695a880618400e2f7ac157edab11f86df64cd908a927be",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título SEGUNDO · DE LA NATURALEZA, CONSTITUCIÓN Y REGISTRO DE LAS ASOCIACIONES POLÍTICAS / Capítulo ÚNICO · DE LAS AGRUPACIONES POLÍTICAS LOCALES",
+  "derogado": false
+ },
+ "248": {
+  "archivo": "articulos/art-0248.md",
+  "sha256": "e939716f2ad7e90a86160e945ab9e68971c3f4b40a3a52532891ab1b69398358",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título SEGUNDO · DE LA NATURALEZA, CONSTITUCIÓN Y REGISTRO DE LAS ASOCIACIONES POLÍTICAS / Capítulo ÚNICO · DE LAS AGRUPACIONES POLÍTICAS LOCALES",
+  "derogado": false
+ },
+ "249": {
+  "archivo": "articulos/art-0249.md",
+  "sha256": "0d481558d26431e3b1635928b93b889956ab77f6bd516047be4411704d6d02ce",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título SEGUNDO · DE LA NATURALEZA, CONSTITUCIÓN Y REGISTRO DE LAS ASOCIACIONES POLÍTICAS / Capítulo ÚNICO · DE LAS AGRUPACIONES POLÍTICAS LOCALES",
+  "derogado": false
+ },
+ "250": {
+  "archivo": "articulos/art-0250.md",
+  "sha256": "dd35f67a6c15084c02c5e2b35d0255d7c70668b7d7fc8dd0860620ef1804401e",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título SEGUNDO · DE LA NATURALEZA, CONSTITUCIÓN Y REGISTRO DE LAS ASOCIACIONES POLÍTICAS / Capítulo ÚNICO · DE LAS AGRUPACIONES POLÍTICAS LOCALES",
+  "derogado": false
+ },
+ "251": {
+  "archivo": "articulos/art-0251.md",
+  "sha256": "8fbd73278a4f9fbbffcc9f6d48014575f53603c56dd34481c453b04879c87233",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título SEGUNDO · DE LA NATURALEZA, CONSTITUCIÓN Y REGISTRO DE LAS ASOCIACIONES POLÍTICAS / Capítulo ÚNICO · DE LAS AGRUPACIONES POLÍTICAS LOCALES",
+  "derogado": false
+ },
+ "252": {
+  "archivo": "articulos/art-0252.md",
+  "sha256": "b79726a7ac1bbc3b4eabec3edfac50fd2ab5fe0998a6007c08d15e29efb9ab95",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título SEGUNDO · DE LA NATURALEZA, CONSTITUCIÓN Y REGISTRO DE LAS ASOCIACIONES POLÍTICAS / Capítulo ÚNICO · DE LAS AGRUPACIONES POLÍTICAS LOCALES",
+  "derogado": false
+ },
+ "253": {
+  "archivo": "articulos/art-0253.md",
+  "sha256": "b6962d6e60460da494ae3506b63645db6e0238f3dccf69d83de6ced2aadd28fb",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título SEGUNDO · DE LA NATURALEZA, CONSTITUCIÓN Y REGISTRO DE LAS ASOCIACIONES POLÍTICAS / Capítulo ÚNICO · DE LAS AGRUPACIONES POLÍTICAS LOCALES",
+  "derogado": false
+ },
+ "254": {
+  "archivo": "articulos/art-0254.md",
+  "sha256": "65b9f880473ff0596f1a9d5614e495f4b824c33c09b9df99343e40680c9708bd",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título SEGUNDO · DE LA NATURALEZA, CONSTITUCIÓN Y REGISTRO DE LAS ASOCIACIONES POLÍTICAS / Capítulo ÚNICO · DE LAS AGRUPACIONES POLÍTICAS LOCALES",
+  "derogado": false
+ },
+ "255": {
+  "archivo": "articulos/art-0255.md",
+  "sha256": "794b7804bc5d4e94e92131406422e9ce351ba78b74a6008a266e69b0a60be428",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título SEGUNDO · DE LA NATURALEZA, CONSTITUCIÓN Y REGISTRO DE LAS ASOCIACIONES POLÍTICAS / Capítulo ÚNICO · DE LAS AGRUPACIONES POLÍTICAS LOCALES",
+  "derogado": false
+ },
+ "256": {
+  "archivo": "articulos/art-0256.md",
+  "sha256": "592ed506227fd1f2fcb4aaa793575a7d76188f5fc0690b552611734918ccff88",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo I · NATURALEZA Y FINES",
+  "derogado": false
+ },
+ "257": {
+  "archivo": "articulos/art-0257.md",
+  "sha256": "497f9161d2cdaaa3a93447b841d8f7c92ea8698d3cf558f987afb7a020e5e324",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo I · NATURALEZA Y FINES",
+  "derogado": false
+ },
+ "258": {
+  "archivo": "articulos/art-0258.md",
+  "sha256": "e53051f1d97a69e261dd1da448f23db10622642e2d7d771cc7b3abb146064672",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo I · NATURALEZA Y FINES",
+  "derogado": false
+ },
+ "259": {
+  "archivo": "articulos/art-0259.md",
+  "sha256": "e28b48d2833cb7cffc26e5ca7891956acb97386d14ba537feacd0a08263da40b",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo I · NATURALEZA Y FINES",
+  "derogado": false
+ },
+ "260": {
+  "archivo": "articulos/art-0260.md",
+  "sha256": "640b45787d46cdb6d0452b94c0ed1b437f6abcdd9d3022212ae9bb1457c528ad",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo II · DE LA CONSTITUCIÓN Y REGISTRO DE LOS PARTIDOS POLÍTICOS LOCALES",
+  "derogado": false
+ },
+ "261": {
+  "archivo": "articulos/art-0261.md",
+  "sha256": "2a169f232c4994d4451e1784e30966fa5aeb997e1d26cd31c8055194a6fada81",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo II · DE LA CONSTITUCIÓN Y REGISTRO DE LOS PARTIDOS POLÍTICOS LOCALES",
+  "derogado": false
+ },
+ "262": {
+  "archivo": "articulos/art-0262.md",
+  "sha256": "d1f3c9b551044e1e02a0053f1a609022572aab15f0db5414361c969db5a80007",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo II · DE LA CONSTITUCIÓN Y REGISTRO DE LOS PARTIDOS POLÍTICOS LOCALES",
+  "derogado": false
+ },
+ "263": {
+  "archivo": "articulos/art-0263.md",
+  "sha256": "1acc02ff1348fa962e5e0cc0b38826e245c5ed1906f98df13db21cae2d9a94d2",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo II · DE LA CONSTITUCIÓN Y REGISTRO DE LOS PARTIDOS POLÍTICOS LOCALES",
+  "derogado": false
+ },
+ "264": {
+  "archivo": "articulos/art-0264.md",
+  "sha256": "a2f01212563474e785954bbe1f988aefd92d39fe0b458756e2ef3d83c6d4dc86",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo II · DE LA CONSTITUCIÓN Y REGISTRO DE LOS PARTIDOS POLÍTICOS LOCALES",
+  "derogado": false
+ },
+ "264-bis": {
+  "archivo": "articulos/art-0264-bis.md",
+  "sha256": "b6d8590a0b917b402523746eb23a3eb65bbb11749a9c4301de74563335048879",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo II · DE LA CONSTITUCIÓN Y REGISTRO DE LOS PARTIDOS POLÍTICOS LOCALES",
+  "derogado": false
+ },
+ "265": {
+  "archivo": "articulos/art-0265.md",
+  "sha256": "fb9e4ed791ad5d2f71553fd32195c0929833696dc4c178ee255d96e74c80d901",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo II · DE LA CONSTITUCIÓN Y REGISTRO DE LOS PARTIDOS POLÍTICOS LOCALES",
+  "derogado": false
+ },
+ "266": {
+  "archivo": "articulos/art-0266.md",
+  "sha256": "4f8161b32c814d7f71a761f0b6056a906dd9fe6fcbd71b20cf89b44f8fd3364d",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo II · DE LA CONSTITUCIÓN Y REGISTRO DE LOS PARTIDOS POLÍTICOS LOCALES",
+  "derogado": false
+ },
+ "267": {
+  "archivo": "articulos/art-0267.md",
+  "sha256": "e28c50ee97909cc66f75154aeaff42f062a850d0860366cabfdc4e0bf5c9c411",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo II · DE LA CONSTITUCIÓN Y REGISTRO DE LOS PARTIDOS POLÍTICOS LOCALES",
+  "derogado": false
+ },
+ "268": {
+  "archivo": "articulos/art-0268.md",
+  "sha256": "528919e9278cc29c04bc376268f1fce9f8d0e20011d461cf24d3af849bd05a14",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo II · DE LA CONSTITUCIÓN Y REGISTRO DE LOS PARTIDOS POLÍTICOS LOCALES",
+  "derogado": false
+ },
+ "269": {
+  "archivo": "articulos/art-0269.md",
+  "sha256": "4aa4c181c0d0bcf08e5a47098501e223b233a15ebf2987b640f3c8cdae9d0f94",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo II · DE LA CONSTITUCIÓN Y REGISTRO DE LOS PARTIDOS POLÍTICOS LOCALES",
+  "derogado": false
+ },
+ "270": {
+  "archivo": "articulos/art-0270.md",
+  "sha256": "cc99d8e4dc0db77bfc9b1e87dbe595d3823c2a127e5c63e0d273fd5163413f7b",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo II · DE LA CONSTITUCIÓN Y REGISTRO DE LOS PARTIDOS POLÍTICOS LOCALES",
+  "derogado": false
+ },
+ "271": {
+  "archivo": "articulos/art-0271.md",
+  "sha256": "aeed06c1d8d4d5ca9722b916764ba82a9af53ab2f93eade1ef264f5b9ba6a6aa",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo II · DE LA CONSTITUCIÓN Y REGISTRO DE LOS PARTIDOS POLÍTICOS LOCALES",
+  "derogado": false
+ },
+ "272": {
+  "archivo": "articulos/art-0272.md",
+  "sha256": "1c16a6ad2ff1221d09c0ef8536a72863cfcb734d9a5175b28320bab541947cd9",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo III · DE LAS PRERROGATIVAS Y OBLIGACIONES",
+  "derogado": false
+ },
+ "273": {
+  "archivo": "articulos/art-0273.md",
+  "sha256": "686965d9a2cde87dae80182d023b6331a023105b8902f7f7c6500e6d3f76edec",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo III · DE LAS PRERROGATIVAS Y OBLIGACIONES",
+  "derogado": false
+ },
+ "274": {
+  "archivo": "articulos/art-0274.md",
+  "sha256": "35f4b2aad2c7f62046999f2544cb39c6437a1a1fbbf6e7db7dfb180a425e6ed5",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IV · DE LOS PROCESOS DE SELECCIÓN INTERNA",
+  "derogado": false
+ },
+ "275": {
+  "archivo": "articulos/art-0275.md",
+  "sha256": "4c62a248342cc70ba0e01e31117ca891e13d777717c1ac428b95883fdf2b95a6",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IV · DE LOS PROCESOS DE SELECCIÓN INTERNA",
+  "derogado": false
+ },
+ "276": {
+  "archivo": "articulos/art-0276.md",
+  "sha256": "92a03a89a7c47c8fe57ccfa5bbf78343f60247ddf1c54947337b95e8f5d4232b",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IV · DE LOS PROCESOS DE SELECCIÓN INTERNA",
+  "derogado": false
+ },
+ "277": {
+  "archivo": "articulos/art-0277.md",
+  "sha256": "5401ee87bd75f18ca2321959fa1c8e1a873907d4a7f804a14c889ea3ab41294b",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IV · DE LOS PROCESOS DE SELECCIÓN INTERNA",
+  "derogado": false
+ },
+ "278": {
+  "archivo": "articulos/art-0278.md",
+  "sha256": "87b547ac4832257bd3bf084d5c9f77bb6c3b9b4e4f1a1fa9bb6abe27d0d0053b",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IV · DE LOS PROCESOS DE SELECCIÓN INTERNA",
+  "derogado": false
+ },
+ "279": {
+  "archivo": "articulos/art-0279.md",
+  "sha256": "d0895d5a1e09ae6a650039d91e3fafeb812ae6e48a152e02c1be3809e61bda8a",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IV · DE LOS PROCESOS DE SELECCIÓN INTERNA",
+  "derogado": false
+ },
+ "280": {
+  "archivo": "articulos/art-0280.md",
+  "sha256": "6f4632941914d803bc8513e45b6ea1fcc9bcf5fed81f795c5308830dd11c5f68",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IV · DE LOS PROCESOS DE SELECCIÓN INTERNA",
+  "derogado": false
+ },
+ "281": {
+  "archivo": "articulos/art-0281.md",
+  "sha256": "ebe76daa627c98b61d76fd6450a08769f7160f44883a97bf05275f13a9a58ad5",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IV · DE LOS PROCESOS DE SELECCIÓN INTERNA",
+  "derogado": false
+ },
+ "282": {
+  "archivo": "articulos/art-0282.md",
+  "sha256": "46575c391a22a2b7a6bdce58a1bd4a4f1bfa8196500ae37f142565331e882756",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IV · DE LOS PROCESOS DE SELECCIÓN INTERNA",
+  "derogado": false
+ },
+ "283": {
+  "archivo": "articulos/art-0283.md",
+  "sha256": "41de620e73a37996c4a60416d473640aae1fac55cfd89e29773919afe377b147",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IV · DE LOS PROCESOS DE SELECCIÓN INTERNA",
+  "derogado": false
+ },
+ "284": {
+  "archivo": "articulos/art-0284.md",
+  "sha256": "7acf48016edb604f72cd8436a62f16297237a3dd16ff6b8463268ebc58e74fc3",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IV · DE LOS PROCESOS DE SELECCIÓN INTERNA",
+  "derogado": false
+ },
+ "285": {
+  "archivo": "articulos/art-0285.md",
+  "sha256": "14efda3957236dbf3b1fe09e766fc6e04f0e4fae11da88e71342264171937435",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IV · DE LOS PROCESOS DE SELECCIÓN INTERNA",
+  "derogado": false
+ },
+ "286": {
+  "archivo": "articulos/art-0286.md",
+  "sha256": "084973b12dcd994bac12a3612e5e2fe063218386ea0c1fdf39eb394fe6874ede",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IV · DE LOS PROCESOS DE SELECCIÓN INTERNA",
+  "derogado": false
+ },
+ "287": {
+  "archivo": "articulos/art-0287.md",
+  "sha256": "d511f4bcb854cf855cb632eae7f11facbd3c3b979505175b83fab9ac0bbf5a09",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IV · DE LOS PROCESOS DE SELECCIÓN INTERNA",
+  "derogado": false
+ },
+ "288": {
+  "archivo": "articulos/art-0288.md",
+  "sha256": "13ae05d10e17c79725c5a0ff4020247dd4425d3cb43af0657b5518b4084c2bc1",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IV · DE LOS PROCESOS DE SELECCIÓN INTERNA",
+  "derogado": false
+ },
+ "289": {
+  "archivo": "articulos/art-0289.md",
+  "sha256": "d0a0d0cd348ba014ed99e3f30d9c00832af6c3c769b64928500ce73f5e462e76",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IV · DE LOS PROCESOS DE SELECCIÓN INTERNA",
+  "derogado": false
+ },
+ "290": {
+  "archivo": "articulos/art-0290.md",
+  "sha256": "432e0031dfeb36812b3d3412b216ac8eef0ef482f5232f4b194aed7755d6f698",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IV · DE LOS PROCESOS DE SELECCIÓN INTERNA",
+  "derogado": false
+ },
+ "291": {
+  "archivo": "articulos/art-0291.md",
+  "sha256": "497fd52994e0f21ff413e632eab0552d5260daa6a288ef96191035b56c2bc32c",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo V · FRENTES, COALICIONES ELECTORALES, CANDIDATURAS COMUNES",
+  "derogado": false
+ },
+ "292": {
+  "archivo": "articulos/art-0292.md",
+  "sha256": "bdd0917f30dcd067e489169fcf5ce130439dd0b6fadeb4d72df26473b2834528",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo V · FRENTES, COALICIONES ELECTORALES, CANDIDATURAS COMUNES",
+  "derogado": false
+ },
+ "293": {
+  "archivo": "articulos/art-0293.md",
+  "sha256": "06d9e1864293357aa8660eceb080ec5130b576b0d10a489351d6409c3accb354",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo V · FRENTES, COALICIONES ELECTORALES, CANDIDATURAS COMUNES",
+  "derogado": false
+ },
+ "294": {
+  "archivo": "articulos/art-0294.md",
+  "sha256": "04bd3696c9989e0994ff9809fc7b2f91244afd2407324227f7f717aab9d4be0d",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo V · FRENTES, COALICIONES ELECTORALES, CANDIDATURAS COMUNES",
+  "derogado": false
+ },
+ "295": {
+  "archivo": "articulos/art-0295.md",
+  "sha256": "4ccc02baa92a763337881c3b2bbbd8ef66e44c4168058090a7e0f93a03d0b998",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo V · FRENTES, COALICIONES ELECTORALES, CANDIDATURAS COMUNES",
+  "derogado": false
+ },
+ "296": {
+  "archivo": "articulos/art-0296.md",
+  "sha256": "fc0ab246fe26d15650a5225c386c9ca49253b732973d6ade66d56c09e7a88553",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo V · FRENTES, COALICIONES ELECTORALES, CANDIDATURAS COMUNES",
+  "derogado": false
+ },
+ "297": {
+  "archivo": "articulos/art-0297.md",
+  "sha256": "81ae91342861bb7dc3e929960f9682851061a5c95090e042d609e4412f3b3055",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo V · FRENTES, COALICIONES ELECTORALES, CANDIDATURAS COMUNES",
+  "derogado": false
+ },
+ "298": {
+  "archivo": "articulos/art-0298.md",
+  "sha256": "3e5ed387948861eae53c4e4909e435740dafb3622689a2ef09f00c69e600a36e",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo V · FRENTES, COALICIONES ELECTORALES, CANDIDATURAS COMUNES",
+  "derogado": false
+ },
+ "298-bis": {
+  "archivo": "articulos/art-0298-bis.md",
+  "sha256": "7d0669de97982d0bdd5a5d91b12d6c2b147eea6db18c1ef541327a735e6893d4",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo V · FRENTES, COALICIONES ELECTORALES, CANDIDATURAS COMUNES",
+  "derogado": false
+ },
+ "298-ter": {
+  "archivo": "articulos/art-0298-ter.md",
+  "sha256": "61bc2a78117f74cb6183ab1c865c697833ea6d440407a37c4a7027d5be35081e",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo V · FRENTES, COALICIONES ELECTORALES, CANDIDATURAS COMUNES",
+  "derogado": false
+ },
+ "299": {
+  "archivo": "articulos/art-0299.md",
+  "sha256": "53b663b8395fa4da73c5ebc55335f8b6dc419ef6cf8cfdba3a5c0d6821022f9c",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capitulo VI · DE LOS GOBIERNOS DE COALICIÓN",
+  "derogado": false
+ },
+ "300": {
+  "archivo": "articulos/art-0300.md",
+  "sha256": "71f3729199bdd834b653424e67a4050682a8268c4e55007a344bdb5568e04dfe",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capitulo VI · DE LOS GOBIERNOS DE COALICIÓN",
+  "derogado": false
+ },
+ "301": {
+  "archivo": "articulos/art-0301.md",
+  "sha256": "168fd7766ffc452127ff0dbfabb5ed40c17e687a529a1d638928ee87ebe5b032",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capitulo VI · DE LOS GOBIERNOS DE COALICIÓN",
+  "derogado": false
+ },
+ "302": {
+  "archivo": "articulos/art-0302.md",
+  "sha256": "e09af559d687f93078fce6a4314f9a13bce9285407b0b4ea9ce13284b0413c34",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capitulo VI · DE LOS GOBIERNOS DE COALICIÓN",
+  "derogado": false
+ },
+ "303": {
+  "archivo": "articulos/art-0303.md",
+  "sha256": "3dfe9b292d987a0006b441dae34cdf94b5d8ae7613bd0a3b936d03bdff903c59",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capitulo VI · DE LOS GOBIERNOS DE COALICIÓN",
+  "derogado": false
+ },
+ "304": {
+  "archivo": "articulos/art-0304.md",
+  "sha256": "4b45fd78c77fcd35f3fce8e086853c90f11d1001b425552907fd7f19085269bf",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capitulo VI · DE LOS GOBIERNOS DE COALICIÓN",
+  "derogado": false
+ },
+ "305": {
+  "archivo": "articulos/art-0305.md",
+  "sha256": "221ee0a62c20d39fab1be3e2532cd999c743620d75425a11effab0faaf9a3f8d",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capitulo VI · DE LOS GOBIERNOS DE COALICIÓN",
+  "derogado": false
+ },
+ "306": {
+  "archivo": "articulos/art-0306.md",
+  "sha256": "e95501cd4bf0c11cdb4ed13e62b8a0bb0ff5aa063deb070c2c0bb2800d3ca22e",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capitulo VI · DE LOS GOBIERNOS DE COALICIÓN",
+  "derogado": false
+ },
+ "307": {
+  "archivo": "articulos/art-0307.md",
+  "sha256": "ea4eb11dce1362b9042092f107bdda2f91ac9bf7f6f483a67743e642893308a5",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capitulo VI · DE LOS GOBIERNOS DE COALICIÓN",
+  "derogado": false
+ },
+ "308": {
+  "archivo": "articulos/art-0308.md",
+  "sha256": "8126699dbe1ac34608fba7e66daf52aecd06d75c7d83efceca8ae3bfc3541f75",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capitulo VI · DE LOS GOBIERNOS DE COALICIÓN",
+  "derogado": false
+ },
+ "309": {
+  "archivo": "articulos/art-0309.md",
+  "sha256": "a7cd3e5dce3d179674e6431ee5a70926ebd9a04abe23cca201f0d41a458a98b7",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capitulo VI · DE LOS GOBIERNOS DE COALICIÓN",
+  "derogado": false
+ },
+ "310": {
+  "archivo": "articulos/art-0310.md",
+  "sha256": "8015643254b7da721c7f9ce3b77a23639259763d2c48d8437ae7d54758df2a98",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VII · DE LAS CANDIDATURAS SIN PARTIDO",
+  "derogado": false
+ },
+ "311": {
+  "archivo": "articulos/art-0311.md",
+  "sha256": "d2e09a298b2ae30d9f03380a4ac0e5fb437b068260dd9219a026815d9fffc571",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VII · DE LAS CANDIDATURAS SIN PARTIDO",
+  "derogado": false
+ },
+ "312": {
+  "archivo": "articulos/art-0312.md",
+  "sha256": "7551059d262f385218817841738c4749c65620248e7b9801192b5e1523dac5da",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VII · DE LAS CANDIDATURAS SIN PARTIDO",
+  "derogado": false
+ },
+ "313": {
+  "archivo": "articulos/art-0313.md",
+  "sha256": "d95e0634c6904a6784fb5c86d05facfda5b16da7c7ba0f90a08370cb4ac6c761",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VII · DE LAS CANDIDATURAS SIN PARTIDO",
+  "derogado": false
+ },
+ "314": {
+  "archivo": "articulos/art-0314.md",
+  "sha256": "7dff514f70be977bd50a9a95620b69e295e21ab6f25e446446ddc0694a686a7e",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VII · DE LAS CANDIDATURAS SIN PARTIDO",
+  "derogado": false
+ },
+ "315": {
+  "archivo": "articulos/art-0315.md",
+  "sha256": "35baef5c93e6d82ebf82b901b756ea1fb14203789dc67cfa6f11cea8275dff7b",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VII · DE LAS CANDIDATURAS SIN PARTIDO",
+  "derogado": false
+ },
+ "316": {
+  "archivo": "articulos/art-0316.md",
+  "sha256": "645f4eec70a1956fc5dd586bcb8f76f1c46f4b99a5cff7c32c47907e1642e01e",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VII · DE LAS CANDIDATURAS SIN PARTIDO",
+  "derogado": false
+ },
+ "317": {
+  "archivo": "articulos/art-0317.md",
+  "sha256": "f98af033aa49003090d0439eec22d3ff4926a4fa826fb93cd644242fa9a39150",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VII · DE LAS CANDIDATURAS SIN PARTIDO",
+  "derogado": false
+ },
+ "318": {
+  "archivo": "articulos/art-0318.md",
+  "sha256": "b1da3c7e5c35b2b0693990daacdb16f50fdd4f67ee2fdf6fcbddfcc27e08a21f",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VII · DE LAS CANDIDATURAS SIN PARTIDO",
+  "derogado": false
+ },
+ "319": {
+  "archivo": "articulos/art-0319.md",
+  "sha256": "c4e79a187b7a4417a51b32ae099ace2ae749eb917bcafda6b8b74bc62c904af0",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VII · DE LAS CANDIDATURAS SIN PARTIDO",
+  "derogado": false
+ },
+ "320": {
+  "archivo": "articulos/art-0320.md",
+  "sha256": "de94e4975e4e63778b2dbeb460a428e9a7dea399378c30ce56308edc76dd1568",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VII · DE LAS CANDIDATURAS SIN PARTIDO",
+  "derogado": false
+ },
+ "321": {
+  "archivo": "articulos/art-0321.md",
+  "sha256": "14b0ea252f8a056a878bb2e5c7b33404e3d33991a4a0201978d6c1e9128b9749",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VII · DE LAS CANDIDATURAS SIN PARTIDO",
+  "derogado": false
+ },
+ "322": {
+  "archivo": "articulos/art-0322.md",
+  "sha256": "c3a32721d232a16c1a1f248ad700356786ee415538a77e068d588742ebca3b2e",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VII · DE LAS CANDIDATURAS SIN PARTIDO",
+  "derogado": false
+ },
+ "323": {
+  "archivo": "articulos/art-0323.md",
+  "sha256": "c86fac14ba2ce2f3c424b121c85fd20624502337102c7f7a808aca489e313745",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VII · DE LAS CANDIDATURAS SIN PARTIDO",
+  "derogado": false
+ },
+ "324": {
+  "archivo": "articulos/art-0324.md",
+  "sha256": "6e64ec5a5c7743792af12b28d2b348ed9ae2a90128e277c2d9e93d8d36c8fad0",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VII · DE LAS CANDIDATURAS SIN PARTIDO",
+  "derogado": false
+ },
+ "325": {
+  "archivo": "articulos/art-0325.md",
+  "sha256": "e150a44c93023b975b39fbdfb84adf5a373f5ecce8b2609db7b84e9a26b2a024",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VII · DE LAS CANDIDATURAS SIN PARTIDO",
+  "derogado": false
+ },
+ "326": {
+  "archivo": "articulos/art-0326.md",
+  "sha256": "a74c4c1e04c1c8dd45bc46f833ed41a8d3c36a240f10e9ccb4b6ccabc7e2abee",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VII · DE LAS CANDIDATURAS SIN PARTIDO",
+  "derogado": false
+ },
+ "327": {
+  "archivo": "articulos/art-0327.md",
+  "sha256": "9ed83cf47d8539cc2d65189a9e8c7a4be0c49028dc8ab823a1eeb07136cb609d",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "328": {
+  "archivo": "articulos/art-0328.md",
+  "sha256": "46e61ed908c1ecf7d1d231fed2c574d66f44a7726b76bd708f0d8240cb049792",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "329": {
+  "archivo": "articulos/art-0329.md",
+  "sha256": "f6f7fd228f27045d14254bca95cf3727039030d15881790f1c430d85fbfe3c95",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "330": {
+  "archivo": "articulos/art-0330.md",
+  "sha256": "6ab191586d6031a0c096184f83c26e92456ef57dde9e98f5cae5e2e102580a20",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "331": {
+  "archivo": "articulos/art-0331.md",
+  "sha256": "47841d57d4b3e40878a2c879a0e582f80a0ca2e85e900eba76fbce68cdd93e61",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "332": {
+  "archivo": "articulos/art-0332.md",
+  "sha256": "78e7cfc789f2f0c1c57acc9be2aed67d430f541bcfe49b22cf3c48c0ac0de094",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "333": {
+  "archivo": "articulos/art-0333.md",
+  "sha256": "0ef759bdd85d71b5ac9e7000735d72ae912fa8302ebd8f554d55102c950c180c",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "334": {
+  "archivo": "articulos/art-0334.md",
+  "sha256": "a984a5525f9b5cd273966bad07150ef3e4190bbbfd5a0fc5471fdb77f41df26a",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "335": {
+  "archivo": "articulos/art-0335.md",
+  "sha256": "ba28c601941ff18b39ce4f650b97cf84a4fa66e56ef8eda72c327af8eb0f817d",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "336": {
+  "archivo": "articulos/art-0336.md",
+  "sha256": "c6be8e779ff390dd7909a12e7b447bb9d063d35d9edd0dca7bdd6cc53559a6f1",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "337": {
+  "archivo": "articulos/art-0337.md",
+  "sha256": "6f5cc378cc0ee03534dedf10c264b980816b4705d514eb064f5fbb67aa2dcf52",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "338": {
+  "archivo": "articulos/art-0338.md",
+  "sha256": "334799d2624bea46e8a161b142c33bae14ab691530ec9c1d7c0da1dd30bc4f3a",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "339": {
+  "archivo": "articulos/art-0339.md",
+  "sha256": "8ad3cf9bc1570a8339c7767a507b70f86fc7ca9c107e13e9df8f9ee84477f078",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "340": {
+  "archivo": "articulos/art-0340.md",
+  "sha256": "0de9cee826b1e73c71669b5fdba7ff157bdeadafc84e205f72c711c11b95d4da",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "341": {
+  "archivo": "articulos/art-0341.md",
+  "sha256": "564d3716312ed9ea3dd06a16e78aef5de98d5d690bf1d00b5766c68f45d349df",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "342": {
+  "archivo": "articulos/art-0342.md",
+  "sha256": "b26ae31e12e6e7954c57f9144cb553d097551039a9f010cc8aa1bfd31992dd52",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "343": {
+  "archivo": "articulos/art-0343.md",
+  "sha256": "17654c42c759b72a1f0acddb6201220b96b1c877691cdf28b4a66fe4a6d6def7",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "344": {
+  "archivo": "articulos/art-0344.md",
+  "sha256": "1fda65609a4bc43c2351fd0de5fcb1a4efbe53b39858aeeb206334a9a220fc33",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "345": {
+  "archivo": "articulos/art-0345.md",
+  "sha256": "edc5b7e5006443a4e102775794567d5a6c4097168546b1f56f08b80a96a10c3f",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "346": {
+  "archivo": "articulos/art-0346.md",
+  "sha256": "99dfbc598608942cdf344eafe63e0fddefb206509638748681102dba4633fd46",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "347": {
+  "archivo": "articulos/art-0347.md",
+  "sha256": "cf22f9e425b2c615da8a27849ecd922c2acd544f7e04dec1af20b6fc181a2e34",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo VIII · DEL FINANCIAMIENTO DE LOS PARTIDOS POLÍTICOS",
+  "derogado": false
+ },
+ "348": {
+  "archivo": "articulos/art-0348.md",
+  "sha256": "4a173f52f4f21b5ba4065ef8c87f70d6a5e1e71aa08bf5192a27cc279d40744b",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IX · DE LA FISCALIZACIÓN",
+  "derogado": false
+ },
+ "349": {
+  "archivo": "articulos/art-0349.md",
+  "sha256": "2a5c00ec3f824f7ec4f91c4557f500eb109a9d8c5fdb50beb87379a30d79d360",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IX · DE LA FISCALIZACIÓN",
+  "derogado": false
+ },
+ "350": {
+  "archivo": "articulos/art-0350.md",
+  "sha256": "10c67d16771c63e4dc87fb2920773f9bc3ecd42849f910a89429fd45c4c4c571",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IX · DE LA FISCALIZACIÓN",
+  "derogado": false
+ },
+ "351": {
+  "archivo": "articulos/art-0351.md",
+  "sha256": "00e3f452c47b87412fe66becd770c08908285930df5880470185298ed98b967e",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IX · DE LA FISCALIZACIÓN",
+  "derogado": false
+ },
+ "352": {
+  "archivo": "articulos/art-0352.md",
+  "sha256": "205b2dbb837dbabad6706a2cf9666d9b226fc9b22ccd9e8c26a1bed5e0c8f20b",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IX · DE LA FISCALIZACIÓN",
+  "derogado": false
+ },
+ "353": {
+  "archivo": "articulos/art-0353.md",
+  "sha256": "7365f33f39e10fdda1e747239f07b76d18b5dca342a284e3a33de92d4676dc0f",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo IX · DE LA FISCALIZACIÓN",
+  "derogado": false
+ },
+ "354": {
+  "archivo": "articulos/art-0354.md",
+  "sha256": "09079f51c46bf48a0e0b6dd37e9951a204916f705b38c7f94c242603feb0e2d5",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo X · DE LA PÉRDIDA DE REGISTRO Y DE LA EXTINCIÓN DE LOS DERECHOS Y",
+  "derogado": false
+ },
+ "355": {
+  "archivo": "articulos/art-0355.md",
+  "sha256": "30d7bb37efbeb58d9de233c59086f952ff260a4e6a4b0a94fdc5794a0c4d2c9c",
+  "ubicacion": "Libro TERCERO · DE LAS ASOCIACIONES POLÍTICAS / Título TERCERO · DE LOS PARTIDOS POLÍTICOS / Capítulo X · DE LA PÉRDIDA DE REGISTRO Y DE LA EXTINCIÓN DE LOS DERECHOS Y",
+  "derogado": false
+ },
+ "356": {
+  "archivo": "articulos/art-0356.md",
+  "sha256": "15e93c94f3c8c567b70670a026471d7588faac7b869a503a284bfc76446b0805",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título PRIMERO · DE LOS PROCESOS ELECTORALES Y LOS PROCEDIMIENTOS DE PARTICIPACION CIUDADANA / Capítulo I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "357": {
+  "archivo": "articulos/art-0357.md",
+  "sha256": "79da282a83eab6040b75221ff9caced62d7e95b9102325beca51a5d73b1b2c37",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título PRIMERO · DE LOS PROCESOS ELECTORALES Y LOS PROCEDIMIENTOS DE PARTICIPACION CIUDADANA / Capítulo I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "358": {
+  "archivo": "articulos/art-0358.md",
+  "sha256": "ec72ceffa147cfe4aa26f3292dc829b6e8cbf5746abc16112cbe819651099d63",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título PRIMERO · DE LOS PROCESOS ELECTORALES Y LOS PROCEDIMIENTOS DE PARTICIPACION CIUDADANA / Capítulo II · DEL PROCESO ELECTORAL ORDINARIO",
+  "derogado": false
+ },
+ "359": {
+  "archivo": "articulos/art-0359.md",
+  "sha256": "806852a585cbdf556c687e654b113e26b0ada39d216a0c72f67f8f5d227f6799",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título PRIMERO · DE LOS PROCESOS ELECTORALES Y LOS PROCEDIMIENTOS DE PARTICIPACION CIUDADANA / Capítulo II · DEL PROCESO ELECTORAL ORDINARIO",
+  "derogado": false
+ },
+ "360": {
+  "archivo": "articulos/art-0360.md",
+  "sha256": "f44775d9791ab037610924580417b406db3056abc315a168928b75473269fb0b",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título PRIMERO · DE LOS PROCESOS ELECTORALES Y LOS PROCEDIMIENTOS DE PARTICIPACION CIUDADANA / Capítulo III · DEL PROCESO ELECTORAL EXTRAORDINARIO",
+  "derogado": false
+ },
+ "361": {
+  "archivo": "articulos/art-0361.md",
+  "sha256": "4c3d738929b96f775ce227fb3b65de5f06c52a7af16eba458fa7281d5bd16117",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título PRIMERO · DE LOS PROCESOS ELECTORALES Y LOS PROCEDIMIENTOS DE PARTICIPACION CIUDADANA / Capítulo III · DEL PROCESO ELECTORAL EXTRAORDINARIO",
+  "derogado": false
+ },
+ "362": {
+  "archivo": "articulos/art-0362.md",
+  "sha256": "a03af4686612e68361ef89f6e5564ebb2f6b7c3349f85b030e4793b4f1f70c66",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título PRIMERO · DE LOS PROCESOS ELECTORALES Y LOS PROCEDIMIENTOS DE PARTICIPACION CIUDADANA / Capítulo IV · DE LOS PROCEDIMIENTOS Y MECANISMOS DE PARTICIPACIÓN CIUDADANA",
+  "derogado": false
+ },
+ "363": {
+  "archivo": "articulos/art-0363.md",
+  "sha256": "c806c669feef2373a219474fe55723fa6c59fc50973c999209cef91bd90b47ab",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título PRIMERO · DE LOS PROCESOS ELECTORALES Y LOS PROCEDIMIENTOS DE PARTICIPACION CIUDADANA / Capítulo IV · DE LOS PROCEDIMIENTOS Y MECANISMOS DE PARTICIPACIÓN CIUDADANA",
+  "derogado": false
+ },
+ "364": {
+  "archivo": "articulos/art-0364.md",
+  "sha256": "258bc65aba0bd86f39f3c560b816afd06b376a8ee40092513b8a81df38b4b2de",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título SEGUNDO · DE LA DEMOCRACIA / Capítulo ÚNICO · DEMOCRACIA PARTICIPATIVA",
+  "derogado": false
+ },
+ "365": {
+  "archivo": "articulos/art-0365.md",
+  "sha256": "f87b9e152dbec872ced870b5e30e4b6bf25fd17bf201c4e654fd07c2b1520da6",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título SEGUNDO · DE LA DEMOCRACIA / Capítulo ÚNICO · DEMOCRACIA PARTICIPATIVA",
+  "derogado": false
+ },
+ "366": {
+  "archivo": "articulos/art-0366.md",
+  "sha256": "2745c6870cd1aa48a025336d4a519b8b0cd7869e259c44bef1e215c22f968358",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título SEGUNDO · DE LA DEMOCRACIA / Capítulo ÚNICO · DEMOCRACIA PARTICIPATIVA",
+  "derogado": false
+ },
+ "367": {
+  "archivo": "articulos/art-0367.md",
+  "sha256": "8709f47ab48422a2e32c6558ea7ec6aaa42c67bb5c6300abacafca5bfea0859f",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título SEGUNDO · DE LA DEMOCRACIA / Capítulo ÚNICO · DEMOCRACIA PARTICIPATIVA",
+  "derogado": false
+ },
+ "368": {
+  "archivo": "articulos/art-0368.md",
+  "sha256": "da38943168dd157560c4d56e9e250ebcfbb136ca1c87f66814f8f06f9e646181",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título TERCERO · DE LA GEOGRAFÍA ELECTORAL, LA COLABORACIÓN REGISTRAL Y ELECTORAL / Capítulo I · ÁMBITO TERRITORIAL DE VALIDEZ RESPECTO A",
+  "derogado": false
+ },
+ "369": {
+  "archivo": "articulos/art-0369.md",
+  "sha256": "03c7454b9500f449fcbe0100ec21ae4084b6df6e2a3415a28d288dca7ceb4fc8",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título TERCERO · DE LA GEOGRAFÍA ELECTORAL, LA COLABORACIÓN REGISTRAL Y ELECTORAL / Capítulo I · ÁMBITO TERRITORIAL DE VALIDEZ RESPECTO A",
+  "derogado": false
+ },
+ "370": {
+  "archivo": "articulos/art-0370.md",
+  "sha256": "de9925b91206321b72f01795dfe4bc488e4ba29b1a355cbd3855d3459f4bf92b",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título TERCERO · DE LA GEOGRAFÍA ELECTORAL, LA COLABORACIÓN REGISTRAL Y ELECTORAL / Capítulo I · ÁMBITO TERRITORIAL DE VALIDEZ RESPECTO A",
+  "derogado": false
+ },
+ "371": {
+  "archivo": "articulos/art-0371.md",
+  "sha256": "e9d2f360f94b9b058ea2366c3284476ccc34d804b117da4d813dc432e44fe50b",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título TERCERO · DE LA GEOGRAFÍA ELECTORAL, LA COLABORACIÓN REGISTRAL Y ELECTORAL / Capítulo I · ÁMBITO TERRITORIAL DE VALIDEZ RESPECTO A",
+  "derogado": false
+ },
+ "372": {
+  "archivo": "articulos/art-0372.md",
+  "sha256": "efcfc6ee69162b8afed926967b7c4d460360d27ae4e4fa883c19c593c1d0cdc1",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título TERCERO · DE LA GEOGRAFÍA ELECTORAL, LA COLABORACIÓN REGISTRAL Y ELECTORAL / Capítulo II · DE LAS LISTAS NOMINALES DE ELECTORES Y SU REVISIÓN",
+  "derogado": false
+ },
+ "373": {
+  "archivo": "articulos/art-0373.md",
+  "sha256": "00bd954b2d164ec2757055a41965c72115acd3bb21ba421c310abd40b9d9afd5",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título TERCERO · DE LA GEOGRAFÍA ELECTORAL, LA COLABORACIÓN REGISTRAL Y ELECTORAL / Capítulo II · DE LAS LISTAS NOMINALES DE ELECTORES Y SU REVISIÓN",
+  "derogado": false
+ },
+ "374": {
+  "archivo": "articulos/art-0374.md",
+  "sha256": "8feb4f12ed05b542c949aa59565e43a93833397a8cf589220eb8a68731ccc5dc",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título TERCERO · DE LA GEOGRAFÍA ELECTORAL, LA COLABORACIÓN REGISTRAL Y ELECTORAL / Capítulo II · DE LAS LISTAS NOMINALES DE ELECTORES Y SU REVISIÓN",
+  "derogado": false
+ },
+ "375": {
+  "archivo": "articulos/art-0375.md",
+  "sha256": "9e927edcef807ee8499b3ba4cf227ccc33fc343ee344a67bad77e3bb4ff1dcd5",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título TERCERO · DE LA GEOGRAFÍA ELECTORAL, LA COLABORACIÓN REGISTRAL Y ELECTORAL / Capítulo II · DE LAS LISTAS NOMINALES DE ELECTORES Y SU REVISIÓN",
+  "derogado": false
+ },
+ "376": {
+  "archivo": "articulos/art-0376.md",
+  "sha256": "1721aa83355a9f0186994bb3c39acca56e092b1651b2acc074b4b8d8499fa6d2",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título TERCERO · DE LA GEOGRAFÍA ELECTORAL, LA COLABORACIÓN REGISTRAL Y ELECTORAL / Capítulo II · DE LAS LISTAS NOMINALES DE ELECTORES Y SU REVISIÓN",
+  "derogado": false
+ },
+ "377": {
+  "archivo": "articulos/art-0377.md",
+  "sha256": "070c2fd11428e99b2f99f163b3356a89cce37f46e905d28e7c3855b88d475bc3",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título TERCERO · DE LA GEOGRAFÍA ELECTORAL, LA COLABORACIÓN REGISTRAL Y ELECTORAL / Capítulo II · DE LAS LISTAS NOMINALES DE ELECTORES Y SU REVISIÓN",
+  "derogado": false
+ },
+ "378": {
+  "archivo": "articulos/art-0378.md",
+  "sha256": "de014c8a01e8b01fa95dd547a8d6f112a38053a9aeb98be4e110c85cc7681b8c",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título TERCERO · DE LA GEOGRAFÍA ELECTORAL, LA COLABORACIÓN REGISTRAL Y ELECTORAL / Capítulo III · TÉCNICA CENSAL",
+  "derogado": false
+ },
+ "379": {
+  "archivo": "articulos/art-0379.md",
+  "sha256": "2a4f5284816e0c42a55413c0c0d785556c7db95ff0de79212a548a72523ccd02",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título CUARTO · DISPOSICIONES PRELIMINARES. / Capítulo I · ACTOS PREVIOS A LA JORNADA ELECTORAL",
+  "derogado": false
+ },
+ "380": {
+  "archivo": "articulos/art-0380.md",
+  "sha256": "46be8f4215f437f336727e878336958e91d578bb22bcbb777e84fb298e722f1f",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título CUARTO · DISPOSICIONES PRELIMINARES. / Capítulo I · ACTOS PREVIOS A LA JORNADA ELECTORAL",
+  "derogado": false
+ },
+ "381": {
+  "archivo": "articulos/art-0381.md",
+  "sha256": "0cf479ff263b1c051044a0014fb5506888326529988a5291347e7dd16679c31d",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título CUARTO · DISPOSICIONES PRELIMINARES. / Capítulo I · ACTOS PREVIOS A LA JORNADA ELECTORAL",
+  "derogado": false
+ },
+ "382": {
+  "archivo": "articulos/art-0382.md",
+  "sha256": "1273ee1ff9e885f1da6e235f7c52686f5ad91ef5806c9a9e1384a5bfe6de5903",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título CUARTO · DISPOSICIONES PRELIMINARES. / Capítulo I · ACTOS PREVIOS A LA JORNADA ELECTORAL",
+  "derogado": false
+ },
+ "383": {
+  "archivo": "articulos/art-0383.md",
+  "sha256": "5ddca9110ee6903e96a0af67646715a05d8a68997462ab8ded99faae9e007db8",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título CUARTO · DISPOSICIONES PRELIMINARES. / Capítulo I · ACTOS PREVIOS A LA JORNADA ELECTORAL",
+  "derogado": false
+ },
+ "384": {
+  "archivo": "articulos/art-0384.md",
+  "sha256": "fb75de9749aef2b718002037756f7b6e693e26cb89a70a083ff451636c22bc6e",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título CUARTO · DISPOSICIONES PRELIMINARES. / Capítulo I · ACTOS PREVIOS A LA JORNADA ELECTORAL",
+  "derogado": false
+ },
+ "385": {
+  "archivo": "articulos/art-0385.md",
+  "sha256": "f4c75fd73425a350a8a4f7d9fb2d1fd2797256de9fb7f10cc85f0d78a070cab7",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título CUARTO · DISPOSICIONES PRELIMINARES. / Capítulo I · ACTOS PREVIOS A LA JORNADA ELECTORAL",
+  "derogado": false
+ },
+ "386": {
+  "archivo": "articulos/art-0386.md",
+  "sha256": "2b1ff0aacb200e0961171f65ce83c54c7205f91c082da53d93bc0acc1a14b924",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título CUARTO · DISPOSICIONES PRELIMINARES. / Capítulo II · DE LA DOCUMENTACIÓN Y MATERIAL ELECTORAL",
+  "derogado": false
+ },
+ "387": {
+  "archivo": "articulos/art-0387.md",
+  "sha256": "0a19965ebe3ab13dc4e3275fd158e2918f01c04a944bf1121afae57e6e5fa8fa",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título CUARTO · DISPOSICIONES PRELIMINARES. / Capítulo II · DE LA DOCUMENTACIÓN Y MATERIAL ELECTORAL",
+  "derogado": false
+ },
+ "388": {
+  "archivo": "articulos/art-0388.md",
+  "sha256": "bd9dae5e4c55ca6024b4f403f82274db25b7c0eb0cd215c28fb8c446a6de8fdb",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título CUARTO · DISPOSICIONES PRELIMINARES. / Capítulo II · DE LA DOCUMENTACIÓN Y MATERIAL ELECTORAL",
+  "derogado": false
+ },
+ "389": {
+  "archivo": "articulos/art-0389.md",
+  "sha256": "f1d002cf594b7192569ab62c7400de33a98c1b42509b5a7377360c67ef1c98aa",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título CUARTO · DISPOSICIONES PRELIMINARES. / Capítulo II · DE LA DOCUMENTACIÓN Y MATERIAL ELECTORAL",
+  "derogado": false
+ },
+ "390": {
+  "archivo": "articulos/art-0390.md",
+  "sha256": "4b8dbc907793b2d8b58141cd1da55b38ef0ea37c039dba4f0ba8fc2394c174cf",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título CUARTO · DISPOSICIONES PRELIMINARES. / Capítulo II · DE LA DOCUMENTACIÓN Y MATERIAL ELECTORAL",
+  "derogado": false
+ },
+ "391": {
+  "archivo": "articulos/art-0391.md",
+  "sha256": "f1ee7725e24c5df162352ba730ff2fae08dfe883e0fca7b76162d54c3875a858",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título CUARTO · DISPOSICIONES PRELIMINARES. / Capítulo II · DE LA DOCUMENTACIÓN Y MATERIAL ELECTORAL",
+  "derogado": false
+ },
+ "392": {
+  "archivo": "articulos/art-0392.md",
+  "sha256": "33a74c44f52d5a83a77a12b4ae356d4526c0144cc13e7df062288a3c7e4fb025",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título CUARTO · DISPOSICIONES PRELIMINARES. / Capítulo II · DE LA DOCUMENTACIÓN Y MATERIAL ELECTORAL",
+  "derogado": false
+ },
+ "393": {
+  "archivo": "articulos/art-0393.md",
+  "sha256": "158536f2af70034e7c4cbdf654da4e56adbee565a14d806177e9fd5b39c4c6ee",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título CUARTO · DISPOSICIONES PRELIMINARES. / Capítulo II · DE LA DOCUMENTACIÓN Y MATERIAL ELECTORAL",
+  "derogado": false
+ },
+ "394": {
+  "archivo": "articulos/art-0394.md",
+  "sha256": "731613c5f22a791d84eed26ddbb1f05cd37aae45a12ec184d2a8327123a66d79",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título CUARTO · DISPOSICIONES PRELIMINARES. / Capítulo II · DE LA DOCUMENTACIÓN Y MATERIAL ELECTORAL",
+  "derogado": false
+ },
+ "395": {
+  "archivo": "articulos/art-0395.md",
+  "sha256": "9d710d66af18359daab2f68a20b0c45b197541917a0ea964d9f39e0114b3a78b",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título QUINTO · CAMPAÑAS ELECTORALES / Capítulo I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "396": {
+  "archivo": "articulos/art-0396.md",
+  "sha256": "d996ba013dca85d7ec2f9f0b4c0cc5885804e0e16fd93f7c7b825c0230cddd94",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título QUINTO · CAMPAÑAS ELECTORALES / Capítulo I · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "397": {
+  "archivo": "articulos/art-0397.md",
+  "sha256": "a82904e64e58eb8bb94d4b7e9849de5b507bbf82e50851d677b657ef2d93617a",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título QUINTO · CAMPAÑAS ELECTORALES / Capítulo II · DISPOSICIONES PARA EL CONTROL DE LA PROPAGANDA ELECTORAL",
+  "derogado": false
+ },
+ "398": {
+  "archivo": "articulos/art-0398.md",
+  "sha256": "5af736e159bba4954cbf6ffbe1f911650195a9efc456eb03d0fe10c52a3efd00",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título QUINTO · CAMPAÑAS ELECTORALES / Capítulo II · DISPOSICIONES PARA EL CONTROL DE LA PROPAGANDA ELECTORAL",
+  "derogado": false
+ },
+ "399": {
+  "archivo": "articulos/art-0399.md",
+  "sha256": "9644a998ee3a56bbfdac0f364fe6df743a0c01f9980fb60fd0206709ff23bc1f",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título QUINTO · CAMPAÑAS ELECTORALES / Capítulo II · DISPOSICIONES PARA EL CONTROL DE LA PROPAGANDA ELECTORAL",
+  "derogado": false
+ },
+ "400": {
+  "archivo": "articulos/art-0400.md",
+  "sha256": "3878954c84bfe70c6480e4700862f10601048eb68edf0116482a62a3e2a4edc2",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título QUINTO · CAMPAÑAS ELECTORALES / Capítulo II · DISPOSICIONES PARA EL CONTROL DE LA PROPAGANDA ELECTORAL",
+  "derogado": false
+ },
+ "401": {
+  "archivo": "articulos/art-0401.md",
+  "sha256": "df7da59b7410d3084d6c4265d495ceabae00f247b96534ba26bef0d07ea5711d",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título QUINTO · CAMPAÑAS ELECTORALES / Capítulo II · DISPOSICIONES PARA EL CONTROL DE LA PROPAGANDA ELECTORAL",
+  "derogado": false
+ },
+ "402": {
+  "archivo": "articulos/art-0402.md",
+  "sha256": "e2d5c0d08ccafd9666164a4535bf84df9cc9cfec0e2705d580e91d12abb5a99c",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título QUINTO · CAMPAÑAS ELECTORALES / Capítulo II · DISPOSICIONES PARA EL CONTROL DE LA PROPAGANDA ELECTORAL",
+  "derogado": false
+ },
+ "403": {
+  "archivo": "articulos/art-0403.md",
+  "sha256": "0e318c3448d5d2c7bf30eb7845c8d504a721a752e3f4fae9cce71adc74c08c3a",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título QUINTO · CAMPAÑAS ELECTORALES / Capítulo II · DISPOSICIONES PARA EL CONTROL DE LA PROPAGANDA ELECTORAL",
+  "derogado": false
+ },
+ "404": {
+  "archivo": "articulos/art-0404.md",
+  "sha256": "e383193577880b3bef21ac11c759cc45eb50bafe5c0c9ec1eaf38912219d7cf8",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título QUINTO · CAMPAÑAS ELECTORALES / Capítulo II · DISPOSICIONES PARA EL CONTROL DE LA PROPAGANDA ELECTORAL",
+  "derogado": false
+ },
+ "405": {
+  "archivo": "articulos/art-0405.md",
+  "sha256": "a76eb648836904d090fbd849f1504470f7fa25a42faba8e847553c8df1926960",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título QUINTO · CAMPAÑAS ELECTORALES / Capítulo II · DISPOSICIONES PARA EL CONTROL DE LA PROPAGANDA ELECTORAL",
+  "derogado": false
+ },
+ "406": {
+  "archivo": "articulos/art-0406.md",
+  "sha256": "a52c13b8cef4c21bbe0ad5711f5078579df7c4b0e8b1fd8d34a1fa440f04331a",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título QUINTO · CAMPAÑAS ELECTORALES / Capítulo II · DISPOSICIONES PARA EL CONTROL DE LA PROPAGANDA ELECTORAL",
+  "derogado": false
+ },
+ "407": {
+  "archivo": "articulos/art-0407.md",
+  "sha256": "da8c5ac3cba9e1ff1da2fd3570eb439ea7b6dcccb1c5a4f4cb9981bb49ca7415",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título QUINTO · CAMPAÑAS ELECTORALES / Capítulo II · DISPOSICIONES PARA EL CONTROL DE LA PROPAGANDA ELECTORAL",
+  "derogado": false
+ },
+ "408": {
+  "archivo": "articulos/art-0408.md",
+  "sha256": "55534d18378881492da92873b6835f3d7b0dfffa1718c89829f6031fc7062a34",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título QUINTO · CAMPAÑAS ELECTORALES / Capítulo II · DISPOSICIONES PARA EL CONTROL DE LA PROPAGANDA ELECTORAL",
+  "derogado": false
+ },
+ "409": {
+  "archivo": "articulos/art-0409.md",
+  "sha256": "1654b32b222b71b29c2a62f804c490f08a8fca6ccf9ba40b8fa0a57f3d5598ba",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título QUINTO · CAMPAÑAS ELECTORALES / Capítulo III · REGLAS GENERALES PARA LA CELEBRACION DE DEBATES Y ENCUESTAS DE OPINIÓN",
+  "derogado": false
+ },
+ "410": {
+  "archivo": "articulos/art-0410.md",
+  "sha256": "e2930713f59e667fabe6450eeff475306a0c1ceab43cb7611b86d9a6eaf63301",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título QUINTO · CAMPAÑAS ELECTORALES / Capítulo III · REGLAS GENERALES PARA LA CELEBRACION DE DEBATES Y ENCUESTAS DE OPINIÓN",
+  "derogado": false
+ },
+ "411": {
+  "archivo": "articulos/art-0411.md",
+  "sha256": "6c42bd32da573b078e9eb7821915e2f2819fd61570372554adcaff86e5a85c26",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título SEXTO · DE LAS CASILLAS ELECTORALES / Capítulo I · DE LA UBICACIÓN DE CASILLAS",
+  "derogado": false
+ },
+ "412": {
+  "archivo": "articulos/art-0412.md",
+  "sha256": "f6f326f19250b671e22a143a7f72ff5ca22957d54c373f5e0fc8ecdf14011857",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título SEXTO · DE LAS CASILLAS ELECTORALES / Capítulo I · DE LA UBICACIÓN DE CASILLAS",
+  "derogado": false
+ },
+ "413": {
+  "archivo": "articulos/art-0413.md",
+  "sha256": "3ff95b589659b2eb4ff101e32b6f973b2f900d729afeeb53be325de1e043406b",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título SEXTO · DE LAS CASILLAS ELECTORALES / Capítulo I · DE LA UBICACIÓN DE CASILLAS",
+  "derogado": false
+ },
+ "414": {
+  "archivo": "articulos/art-0414.md",
+  "sha256": "f2a099082779db66f9a72fe7901d7571da1fa750a9a66c25c1f26db068998919",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título SEXTO · DE LAS CASILLAS ELECTORALES / Capítulo II · DE LA DESIGNACIÓN DE LOS FUNCIONARIOS DE LAS",
+  "derogado": false
+ },
+ "415": {
+  "archivo": "articulos/art-0415.md",
+  "sha256": "a88d5b711ff1deaae85e16a7a939cd266f954082deef31e31e1efcf1082dd0fa",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título SEXTO · DE LAS CASILLAS ELECTORALES / Capítulo II · DE LA DESIGNACIÓN DE LOS FUNCIONARIOS DE LAS",
+  "derogado": false
+ },
+ "416": {
+  "archivo": "articulos/art-0416.md",
+  "sha256": "aab293fc5d01d734fc00109f8e1bdc086e31509f6fd3358286581256118a90d9",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título SEXTO · DE LAS CASILLAS ELECTORALES / Capítulo III · DE LOS REPRESENTANTES DE LOS PARTIDOS POLÍTICOS Y CANDIDATOS SIN PARTIDO",
+  "derogado": false
+ },
+ "417": {
+  "archivo": "articulos/art-0417.md",
+  "sha256": "e0f6ac9cec0782229a0e80fc035f3c2243cf94ce3f8ac894212fa68c4ea826ae",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título SEXTO · DE LAS CASILLAS ELECTORALES / Capítulo III · DE LOS REPRESENTANTES DE LOS PARTIDOS POLÍTICOS Y CANDIDATOS SIN PARTIDO",
+  "derogado": false
+ },
+ "418": {
+  "archivo": "articulos/art-0418.md",
+  "sha256": "069f1811a3572e936b6bf853e87900ee6da60bfd6427d10188b98f1761fcfa6d",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título SEXTO · DE LAS CASILLAS ELECTORALES / Capítulo III · DE LOS REPRESENTANTES DE LOS PARTIDOS POLÍTICOS Y CANDIDATOS SIN PARTIDO",
+  "derogado": false
+ },
+ "419": {
+  "archivo": "articulos/art-0419.md",
+  "sha256": "efd0c39a54cce2f3e600052503c2135543a4086ee6c85734f833e34cc014b9b6",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título SEXTO · DE LAS CASILLAS ELECTORALES / Capítulo IV · DE LOS OBSERVADORES ELECTORALES",
+  "derogado": false
+ },
+ "420": {
+  "archivo": "articulos/art-0420.md",
+  "sha256": "60343d4b703110a8196408c6c76f6310ee6a3bc6d7e92f6bea1145b3f4bede1d",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título SEXTO · DE LAS CASILLAS ELECTORALES / Capítulo IV · DE LOS OBSERVADORES ELECTORALES",
+  "derogado": false
+ },
+ "421": {
+  "archivo": "articulos/art-0421.md",
+  "sha256": "5011bf42c72aa57d0246de699845f8a77459c3d671c058522dcdbc5f06bbd558",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título SEXTO · DE LAS CASILLAS ELECTORALES / Capítulo IV · DE LOS OBSERVADORES ELECTORALES",
+  "derogado": false
+ },
+ "422": {
+  "archivo": "articulos/art-0422.md",
+  "sha256": "3ff705952f0f244c5a2a05122d7be5728a29c15deeb63b4d3b8aeba89bb2a4d9",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título SEXTO · DE LAS CASILLAS ELECTORALES / Capítulo IV · DE LOS OBSERVADORES ELECTORALES",
+  "derogado": false
+ },
+ "423": {
+  "archivo": "articulos/art-0423.md",
+  "sha256": "8681b99dbd76194433817353151ed8f774d8213de429a80d9f00f6bcaf4d68a1",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "424": {
+  "archivo": "articulos/art-0424.md",
+  "sha256": "a9d90a7b5085019dad8133b80eede64ff3c105fd9dc4584c845de4de89e8572c",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "425": {
+  "archivo": "articulos/art-0425.md",
+  "sha256": "7bd508eee8d84ac0077745201238ce4d2589ee0102ea39127adefc098dbfe06c",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "426": {
+  "archivo": "articulos/art-0426.md",
+  "sha256": "ab0b0385fe96efd79b2462492da2a81cb68babe211f9302a2d05b6bd30d0b983",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "427": {
+  "archivo": "articulos/art-0427.md",
+  "sha256": "9f564e17993346b5ec6f9ded30c261064fc777ae926c38db122294d6395c7369",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "428": {
+  "archivo": "articulos/art-0428.md",
+  "sha256": "bb9b3d359d540395313637fd222dcbc6ed1c4ccdd066d87839ba2d43d7181260",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "429": {
+  "archivo": "articulos/art-0429.md",
+  "sha256": "9dc7a02a953726348653c8bfc7db3bb6ab5a56df2687463d70f8b858c390bb6a",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo I · GENERALIDADES",
+  "derogado": false
+ },
+ "430": {
+  "archivo": "articulos/art-0430.md",
+  "sha256": "4d0f744818d61abd5b87704aceef01c3030bfdac4fb11a21b1ae8c55d96457cc",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo II · DE LA INSTALACIÓN Y APERTURA DE LAS CASILLAS",
+  "derogado": false
+ },
+ "431": {
+  "archivo": "articulos/art-0431.md",
+  "sha256": "eb71d66b7cdc08eb6c8b9389d1741fd60ee3ec5d953e4bc4b5b0c34cf15cf1ef",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo II · DE LA INSTALACIÓN Y APERTURA DE LAS CASILLAS",
+  "derogado": false
+ },
+ "432": {
+  "archivo": "articulos/art-0432.md",
+  "sha256": "b55aaffd023a1ee90cbe0ba0e8365ef112753f8c1041bd67546dc4798bf7484e",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo II · DE LA INSTALACIÓN Y APERTURA DE LAS CASILLAS",
+  "derogado": false
+ },
+ "433": {
+  "archivo": "articulos/art-0433.md",
+  "sha256": "5d949686f5dac5ea0dc5b9dd2d90bbf393f6880313089a5f3a8f40025e2a930d",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo III · DE LA VOTACIÓN",
+  "derogado": false
+ },
+ "434": {
+  "archivo": "articulos/art-0434.md",
+  "sha256": "eb7d930eea4f4b209b938e99f14ab2b208f602111bd9853e595806664c73870c",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo III · DE LA VOTACIÓN",
+  "derogado": false
+ },
+ "435": {
+  "archivo": "articulos/art-0435.md",
+  "sha256": "4f575ea9f5c489c1bd43c5b0e353dc5f37369c1d2ee76451c0c7f300fc734dae",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo III · DE LA VOTACIÓN",
+  "derogado": false
+ },
+ "436": {
+  "archivo": "articulos/art-0436.md",
+  "sha256": "cee7e7a909bdb1b4e03b7a86b5c2598e683c24af648482810aca36c82e13b83f",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo III · DE LA VOTACIÓN",
+  "derogado": false
+ },
+ "437": {
+  "archivo": "articulos/art-0437.md",
+  "sha256": "12440757ef1c19b097aa7b7b2961b4ff9aa3ca95418de1dacc71560314d90c9c",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo III · DE LA VOTACIÓN",
+  "derogado": false
+ },
+ "438": {
+  "archivo": "articulos/art-0438.md",
+  "sha256": "c5e20dba262c13f95a02e498d84620c50e71cd47361cd8a922bde58d2a242925",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo III · DE LA VOTACIÓN",
+  "derogado": false
+ },
+ "439": {
+  "archivo": "articulos/art-0439.md",
+  "sha256": "4947739c2aec497a28e3a6ef83d301ae3d1029595a194a1b012f84ce96cf7627",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo III · DE LA VOTACIÓN",
+  "derogado": false
+ },
+ "440": {
+  "archivo": "articulos/art-0440.md",
+  "sha256": "22abed0f2eb1e6f4667679c673ccb997a7f6ec1d7da01ceb01df9286856dbe70",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo III · DE LA VOTACIÓN",
+  "derogado": false
+ },
+ "441": {
+  "archivo": "articulos/art-0441.md",
+  "sha256": "3c89ff262200d03e7fac67279fe8e86d8bc7ec4a100567ae2b43853b35e9b0f4",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo III · DE LA VOTACIÓN",
+  "derogado": false
+ },
+ "442": {
+  "archivo": "articulos/art-0442.md",
+  "sha256": "5178a9d94d461ea999997a7c2fc2603f4a7835b78ecec1e67ba27b8b36196bbe",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo IV · DEL ESCRUTINIO Y CÓMPUTO EN LAS CASILLAS",
+  "derogado": false
+ },
+ "443": {
+  "archivo": "articulos/art-0443.md",
+  "sha256": "7d0d8af0496cf22075a147ede807a9e854008362e8bb12de278c3a7b0ad29391",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo IV · DEL ESCRUTINIO Y CÓMPUTO EN LAS CASILLAS",
+  "derogado": false
+ },
+ "444": {
+  "archivo": "articulos/art-0444.md",
+  "sha256": "61a60e9c11c97cc5100d8f7262d6765628f4053734a831461c012a639f906856",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo IV · DEL ESCRUTINIO Y CÓMPUTO EN LAS CASILLAS",
+  "derogado": false
+ },
+ "445": {
+  "archivo": "articulos/art-0445.md",
+  "sha256": "c2a6d66cf6aa3a2a58f8e6e400b2c6d0cc9e7b8049849635843bf3f15b437122",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo IV · DEL ESCRUTINIO Y CÓMPUTO EN LAS CASILLAS",
+  "derogado": false
+ },
+ "446": {
+  "archivo": "articulos/art-0446.md",
+  "sha256": "ab646059d37dec5b3e7cc54ee7f28c6d5c027a7e0ed88ed650fa799bc993dd6f",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo IV · DEL ESCRUTINIO Y CÓMPUTO EN LAS CASILLAS",
+  "derogado": false
+ },
+ "447": {
+  "archivo": "articulos/art-0447.md",
+  "sha256": "773eeb1570408d3295b3c411cd12ac74c2a0b330715c1d839bbcb23782a63a1b",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo IV · DEL ESCRUTINIO Y CÓMPUTO EN LAS CASILLAS",
+  "derogado": false
+ },
+ "448": {
+  "archivo": "articulos/art-0448.md",
+  "sha256": "cc36045665ec6b8ff2693721586b05ca9e16f643fd6ead366b3ef2751828ba84",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo V · DE LA CLAUSURA DELA CASILLA YLA REMISIÓN AL CONSEJO DISTRITAL",
+  "derogado": false
+ },
+ "449": {
+  "archivo": "articulos/art-0449.md",
+  "sha256": "4414aebea29169160377606ee1b1f54f7ef0e7ccbac8f98fa172c5966ce090d4",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo V · DE LA CLAUSURA DELA CASILLA YLA REMISIÓN AL CONSEJO DISTRITAL",
+  "derogado": false
+ },
+ "450": {
+  "archivo": "articulos/art-0450.md",
+  "sha256": "ac022d565e86996b6658a134724a6191c473f6941573ce7600935d0333416224",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Titulo SÉPTIMO · DE LA JORNADA ELECTORAL / Capítulo VI · DE LA SEGURIDAD EN EL DESARROLLO DE LA JORNADA ELECTORAL",
+  "derogado": false
+ },
+ "451": {
+  "archivo": "articulos/art-0451.md",
+  "sha256": "668c81b4288ac9686efbd19b0d0ed901338d0cb16808139301dd64fbcd6beca1",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título OCTAVO · OBTENCION DE RESULTADOS ELECTORALES / Capítulo I · REALIZACIÓN DE LOS CÓMPUTOS DISTRITALES",
+  "derogado": false
+ },
+ "452": {
+  "archivo": "articulos/art-0452.md",
+  "sha256": "d6beca4d836fce4a9af2b7d8dace678f818f72fc6b311bdf381d7bacdd465982",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título OCTAVO · OBTENCION DE RESULTADOS ELECTORALES / Capítulo I · REALIZACIÓN DE LOS CÓMPUTOS DISTRITALES",
+  "derogado": false
+ },
+ "453": {
+  "archivo": "articulos/art-0453.md",
+  "sha256": "850c64e866224a3146c68e82d8ca8b147003bcf7db5287d2af3a13e138e8694e",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título OCTAVO · OBTENCION DE RESULTADOS ELECTORALES / Capítulo I · REALIZACIÓN DE LOS CÓMPUTOS DISTRITALES",
+  "derogado": false
+ },
+ "454": {
+  "archivo": "articulos/art-0454.md",
+  "sha256": "cab6f532cea482ecb33067227dd77ae3c2b852d277b1c8a1df534dd7b58e0e82",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título OCTAVO · OBTENCION DE RESULTADOS ELECTORALES / Capítulo I · REALIZACIÓN DE LOS CÓMPUTOS DISTRITALES",
+  "derogado": false
+ },
+ "455": {
+  "archivo": "articulos/art-0455.md",
+  "sha256": "b05467b767d08847dd5c44f0c0831dd40778ac4c71e591484e9097ed6accadd5",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título OCTAVO · OBTENCION DE RESULTADOS ELECTORALES / Capítulo I · REALIZACIÓN DE LOS CÓMPUTOS DISTRITALES",
+  "derogado": false
+ },
+ "456": {
+  "archivo": "articulos/art-0456.md",
+  "sha256": "59c530ac9cc59834cdcc8af82b445a07ae1ec2c0259acb46556641f1026d86bd",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título OCTAVO · OBTENCION DE RESULTADOS ELECTORALES / Capítulo I · REALIZACIÓN DE LOS CÓMPUTOS DISTRITALES",
+  "derogado": false
+ },
+ "457": {
+  "archivo": "articulos/art-0457.md",
+  "sha256": "e9772abab70b17e0a5fa905cbdee8f4c7046c96e24238147540a918297cbbcf1",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título OCTAVO · OBTENCION DE RESULTADOS ELECTORALES / Capítulo I · REALIZACIÓN DE LOS CÓMPUTOS DISTRITALES",
+  "derogado": false
+ },
+ "458": {
+  "archivo": "articulos/art-0458.md",
+  "sha256": "a1c48018039b5a30bdc5cd41f8017cd9eb58310d96c3315dc79b02193abe425c",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título OCTAVO · OBTENCION DE RESULTADOS ELECTORALES / Capítulo I · REALIZACIÓN DE LOS CÓMPUTOS DISTRITALES",
+  "derogado": false
+ },
+ "459": {
+  "archivo": "articulos/art-0459.md",
+  "sha256": "1175b1a620e3d5b482c4d4391758237a9d1a1a5269fed7eb9059f7dbdca1afb8",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título OCTAVO · OBTENCION DE RESULTADOS ELECTORALES / Capítulo II · DE LOS CÓMPUTOS FINALES",
+  "derogado": false
+ },
+ "460": {
+  "archivo": "articulos/art-0460.md",
+  "sha256": "79192825a3b2369ca25a83686140d98608fd0d494eb80d8b9113757a3815d3c1",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título OCTAVO · OBTENCION DE RESULTADOS ELECTORALES / Capítulo II · DE LOS CÓMPUTOS FINALES",
+  "derogado": false
+ },
+ "461": {
+  "archivo": "articulos/art-0461.md",
+  "sha256": "32c7bd65d791594c8d88f8969b0ec15008f9b3245385e9bc5008a75d39a3d18d",
+  "ubicacion": "Libro CUARTO · DE LOS PROCEDIMIENTOS ELECTORALES / Título OCTAVO · OBTENCION DE RESULTADOS ELECTORALES / Capítulo II · DE LOS CÓMPUTOS FINALES",
+  "derogado": false
+ },
+ "462": {
+  "archivo": "articulos/art-0462.md",
+  "sha256": "8329169f7bfd735ae7df326827c08a0493da2f3343994f189d962539629963ca",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título PRIMERO · DE LA RENOVACIÓN DEL PODER JUDICIAL / Capítulo ÚNICO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "463": {
+  "archivo": "articulos/art-0463.md",
+  "sha256": "1ddbd7d4c71e469ddbd4ce93a526e37e496d7d6fd92a35abe5b69be0c48cf8e2",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título PRIMERO · DE LA RENOVACIÓN DEL PODER JUDICIAL / Capítulo ÚNICO · DISPOSICIONES GENERALES",
+  "derogado": false
+ },
+ "464": {
+  "archivo": "articulos/art-0464.md",
+  "sha256": "f907919b80e4bb352cdc27c60d64bdd6db5a3698072b7803dafb42509d88f319",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo I · REGLAS GENERALES",
+  "derogado": false
+ },
+ "465": {
+  "archivo": "articulos/art-0465.md",
+  "sha256": "a14f99d3f938ae3da92adb537bd12d430a18223e3fd1398e35537f37e7feaa6b",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo I · REGLAS GENERALES",
+  "derogado": false
+ },
+ "466": {
+  "archivo": "articulos/art-0466.md",
+  "sha256": "6d2129f88e77656193af7450ff1d055b10fb1f5eaa9230c078e604c4e650711e",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo II · DE LA CONVOCATORIA Y POSTULACIÓN DE CANDIDATURAS",
+  "derogado": false
+ },
+ "467": {
+  "archivo": "articulos/art-0467.md",
+  "sha256": "b5e46ca12008f05aa17a880e1260ac0c10423fd30fbf6d0b90c4563e2390bcdc",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo II · DE LA CONVOCATORIA Y POSTULACIÓN DE CANDIDATURAS",
+  "derogado": false
+ },
+ "468": {
+  "archivo": "articulos/art-0468.md",
+  "sha256": "cb3f109d5ed42ebd9fbe425ee8a0a741aa01766f7ae6ba86afa9e8ac94274df2",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo II · DE LA CONVOCATORIA Y POSTULACIÓN DE CANDIDATURAS",
+  "derogado": false
+ },
+ "469": {
+  "archivo": "articulos/art-0469.md",
+  "sha256": "7fe4e2d30e899e973e8c859f84211d9ebf7f26ad111aabaf9ecacea9ed88d106",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo II · DE LA CONVOCATORIA Y POSTULACIÓN DE CANDIDATURAS",
+  "derogado": false
+ },
+ "470": {
+  "archivo": "articulos/art-0470.md",
+  "sha256": "8497215a0a9b1c2a4593aed19cd1bddc95587c2e1c47573d1082e2c5977c0b2f",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo II · DE LA CONVOCATORIA Y POSTULACIÓN DE CANDIDATURAS",
+  "derogado": false
+ },
+ "471": {
+  "archivo": "articulos/art-0471.md",
+  "sha256": "b99794d24576213d4ae6a0be7eaf0f7c5321180dd59b9b92456abe03efecd1a8",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo II · DE LA CONVOCATORIA Y POSTULACIÓN DE CANDIDATURAS",
+  "derogado": false
+ },
+ "472": {
+  "archivo": "articulos/art-0472.md",
+  "sha256": "16e57a02e56372caa0169a4b5a2b26a42be80c0eda74c6766450116f34923608",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LA ORGANIZACIÓN DE LA ELECCIÓN",
+  "derogado": false
+ },
+ "473": {
+  "archivo": "articulos/art-0473.md",
+  "sha256": "c0da21a6a31a6764907738edebf44c3666c2b5435b9f543c3f0f87c9ba0eb79e",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LA ORGANIZACIÓN DE LA ELECCIÓN",
+  "derogado": false
+ },
+ "474": {
+  "archivo": "articulos/art-0474.md",
+  "sha256": "7d6cd61ac0edb5fb47768978d90d9eec585428fa39f0397ffcb86c0b05d9f7df",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo III · DE LA ORGANIZACIÓN DE LA ELECCIÓN",
+  "derogado": false
+ },
+ "475": {
+  "archivo": "articulos/art-0475.md",
+  "sha256": "406af168a41708da96727081a15e4738a94f8cce8dda0964a0cad012f4ccffc2",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LA PROPAGANDA",
+  "derogado": false
+ },
+ "476": {
+  "archivo": "articulos/art-0476.md",
+  "sha256": "704874f55ebaeb2769f171d20634f4928c9400bc5beaf4d1e3867cbf6486e8d2",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LA PROPAGANDA",
+  "derogado": false
+ },
+ "477": {
+  "archivo": "articulos/art-0477.md",
+  "sha256": "a27c50f45d9ef76b008c3a31133835fc3cf46ff96ebd4c5224c6437b126cbb82",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LA PROPAGANDA",
+  "derogado": false
+ },
+ "478": {
+  "archivo": "articulos/art-0478.md",
+  "sha256": "0ec4785f909265eee27176b6a80aafadbc664400dce5df4bc66c5d272f1aafe7",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LA PROPAGANDA",
+  "derogado": false
+ },
+ "479": {
+  "archivo": "articulos/art-0479.md",
+  "sha256": "f18a78d29648a0cf90c4dd07ce84fa726d17f1fdcee50fac121755e75a31a637",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LA PROPAGANDA",
+  "derogado": false
+ },
+ "480": {
+  "archivo": "articulos/art-0480.md",
+  "sha256": "be17bf875e5dfb0b51dbca6a59b061fc9c325e907dcf18fdac1f790ed54a9395",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LA PROPAGANDA",
+  "derogado": false
+ },
+ "481": {
+  "archivo": "articulos/art-0481.md",
+  "sha256": "d344febb5ded22e8981fd9e387e6e018081e36a5158177c61ad664bb5a136296",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo IV · DE LA PROPAGANDA",
+  "derogado": false
+ },
+ "482": {
+  "archivo": "articulos/art-0482.md",
+  "sha256": "eeef711f6b323b1dd876b7755914f78ba11b3b222764c2866cafd73395ac1d36",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo V · DE LAS ENCUESTAS Y SONDEOS DE OPINIÓN",
+  "derogado": false
+ },
+ "483": {
+  "archivo": "articulos/art-0483.md",
+  "sha256": "e9699a3afbed3777a49f18902e7722a43417813a0ea044442557c399b50e5ebb",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo V · DE LAS ENCUESTAS Y SONDEOS DE OPINIÓN",
+  "derogado": false
+ },
+ "484": {
+  "archivo": "articulos/art-0484.md",
+  "sha256": "460ee8593ad636954aeda31a205d2a48fc984974e0d9cefd5a5c7611f4e1e0c3",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS FOROS DE DEBATES",
+  "derogado": false
+ },
+ "485": {
+  "archivo": "articulos/art-0485.md",
+  "sha256": "22eb5b384500eee16fb87bbe72a728a479dc6388ddc90d64b4622b916de51e80",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS FOROS DE DEBATES",
+  "derogado": false
+ },
+ "486": {
+  "archivo": "articulos/art-0486.md",
+  "sha256": "3ffcfe95d0a11ab90e3c2aa807483d870f4b558da6d2565617c6c029070e0177",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo VI · DE LOS FOROS DE DEBATES",
+  "derogado": false
+ },
+ "487": {
+  "archivo": "articulos/art-0487.md",
+  "sha256": "7023582d91f8394880920ec27d8aa1a04b92ff8b790cdcd78981647a1afc3d3e",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo VII · DE LAS CAMPAÑAS ELECTORALES",
+  "derogado": false
+ },
+ "488": {
+  "archivo": "articulos/art-0488.md",
+  "sha256": "0567b16bbfe705987f58830a4d3cedcd225ebd703a77b4ceb84aa9a81b5a016e",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo VII · DE LAS CAMPAÑAS ELECTORALES",
+  "derogado": false
+ },
+ "489": {
+  "archivo": "articulos/art-0489.md",
+  "sha256": "f20d8f4bb5f0265c45f8a8bdf822944083afadd9968631ec1beaa5ebc0efce2f",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo VII · DE LAS CAMPAÑAS ELECTORALES",
+  "derogado": false
+ },
+ "490": {
+  "archivo": "articulos/art-0490.md",
+  "sha256": "53e382d7059386f2dbd6c1f177d9167c30a1ebfa40ff3d87df498cdeae48a8f9",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo VII · DE LAS CAMPAÑAS ELECTORALES",
+  "derogado": false
+ },
+ "491": {
+  "archivo": "articulos/art-0491.md",
+  "sha256": "9e584e635165e10ee9a1a3034d1332c5f90f072fe9fb486f6d28a11c681272fe",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo VII · DE LAS CAMPAÑAS ELECTORALES",
+  "derogado": false
+ },
+ "492": {
+  "archivo": "articulos/art-0492.md",
+  "sha256": "970151d00ce6bb3999fba4f14d566011306de125c3b865a27025b398b57ce2c1",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo VIII · DE LA OBSERVACIÓN ELECTORAL",
+  "derogado": false
+ },
+ "493": {
+  "archivo": "articulos/art-0493.md",
+  "sha256": "7ccfbb7bccc20c685314fbc1d29ac0edb6aab561c4e0b5fd6e74be8eeb92323a",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo VIII · DE LA OBSERVACIÓN ELECTORAL",
+  "derogado": false
+ },
+ "494": {
+  "archivo": "articulos/art-0494.md",
+  "sha256": "3fedaf9657c2f22771222e5afdd301a983c5a8102b9867be8afd644f187e1ff9",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS ACTIVIDADES DEL INSTITUTO ELECTORAL PARA LA PROMOCIÓN",
+  "derogado": false
+ },
+ "495": {
+  "archivo": "articulos/art-0495.md",
+  "sha256": "7c39a3e92ef22afe7f363ad83118394ede3d307a7d78d4469bafaa90ab7aba8b",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo IX · DE LAS ACTIVIDADES DEL INSTITUTO ELECTORAL PARA LA PROMOCIÓN",
+  "derogado": false
+ },
+ "496": {
+  "archivo": "articulos/art-0496.md",
+  "sha256": "d9e6f8165d99bd5cd50f1b8c009ef6c61ed132359fbeb11c7def8253c7efdff6",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo X · DE LA ORGANIZACIÓN ELECTORAL",
+  "derogado": false
+ },
+ "497": {
+  "archivo": "articulos/art-0497.md",
+  "sha256": "c1e5012d685fad73f8abd11f3cf8e707218ec3eb5c6e40abcb14d771528a9c99",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo X · DE LA ORGANIZACIÓN ELECTORAL",
+  "derogado": false
+ },
+ "498": {
+  "archivo": "articulos/art-0498.md",
+  "sha256": "8d57d92ff5bfd8b7d0bd0baf80943194cfe2f6169f6a0d97b743aa21c58cca4b",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo X · DE LA ORGANIZACIÓN ELECTORAL",
+  "derogado": false
+ },
+ "499": {
+  "archivo": "articulos/art-0499.md",
+  "sha256": "f884ccdbe2ff811829d26f06d9ad04649abb34fe2be39a249a274d0e4f40cdc1",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XI · DE LA ELECCIÓN POR UNA CIRCUNSCRIPCIÓN",
+  "derogado": false
+ },
+ "500": {
+  "archivo": "articulos/art-0500.md",
+  "sha256": "39f4d784707515eef1de4c2ed41b7bd8d81d7f504bf317892e7f66877ec52cd2",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XII · DE LAS MESAS DIRECTIVAS DE CASILLA",
+  "derogado": false
+ },
+ "501": {
+  "archivo": "articulos/art-0501.md",
+  "sha256": "f549f676857e0501e3502077c867d8f2b7f982dd2d216928abe8a2fa5cf1a5b6",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XII · DE LAS MESAS DIRECTIVAS DE CASILLA",
+  "derogado": false
+ },
+ "502": {
+  "archivo": "articulos/art-0502.md",
+  "sha256": "53cec272c7dc4a7bec39117903a9dfadccdead8c6ba0f6564d20af3f8f58a2f8",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XII · DE LAS MESAS DIRECTIVAS DE CASILLA",
+  "derogado": false
+ },
+ "503": {
+  "archivo": "articulos/art-0503.md",
+  "sha256": "df2802b81264415f5039453397bc5c25336fd0a642b3e5f09c46d7c1d328e6ad",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XIII · DE LAS BOLETAS Y MATERIALES ELECTORALES",
+  "derogado": false
+ },
+ "504": {
+  "archivo": "articulos/art-0504.md",
+  "sha256": "e54631c0217e0238da3705726b8bb6fe6e21fbca188e06672a05cb6e86fac927",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XIV · DE LAS ACTIVIDADES EN MATERIA REGISTRAL Y DEL LISTADO NOMINAL",
+  "derogado": false
+ },
+ "505": {
+  "archivo": "articulos/art-0505.md",
+  "sha256": "e0dac99a800c98666d652b890163a5ca33f6127c75f96113c4feead4ad2d1349",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XV · DE LA JORNADA ELECTORAL",
+  "derogado": false
+ },
+ "506": {
+  "archivo": "articulos/art-0506.md",
+  "sha256": "38fce5de09529432fc93a39cf57d13f8fbe9c9f04c91c9abf052e3cae65a0d72",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XV · DE LA JORNADA ELECTORAL",
+  "derogado": false
+ },
+ "507": {
+  "archivo": "articulos/art-0507.md",
+  "sha256": "4782ecd7ca5b6cd13a5afc75d8d67e2f7866c346fac78465c234e9dd1cdbffbe",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XV · DE LA JORNADA ELECTORAL",
+  "derogado": false
+ },
+ "508": {
+  "archivo": "articulos/art-0508.md",
+  "sha256": "c5b8a7c78d3772a0d759f49533d05ba5c705890ce417f894355eaf4d833bc5fd",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XV · DE LA JORNADA ELECTORAL",
+  "derogado": false
+ },
+ "509": {
+  "archivo": "articulos/art-0509.md",
+  "sha256": "ba22da1bb5710d0926e1e1ec2ded3adf6bd0d5b7903ad4838b216a28505138c9",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XV · DE LA JORNADA ELECTORAL",
+  "derogado": false
+ },
+ "510": {
+  "archivo": "articulos/art-0510.md",
+  "sha256": "3ab6001869e27732ac11532802e2ab059ce64f49f23ac2d8612c733e0b10e577",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XV · DE LA JORNADA ELECTORAL",
+  "derogado": false
+ },
+ "511": {
+  "archivo": "articulos/art-0511.md",
+  "sha256": "db516c0f2a79e25969fc6100962035c61e2ab2ef6994ecffa8fc4cac559791b1",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XVI · DE LOS CÓMPUTOS Y SUMATORIA",
+  "derogado": false
+ },
+ "512": {
+  "archivo": "articulos/art-0512.md",
+  "sha256": "f6a31221b5ba56cf89f113b33f088cd52f1c960975f83bd9bf6f0fea7aeb3085",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XVI · DE LOS CÓMPUTOS Y SUMATORIA",
+  "derogado": false
+ },
+ "513": {
+  "archivo": "articulos/art-0513.md",
+  "sha256": "706fab42b152eb4405e6d9beab9ea8c518d3772276afffeb6b9736a87767e47f",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XVI · DE LOS CÓMPUTOS Y SUMATORIA",
+  "derogado": false
+ },
+ "514": {
+  "archivo": "articulos/art-0514.md",
+  "sha256": "72e89298113156ddbc4109b31fb4d17d87434ca08b7ec5323728babc1569651e",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XVI · DE LOS CÓMPUTOS Y SUMATORIA",
+  "derogado": false
+ },
+ "515": {
+  "archivo": "articulos/art-0515.md",
+  "sha256": "61178e868fb6178136d3142c85eba02f05d818568e5dc97cad256585ef193538",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XVII · DE LA ENTREGA DE CONSTANCIAS DE MAYORÍA Y DECLARACIÓN DE VALIDEZ DE LA ELECCIÓN",
+  "derogado": false
+ },
+ "516": {
+  "archivo": "articulos/art-0516.md",
+  "sha256": "4489c5eb8c340e3ba5584e59292f2aa4e9f05ce4ba50361a9c5f628ccdc4b237",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XVII · DE LA ENTREGA DE CONSTANCIAS DE MAYORÍA Y DECLARACIÓN DE VALIDEZ DE LA ELECCIÓN",
+  "derogado": false
+ },
+ "517": {
+  "archivo": "articulos/art-0517.md",
+  "sha256": "43b0d061a3e8fe99da986335751643f2e315087da8275d5cc27a42c679fff405",
+  "ubicacion": "Libro QUINTO · DE LA INTEGRACIÓN DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Título SEGUNDO · DEL PROCESO ELECTORAL DE LAS PERSONAS JUZGADORAS DEL PODER JUDICIAL DE LA CIUDAD DE MÉXICO / Capítulo XVII · DE LA ENTREGA DE CONSTANCIAS DE MAYORÍA Y DECLARACIÓN DE VALIDEZ DE LA ELECCIÓN",
+  "derogado": false
+ }
+}

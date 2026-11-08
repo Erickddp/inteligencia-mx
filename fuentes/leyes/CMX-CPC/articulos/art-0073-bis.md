@@ -1,0 +1,8 @@
+# CMX-CPC · Artículo 73-BIS
+
+Ley: Código de Procedimientos Civiles para el Distrito Federal (CMX-CPC)
+Ubicación: Titulo SEGUNDO · Reglas generales / Capitulo II · De las actuaciones y resoluciones judiciales
+Texto según: Consejería Jurídica y de Servicios Legales de la Ciudad de México, última reforma Gaceta Oficial de la Ciudad de México 2018-07-18 · https://data.consejeria.cdmx.gob.mx/images/leyes/codigos/Codigo_Procedimientos_Civiles_DF_2.2.pdf
+Cotejado con Gaceta Oficial de la Ciudad de México: NO (no se firma ningún parámetro que cite este artículo)
+
+ARTICULO 73 BIS (DEROGADO, G.O. 2 DE FEBRERO DE 2007)

@@ -55,17 +55,23 @@ LEYES = {
     "LMV": ("pdf/LMV.pdf", "Ley del Mercado de Valores"),
 }
 
-SUFIJO = r"(?:Bis|Ter|Qu[áa]ter|Quinquies|Sexies|Septies|Octies|Nonies|Decies|Quintus|Sextus|S[ée]ptimus|Octavus|Nonus|D[ée]cimus)"
+SUFIJO = (r"(?:Bis|Ter|Qu[áa]ter|Quinquies|Sexies|Septies|Octies|Nonies|Decies|Quintus|Sextus|S[ée]ptimus|Octavus|Nonus|D[ée]cimus"
+          r"|Undecies|Duodecies|Terdecies|Quaterdecies|Cuarter|Cuater"
+          r"|Quitus|Quintos)")  # Quitus y Quintos son erratas del texto oficial del Código Civil de la CDMX (art. 135 y 469): el id sigue al texto
 INICIO = re.compile(r"^ {0,6}(?:Art[íi]culo|ART[ÍI]CULO)\s+(?=\d)")  # la Ley Aduanera lo escribe en mayúsculas
-SUF_RE = [re.compile(r"\s*\.?\s*-([A-ZÑ])\b(?!\s+[a-záéíóú])"),                                  # -A
+SUF_RE = [re.compile(r"\s*\(SIC\)\s*-?\s*([A-ZÑ])\b(?=\s*[.\-:])"),                       # «2448 (SIC) E.-»
+          re.compile(r"\s*\.?\s*-([A-ZÑ])\b(?!\s+[a-záéíóú])"),                                  # -A
           re.compile(rf"\s*\.?\s*-?\s*({SUFIJO})\b", re.I),                        # Bis, -Quáter, BIS
-          re.compile(r"\s+([A-ZÑ])\b(?=\s*[.\-])"),                                   # «5 A.»
-          re.compile(r"\s+(\d{1,2})\b(?=\s*[.\-])")]                                # «18 Bis 1.»
+          re.compile(r"\s+([A-ZÑ])\b(?=\s*(?:[.\-:]|\(|$))"),                                   # «5 A.»
+          re.compile(r"\s+(\d{1,2})\b(?=\s*(?:[.\-:]|\(|$))")]                                # «18 Bis 1.»
+
+
+NO_ENCABEZADO = re.compile(r"^\s*ART[ÍI]CULOS?\s+\d+\S*?(?:\s+DE\s+LAS?\s+DISPOSICIONES\s+TRANSITORIAS|,\s+SE\s+RECOMIENDA\s+CONSULTAR)", re.I)
 
 
 def encabezado(linea: str) -> str | None:
     """Devuelve el id normalizado si la línea es el encabezado de un artículo («Artículo 1o.-A.- ...», «82-Quáter. ...»)."""
-    if not INICIO.match(linea):
+    if NO_ENCABEZADO.match(linea) or not INICIO.match(linea):
         return None
     s = linea[INICIO.match(linea).end():]
     m = re.match(r"(\d+)(?:[º°]|o(?=[.\-\s]))?", s)
@@ -78,7 +84,7 @@ def encabezado(linea: str) -> str | None:
             break
         partes.append(m2.group(1))
         resto = resto[m2.end():]
-    if not re.match(r"\s*[.\-]", resto):
+    if not re.match(r"\s*[.\-:]", resto) and not re.fullmatch(r"\s*(\(.*)?", resto):
         return None
     return "-".join(p.lower().replace("á", "a") for p in partes)
 
@@ -174,12 +180,18 @@ def extrae(texto: str):
     return arts, orden, trans
 
 
+MESES = {m: f"{i:02d}" for i, m in enumerate("enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre".split(), 1)}
+
+
 def ultima_reforma(texto: str):
     """(fecha, origen). Primero la línea «Última reforma DOF» del encabezado; si no hay, la fecha más reciente de una reforma, adición o
     derogación citada en el texto (no cuenta una fecha de acuerdo o de cuotas)."""
     m = re.search(r"[ÚU]ltima [Rr]eforma(?: publicada)?\s+DOF\s+(\d{2})-(\d{2})-(\d{4})", texto)
     if m:
         return f"{m.group(3)}-{m.group(2)}-{m.group(1)}", "encabezado del PDF"
+    m = re.search(r"[ÚU]ltima reforma publicada en la\s+G\.?\s*O\.?\s*(?:C\.?\s*D\.?\s*M\.?\s*X\.?)?\s+el\s+(\d{1,2})\s+de\s+([a-záéíóú]+)\s+de\s+(\d{4})", texto[:3000], re.I)
+    if m and m.group(2).lower() in MESES:
+        return f"{m.group(3)}-{MESES[m.group(2).lower()]}-{int(m.group(1)):02d}", "encabezado del PDF (Gaceta Oficial)"
     fechas = []
     for linea in texto.splitlines():
         if re.search(r"reformad|adicionad|derogad|Reforma DOF|Fe de erratas", linea, re.I) and not re.search(r"Acuerdo", linea):
@@ -203,7 +215,7 @@ def procesa(clave: str, pdf: Path, url: str, out_raiz: Path, nombre: str | None 
     # auditoría integrada: cada línea que parece encabezado («Artículo N…») debe haberse leído como artículo
     lineas = limpia_pagina(texto.splitlines())
     fin = next((i for i, l in enumerate(lineas) if TRANSITORIOS.match(l)), len(lineas))
-    sin_leer = [l.strip()[:60] for l in lineas[:fin] if INICIO.match(l) and not encabezado(l)]
+    sin_leer = [l.strip()[:60] for l in lineas[:fin] if INICIO.match(l) and not encabezado(l) and not NO_ENCABEZADO.match(l)]
     if sin_leer:
         sys.exit(f"{clave}: {len(sin_leer)} encabezados no se leyeron como artículo (ej.: {sin_leer[:3]}); revisa el extractor")
     dest = out_raiz / clave
@@ -234,7 +246,7 @@ def procesa(clave: str, pdf: Path, url: str, out_raiz: Path, nombre: str | None 
         f = dest / "articulos" / nombre_archivo(aid)
         f.write_text(md, encoding="utf-8", newline="\n")
         indice[aid] = {"archivo": f"articulos/{f.name}", "sha256": sha(cuerpo.encode()), "ubicacion": a["ubicacion"],
-                       "derogado": bool(re.search(r"\bSe deroga\b", cuerpo[:400]))}
+                       "derogado": bool(re.search(r"\bSe deroga\b", cuerpo[:400])) or bool(re.search(r"^\s*ART[ÍI]CULO\s[^\n(]{0,30}\(\s*DEROGAD", cuerpo[:120], re.I))}
     (dest / "transitorios.md").write_text(f"# {clave} · Transitorios\n\n" + reflow(trans).rstrip() + "\n", encoding="utf-8", newline="\n")
     (dest / "indice.json").write_text(json.dumps(indice, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
     man = {"clave": clave, "nombre": nombre, "url": url, "fuente": f"{emisor} (texto vigente); cotejar contra {art}{diario}",

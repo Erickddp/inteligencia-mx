@@ -25,6 +25,20 @@ Texto de ley, **un artículo por archivo**, para que cada regla de `base/` cite 
 | Reglamento de la Ley del Impuesto sobre la Renta | `RLISR` | 2016-05-06 | 313 |
 | Reglamento de la Ley del Impuesto al Valor Agregado | `RLIVA` | 2014-09-25 | 84 |
 
+## Leyes estatales y municipales
+
+Se registran con la clave `<ENTIDAD>-<SIGLAS>` (clave ISO de la entidad: `CMX` es la Ciudad de México) y su ámbito, entidad y materia en el manifiesto. Estándar: [docs/ESTANDAR_APORTACION.md](../../docs/ESTANDAR_APORTACION.md). Fuente: portal de la Consejería Jurídica y de Servicios Legales de la CDMX (data.consejeria.cdmx.gob.mx); el texto **no está cotejado** con la Gaceta Oficial.
+
+| Ley | Clave | Materia | Última reforma según el PDF | Artículos |
+|---|---|---|---|---|
+| Código Civil para el Distrito Federal | `CMX-CC` | civil | 2026-08-20 | 3,194 |
+| Código de Ética de la Administración Pública y Alcaldías de la Ciudad de México | `CMX-CEAP` | administrativo | sin dato | 24 |
+| Código Fiscal de la Ciudad de México | `CMX-CF` | fiscal | sin dato | 589 |
+| Código de Instituciones y Procedimientos Electorales de la Ciudad de México | `CMX-CIPE` | electoral | sin dato | 524 |
+| Código Penal para el Distrito Federal | `CMX-CP` | penal | 2026-08-21 | 478 |
+| Código de Procedimientos Civiles para el Distrito Federal | `CMX-CPC` | civil | 2018-07-18 | 1,137 |
+| Código de Responsabilidad Parlamentaria del Congreso de la Ciudad de México | `CMX-CRP` | electoral | sin dato | 42 |
+
 ## Cómo está guardado y por qué
 
 - `fuentes/leyes/<CLAVE>/articulos/art-0106.md`, `art-0001-a.md`, `art-0018-h-bis.md`. Un cambio de ley aparece en git como el artículo que cambió.

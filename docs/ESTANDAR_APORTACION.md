@@ -52,7 +52,7 @@ Sale en `fuentes/leyes/QUE-XXXX/`: `manifiesto.json`, `indice.json`, `articulos/
 | `descargado`, `sha256_pdf`, `sha256_texto`, `articulos` | sí | sí | Huellas y conteo; `articulos` = los del índice |
 | `ambito` | (federal por omisión) | `estatal` o `municipal` | |
 | `entidad` | no | clave ISO (`QUE`) | La clave de la ley empieza con ella |
-| `materia` | opcional | obligatoria | `fiscal`, `contable`, `laboral`, `seguridad_social`, `mercantil`, `civil`, `penal`, `administrativo`, `otra` |
+| `materia` | opcional | obligatoria | `fiscal`, `contable`, `laboral`, `seguridad_social`, `mercantil`, `civil`, `penal`, `electoral`, `administrativo`, `otra` |
 | `emisor`, `diario` | no | `emisor` obligatorio | Quién publica el texto y dónde se publican sus reformas |
 | `cotejado_dof` | lo llena una persona | lo llena una persona | Regenerar no lo borra |
 

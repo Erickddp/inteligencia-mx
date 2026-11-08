@@ -1,0 +1,3536 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "2dfd2506d8f5275df7bc40b4bf3a550603542abdd938e949c4209e408a3dc110",
+  "ubicacion": "Capítulo ÚNICO · Disposiciones de Carácter General",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "fd76c0afeb5efaf84d9c5724898acc617ae10b4d8d5c2498b8b7521b11e60d79",
+  "ubicacion": "Capítulo ÚNICO · Disposiciones de Carácter General",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "5f7b02a16f57fcaf7c2de057912b13508827283a0d6df02f855acccf10f2b6b3",
+  "ubicacion": "Capítulo ÚNICO · Disposiciones de Carácter General",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "03bab04a0ccfc0ce5fe40a3bfb8e205e9d709107bc15feb06195ad20c76171c8",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título PRIMERO · DEL PRESUPUESTO DE INGRESOS / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "6371a1a44d4297aad470612fde50af22b3a58b93d8673d00d06bacc98a98d346",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título PRIMERO · DEL PRESUPUESTO DE INGRESOS / Capítulo II · De la Iniciativa de Ley de Ingresos",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "bffc4aa1763f3694b70b4c0009f4321d3dfaa4e7457f42a4ca37d16af839a0fa",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título PRIMERO · DEL PRESUPUESTO DE INGRESOS / Capítulo III · De la Ejecución de la Ley de Ingresos",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "3d2729e0c1bef66d791ccb4c00ed8963df1e24b7d447f97f5f18b5616e535553",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título PRIMERO · DEL PRESUPUESTO DE INGRESOS / Capítulo III · De la Ejecución de la Ley de Ingresos",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "eb7946771bb68d6fec8e39f15577c1e710a4447444d1a72a5aff1c27cfd6119f",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "5580397018693f6975e1c5cbf1438d135b241e284867a639c82a3e9aa4cd9e89",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "33ac97603331665324a0d2ab2468de1663b033be999a0ecdf1c51bb44721dc4d",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "806519a5ed6e3ca2b9211e3b0e7730c75f23dd8f1b376b86cdf72261fd15b886",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "e570770d72902c8cc73a562b86eb7f6af9341d5b4aae13b6a6a19f6b9de63439",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "7c50d9bc0363298eb878b32619d5ec08d03c23ca98de1dc2f5f72484b889ac0c",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "7aa43193f240d0b75f67fad164af3b68de603fa1ad3cad1efca6cfa86a18433e",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "0b3f050060b33e979b49c2f39fc538c9f56667bb5012a04b7ce2ecec4b52ad2b",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "2adf48450442a2c50b16f8fb7adf60a03ec4c56344a06bb2e3a75b5b190b6d3e",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "7c4c8885d2e13f7779b5babe8b50a79f40dcdeacada62a3c8394b4d0df67137f",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "95120ceb21289fde88ea5f4693f94c42295152d30d8ca7141efe3bc99192c5c1",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "ba835151b09840d83103cf673488d595b8fce462e587fabfbb5d7eec4ff6fa5c",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "20": {
+  "archivo": "articulos/art-0020.md",
+  "sha256": "c8980a076765446919042cce0475266ced24138167ebf3100a9a738ce81c8e1c",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "21": {
+  "archivo": "articulos/art-0021.md",
+  "sha256": "dfc2b3c4f996636051a3297b9344a4716fc869f7fef630d7eea83dc7ad0fb16a",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "22": {
+  "archivo": "articulos/art-0022.md",
+  "sha256": "3e391f583b15b82e3929666e75c68b2d35e2df4146751ba621b5702d528398f5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "23": {
+  "archivo": "articulos/art-0023.md",
+  "sha256": "8c4690c8cae969c27137545ac5b6b3c2fe47381e5d731f78de5e641fcf0dc6ab",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "24": {
+  "archivo": "articulos/art-0024.md",
+  "sha256": "cf93bb9cdc138e081fd301be63babd3accb830fd26df4c207441674f1a63f3d0",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "25": {
+  "archivo": "articulos/art-0025.md",
+  "sha256": "3b20448ab2d5cf2c74aaa2ccd09f18ced398028acf194c0fced053fd1dd3e7e6",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "26": {
+  "archivo": "articulos/art-0026.md",
+  "sha256": "9923d3aa953681b4dbb40b04ffd6e544d6abbd1d4fc69f2fd615aeb4366ee667",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "27": {
+  "archivo": "articulos/art-0027.md",
+  "sha256": "72cb2a33e625d8270629950df53a49ae7b9869bfa89c8adb3080f31f24f75154",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "28": {
+  "archivo": "articulos/art-0028.md",
+  "sha256": "d48f428350aaef8c75395ced52dfc22a2363cbdd1b5698f7c34de204af01af3d",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "29": {
+  "archivo": "articulos/art-0029.md",
+  "sha256": "13d4eb3315c8a9c9b17c7744e9c9a850e99d3638fba92dae574742f930aa24a9",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "30": {
+  "archivo": "articulos/art-0030.md",
+  "sha256": "572a0ead61d49a3c71512768694d948dee978d94202faa17fd871f2c997379e8",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "31": {
+  "archivo": "articulos/art-0031.md",
+  "sha256": "7386c6648740e5fbd6872d032a657d545b57321175f3abef330be11c788ef8d2",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "32": {
+  "archivo": "articulos/art-0032.md",
+  "sha256": "b63b59d6fa61f9831007725f092b53fdeb498df36c1c57b40eed88071196be39",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "33": {
+  "archivo": "articulos/art-0033.md",
+  "sha256": "2778893bd95a9d8a05af508fa7702103affb0663a8f8935fadcaa40e46ae5eab",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "34": {
+  "archivo": "articulos/art-0034.md",
+  "sha256": "da87c7f51574fdc980b15429d56ed84f92ce2f17186ad5cac54665fac46439f6",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "35": {
+  "archivo": "articulos/art-0035.md",
+  "sha256": "572554fd5c76b555a6b713435304a5a071812f3ac63cff858d3f64ef2904044a",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "36": {
+  "archivo": "articulos/art-0036.md",
+  "sha256": "fce9825ec05e106097063dbb5a62aa90872da4a53bc1ef3530c8aa36d71e8dd3",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "37": {
+  "archivo": "articulos/art-0037.md",
+  "sha256": "8d774f48d12b3a1eaba21c71fb4bcf4886a9e86c21462cc6f44c988f29866d29",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "38": {
+  "archivo": "articulos/art-0038.md",
+  "sha256": "5a09c9cabba1ae107f988a2c7d9939390da7389e8650c9ff3030a7f1b1ab5aa5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "39": {
+  "archivo": "articulos/art-0039.md",
+  "sha256": "5daae814fd184b99ab487b46bbad812f0122a51eb122180ffc4424284e6f22b2",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "40": {
+  "archivo": "articulos/art-0040.md",
+  "sha256": "f82ef3a6bda494806207fa3c3d162137d1457b1044314b6760d57465e30ff271",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "41": {
+  "archivo": "articulos/art-0041.md",
+  "sha256": "3c3de281f292c2470ad0e6635b8534d500b011eda894528912d7670b4829ca0e",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "42": {
+  "archivo": "articulos/art-0042.md",
+  "sha256": "379b07f327d10f7c9bfc3309ad409047b468bf0152ef88a32475fed385c3bae9",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "43": {
+  "archivo": "articulos/art-0043.md",
+  "sha256": "658ed5ffeeb9249068560b62d3baad75fb1a17d71c395bab644f4e778d4039bf",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "44": {
+  "archivo": "articulos/art-0044.md",
+  "sha256": "acef0d15b800d58eb8180f685995e6a2d4dab05bbb4ec4ee1b399576f1b0f5a9",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "45": {
+  "archivo": "articulos/art-0045.md",
+  "sha256": "76aa187a7903cb8e434e5243aa340873847a71e7f0d993baee8409374c259eed",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "46": {
+  "archivo": "articulos/art-0046.md",
+  "sha256": "67be4986cb2fe65a8d535cc79998fa645b0abb4f11177495bda33bb33b60d2fa",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "47": {
+  "archivo": "articulos/art-0047.md",
+  "sha256": "2778fc46360f818c6edc7e2cadd0366a8eaa9d54401dc13a8261cae56770ca7b",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "48": {
+  "archivo": "articulos/art-0048.md",
+  "sha256": "1653c9deb3061929ff348062fa8d615a91f90e379cfe7395c2a82963024f3fc7",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "49": {
+  "archivo": "articulos/art-0049.md",
+  "sha256": "72cf014631c2b32dda8021b20e2b07605fcec7fba0736498ae77733cdc36d613",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "50": {
+  "archivo": "articulos/art-0050.md",
+  "sha256": "712dc7b796e24158ef586f231340407115d6a518d2c7ece1ff6343d0b6b9a367",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "51": {
+  "archivo": "articulos/art-0051.md",
+  "sha256": "b488ddd6ccfd43254bbf8ca748f9b59846cafe15a82f0a96e945f7fb8bc7b51f",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "52": {
+  "archivo": "articulos/art-0052.md",
+  "sha256": "3ac34d24e4a99c873fc845983b18e54daf01f17e200175918d65647a687ed662",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "53": {
+  "archivo": "articulos/art-0053.md",
+  "sha256": "05238434b73617a3e9c6feb242a941fe4a2345b138834fa125d5f885264db201",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo II · Del Nacimiento, Determinación, Garantía y Extinción de los Créditos Fiscales",
+  "derogado": false
+ },
+ "54": {
+  "archivo": "articulos/art-0054.md",
+  "sha256": "47826af2faa4d367f13e48b4da1df948049db8dae91d97e18cc43b363f343f53",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "55": {
+  "archivo": "articulos/art-0055.md",
+  "sha256": "e4d6316804b3df193ddffaeba0f5b7394a2470506e6ccdc2eb7b9d7db6eee261",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "56": {
+  "archivo": "articulos/art-0056.md",
+  "sha256": "b7dbb2f6cdc27b96ffb5221346f745c9f7a037cc745ca61012fd88e059dd54be",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "56-bis": {
+  "archivo": "articulos/art-0056-bis.md",
+  "sha256": "b64f9336b31a4ccf89891bd5088755d44a2681dcc2ff7b4e8dcde2230b85bbc3",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "57": {
+  "archivo": "articulos/art-0057.md",
+  "sha256": "0c8b81f428071d8658da966def8c2b27234d4cb13b15284871973d784b7ada2a",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "58": {
+  "archivo": "articulos/art-0058.md",
+  "sha256": "86a83a4cea314b6bfa2606c663c23a933ba1a249fd0305f09623aa8cea3bc866",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "58-bis": {
+  "archivo": "articulos/art-0058-bis.md",
+  "sha256": "77041b96af443cbcbef25909832ad195fa495339212261d91a4e0f974c20c167",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "59": {
+  "archivo": "articulos/art-0059.md",
+  "sha256": "df6f321920e7a9d905a280de5b8cc27724dff93c04cfcaed5c7c8d9104e9da2f",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "60": {
+  "archivo": "articulos/art-0060.md",
+  "sha256": "d5894dc237926e25bfb7d03348fd0cf3a6cabeb1c3f99ebbc71c7e6393339211",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "61": {
+  "archivo": "articulos/art-0061.md",
+  "sha256": "daafeacad00f9c0059c2d8b437cfef8bfe231e8516c83d17fca31461659cec2f",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "62": {
+  "archivo": "articulos/art-0062.md",
+  "sha256": "808819102a0bd5f7a47162d6e29a8ba33b4269ef9c64723e418da5a0659e07df",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "63": {
+  "archivo": "articulos/art-0063.md",
+  "sha256": "16f9b9d1b58301181121b8fbfad0aebe44f281ca47b5a0d6c9c48e36e5f724ec",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "64": {
+  "archivo": "articulos/art-0064.md",
+  "sha256": "f736e6b3fde847326885b0b8d792da8fff9de0fee2373ea1578958df0da13619",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "65": {
+  "archivo": "articulos/art-0065.md",
+  "sha256": "ce9ae8a39efbacc3aadf72beacb54824f2fbc83f116b6aeaedc7a2ec025a581a",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "66": {
+  "archivo": "articulos/art-0066.md",
+  "sha256": "68e63d93bc9a90e97a73a14a9b3ac281ca7c5d3cd8c7b0393e986fa201cf5095",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "67": {
+  "archivo": "articulos/art-0067.md",
+  "sha256": "d47c18d6ac66ec2a6a3755ef2a021a58b6600c7d118c0fa748934d073cf646a8",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "68": {
+  "archivo": "articulos/art-0068.md",
+  "sha256": "a702f14a499708c8017808e70a59890dcaffeeb43e907e13fce6e89cd22685f5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "69": {
+  "archivo": "articulos/art-0069.md",
+  "sha256": "2238082581766c40f0fea0d1670a64c3ccdabfea4da0847e6e0cb5bbb65661d7",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "70": {
+  "archivo": "articulos/art-0070.md",
+  "sha256": "1aabd85ee66a3674faf83408af09b5bf0a70247b5d1453fd8d53cfdfe875d993",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "71": {
+  "archivo": "articulos/art-0071.md",
+  "sha256": "48016bd5f54eedf02afc812c6f47de5341e6bb700ec9fb17543213ced510a6a2",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "72": {
+  "archivo": "articulos/art-0072.md",
+  "sha256": "5be61091ceebc950b734d592c30e74c83b9a5aed4487e425b630d7dcab6f9003",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo III · De los Derechos y Obligaciones de los Contribuyentes",
+  "derogado": false
+ },
+ "73": {
+  "archivo": "articulos/art-0073.md",
+  "sha256": "7b2564217555c66a759d67065f57f3a06dac1367811d2a08e41226622a8bde29",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "74": {
+  "archivo": "articulos/art-0074.md",
+  "sha256": "d21796677a8f10bebb7effb0e23433fa6dccfa8d62cdf89a17d635885d11bbd3",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "75": {
+  "archivo": "articulos/art-0075.md",
+  "sha256": "d496212652dda7f65bdd8ae17082c5bc3eb77b0590e6d08ad1d58671084abbd3",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "76": {
+  "archivo": "articulos/art-0076.md",
+  "sha256": "95ac6ec9ca275f8e80e1d8a1371cba2ea3216f4aa7dfce16ec5ccea97f7a2b7f",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "77": {
+  "archivo": "articulos/art-0077.md",
+  "sha256": "81104c82efaee9e8102dc43768522c0b40fac2262ff6622347e99ebf9a8b318c",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "78": {
+  "archivo": "articulos/art-0078.md",
+  "sha256": "c536bf8dff06b8d3bd4469374facf3fe1bafeac856a22c00ebe6bad7c7058aa4",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "79": {
+  "archivo": "articulos/art-0079.md",
+  "sha256": "eb2de793266694f981b5ba4f6dc4572dd4458dd54e09fc5b2b201f7b2df13e73",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "80": {
+  "archivo": "articulos/art-0080.md",
+  "sha256": "fb49feacd5e4f20954f4f68573908e39232da0913a8ec1bca17a0c7a857b5e9a",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "81": {
+  "archivo": "articulos/art-0081.md",
+  "sha256": "82503e15f5a13a237b17c44adc5c3743e3572575244f4ecaff907741acd00057",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": true
+ },
+ "82": {
+  "archivo": "articulos/art-0082.md",
+  "sha256": "94807e44fa79fa7f6e9c8567dca611e8efb2e8b6589430dd216139bb420da103",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "83": {
+  "archivo": "articulos/art-0083.md",
+  "sha256": "245c118f296b5f3948d2cc63831b6f3d6347671c8d54691d55b42b6859e95818",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "84": {
+  "archivo": "articulos/art-0084.md",
+  "sha256": "ab95d360d50c044e03c9bbce2ddd7f4321194c65195c0fc9279f3c2a05ac1823",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "85": {
+  "archivo": "articulos/art-0085.md",
+  "sha256": "cd1b81059431904243136baf506f4c5b1d77d8fd5582819d9b5a2db07eb270dd",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "86": {
+  "archivo": "articulos/art-0086.md",
+  "sha256": "e9fdd92263a8121539b93338642a674312aa6ee0f953df9f2eb9fb77d7d26ec1",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "87": {
+  "archivo": "articulos/art-0087.md",
+  "sha256": "751206d2edc2dea3711a5c14a73f31274b1e9799b78bd0e57add4c786fb326b5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "88": {
+  "archivo": "articulos/art-0088.md",
+  "sha256": "66390667a664a66ecee5732164c731a893fae945f25edf17c9c0d58e122ed946",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "89": {
+  "archivo": "articulos/art-0089.md",
+  "sha256": "ebc7c7b6038a72025b18eca296bb12ab75f9f04d1ac80f46c168c8931668c03d",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "90": {
+  "archivo": "articulos/art-0090.md",
+  "sha256": "2dd3f1a8c67130b6fff699aba76fe35a8f3dfb10ecce8e1a56dbf32e095bf435",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "91": {
+  "archivo": "articulos/art-0091.md",
+  "sha256": "a077cab69c16047299be5bdc1276c304dfd2b424397864b37d79d6451aee20ec",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "92": {
+  "archivo": "articulos/art-0092.md",
+  "sha256": "fc3ab3edb264c2f259488b195d6eb5fc62804442468263a31140b421e292d0b2",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "93": {
+  "archivo": "articulos/art-0093.md",
+  "sha256": "aa67cbc4811e07ef7e97a1103da84239b2858101dab5cbbf0a0d2f364d92949d",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "94": {
+  "archivo": "articulos/art-0094.md",
+  "sha256": "df05aba83ed08fa47290d72b6e2574839b97b0ccf8d4c98d202d260eaf16018f",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "95": {
+  "archivo": "articulos/art-0095.md",
+  "sha256": "c406e20ae958fb28936cc137bc32cc8a54a8ec01901c5702f533ece0c462c3b4",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "96": {
+  "archivo": "articulos/art-0096.md",
+  "sha256": "896d24f275427d450ce2f262697f2a6059a5033ed5b69ca08c935b097814b36d",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "97": {
+  "archivo": "articulos/art-0097.md",
+  "sha256": "c76765d2abdf1e5d28f7498beebc6372abe444075ba36fe70c86877e89de184f",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "98": {
+  "archivo": "articulos/art-0098.md",
+  "sha256": "579e912849c7f14e1d7e476596d3a1afce2cc8ff784dba70402c6c31a8be2f2c",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "98-bis": {
+  "archivo": "articulos/art-0098-bis.md",
+  "sha256": "03ad0b04b9afe07c1c3288319ca9d94390612848e56e5c249c787fef81606afc",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "98-ter": {
+  "archivo": "articulos/art-0098-ter.md",
+  "sha256": "0f59f67d338a15cc83b7e5b8bc49770472cf51a82dcae29b93a39a6b796c71d5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "99": {
+  "archivo": "articulos/art-0099.md",
+  "sha256": "bf037df1891a44165c409342653d10fc4872a282cd6abe6e0e9a7517538a4adc",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "100": {
+  "archivo": "articulos/art-0100.md",
+  "sha256": "c2e6abb54cb41f8d7d1ed8f5a5e6ecd4a9a2b67bf522a93244984ed7c9f89b75",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "101": {
+  "archivo": "articulos/art-0101.md",
+  "sha256": "fc60d2a1dc41cd50cf6fac31b196ecdcce97dbf9b2d48a62d8085e311b0a77f2",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "102": {
+  "archivo": "articulos/art-0102.md",
+  "sha256": "4b9e6056bcc6127b982bdd54359c3f1965922015dfd71b9874a93cf61c4137d2",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "103": {
+  "archivo": "articulos/art-0103.md",
+  "sha256": "029b4ec44a5988ef85e639ef46d6760eea088a0f962d35ed8f24d0aab79de37c",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "104": {
+  "archivo": "articulos/art-0104.md",
+  "sha256": "4c48d4e24d616e356ecb458afad764744438f32b01084c39db7e3f6c567ecea1",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "105": {
+  "archivo": "articulos/art-0105.md",
+  "sha256": "ac3882cb658f62fefdb788b609bb95e68194eea3649cd9445061a669f7f52b13",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "105-bis": {
+  "archivo": "articulos/art-0105-bis.md",
+  "sha256": "2e07a22128af70d6a953f2c4486d24949d273ab213f5ac0904b08cbd5dd0f8e3",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "106": {
+  "archivo": "articulos/art-0106.md",
+  "sha256": "1cebbebb8001cb8af68455d98950ddc8b9f29e1c9aa9a496a0591cde01c833da",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "107": {
+  "archivo": "articulos/art-0107.md",
+  "sha256": "152fca51ea456146f17a36bfe39b2dcc8f52463ee43aa3dadfe5f6022fe40cbe",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "108": {
+  "archivo": "articulos/art-0108.md",
+  "sha256": "cad5e94c59e6c5a41eb0ec94d8c07d088d8e5438f91c7f42fb8de1cd71c12786",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "109": {
+  "archivo": "articulos/art-0109.md",
+  "sha256": "609a414fb6179e65fb685b09232a46dc2dd30ca979d975978227bebdbf3645a7",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "110": {
+  "archivo": "articulos/art-0110.md",
+  "sha256": "de58b3f5fc0e3381056b42a1141cd94e2fdb808976380a3b4ec1b1844a0d506a",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "111": {
+  "archivo": "articulos/art-0111.md",
+  "sha256": "dcfd2a78cc8484499be040fd5c0f560fa606e6944ff60404df9fc60380ca7a23",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo IV · De las Facultades de las Autoridades",
+  "derogado": false
+ },
+ "111-bis": {
+  "archivo": "articulos/art-0111-bis.md",
+  "sha256": "af484984d6b189682e245152d576ce22e51e983ff079c988e61da35e3b07fda7",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo V · De la Mediación Fiscal",
+  "derogado": false
+ },
+ "111-ter": {
+  "archivo": "articulos/art-0111-ter.md",
+  "sha256": "34b8b9f0469ae77d583bf94a6593f67aab9001d1a4fee016997cdcb496a75feb",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo V · De la Mediación Fiscal",
+  "derogado": false
+ },
+ "111-quater": {
+  "archivo": "articulos/art-0111-quater.md",
+  "sha256": "def154f9e2988dc76a7ade7e6bba682e52ecf77a921335a6e04f991ff6c441c5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo V · De la Mediación Fiscal",
+  "derogado": false
+ },
+ "111-quintus": {
+  "archivo": "articulos/art-0111-quintus.md",
+  "sha256": "8a52bbb46d1626d74ba4c601603b04362fc81b353170eb0f725474fd02d3620f",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo V · De la Mediación Fiscal",
+  "derogado": false
+ },
+ "111-sextus": {
+  "archivo": "articulos/art-0111-sextus.md",
+  "sha256": "d0379428c0c569cfd893dd6dd4a4629e7a028d1d05434613c6962da86a7f3489",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título SEGUNDO · DE LOS ELEMENTOS GENERALES DE LAS CONTRIBUCIONES / Capítulo V · De la Mediación Fiscal",
+  "derogado": false
+ },
+ "112": {
+  "archivo": "articulos/art-0112.md",
+  "sha256": "ec6065f4e216cbad329114eebb7149030ef1ea929ab0be1fc63d17f19dda34a8",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo I · Del Impuesto sobre Adquisición de",
+  "derogado": false
+ },
+ "113": {
+  "archivo": "articulos/art-0113.md",
+  "sha256": "86de62124a87f280ce04505a27562d3a616ff7083f4fd937c67f33a79e02db99",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo I · Del Impuesto sobre Adquisición de",
+  "derogado": false
+ },
+ "114": {
+  "archivo": "articulos/art-0114.md",
+  "sha256": "52fe75064d0b06298d7be3312fff709e60767f8ecda662ede70e4fcb3586dc14",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo I · Del Impuesto sobre Adquisición de",
+  "derogado": false
+ },
+ "115": {
+  "archivo": "articulos/art-0115.md",
+  "sha256": "749969364ab00848b31b300d7160df1e82612bacae428ac8a1087208bb9f8139",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo I · Del Impuesto sobre Adquisición de",
+  "derogado": false
+ },
+ "116": {
+  "archivo": "articulos/art-0116.md",
+  "sha256": "0592636921e17e0e0e7fd814383e45b119f959573f41f8617d28efd6e46963e4",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo I · Del Impuesto sobre Adquisición de",
+  "derogado": false
+ },
+ "117": {
+  "archivo": "articulos/art-0117.md",
+  "sha256": "c6c832e7cb3fd8347dc85c67a845bbe81f92c413642478fdc2883bc7f1cf1a99",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo I · Del Impuesto sobre Adquisición de",
+  "derogado": false
+ },
+ "118": {
+  "archivo": "articulos/art-0118.md",
+  "sha256": "4acbd7a0f9f570c1a9967cd5a135e84387f87d4a240bcef9ab84bfc1164611b7",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo I · Del Impuesto sobre Adquisición de",
+  "derogado": false
+ },
+ "119": {
+  "archivo": "articulos/art-0119.md",
+  "sha256": "d95734a2f66e13c4ffa719814542b74d9cc5bbbb0547b7b335ca31695520e24a",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo I · Del Impuesto sobre Adquisición de",
+  "derogado": true
+ },
+ "120": {
+  "archivo": "articulos/art-0120.md",
+  "sha256": "0c93aeb2c4913110aafaa0ca3b695ff8aafecb1f919cd9c532ff4164f25a52b7",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo I · Del Impuesto sobre Adquisición de",
+  "derogado": false
+ },
+ "121": {
+  "archivo": "articulos/art-0121.md",
+  "sha256": "b483b7b69964b53002cb377482eee2081f0d13405a8ec7050cb99b149ffcb66f",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo I · Del Impuesto sobre Adquisición de",
+  "derogado": false
+ },
+ "122": {
+  "archivo": "articulos/art-0122.md",
+  "sha256": "00b95895f5ecf38d716ac30eca8df72b2dcf8378eb6c3bf0e0e0013e40b48736",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo I · Del Impuesto sobre Adquisición de",
+  "derogado": false
+ },
+ "123": {
+  "archivo": "articulos/art-0123.md",
+  "sha256": "d3b93e92e4d78e71df9e3c14aa52700547b62edd515a14df5bb511d480c05a91",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo I · Del Impuesto sobre Adquisición de",
+  "derogado": false
+ },
+ "124": {
+  "archivo": "articulos/art-0124.md",
+  "sha256": "2ae41371cf54f694e336d643e7369832206a0634d99b9e491c0600fdc58d916a",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo I · Del Impuesto sobre Adquisición de",
+  "derogado": false
+ },
+ "125": {
+  "archivo": "articulos/art-0125.md",
+  "sha256": "fddefb0d9d66f25f6a8ed75a1410c170a2e7dd4d75e79cdce4e1af54e1628445",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo I · Del Impuesto sobre Adquisición de",
+  "derogado": false
+ },
+ "126": {
+  "archivo": "articulos/art-0126.md",
+  "sha256": "dc040a01081f0b3692960ce1533bebe995efd21382918fc8ed4f6f742c21e652",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo II · Del Impuesto Predial",
+  "derogado": false
+ },
+ "127": {
+  "archivo": "articulos/art-0127.md",
+  "sha256": "4eb3e790e95d5c77f49c36d9788cfd92f42bef37103f53499bd4a8e6458ed8da",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo II · Del Impuesto Predial",
+  "derogado": false
+ },
+ "128": {
+  "archivo": "articulos/art-0128.md",
+  "sha256": "873049e2631673a39810a214f662a0857c846a64660dfb7365e4773d75d663d2",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo II · Del Impuesto Predial",
+  "derogado": false
+ },
+ "129": {
+  "archivo": "articulos/art-0129.md",
+  "sha256": "ac479083093c58247b48c3d725efb2412f70f3fb6a673ca0c6e63ade570e7ff5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo II · Del Impuesto Predial",
+  "derogado": false
+ },
+ "130": {
+  "archivo": "articulos/art-0130.md",
+  "sha256": "14e7c0ab68929bf24c41ce3719551f8c43827bd780e95f7b9f0e93aa4405820e",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo II · Del Impuesto Predial",
+  "derogado": false
+ },
+ "131": {
+  "archivo": "articulos/art-0131.md",
+  "sha256": "45cd53e4a1efafdaa8260259d07844a0260ef1e0c61078ca16fadb8f4c36701a",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo II · Del Impuesto Predial",
+  "derogado": false
+ },
+ "132": {
+  "archivo": "articulos/art-0132.md",
+  "sha256": "504352a9115f34de8fe283dd59314b2ebeea2a04af9ac1e734f1096e911db639",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo II · Del Impuesto Predial",
+  "derogado": false
+ },
+ "133": {
+  "archivo": "articulos/art-0133.md",
+  "sha256": "d8e306271d643040162508a95338b440712c30be8dd1215a0a8a4679cbad2952",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo II · Del Impuesto Predial",
+  "derogado": false
+ },
+ "133-bis": {
+  "archivo": "articulos/art-0133-bis.md",
+  "sha256": "9c363a4a54a1e38700cbb1f2cdd095f0bd4932bbe8192b600be4fdda67e2ec2b",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo II · Del Impuesto Predial",
+  "derogado": false
+ },
+ "134": {
+  "archivo": "articulos/art-0134.md",
+  "sha256": "3337ab10194c45458b0d81016183a8060aaf9b8a3d3cbf8ef3e83fa403ddbcac",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo III · Del Impuesto sobre Espectáculos Públicos",
+  "derogado": false
+ },
+ "135": {
+  "archivo": "articulos/art-0135.md",
+  "sha256": "440e73184c596ad49193ad4031130d6d45f95ea9cc29a13e802b4f773988e5d1",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo III · Del Impuesto sobre Espectáculos Públicos",
+  "derogado": false
+ },
+ "136": {
+  "archivo": "articulos/art-0136.md",
+  "sha256": "346b89096729dfb748abdf3408a592bc04975165c20fb31a36f0bde1bf8c90e5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo III · Del Impuesto sobre Espectáculos Públicos",
+  "derogado": false
+ },
+ "137": {
+  "archivo": "articulos/art-0137.md",
+  "sha256": "ba117abe6606adfe7ca80ea3ab116569a95fb3f982f88ffc559094a62c8e1c7c",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo III · Del Impuesto sobre Espectáculos Públicos",
+  "derogado": false
+ },
+ "138": {
+  "archivo": "articulos/art-0138.md",
+  "sha256": "f0a68f3a103f5683f38173275353fb036f7ebb71349297da93a832c20bb5bb5b",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo III · Del Impuesto sobre Espectáculos Públicos",
+  "derogado": false
+ },
+ "139": {
+  "archivo": "articulos/art-0139.md",
+  "sha256": "d384093ccd0be06ae35f25dad34742b78f3c27029099f3a8ca6b9eef0fc1eaf6",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo III · Del Impuesto sobre Espectáculos Públicos",
+  "derogado": false
+ },
+ "140": {
+  "archivo": "articulos/art-0140.md",
+  "sha256": "6ced1610c7fbdbde6c3958a0c196164f076d9627d4f3ee25eceb61ebcffec535",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo III · Del Impuesto sobre Espectáculos Públicos",
+  "derogado": false
+ },
+ "141": {
+  "archivo": "articulos/art-0141.md",
+  "sha256": "212344b24f77871fd6bc16c234a16274ea9bd46b4b29e4ae1c3bd3fbce135a74",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo III · Del Impuesto sobre Espectáculos Públicos",
+  "derogado": false
+ },
+ "142": {
+  "archivo": "articulos/art-0142.md",
+  "sha256": "78cedb3a39f6b9bc566f314ff0d69ac4e41707e00348345958065ad3a49c24ba",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo III · Del Impuesto sobre Espectáculos Públicos",
+  "derogado": false
+ },
+ "143": {
+  "archivo": "articulos/art-0143.md",
+  "sha256": "1ad2c07c5d33132dff7314018c09549bb8496b480e6158cb5c52be40ec1073cc",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo III · Del Impuesto sobre Espectáculos Públicos",
+  "derogado": false
+ },
+ "144": {
+  "archivo": "articulos/art-0144.md",
+  "sha256": "b859006b3937365e21c6b60b7f6746204d92cf787158f758769d4ccfd00f7994",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo III · Del Impuesto sobre Espectáculos Públicos",
+  "derogado": false
+ },
+ "145": {
+  "archivo": "articulos/art-0145.md",
+  "sha256": "e3afb4ead650c83d76d4477dff72e5c1fe993251cca64f25698ec6ae54006940",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV · Del Impuesto sobre Loterías, Rifas, Sorteos y Concursos",
+  "derogado": false
+ },
+ "146": {
+  "archivo": "articulos/art-0146.md",
+  "sha256": "dd85e9dd3192db62af9d57b30306d36d9da5e93d386bdcd082126bc694400c10",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV · Del Impuesto sobre Loterías, Rifas, Sorteos y Concursos",
+  "derogado": false
+ },
+ "147": {
+  "archivo": "articulos/art-0147.md",
+  "sha256": "da2ca7087d44b9da57fa6dcfd648436dc631099911495332cf73d69a1d633ee7",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV · Del Impuesto sobre Loterías, Rifas, Sorteos y Concursos",
+  "derogado": false
+ },
+ "148": {
+  "archivo": "articulos/art-0148.md",
+  "sha256": "f5822f653213ac115366d3f6bad4dfa5fb9208e39f8b962fde778594fd73b36e",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV · Del Impuesto sobre Loterías, Rifas, Sorteos y Concursos",
+  "derogado": false
+ },
+ "149": {
+  "archivo": "articulos/art-0149.md",
+  "sha256": "4c5e247c20a16b4ad2ca7d4a85b63d21c2c175d16308bc0182c1da48a311243c",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV · Del Impuesto sobre Loterías, Rifas, Sorteos y Concursos",
+  "derogado": false
+ },
+ "150": {
+  "archivo": "articulos/art-0150.md",
+  "sha256": "f66c4856e0e3cd122482b017235c8b521fca7fa12241400856adfcb105dea3ff",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV · Del Impuesto sobre Loterías, Rifas, Sorteos y Concursos",
+  "derogado": false
+ },
+ "151": {
+  "archivo": "articulos/art-0151.md",
+  "sha256": "62b695482f2fabe07792913698993182079fadc34adf1af5306473209a544cd9",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV · Del Impuesto sobre Loterías, Rifas, Sorteos y Concursos",
+  "derogado": true
+ },
+ "152": {
+  "archivo": "articulos/art-0152.md",
+  "sha256": "e413b5e4ce6c26a344098b5108604600fbad2df107a8b10b06f1deeb7a34a28a",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV · Del Impuesto sobre Loterías, Rifas, Sorteos y Concursos",
+  "derogado": false
+ },
+ "153": {
+  "archivo": "articulos/art-0153.md",
+  "sha256": "8f24e327190d0723168612d68969415a72c8d6475f92a74cd39c53395dfa3cd5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV · Del Impuesto sobre Loterías, Rifas, Sorteos y Concursos",
+  "derogado": false
+ },
+ "154": {
+  "archivo": "articulos/art-0154.md",
+  "sha256": "dc1143865f48638c1d42be22829f99cfdb094c3aee2be0e14c14fbee2865a4a2",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV · Del Impuesto sobre Loterías, Rifas, Sorteos y Concursos",
+  "derogado": false
+ },
+ "155": {
+  "archivo": "articulos/art-0155.md",
+  "sha256": "8a6c17463d2a7f26490d63912cca2a89303627091c37ecfe760bcdccaaafdc23",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV · Del Impuesto sobre Loterías, Rifas, Sorteos y Concursos",
+  "derogado": false
+ },
+ "155-bis": {
+  "archivo": "articulos/art-0155-bis.md",
+  "sha256": "82d5c6b0426571c0f5336f37971bd9c923e8f5c8ad56ab5ff9158a0ae0104b7b",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV BIS · Del Impuesto a las Erogaciones en Juegos con Apuestas y Concursos",
+  "derogado": false
+ },
+ "155-bis-1": {
+  "archivo": "articulos/art-0155-bis-1.md",
+  "sha256": "706c311c8359e4137d60bbd55279813406fa9fa0389d0a6fad2b850ec04b9e2e",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV BIS · Del Impuesto a las Erogaciones en Juegos con Apuestas y Concursos",
+  "derogado": false
+ },
+ "155-bis-2": {
+  "archivo": "articulos/art-0155-bis-2.md",
+  "sha256": "71d4c0a0fb4eb7872fa52dc57eeebe9fe4b871986d7195185dd92898f97884a2",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV BIS · Del Impuesto a las Erogaciones en Juegos con Apuestas y Concursos",
+  "derogado": false
+ },
+ "155-bis-3": {
+  "archivo": "articulos/art-0155-bis-3.md",
+  "sha256": "66bc35f42e76560af1ebdd8b85ee5c1ce201d1bb942536dad86a38bfef3b0a20",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV BIS · Del Impuesto a las Erogaciones en Juegos con Apuestas y Concursos",
+  "derogado": false
+ },
+ "155-bis-4": {
+  "archivo": "articulos/art-0155-bis-4.md",
+  "sha256": "a7c9888d469ae8b465d8bbe38c7dfa92a52602d36ad179e887bcc60034fbf24c",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV BIS · Del Impuesto a las Erogaciones en Juegos con Apuestas y Concursos",
+  "derogado": false
+ },
+ "155-bis-5": {
+  "archivo": "articulos/art-0155-bis-5.md",
+  "sha256": "88ca326a75e3b42e462e85acd24e103367ab0fe1a03ea5c3686c0831f3f92c95",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV BIS · Del Impuesto a las Erogaciones en Juegos con Apuestas y Concursos",
+  "derogado": false
+ },
+ "155-bis-6": {
+  "archivo": "articulos/art-0155-bis-6.md",
+  "sha256": "d9e0b9ba881330d181bb4029015fcbc84a8bdc756e171028ca259f852e6ac11f",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV BIS · Del Impuesto a las Erogaciones en Juegos con Apuestas y Concursos",
+  "derogado": false
+ },
+ "155-bis-7": {
+  "archivo": "articulos/art-0155-bis-7.md",
+  "sha256": "937bc3355a6cfb6fb840e5c9287675b1afee90cfd8ffee208275e649963847a2",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV BIS · Del Impuesto a las Erogaciones en Juegos con Apuestas y Concursos",
+  "derogado": false
+ },
+ "155-bis-8": {
+  "archivo": "articulos/art-0155-bis-8.md",
+  "sha256": "ff7551455c95c9dd07a08655cd2f7029b55b6074cc2e542e9ef6f002db43005b",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IV BIS · Del Impuesto a las Erogaciones en Juegos con Apuestas y Concursos",
+  "derogado": false
+ },
+ "156": {
+  "archivo": "articulos/art-0156.md",
+  "sha256": "841fa77f967c7a1e978f726addbf893364de08826b9f6cd35d21195f0d64ad8d",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo V · Del Impuesto sobre Nóminas",
+  "derogado": false
+ },
+ "156-bis": {
+  "archivo": "articulos/art-0156-bis.md",
+  "sha256": "8fbd39db2a9081faa4006da510043966f50ef3caa413fb27446ba5ef62edf1b5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo V · Del Impuesto sobre Nóminas",
+  "derogado": false
+ },
+ "157": {
+  "archivo": "articulos/art-0157.md",
+  "sha256": "1b4bb756835deb988f73051b3d85e9e9272ef7fe6a8f63a37cb53ac5fb6d7cd6",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo V · Del Impuesto sobre Nóminas",
+  "derogado": false
+ },
+ "158": {
+  "archivo": "articulos/art-0158.md",
+  "sha256": "3f944a05b5f3c4a08c477f309cee8523929c8ca0fefd8b800a1af0a2cbef5ef4",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo V · Del Impuesto sobre Nóminas",
+  "derogado": false
+ },
+ "159": {
+  "archivo": "articulos/art-0159.md",
+  "sha256": "c501bd31913002b07d0ce244db7d4d3f5f0f9845718645b3ea52728f55deabf9",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo V · Del Impuesto sobre Nóminas",
+  "derogado": false
+ },
+ "160": {
+  "archivo": "articulos/art-0160.md",
+  "sha256": "c442294e6d6ce15c6358e35ab8624d881dfc0b9e8a2be95c7b0ac0489392e369",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "161": {
+  "archivo": "articulos/art-0161.md",
+  "sha256": "687eba1775024b1b295ff6dd38d8724392ab71829819f895b0a43b1a49115037",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "161-bis": {
+  "archivo": "articulos/art-0161-bis.md",
+  "sha256": "645b596325a23e6cf9bf0b70e880e2cb9cff2c8795aa09a161ca877924967850",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "161-bis-1": {
+  "archivo": "articulos/art-0161-bis-1.md",
+  "sha256": "94556df06c7e6da10f5bb7ed435a495b20f32b3c96ac08bf606b5b18ebd72f75",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "161-bis-2": {
+  "archivo": "articulos/art-0161-bis-2.md",
+  "sha256": "b8134c9c27d1406220571157283da15665acd080af6c7d23c7a634edfb63eca9",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "161-bis-3": {
+  "archivo": "articulos/art-0161-bis-3.md",
+  "sha256": "e07ea174d2b868b7ccbed6c4e4f542eab914088088b423ed3885512f64d019fa",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "161-bis-4": {
+  "archivo": "articulos/art-0161-bis-4.md",
+  "sha256": "1a4ccdc8c74f1510bd0cf8536b7a6ba4146a217137ab070dd304d6fe8a0ba771",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "161-bis-5": {
+  "archivo": "articulos/art-0161-bis-5.md",
+  "sha256": "356d9e9789d8475f667c2578c806213f6bd65908783e563e7fb869c0e5f9bf2b",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "161-bis-6": {
+  "archivo": "articulos/art-0161-bis-6.md",
+  "sha256": "80a75900814f9dd028583f4d7b3dd191d1dff15936f1f10c0b694a36cc5a01c4",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "161-bis-7": {
+  "archivo": "articulos/art-0161-bis-7.md",
+  "sha256": "7bc7128fccfa1d6af31077454142e4733231e21b82c2e48521c1f72f6e7c8bf9",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "161-bis-8": {
+  "archivo": "articulos/art-0161-bis-8.md",
+  "sha256": "7600cb6a8658b722863851873bc46e9dca0951154f41bc139b57c1467f0d9c92",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "161-bis-9": {
+  "archivo": "articulos/art-0161-bis-9.md",
+  "sha256": "46fb7d98da69a59bad4ede81a149e94f7167f08be3e7bf93a16153ee262870e9",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "161-bis-10": {
+  "archivo": "articulos/art-0161-bis-10.md",
+  "sha256": "9b3f07eedec2ce577c57fb9f5a42c792414697fb5386751d6765bc987522ffbf",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "161-bis-11": {
+  "archivo": "articulos/art-0161-bis-11.md",
+  "sha256": "228741472ab0e0b61b4f009e01869f3e11caf1352bd0d91c5fffcfcb32d71336",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "161-bis-12": {
+  "archivo": "articulos/art-0161-bis-12.md",
+  "sha256": "62c1c634f3c5a8078e0fa6a7de153f2161d9dfa2c9b601dce4be35060489cc3d",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "161-bis-13": {
+  "archivo": "articulos/art-0161-bis-13.md",
+  "sha256": "96893ad0256a6dec5380e60e673e9a0591c9efdd48ffc9a39775fdcdeed4cd2d",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "161-bis-14": {
+  "archivo": "articulos/art-0161-bis-14.md",
+  "sha256": "c1cbf780c04ff854af1220a97d7bb830700e35c402808e9aa2921a55bdc9ab51",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "161-bis-15": {
+  "archivo": "articulos/art-0161-bis-15.md",
+  "sha256": "68ff45ee69e9f8f4108656ff6e7d49a50b5e7573ce9d36ac1b29c7f200188c39",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "161-bis-16": {
+  "archivo": "articulos/art-0161-bis-16.md",
+  "sha256": "d2d73770190ffc6da3e5320923e5d4fd2608f9c44e9de52f9f9b91d12af06c8d",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VI · Del Impuesto sobre Tenencia o Uso de",
+  "derogado": false
+ },
+ "162": {
+  "archivo": "articulos/art-0162.md",
+  "sha256": "8f83e5f5d6643797c177028a48a48e5f2c2c1cc371cb24f09dc1c56182038fe2",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VII · Del Impuesto por la Prestación de Servicios de Hospedaje",
+  "derogado": false
+ },
+ "162-bis": {
+  "archivo": "articulos/art-0162-bis.md",
+  "sha256": "a5708b221af8f51fc61610b9cefce1cd17905a1d0ff18aeaf30d1b171b875171",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VII · Del Impuesto por la Prestación de Servicios de Hospedaje",
+  "derogado": false
+ },
+ "163": {
+  "archivo": "articulos/art-0163.md",
+  "sha256": "a0cf59cf34ab3518320fbef9828a7bbc43b9973924d0e1464aa16ae71cc69c35",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VII · Del Impuesto por la Prestación de Servicios de Hospedaje",
+  "derogado": false
+ },
+ "164": {
+  "archivo": "articulos/art-0164.md",
+  "sha256": "1bf33665148b7604482a918697d9351ffa011a02493a7996550259233488ac25",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VII · Del Impuesto por la Prestación de Servicios de Hospedaje",
+  "derogado": false
+ },
+ "164-bis": {
+  "archivo": "articulos/art-0164-bis.md",
+  "sha256": "0bbefb98e1a1f5684be8e402ca9af1b0c9437cd76a23e0dd8f499243ae53070a",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VII BIS · Del Impuesto a la Venta Final de Bebidas con Contenido Alcohólico",
+  "derogado": false
+ },
+ "164-bis-1": {
+  "archivo": "articulos/art-0164-bis-1.md",
+  "sha256": "b0544d36d5ade9d54d82bae5922749170b7c3ab89c69a98a3ad869f2dad854c5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VII BIS · Del Impuesto a la Venta Final de Bebidas con Contenido Alcohólico",
+  "derogado": false
+ },
+ "164-bis-2": {
+  "archivo": "articulos/art-0164-bis-2.md",
+  "sha256": "e5ea1d883997728ba872d90eb1982d06adfe52913df39cc9a281cb1dd8c6b8e9",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VII BIS · Del Impuesto a la Venta Final de Bebidas con Contenido Alcohólico",
+  "derogado": false
+ },
+ "164-bis-3": {
+  "archivo": "articulos/art-0164-bis-3.md",
+  "sha256": "4bd7c11f058c9182d556c678e992e6ccd578c23d5d8e1ecc2c881a39a529c650",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VII BIS · Del Impuesto a la Venta Final de Bebidas con Contenido Alcohólico",
+  "derogado": false
+ },
+ "164-bis-4": {
+  "archivo": "articulos/art-0164-bis-4.md",
+  "sha256": "5f85e94d21bfa4ec8e8d470d3778f3de00804d8b46778c1a24a6cbacc2e6ec0b",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VII BIS · Del Impuesto a la Venta Final de Bebidas con Contenido Alcohólico",
+  "derogado": false
+ },
+ "164-bis-5": {
+  "archivo": "articulos/art-0164-bis-5.md",
+  "sha256": "9341b6cc1c9525f3252cd43f5bf67852159d0aba51591e8b980a79c2a1fe947b",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VII BIS · Del Impuesto a la Venta Final de Bebidas con Contenido Alcohólico",
+  "derogado": false
+ },
+ "164-bis-6": {
+  "archivo": "articulos/art-0164-bis-6.md",
+  "sha256": "26e1c562138eaaba8a5111990a20f75feeeb84438f4d4626400dcacab92218bf",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VII BIS · Del Impuesto a la Venta Final de Bebidas con Contenido Alcohólico",
+  "derogado": false
+ },
+ "164-ter-1": {
+  "archivo": "articulos/art-0164-ter-1.md",
+  "sha256": "53f4b6037ba2ea6699158b0e651fa9849fdbe35827097751c74c1bf336b0c6f1",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VII BIS · Del Impuesto a la Venta Final de Bebidas con Contenido Alcohólico",
+  "derogado": false
+ },
+ "164-ter-2": {
+  "archivo": "articulos/art-0164-ter-2.md",
+  "sha256": "4f947984c0bfc6646454edf009d34294a490e5a3f33c3f1a8e197a205421b5d5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VII BIS · Del Impuesto a la Venta Final de Bebidas con Contenido Alcohólico",
+  "derogado": false
+ },
+ "164-ter-3": {
+  "archivo": "articulos/art-0164-ter-3.md",
+  "sha256": "244500ee7fcd4129d9372d19d7d1372623aaa71ef65308cf1baec0d1f8536e0d",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VII BIS · Del Impuesto a la Venta Final de Bebidas con Contenido Alcohólico",
+  "derogado": false
+ },
+ "164-ter-4": {
+  "archivo": "articulos/art-0164-ter-4.md",
+  "sha256": "ffafb0b3d7eedcb20dc1bff85b444c07d3ecf8e5e1d0ce38eb3b1738edabfb28",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VII BIS · Del Impuesto a la Venta Final de Bebidas con Contenido Alcohólico",
+  "derogado": false
+ },
+ "164-ter-5": {
+  "archivo": "articulos/art-0164-ter-5.md",
+  "sha256": "d39d326b516aad6d515094cfd7d4bc8e1671d987cafd3ff6f30094e3b2d6f211",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VII BIS · Del Impuesto a la Venta Final de Bebidas con Contenido Alcohólico",
+  "derogado": false
+ },
+ "164-ter-6": {
+  "archivo": "articulos/art-0164-ter-6.md",
+  "sha256": "bde2c30f2f64185e336bbcf5169b0c1bab7b295cb14e6b3aeef50264b1e7a66f",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VII BIS · Del Impuesto a la Venta Final de Bebidas con Contenido Alcohólico",
+  "derogado": false
+ },
+ "165": {
+  "archivo": "articulos/art-0165.md",
+  "sha256": "b0423ac26ed07b1dec01fc1a8a7e8abbd79cc31cb70f805822c03689b5388172",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VIII · De las Contribuciones de Mejoras",
+  "derogado": false
+ },
+ "166": {
+  "archivo": "articulos/art-0166.md",
+  "sha256": "3d53517a8b3b02651357c72a0907a0d4136e10536661c97f95f438ae882c1309",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VIII · De las Contribuciones de Mejoras",
+  "derogado": false
+ },
+ "167": {
+  "archivo": "articulos/art-0167.md",
+  "sha256": "fd50c78933ae568e3c744202ed9977be576abf63f7177c85d71e2fd50b57f1bb",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VIII · De las Contribuciones de Mejoras",
+  "derogado": false
+ },
+ "168": {
+  "archivo": "articulos/art-0168.md",
+  "sha256": "e001478ebf5b3931db3078fd71a697a705e6e369a10c194c14b6d307c6277cce",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VIII · De las Contribuciones de Mejoras",
+  "derogado": false
+ },
+ "169": {
+  "archivo": "articulos/art-0169.md",
+  "sha256": "54ef6cf4eef37c7b5e657aa9000c8fedda8132585697354c8f8b42f9f1fe9823",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VIII · De las Contribuciones de Mejoras",
+  "derogado": false
+ },
+ "170": {
+  "archivo": "articulos/art-0170.md",
+  "sha256": "3ab060d9d3e40a46f5664dc5e0f16b42e5ab973971f4f44974d698efaeeddfe7",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VIII · De las Contribuciones de Mejoras",
+  "derogado": false
+ },
+ "171": {
+  "archivo": "articulos/art-0171.md",
+  "sha256": "7b8ca3d6384ba9d18d8f03bd1968426c58ac4fcf6bd8bc99d4d0ffef2c250e7c",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo VIII · De las Contribuciones de Mejoras",
+  "derogado": false
+ },
+ "172": {
+  "archivo": "articulos/art-0172.md",
+  "sha256": "bc811d971699486be5f4bdc34e6fb0f7ccdd369017b58f564a2b79e7c5df1970",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "173": {
+  "archivo": "articulos/art-0173.md",
+  "sha256": "96c81ca3f339cf8f29e023aca18c9b15d1d241321703148cc096ca06a546ed7b",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "174": {
+  "archivo": "articulos/art-0174.md",
+  "sha256": "ee5375b03616e88d153f5a43064655b4f58373813b689c00b681573e8e9d9362",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "175": {
+  "archivo": "articulos/art-0175.md",
+  "sha256": "d1f595ae9fb5990334dc7b42c4d2eb54264c0c3e265a4e4b9d38ad3a630ca5a0",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "176": {
+  "archivo": "articulos/art-0176.md",
+  "sha256": "914e160358cbc09c4b8b33fc5899b2a34deee99cd15de7a58f8da4856542879a",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "177": {
+  "archivo": "articulos/art-0177.md",
+  "sha256": "1832f774e6eb0a3e8a9c64873e0cf85330f93f8ecbe20b33a192d4eb8ab37803",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "178": {
+  "archivo": "articulos/art-0178.md",
+  "sha256": "07231d2b843243f5d85386841f50e4ce03b062b39ce94fe74a4d8887e16e0a30",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "178-bis": {
+  "archivo": "articulos/art-0178-bis.md",
+  "sha256": "77c26a40ce417493b79f8128b608c1cfc3d061e0be30c69ef7219b542f98c913",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "179": {
+  "archivo": "articulos/art-0179.md",
+  "sha256": "a316bf97668a4737b6ced832abcbc9b825f9ceffc008624da2f30b366462c9e4",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": true
+ },
+ "180": {
+  "archivo": "articulos/art-0180.md",
+  "sha256": "1409d2188fa187ca783d6e4fde9d71673ac0b6691cce43fc024c192aa4942ee4",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "180-bis": {
+  "archivo": "articulos/art-0180-bis.md",
+  "sha256": "fadbfd434507ce8dbb669a14b64be82e1391356f7b1a8f1f1248c6e88d2368fa",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": true
+ },
+ "181": {
+  "archivo": "articulos/art-0181.md",
+  "sha256": "b487aadfeeecf5f24382bb728f68ae794b1775d978e390e1e58e6987ba9d60f8",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "181-bis": {
+  "archivo": "articulos/art-0181-bis.md",
+  "sha256": "bbe8e1e85b9d38ae4fd5106b48a79856642d32d64f4b2bfb886b5d36e299690b",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "182": {
+  "archivo": "articulos/art-0182.md",
+  "sha256": "02d2d8f16947ce69e0799f2a4dbd777b527562b342bdbe7b9438cdad2073daa9",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "183": {
+  "archivo": "articulos/art-0183.md",
+  "sha256": "e20583fd64f03c6795cb8c04489bae62af4c12e92bd404b5803d0563560e06fb",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "184": {
+  "archivo": "articulos/art-0184.md",
+  "sha256": "baac317d850279c012fa91daeb473c8f4dff57aed9ad6c60b4d9195759149786",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "185": {
+  "archivo": "articulos/art-0185.md",
+  "sha256": "5d90d575413b5266c3b90bbed0492ea833e13cf03fb9e3574e80909ecb3ab38a",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "186": {
+  "archivo": "articulos/art-0186.md",
+  "sha256": "2e78ededd8bc4d9da10ab00ad7a5e58a3338b262a6a0249217755123eae8a6e6",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "187": {
+  "archivo": "articulos/art-0187.md",
+  "sha256": "43e1b148d0a1c241d4b2febb6a7a24de32b72829a9806556812241f2c236e03b",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": true
+ },
+ "188": {
+  "archivo": "articulos/art-0188.md",
+  "sha256": "56fdf7c9eb4bfca8cfbcd59aed2b64d4bd8e67ce4a2c5ffaa190900c4447f2e8",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": true
+ },
+ "189": {
+  "archivo": "articulos/art-0189.md",
+  "sha256": "37497088a03cb33a9efe2a0a8d7a88e0cb933eef605833738fb05b4e1abe0e2f",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "190": {
+  "archivo": "articulos/art-0190.md",
+  "sha256": "088035c50f959d8487696f8ceb1d386416014fde3f575dafed51544572cfb1ff",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "191": {
+  "archivo": "articulos/art-0191.md",
+  "sha256": "f5510847f06b61ed87d1d2d706c76f6ed827ba2f2bca58d8fd761a683e2a2c56",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "192": {
+  "archivo": "articulos/art-0192.md",
+  "sha256": "cf07f58055443605bc97c67ef58d56af99ae77686b3c03dca312df24b08cf509",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "193": {
+  "archivo": "articulos/art-0193.md",
+  "sha256": "e7f19548a7cfda919494467426fa0311f603b531fd8f6ae608ba4723fe012874",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "194": {
+  "archivo": "articulos/art-0194.md",
+  "sha256": "73b80e10bc12b8cc94306c3c6665383e816cef7f0681b528af0163b2ceb1ca61",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "195": {
+  "archivo": "articulos/art-0195.md",
+  "sha256": "663a1066520339944a0d872c669ba7df953f04f4912d94dbecf48d59d5331d3f",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "196": {
+  "archivo": "articulos/art-0196.md",
+  "sha256": "80eac61328eaa2fd7120c9233464037eb340a61bd907a697f7aff04e671a2976",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "197": {
+  "archivo": "articulos/art-0197.md",
+  "sha256": "50cdd312aa6c379776705adc346967444f5161e1973647e8abb4b296cb60babe",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "198": {
+  "archivo": "articulos/art-0198.md",
+  "sha256": "df09654f207dd8315adbbf442e390bcae06fe65fb3af2a24830bde9bd5f2d5d5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "199": {
+  "archivo": "articulos/art-0199.md",
+  "sha256": "5ddbd07646b064f8ebb4c4990626f483aef9ac9ed8023c2442adac84dc3011e4",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "200": {
+  "archivo": "articulos/art-0200.md",
+  "sha256": "c4c83f05c0ba790fbbc64a58dc2c2743c642577f6c1fd4cab656c0ecfdff110c",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "201": {
+  "archivo": "articulos/art-0201.md",
+  "sha256": "3085eaa488e40cabf9f22dca23eb97e5671806c2b6995b487afde183049d28c0",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "203": {
+  "archivo": "articulos/art-0203.md",
+  "sha256": "694cea58bf76b18226f3f65ea3f1b4dbc64ccd016cc864b7a043fcee5ec7268b",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "204": {
+  "archivo": "articulos/art-0204.md",
+  "sha256": "d6dbbb336b5e8e39a9170a611b34aade7a5db6b83b59339f3ddbc54be9a255e3",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "205": {
+  "archivo": "articulos/art-0205.md",
+  "sha256": "2bc86c7215e1b8171df61dfcb757de54849cfb3ab16c4e6de25195cb0f49d523",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "206": {
+  "archivo": "articulos/art-0206.md",
+  "sha256": "84fc6db3ccdd1aab52b11aae4e957610dae9f4b49442e8fd558991d3a7dd5133",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": true
+ },
+ "207": {
+  "archivo": "articulos/art-0207.md",
+  "sha256": "0e2f9ce8193ad0047741fdc3f742e5699e913cbaef725601652825f6427ebf26",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "208": {
+  "archivo": "articulos/art-0208.md",
+  "sha256": "d902377dfd0ed4d4aecc8dd14d1ca08108983acaacc796a0102a1b0b14ab49ad",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "209": {
+  "archivo": "articulos/art-0209.md",
+  "sha256": "d558af41ab4a1adf2d1a3bdbb43f1a7fee2ae1192b8ad82a1032c686d78ecdb4",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "210": {
+  "archivo": "articulos/art-0210.md",
+  "sha256": "158d8f34c7418f284d0520e382f06247e19b2696bb0c0b142c81293951b8e2c2",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "211": {
+  "archivo": "articulos/art-0211.md",
+  "sha256": "35aa02538bac4a183a47f3a06c8d5f6274906fdd74142e396e02178e75b68b84",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "212": {
+  "archivo": "articulos/art-0212.md",
+  "sha256": "6336f8ad3400ca6be4bfe8dda6e476d7b88217fe4e03e19421599ec0da69ec19",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "213": {
+  "archivo": "articulos/art-0213.md",
+  "sha256": "67178bb2b4a3bf5db8b3643e877828fd96c1b0827f151a055972852d5f9b8df8",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "214": {
+  "archivo": "articulos/art-0214.md",
+  "sha256": "cc546871b63601ece4ce2af8c8e1057aec201e28365f3fdb131ffdbe933928e0",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "215": {
+  "archivo": "articulos/art-0215.md",
+  "sha256": "02d0da4831251666db5e2b5a401092ff127f6458dd3773bb4130b868e8ae87d4",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "216": {
+  "archivo": "articulos/art-0216.md",
+  "sha256": "bfdca8830246bff59de4b45bde29fe59773172bf049feade9cc58008575eb59e",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "217": {
+  "archivo": "articulos/art-0217.md",
+  "sha256": "3e2841dd468e4dfe63f329ccb359e2220f136475f87d552ca57dcbe23c23c428",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "218": {
+  "archivo": "articulos/art-0218.md",
+  "sha256": "4983821c0a232860806fd632faf533e27f696c67d4918cae909f2e88dd07a752",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "219": {
+  "archivo": "articulos/art-0219.md",
+  "sha256": "bdf0ce65478accf3372d7bbc00b8dcb74280b05e120c890dff6433dee023bb54",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "220": {
+  "archivo": "articulos/art-0220.md",
+  "sha256": "efafa4195ce8ca270984a574af9805af753f945376dbabceab25aa80db9adae8",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "221": {
+  "archivo": "articulos/art-0221.md",
+  "sha256": "74d74462428512182cafc5c0493f3cf00d4134c012d064220adf851d5d134a57",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "222": {
+  "archivo": "articulos/art-0222.md",
+  "sha256": "ba9aff0f3253d2c01260d8e3c98eb9f185082b5f4680c2a6497700b68ef39609",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "223": {
+  "archivo": "articulos/art-0223.md",
+  "sha256": "65cb8e4cfd235755e802410b40e2b7398c72103b3e40474c0e04a3f41609addf",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": true
+ },
+ "224": {
+  "archivo": "articulos/art-0224.md",
+  "sha256": "19c3f37b3adaf62d13105bd0d5cc3d934af3b11af9d1c7edf30f5ee8d63e57ef",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": true
+ },
+ "225": {
+  "archivo": "articulos/art-0225.md",
+  "sha256": "60c041644c7c0f96b8fda85b071dd1279887e49fcf182eca5c9a3ef7f80982a0",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "226": {
+  "archivo": "articulos/art-0226.md",
+  "sha256": "cff6f691666a9edef6ce8f3439814b0ee512bc7bb310c73d921cce71c084e32d",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "227": {
+  "archivo": "articulos/art-0227.md",
+  "sha256": "87f534b7e41ac9c56eeb47b2ed67939b5d4fed9c36c45500a0770a8afee601b2",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "228": {
+  "archivo": "articulos/art-0228.md",
+  "sha256": "c4428d494a4babd47b29d889613ae3ade3e0d4b8f0ee89b78b0ac8a417c6b89c",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "229": {
+  "archivo": "articulos/art-0229.md",
+  "sha256": "6520da547d6ce5eab26269ef81fe05d1e4bf84d6e1c49aa7ad90258c1472d8d9",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "230": {
+  "archivo": "articulos/art-0230.md",
+  "sha256": "a474155e951a80188075f72da9aa7b6d62dd6907e5574c59b97971be734965e9",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "231": {
+  "archivo": "articulos/art-0231.md",
+  "sha256": "28df7ef5af0c496a885d95167b3f38ac18a4d0e27dd0da08e10ff8d2747a7d50",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "232": {
+  "archivo": "articulos/art-0232.md",
+  "sha256": "3573946cb87a80312ad2ada87a4dd8f8f3daf30767062c775911df9113eef53c",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "233": {
+  "archivo": "articulos/art-0233.md",
+  "sha256": "50a31728bdf4a88296895d226d85b7d5e3846b82ee6955cfafac7568436ebf59",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "234": {
+  "archivo": "articulos/art-0234.md",
+  "sha256": "e0c2697bf793e89fccff19393d88f227c7588568ed9b76e19cbe0b3186117cb7",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "235": {
+  "archivo": "articulos/art-0235.md",
+  "sha256": "7a64905d34bb80a5b5c7692fe6a44770b89622ffc503130b7fd795e7c2b37497",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "236": {
+  "archivo": "articulos/art-0236.md",
+  "sha256": "9e3f141ffbca0f1d3a7c9e580c57f5bb282e7fa4cc9adcc70092dc2a2de55289",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "237": {
+  "archivo": "articulos/art-0237.md",
+  "sha256": "ae28c303755807b29a831c170e7bb367e0f8f128cd70c9fe75afe93496fa16a5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "238": {
+  "archivo": "articulos/art-0238.md",
+  "sha256": "030895a4a5f6e0266f953f5653419160f803309b69dac88bb256bd434d465584",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "239": {
+  "archivo": "articulos/art-0239.md",
+  "sha256": "81b71596a69c0f50ba265e2b93906916871c4409f81c0ed65b4f7d924f1da6e9",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "240": {
+  "archivo": "articulos/art-0240.md",
+  "sha256": "847e145c5f83e61c083ee7c6e5dad96be10f2d88e16392098bfae85ed13a7451",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "241": {
+  "archivo": "articulos/art-0241.md",
+  "sha256": "9fad43e153bbcff7546382e6d2cab59afeb83deee8fa4dd2f7e570d38cdf9c03",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": true
+ },
+ "242": {
+  "archivo": "articulos/art-0242.md",
+  "sha256": "5dbffe39c4816773b12d6100bc1f2d3a2e9646f820dc0c923e23ff8c2564dcc4",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "243": {
+  "archivo": "articulos/art-0243.md",
+  "sha256": "c5e847faa93bd0a1901e8523f1ce645d4ecaa693e8cf95808b14ec410aacdc48",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "244": {
+  "archivo": "articulos/art-0244.md",
+  "sha256": "1afd188ee4ffaa41606221e3a50d0197615dd756232d2ae9539e0acb58a907a9",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": true
+ },
+ "245": {
+  "archivo": "articulos/art-0245.md",
+  "sha256": "88cf51ac1bcbf17afcc4d5fac6d82275edbdfc9439fbbb6ea032a7af1fe6a387",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "246": {
+  "archivo": "articulos/art-0246.md",
+  "sha256": "d6a58dc767bd37f84383da816acc010710599b82de5df65c802f2bcb34d008d5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "247": {
+  "archivo": "articulos/art-0247.md",
+  "sha256": "4afca628dfebd24fbc4deb113c5bbfaf299d132b0fbce4de83b0505fcaa3c72f",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "248": {
+  "archivo": "articulos/art-0248.md",
+  "sha256": "e10b2749e8d3f8b08d1194cbdb2e73ac0ae0fabc9c1224d8c3ffb10efac9b7a9",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "249": {
+  "archivo": "articulos/art-0249.md",
+  "sha256": "33ab78660f075fea4ffdf620714212f2c1c65d554141e5b51b2fdc9e484ba45b",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "249-bis": {
+  "archivo": "articulos/art-0249-bis.md",
+  "sha256": "bbdd1f18e0fca18232f1dc9051d784be033ffa27a5599868f8fde0ca8c9d7e9d",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "249-ter": {
+  "archivo": "articulos/art-0249-ter.md",
+  "sha256": "4bfa500abc841a8c2a5657972bc4cb3b9913a6084ff6c827e041ac4e764e64b2",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "249-quater": {
+  "archivo": "articulos/art-0249-quater.md",
+  "sha256": "8de32a53ce21afac58911c50a7d52bd3105b93dcbae12d359ef1e3b6554accb7",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "249-quintus": {
+  "archivo": "articulos/art-0249-quintus.md",
+  "sha256": "5104852565cbb353292611440c1a2dcb90cea5d7c383774cdf3b1bcd7d05aee8",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "250": {
+  "archivo": "articulos/art-0250.md",
+  "sha256": "6ac4029de330a3203ea2b140a25e544538c5bbaed9818e603d95ab6fb856d737",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "251": {
+  "archivo": "articulos/art-0251.md",
+  "sha256": "96d33e4f4c5757094a58099ecf3e9169f78b069232aea38bdff6597d2a426232",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "252": {
+  "archivo": "articulos/art-0252.md",
+  "sha256": "db9935316470fcd05b660c9e07a6f24f05f77f8b7ce6a970584fd82f50f652d5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "253": {
+  "archivo": "articulos/art-0253.md",
+  "sha256": "cfb9fdb1c8986259cc8ddaf5412818027631fc91fdb281f9c6ee05a942f1d95a",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "254": {
+  "archivo": "articulos/art-0254.md",
+  "sha256": "2b759f5f5f1ee5f34106ecb0564ce76370ff8d1b2d40ffa44ae3704f0f283e05",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "255": {
+  "archivo": "articulos/art-0255.md",
+  "sha256": "1c2d6b3f896102ad6763e5d1618b4a11e385b500c16b5ac382a2641dae86103f",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "256": {
+  "archivo": "articulos/art-0256.md",
+  "sha256": "0b67e99e28a4c5b4e74dcbce952058a070146b0d1f4f25561b723ff11ee31f81",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "257": {
+  "archivo": "articulos/art-0257.md",
+  "sha256": "a7232dc86bbb4fb3bdf7e61dc7a1cfddd8d6ce2871556061b12733689a54e31c",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "257-bis": {
+  "archivo": "articulos/art-0257-bis.md",
+  "sha256": "88b5bc6353f490e6f9e5ed97825be5be226bd84b582018d74fa3ecf0d0b1a440",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "258": {
+  "archivo": "articulos/art-0258.md",
+  "sha256": "4d8f9c51432ddac23e7b737efd0dba13ed833466d34a6f2db17433abf9135ee4",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": true
+ },
+ "258-bis": {
+  "archivo": "articulos/art-0258-bis.md",
+  "sha256": "0a789ccb134e2c1baa3f8e568ad118b0cf89b31b2c8b5a64868449477d095015",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo IX · De los Derechos por la Prestación de",
+  "derogado": false
+ },
+ "259": {
+  "archivo": "articulos/art-0259.md",
+  "sha256": "438045d526333b63a9b41d89c98585ee19d29ffe5a3499c2bb2dbc30499683a7",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo X · De los Derechos por el Uso o Aprovechamiento de Bienes del Dominio Público",
+  "derogado": false
+ },
+ "260": {
+  "archivo": "articulos/art-0260.md",
+  "sha256": "db2a722975d3c24b86d2742f645b84b82139613e34b9593e5d82a4ac01a1578d",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo X · De los Derechos por el Uso o Aprovechamiento de Bienes del Dominio Público",
+  "derogado": false
+ },
+ "261": {
+  "archivo": "articulos/art-0261.md",
+  "sha256": "8d98c4f19aa1bda4bfe852870df341a091fe06ef732683dd3cf9ba6543cb7b48",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo X · De los Derechos por el Uso o Aprovechamiento de Bienes del Dominio Público",
+  "derogado": false
+ },
+ "262": {
+  "archivo": "articulos/art-0262.md",
+  "sha256": "3bbdb4f7706bc109056df0812cc7d029ec995443f329a4a0f6e9ef6f317539d5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo X · De los Derechos por el Uso o Aprovechamiento de Bienes del Dominio Público",
+  "derogado": false
+ },
+ "263": {
+  "archivo": "articulos/art-0263.md",
+  "sha256": "0cb6a68943068b8fdb1441a0cdeda77fa06d58d7a958f6b8627123ee6b31f130",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo X · De los Derechos por el Uso o Aprovechamiento de Bienes del Dominio Público",
+  "derogado": false
+ },
+ "264": {
+  "archivo": "articulos/art-0264.md",
+  "sha256": "12cc399d2caa20e27db38b50415924ecb2163d978b06642b39ca62b6a94e73b8",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo X · De los Derechos por el Uso o Aprovechamiento de Bienes del Dominio Público",
+  "derogado": false
+ },
+ "265": {
+  "archivo": "articulos/art-0265.md",
+  "sha256": "7c7be5000e4535a7ae6cf293b5a220692883d2c5c70d894fef22f6af58f7a472",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo X · De los Derechos por el Uso o Aprovechamiento de Bienes del Dominio Público",
+  "derogado": false
+ },
+ "266": {
+  "archivo": "articulos/art-0266.md",
+  "sha256": "83f264e8995985da760f17060f264fbdc36569af6e287a3d671e350d87e142dd",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo X · De los Derechos por el Uso o Aprovechamiento de Bienes del Dominio Público",
+  "derogado": false
+ },
+ "267": {
+  "archivo": "articulos/art-0267.md",
+  "sha256": "68e597c242e9bd809b62c47b85268ee32c12518c65adfeee5a7a83fa3ab21cb0",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo X · De los Derechos por el Uso o Aprovechamiento de Bienes del Dominio Público",
+  "derogado": false
+ },
+ "268": {
+  "archivo": "articulos/art-0268.md",
+  "sha256": "7529748c6dc647e55f1d9bde2e81ce0d37745c642481c96c9e1d97099a3b7398",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo X · De los Derechos por el Uso o Aprovechamiento de Bienes del Dominio Público",
+  "derogado": false
+ },
+ "269": {
+  "archivo": "articulos/art-0269.md",
+  "sha256": "9f40ac3649d10ba80e1db68483afdedd1ea1413e8e0635c6992281bd59375fc1",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo X · De los Derechos por el Uso o Aprovechamiento de Bienes del Dominio Público",
+  "derogado": false
+ },
+ "270": {
+  "archivo": "articulos/art-0270.md",
+  "sha256": "685eafde1688e3be9c3dcf3b5132b77d6df66e19095ee9ad414dfe2e07a655f0",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "271": {
+  "archivo": "articulos/art-0271.md",
+  "sha256": "a19dd4cd57e1e931c80a33e17cc8d5bb1cad36e8e77e399531135b9bd1f825f3",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "271-bis": {
+  "archivo": "articulos/art-0271-bis.md",
+  "sha256": "e271269ca7d9759eeb5c6c90c696c48b7c5077228d3873e403a596e3eacd0757",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "272": {
+  "archivo": "articulos/art-0272.md",
+  "sha256": "96279bd6dabc5e0edb56f1d4fb8ae08426b690838618819c6a49aa9207b163cb",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "273": {
+  "archivo": "articulos/art-0273.md",
+  "sha256": "17753049bc1979457289a92e58e4c4ba88fda1a03f431540357cdd645a7b4aa3",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "274": {
+  "archivo": "articulos/art-0274.md",
+  "sha256": "1af5fb16ef13c7344fb122ee5d77e91b61691acabf8d2c0db4d4a7a3fc6d81d4",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "275": {
+  "archivo": "articulos/art-0275.md",
+  "sha256": "711387f15a96f153ca973ed61943c0a20796171d831493123df08aee71f7bad3",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "275-bis": {
+  "archivo": "articulos/art-0275-bis.md",
+  "sha256": "ce211f4d0a5a02d9951f0c561ee9f88dc3b52cc0b0514e6e3381812b1cd5eb74",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "275-ter": {
+  "archivo": "articulos/art-0275-ter.md",
+  "sha256": "c84f6742b765325da7608c8873bd1cad66338ea48ec1b1a25f2a188b6d851439",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "275-quater": {
+  "archivo": "articulos/art-0275-quater.md",
+  "sha256": "ead79de4113f89cc1eb8e146ba71dbfc426dccc4df64b0928e6e5ea600719e63",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "276": {
+  "archivo": "articulos/art-0276.md",
+  "sha256": "1adbd6bbcccd2116427c5bd4c5cce96da88b101419a9f0e6942c80859c30021e",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "277": {
+  "archivo": "articulos/art-0277.md",
+  "sha256": "a9194eb81a1e53e4a5280166e4760c48051c63caa36a1e5f716983022eaf422e",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "278": {
+  "archivo": "articulos/art-0278.md",
+  "sha256": "8491100dbe703c356b2168d0efd7a68ee64783417073b4c6eb88f69a913f8d72",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "279": {
+  "archivo": "articulos/art-0279.md",
+  "sha256": "1ff66b7d7da3648714329303919c5ab67dbfe6b8b12420f8729c266db3ac4265",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "280": {
+  "archivo": "articulos/art-0280.md",
+  "sha256": "aeb57f7c0c8bc32636c9271a05725d0dea3ccc19de50ef57c1f39b01b158487c",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "281": {
+  "archivo": "articulos/art-0281.md",
+  "sha256": "b74cad5c4b658a48039a988fb1064d128e2dd8408db308413449d03151de1f43",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "282": {
+  "archivo": "articulos/art-0282.md",
+  "sha256": "1e1efbf8565e1991a87540cbd297cb3f9c435b74eb80f4bd0991d0df999dcfee",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "283": {
+  "archivo": "articulos/art-0283.md",
+  "sha256": "278361248082ecc2dc1c3dabe6d20fb6ca74dbf202ba04125ab632853ad6e9f3",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "284": {
+  "archivo": "articulos/art-0284.md",
+  "sha256": "182b646e867fa42e2769928ff9c309b78f8f19434d8a1c93c085e9f14346664a",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "285": {
+  "archivo": "articulos/art-0285.md",
+  "sha256": "9dd30ba663aad6389da2113db5bdc0e8a81103f7afee522049be3502698fc2ec",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "286": {
+  "archivo": "articulos/art-0286.md",
+  "sha256": "03d1423c8f32937171004caaf116a8319b0a9c477e2720ce09f9c0b92f34ed75",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "287": {
+  "archivo": "articulos/art-0287.md",
+  "sha256": "d65983e95b1d1c7ea51e144d23aab45f5bbf9b4b52304d56b8c14f023ee809a9",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "288": {
+  "archivo": "articulos/art-0288.md",
+  "sha256": "773f27ba8b68cc5601850404177204a0e3763e7a3e7a408f2dcf959aa2e09e16",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "289": {
+  "archivo": "articulos/art-0289.md",
+  "sha256": "77adc0d86dd7b66d79b2591f9a279b4459ca010cacbc46ed0c6591685b7382fd",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "290": {
+  "archivo": "articulos/art-0290.md",
+  "sha256": "f7541c169d53594d18732b53c38d818d47f29229eaecbf5b358bfc72285be753",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "291": {
+  "archivo": "articulos/art-0291.md",
+  "sha256": "6e36a8b02c75f4c6ffea373b8124debbbe5103c3d9dd071dafc6735910b5ef7b",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "291-bis": {
+  "archivo": "articulos/art-0291-bis.md",
+  "sha256": "3250a8b6304afa64c539544f7206798123e8ae24d594aa28d3f4c8d405e63a9d",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": true
+ },
+ "292": {
+  "archivo": "articulos/art-0292.md",
+  "sha256": "6e4645de9e2745b8d58bf7ac04c1945d2056dbbd186fb99f66c4c475221a2e9f",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "293": {
+  "archivo": "articulos/art-0293.md",
+  "sha256": "4d95ec78cd5e465617401e3435f55b02f696b11dbdb9dcd1d26d2116114fd70a",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "294": {
+  "archivo": "articulos/art-0294.md",
+  "sha256": "c22a66b5d20c9d140d7da0cd2bde3547271d0a293b0013452022e8bf37c6face",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "295": {
+  "archivo": "articulos/art-0295.md",
+  "sha256": "80ff36cdf11ab74c7fac832b9e29f201390bebce799b3c89bfe8d587ad847550",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "296": {
+  "archivo": "articulos/art-0296.md",
+  "sha256": "b6529467fc812f16204085d36cfa83b8db4b2c71ccb22ae20c4e1dd116d73bf3",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "296-bis": {
+  "archivo": "articulos/art-0296-bis.md",
+  "sha256": "803907ba2d31f3742f3274bedd032c1b6a4296f9ff0ae439a6123d1327a9e541",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "297": {
+  "archivo": "articulos/art-0297.md",
+  "sha256": "e13cb86d38423a58d58233e2d3efea46256aa238c24a163f2ede84202fee09b9",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título TERCERO · DE LOS INGRESOS POR / Capítulo XI · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "298": {
+  "archivo": "articulos/art-0298.md",
+  "sha256": "aea61bdb27a4fd306d6033a0a8baeac25b7ec4d3864fb137422c9b3cdac856b2",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo I · De los Aprovechamientos",
+  "derogado": false
+ },
+ "299": {
+  "archivo": "articulos/art-0299.md",
+  "sha256": "df9cf63aa43e69ea5225ecf8a1b550eb74557b0775828e10f838bc81a5298bb0",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo I · De los Aprovechamientos",
+  "derogado": false
+ },
+ "300": {
+  "archivo": "articulos/art-0300.md",
+  "sha256": "ded511d6aaef2c2d009b18321558bd3882ee85ab016f2acdeb2da7e8f964b00d",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo I · De los Aprovechamientos",
+  "derogado": false
+ },
+ "301": {
+  "archivo": "articulos/art-0301.md",
+  "sha256": "2e93d651e526ff5ba86121d4bb51a04f9888642623ec6e74e987433e98edf412",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo I · De los Aprovechamientos",
+  "derogado": false
+ },
+ "301-bis": {
+  "archivo": "articulos/art-0301-bis.md",
+  "sha256": "b7d0150656afee94ec713cd140c5fba16dedbbcf0a499561212801297e6c2dbd",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo I · De los Aprovechamientos",
+  "derogado": false
+ },
+ "302": {
+  "archivo": "articulos/art-0302.md",
+  "sha256": "35f41a0cd0066a91d4b88e1ae78df0b74f9fe309c4e4c998e1dcf3c68729d3c5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo I · De los Aprovechamientos",
+  "derogado": false
+ },
+ "303": {
+  "archivo": "articulos/art-0303.md",
+  "sha256": "9f636867f8d9bd623f402c78b7cea03b183728a62944fef00ccb0fd4824b0949",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo I · De los Aprovechamientos",
+  "derogado": false
+ },
+ "304": {
+  "archivo": "articulos/art-0304.md",
+  "sha256": "d108e053b3150107bb325637a2a2e4e501d18af1a484832e2b195754668dde25",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo I · De los Aprovechamientos",
+  "derogado": false
+ },
+ "305": {
+  "archivo": "articulos/art-0305.md",
+  "sha256": "55dfe0192bc271acd8ed4560550d206bcec0ef2239205872c0bd69ab0f63c152",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo I · De los Aprovechamientos",
+  "derogado": false
+ },
+ "306": {
+  "archivo": "articulos/art-0306.md",
+  "sha256": "baafbf1904458e6fef9ffce08f4a7d985463aa800f007704daf2d98db2b180f6",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo I · De los Aprovechamientos",
+  "derogado": false
+ },
+ "307": {
+  "archivo": "articulos/art-0307.md",
+  "sha256": "61ad205e65fc9c141199265cd7e881c73e359734b679e2f493d99de13afcb66d",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo I · De los Aprovechamientos",
+  "derogado": false
+ },
+ "307-bis": {
+  "archivo": "articulos/art-0307-bis.md",
+  "sha256": "07886bfce225864665008a0936a8ea30d1f0dc1617542b1df3d56a39fee682f1",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo I · De los Aprovechamientos",
+  "derogado": false
+ },
+ "307-ter": {
+  "archivo": "articulos/art-0307-ter.md",
+  "sha256": "e00903c85cf7558cd661c5b8109be76964cbe1662d2bcc92acc5fb556be3fdbf",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo I · De los Aprovechamientos",
+  "derogado": false
+ },
+ "308": {
+  "archivo": "articulos/art-0308.md",
+  "sha256": "9796dad5efa31b9b27c369c2dd6ba48b65d871661bec988c9dde586180881f80",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo II · De los Productos",
+  "derogado": false
+ },
+ "309": {
+  "archivo": "articulos/art-0309.md",
+  "sha256": "af308c8c4a14d7d18b227022ec02d813eb89b1d22b864ff8b17e42dac514fcae",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo II · De los Productos",
+  "derogado": false
+ },
+ "310": {
+  "archivo": "articulos/art-0310.md",
+  "sha256": "bf9f383db6d506f565221a08c0699c3c9fcd45b79cd66f84473bef1ea5559f93",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo II · De los Productos",
+  "derogado": false
+ },
+ "311": {
+  "archivo": "articulos/art-0311.md",
+  "sha256": "03e3ef225662d0aec0ef91b5847ac580390f3b7a0bbc9002bdf08ee624c7299b",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo III · De los Recursos Crediticios",
+  "derogado": false
+ },
+ "312": {
+  "archivo": "articulos/art-0312.md",
+  "sha256": "e8f9bda4f77a9a23c8d3bf15ccccf9e0c5474bcd7ba704e082a29f9f9c797d84",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo III · De los Recursos Crediticios",
+  "derogado": false
+ },
+ "313": {
+  "archivo": "articulos/art-0313.md",
+  "sha256": "c7eb03866ded7ba6ccc384aeb5d9a0098a6870d511919c9a1ce1c8bde9f23fef",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo III · De los Recursos Crediticios",
+  "derogado": false
+ },
+ "314": {
+  "archivo": "articulos/art-0314.md",
+  "sha256": "081ca16115acab0377ed98fb1a1b4b0382555175ea0533566e05100cd4f502a2",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo III · De los Recursos Crediticios",
+  "derogado": false
+ },
+ "315": {
+  "archivo": "articulos/art-0315.md",
+  "sha256": "83b257989f260951867929ccbd9446b0915c22ccd6398313ff1541d5fcbf8acc",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo III · De los Recursos Crediticios",
+  "derogado": false
+ },
+ "316": {
+  "archivo": "articulos/art-0316.md",
+  "sha256": "d1aabcf81f6978c3b660d3ed44cf4639b53d3c3b070cb013ca3f5a4ece0b75be",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo III · De los Recursos Crediticios",
+  "derogado": false
+ },
+ "317": {
+  "archivo": "articulos/art-0317.md",
+  "sha256": "cc900d3772c3b15447b7e4cd0f982930020d211f14c33628a899abfffeab8bd8",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo III · De los Recursos Crediticios",
+  "derogado": false
+ },
+ "318": {
+  "archivo": "articulos/art-0318.md",
+  "sha256": "ad66d6ff24f8227a5f7ceb89e1905922b3bf16f14a3aa693ab8eec2f670ab9b5",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo III · De los Recursos Crediticios",
+  "derogado": false
+ },
+ "319": {
+  "archivo": "articulos/art-0319.md",
+  "sha256": "20e341ef12a2d723c7b8e269118f6bc578a6b51e9437d199326cd3782ef714be",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo III · De los Recursos Crediticios",
+  "derogado": false
+ },
+ "320": {
+  "archivo": "articulos/art-0320.md",
+  "sha256": "92707b7428494e9b857f313b3c20ccf1edd37c5085872a1df8c9085278505695",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo III · De los Recursos Crediticios",
+  "derogado": false
+ },
+ "321": {
+  "archivo": "articulos/art-0321.md",
+  "sha256": "60c0fe1384638178f5464ede1386c7d1d572cd62d87ede6a29c7660d5aa2d8a6",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo IV · De las Participaciones, Aportaciones, Transferencias y Otros Ingresos Derivados de la Coordinación",
+  "derogado": false
+ },
+ "322": {
+  "archivo": "articulos/art-0322.md",
+  "sha256": "53ecb7b509253459a1dd7edaa2eb73de06d3e7cad9b3e111f44aec1dd7b7515d",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo IV · De las Participaciones, Aportaciones, Transferencias y Otros Ingresos Derivados de la Coordinación",
+  "derogado": false
+ },
+ "322-bis": {
+  "archivo": "articulos/art-0322-bis.md",
+  "sha256": "5117e174bdf7ac82b53fede1d16ffac7496c203da358c48daa3b429bf7240f03",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo IV · De las Participaciones, Aportaciones, Transferencias y Otros Ingresos Derivados de la Coordinación",
+  "derogado": false
+ },
+ "323": {
+  "archivo": "articulos/art-0323.md",
+  "sha256": "8785a3ef98e42fcc931f9ce521c13d453b4fea63b536895a2d1df0d1a21fe7a8",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo V · De los Otros Ingresos",
+  "derogado": false
+ },
+ "324": {
+  "archivo": "articulos/art-0324.md",
+  "sha256": "b1ecd87784f89a5433523fd993458daa681531a3166d456b6e2b66b928746917",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo V · De los Otros Ingresos",
+  "derogado": false
+ },
+ "325": {
+  "archivo": "articulos/art-0325.md",
+  "sha256": "fb916530029bc6ed1118e0d83b850113f984567243db2c49c586b44e738afe5d",
+  "ubicacion": "Libro PRIMERO · DE LOS INGRESOS / Título CUARTO · DE LOS INGRESOS NO PROVENIENTES DE CONTRIBUCIONES / Capítulo V · De los Otros Ingresos",
+  "derogado": false
+ },
+ "326": {
+  "archivo": "articulos/art-0326.md",
+  "sha256": "bd6232d857e4dfa4c22aa8694ac4bf8fe851d823b7c52bf553f092f688a428b3",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "327": {
+  "archivo": "articulos/art-0327.md",
+  "sha256": "da047e89e629f820756e56a9afe38857f19f5bc725e5aa65438e5bd90217eaba",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "328": {
+  "archivo": "articulos/art-0328.md",
+  "sha256": "27e89e4f750fadcfb4df2e3f965daedf6d649ec98fb8524a75242f6e20567bc1",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "329": {
+  "archivo": "articulos/art-0329.md",
+  "sha256": "f499fd77995eb1f885ad62ad76ef2799e233035a96066b423fb71b6319fb0324",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "330": {
+  "archivo": "articulos/art-0330.md",
+  "sha256": "5cb998b8ed606dccc8ead21202b046b9ac57576bfa8fc2e526fe287b34e91191",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "331": {
+  "archivo": "articulos/art-0331.md",
+  "sha256": "b4f40ca0ea534b8d334b0ba7b20fc4732b9bae7bf03abd81ffb3863e97eced5b",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "332": {
+  "archivo": "articulos/art-0332.md",
+  "sha256": "3e7b1c6a3d16613da576b1ce4a63f11bbb3b72db58fe2a38357eb820ca88ab6f",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "333": {
+  "archivo": "articulos/art-0333.md",
+  "sha256": "7835de92bab93f69bfd6833b43ee9c542315e7500beb2a9f7adda3056b2455c1",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo II · De la Recaudación",
+  "derogado": false
+ },
+ "334": {
+  "archivo": "articulos/art-0334.md",
+  "sha256": "2e25c5e33fb5cfb0abfe1cdc95e58bbcfd0983e75498d1558af1ec8578842a4f",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo II · De la Recaudación",
+  "derogado": false
+ },
+ "335": {
+  "archivo": "articulos/art-0335.md",
+  "sha256": "541b144577289e9d9511ec3423105944618eca60acd76fcd1775c821369f6031",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo II · De la Recaudación",
+  "derogado": false
+ },
+ "336": {
+  "archivo": "articulos/art-0336.md",
+  "sha256": "e90f31a8ed853f9e7fb7a1a1fdaaf898879e6e04c7db60aa88ee05f46afb8473",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo II · De la Recaudación",
+  "derogado": false
+ },
+ "337": {
+  "archivo": "articulos/art-0337.md",
+  "sha256": "2ee9ff7fa8d6514087b3f3430774aea3f8a12d455947d93cdd4fae577ad12994",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo II · De la Recaudación",
+  "derogado": false
+ },
+ "338": {
+  "archivo": "articulos/art-0338.md",
+  "sha256": "22309072b428cb9351fcf84410396d6ef0fb6488d1563b7e958a4c31e740e5b5",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo II · De la Recaudación",
+  "derogado": false
+ },
+ "339": {
+  "archivo": "articulos/art-0339.md",
+  "sha256": "ae9e7a190a16e881f1c84d7157996aa4a1311cdec92e732a989427daa31dff2d",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo II · De la Recaudación",
+  "derogado": false
+ },
+ "340": {
+  "archivo": "articulos/art-0340.md",
+  "sha256": "e16106e772c118af146a2b8099c0e6c2e1410853dfbd011dc14bb2ead427e4c0",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo II · De la Recaudación",
+  "derogado": false
+ },
+ "341": {
+  "archivo": "articulos/art-0341.md",
+  "sha256": "978d48e27cab179a2df8f788ede2014914ef5b54b2f830276a321f474fe48fe4",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo II · De la Recaudación",
+  "derogado": false
+ },
+ "342": {
+  "archivo": "articulos/art-0342.md",
+  "sha256": "7fc5e409658a2bcea58bc6002f35208fb69fc490d1802c420fa8525dd8fca274",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo II · De la Recaudación",
+  "derogado": false
+ },
+ "343": {
+  "archivo": "articulos/art-0343.md",
+  "sha256": "78c0ea3df3c7a48bd34ddcabd1716fa5f2f6dfe01b5f2e9c231c64115f30a1b2",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo II · De la Recaudación",
+  "derogado": false
+ },
+ "344": {
+  "archivo": "articulos/art-0344.md",
+  "sha256": "681ff3649cfb6e5705a409820997874a905e85d8c362df623b2fbe90b6cdb6ff",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo II · De la Recaudación",
+  "derogado": false
+ },
+ "345": {
+  "archivo": "articulos/art-0345.md",
+  "sha256": "003eeb3d90ed4e2af7204fe6b81a98379216c7e43e9e746d36ee4140387d523a",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo II · De la Recaudación",
+  "derogado": false
+ },
+ "346": {
+  "archivo": "articulos/art-0346.md",
+  "sha256": "58a483023a6531c1c0b7873cf6baa84ad2d3f30ea7be7bdea63c796951c339ba",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo II · De la Recaudación",
+  "derogado": false
+ },
+ "347": {
+  "archivo": "articulos/art-0347.md",
+  "sha256": "5e902534b38ae226d3253fd9c9d860a2b62a64d12326867df6ed05db285cd1de",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo II · De la Recaudación",
+  "derogado": false
+ },
+ "348": {
+  "archivo": "articulos/art-0348.md",
+  "sha256": "d7acb42c02140b59a4866710c9b01fb5ba7d7b0856432bd3360cc1c584ada251",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo II · De la Recaudación",
+  "derogado": false
+ },
+ "349": {
+  "archivo": "articulos/art-0349.md",
+  "sha256": "3c902ac9630818f35e344780a47482c52dde82cc9e5bcfd8916b691f4ffd37a2",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo II · De la Recaudación",
+  "derogado": false
+ },
+ "350": {
+  "archivo": "articulos/art-0350.md",
+  "sha256": "0e0567d4132be52c4819a9701f09ae39be168d4e0acef1e97647f24310038f0a",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo III · De la Custodia y Destino de Bienes",
+  "derogado": false
+ },
+ "351": {
+  "archivo": "articulos/art-0351.md",
+  "sha256": "3137b07908d605c4c96e0d686c5cd5e43940a02e7d8cddc01fb482193a965b19",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo III · De la Custodia y Destino de Bienes",
+  "derogado": false
+ },
+ "352": {
+  "archivo": "articulos/art-0352.md",
+  "sha256": "c3705a625d1d39ab0e096a8232a6fdcc99a985b0826080c99e9f05c4b5198b31",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo III · De la Custodia y Destino de Bienes",
+  "derogado": false
+ },
+ "353": {
+  "archivo": "articulos/art-0353.md",
+  "sha256": "8ff8a7e07b140c0cfe4c220c50c3d16fe9f275f22387ac5443d6314ff34fa5d2",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo III · De la Custodia y Destino de Bienes",
+  "derogado": false
+ },
+ "354": {
+  "archivo": "articulos/art-0354.md",
+  "sha256": "29390fc435cd6002d45b1f0207e38b9e1bdb01a32ea3d5b6129e7769664a58a1",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo III · De la Custodia y Destino de Bienes",
+  "derogado": false
+ },
+ "355": {
+  "archivo": "articulos/art-0355.md",
+  "sha256": "7093b343f7f1b4f0f37211a638fd544f8a162bd0a510e2126116e0e6c8106ce7",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo III · De la Custodia y Destino de Bienes",
+  "derogado": false
+ },
+ "356": {
+  "archivo": "articulos/art-0356.md",
+  "sha256": "f9a47a8036ce0b29b5851f7f20f5f21b70d08133ce6fdd04e5756144074146ae",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo III · De la Custodia y Destino de Bienes",
+  "derogado": false
+ },
+ "357": {
+  "archivo": "articulos/art-0357.md",
+  "sha256": "8d2c317fcc2f3bae0e3f79624b5366871d6bc3ee3bf0eff022f8a036bbc52caf",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título PRIMERO · DE LA PRESTACIÓN DE LOS SERVICIOS / Capítulo III · De la Custodia y Destino de Bienes",
+  "derogado": false
+ },
+ "358": {
+  "archivo": "articulos/art-0358.md",
+  "sha256": "b7972efda5158ad3e1fb36f8bb70283017b45299ad81c34a34813528687b25fe",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DE LA MINISTRACIÓN DE FONDOS Y DE LOS PAGOS / Capítulo ÚNICO · Del Pago de Devoluciones",
+  "derogado": false
+ },
+ "359": {
+  "archivo": "articulos/art-0359.md",
+  "sha256": "fa6b474d042005d9f1d36cd66cb74f2b11946cb2aff621782848068be7d53107",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DE LA MINISTRACIÓN DE FONDOS Y DE LOS PAGOS / Capítulo ÚNICO · Del Pago de Devoluciones",
+  "derogado": false
+ },
+ "360": {
+  "archivo": "articulos/art-0360.md",
+  "sha256": "38efe4a1572b791f11bd746632695abf096bba52ad2eaef82482a9d6f8b5ebce",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · De las Garantías del Cumplimiento de Obligaciones",
+  "derogado": false
+ },
+ "361": {
+  "archivo": "articulos/art-0361.md",
+  "sha256": "fd96e0bb1f8ecee90f8c8365a3f280598908715eed46f8b2cdfdd9624c04df53",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · De las Garantías del Cumplimiento de Obligaciones",
+  "derogado": false
+ },
+ "362": {
+  "archivo": "articulos/art-0362.md",
+  "sha256": "8ea5677a7979905c59cc44144b29e2c1f3fc8c236f56bf66a3a33a3e54096efd",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · De las Garantías del Cumplimiento de Obligaciones",
+  "derogado": false
+ },
+ "363": {
+  "archivo": "articulos/art-0363.md",
+  "sha256": "628d98573ec9ade4caba9d937f7defdab40aab33ba98110018d5591004c7a38a",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo II · De la Calificación, Aceptación, Registro y Guarda de las Garantías",
+  "derogado": false
+ },
+ "364": {
+  "archivo": "articulos/art-0364.md",
+  "sha256": "26721dd3cddc4f69ea0467a06224d4db5d4cab4ae3a86a1e49b51b24135639ac",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo II · De la Calificación, Aceptación, Registro y Guarda de las Garantías",
+  "derogado": false
+ },
+ "365": {
+  "archivo": "articulos/art-0365.md",
+  "sha256": "3951c29d7901e49661adbcb9b3926fc394dbe8ab0264ad4a953dac9707e6b2e6",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo III · De la Cancelación y Devolución de las",
+  "derogado": false
+ },
+ "366": {
+  "archivo": "articulos/art-0366.md",
+  "sha256": "c82bbb480f8570d9c6a6b20e76576bf83dbb5ef11e8e310c0b0070472b55a63e",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo III · De la Cancelación y Devolución de las",
+  "derogado": false
+ },
+ "367": {
+  "archivo": "articulos/art-0367.md",
+  "sha256": "87c5164803364952320a782f3fe360b7c086497d7f19fba4f878073a45eab64c",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo IV · De la Efectividad y Aplicación de las",
+  "derogado": false
+ },
+ "368": {
+  "archivo": "articulos/art-0368.md",
+  "sha256": "b0c020e676ae4b7c9e084fc090fe003887141d41900dde0f6021354b5bdeb52c",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo IV · De la Efectividad y Aplicación de las",
+  "derogado": false
+ },
+ "369": {
+  "archivo": "articulos/art-0369.md",
+  "sha256": "362ecfaa80a0591d969012b05ddf709e69c4db9285afd10b8c769e0dbcf6693c",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo IV · De la Efectividad y Aplicación de las",
+  "derogado": false
+ },
+ "370": {
+  "archivo": "articulos/art-0370.md",
+  "sha256": "9f8b64f235efd1d08047bdf97429f01481485075eba50ba3321f28f37e6969df",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo IV · De la Efectividad y Aplicación de las",
+  "derogado": false
+ },
+ "371": {
+  "archivo": "articulos/art-0371.md",
+  "sha256": "9979a969964a353323d5d8885f0876f2c3d6b31b8f345fcdc6f12180c716dbd4",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo IV · De la Efectividad y Aplicación de las",
+  "derogado": false
+ },
+ "372": {
+  "archivo": "articulos/art-0372.md",
+  "sha256": "6e6feaf1eb13b48f864485e1c51542ad97fa382ce330fd6f629e2ddccb20f479",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "373": {
+  "archivo": "articulos/art-0373.md",
+  "sha256": "379cdd611403aa572a820bc3d803dbc34a3336bff25213f9362ebe6c32f10c81",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "374": {
+  "archivo": "articulos/art-0374.md",
+  "sha256": "dce9019fba572b84a1bb5d24a1558edaea1c2fa3d1d9e54cadb7839b44a2b891",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "375": {
+  "archivo": "articulos/art-0375.md",
+  "sha256": "34a054f00548299dc372fa93235201772547b410a2f8c726ff6a3dc7cf90d5b1",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "376": {
+  "archivo": "articulos/art-0376.md",
+  "sha256": "6f3668dd28b8fa2f0251cba399be3d036518814537c796d878ee83d4dab59cb5",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "377": {
+  "archivo": "articulos/art-0377.md",
+  "sha256": "e8d7e88c1220229631634f1481e17d8dfed61d6b46c49d3fc9d00425c598d44c",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "378": {
+  "archivo": "articulos/art-0378.md",
+  "sha256": "ad7a2a58b30305d017817a1172440d604fd5aa8631f665e14a83779e07ea16ae",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "379": {
+  "archivo": "articulos/art-0379.md",
+  "sha256": "6d08bcc818e0e6b2d119b8086e846b793c02e9bb43d500c74b60f7ba8f7281eb",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "380": {
+  "archivo": "articulos/art-0380.md",
+  "sha256": "797a1cbd40d3774ab6366f9467f9477994ef8a65d2f3708209a22c2f12208baf",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "381": {
+  "archivo": "articulos/art-0381.md",
+  "sha256": "db32f88597bca2dde8662aabdb02e1557fe766217f4d2212d0a8e5eb3ea37a37",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "382": {
+  "archivo": "articulos/art-0382.md",
+  "sha256": "bed8b44548982d3b060e9664698b5ef76bb4fade58836adbdc50e92376a5f5f1",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "383": {
+  "archivo": "articulos/art-0383.md",
+  "sha256": "3a80d151971ca623c41b5b0f678ab2f9e811ecaed159a3d0b086dc2b10201de7",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "384": {
+  "archivo": "articulos/art-0384.md",
+  "sha256": "e2b57c03289c00f003d87d6270800b1d31f7661f71fde99e5a66c6ae8ae392aa",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "385": {
+  "archivo": "articulos/art-0385.md",
+  "sha256": "433db7b0cb9dc3cc7efe41dbfa3940fcfb666d501db45421697f8abe9b07e6e4",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "386": {
+  "archivo": "articulos/art-0386.md",
+  "sha256": "773695edd80c06facf51d8cadb91c5bb8969c447289bae1efff03f3c59f88142",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "387": {
+  "archivo": "articulos/art-0387.md",
+  "sha256": "3303179a11ddf85bf25dafcf64f865ae8ea69db34ae42074177a652eb73f1449",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "388": {
+  "archivo": "articulos/art-0388.md",
+  "sha256": "61d2ec93f4feef5225608bbdf8d47e5f3f7f2cad96f5c758072d93eb82cfd1cf",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "389": {
+  "archivo": "articulos/art-0389.md",
+  "sha256": "bdd3d8d7fb7f0853d161b19cfc5d22cb647689acd8c49a1057ba99d8ebe2837f",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "390": {
+  "archivo": "articulos/art-0390.md",
+  "sha256": "071e936409fe60a530b19349f184446ef941e78b29f384bfcda769e8d2f003fe",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "391": {
+  "archivo": "articulos/art-0391.md",
+  "sha256": "6ca1df234627f22a9f54a69717c42d77a1642a1186f68b3776a71406a6209f4f",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "392": {
+  "archivo": "articulos/art-0392.md",
+  "sha256": "f6d2fe404fd294f3886ff1cb2067fab96debbfe306e27d7d5e69aeb140a46a92",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "393": {
+  "archivo": "articulos/art-0393.md",
+  "sha256": "0e0549124992540333b551ebef4d9300500621dc3312a00bdf62fd1b74ae3349",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "394": {
+  "archivo": "articulos/art-0394.md",
+  "sha256": "5f2bc01b1b05a8849f6c476b7c4a385fbc7ec1ed46eba093223ac1e1fad1e2bf",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "395": {
+  "archivo": "articulos/art-0395.md",
+  "sha256": "b3d6b9254d14d5650dccf15e974331b8994aecf394c89d9cdf006d52400aecb4",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "396": {
+  "archivo": "articulos/art-0396.md",
+  "sha256": "9324b11035ae4f1277da4c83ae84a6ac6510e167bf1a1fd669fd020843cb586b",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "397": {
+  "archivo": "articulos/art-0397.md",
+  "sha256": "49042675e594b5047664bb91a631efc3b3c0899c283729214af700550a6e5422",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "398": {
+  "archivo": "articulos/art-0398.md",
+  "sha256": "fd7203a1b4b8fd2250bec63d50eae4c21d36447f2c0bca4bff9471fad9cb411b",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "399": {
+  "archivo": "articulos/art-0399.md",
+  "sha256": "5f1cffc102b93e4ea69a1dd826e9d42e7c6abba5e494e11a924d7fd4619b06e3",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "400": {
+  "archivo": "articulos/art-0400.md",
+  "sha256": "8de4ae3f91c7d0a4f48e7356aa96cd8c6eef7c2cf0bd4da7a2eeda84ded072b7",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "401": {
+  "archivo": "articulos/art-0401.md",
+  "sha256": "6ea282c8d300fa4daf7947b0647aec6bc745f07c4c7c229b3a901d420e97b02b",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "402": {
+  "archivo": "articulos/art-0402.md",
+  "sha256": "84622d89dac4ef63bf97f05731457f7325b1ef636de1f04b07fc1034c28cfdec",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "403": {
+  "archivo": "articulos/art-0403.md",
+  "sha256": "e7da1d9ebd361822ad74ef211a60a1cf7e6896282eca1906cae1c7bebb32ea18",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "404": {
+  "archivo": "articulos/art-0404.md",
+  "sha256": "4f8f16c40bc89dd7ff6b813f373bfa60cc05f5b18d58b68c4f28d2eed2cd8600",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "405": {
+  "archivo": "articulos/art-0405.md",
+  "sha256": "e3f37332b5f726bab901883280ee140192999c4e1f5a984c39b80e7fdef4eefb",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "406": {
+  "archivo": "articulos/art-0406.md",
+  "sha256": "ff0c2440497445e6e7ffce40304156ba57776615933829ae1d8039f02e005547",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "407": {
+  "archivo": "articulos/art-0407.md",
+  "sha256": "3a3c3f0c1e941620a6c222f7e2d6c93b1d7a4155261acc1cc5f7b595af246d69",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "408": {
+  "archivo": "articulos/art-0408.md",
+  "sha256": "8f907f813778bb5f2cef793ccf8bf597d82ac27e1853c26012e1c477c943cf60",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "409": {
+  "archivo": "articulos/art-0409.md",
+  "sha256": "e2062a147acc22e463dd9a030b6717272a6d33c3cb1dfbdfa97578384c8f5c6f",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "410": {
+  "archivo": "articulos/art-0410.md",
+  "sha256": "47aa8abb5c0a225630f26f01e1287c5f7d87171a28d9ea132bfff3b23442e03a",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "411": {
+  "archivo": "articulos/art-0411.md",
+  "sha256": "8b0086fdc3fcbac602c05710c7a875e2225524c1ed3fd17f8b94063066777127",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "412": {
+  "archivo": "articulos/art-0412.md",
+  "sha256": "10fb374f4e13a7b752414c7b4fab4bd73689f8824562db1e875001197a89239f",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "413": {
+  "archivo": "articulos/art-0413.md",
+  "sha256": "07b0b2aeea965186e864f747d2bc1ca5126f84a4d85d99c5151969c9ff5343c5",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "414": {
+  "archivo": "articulos/art-0414.md",
+  "sha256": "46d37362682599410dad42c5b368c0e4324e1146746a513733e2d5b8f78e9a12",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "415": {
+  "archivo": "articulos/art-0415.md",
+  "sha256": "5170d69a40d3279b71ea1eb1cafdafd3109572ec66b795b9a999f0774adafa74",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "416": {
+  "archivo": "articulos/art-0416.md",
+  "sha256": "a0cb6ca1597a043902d84fb387bf5a786a2605340c50aa735383e5a5d5f32401",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "417": {
+  "archivo": "articulos/art-0417.md",
+  "sha256": "a1c1e04ca23bd2ea3f68e98bc4062e224958f5833ab9574a93107292b16ac819",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "418": {
+  "archivo": "articulos/art-0418.md",
+  "sha256": "42cfea85744b713c11a3d0f723255348790aac28940962cbadb2ea47d08aaf1a",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "419": {
+  "archivo": "articulos/art-0419.md",
+  "sha256": "fbd27ba273643a0aac72e8d7d1e64e850a13909ce131ba390b72419e6f6f2884",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "420": {
+  "archivo": "articulos/art-0420.md",
+  "sha256": "04b1267436b14541bce394cbe63d80df8d23981fbdfc78be448945b3a3fb6e3a",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LAS GARANTÍAS A FAVOR DEL GOBIERNO DE LA CIUDAD DE MÉXICO, DISTINTAS DE / Capítulo I · Del Procedimiento Administrativo de",
+  "derogado": false
+ },
+ "421": {
+  "archivo": "articulos/art-0421.md",
+  "sha256": "21b3fa84aaf70f91fc560b2b56ad8e4d0369ed4fc2ee8fc92f9f74113f958997",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capítulo I · Consideraciones Generales",
+  "derogado": false
+ },
+ "422": {
+  "archivo": "articulos/art-0422.md",
+  "sha256": "7248e85c024ea6ee5dd3486371cfb4f97b2c434e65781d8d5c7e2c8d84d0acf4",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capítulo I · Consideraciones Generales",
+  "derogado": false
+ },
+ "423": {
+  "archivo": "articulos/art-0423.md",
+  "sha256": "2374d0d261fe9aa8d1d4568867202aff3f55df3b4370f548332f8943848be7b0",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capítulo I · Consideraciones Generales",
+  "derogado": false
+ },
+ "424": {
+  "archivo": "articulos/art-0424.md",
+  "sha256": "3852cc9c9ce1ec124b70bab1178c493285ff9893b6a0d9a6fd386f12aa32662c",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capítulo I · Consideraciones Generales",
+  "derogado": false
+ },
+ "425": {
+  "archivo": "articulos/art-0425.md",
+  "sha256": "a75064550522b0aa7bee5132e92c4bee547a1cfbc5adface066d4ca43b69e8d2",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capítulo I · Consideraciones Generales",
+  "derogado": false
+ },
+ "426": {
+  "archivo": "articulos/art-0426.md",
+  "sha256": "5463190530a5969e3e33faac0f18ca47666201a2eb4526be4e983f018b29284d",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capítulo I · Consideraciones Generales",
+  "derogado": false
+ },
+ "427": {
+  "archivo": "articulos/art-0427.md",
+  "sha256": "cc5e563e62d3d87ecf280bd02f266ef91564fb7be7d9dd628e993b55b7251620",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capítulo I · Consideraciones Generales",
+  "derogado": false
+ },
+ "428": {
+  "archivo": "articulos/art-0428.md",
+  "sha256": "eea1d4909033747a940c8fae4e95ecccc8bae2ba396c82024d1506612e9fbba5",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capítulo I · Consideraciones Generales",
+  "derogado": false
+ },
+ "429": {
+  "archivo": "articulos/art-0429.md",
+  "sha256": "c38fefd8854811b30e8082186273eebd24a36d9e7e338ff742f8e04e0fc0f0ba",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capítulo I · Consideraciones Generales",
+  "derogado": false
+ },
+ "430": {
+  "archivo": "articulos/art-0430.md",
+  "sha256": "9aff09b774e45b7ec39b6acf4c393bdd20d7c86efaec5bf72157d647380baaff",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capítulo II · De las Formalidades de los Escritos",
+  "derogado": false
+ },
+ "431": {
+  "archivo": "articulos/art-0431.md",
+  "sha256": "2541d9fb1a098b688e393224089aa1760ec652e5e9ad7a4aa56b99cf5ca8bf46",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capítulo II · De las Formalidades de los Escritos",
+  "derogado": false
+ },
+ "432": {
+  "archivo": "articulos/art-0432.md",
+  "sha256": "05c6cf8549e9d8d6b1665e70b948871a3a7ab534d8b6dad1f68f47c121fe5c35",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capítulo II · De las Formalidades de los Escritos",
+  "derogado": false
+ },
+ "433": {
+  "archivo": "articulos/art-0433.md",
+  "sha256": "54c16823f633f07a1589b820b0c7e6e4f275f76678e13c8e663c88841be332c7",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capítulo II · De las Formalidades de los Escritos",
+  "derogado": false
+ },
+ "434": {
+  "archivo": "articulos/art-0434.md",
+  "sha256": "f5249b55d52e3e3ba91317e519529dd735668fb269c7c7bd8751cab796e5ef47",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capitulo III · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "435": {
+  "archivo": "articulos/art-0435.md",
+  "sha256": "51ff6c09127b1da53c8e1423a37ee1d5f152eb4b67b6f636dbfb7e6ae30ab798",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capitulo III · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "436": {
+  "archivo": "articulos/art-0436.md",
+  "sha256": "8a2b97beee0de24fc13d25e4cdf1e5af25b62e6ab645f76aa4bd01cd1c679466",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capitulo III · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "437": {
+  "archivo": "articulos/art-0437.md",
+  "sha256": "061e7b2ee58c6ccc2f8002c055ef03227428c46e926bec242028221d67a2dd46",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capitulo III · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "438": {
+  "archivo": "articulos/art-0438.md",
+  "sha256": "40618248c9e37a76105c6a698c761f84da49a2d301edf3ec2007c7db42eeac7b",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capitulo III · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "439": {
+  "archivo": "articulos/art-0439.md",
+  "sha256": "9e6a1d1a87621e4ec38be6ba8f806a6600af0b6689a624148c68a0714126f15e",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capitulo III · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "440": {
+  "archivo": "articulos/art-0440.md",
+  "sha256": "9a2316b7757aa1da9fb61a133376331b0ec62a6a9568c7043ce43acbc2277648",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capitulo III · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "441": {
+  "archivo": "articulos/art-0441.md",
+  "sha256": "a82c9e84f616201ebb318ac2b78a089775139b6783df9e2c636d932dc5bad480",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capitulo III · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "442": {
+  "archivo": "articulos/art-0442.md",
+  "sha256": "5bab533955915972a9d73f01ad1e6bb721ac5639c68bf8a6569757f231cb5435",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título SEGUNDO · DEL PROCEDIMIENTO ADMINISTRATIVO / Capitulo III · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "443": {
+  "archivo": "articulos/art-0443.md",
+  "sha256": "2b62d6da0c426bb5e81f927847f26881356293423b78bdbb29a3786249740b4c",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LOS RECURSOS ADMINISTRATIVOS / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "444": {
+  "archivo": "articulos/art-0444.md",
+  "sha256": "d2c8e5b7c2eb0c551751e6a97f42950c9b29c0776b249da170549a12605c90b2",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LOS RECURSOS ADMINISTRATIVOS / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "445": {
+  "archivo": "articulos/art-0445.md",
+  "sha256": "8cb93f5d9319f8720c885824956b4edd832a819129070ea51c0889a36d19a32d",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LOS RECURSOS ADMINISTRATIVOS / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "446": {
+  "archivo": "articulos/art-0446.md",
+  "sha256": "10cfa7f692402d493f15b3db0fd4a3c284d6059184658c8a361483c59d9df6d7",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LOS RECURSOS ADMINISTRATIVOS / Capítulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "447": {
+  "archivo": "articulos/art-0447.md",
+  "sha256": "e174aa486d26244a7cacdcc478ee930985a243b53933277327d42ca54e5f5082",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LOS RECURSOS ADMINISTRATIVOS / Capítulo II · Del Recurso de Revocación",
+  "derogado": false
+ },
+ "448": {
+  "archivo": "articulos/art-0448.md",
+  "sha256": "b4fdacb9b7cbde5df4d855aced7823d54e5cb8a12f66a2f66aa4d75a68bd5ac1",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LOS RECURSOS ADMINISTRATIVOS / Capítulo III · De la Impugnación de Notificaciones",
+  "derogado": false
+ },
+ "449": {
+  "archivo": "articulos/art-0449.md",
+  "sha256": "8426bbb22c894a113b5f2aa2d15301ee56c7d7402345cd69978bc6cd4dd9c0f6",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LOS RECURSOS ADMINISTRATIVOS / Capitulo IV · De la Substanciación del Procedimiento",
+  "derogado": false
+ },
+ "449-bis": {
+  "archivo": "articulos/art-0449-bis.md",
+  "sha256": "974de07700baa091b13c5264c40ecf9a23bd637cc1d06fa8ae043e3caaeaf855",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LOS RECURSOS ADMINISTRATIVOS / Capítulo V · Del Recurso de Revocación en Línea.",
+  "derogado": false
+ },
+ "449-ter": {
+  "archivo": "articulos/art-0449-ter.md",
+  "sha256": "e611f5819c34098ace2eca58fbaa732a0a8d187095c41a3c17a0e3c7d2717dca",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LOS RECURSOS ADMINISTRATIVOS / Capítulo V · Del Recurso de Revocación en Línea.",
+  "derogado": false
+ },
+ "449-quater": {
+  "archivo": "articulos/art-0449-quater.md",
+  "sha256": "6764404a28068c800cb213ccbb6bdb54ffaefc0c023d37f582d4d191b4cc829c",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LOS RECURSOS ADMINISTRATIVOS / Capítulo V · Del Recurso de Revocación en Línea.",
+  "derogado": false
+ },
+ "449-quintus": {
+  "archivo": "articulos/art-0449-quintus.md",
+  "sha256": "3461fd7b7ebb8aec405ae9748bf77ee47270164fcf0ac3153906f70f627c9a3b",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LOS RECURSOS ADMINISTRATIVOS / Capítulo V · Del Recurso de Revocación en Línea.",
+  "derogado": false
+ },
+ "449-sextus": {
+  "archivo": "articulos/art-0449-sextus.md",
+  "sha256": "0cb6d0cd3748430a60de4d9d50f5db317796c50bda5e69096804515e5c0c7e22",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LOS RECURSOS ADMINISTRATIVOS / Capítulo V · Del Recurso de Revocación en Línea.",
+  "derogado": false
+ },
+ "449-septimus": {
+  "archivo": "articulos/art-0449-septimus.md",
+  "sha256": "53ee672cea0f13f9a506fb4f03242b695e3b5117f0cd3f830a885e94bf965332",
+  "ubicacion": "Libro SEGUNDO · DE LOS SERVICIOS DE TESORERÍA / Título TERCERO · DE LOS RECURSOS ADMINISTRATIVOS / Capítulo V · Del Recurso de Revocación en Línea.",
+  "derogado": false
+ },
+ "450": {
+  "archivo": "articulos/art-0450.md",
+  "sha256": "1d04ab25cd087529d7e708671090c5a8ae2d5dca4bac8d81af7a814321048b25",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título PRIMERO · DISPOSICIONES",
+  "derogado": false
+ },
+ "451": {
+  "archivo": "articulos/art-0451.md",
+  "sha256": "987a229257204d54780a2010d6947c23b59a287a3b643d02b6b25f837c002e93",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título PRIMERO · DISPOSICIONES",
+  "derogado": false
+ },
+ "452": {
+  "archivo": "articulos/art-0452.md",
+  "sha256": "fa0719d12f27a8b830aa9df6e16ef1e944b429e269da45d81f55a534a177e000",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título PRIMERO · DISPOSICIONES",
+  "derogado": false
+ },
+ "453": {
+  "archivo": "articulos/art-0453.md",
+  "sha256": "d955971ccaf8f565775a08d2d00dfe63b30434c8eb850022d71cc239e89f7140",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título PRIMERO · DISPOSICIONES",
+  "derogado": false
+ },
+ "454": {
+  "archivo": "articulos/art-0454.md",
+  "sha256": "60cadb17cc94db6f3e1e30dc9cdcd721deb930770778983fe6d07239d9157919",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título SEGUNDO · DE LAS RESPONSABILIDADES / Capítulo I · Del Procedimiento Resarcitorio",
+  "derogado": false
+ },
+ "455": {
+  "archivo": "articulos/art-0455.md",
+  "sha256": "8b6dc1bcc7f0d89c5651bd484cecdba7546a9261fcdbe43d6b9e69619df46a45",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título SEGUNDO · DE LAS RESPONSABILIDADES / Capítulo I · Del Procedimiento Resarcitorio",
+  "derogado": false
+ },
+ "456": {
+  "archivo": "articulos/art-0456.md",
+  "sha256": "83d9b06df8eeb8aff6a32da8da98ac78f2bcfeff57164a542d29fa06f64e3016",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título SEGUNDO · DE LAS RESPONSABILIDADES / Capítulo I · Del Procedimiento Resarcitorio",
+  "derogado": false
+ },
+ "457": {
+  "archivo": "articulos/art-0457.md",
+  "sha256": "f1196daf77943d0426756b117747d0138ec67a54ce35484fc245227a76479523",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título SEGUNDO · DE LAS RESPONSABILIDADES / Capítulo I · Del Procedimiento Resarcitorio",
+  "derogado": false
+ },
+ "458": {
+  "archivo": "articulos/art-0458.md",
+  "sha256": "2f2dea1ecb58d9a3a229dbf1d8d2702c17adeed74aed7a08fdb86cba65fddf99",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título SEGUNDO · DE LAS RESPONSABILIDADES / Capítulo I · Del Procedimiento Resarcitorio",
+  "derogado": false
+ },
+ "459": {
+  "archivo": "articulos/art-0459.md",
+  "sha256": "2f70df03512b814bfd07fea60789301552ee549cc9f2495d2161d7107207b8eb",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título SEGUNDO · DE LAS RESPONSABILIDADES / Capítulo I · Del Procedimiento Resarcitorio",
+  "derogado": false
+ },
+ "460": {
+  "archivo": "articulos/art-0460.md",
+  "sha256": "a24687ea1c4e14a2529bc527c1d2efdfd846def895917a3450a2e9b96c925d25",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título SEGUNDO · DE LAS RESPONSABILIDADES / Capítulo I · Del Procedimiento Resarcitorio",
+  "derogado": false
+ },
+ "461": {
+  "archivo": "articulos/art-0461.md",
+  "sha256": "53d6e64035fc2bd6291bd2bfe5198edae2125dc049f3e8209bee071e0589b569",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título SEGUNDO · DE LAS RESPONSABILIDADES / Capítulo I · Del Procedimiento Resarcitorio",
+  "derogado": false
+ },
+ "461-bis": {
+  "archivo": "articulos/art-0461-bis.md",
+  "sha256": "a97dd28c51b585cd6a9820c0e10cc001d423f8368b3b9f1bc22f8ab2ceb1926c",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título SEGUNDO · DE LAS RESPONSABILIDADES / Capítulo II · Del Procedimiento Resarcitorio en Línea",
+  "derogado": false
+ },
+ "461-bis-1": {
+  "archivo": "articulos/art-0461-bis-1.md",
+  "sha256": "4ca07a4bef1cf4c259a5e119d089ad06b75558941f9abc1b058913d2a160594b",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título SEGUNDO · DE LAS RESPONSABILIDADES / Capítulo II · Del Procedimiento Resarcitorio en Línea",
+  "derogado": false
+ },
+ "461-bis-2": {
+  "archivo": "articulos/art-0461-bis-2.md",
+  "sha256": "3e6ffdaf1ed4b128cd42b2c0b9584996bea7bb97486fdc03ea6056b8b1404110",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título SEGUNDO · DE LAS RESPONSABILIDADES / Capítulo II · Del Procedimiento Resarcitorio en Línea",
+  "derogado": false
+ },
+ "461-bis-3": {
+  "archivo": "articulos/art-0461-bis-3.md",
+  "sha256": "a0141868538180e2263adf50adb9f7fff97326770ee8df3c76f12cb73c71c080",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título SEGUNDO · DE LAS RESPONSABILIDADES / Capítulo II · Del Procedimiento Resarcitorio en Línea",
+  "derogado": false
+ },
+ "461-bis-4": {
+  "archivo": "articulos/art-0461-bis-4.md",
+  "sha256": "8fb1ed1970277e4e64df2291412967f83c8e3c750fdc79d21ee78d95342628d7",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título SEGUNDO · DE LAS RESPONSABILIDADES / Capítulo II · Del Procedimiento Resarcitorio en Línea",
+  "derogado": false
+ },
+ "462": {
+  "archivo": "articulos/art-0462.md",
+  "sha256": "ebad1c616bea601ea73f7f854bbfd3a76814353916ae79f712ed4528c7e65815",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES",
+  "derogado": false
+ },
+ "463": {
+  "archivo": "articulos/art-0463.md",
+  "sha256": "6274d82923bd52d64976af1a6dcdc39498f1292859e517348fcd93833ee631f3",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES",
+  "derogado": false
+ },
+ "464": {
+  "archivo": "articulos/art-0464.md",
+  "sha256": "5d06df21fdd21f9162b35f16e126e80d3116466bfc70e9c923231249019af40a",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo I · De las Infracciones y Sanciones Relacionadas con los Padrones de",
+  "derogado": false
+ },
+ "465": {
+  "archivo": "articulos/art-0465.md",
+  "sha256": "20cca0d84316b0ae07cb3972465b76b133e36809f192604856748a5173497f49",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo II · De las Infracciones y Sanciones Relacionadas con la Presentación de Declaraciones e Informes en General",
+  "derogado": false
+ },
+ "466": {
+  "archivo": "articulos/art-0466.md",
+  "sha256": "3e203cd93f3126a2d4acea97afbf69e34226bc90b0c625a95ff686ef92f22b44",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo II · De las Infracciones y Sanciones Relacionadas con la Presentación de Declaraciones e Informes en General",
+  "derogado": false
+ },
+ "467": {
+  "archivo": "articulos/art-0467.md",
+  "sha256": "c0e4558d22dc17e2fe5a9110e2583303c1566647a51900b7f31abd36b76230f1",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo II · De las Infracciones y Sanciones Relacionadas con la Presentación de Declaraciones e Informes en General",
+  "derogado": false
+ },
+ "468": {
+  "archivo": "articulos/art-0468.md",
+  "sha256": "eac4f1a70f72ab5cd9fd3fe929fd410779698ca8876ee490f37cf3243eedcdd3",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo II · De las Infracciones y Sanciones Relacionadas con la Presentación de Declaraciones e Informes en General",
+  "derogado": false
+ },
+ "469": {
+  "archivo": "articulos/art-0469.md",
+  "sha256": "a1cfd1dd593656f12f3af782189c370c67fad3f66172b292209f01e52f275f7c",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo II · De las Infracciones y Sanciones Relacionadas con la Presentación de Declaraciones e Informes en General",
+  "derogado": false
+ },
+ "470": {
+  "archivo": "articulos/art-0470.md",
+  "sha256": "27743b8afce63e50ebd74c78b91c0ee3c813b02abbb30fb5f39194835d263db1",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo III · De las Infracciones y Sanciones Relacionadas con el Pago de Contribuciones y",
+  "derogado": false
+ },
+ "471": {
+  "archivo": "articulos/art-0471.md",
+  "sha256": "f165b1b3ba2955b1cceb35e55a9f56ca56573cfc189c6550431a0d8143be12f7",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo III · De las Infracciones y Sanciones Relacionadas con el Pago de Contribuciones y",
+  "derogado": false
+ },
+ "472": {
+  "archivo": "articulos/art-0472.md",
+  "sha256": "b71f8126048b00f5c3b7404866447b3c3b1b772b6cfbaf069dcb260d228bafff",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo III · De las Infracciones y Sanciones Relacionadas con el Pago de Contribuciones y",
+  "derogado": false
+ },
+ "473": {
+  "archivo": "articulos/art-0473.md",
+  "sha256": "4643fa4ccb208fbfcb15978ef0b1d1e5ec9f06bad4044c397a0bcb1dd4804487",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo III · De las Infracciones y Sanciones Relacionadas con el Pago de Contribuciones y",
+  "derogado": false
+ },
+ "474": {
+  "archivo": "articulos/art-0474.md",
+  "sha256": "f339bf1bb1593659f04ab01ef28e9fb5514f8d257cd38135e1520601689699f4",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo III · De las Infracciones y Sanciones Relacionadas con el Pago de Contribuciones y",
+  "derogado": true
+ },
+ "474-bis": {
+  "archivo": "articulos/art-0474-bis.md",
+  "sha256": "fd8347855a9ca8dde6d68513a9fa10bb13406facc0044550eebf3b0767a0ea00",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo III · De las Infracciones y Sanciones Relacionadas con el Pago de Contribuciones y",
+  "derogado": false
+ },
+ "475": {
+  "archivo": "articulos/art-0475.md",
+  "sha256": "c8abe4ad3413105a543bb8a6d2fc76280a68ee8f7acb9eca6426f2098ad3a349",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo IV · De las Infracciones y Sanciones Relacionadas con la Contabilidad",
+  "derogado": false
+ },
+ "476": {
+  "archivo": "articulos/art-0476.md",
+  "sha256": "b6069891ed1fee79e198f498232a4a68da0a92f9c48023ee903e6b0718e6b424",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo V · De las Infracciones y Sanciones Relacionadas con Usuarios de Servicios, Fedatarios y Terceros",
+  "derogado": false
+ },
+ "477": {
+  "archivo": "articulos/art-0477.md",
+  "sha256": "31b51da6a2714afc3f4363e32e32b5f6587d1bdc873e857de913cc45d8194b6a",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo V · De las Infracciones y Sanciones Relacionadas con Usuarios de Servicios, Fedatarios y Terceros",
+  "derogado": true
+ },
+ "478": {
+  "archivo": "articulos/art-0478.md",
+  "sha256": "8af47b7fcd5a42b45d28dd91dcf74643e3fad877f97cb0144e36be0f27bc5790",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo V · De las Infracciones y Sanciones Relacionadas con Usuarios de Servicios, Fedatarios y Terceros",
+  "derogado": false
+ },
+ "479": {
+  "archivo": "articulos/art-0479.md",
+  "sha256": "d8d353746310b56d3453acc102a71c9688dee68f9e4150e5001d57b36bb3808a",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo V · De las Infracciones y Sanciones Relacionadas con Usuarios de Servicios, Fedatarios y Terceros",
+  "derogado": false
+ },
+ "480": {
+  "archivo": "articulos/art-0480.md",
+  "sha256": "813c39bed03a204c3c056543ac8526ff8ea3eab0f818e501cfd4dae51478d03b",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo V · De las Infracciones y Sanciones Relacionadas con Usuarios de Servicios, Fedatarios y Terceros",
+  "derogado": false
+ },
+ "481": {
+  "archivo": "articulos/art-0481.md",
+  "sha256": "c0cd8c63aa936469f42efa9dde6f89501be7df65d1ebea7c8c7a4a1986bd455b",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo V · De las Infracciones y Sanciones Relacionadas con Usuarios de Servicios, Fedatarios y Terceros",
+  "derogado": false
+ },
+ "482": {
+  "archivo": "articulos/art-0482.md",
+  "sha256": "0d747a5b554ce88fc33eb0e55a17fae06da59354ede94618835c0b525e660a59",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo VI · De las Infracciones y Sanciones Relacionadas con las Facultades de",
+  "derogado": false
+ },
+ "483": {
+  "archivo": "articulos/art-0483.md",
+  "sha256": "520a7b7d17ee8cafbba05c9ead4a5a54454aa20c901a4334c2d0920b1559b367",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Título TERCERO · DE LAS INFRACCIONES Y SANCIONES / Capítulo VII · Del Destino de las Sanciones Fiscales",
+  "derogado": false
+ },
+ "484": {
+  "archivo": "articulos/art-0484.md",
+  "sha256": "021ebd68fc8ab5cedffff0749c44b39f8ef87beb5e1449c62976b47d47e1db57",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "484-bis": {
+  "archivo": "articulos/art-0484-bis.md",
+  "sha256": "1f1e189920bbfad6f863c428e905ca0ff08591a711064bf5110a9c43881258f2",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "485": {
+  "archivo": "articulos/art-0485.md",
+  "sha256": "f9ae63b73ce71905e790b1a5c7cc61c840845b64d6cef6c50809a50eacf1803f",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "486": {
+  "archivo": "articulos/art-0486.md",
+  "sha256": "d3bd099ee37e1b63d89158c12659cc0bbf6dac2235cc50fb90c018ab131b634f",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "487": {
+  "archivo": "articulos/art-0487.md",
+  "sha256": "e73bbff7709bf0c7b42e92403208d1227f6efb0f52de98ee718d8a15184ba9bf",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "487-bis": {
+  "archivo": "articulos/art-0487-bis.md",
+  "sha256": "21c9d9ebf7a6525a04f819636181072299ebdc0da97506eaa131d8461ea34203",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capitulo I · Disposiciones Generales",
+  "derogado": true
+ },
+ "488": {
+  "archivo": "articulos/art-0488.md",
+  "sha256": "33f0e29e88fb8c1a400c5a3a76ce5a85369666c26f90924dd513a59491644e05",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capitulo I · Disposiciones Generales",
+  "derogado": true
+ },
+ "489": {
+  "archivo": "articulos/art-0489.md",
+  "sha256": "b1a6f04c9531a5daaf41411523f9bfc1228ea9e766a76a9a47a434451f9b9c38",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "490": {
+  "archivo": "articulos/art-0490.md",
+  "sha256": "e707908db96e8537ab66b373d1a0fc9955ef7d2dd8f239d4a45b297db96405ae",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "491": {
+  "archivo": "articulos/art-0491.md",
+  "sha256": "ce76536f56a38f6d9a0100afdb3e4b5fac880dab33090c54ff1b2541f8c0d3e5",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "492": {
+  "archivo": "articulos/art-0492.md",
+  "sha256": "3ee8ab33d5444d2d878259e4fc4d5a735bc817b4ab268fa03c27e27a2d3786b0",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capitulo I · Disposiciones Generales",
+  "derogado": false
+ },
+ "493": {
+  "archivo": "articulos/art-0493.md",
+  "sha256": "2d5c7673b24b0ae77af9b99faeb12859296007c1a9bde3635122f59fee649da1",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capítulo II · De los Delitos Cometidos por Servidores",
+  "derogado": false
+ },
+ "494": {
+  "archivo": "articulos/art-0494.md",
+  "sha256": "31ea808a87074b51059478b2003dc28cd1079287e00ecec131a008043f0f36e4",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capítulo II · De los Delitos Cometidos por Servidores",
+  "derogado": false
+ },
+ "495": {
+  "archivo": "articulos/art-0495.md",
+  "sha256": "ba351e3517dbf636c50ab23a3a226b7c705a82caf8d7a77ebf098f3fcf74998f",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capítulo III · De la Defraudación Fiscal",
+  "derogado": false
+ },
+ "496": {
+  "archivo": "articulos/art-0496.md",
+  "sha256": "147cbdc349704bb7b8cd44c839e8ab0058ded05b3dbb6fda910ee834edb44c4a",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capítulo III · De la Defraudación Fiscal",
+  "derogado": false
+ },
+ "497": {
+  "archivo": "articulos/art-0497.md",
+  "sha256": "ab0988aa771b31de4e68b86f1b0dddb80eeffaf38205a90d0b932b904d1f8d13",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capítulo IV · De los Delitos Relacionados con Inmuebles",
+  "derogado": true
+ },
+ "498": {
+  "archivo": "articulos/art-0498.md",
+  "sha256": "944e424fc7c9f5bea2f3c09e9c67ce33fe5fadcb4199580be14b8642b3cce2d5",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capítulo V · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": false
+ },
+ "498-bis": {
+  "archivo": "articulos/art-0498-bis.md",
+  "sha256": "10cc895d5e6f30082ddfc5897ab7a31e53d1c3e4b852b89b07fa543d917e903a",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capítulo V · CONSEJERÍA JURÍDICA Y DE SERVICIOS LEGALES",
+  "derogado": true
+ },
+ "499": {
+  "archivo": "articulos/art-0499.md",
+  "sha256": "4e9427929743f5356ae4c0839f13f990bbbda024a637b3af292b444afe3097f9",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capítulo VI · De los Delitos Relacionados con los Padrones de Contribuyentes",
+  "derogado": false
+ },
+ "500": {
+  "archivo": "articulos/art-0500.md",
+  "sha256": "f73536d37c0e3be33fd2439b9e5e6826ca3c20d49b77c86e990e3c24bf5562b0",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capítulo VII · De los Delitos Cometidos por Depositarios e Interventores",
+  "derogado": false
+ },
+ "501": {
+  "archivo": "articulos/art-0501.md",
+  "sha256": "e0662f20ea41070ac2393dcb0768602ec6dd5c04a21ad43fa159b0f529bdaa21",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capítulo VIII · De los Delitos de Falsificación en Materia",
+  "derogado": false
+ },
+ "502": {
+  "archivo": "articulos/art-0502.md",
+  "sha256": "2cd71de080184b0ca8bf008a87d9e03e96a2c7a27e56bef3b82c8ad73648a154",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capítulo VIII · De los Delitos de Falsificación en Materia",
+  "derogado": false
+ },
+ "503": {
+  "archivo": "articulos/art-0503.md",
+  "sha256": "7c5cc08dfdfe339b267bc4223d9f888621e41719efb4fb1a5fa6e76f59dba23d",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capítulo IX · De los Delitos de Asociación Delictuosa en Materia Fiscal",
+  "derogado": false
+ },
+ "504": {
+  "archivo": "articulos/art-0504.md",
+  "sha256": "08dd6448170a2065796c20fba532fdd9573885c5f5b2c72fd73d575bf9724897",
+  "ubicacion": "Libro CUARTO · DE LAS INFRACCIONES Y SANCIONES, RESPONSABILIDADES RESARCITORIAS Y DELITOS EN / Titulo CUARTO · DE LOS DELITOS / Capítulo IX · De los Delitos de Asociación Delictuosa en Materia Fiscal",
+  "derogado": false
+ }
+}

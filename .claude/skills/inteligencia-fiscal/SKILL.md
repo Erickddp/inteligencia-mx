@@ -16,7 +16,7 @@ Saca de la frase tres cosas y confírmalas en una sola línea antes de actuar:
 | Dato | Cómo se resuelve |
 |---|---|
 | **Ámbito y entidad** | «estatal», «municipal» o «federal». Busca el estado en `fuentes/entidades.yaml` (nombre o alias) y usa su clave ISO: Querétaro es `QUE`, no QRO. |
-| **Materia** | `fiscal`, `contable`, `laboral`, `seguridad_social`, `mercantil`, `civil`, `penal`, `administrativo` u `otra`. |
+| **Materia** | `fiscal`, `contable`, `laboral`, `seguridad_social`, `mercantil`, `civil`, `penal`, `electoral`, `administrativo` u `otra`. |
 | **Qué quiere** | **Leyes** (el texto, por defecto), o **números** (una tasa, un tope: ISN, recargos...). |
 
 Ejemplo: «Voy a registrar las leyes fiscales del estado de Querétaro (QUE), materia fiscal. ¿Es eso?». Pregunta **solo** si algo es ambiguo (por ejemplo «ley de hacienda» sin saber si es estatal o municipal).

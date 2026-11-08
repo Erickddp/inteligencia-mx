@@ -1,0 +1,23 @@
+{
+ "clave": "CMX-CEAP",
+ "nombre": "Código de Ética de la Administración Pública y Alcaldías de la Ciudad de México",
+ "url": "https://data.consejeria.cdmx.gob.mx/images/leyes/codigos/CODIGO_DE_ETICA_DE_LA_AP_DE_LA_CIUDAD_DE_MEXICO_2.2.pdf",
+ "fuente": "Consejería Jurídica y de Servicios Legales de la Ciudad de México (texto vigente); cotejar contra Gaceta Oficial de la Ciudad de México",
+ "ultima_reforma_segun_pdf": null,
+ "ultima_reforma_origen": "sin dato",
+ "descargado": "2026-11-07",
+ "sha256_pdf": "a5356e4984ffdbc43363fbfc21e8095bab80789272f248dbe50fca84e3c063da",
+ "sha256_texto": "80d4373e7d96a24dd3c8f7c91ad6dd082cff3c61a5b13ba7d81ec46fca63e314",
+ "cotejado_dof": {
+  "ley_completa": null,
+  "articulos": {}
+ },
+ "advertencias": [],
+ "articulos": 24,
+ "derogados": 0,
+ "ambito": "estatal",
+ "entidad": "CMX",
+ "materia": "administrativo",
+ "emisor": "Consejería Jurídica y de Servicios Legales de la Ciudad de México",
+ "diario": "Gaceta Oficial de la Ciudad de México"
+}

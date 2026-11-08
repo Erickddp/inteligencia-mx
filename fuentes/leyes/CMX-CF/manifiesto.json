@@ -1,0 +1,23 @@
+{
+ "clave": "CMX-CF",
+ "nombre": "Código Fiscal de la Ciudad de México",
+ "url": "https://data.consejeria.cdmx.gob.mx/images/leyes/2025/CODIGOS_2025/CODIGO_FISCAL_DE_LA_CDMX_26.2.pdf",
+ "fuente": "Consejería Jurídica y de Servicios Legales de la Ciudad de México (texto vigente); cotejar contra Gaceta Oficial de la Ciudad de México",
+ "ultima_reforma_segun_pdf": null,
+ "ultima_reforma_origen": "sin dato",
+ "descargado": "2026-11-07",
+ "sha256_pdf": "0d9ed6122b06a8582dead8604147e66734212bd9df1a9c2dd6c4ab262dc17938",
+ "sha256_texto": "26bd100a06699594cce3d4f79e96a21bbd186a6838267987ff678c931aa4eebc",
+ "cotejado_dof": {
+  "ley_completa": null,
+  "articulos": {}
+ },
+ "advertencias": [],
+ "articulos": 589,
+ "derogados": 20,
+ "ambito": "estatal",
+ "entidad": "CMX",
+ "materia": "fiscal",
+ "emisor": "Consejería Jurídica y de Servicios Legales de la Ciudad de México",
+ "diario": "Gaceta Oficial de la Ciudad de México"
+}

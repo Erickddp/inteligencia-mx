@@ -1,0 +1,254 @@
+{
+ "1": {
+  "archivo": "articulos/art-0001.md",
+  "sha256": "793f21a88387370efd418fd9549445d976b8b2702289bc7983b37e1ce7f4957c",
+  "ubicacion": "Título PRIMERO · Disposiciones Generales / Capítulo I · Del objeto del Código",
+  "derogado": false
+ },
+ "2": {
+  "archivo": "articulos/art-0002.md",
+  "sha256": "7e4da8049383c94dcd178a2c2b6e9d9a5918225eeb8ea5c767cde715227451e2",
+  "ubicacion": "Título PRIMERO · Disposiciones Generales / Capítulo I · Del objeto del Código",
+  "derogado": false
+ },
+ "3": {
+  "archivo": "articulos/art-0003.md",
+  "sha256": "2f6cc4127ff5fbf134d2c035c19e39a86c84afa4a755d33564e7edbf41c220d7",
+  "ubicacion": "Título PRIMERO · Disposiciones Generales / Capítulo I · Del objeto del Código",
+  "derogado": false
+ },
+ "4": {
+  "archivo": "articulos/art-0004.md",
+  "sha256": "f5401830992ba18eba79fc0e9a1ffb2c3fedb6b80eeb50dd11ba014aabb21261",
+  "ubicacion": "Título PRIMERO · Disposiciones Generales / Capítulo II · Principios del servicio público de Legisladores",
+  "derogado": false
+ },
+ "5": {
+  "archivo": "articulos/art-0005.md",
+  "sha256": "0aeef674a064ad47576c1593de097210434558c34b0678d16784eee43e9c865a",
+  "ubicacion": "Título PRIMERO · Disposiciones Generales / Capítulo II · Principios del servicio público de Legisladores",
+  "derogado": false
+ },
+ "6": {
+  "archivo": "articulos/art-0006.md",
+  "sha256": "eadef319a8f151c9b912faf650726d1adf95daed1839b4a2eb8af63effaa793a",
+  "ubicacion": "Título PRIMERO · Disposiciones Generales / Capítulo II · Principios del servicio público de Legisladores",
+  "derogado": false
+ },
+ "7": {
+  "archivo": "articulos/art-0007.md",
+  "sha256": "9c39d15151e5daf76fad6b408940da1bfbf2986e6338db20403c5099c09bb32c",
+  "ubicacion": "Título PRIMERO · Disposiciones Generales / Capítulo II · Principios del servicio público de Legisladores",
+  "derogado": false
+ },
+ "8": {
+  "archivo": "articulos/art-0008.md",
+  "sha256": "e519d22d41a3a2463417a3f99223e08d642756d8daffa4b6d19292841792f2fb",
+  "ubicacion": "Título PRIMERO · Disposiciones Generales / Capítulo II · Principios del servicio público de Legisladores",
+  "derogado": false
+ },
+ "9": {
+  "archivo": "articulos/art-0009.md",
+  "sha256": "58244b646c2110ca71f62db12b9364a8b821fd8b6d04550a28f5744b9df1da05",
+  "ubicacion": "Título PRIMERO · Disposiciones Generales / Capítulo II · Principios del servicio público de Legisladores",
+  "derogado": false
+ },
+ "10": {
+  "archivo": "articulos/art-0010.md",
+  "sha256": "67d1eea26f40132c3df7d25bb94390ff24abe21583ab1c66564f79fb63a2e0b3",
+  "ubicacion": "Título PRIMERO · Disposiciones Generales / Capítulo II · Principios del servicio público de Legisladores",
+  "derogado": false
+ },
+ "11": {
+  "archivo": "articulos/art-0011.md",
+  "sha256": "342f884c15a4170d9f3e99b6457cbd2266b7703e81c4fb46cedaa99cc397f11f",
+  "ubicacion": "Título SEGUNDO · Del Comité de Responsabilidad Parlamentaria / Capítulo I · De la Integración del Comité de Responsabilidad Parlamentaria",
+  "derogado": false
+ },
+ "12": {
+  "archivo": "articulos/art-0012.md",
+  "sha256": "30719f9bf41a214f9177a9899384b6ce785086325fe8f28cebda5e4ca8321129",
+  "ubicacion": "Título SEGUNDO · Del Comité de Responsabilidad Parlamentaria / Capítulo I · De la Integración del Comité de Responsabilidad Parlamentaria",
+  "derogado": false
+ },
+ "13": {
+  "archivo": "articulos/art-0013.md",
+  "sha256": "92d9cdb11b3d045f9c0c8885b1965ef457b11ea4566c194b93808603e12593cc",
+  "ubicacion": "Título SEGUNDO · Del Comité de Responsabilidad Parlamentaria / Capítulo I · De la Integración del Comité de Responsabilidad Parlamentaria",
+  "derogado": false
+ },
+ "14": {
+  "archivo": "articulos/art-0014.md",
+  "sha256": "e1243f4d58fef7f4a74d11a5c7690aa0820afd03900515d5bde70c66236d8b32",
+  "ubicacion": "Título SEGUNDO · Del Comité de Responsabilidad Parlamentaria / Capítulo II · De las Atribuciones del Comité de Responsabilidad Parlamentaria",
+  "derogado": false
+ },
+ "15": {
+  "archivo": "articulos/art-0015.md",
+  "sha256": "879d3b5efb896a3707550e1bca5d221bb4bffd45ec8122bcfcaf44f75dd44e98",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo I · De la Queja, Notificación y Descargo",
+  "derogado": false
+ },
+ "16": {
+  "archivo": "articulos/art-0016.md",
+  "sha256": "e3bb179ca75412384f224e1e4c28d0b7731732dc9b11737c3affbb72343e75a4",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo I · De la Queja, Notificación y Descargo",
+  "derogado": false
+ },
+ "17": {
+  "archivo": "articulos/art-0017.md",
+  "sha256": "0b211e98dee14c6db62400b459a1f35da139c945e82fb2175d5e134ce8c1ba34",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo I · De la Queja, Notificación y Descargo",
+  "derogado": false
+ },
+ "18": {
+  "archivo": "articulos/art-0018.md",
+  "sha256": "03b4011bf1fa6b3ae8d865ebad076c2851fff600e5f5af590d56688e53269c50",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo I · De la Queja, Notificación y Descargo",
+  "derogado": false
+ },
+ "19": {
+  "archivo": "articulos/art-0019.md",
+  "sha256": "90bb7647676b94ceaa5bb7f3fd4dd58e2ae8988606e08ed6e6d696b44b529d41",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo I · De la Queja, Notificación y Descargo",
+  "derogado": false
+ },
+ "20": {
+  "archivo": "articulos/art-0020.md",
+  "sha256": "fc1644d3275fe5e7bc7745a6ec974b292f70783edc9570dc0572c675ac1c5543",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo I · De la Queja, Notificación y Descargo",
+  "derogado": false
+ },
+ "21": {
+  "archivo": "articulos/art-0021.md",
+  "sha256": "56756d528563155f5d56ee29b703549ba0c98c79bab11b3d2cc027f8722ffb04",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo I · De la Queja, Notificación y Descargo",
+  "derogado": false
+ },
+ "22": {
+  "archivo": "articulos/art-0022.md",
+  "sha256": "b949fbc507639f606ab8046182b0e8a39dce31acc9f01fe6a8d92f0b2202aa77",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo I · De la Queja, Notificación y Descargo",
+  "derogado": false
+ },
+ "23": {
+  "archivo": "articulos/art-0023.md",
+  "sha256": "9e762395228f6bbf7fc9eced7ea29a95157cd230b8e62803872cbc20c5a7462c",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo I · De la Queja, Notificación y Descargo",
+  "derogado": false
+ },
+ "24": {
+  "archivo": "articulos/art-0024.md",
+  "sha256": "cf6f855150717951a7ddeaf1ccc2c7d28df730d95e1d466dbed65016cf7483b2",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo I · De la Queja, Notificación y Descargo",
+  "derogado": false
+ },
+ "25": {
+  "archivo": "articulos/art-0025.md",
+  "sha256": "2f583a4086b21eb682f5b9291b8cfdcbf1a0a831143087a1efe775efd6fefa61",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo I · De la Queja, Notificación y Descargo",
+  "derogado": false
+ },
+ "26": {
+  "archivo": "articulos/art-0026.md",
+  "sha256": "9b6d7daeb6c705f1f728c7d0bf2eb90b68100cf732cacc33d13170df7454808a",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo I · De la Queja, Notificación y Descargo",
+  "derogado": false
+ },
+ "27": {
+  "archivo": "articulos/art-0027.md",
+  "sha256": "dc88e21376d10d477c32d7be3c4dd53e110c95f60a7167e4b4ff25d33537d087",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo I · De la Queja, Notificación y Descargo",
+  "derogado": false
+ },
+ "28": {
+  "archivo": "articulos/art-0028.md",
+  "sha256": "9b98babbca83ddfe6433f1fb49e73337a09dfdc677cc61caf34c968bdc49fdd3",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo II · De la investigación, recomendación y apelación",
+  "derogado": false
+ },
+ "29": {
+  "archivo": "articulos/art-0029.md",
+  "sha256": "c054cccded3958b0fd9ab5692bb57b1d61c89af2cd4e010cb6e31c8d89d57abb",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo II · De la investigación, recomendación y apelación",
+  "derogado": false
+ },
+ "30": {
+  "archivo": "articulos/art-0030.md",
+  "sha256": "e67bba93daa46b01828d60e85efb420b2e24716f227f4cce24590c7e8887ee49",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo II · De la investigación, recomendación y apelación",
+  "derogado": false
+ },
+ "31": {
+  "archivo": "articulos/art-0031.md",
+  "sha256": "ac08112e5980768e95592945f6e5623289759961eff7ab26140895da6f2575e5",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo II · De la investigación, recomendación y apelación",
+  "derogado": false
+ },
+ "32": {
+  "archivo": "articulos/art-0032.md",
+  "sha256": "6448c00435f67851895c7da3389ad302e94f3b73e8f5e73696cea92666d87aec",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo II · De la investigación, recomendación y apelación",
+  "derogado": false
+ },
+ "33": {
+  "archivo": "articulos/art-0033.md",
+  "sha256": "563681caea73294764354c31ecafebfd4a7c97517a96351a671a4ee1ac9cdc02",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo II · De la investigación, recomendación y apelación",
+  "derogado": false
+ },
+ "34": {
+  "archivo": "articulos/art-0034.md",
+  "sha256": "91af0f0ec06906c99107cce3a4ebc750a317ade8e6b3d58677fe97438e15f462",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo II · De la investigación, recomendación y apelación",
+  "derogado": false
+ },
+ "35": {
+  "archivo": "articulos/art-0035.md",
+  "sha256": "64b4eb9b78e57600deb6956e2758e08dd1da451aa83c1713d59368873b90693c",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo II · De la investigación, recomendación y apelación",
+  "derogado": false
+ },
+ "36": {
+  "archivo": "articulos/art-0036.md",
+  "sha256": "8837853025c4aa9b89be01d68194c460c08877cd327b03bdb03cb617e845446f",
+  "ubicacion": "Título TERCERO · Del Proceso para resolver sobre Quejas / Capítulo II · De la investigación, recomendación y apelación",
+  "derogado": false
+ },
+ "37": {
+  "archivo": "articulos/art-0037.md",
+  "sha256": "894c2cb3e6f227a1fa07debb3d717db24ebe2a3593993f5a28a76f1e40f4f589",
+  "ubicacion": "Título CUARTO · De las Conductas contra los deberes Parlamentarios / Capítulo ÚNICO · Responsabilidades",
+  "derogado": false
+ },
+ "38": {
+  "archivo": "articulos/art-0038.md",
+  "sha256": "87658f2b9c1d60daa1b9e346768116cbb755fcec76791a996db7b191a0dada02",
+  "ubicacion": "Título CUARTO · De las Conductas contra los deberes Parlamentarios / Capítulo ÚNICO · Responsabilidades",
+  "derogado": false
+ },
+ "39": {
+  "archivo": "articulos/art-0039.md",
+  "sha256": "3229bfd6f0da5543cc2f6727ae95f2f93bc812b1f0e48530d24a1f9b3bac54f2",
+  "ubicacion": "Título CUARTO · De las Conductas contra los deberes Parlamentarios / Capítulo ÚNICO · Responsabilidades",
+  "derogado": false
+ },
+ "40": {
+  "archivo": "articulos/art-0040.md",
+  "sha256": "f177a73bfa041baf1472de26073df7aef059faf625401540cf21297e0e4ccc9b",
+  "ubicacion": "Título CUARTO · De las Conductas contra los deberes Parlamentarios / Capítulo ÚNICO · Responsabilidades",
+  "derogado": false
+ },
+ "41": {
+  "archivo": "articulos/art-0041.md",
+  "sha256": "7a85e4d34ce37e8d2247f95db92786f0690525cc7f3d7b70a234133d26718fb6",
+  "ubicacion": "Título CUARTO · De las Conductas contra los deberes Parlamentarios / Capítulo ÚNICO · Responsabilidades",
+  "derogado": false
+ },
+ "42": {
+  "archivo": "articulos/art-0042.md",
+  "sha256": "2cfaaa1b9ff471185f9fc6ad5ffa4506b22383cbd7d0fe83bcd274f0f6563d26",
+  "ubicacion": "Título CUARTO · De las Conductas contra los deberes Parlamentarios / Capítulo ÚNICO · Responsabilidades",
+  "derogado": false
+ }
+}

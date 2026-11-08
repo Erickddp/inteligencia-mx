@@ -1,0 +1,23 @@
+{
+ "clave": "CMX-CP",
+ "nombre": "Código Penal para el Distrito Federal",
+ "url": "https://data.consejeria.cdmx.gob.mx/images/leyes/2025/2026/50226/CODIGO_PENAL_PARA_EL_DF_12.9.pdf",
+ "fuente": "Consejería Jurídica y de Servicios Legales de la Ciudad de México (texto vigente); cotejar contra Gaceta Oficial de la Ciudad de México",
+ "ultima_reforma_segun_pdf": "2026-08-21",
+ "ultima_reforma_origen": "encabezado del PDF (Gaceta Oficial)",
+ "descargado": "2026-11-07",
+ "sha256_pdf": "5ac9b74e0d17e2df796bdfca78027b4df05fca33707d0f5b0f394a251bb59785",
+ "sha256_texto": "9231f324274ce736c05e530d13826d43dfb739fae7927e7d57c076e7cac911e3",
+ "cotejado_dof": {
+  "ley_completa": null,
+  "articulos": {}
+ },
+ "advertencias": [],
+ "articulos": 478,
+ "derogados": 10,
+ "ambito": "estatal",
+ "entidad": "CMX",
+ "materia": "penal",
+ "emisor": "Consejería Jurídica y de Servicios Legales de la Ciudad de México",
+ "diario": "Gaceta Oficial de la Ciudad de México"
+}
