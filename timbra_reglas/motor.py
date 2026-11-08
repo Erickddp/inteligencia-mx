@@ -716,6 +716,56 @@ def calc_poliza_nomina(b, f, percepciones, isr_retenido="0", imss_obrero="0", im
                     ("H", "infonavit_por_pagar", infonavit_patron)])
 
 
+def calc_factura_global(b, f, regimen, periodicidad):
+    """RMF 2.7.1.21: periodicidades de la factura global por régimen y cómo se detalla. El plazo de emisión es CFDI_GLOBAL_HORAS_MAX."""
+    filas = b.valor("GLOBAL_PERIODICIDAD_POR_REGIMEN", f)
+    propias = [x for x in filas if x[0] == regimen]
+    validas = propias if any(x[3] == "si" for x in propias) else propias + [x for x in filas if x[0] == "*"]
+    fila = next((x for x in validas if x[1] == periodicidad), None)
+    return {"permitida": "si" if fila else "no", "detalle": fila[2] if fila else "", "plazo_horas": str(b.valor("CFDI_GLOBAL_HORAS_MAX", f))}
+
+
+def calc_comprobante_publico_general(b, f, importe, solicita="no"):
+    """RMF 2.7.1.21: sin obligación de expedir comprobante por operaciones con el público en general de importe inferior al mínimo, si no lo piden."""
+    return "si" if solicita == "si" or D(importe) >= b.valor("GLOBAL_COMPROBANTE_MINIMO", f) else "no"
+
+
+def calc_monto_en_global(b, f, acumulacion, total_operacion, recibido):
+    """RMF 2.7.1.21, pagos parciales o diferidos: devengado = monto total en la global; flujo de efectivo = solo lo efectivamente recibido."""
+    return str(red(D(total_operacion) if acumulacion == "devengado" else D(recibido)))
+
+
+def calc_cancelacion_global_resico(b, f, emision, cancelacion):
+    """RMF 3.13.29: RESICO PF puede cancelar su global a más tardar el último día del mes límite del ejercicio siguiente."""
+    mes = int(b.valor("RESICO_GLOBAL_CANCELACION_MES", f))
+    limite = dt.date(int(emision[:4]) + 1, mes + 1, 1) - dt.timedelta(days=1)
+    return {"limite": limite.isoformat(), "resultado": "permitida" if dt.date.fromisoformat(cancelacion) <= limite else "fuera_de_plazo"}
+
+
+def calc_iva_servicio_medico(b, f, profesion, prestador):
+    """LIVA 15 fr. XIV y RLIVA 41: exento solo si es servicio profesional de medicina de un médico, médico veterinario o cirujano dentista
+    prestado por persona física, sociedad civil o institución de asistencia privada. Todo lo demás causa IVA salvo otra exención."""
+    exento = profesion in b.valor("IVA_EXENTO_PROFESIONES_MEDICAS", f) and prestador in b.valor("IVA_EXENTO_PRESTADORES_MEDICOS", f)
+    return {"tratamiento": "exento" if exento else "gravado",
+            "fundamento": "LIVA 15 fr. XIV; RLIVA 41" if exento else "fuera de LIVA 15 fr. XIV: causa IVA salvo que otra fracción lo exente"}
+
+
+def calc_retencion_resico_pf(b, f, monto, receptor):
+    """LISR 113-J: la persona moral que paga a un RESICO PF retiene el 1.25 % del pago sin IVA; a una persona física o al público en general no."""
+    return str(red(D(monto) * b.valor("RESICO_PF_RETENCION_PM", f) / 100)) if receptor == "persona_moral" else "0.00"
+
+
+def calc_poliza_cobro_terminal(b, f, bruto, comision, iva_comision="0", con_cfdi_banco="si", iva_trasladado="0", total_cfdi="0"):
+    """Cobro con tarjeta: la terminal deposita neto. El ingreso va por el bruto; la comisión es gasto y su IVA es acreditable solo si el banco
+    emite CFDI (LIVA 5 fr. II); sin CFDI el IVA de la comisión se queda en el gasto."""
+    neto = D(bruto) - D(comision) - D(iva_comision)
+    acred = D(iva_comision) if con_cfdi_banco == "si" else D(0)
+    gasto = D(comision) + (D(iva_comision) if con_cfdi_banco != "si" else D(0))
+    iva_cob = red(D(iva_trasladado) * D(bruto) / D(total_cfdi)) if D(total_cfdi) else D(0)
+    return _poliza([("D", "bancos", neto), ("D", "comisiones_bancarias", gasto), ("D", "iva_acreditable_pagado", acred),
+                    ("D", "iva_trasladado_no_cobrado", iva_cob), ("H", "clientes", bruto), ("H", "iva_trasladado_cobrado", iva_cob)])
+
+
 CALC = {k[5:]: v for k, v in globals().items() if k.startswith("calc_")}
 
 

@@ -10,7 +10,7 @@ PARAMS = yaml.safe_load((BASE / "parametros.yaml").read_text(encoding="utf-8"))[
 REGLAS = {r["id"]: r for r in yaml.safe_load((BASE / "reglas.yaml").read_text(encoding="utf-8"))["reglas"]}
 CATALOGO = PARAMS["CONTA_CODIGO_AGRUPADOR"]["valores"][0]["valor"]
 MAPA = PARAMS["CONTA_CONCEPTO_AGRUPADOR"]["valores"][0]["valor"]
-POLIZAS = ["R-150", "R-151", "R-152", "R-153", "R-154", "R-155", "R-156", "R-157"]
+POLIZAS = ["R-150", "R-151", "R-152", "R-153", "R-154", "R-155", "R-156", "R-157", "R-171"]
 
 
 def test_catalogo_completo_y_unico():

@@ -178,7 +178,7 @@ reglas:
     hallazgo: "Falta: predial en la ciega (35% + predial) y la opción de pagos trimestrales cuando las rentas del mes no pasan de 10 UMA mensuales (art. 116)."
   - id: R-22
     nombre: RESICO PF pago mensual
-    citas: [{ley: LISR, articulo: "113-e"}]
+    citas: [{ley: LISR, articulo: "113-e"}, {ley: LISR, articulo: "113-j"}]
     que_dice: "El RESICO de personas físicas paga una tasa sobre lo cobrado en el mes, y esa tasa sube conforme sube el cobrado mensual."
     correcto_si: "La tasa corresponde al tramo del cobrado del mes y se aplica a todo lo cobrado; son pagos definitivos mientras no se rebase el tope anual del régimen."
     estado: OK
@@ -990,3 +990,117 @@ reglas:
       - {nombre: "ISR retenido por pagar en arrendamiento → 216.03", fecha: "2026-06-30", entradas: {concepto: isr_retenido_por_pagar, contexto: arrendamiento}, esperado: {concepto: isr_retenido_por_pagar, codigo: "216.03", nombre: "Impuestos retenidos de ISR por arrendamiento", nivel: "2"}}
       - {nombre: "Cuotas patronales → 601.26 Cuotas al IMSS", fecha: "2026-06-30", entradas: {concepto: cuotas_patronales}, esperado: {concepto: cuotas_patronales, codigo: "601.26", nombre: "Cuotas al IMSS", nivel: "2"}}
       - {nombre: "Un concepto que no existe avisa y no inventa", fecha: "2026-06-30", entradas: {concepto: concepto_inventado}, espera_error: SinValor}
+
+  # ───────────── K. Factura global, servicios médicos, retención RESICO y comisión de la terminal (pedido 02 de Timbra) ─────────────
+  - id: R-165
+    nombre: "Factura global: periodicidades por régimen, cómo se detalla y plazo de emisión"
+    estado: NUEVA
+    fase: 3
+    parametros: [GLOBAL_PERIODICIDAD_POR_REGIMEN, CFDI_GLOBAL_HORAS_MAX]
+    calculadora: factura_global
+    fuente: "RMF 2026 regla 2.7.1.21 y 2.7.1.45; CFF art. 29-A (texto del DOF sin revisión humana)"
+    citas: [{ley: RMF, anio: "2026", articulo: "2.7.1.21"}, {ley: RMF, anio: "2026", articulo: "2.7.1.45"}, {ley: CFF, articulo: "29-a"}]
+    que_dice: "Las ventas al público en general se pueden amparar con un CFDI global diario, semanal o mensual, que se envía a más tardar 24 horas después del cierre del periodo; quien seguía en el RIF puede hacerlo bimestral, y RESICO PF lleva en el del mes solo el monto total."
+    correcto_si: "El RFC del receptor es el genérico XAXX010101000; la periodicidad es una de las permitidas para el régimen; el detalle es por operación (con su folio) salvo RESICO PF y RIF, que llevan solo el monto total; el IVA y el IEPS van separados; y se envía dentro de las 24 horas siguientes al cierre del periodo."
+    hallazgo: "Corrige un supuesto: la periodicidad BIMESTRAL no es de RESICO PF sino de quienes siguen como RIF (régimen 621, Disposiciones Transitorias de la LISR). Para RESICO PF (626) el texto exige únicamente el monto total en el CFDI de las operaciones del mes; no dice expresamente que no pueda ser diario o semanal, así que `exclusivo: si` es una interpretación que debe confirmar un contador. NO verificado, porque el Anexo 20 y su guía de llenado no están en la biblioteca: si el desglose por tasa obliga a un concepto por ticket o permite agrupar por tasa. La regla 2.7.1.21 solo exige que se separe el IVA e IEPS a cargo."
+    casos:
+      - {nombre: "Régimen general, mensual: permitida y por operación", fecha: "2026-06-30", entradas: {regimen: "601", periodicidad: mensual}, esperado: {permitida: "si", detalle: por_operacion, plazo_horas: "24"}}
+      - {nombre: "Régimen general, bimestral: no permitida", fecha: "2026-06-30", entradas: {regimen: "601", periodicidad: bimestral}, esperado: {permitida: "no", detalle: "", plazo_horas: "24"}}
+      - {nombre: "RIF (621), bimestral: permitida con solo el monto total", fecha: "2026-06-30", entradas: {regimen: "621", periodicidad: bimestral}, esperado: {permitida: "si", detalle: monto_total, plazo_horas: "24"}}
+      - {nombre: "RIF (621), diaria: también vale lo general", fecha: "2026-06-30", entradas: {regimen: "621", periodicidad: diario}, esperado: {permitida: "si", detalle: por_operacion, plazo_horas: "24"}}
+      - {nombre: "RESICO PF (626), mensual: solo el monto total", fecha: "2026-06-30", entradas: {regimen: "626", periodicidad: mensual}, esperado: {permitida: "si", detalle: monto_total, plazo_horas: "24"}}
+      - {nombre: "RESICO PF (626), semanal: no se documenta como permitida", fecha: "2026-06-30", entradas: {regimen: "626", periodicidad: semanal}, esperado: {permitida: "no", detalle: "", plazo_horas: "24"}}
+      - {nombre: "RESICO PF (626), bimestral: no permitida", fecha: "2026-06-30", entradas: {regimen: "626", periodicidad: bimestral}, esperado: {permitida: "no", detalle: "", plazo_horas: "24"}}
+  - id: R-166
+    nombre: "Venta de mostrador de menos de $100: no hay que expedir comprobante si no lo piden"
+    estado: NUEVA
+    fase: 3
+    parametros: [GLOBAL_COMPROBANTE_MINIMO]
+    calculadora: comprobante_publico_general
+    fuente: "RMF 2026 regla 2.7.1.21 (texto del DOF sin revisión humana)"
+    citas: [{ley: RMF, anio: "2026", articulo: "2.7.1.21"}]
+    que_dice: "Si el cliente no pide comprobante, no estás obligado a expedirlo por una venta al público en general de menos de cien pesos."
+    correcto_si: "Con un importe de $100.00 o más, o si el cliente lo pide, sí se expide comprobante."
+    casos:
+      - {nombre: "99.99 sin que lo pidan: no se expide", fecha: "2026-06-30", entradas: {importe: "99.99"}, esperado: "no"}
+      - {nombre: "Límite: 100.00 exactos sí se expide", fecha: "2026-06-30", entradas: {importe: "100.00"}, esperado: "si"}
+      - {nombre: "50.00 pero el cliente lo pide: sí se expide", fecha: "2026-06-30", entradas: {importe: "50.00", solicita: "si"}, esperado: "si"}
+  - id: R-167
+    nombre: "Factura global con pagos parciales o diferidos: qué monto lleva"
+    estado: NUEVA
+    fase: 3
+    parametros: []
+    calculadora: monto_en_global
+    fuente: "RMF 2026 regla 2.7.1.21 (texto del DOF sin revisión humana)"
+    citas: [{ley: RMF, anio: "2026", articulo: "2.7.1.21"}]
+    que_dice: "Si una venta al público se paga en parcialidades, quien acumula lo devengado pone en la global el monto total de la operación y quien acumula por flujo de efectivo solo lo que ya recibió."
+    correcto_si: "Con acumulación devengada la global refleja el total; con flujo de efectivo, en cada global solo los montos efectivamente recibidos; a estas operaciones no les aplica la regla 2.7.1.32."
+    casos:
+      - {nombre: "Devengado: va el total aunque solo se cobró la mitad", fecha: "2026-06-30", entradas: {acumulacion: devengado, total_operacion: "1160", recibido: "580"}, esperado: "1160.00"}
+      - {nombre: "Flujo de efectivo: va solo lo recibido", fecha: "2026-06-30", entradas: {acumulacion: flujo, total_operacion: "1160", recibido: "580"}, esperado: "580.00"}
+      - {nombre: "Flujo de efectivo, límite: ya se recibió todo", fecha: "2026-06-30", entradas: {acumulacion: flujo, total_operacion: "1160", recibido: "1160"}, esperado: "1160.00"}
+  - id: R-168
+    nombre: "RESICO PF: plazo para cancelar su factura global"
+    estado: NUEVA
+    fase: 3
+    parametros: [RESICO_GLOBAL_CANCELACION_MES]
+    calculadora: cancelacion_global_resico
+    fuente: "RMF 2026 regla 3.13.29; LISR art. 113-G (texto del DOF sin revisión humana)"
+    citas: [{ley: RMF, anio: "2026", articulo: "3.13.29"}, {ley: LISR, articulo: "113-g"}, {ley: CFF, articulo: "29-a"}]
+    que_dice: "Quien tributa en RESICO PF puede cancelar su factura global hasta el último día de abril del año siguiente al que la emitió."
+    correcto_si: "La cancelación se hace a más tardar el 30 de abril del ejercicio siguiente al de la emisión."
+    hallazgo: "NO resuelve qué hacer con un ticket que pide factura DESPUÉS de emitida la global (nominativa más nota de crédito, o solo nominativa): la regla 2.7.1.21 no lo trata y para regímenes distintos de RESICO PF no está la regla en la biblioteca. Para RESICO PF este plazo de cancelación es el único fundamento verificado: cancelar la global y volver a emitirla es una vía documentada; la otra (nota de crédito) requiere localizar su regla."
+    casos:
+      - {nombre: "Emitida en marzo de 2026, cancelada el último día de abril de 2027", fecha: "2027-04-30", entradas: {emision: "2026-03-15", cancelacion: "2027-04-30"}, esperado: {limite: "2027-04-30", resultado: permitida}}
+      - {nombre: "Un día después del límite: fuera de plazo", fecha: "2027-05-01", entradas: {emision: "2026-03-15", cancelacion: "2027-05-01"}, esperado: {limite: "2027-04-30", resultado: fuera_de_plazo}}
+      - {nombre: "Emitida el último día del año: el límite es el mismo", fecha: "2027-04-30", entradas: {emision: "2026-12-31", cancelacion: "2027-04-30"}, esperado: {limite: "2027-04-30", resultado: permitida}}
+      - {nombre: "Cancelada dentro del mismo año", fecha: "2026-06-01", entradas: {emision: "2026-01-01", cancelacion: "2026-06-01"}, esperado: {limite: "2027-04-30", resultado: permitida}}
+  - id: R-169
+    nombre: "IVA de los servicios médicos: exento o gravado"
+    estado: NUEVA
+    fase: 3
+    parametros: [IVA_EXENTO_PROFESIONES_MEDICAS, IVA_EXENTO_PRESTADORES_MEDICOS]
+    calculadora: iva_servicio_medico
+    fuente: "LIVA art. 15 fr. XIV; RLIVA art. 41 (texto de la Cámara, sin cotejar con el DOF)"
+    citas: [{ley: LIVA, articulo: "15"}, {ley: RLIVA, articulo: "41"}]
+    que_dice: "Los servicios profesionales de medicina están exentos de IVA solo cuando los presta un médico, médico veterinario o cirujano dentista que persona física, por sí mismo o por conducto de una sociedad civil o de una institución de asistencia privada; lo demás causa IVA."
+    correcto_si: "El servicio es un servicio profesional de medicina que requiere título; quien lo presta es persona física, sociedad civil o institución de asistencia o beneficencia privada autorizada (no una sociedad mercantil); y cada servicio se clasifica por separado."
+    hallazgo: "La ley no trae un reparto porcentual fijo (como 75/25) entre lo exento y lo gravado: clasifica cada servicio. Un reparto solo tiene sustento si resulta de sumar conceptos clasificados uno por uno; si la app ve un porcentaje fijo sin conceptos, debe AVISAR que no tiene sustento. Qué servicios de una clínica entran en la fracción XIV (estéticos, medicamentos aplicados, materiales, hospitalización) NO lo define el texto de la ley ni del reglamento en la biblioteca: la calculadora los trata como gravados salvo que sean servicios de las tres profesiones, y esa clasificación fina es criterio de contador. Los servicios hospitalarios de organismos públicos (fr. XV) no están modelados."
+    casos:
+      - {nombre: "Médico persona física: exento", fecha: "2026-06-30", entradas: {profesion: medico, prestador: persona_fisica}, esperado: {tratamiento: exento, fundamento: "LIVA 15 fr. XIV; RLIVA 41"}}
+      - {nombre: "Cirujano dentista por conducto de una sociedad civil: exento", fecha: "2026-06-30", entradas: {profesion: cirujano_dentista, prestador: sociedad_civil}, esperado: {tratamiento: exento, fundamento: "LIVA 15 fr. XIV; RLIVA 41"}}
+      - {nombre: "Veterinario por una institución de asistencia privada: exento", fecha: "2026-06-30", entradas: {profesion: medico_veterinario, prestador: institucion_asistencia_privada}, esperado: {tratamiento: exento, fundamento: "LIVA 15 fr. XIV; RLIVA 41"}}
+      - {nombre: "Médico por conducto de una sociedad mercantil: gravado", fecha: "2026-06-30", entradas: {profesion: medico, prestador: sociedad_mercantil}, esperado: {tratamiento: gravado, fundamento: "fuera de LIVA 15 fr. XIV: causa IVA salvo que otra fracción lo exente"}}
+      - {nombre: "Servicio que no es de un médico (por ejemplo estético): gravado", fecha: "2026-06-30", entradas: {profesion: otra, prestador: persona_fisica}, esperado: {tratamiento: gravado, fundamento: "fuera de LIVA 15 fr. XIV: causa IVA salvo que otra fracción lo exente"}}
+  - id: R-170
+    nombre: "RESICO PF: retención de 1.25 % cuando factura a una persona moral"
+    estado: NUEVA
+    fase: 3
+    parametros: [RESICO_PF_RETENCION_PM]
+    calculadora: retencion_resico_pf
+    fuente: "LISR art. 113-J y 113-E; RMF 2026 regla 2.7.1.45 (texto de la Cámara y del DOF, sin cotejar)"
+    citas: [{ley: LISR, articulo: "113-j"}, {ley: LISR, articulo: "113-e"}, {ley: RMF, anio: "2026", articulo: "2.7.1.45"}]
+    que_dice: "Cuando una persona física en RESICO factura a una persona moral, esta le retiene el 1.25 % del pago, sin contar el IVA, y lo entera a más tardar el día 17 del mes siguiente."
+    correcto_si: "La retención aplica solo si quien paga es persona moral y se calcula sobre el pago sin IVA; a una persona física o al público en general (RFC genérico) no se retiene; el impuesto retenido se considera en el pago mensual del RESICO."
+    hallazgo: "Confirma tus dos supuestos con el texto del art. 113-J: SÍ aplica a la factura nominativa a una persona moral, y NO a la global al público en general, porque ahí el receptor no es persona moral (el RFC genérico XAXX010101000 define al público en general, RMF 2.7.1.45). El artículo no tiene fecha de término (adicionado DOF 12-nov-2021): sigue vigente en 2026, aunque el texto de la Cámara no está cotejado con el DOF."
+    casos:
+      - {nombre: "Pago de 10,000 sin IVA de una persona moral: retiene 125.00", fecha: "2026-06-30", entradas: {monto: "10000", receptor: persona_moral}, esperado: "125.00"}
+      - {nombre: "El pagador es una persona física: no retiene", fecha: "2026-06-30", entradas: {monto: "10000", receptor: persona_fisica}, esperado: "0.00"}
+      - {nombre: "Factura global al público en general: no retiene", fecha: "2026-06-30", entradas: {monto: "10000", receptor: publico_en_general}, esperado: "0.00"}
+      - {nombre: "Redondeo: 1.25 % de 23,456.78", fecha: "2026-06-30", entradas: {monto: "23456.78", receptor: persona_moral}, esperado: "293.21"}
+      - {nombre: "Límite: 1.25 % de 0.80 son 0.01", fecha: "2026-06-30", entradas: {monto: "0.80", receptor: persona_moral}, esperado: "0.01"}
+  - id: R-171
+    nombre: "Póliza tipo: cobro con tarjeta (la terminal deposita neto de comisión)"
+    estado: CRITERIO
+    fase: 4
+    calculadora: poliza_cobro_terminal
+    fuente: "LIVA art. 5 fr. II; LISR art. 27; CFF art. 28; NIF B-3 (referencia)"
+    citas: [{ley: LIVA, articulo: "5"}, {ley: LISR, articulo: "27"}, {ley: CFF, articulo: "28"}, {nif: "B-3"}]
+    que_dice: "Cuando cobras con tarjeta, la terminal te deposita el cobro menos su comisión: el ingreso va por el bruto, la comisión es un gasto y el IVA de la comisión se acredita solo si el banco te da su CFDI."
+    correcto_si: "La póliza cuadra; el cliente se salda por el bruto y el banco recibe el neto; la comisión va a comisiones bancarias; el IVA de la comisión es acreditable solo con CFDI del banco, y sin él se queda en el gasto."
+    hallazgo: "El concepto `comisiones_bancarias` apunta al código agrupador 701.10 del SAT («Comisiones bancarias»). El requisito de contar con el CFDI del banco para acreditar el IVA y deducir la comisión sale de LIVA 5 fr. II y LISR 27; la regla específica sobre las comisiones de terminales no está en la biblioteca."
+    casos:
+      - {nombre: "Bruto 1,000, comisión 25 más IVA 4, con CFDI del banco", fecha: "2026-06-30", entradas: {bruto: "1000", comision: "25", iva_comision: "4"}, esperado: "D bancos 971.00; D comisiones_bancarias 25.00; D iva_acreditable_pagado 4.00; H clientes 1000.00"}
+      - {nombre: "Sin CFDI del banco: el IVA de la comisión se queda en el gasto", fecha: "2026-06-30", entradas: {bruto: "1000", comision: "25", iva_comision: "4", con_cfdi_banco: "no"}, esperado: "D bancos 971.00; D comisiones_bancarias 29.00; H clientes 1000.00"}
+      - {nombre: "Venta de 1,160 con IVA 160: se reclasifica el IVA trasladado y se acredita el de la comisión", fecha: "2026-06-30", entradas: {bruto: "1160", comision: "29", iva_comision: "4.64", iva_trasladado: "160", total_cfdi: "1160"}, esperado: "D bancos 1126.36; D comisiones_bancarias 29.00; D iva_acreditable_pagado 4.64; D iva_trasladado_no_cobrado 160.00; H clientes 1160.00; H iva_trasladado_cobrado 160.00"}
+      - {nombre: "Límite: sin comisión el banco recibe el bruto", fecha: "2026-06-30", entradas: {bruto: "500", comision: "0"}, esperado: "D bancos 500.00; H clientes 500.00"}

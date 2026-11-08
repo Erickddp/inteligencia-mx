@@ -2445,6 +2445,7 @@ parametros:
         valor:
           - ["caja", "", "101.01", ""]
           - ["bancos", "", "102.01", ""]
+          - ["comisiones_bancarias", "", "701.10", "Comisiones bancarias; incluye la comisión de la terminal (TPV)"]
           - ["clientes", "", "105.01", ""]
           - ["inventario", "", "115.01", ""]
           - ["isr_retenido_por_clientes", "", "113.02", "ISR a favor"]
@@ -2474,3 +2475,63 @@ parametros:
           - ["perdida_cambiaria", "", "701.01", ""]
           - ["utilidad_cambiaria", "", "702.01", ""]
     nota: "Sugerencia, no obligación: cada app puede usar su propio catálogo mientras asocie cada cuenta al agrupador (RMF 2.8.1.5). `contexto` distingue cuentas que cambian según el origen (el ISR retenido por pagar es 216.01 en nómina, 216.04 en honorarios y 216.03 en arrendamiento)."
+
+  GLOBAL_PERIODICIDAD_POR_REGIMEN:
+    nombre: Periodicidades de la factura global por régimen y cómo se detalla
+    tipo: lista
+    columnas: [regimen, periodicidad, detalle, exclusivo]
+    valores:
+      - desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        estado: por_confirmar
+        fuente: "RMF 2026 regla 2.7.1.21 (texto del DOF 28-dic-2025 en la biblioteca; sin revisión humana)"
+        valor:
+          - ["*", "diario", "por_operacion", "no"]
+          - ["*", "semanal", "por_operacion", "no"]
+          - ["*", "mensual", "por_operacion", "no"]
+          - ["621", "bimestral", "monto_total", "no"]
+          - ["626", "mensual", "monto_total", "si"]
+    nota: "`*` = cualquier régimen. 621 = quien sigue como RIF (Disposiciones Transitorias de la LISR, DOF 12-nov-2021): además de lo general, puede hacerla bimestral con solo el monto total. 626 = RESICO PF: el CFDI de las operaciones del mes lleva únicamente el monto total; la regla habla del mes y no dice expresamente que no pueda ser diaria o semanal, así que `exclusivo: si` es una interpretación que debe confirmar un contador."
+  GLOBAL_COMPROBANTE_MINIMO:
+    nombre: Importe desde el cual hay que expedir comprobante al público en general aunque no lo pidan
+    tipo: importe
+    unidad: MXN
+    valores:
+      - valor: "100.00"
+        desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        estado: por_confirmar
+        fuente: "RMF 2026 regla 2.7.1.21 (texto del DOF 28-dic-2025 en la biblioteca; sin revisión humana); no hay obligación en operaciones con importe inferior a $100.00 si el cliente no solicita comprobante"
+  RESICO_GLOBAL_CANCELACION_MES:
+    nombre: Mes del ejercicio siguiente en que vence la cancelación de la factura global de RESICO PF
+    tipo: numero
+    valores:
+      - valor: "4"
+        desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        estado: por_confirmar
+        fuente: "RMF 2026 regla 3.13.29 (a más tardar el último día de abril del ejercicio siguiente al de la emisión; texto del DOF sin revisión humana)"
+  IVA_EXENTO_PRESTADORES_MEDICOS:
+    nombre: Quién puede prestar servicios profesionales de medicina exentos de IVA
+    tipo: lista
+    valores:
+      - desde: "2020-12-09"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        estado: por_confirmar
+        fuente: "LIVA art. 15 fr. XIV (personas físicas, individualmente o por conducto de sociedades civiles o instituciones de asistencia o beneficencia privada autorizadas); texto de la Cámara, sin cotejar con el DOF"
+        valor: ["persona_fisica", "sociedad_civil", "institucion_asistencia_privada"]
+    nota: "Una sociedad mercantil (S.A., S. de R.L.) no está en la lista de la fracción XIV: sus servicios médicos no entran en esta exención."
+  IVA_EXENTO_PROFESIONES_MEDICAS:
+    nombre: Profesiones cuyos servicios de medicina están exentos de IVA
+    tipo: lista
+    valores:
+      - desde: "2020-12-09"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        estado: por_confirmar
+        fuente: "RLIVA art. 41 (médico, médico veterinario o cirujano dentista, siempre que cumplan los requisitos de la Ley); texto de la Cámara, sin cotejar con el DOF"
+        valor: ["medico", "medico_veterinario", "cirujano_dentista"]
