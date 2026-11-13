@@ -2,6 +2,40 @@
 
 Generado por `scripts/release.py --changelog` al preparar cada versión. Cada entrada sale de la comparación contra la versión anterior.
 
+## [v0.5.0] - 2026-11-13
+
+Pruebas: 193 pasan · 0 fallan · 0 pendientes   (* = pasa contra un esperado aún no confirmado).
+
+Para Timbra: toma lo que estaba en main sin publicar desde la v0.4.2 (pedido 02: factura global, servicios médicos, retención RESICO y comisión de la terminal; código agrupador). Ningún valor que ya existía cambia: no cae ninguna firma.
+
+- **Contabilidad:** código agrupador del SAT completo y mapa de conceptos de las pólizas (R-163 y R-164).
+- **Pedido 02 de Timbra (R-165 a R-171):** periodicidad de la factura global por régimen, comprobante mínimo, cancelación de la global en RESICO, IVA exento de servicios médicos (prestadores y profesiones), retención de ISR a RESICO y comisión de la terminal en el cobro.
+- **INPC oct-2026 = 147.026** (DOF 10-nov-2026, nota 5803352), cruzado con Banxico SIE SP1: la serie cubre oct-2021 a oct-2026. El caso de R-162 que usaba «el último publicado (sep-2026)» pasa a pago en dic-2026 y se agrega el de pago en nov-2026, que ya usa octubre.
+- **NIF cotejadas contra el CINIF (13-nov-2026):** la NIF A-1, *Marco Conceptual*, sustituyó desde 2023 a las A-1 a A-8 anteriores (pasan a `derogadas`); la A-2 vigente desde 2026 es *Incertidumbres sobre negocio en marcha*. 18 de 47 quedan cotejadas con su documento del CINIF; las demás siguen `cotejado: false` porque el listado completo es de pago. La B-1 y la B-3 tienen versión nueva en el libro 2026, con fecha de vigencia por confirmar. R-152 citaba la A-2 para la devengación: ahora cita la A-1 (cambia `citas`, no valores).
+- **Citas estructuradas, `que_dice` y `correcto_si`** en 25 reglas más; leyes de la CDMX en la biblioteca; datos abiertos regenerables y capa de búsqueda.
+
+### Parámetros nuevos
+
+- CONTA_CODIGO_AGRUPADOR
+- CONTA_CONCEPTO_AGRUPADOR
+- GLOBAL_COMPROBANTE_MINIMO
+- GLOBAL_PERIODICIDAD_POR_REGIMEN
+- IVA_EXENTO_PRESTADORES_MEDICOS
+- IVA_EXENTO_PROFESIONES_MEDICAS
+- RESICO_GLOBAL_CANCELACION_MES
+
+### Reglas nuevas
+
+- R-163
+- R-164
+- R-165
+- R-166
+- R-167
+- R-168
+- R-169
+- R-170
+- R-171
+
 ## [v0.4.2] - 2026-11-07
 
 Pruebas: 149 pasan · 0 fallan · 0 pendientes   (* = pasa contra un esperado aún no confirmado).
@@ -45,6 +79,7 @@ Sin cambios de valores: no cae ninguna firma. Se agregan reglas, calculadoras, p
 
 - R-138: CORREGIR -> OK
 - R-52: CORREGIR -> OK
+
 
 ## [v0.4.1] - 2026-11-05
 

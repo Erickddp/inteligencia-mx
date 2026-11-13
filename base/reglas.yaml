@@ -5,7 +5,7 @@
 # fase: en qué fase se termina de investigar
 # casos: los corre "python motor.py probar". confirmado:false = no cuenta como falla (espera firma o dato oficial)
 
-version_base: "0.4.2"
+version_base: "0.5.0"
 
 reglas:
 
@@ -812,8 +812,8 @@ reglas:
     estado: CRITERIO
     fase: 4
     calculadora: poliza_recibido
-    fuente: "CFF art. 28; RCFF art. 33; LIVA art. 5; NIF C-4 y A-2 (referencia)"
-    citas: [{ley: CFF, articulo: "28"}, {ley: RCFF, articulo: "33"}, {ley: LIVA, articulo: "5"}, {nif: "C-4"}, {nif: "A-2"}]
+    fuente: "CFF art. 28; RCFF art. 33; LIVA art. 5; NIF C-4 y A-1 Marco Conceptual (referencia)"
+    citas: [{ley: CFF, articulo: "28"}, {ley: RCFF, articulo: "33"}, {ley: LIVA, articulo: "5"}, {nif: "C-4"}, {nif: "A-1"}]
     que_dice: "Al recibir una factura, el gasto (o el inventario) y el IVA acreditable pendiente se cargan y le debes al proveedor lo que realmente pagarás; lo que retienes queda por pagar al SAT."
     correcto_si: "La póliza cuadra; un gasto no deducible va completo, con su IVA, a no deducibles; las retenciones propias se abonan a ISR e IVA retenido por pagar."
     hallazgo: "El IVA acreditable pendiente pasa a pagado cuando se paga la factura (R-153), salvo el IVA que se retuvo, que se acredita después del entero (R-156 y R-157)."
@@ -920,7 +920,8 @@ reglas:
     casos:
       - {nombre: "Vence 17-mar-2025, paga 10-feb-2026: INPC de ene-2026 entre el de feb-2025", fecha: "2026-02-10", entradas: {monto: "10000", desde: "2025-03-17", hasta: "2026-02-10"}, esperado: {inpc_antiguo: "2025-02 138.726", inpc_reciente: "2026-01 143.588", factor: "1.0350", actualizacion: "350.00", monto_actualizado: "10350.00"}}
       - {nombre: "Límite: pago en el mismo mes del vencimiento, factor 1", fecha: "2026-01-30", entradas: {monto: "10000", desde: "2026-01-17", hasta: "2026-01-30"}, esperado: {inpc_antiguo: "2025-12 143.042", inpc_reciente: "2025-12 143.042", factor: "1.0000", actualizacion: "0.00", monto_actualizado: "10000.00"}}
-      - {nombre: "El índice del mes anterior al pago no se ha publicado: se usa el último (sep-2026)", fecha: "2026-11-20", entradas: {monto: "10000", desde: "2026-01-17", hasta: "2026-11-20"}, esperado: {inpc_antiguo: "2025-12 143.042", inpc_reciente: "2026-09 146.075", factor: "1.0212", actualizacion: "212.00", monto_actualizado: "10212.00"}}
+      - {nombre: "El índice del mes anterior al pago no se ha publicado: se usa el último (oct-2026)", fecha: "2026-12-20", entradas: {monto: "10000", desde: "2026-01-17", hasta: "2026-12-20"}, esperado: {inpc_antiguo: "2025-12 143.042", inpc_reciente: "2026-10 147.026", factor: "1.0279", actualizacion: "279.00", monto_actualizado: "10279.00"}}
+      - {nombre: "Paga 20-nov-2026: ya se usa el INPC de oct-2026 (DOF 10-nov-2026)", fecha: "2026-11-20", entradas: {monto: "10000", desde: "2026-01-17", hasta: "2026-11-20"}, esperado: {inpc_antiguo: "2025-12 143.042", inpc_reciente: "2026-10 147.026", factor: "1.0279", actualizacion: "279.00", monto_actualizado: "10279.00"}}
       - {nombre: "Antes de oct-2021 no hay INPC cargado: avisa y no calcula", fecha: "2026-11-05", entradas: {monto: "10000", desde: "2021-09-17", hasta: "2026-02-10"}, espera_error: SinValor}
       - {nombre: "Actualización y recargos juntos: vence 19-ene, paga 20-abr-2026 = 4 meses de recargos", fecha: "2026-04-20", calculadora: actualizacion_y_recargos, entradas: {monto: "10000", vencimiento: "2026-01-19", pago: "2026-04-20"}, esperado: {factor: "1.0175", monto_actualizado: "10175.00", meses: "4", tasa_total: "8.28", recargos: "842.49", total: "11017.49"}}
 

@@ -13,7 +13,8 @@ import yaml
 from conftest import BASE, RAIZ
 
 LLAVES = {"ley", "articulo", "fraccion", "parrafo", "anio", "nif"}
-NIF = {n["id"]: n for n in yaml.safe_load((RAIZ / "fuentes" / "nif" / "indice.yaml").read_text(encoding="utf-8"))["nif"]}
+NIF_YAML = yaml.safe_load((RAIZ / "fuentes" / "nif" / "indice.yaml").read_text(encoding="utf-8"))
+NIF = {n["id"]: n for n in NIF_YAML["nif"]}
 REGLAS = yaml.safe_load((BASE / "reglas.yaml").read_text(encoding="utf-8"))["reglas"]
 PARAMS = yaml.safe_load((BASE / "parametros.yaml").read_text(encoding="utf-8"))["parametros"]
 CON_CITAS = [(r["id"], r) for r in REGLAS if r.get("citas")] + [(i, p) for i, p in PARAMS.items() if p.get("citas")]
@@ -28,8 +29,20 @@ def indice_de(ley, anio=None):
 def test_indice_de_nif():
     ids = [n["id"] for n in NIF.values()]
     assert len(ids) == len(set(ids)) and len(NIF) >= 40
+    fuentes = NIF_YAML["fuentes_cotejo"]
     for n in NIF.values():
-        assert n["titulo"] and n["tema"] and n["cotejado"] is False
+        assert n["titulo"] and n["tema"] and isinstance(n["cotejado"], bool)
+        # cotejado sólo con la fuente del CINIF donde se leyó; sin cotejo, sin fuente
+        assert (n.get("cotejo") in fuentes) if n["cotejado"] else ("cotejo" not in n), n["id"]
+
+
+def test_nif_derogadas_no_se_citan():
+    """El Marco Conceptual (A-1, 2023) sustituyó a las A-1 a A-8 viejas; la A-2 de hoy es negocio en marcha."""
+    assert NIF["A-1"]["titulo"].startswith("Marco Conceptual") and NIF["A-2"]["titulo"] == "Incertidumbres sobre negocio en marcha"
+    assert {"A-3", "A-8"}.isdisjoint(NIF) and len(NIF_YAML["derogadas"]) == 8
+    for id_, obj in CON_CITAS:
+        for c in obj["citas"]:
+            assert c.get("nif") != "A-2" or id_ not in {"R-152"}, f"{id_}: la devengación está en la A-1, no en la A-2"
 
 
 def test_hay_reglas_con_citas_estructuradas():

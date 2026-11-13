@@ -1,7 +1,7 @@
 # TIMBRA · SERIE INPC (índice nacional de precios al consumidor, general)
 # Fuente primaria: INEGI, publicado en el Diario Oficial de la Federación (CFF arts. 20 y 20-bis).
 # Cada mes lleva la URL de la nota del DOF de donde se leyó. Cifras como TEXTO (Decimal en el motor, nunca float).
-# Los 60 meses salen del DOF y se cruzaron contra Banxico SIE SP1 (fuentes/evidencia/inpc_banxico/): 0 diferencias.
+# Los 61 meses salen del DOF y se cruzaron contra Banxico SIE SP1 (fuentes/evidencia/inpc_banxico/): 0 diferencias.
 # via: mes_publicado = nota del mes siguiente que da a conocer el índice; anexo_conceptos = nota de conceptos de consumo;
 #      mes_anterior_citado = el DOF cita el índice del mes anterior en la nota del mes siguiente.
 # Los textos del DOF se leyeron de TODAS las ediciones del día (matutina y vespertina); con una sola edición faltaban 11 meses.
@@ -10,8 +10,8 @@ serie: INPC
 nombre: Índice Nacional de Precios al Consumidor, general
 base: "segunda quincena de julio de 2018 = 100"
 unidad: puntos
-corte: "2026-11-07"
-cobertura: {desde: "2021-10", hasta: "2026-09"}
+corte: "2026-11-13"
+cobertura: {desde: "2021-10", hasta: "2026-10"}
 valores:
   "2021-10": {valor: "115.561", fuente: dof, via: anexo_conceptos, publicado: "2021-11-26", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5636525&fecha=26/11/2021"}
   "2021-11": {valor: "116.884", fuente: dof, via: mes_publicado, publicado: "2021-12-10", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5637916&fecha=10/12/2021"}
@@ -73,3 +73,4 @@ valores:
   "2026-07": {valor: "145.169", fuente: dof, via: anexo_conceptos, publicado: "2026-08-24", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5796960&fecha=24/08/2026"}
   "2026-08": {valor: "145.462", fuente: dof, via: anexo_conceptos, publicado: "2026-09-29", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5799799&fecha=29/09/2026"}
   "2026-09": {valor: "146.075", fuente: dof, via: anexo_conceptos, publicado: "2026-10-19", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5801491&fecha=19/10/2026"}
+  "2026-10": {valor: "147.026", fuente: dof, via: mes_publicado, publicado: "2026-11-10", dof: "https://dof.gob.mx/nota_detalle.php?codigo=5803352&fecha=10/11/2026"}
