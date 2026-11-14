@@ -16,7 +16,7 @@
 #    pero marcado ARRASTRADO (estimación en pantalla), para que enero no se quede en blanco.
 #    hasta con fecha = vence de verdad (estímulos con plazo, LIF anual): después da SinValor.
 
-version_base: "0.5.0"
+version_base: "0.6.0"
 fecha_corte: "2026-11-05"
 
 parametros:
@@ -202,7 +202,7 @@ parametros:
     columnas: [hasta_ingreso_mensual, tasa]
     valores:
       - desde: "2022-01-01"
-        hasta: null
+        hasta: "2026-12-31"
         fuente: "LISR art. 113-E"
         valor:
           - ["25000.00",   "1.00"]
@@ -210,6 +210,16 @@ parametros:
           - ["83333.33",   "1.50"]
           - ["208333.33",  "2.00"]
           - ["3500000.00", "2.50"]
+      - desde: "2027-01-01"
+        hasta: null
+        confirmado_hasta: "2027-12-31"
+        fuente: "LISR art. 113-E, TABLA MENSUAL, reformada por Decreto DOF 13-nov-2026 (https://dof.gob.mx/nota_detalle.php?codigo=5803758&fecha=13/11/2026): el último renglón sube a 5,000,000.00"
+        valor:
+          - ["25000.00",   "1.00"]
+          - ["50000.00",   "1.10"]
+          - ["83333.33",   "1.50"]
+          - ["208333.33",  "2.00"]
+          - ["5000000.00", "2.50"]
     firma: {validado: false, por: null, fecha: null}
 
   RESICO_PF_TOPE_ANUAL:
@@ -218,14 +228,13 @@ parametros:
     valores:
       - valor: "3500000.00"
         desde: "2022-01-01"
-        hasta: null
+        hasta: "2026-12-31"
         fuente: "LISR art. 113-E"
       - valor: "5000000.00"
         desde: "2027-01-01"
         hasta: null
-        estado: aprobado_congreso_pendiente_dof
-        fuente: "Reforma LISR 2027: Senado 27-oct-2026, Diputados 3-nov-2026; pendiente de DOF"
-    revisar_antes: "2026-11-01"
+        confirmado_hasta: "2027-12-31"
+        fuente: "LISR art. 113-E, primer párrafo, reformado por Decreto DOF 13-nov-2026, en vigor el 1-ene-2027 (https://dof.gob.mx/nota_detalle.php?codigo=5803758&fecha=13/11/2026)"
 
   RESICO_PF_RETENCION_PM:
     nombre: Retención ISR que hace una moral a un RESICO PF
@@ -242,13 +251,13 @@ parametros:
     valores:
       - valor: "35000000.00"
         desde: "2022-01-01"
-        hasta: null
+        hasta: "2026-12-31"
         fuente: "LISR art. 206"
       - valor: "50000000.00"
         desde: "2027-01-01"
         hasta: null
-        estado: aprobado_congreso_pendiente_dof
-        fuente: "Reforma LISR 2027: Senado 27-oct-2026, Diputados 3-nov-2026; pendiente de DOF"
+        confirmado_hasta: "2027-12-31"
+        fuente: "LISR art. 206, primer párrafo, reformado por Decreto DOF 13-nov-2026, en vigor el 1-ene-2027 (https://dof.gob.mx/nota_detalle.php?codigo=5803758&fecha=13/11/2026)"
 
   RESICO_PM_INVERSIONES:
     nombre: Porcientos máximos de deducción de inversiones en RESICO personas morales (art. 209)
@@ -259,7 +268,7 @@ parametros:
     correcto_si: "El porcentaje coincide con el apartado A, B o C del art. 209 para ese bien o, en maquinaria, para la actividad en que se usa."
     valores:
       - desde: "2022-01-01"
-        hasta: null
+        hasta: "2026-12-31"
         confirmado_hasta: "2026-12-31"
         fuente: "LISR art. 209, apartados A, B y C (capítulo XII del título VII, adicionado DOF 12-11-2021); texto de la Cámara de Diputados, cotejo con el DOF pendiente (M-102)"
         valor:
@@ -305,6 +314,97 @@ parametros:
           - ["maquinaria_investigacion_desarrollo", "35"]
           - ["maquinaria_componentes_computo", "50"]
           - ["maquinaria_otras_actividades", "20"]
+      - desde: "2027-01-01"
+        hasta: null
+        confirmado_hasta: "2027-12-31"
+        fuente: "LISR art. 209 apartados A (fr. I a III), B y C, reformados por Decreto DOF 13-nov-2026, en vigor el 1-ene-2027 (https://dof.gob.mx/nota_detalle.php?codigo=5803758&fecha=13/11/2026). Sin cambio: A-IV (concesiones), B-IX (semovientes), B-XII (discapacidad) y B-XIII (renovables)"
+        valor:
+          - ["cargos_diferidos", "10"]
+          - ["periodos_preoperativos", "20"]
+          - ["regalias_asistencia_otros_diferidos", "30"]
+          - ["construcciones_monumento_restaurado", "40"]
+          - ["construcciones", "26"]
+          - ["ferrocarril_bombas_combustible", "20"]
+          - ["ferrocarril_vias", "20"]
+          - ["ferrocarril_carros_locomotoras", "20"]
+          - ["ferrocarril_maquinaria_vias", "40"]
+          - ["ferrocarril_comunicacion_senalizacion", "40"]
+          - ["mobiliario_equipo_oficina", "50"]
+          - ["embarcaciones", "40"]
+          - ["aviones_aerofumigacion", "50"]
+          - ["aviones", "40"]
+          - ["automoviles", "50"]
+          - ["equipo_computo", "100"]
+          - ["dados_troqueles_moldes_herramienta", "100"]
+          - ["semovientes_vegetales", "100"]
+          - ["telefonia_torres_cables", "20"]
+          - ["telefonia_radio", "40"]
+          - ["telefonia_transmision", "40"]
+          - ["telefonia_conmutacion", "50"]
+          - ["telefonia_otros", "40"]
+          - ["satelital_espacio", "40"]
+          - ["satelital_tierra", "40"]
+          - ["adaptaciones_discapacidad", "100"]
+          - ["energia_renovable_cogeneracion", "100"]
+          - ["bicicletas_motos_electricas", "100"]
+          - ["maquinaria_electricidad_granos_azucar_aceites_maritimo", "40"]
+          - ["maquinaria_metal_primer_proceso_tabaco_carbon", "20"]
+          - ["maquinaria_pulpa_papel", "26"]
+          - ["maquinaria_vehiculos_metal_alimentos_bebidas", "26"]
+          - ["maquinaria_piel_quimicos_caucho_plastico_imprenta", "40"]
+          - ["maquinaria_transporte_electrico_hidrocarburos", "40"]
+          - ["maquinaria_textil_vestido", "50"]
+          - ["maquinaria_mineria_aeronaves_transporte_terrestre", "50"]
+          - ["maquinaria_transporte_aereo_radio_tv", "50"]
+          - ["maquinaria_restaurantes", "66"]
+          - ["maquinaria_construccion_agro", "50"]
+          - ["maquinaria_investigacion_desarrollo", "70"]
+          - ["maquinaria_componentes_computo", "100"]
+          - ["maquinaria_otras_actividades", "40"]
+  DEDUCCION_INMEDIATA_PLAN_MEXICO:
+    nombre: Porcientos de deducción inmediata de bienes nuevos de activo fijo, Plan México 2027-2030 (estímulo, con constancia)
+    tipo: tabla
+    columnas: [tipo_bien, tasa]
+    valores:
+      - desde: "2027-01-01"
+        hasta: "2030-12-31"
+        fuente: "Decreto que reforma la LISR, DOF 13-nov-2026, art. Segundo fr. I incisos b) y c) (https://dof.gob.mx/nota_detalle.php?codigo=5803758&fecha=13/11/2026). Bienes nuevos adquiridos del 1-ene-2027 al 30-sep-2030; personas morales del título II, RESICO PM (título VII cap. XII) y personas físicas de la sección I del cap. II del título IV, con constancia del Comité de Evaluación. No aplica a mobiliario y equipo de oficina, autos de combustión interna, blindaje, bienes no identificables individualmente ni aviones que no sean de aerofumigación"
+        valor:
+          - ["construcciones_monumento_restaurado", "67"]
+          - ["construcciones", "49"]
+          - ["ferrocarril_bombas_combustible", "35"]
+          - ["ferrocarril_vias", "49"]
+          - ["ferrocarril_carros_locomotoras", "54"]
+          - ["ferrocarril_maquinaria_vias", "58"]
+          - ["ferrocarril_comunicacion_senalizacion", "67"]
+          - ["embarcaciones", "54"]
+          - ["aviones_aerofumigacion", "83"]
+          - ["automoviles_electricos_hibridos", "83"]
+          - ["autobuses_camiones_carga_montacargas_remolques", "83"]
+          - ["equipo_computo", "85"]
+          - ["moldes_troqueles", "86"]
+          - ["telefonia_torres_cables", "49"]
+          - ["telefonia_radio", "62"]
+          - ["telefonia_transmision", "67"]
+          - ["telefonia_conmutacion", "83"]
+          - ["telefonia_otros", "67"]
+          - ["satelital_espacio", "62"]
+          - ["satelital_tierra", "67"]
+          - ["bicicletas_motos_electricas", "83"]
+          - ["maquinaria_electricidad_granos_azucar_aceites_maritimo", "49"]
+          - ["maquinaria_metal_primer_proceso_tabaco_carbon", "54"]
+          - ["maquinaria_pulpa_papel", "58"]
+          - ["maquinaria_vehiculos_metal_alimentos_bebidas", "62"]
+          - ["maquinaria_piel_quimicos_caucho_plastico_imprenta", "65"]
+          - ["maquinaria_transporte_electrico_hidrocarburos", "67"]
+          - ["maquinaria_textil_vestido", "69"]
+          - ["maquinaria_mineria_aeronaves_transporte_terrestre", "71"]
+          - ["maquinaria_transporte_aereo_radio_tv", "76"]
+          - ["maquinaria_restaurantes", "80"]
+          - ["maquinaria_construccion_agro", "83"]
+          - ["maquinaria_investigacion_desarrollo", "86"]
+          - ["maquinaria_componentes_computo", "89"]
+          - ["maquinaria_otras_actividades", "67"]
   RESICO_PM_INVERSIONES_TOPE:
     nombre: Monto total de inversiones del ejercicio hasta el cual la RESICO PM usa los porcientos del art. 209
     tipo: importe
@@ -452,14 +552,15 @@ parametros:
         fuente: "LIVA art. 1-A fr. II inciso c); RLIVA art. 3 fr. II"
 
   IVA_RESICO_PF_OPCION_TASA:
-    nombre: Opción de pagar IVA definitivo sobre lo cobrado, sin acreditar (RESICO PF)
+    nombre: Opción de pagar IVA definitivo sobre lo cobrado, sin acreditar (RESICO PF y RESICO PM)
     tipo: porcentaje
+    que_dice: "En 2027 quien está en RESICO (persona física o moral) puede pagar su IVA del mes aplicando 7 % a lo cobrado gravado, como pago definitivo y sin acreditar el IVA de sus gastos."
+    correcto_si: "Se aplica 7 % sobre las contraprestaciones gravadas efectivamente cobradas del mes, sólo en 2027, sin acreditamiento; la importación paga su IVA normal."
     valores:
       - valor: "7"
         desde: "2027-01-01"
-        hasta: null
-        estado: aprobado_congreso_pendiente_dof
-        fuente: "LIF 2027: Senado 27-oct-2026, enviada al Ejecutivo; pendiente de DOF"
+        hasta: "2027-12-31"
+        fuente: "LIF 2027 art. 25 fr. XVIII, DOF 13-nov-2026 (https://dof.gob.mx/nota_detalle.php?codigo=5803757&fecha=13/11/2026). Alcanza a la sección IV del cap. II del título IV (RESICO PF) y al cap. XII del título VII (RESICO PM) de la LISR; el ID conserva el nombre de RESICO_PF por compatibilidad"
 
   # ───────────────────────── Nómina (LFT / LSS) ─────────────────────────
   EXENTO_AGUINALDO_VECES_UMA:
@@ -518,7 +619,7 @@ parametros:
     valores:
       - {valor: "0.98", desde: "2025-01-01", hasta: "2025-12-31", fuente: "LIF 2025 art. 8"}
       - {valor: "1.38", desde: "2026-01-01", hasta: "2026-12-31", fuente: "LIF 2026 art. 11 fr. I, DOF 07-nov-2025"}
-      - {valor: "1.38", desde: "2027-01-01", hasta: "2027-12-31", estado: aprobado_congreso_pendiente_dof, fuente: "LIF 2027 aprobada por el Congreso, pendiente de DOF"}
+      - {valor: "1.38", desde: "2027-01-01", hasta: "2027-12-31", fuente: "LIF 2027 art. 11 fr. I, DOF 13-nov-2026 (https://dof.gob.mx/nota_detalle.php?codigo=5803757&fecha=13/11/2026)"}
     revisar_antes: "2026-12-01"
 
   RECARGOS_MORA_MENSUAL:
@@ -534,7 +635,7 @@ parametros:
     valores:
       - {valor: "1.26", desde: "2025-01-01", hasta: "2025-12-31", fuente: "LIF 2025"}
       - {valor: "1.42", desde: "2026-01-01", hasta: "2026-12-31", fuente: "LIF 2026 art. 11"}
-      - {valor: "1.42", desde: "2027-01-01", hasta: "2027-12-31", estado: aprobado_congreso_pendiente_dof, fuente: "LIF 2027 aprobada por el Congreso, pendiente de DOF"}
+      - {valor: "1.42", desde: "2027-01-01", hasta: "2027-12-31", fuente: "LIF 2027 art. 11 fr. II num. 1, DOF 13-nov-2026 (https://dof.gob.mx/nota_detalle.php?codigo=5803757&fecha=13/11/2026)"}
 
   RECARGOS_PARCIALIDADES_24M:
     nombre: Recargos en parcialidades de más de 12 y hasta 24 meses
@@ -542,14 +643,14 @@ parametros:
     valores:
       - {valor: "1.53", desde: "2025-01-01", hasta: "2025-12-31", fuente: "LIF 2025"}
       - {valor: "1.63", desde: "2026-01-01", hasta: "2026-12-31", fuente: "LIF 2026 art. 11"}
-      - {valor: "1.63", desde: "2027-01-01", hasta: "2027-12-31", estado: aprobado_congreso_pendiente_dof, fuente: "LIF 2027 aprobada por el Congreso, pendiente de DOF"}
+      - {valor: "1.63", desde: "2027-01-01", hasta: "2027-12-31", fuente: "LIF 2027 art. 11 fr. II num. 2, DOF 13-nov-2026 (https://dof.gob.mx/nota_detalle.php?codigo=5803757&fecha=13/11/2026)"}
 
   RECARGOS_PARCIALIDADES_MAS24M:
     nombre: Recargos en parcialidades de más de 24 meses o diferidos
     tipo: porcentaje
     valores:
       - {valor: "1.97", desde: "2026-01-01", hasta: "2026-12-31", fuente: "LIF 2026 art. 11"}
-      - {valor: "1.97", desde: "2027-01-01", hasta: "2027-12-31", estado: aprobado_congreso_pendiente_dof, fuente: "LIF 2027 aprobada por el Congreso, pendiente de DOF"}
+      - {valor: "1.97", desde: "2027-01-01", hasta: "2027-12-31", fuente: "LIF 2027 art. 11 fr. II num. 3, DOF 13-nov-2026 (https://dof.gob.mx/nota_detalle.php?codigo=5803757&fecha=13/11/2026)"}
 
   # ───────────────────────── Plazos ─────────────────────────
   DIA_VENCIMIENTO_MENSUAL:
@@ -1133,14 +1234,14 @@ parametros:
     nombre: Límite de deducción de intereses netos, % de la utilidad fiscal ajustada
     tipo: porcentaje
     valores:
-      - {valor: "30", desde: "2020-01-01", hasta: null, fuente: "LISR art. 28 fr. XXXII"}
-      - {valor: "20", desde: "2027-01-01", hasta: null, estado: aprobado_congreso_pendiente_dof, fuente: "Reforma LISR 2027, pendiente de DOF"}
+      - {valor: "30", desde: "2020-01-01", hasta: "2026-12-31", fuente: "LISR art. 28 fr. XXXII"}
+      - {valor: "20", desde: "2027-01-01", hasta: null, confirmado_hasta: "2027-12-31", fuente: "LISR art. 28 fr. XXXII, reformado por Decreto DOF 13-nov-2026, en vigor el 1-ene-2027 (https://dof.gob.mx/nota_detalle.php?codigo=5803758&fecha=13/11/2026)"}
   ISR_RET_INTERESES:
     nombre: Retención anual de ISR sobre capital que genera intereses
     tipo: porcentaje
     valores:
-      - {valor: "0.68", desde: "2027-01-01", hasta: "2027-12-31", estado: aprobado_congreso_pendiente_dof, fuente: "LIF 2027 aprobada por el Congreso, pendiente de DOF"}
-    nota: "Falta cargar el tramo 2026 (LIF 2026) con su fuente; sin él, 2026 da SinValor."
+      - {valor: "0.90", desde: "2026-01-01", hasta: "2026-12-31", fuente: "LIF 2026 art. 24 (biblioteca, texto de la Cámara de Diputados)"}
+      - {valor: "0.68", desde: "2027-01-01", hasta: "2027-12-31", fuente: "LIF 2027 art. 24, DOF 13-nov-2026 (https://dof.gob.mx/nota_detalle.php?codigo=5803757&fecha=13/11/2026)"}
   DONATIVOS_DEDUCIBLE_PCT:
     nombre: Tope de deducción de donativos, % de la utilidad fiscal (PM) o ingresos acumulables (PF) del año anterior
     tipo: porcentaje

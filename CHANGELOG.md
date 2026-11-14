@@ -2,6 +2,76 @@
 
 Generado por `scripts/release.py --changelog` al preparar cada versión. Cada entrada sale de la comparación contra la versión anterior.
 
+## [v0.6.0] - 2026-11-14
+
+Pruebas: 261 pasan · 0 fallan · 0 pendientes   (* = pasa contra un esperado aún no confirmado).
+
+Pedido 03 de Timbra, bloques 1 a 6. Cae UNA firma de valor (DEPRECIACION_TASAS_ART34, completada sin mover ninguna tasa) y cambian vigencias porque el paquete 2027 ya salió en el DOF.
+
+- **Inversiones RESICO PM (R-172):** porcientos del LISR 209 con tope de 3 M, meses completos de uso, terreno fuera. Tramo 2027 con la reforma (construcciones 26 %, cómputo 100 %...).
+- **Depreciación completa (R-121, R-173):** arts. 33, 34 (15 fracciones) y 35 (por actividad); topes de auto eléctrico (250,000) y avión (8,600,000); tasas contables de referencia por tipo de activo de Timbra (CRITERIO, por_confirmar).
+- **IVA acreditable por destino (R-174) y R-17:** gravado 100 %, exento 0 %, indistinto por proporción; caso de consultorio.
+- **Frontera (R-103, R-175):** RESICO PF sin crédito de ISR (RMF 11.9.23, cotejada contra el DOF); IVA 8 % norte y sur hasta el 31-dic-2026 y 16 % con aviso después. Sin prórroga publicada al 14-nov-2026.
+- **Días inhábiles (R-176 a R-178):** festivos del CFF 12, serie `dias_inhabiles` del SAT (RMF 2.1.6 y modificaciones 1a. y 4a.), vencimiento recorrido con la regla del viernes en banco y plazos en días hábiles. El paquete trae ahora dos series.
+- **Paquete 2027 publicado en el DOF el 13-nov-2026:** LIF 2027 (recargos 1.38/1.42/1.63/1.97, retención por intereses 0.68 %, IVA opcional 7 % para RESICO PF y PM) y reforma a la LISR (tope RESICO PF 5 M, RESICO PM 50 M, intereses netos 20 %, art. 209 duplicado). Sus tramos pasan de pendiente_dof a vigentes desde el 1-ene-2027. Nuevo: deducción inmediata Plan México 2027-2030 (R-179), que también alcanza a la RESICO PM.
+- **Pendiente para la siguiente versión:** UMA 2027 (INEGI, enero), salario mínimo 2027 (CONASAMI, diciembre), Anexo 8 y RMF 2027, ISN que cambie, prórroga de frontera, y cargar a la biblioteca las 4 modificaciones de la RMF 2026 y la LIF 2027.
+
+### Valores cambiados (firmas que se caen)
+
+- DEPRECIACION_TASAS_ART34 desde 2014-01-01
+
+### Estados cambiados
+
+- INTERESES_NETOS_LIMITE_PCT desde 2027-01-01: aprobado_congreso_pendiente_dof -> vigente
+- ISR_RET_INTERESES desde 2027-01-01: aprobado_congreso_pendiente_dof -> vigente
+- IVA_RESICO_PF_OPCION_TASA desde 2027-01-01: aprobado_congreso_pendiente_dof -> vigente
+- RECARGOS_PARCIALIDADES_12M desde 2027-01-01: aprobado_congreso_pendiente_dof -> vigente
+- RECARGOS_PARCIALIDADES_24M desde 2027-01-01: aprobado_congreso_pendiente_dof -> vigente
+- RECARGOS_PARCIALIDADES_MAS24M desde 2027-01-01: aprobado_congreso_pendiente_dof -> vigente
+- RECARGOS_PRORROGA_MENSUAL desde 2027-01-01: aprobado_congreso_pendiente_dof -> vigente
+- RESICO_PF_TOPE_ANUAL desde 2027-01-01: aprobado_congreso_pendiente_dof -> vigente
+- RESICO_PM_TOPE_ANUAL desde 2027-01-01: aprobado_congreso_pendiente_dof -> vigente
+
+### Vigencias cambiadas
+
+- INTERESES_NETOS_LIMITE_PCT desde 2020-01-01: hasta None -> 2026-12-31
+- INTERESES_NETOS_LIMITE_PCT desde 2027-01-01: hasta None -> None
+- IVA_RESICO_PF_OPCION_TASA desde 2027-01-01: hasta None -> 2027-12-31
+- RESICO_PF_TABLA desde 2022-01-01: hasta None -> 2026-12-31
+- RESICO_PF_TOPE_ANUAL desde 2022-01-01: hasta None -> 2026-12-31
+- RESICO_PF_TOPE_ANUAL desde 2027-01-01: hasta None -> None
+- RESICO_PM_TOPE_ANUAL desde 2022-01-01: hasta None -> 2026-12-31
+- RESICO_PM_TOPE_ANUAL desde 2027-01-01: hasta None -> None
+
+### Tramos nuevos
+
+- ISR_RET_INTERESES desde 2026-01-01 (vigente)
+- RESICO_PF_TABLA desde 2027-01-01 (vigente)
+
+### Parámetros nuevos
+
+- AUTO_TOPE_DEDUCCION_ELECTRICO
+- AVION_TOPE_DEDUCCION
+- CFF_DIAS_INHABILES
+- DEDUCCION_INMEDIATA_PLAN_MEXICO
+- DEPRECIACION_CONTABLE_REFERENCIA
+- DEPRECIACION_TASAS_ART33
+- DEPRECIACION_TASAS_ART35
+- IVA_TASA_FRONTERA_SUR
+- RESICO_PM_INVERSIONES
+- RESICO_PM_INVERSIONES_TOPE
+
+### Reglas nuevas
+
+- R-172
+- R-173
+- R-174
+- R-175
+- R-176
+- R-177
+- R-178
+- R-179
+
 ## [v0.5.0] - 2026-11-13
 
 Pruebas: 193 pasan · 0 fallan · 0 pendientes   (* = pasa contra un esperado aún no confirmado).
@@ -35,6 +105,7 @@ Para Timbra: toma lo que estaba en main sin publicar desde la v0.4.2 (pedido 02:
 - R-169
 - R-170
 - R-171
+
 
 ## [v0.4.2] - 2026-11-07
 
@@ -79,6 +150,7 @@ Sin cambios de valores: no cae ninguna firma. Se agregan reglas, calculadoras, p
 
 - R-138: CORREGIR -> OK
 - R-52: CORREGIR -> OK
+
 
 
 ## [v0.4.1] - 2026-11-05

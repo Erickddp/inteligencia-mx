@@ -20,8 +20,8 @@
     "formula",
     "fuente_ultimo"
    ],
-   "filas": 131,
-   "sha256": "1eb94ca96534e5dcc5756fbdf9f94be30210bac54787ca4a157771906f45725a"
+   "filas": 132,
+   "sha256": "7da5b05f3011623f1de4302481a37565e542ec825a49724042d799b07e15f515"
   },
   "reglas.csv": {
    "descripcion": "Cada regla R-xx con su estado, calculadora, número de casos y citas.",
@@ -37,8 +37,8 @@
     "tiene_que_dice",
     "fuente"
    ],
-   "filas": 113,
-   "sha256": "8d5456617a7a2fe9a1c71f81737b9307256b3938fbe9d9a24cc974bac3589821"
+   "filas": 114,
+   "sha256": "1605be92147199c9c387c287185abbe0ee7e219fc44852734c5334dae354769f"
   },
   "leyes.csv": {
    "descripcion": "Cada ley, código o reglamento de la biblioteca con su ámbito, materia, huella y si tiene cotejo humano.",

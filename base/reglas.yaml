@@ -5,7 +5,7 @@
 # fase: en qué fase se termina de investigar
 # casos: los corre "python motor.py probar". confirmado:false = no cuenta como falla (espera firma o dato oficial)
 
-version_base: "0.5.0"
+version_base: "0.6.0"
 
 reglas:
 
@@ -482,11 +482,14 @@ reglas:
     fase: 1
     parametros: [RESICO_PF_TOPE_ANUAL, IVA_RESICO_PF_OPCION_TASA, RESICO_PM_TOPE_ANUAL, INTERESES_NETOS_LIMITE_PCT, ISR_RET_INTERESES]
     calculadora: parametro
-    hallazgo: "Los estados 'propuesta' y 'aprobado_congreso_pendiente_dof' nunca se aplican fuera de simulación; el motor devuelve el valor vigente y un aviso 'reforma_pendiente'. Un estado desconocido frena la carga."
+    hallazgo: "Los estados 'propuesta' y 'aprobado_congreso_pendiente_dof' nunca se aplican fuera de simulación; el motor devuelve el valor vigente y un aviso 'reforma_pendiente'. Un estado desconocido frena la carga. El paquete 2027 (LIF y reforma a la LISR) salió en el DOF el 13-nov-2026: sus tramos pasaron a vigentes desde el 1-ene-2027."
     casos:
-      - {nombre: "Tope RESICO 2027 sin DOF: sigue 3.5 M", fecha: "2027-01-15", entradas: {id: RESICO_PF_TOPE_ANUAL}, esperado: "3500000.00"}
-      - {nombre: "…y avisa la reforma pendiente", fecha: "2027-01-15", calculadora: reforma_pendiente, entradas: {id: RESICO_PF_TOPE_ANUAL}, esperado: "5000000.00"}
-      - {nombre: "IVA 7% RESICO sin DOF no aplica", fecha: "2027-01-15", entradas: {id: IVA_RESICO_PF_OPCION_TASA}, espera_error: SinValor}
+      - {nombre: "Tope RESICO PF 2027 publicado en el DOF el 13-nov-2026: 5 M", fecha: "2027-01-15", entradas: {id: RESICO_PF_TOPE_ANUAL}, esperado: "5000000.00"}
+      - {nombre: "Límite: el 31-dic-2026 sigue 3.5 M", fecha: "2026-12-31", entradas: {id: RESICO_PF_TOPE_ANUAL}, esperado: "3500000.00"}
+      - {nombre: "Ya no hay reforma pendiente que avisar", fecha: "2027-01-15", calculadora: reforma_pendiente, entradas: {id: RESICO_PF_TOPE_ANUAL}, esperado: "ninguna"}
+      - {nombre: "IVA 7 % de RESICO en 2027 (LIF 2027 art. 25 fr. XVIII)", fecha: "2027-01-15", entradas: {id: IVA_RESICO_PF_OPCION_TASA}, esperado: "7"}
+      - {nombre: "IVA 7 % no existe en 2026", fecha: "2026-12-31", entradas: {id: IVA_RESICO_PF_OPCION_TASA}, espera_error: SinValor}
+      - {nombre: "IVA 7 % es de la LIF 2027: en 2028 no aplica sin nueva LIF", fecha: "2028-01-15", entradas: {id: IVA_RESICO_PF_OPCION_TASA}, espera_error: SinValor}
 
   # ═════════════════════════ v0.4.0 · FASES 3 Y 4 (casos validados contra el código de Timbra) ═════════════════════════
   - id: R-109
@@ -1137,7 +1140,7 @@ reglas:
     citas: [{ley: LISR, articulo: "209"}, {ley: LISR, articulo: "210"}, {ley: LISR, articulo: "211"}, {ley: LISR, articulo: "31"}, {ley: LISR, articulo: "32"}, {ley: LISR, articulo: "36"}]
     que_dice: "Una persona moral en RESICO deduce sus inversiones con los porcentajes propios del art. 209 (construcciones 13 %, cómputo 50 %...), siempre que lo invertido en el año no pase de 3 millones; si pasa, usa los del art. 34. Se deduce desde el primer mes completo de uso y el terreno no se deduce."
     correcto_si: "La tasa sale del art. 209 cuando las inversiones del ejercicio no pasan de 3,000,000 (si pasan, del art. 34); se descuenta el terreno; se cuentan meses completos de uso dentro del ejercicio; los autos se topan con el art. 36."
-    hallazgo: "El capítulo XII no prevé deducción inmediata: el art. 209 sustituye los porcientos del título II. Si un decreto de deducción inmediata (p. ej. Plan México) alcanza a la RESICO PM: POR CONFIRMAR. El art. 210 fr. I permite deducir en el ejercicio en que se empieza a usar o en el siguiente; el art. 211 la lleva a los pagos provisionales: aquí se toma la parte proporcional acumulada al mes (CRITERIO). El terreno no se demerita (art. 32) y no se deduce como inversión. La reforma 2027 aprobada (tope RESICO PM de 50 M) no toca, hasta donde se sabe, el tope de 3 M del art. 209: POR CONFIRMAR con el DOF."
+    hallazgo: "El capítulo XII no prevé deducción inmediata: el art. 209 sustituye los porcientos del título II. Si un decreto de deducción inmediata (p. ej. Plan México) alcanza a la RESICO PM: POR CONFIRMAR. El art. 210 fr. I permite deducir en el ejercicio en que se empieza a usar o en el siguiente; el art. 211 la lleva a los pagos provisionales: aquí se toma la parte proporcional acumulada al mes (CRITERIO). El terreno no se demerita (art. 32) y no se deduce como inversión. Reforma DOF 13-nov-2026 (en vigor 1-ene-2027): duplica los porcientos del art. 209 (construcciones 26 %, cómputo 100 %...) y no toca el tope de 3 M (primer párrafo). Que la tasa nueva se aplique desde 2027 a inversiones que empezaron a usarse antes es CRITERIO (art. 31: porcientos 'en cada ejercicio'); la calculadora no lleva el saldo pendiente de deducir: la app debe cuidar no pasar del monto original. Deducción inmediata 2027-2030 del Plan México (Decreto DOF 13-nov-2026, art. Segundo fr. I): también alcanza a la RESICO PM, con constancia del Comité de Evaluación; sus porcientos están en DEDUCCION_INMEDIATA_PLAN_MEXICO."
     casos:
       - {nombre: "Construcción 1,000,000 que se empieza a usar el 1-oct-2026: anual al 13 % por 3 meses", fecha: "2026-12-31", entradas: {monto: "1000000", tipo_bien: construcciones, inicio_uso: "2026-10-01"}, esperado: {articulo: "LISR 209", tasa: "13", monto_original: "1000000.00", meses: "3", deduccion: "32500.00"}}
       - {nombre: "Límite: empieza a usarse el 15-oct, octubre no es mes completo (2 meses)", fecha: "2026-12-31", entradas: {monto: "1000000", tipo_bien: construcciones, inicio_uso: "2026-10-15"}, esperado: {articulo: "LISR 209", tasa: "13", monto_original: "1000000.00", meses: "2", deduccion: "21666.67"}}
@@ -1145,7 +1148,9 @@ reglas:
       - {nombre: "Pago provisional de octubre: un mes de uso", fecha: "2026-10-31", entradas: {monto: "1000000", tipo_bien: construcciones, inicio_uso: "2026-10-01", mes: 10}, esperado: {articulo: "LISR 209", tasa: "13", monto_original: "1000000.00", meses: "1", deduccion: "10833.33"}}
       - {nombre: "Inversiones del ejercicio de 3,500,000: pasa del tope y usa el 5 % del art. 34", fecha: "2026-12-31", entradas: {monto: "1000000", tipo_bien: construcciones, inicio_uso: "2026-10-01", inversiones_ejercicio: "3500000"}, esperado: {articulo: "LISR 34 (inversiones del ejercicio arriba del tope del art. 209)", tasa: "5", monto_original: "1000000.00", meses: "3", deduccion: "12500.00"}}
       - {nombre: "Límite: inversiones de exactamente 3,000,000 siguen en el art. 209", fecha: "2026-12-31", entradas: {monto: "1000000", tipo_bien: construcciones, inicio_uso: "2026-10-01", inversiones_ejercicio: "3000000"}, esperado: {articulo: "LISR 209", tasa: "13", monto_original: "1000000.00", meses: "3", deduccion: "32500.00"}}
-      - {nombre: "Segundo año completo de la misma construcción", fecha: "2027-12-31", entradas: {monto: "1000000", tipo_bien: construcciones, inicio_uso: "2026-10-01"}, esperado: {articulo: "LISR 209", tasa: "13", monto_original: "1000000.00", meses: "12", deduccion: "130000.00"}}
+      - {nombre: "Segundo año completo (2027): la reforma sube construcciones al 26 %", fecha: "2027-12-31", entradas: {monto: "1000000", tipo_bien: construcciones, inicio_uso: "2026-10-01"}, esperado: {articulo: "LISR 209", tasa: "26", monto_original: "1000000.00", meses: "12", deduccion: "260000.00"}}
+      - {nombre: "Último año con la tasa vieja: 2026 completo al 13 %", fecha: "2026-12-31", entradas: {monto: "1000000", tipo_bien: construcciones, inicio_uso: "2026-01-01"}, esperado: {articulo: "LISR 209", tasa: "13", monto_original: "1000000.00", meses: "12", deduccion: "130000.00"}}
+      - {nombre: "Laptop de 30,000 en 2027: 100 %", fecha: "2027-12-31", entradas: {monto: "30000", tipo_bien: equipo_computo, inicio_uso: "2027-01-01"}, esperado: {articulo: "LISR 209", tasa: "100", monto_original: "30000.00", meses: "12", deduccion: "30000.00"}}
       - {nombre: "Laptop de 30,000 todo el año al 50 %", fecha: "2026-12-31", entradas: {monto: "30000", tipo_bien: equipo_computo, inicio_uso: "2026-01-01"}, esperado: {articulo: "LISR 209", tasa: "50", monto_original: "30000.00", meses: "12", deduccion: "15000.00"}}
       - {nombre: "Auto de 400,000 topado a 175,000 al 25 %", fecha: "2026-12-31", entradas: {monto: "400000", tipo_bien: automoviles, inicio_uso: "2026-01-01"}, esperado: {articulo: "LISR 209", tasa: "25", monto_original: "175000.00", meses: "12", deduccion: "43750.00"}}
       - {nombre: "Sólo terreno: no hay inversión deducible, avisa", fecha: "2026-12-31", entradas: {monto: "500000", terreno: "500000", tipo_bien: construcciones, inicio_uso: "2026-10-01"}, espera_error: SinValor}
@@ -1277,3 +1282,22 @@ reglas:
       - {nombre: "5 días desde el 28-oct-2026: el 2-nov no corre → 5-nov", fecha: "2026-11-14", entradas: {desde: "2026-10-28", dias: 5}, esperado: {vence: "2026-11-05", aviso: ""}}
       - {nombre: "Límite: 1 día desde el jueves 1-abr-2026 salta jueves y viernes santo → lunes 6-abr", fecha: "2026-11-14", entradas: {desde: "2026-04-01", dias: 1}, esperado: {vence: "2026-04-06", aviso: ""}}
       - {nombre: "Después del corte avisa: 3 días desde el 15-dic-2026", fecha: "2026-11-14", entradas: {desde: "2026-12-15", dias: 3}, esperado: {vence: "2026-12-18", aviso: "Después del 2026-11-14 el SAT puede declarar días inhábiles que la base aún no tiene."}}
+  - id: R-179
+    nombre: "Deducción inmediata de bienes nuevos, Plan México 2027-2030 (incluye RESICO PM)"
+    estado: NUEVA
+    fase: 3
+    parametros: [DEDUCCION_INMEDIATA_PLAN_MEXICO]
+    calculadora: deduccion_inmediata
+    fuente: "Decreto por el que se reforma la LISR, DOF 13-nov-2026 (nota 5803758), art. Segundo fr. I incisos a) a d)"
+    que_dice: "De 2027 a septiembre de 2030, una empresa (título II o RESICO PM) o una persona física con actividad empresarial puede deducir en el mismo año un porcentaje alto de un bien nuevo (por ejemplo, 85 % de una computadora), si tiene la constancia del Comité de Evaluación; el resto se deduce después."
+    correcto_si: "Sólo bienes nuevos adquiridos del 1-ene-2027 al 30-sep-2030, con constancia, del régimen correcto y fuera de los excluidos (mobiliario, autos de combustión, blindaje, aviones no fumigadores); deducción = monto × porciento de la tabla; excedente = monto − deducción."
+    hallazgo: "Resuelve el POR CONFIRMAR de R-172: la RESICO PM sí puede aplicar esta deducción inmediata (art. Segundo fr. I, primer párrafo). El bien debe quedarse en uso 2 años; la deducción entra en los pagos provisionales por partes iguales desde el mes de la inversión y obliga a recalcular el coeficiente de utilidad de los años siguientes (eso no se calcula aquí). El excedente sigue el inciso d) del decreto (POR CONFIRMAR su mecánica en la calculadora). Los requisitos de la constancia los fija un decreto/lineamientos del Comité que aún no se cargan."
+    casos:
+      - {nombre: "Equipo de cómputo nuevo de 100,000 en 2027: 85 % inmediato", fecha: "2027-03-31", entradas: {monto: "100000", tipo_bien: equipo_computo, adquisicion: "2027-03-15"}, esperado: {tasa: "85", deduccion_inmediata: "85000.00", excedente: "15000.00"}}
+      - {nombre: "RESICO PM, horno de restaurante de 80,000: 80 %", fecha: "2027-06-30", entradas: {monto: "80000", tipo_bien: maquinaria_restaurantes, adquisicion: "2027-06-01", regimen: resico_pm}, esperado: {tasa: "80", deduccion_inmediata: "64000.00", excedente: "16000.00"}}
+      - {nombre: "Construcción de 1,000,000: 49 %", fecha: "2027-12-31", entradas: {monto: "1000000", tipo_bien: construcciones, adquisicion: "2027-10-01", regimen: resico_pm}, esperado: {tasa: "49", deduccion_inmediata: "490000.00", excedente: "510000.00"}}
+      - {nombre: "Límite: adquirido el 30-sep-2030 todavía aplica", fecha: "2030-09-30", entradas: {monto: "10000", tipo_bien: equipo_computo, adquisicion: "2030-09-30"}, esperado: {tasa: "85", deduccion_inmediata: "8500.00", excedente: "1500.00"}}
+      - {nombre: "Adquirido el 1-oct-2030: ya no", fecha: "2030-10-01", entradas: {monto: "10000", tipo_bien: equipo_computo, adquisicion: "2030-10-01"}, espera_error: SinValor}
+      - {nombre: "Mobiliario de oficina: excluido", fecha: "2027-03-31", entradas: {monto: "50000", tipo_bien: mobiliario_equipo_oficina, adquisicion: "2027-03-15"}, espera_error: SinValor}
+      - {nombre: "Sin constancia del Comité: no aplica", fecha: "2027-03-31", entradas: {monto: "100000", tipo_bien: equipo_computo, adquisicion: "2027-03-15", constancia: "no"}, espera_error: SinValor}
+      - {nombre: "RESICO PF: no está en el decreto", fecha: "2027-03-31", entradas: {monto: "100000", tipo_bien: equipo_computo, adquisicion: "2027-03-15", regimen: resico_pf}, espera_error: SinValor}
