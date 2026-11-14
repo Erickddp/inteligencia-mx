@@ -1227,3 +1227,53 @@ reglas:
       - {nombre: "Frontera sur, servicio de 2,500 en 2026: IVA 200", fecha: "2026-12-31", entradas: {base: "2500", region: sur}, esperado: {tasa: "8", iva: "200.00", aviso: ""}}
       - {nombre: "Límite: 1-ene-2027 sin prórroga en el DOF: 16 % y aviso", fecha: "2027-01-01", entradas: {base: "1000", region: norte}, esperado: {tasa: "16", iva: "160.00", aviso: "Sin decreto de frontera norte vigente a 2027-01-01: se cobra la tasa general. Revisar prórroga en el DOF."}}
       - {nombre: "Redondeo: 8 % de 333.33 es 26.67", fecha: "2026-06-30", entradas: {base: "333.33", region: norte}, esperado: {tasa: "8", iva: "26.67", aviso: ""}}
+  - id: R-176
+    nombre: "Días hábiles para plazos fiscales: festivos del CFF 12, inhábiles y vacaciones del SAT, y recorrido del vencimiento"
+    estado: NUEVA
+    fase: 2
+    parametros: [CFF_DIAS_INHABILES]
+    calculadora: dia_habil
+    fuente: "CFF art. 12; RMF 2026 regla 2.1.6 (DOF 28-dic-2025) reformada por la Primera (DOF 9-jul-2026) y la Cuarta (DOF 30-oct-2026) Resoluciones de Modificaciones; serie series/dias_inhabiles.yaml"
+    citas: [{ley: CFF, articulo: "12"}, {ley: RMF, anio: "2026", articulo: "2.1.6"}]
+    que_dice: "En los plazos en días no cuentan sábados, domingos, los festivos del CFF 12 ni los días que el SAT declara inhábiles; las vacaciones del SAT tampoco cuentan para trámites, pero sí son hábiles para presentar declaraciones y pagar."
+    correcto_si: "Un día es inhábil si es fin de semana, festivo del CFF 12 o está en la serie del SAT; para uso 'pago' las vacaciones generales cuentan como hábiles (CFF 12, segundo párrafo)."
+    hallazgo: "El jueves y viernes santo NO están en el CFF 12: los declara la RMF 2.1.6 cada año. 2026: vacaciones 18-dic-2025 a 2-ene-2026 y 20 al 31-jul-2026; inhábiles del SAT 2 y 3-abr y 2-nov-2026 (este último lo agregó la Cuarta Modificación del 30-oct-2026). Texto de la 2.1.6 cotejado contra el Word del DOF. El segundo periodo de vacaciones de 2026 aún no se publica: después del corte la base avisa. Que los inhábiles del SAT (no las vacaciones) también recorran el pago es CRITERIO (la 2.1.6 se dicta para el 1er y 2o párrafos del art. 12). El 1-dic sexenal del CFF 12 no se carga: desde 2024 la transmisión del Ejecutivo es el 1-oct, POR CONFIRMAR antes de 2030. La biblioteca sólo tiene la RMF 2026 original: faltan las cuatro modificaciones de 2026 (9-jul, 1-oct, 2-oct y 30-oct)."
+    casos:
+      - {nombre: "Jueves santo 2-abr-2026: inhábil para el SAT", fecha: "2026-11-14", entradas: {fecha: "2026-04-02"}, esperado: {habil: "no", motivo: "inhábil para el SAT (RMF 2.1.6 fr. II)", aviso: ""}}
+      - {nombre: "22-jul-2026 en vacaciones: no corre para un trámite", fecha: "2026-11-14", entradas: {fecha: "2026-07-22"}, esperado: {habil: "no", motivo: "vacaciones generales (RMF 2.1.6 fr. III)", aviso: ""}}
+      - {nombre: "Límite: el mismo 22-jul-2026 SÍ es hábil para declarar y pagar (CFF 12, 2o párrafo)", fecha: "2026-11-14", entradas: {fecha: "2026-07-22", uso: pago}, esperado: {habil: "si", motivo: "", aviso: ""}}
+      - {nombre: "Tercer lunes de noviembre 2026 (16-nov)", fecha: "2026-11-14", entradas: {fecha: "2026-11-16"}, esperado: {habil: "no", motivo: "CFF 12: 20 de noviembre", aviso: "Después del 2026-11-14 el SAT puede declarar días inhábiles que la base aún no tiene."}}
+      - {nombre: "2-nov-2026: lo agregó la Cuarta Modificación", fecha: "2026-11-14", entradas: {fecha: "2026-11-02"}, esperado: {habil: "no", motivo: "inhábil para el SAT (RMF 2.1.6 fr. II)", aviso: ""}}
+      - {nombre: "Martes 17-nov-2026 hábil", fecha: "2026-11-14", entradas: {fecha: "2026-11-17"}, esperado: {habil: "si", motivo: "", aviso: "Después del 2026-11-14 el SAT puede declarar días inhábiles que la base aún no tiene."}}
+  - id: R-177
+    nombre: "Vencimiento recorrido al siguiente día hábil (CFF 12, quinto párrafo), con la regla del viernes en banco"
+    estado: NUEVA
+    fase: 2
+    parametros: [CFF_DIAS_INHABILES]
+    calculadora: vencimiento_recorrido
+    fuente: "CFF art. 12, segundo y quinto párrafos; RMF 2026 regla 2.1.6 y modificaciones; serie dias_inhabiles"
+    citas: [{ley: CFF, articulo: "12"}, {ley: RMF, anio: "2026", articulo: "2.1.6"}]
+    que_dice: "Si el último día para pagar cae en día inhábil, se recorre al siguiente hábil; y si se paga en el banco y el último día es viernes, también se recorre al siguiente hábil."
+    correcto_si: "La fecha resultante es el primer día hábil (para pago) a partir del vencimiento; en banco, un viernes se salta al lunes hábil; las vacaciones del SAT no recorren un pago."
+    hallazgo: "La regla del viernes sólo es para pagos ante instituciones de crédito (CFF 12 quinto párrafo, reformado DOF 12-11-2021); en el portal el viernes es hábil. Base para R-27 (día 17 y sexto dígito)."
+    casos:
+      - {nombre: "Pago del viernes 17-jul-2026 en el portal: no se recorre aunque sean vacaciones", fecha: "2026-11-14", entradas: {fecha: "2026-07-17"}, esperado: {vence: "2026-07-17", recorrido_por: "", aviso: ""}}
+      - {nombre: "El mismo pago en banco: viernes, se recorre al lunes 20-jul", fecha: "2026-11-14", entradas: {fecha: "2026-07-17", medio: banco}, esperado: {vence: "2026-07-20", recorrido_por: "2026-07-17: viernes, pago en banco (CFF 12, quinto párrafo); 2026-07-18: sábado o domingo (CFF 12); 2026-07-19: sábado o domingo (CFF 12)", aviso: ""}}
+      - {nombre: "17-ene-2026 cae en sábado: vence el lunes 19", fecha: "2026-11-14", entradas: {fecha: "2026-01-17"}, esperado: {vence: "2026-01-19", recorrido_por: "2026-01-17: sábado o domingo (CFF 12); 2026-01-18: sábado o domingo (CFF 12)", aviso: ""}}
+      - {nombre: "Límite: vence el 16-nov-2026 (tercer lunes) → 17-nov", fecha: "2026-11-14", entradas: {fecha: "2026-11-16"}, esperado: {vence: "2026-11-17", recorrido_por: "2026-11-16: CFF 12: 20 de noviembre", aviso: "Después del 2026-11-14 el SAT puede declarar días inhábiles que la base aún no tiene."}}
+  - id: R-178
+    nombre: "Plazo en días hábiles contado desde que surte efectos la notificación (CFF 12)"
+    estado: NUEVA
+    fase: 2
+    parametros: [CFF_DIAS_INHABILES]
+    calculadora: plazo_dias_habiles
+    fuente: "CFF art. 12, primer y segundo párrafos; RMF 2026 regla 2.1.6 y modificaciones; serie dias_inhabiles"
+    citas: [{ley: CFF, articulo: "12"}, {ley: RMF, anio: "2026", articulo: "2.1.6"}]
+    que_dice: "Un plazo de N días para un trámite ante el SAT se cuenta sólo en días hábiles, desde el día siguiente a que surte efectos la notificación, saltando fines de semana, festivos, inhábiles y vacaciones del SAT."
+    correcto_si: "Se cuentan N días hábiles a partir del día siguiente a `desde`; en uso 'tramite' no corren las vacaciones del SAT."
+    hallazgo: "`desde` es el día en que SURTE EFECTOS la notificación (CFF 135), no el día en que se recibe: eso lo pone la app."
+    casos:
+      - {nombre: "10 días hábiles desde el 15-jul-2026: las vacaciones del 20 al 31 no corren → 12-ago", fecha: "2026-11-14", entradas: {desde: "2026-07-15", dias: 10}, esperado: {vence: "2026-08-12", aviso: ""}}
+      - {nombre: "5 días desde el 28-oct-2026: el 2-nov no corre → 5-nov", fecha: "2026-11-14", entradas: {desde: "2026-10-28", dias: 5}, esperado: {vence: "2026-11-05", aviso: ""}}
+      - {nombre: "Límite: 1 día desde el jueves 1-abr-2026 salta jueves y viernes santo → lunes 6-abr", fecha: "2026-11-14", entradas: {desde: "2026-04-01", dias: 1}, esperado: {vence: "2026-04-06", aviso: ""}}
+      - {nombre: "Después del corte avisa: 3 días desde el 15-dic-2026", fecha: "2026-11-14", entradas: {desde: "2026-12-15", dias: 3}, esperado: {vence: "2026-12-18", aviso: "Después del 2026-11-14 el SAT puede declarar días inhábiles que la base aún no tiene."}}

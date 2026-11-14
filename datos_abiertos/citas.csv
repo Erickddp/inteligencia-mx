@@ -1,6 +1,7 @@
 origen_tipo,origen_id,ley,anio,articulo,existe_en_biblioteca
 parametro,AUTO_TOPE_DEDUCCION_ELECTRICO,LISR,,36,si
 parametro,AVION_TOPE_DEDUCCION,LISR,,36,si
+parametro,CFF_DIAS_INHABILES,CFF,,12,si
 parametro,DEPRECIACION_TASAS_ART33,LISR,,33,si
 parametro,DEPRECIACION_TASAS_ART34,LISR,,34,si
 parametro,DEPRECIACION_TASAS_ART35,LISR,,35,si
@@ -147,6 +148,12 @@ regla,R-175,LIVA,,1,si
 regla,R-175,RMF,2026,11.9.2,si
 regla,R-175,RMF,2026,11.9.23,si
 regla,R-175,RMF,2026,11.9.3,si
+regla,R-176,CFF,,12,si
+regla,R-176,RMF,2026,2.1.6,si
+regla,R-177,CFF,,12,si
+regla,R-177,RMF,2026,2.1.6,si
+regla,R-178,CFF,,12,si
+regla,R-178,RMF,2026,2.1.6,si
 regla,R-20,LISR,,106,si
 regla,R-22,LISR,,113-e,si
 regla,R-22,LISR,,113-j,si

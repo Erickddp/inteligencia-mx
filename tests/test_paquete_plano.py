@@ -44,8 +44,11 @@ def test_las_series_van_en_sha256sums_zip_y_assets(paquete):
 
 def test_integracion_trae_huellas_y_assets_de_las_series(paquete):
     d = json.loads((paquete / "integracion_v9.9.9.json").read_text(encoding="utf-8"))
-    assert "series/inpc.yaml" in d["huellas"] and len(d["huellas"]) == 5
+    series = {f"series/{p.name}" for p in (RAIZ / "series").glob("*.yaml")}
+    assert {"series/inpc.yaml", "series/dias_inhabiles.yaml"} <= series
+    assert series <= set(d["huellas"]) and len(d["huellas"]) == 4 + len(series)
     assert d["assets"]["series/inpc.yaml"] == "series_inpc.yaml" and d["assets"]["motor.py"] == "motor.py"
+    assert d["assets"]["series/dias_inhabiles.yaml"] == "series_dias_inhabiles.yaml"
 
 
 def test_el_paquete_plano_pasa_probar_solo(paquete):
