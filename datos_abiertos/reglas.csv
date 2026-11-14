@@ -24,7 +24,7 @@ R-117,Donatarias y tope de donativos,NUEVA,3,tope_donativos,1,DONATIVOS_DEDUCIBL
 R-118,Retenciones de plataformas digitales,NUEVA,3,retencion_plataforma,2,PLATAFORMAS_ISR_TABLA;PLATAFORMAS_IVA_RET_PCT,3,si,
 R-12,No deducible / no acreditable,OK,2,,0,DEDUCCION_EFECTIVO_TOPE,0,no,
 R-120,Anual personas físicas,NUEVA,3,isr_tarifa,2,ISR_TARIFA_ANUAL;DED_PERS_VECES_UMA_ANUAL;DED_PERS_PCT_INGRESO,2,si,
-R-121,Depreciación fiscal,NUEVA,3,depreciacion,2,DEPRECIACION_TASAS_ART34;AUTO_TOPE_DEDUCCION,3,si,
+R-121,Depreciación fiscal,NUEVA,3,depreciacion,10,DEPRECIACION_TASAS_ART34;DEPRECIACION_TASAS_ART35;DEPRECIACION_TASAS_ART33;AUTO_TOPE_DEDUCCION;AUTO_TOPE_DEDUCCION_ELECTRICO;AVION_TOPE_DEDUCCION,4,si,
 R-125,Aguinaldo (monto),NUEVA,4,aguinaldo_monto,2,LFT_AGUINALDO_DIAS,1,si,
 R-126,ISR del aguinaldo (art. 96 y RLISR 174),NUEVA,4,isr_aguinaldo,3,EXENTO_AGUINALDO_IMPORTE;ISR_TARIFA_MENSUAL,2,si,
 R-127,CFDI de nómina 1.2 revisión E y NOM111,REVISAR,4,,0,,0,no,
@@ -63,6 +63,7 @@ R-17,Proporción de IVA acreditable con actividades exentas o no objeto,NUEVA,2,
 R-170,RESICO PF: retención de 1.25 % cuando factura a una persona moral,NUEVA,3,retencion_resico_pf,5,RESICO_PF_RETENCION_PM,3,si,"LISR art. 113-J y 113-E; RMF 2026 regla 2.7.1.45 (texto de la Cámara y del DOF, sin cotejar)"
 R-171,Póliza tipo: cobro con tarjeta (la terminal deposita neto de comisión),CRITERIO,4,poliza_cobro_terminal,4,,4,si,LIVA art. 5 fr. II; LISR art. 27; CFF art. 28; NIF B-3 (referencia)
 R-172,Deducción de inversiones en RESICO personas morales (art. 209),NUEVA,3,inversion_resico_pm,10,RESICO_PM_INVERSIONES;RESICO_PM_INVERSIONES_TOPE;DEPRECIACION_TASAS_ART34;AUTO_TOPE_DEDUCCION,6,si,"LISR arts. 31, 32, 36, 208 fr. IV, 209, 210 fr. I y 211"
+R-173,"Porciento máximo de deducción por bien, actividad o diferido (arts. 33 a 35)",NUEVA,3,tasa_depreciacion,6,DEPRECIACION_TASAS_ART34;DEPRECIACION_TASAS_ART35;DEPRECIACION_TASAS_ART33;DEPRECIACION_CONTABLE_REFERENCIA,4,si,"LISR arts. 33, 34 y 35; NIF C-6 para la tasa contable (CRITERIO)"
 R-18,Saldo a favor solicitado en devolución vs acreditado,OK,2,,0,,0,no,
 R-19,IVA de importaciones (pedimentos),NUEVA,2,,0,,0,no,
 R-20,Provisional 612 con tarifa acumulada oficial,OK,3,isr_art96_acumulada,3,ISR_TARIFA_MENSUAL;ISR_TARIFA_ACUMULADA_106;ISR_TARIFA_ANUAL,1,si,LISR art. 106; Anexo 8 RMF 2026 apartado B fr. VI (PDF oficial)

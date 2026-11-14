@@ -20,8 +20,8 @@
     "formula",
     "fuente_ultimo"
    ],
-   "filas": 124,
-   "sha256": "ad01c0f4548618cd41b3d2824cbbc4b097d649fdc48308928e46aa7f3f79d851"
+   "filas": 129,
+   "sha256": "cdddcb672c2466720ab4c25d36e651548f71afe13ad6caecbbd2668b72be381e"
   },
   "reglas.csv": {
    "descripcion": "Cada regla R-xx con su estado, calculadora, número de casos y citas.",
@@ -37,8 +37,8 @@
     "tiene_que_dice",
     "fuente"
    ],
-   "filas": 107,
-   "sha256": "8ec4aba2eacc25f5e6814773a8d00fee2f40bfadf723026890a93f1f5d875d58"
+   "filas": 108,
+   "sha256": "d7678c360635cc5e5b717bedec7324a7539a92d36041620103b419e3a0d5c3fb"
   },
   "leyes.csv": {
    "descripcion": "Cada ley, código o reglamento de la biblioteca con su ámbito, materia, huella y si tiene cotejo humano.",
@@ -69,8 +69,8 @@
     "articulo",
     "existe_en_biblioteca"
    ],
-   "filas": 146,
-   "sha256": "f23aead40b03a8477e352687e53d853bfaf677d11740146135d286bf5dc34927"
+   "filas": 156,
+   "sha256": "0ff018a6370ee979b90625f552654cde9a67a152302ef9aee18f77d3931cf81c"
   },
   "cotejo_pendiente.csv": {
    "descripcion": "Artículos citados por la base que nadie ha cotejado con el diario oficial, por prioridad.",
@@ -82,8 +82,8 @@
     "origenes",
     "cotejado"
    ],
-   "filas": 77,
-   "sha256": "d04867462a615d82b81e3791d06da683fdfdff300dcf18e38f07356ca6f28b86"
+   "filas": 78,
+   "sha256": "5b77cd09fb1a1df34db0ba1189040cb4e68f7942a4fe6ea55603077db410ca22"
   }
  }
 }

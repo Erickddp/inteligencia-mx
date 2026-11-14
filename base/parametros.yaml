@@ -377,6 +377,22 @@ parametros:
         desde: "2017-01-01"
         hasta: null
         fuente: "LISR art. 36 fr. II"
+  AUTO_TOPE_DEDUCCION_ELECTRICO:
+    nombre: Monto original máximo deducible de automóviles eléctricos o híbridos (eléctrico con motor de combustión o de hidrógeno)
+    tipo: importe
+    citas: [{ley: LISR, articulo: "36", fraccion: "II"}]
+    que_dice: "Un auto eléctrico, o eléctrico que además tiene motor de combustión o de hidrógeno, se deduce hasta 250,000 pesos de su precio, en vez de 175,000."
+    correcto_si: "El tope de 250,000 sólo se aplica a autos de baterías eléctricas recargables o híbridos eléctricos; los de combustión usan 175,000."
+    valores:
+      - {valor: "250000.00", desde: "2017-01-01", hasta: null, confirmado_hasta: "2026-12-31", fuente: "LISR art. 36 fr. II, segundo enunciado (párrafo reformado DOF 18-11-2015 y 30-11-2016)"}
+  AVION_TOPE_DEDUCCION:
+    nombre: Monto original máximo deducible de aviones sin concesión o permiso para explotación comercial
+    tipo: importe
+    citas: [{ley: LISR, articulo: "36", fraccion: "III"}]
+    que_dice: "Un avión que no se explota comercialmente con concesión o permiso sólo se deduce hasta 8,600,000 pesos de su precio, y sólo si cumple los requisitos del Reglamento."
+    correcto_si: "El monto original se topa en 8,600,000 sólo para aviones sin concesión o permiso federal."
+    valores:
+      - {valor: "8600000.00", desde: "2014-01-01", hasta: null, confirmado_hasta: "2026-12-31", fuente: "LISR art. 36 fr. III"}
 
   # ───────────────────────── IVA ─────────────────────────
   IVA_TASA_GENERAL:
@@ -1140,19 +1156,108 @@ parametros:
     valores:
       - {valor: "50", desde: "2020-06-01", hasta: null, fuente: "LIVA art. 18-J fr. II inciso a)"}
   DEPRECIACION_TASAS_ART34:
-    nombre: Tasas máximas de deducción de inversiones (selección)
+    nombre: Porcientos máximos de deducción de activos fijos por tipo de bien (art. 34, completo)
     tipo: tabla
     columnas: [tipo_bien, tasa]
+    citas: [{ley: LISR, articulo: "34"}]
+    que_dice: "Cada activo fijo se deduce cada año con un porcentaje máximo según su tipo: construcciones 5 %, mobiliario 10 %, autos 25 %, cómputo 30 %."
+    correcto_si: "El porcentaje coincide con la fracción del art. 34 que describe el bien; si el bien no está en el art. 34, se busca en el art. 35 por actividad."
     valores:
       - desde: "2014-01-01"
         hasta: null
-        fuente: "LISR arts. 33 y 34"
+        fuente: "LISR art. 34 fracs. I a XV (XIV adicionada DOF 30-11-2016; XV e inciso I-b reformado DOF 12-11-2021); texto de la Cámara de Diputados, cotejo con el DOF pendiente (M-102). Las 5 primeras filas son las que ya traía la base; las demás completan el artículo"
         valor:
           - ["construcciones", "5"]
           - ["mobiliario_equipo_oficina", "10"]
           - ["automoviles", "25"]
           - ["equipo_computo", "30"]
           - ["moldes_troqueles", "35"]
+          - ["construcciones_monumento_restaurado", "10"]
+          - ["ferrocarril_bombas_combustible", "3"]
+          - ["ferrocarril_vias", "5"]
+          - ["ferrocarril_carros_locomotoras", "6"]
+          - ["ferrocarril_maquinaria_vias", "7"]
+          - ["ferrocarril_comunicacion_senalizacion", "10"]
+          - ["embarcaciones", "6"]
+          - ["aviones_aerofumigacion", "25"]
+          - ["aviones", "10"]
+          - ["automoviles_electricos_hibridos", "25"]
+          - ["semovientes_vegetales", "100"]
+          - ["telefonia_torres_cables", "5"]
+          - ["telefonia_radio", "8"]
+          - ["telefonia_transmision", "10"]
+          - ["telefonia_conmutacion", "25"]
+          - ["telefonia_otros", "10"]
+          - ["satelital_espacio", "8"]
+          - ["satelital_tierra", "10"]
+          - ["adaptaciones_discapacidad", "100"]
+          - ["energia_renovable_cogeneracion", "100"]
+          - ["bicicletas_motos_electricas", "25"]
+          - ["usufructo_inmueble", "5"]
+  DEPRECIACION_TASAS_ART35:
+    nombre: Porcientos máximos de deducción de maquinaria y equipo por actividad (art. 35)
+    tipo: tabla
+    columnas: [actividad, tasa]
+    citas: [{ley: LISR, articulo: "35"}]
+    que_dice: "La maquinaria que no está en el art. 34 se deduce según la actividad en que se usa (restaurantes 20 %, construcción 25 %, otras actividades 10 %)."
+    correcto_si: "Se usa la actividad en que se utiliza el bien; si hay varias, la de más ingresos del ejercicio anterior (último párrafo del art. 35)."
+    valores:
+      - desde: "2017-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        fuente: "LISR art. 35 fracs. I a XIV (III y VI reformadas DOF 30-11-2016); texto de la Cámara de Diputados, cotejo con el DOF pendiente (M-102)"
+        valor:
+          - ["maquinaria_electricidad_granos_azucar_aceites_maritimo", "5"]
+          - ["maquinaria_metal_primer_proceso_tabaco_carbon", "6"]
+          - ["maquinaria_pulpa_papel", "7"]
+          - ["maquinaria_vehiculos_metal_alimentos_bebidas", "8"]
+          - ["maquinaria_piel_quimicos_caucho_plastico_imprenta", "9"]
+          - ["maquinaria_transporte_electrico_hidrocarburos", "10"]
+          - ["maquinaria_textil_vestido", "11"]
+          - ["maquinaria_mineria_aeronaves_transporte_terrestre", "12"]
+          - ["maquinaria_transporte_aereo_radio_tv", "16"]
+          - ["maquinaria_restaurantes", "20"]
+          - ["maquinaria_construccion_agro", "25"]
+          - ["maquinaria_investigacion_desarrollo", "35"]
+          - ["maquinaria_componentes_computo", "50"]
+          - ["maquinaria_otras_actividades", "10"]
+  DEPRECIACION_TASAS_ART33:
+    nombre: Porcientos máximos de deducción de gastos y cargos diferidos y periodos preoperativos (art. 33)
+    tipo: tabla
+    columnas: [concepto, tasa]
+    citas: [{ley: LISR, articulo: "33"}]
+    que_dice: "Los cargos diferidos se deducen al 5 %, los gastos preoperativos al 10 % y las regalías, asistencia técnica y otros diferidos al 15 %."
+    correcto_si: "El porcentaje coincide con la fracción I, II o III del art. 33; las concesiones (fr. IV) se calculan con los años de la concesión y no están en esta tabla."
+    valores:
+      - desde: "2014-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        fuente: "LISR art. 33 fracs. I a III; texto de la Cámara de Diputados, cotejo con el DOF pendiente (M-102)"
+        valor:
+          - ["cargos_diferidos", "5"]
+          - ["periodos_preoperativos", "10"]
+          - ["regalias_asistencia_otros_diferidos", "15"]
+  DEPRECIACION_CONTABLE_REFERENCIA:
+    nombre: Tasas contables de referencia por tipo de activo (CRITERIO, no ley) y su clave fiscal
+    tipo: tabla
+    columnas: [tipo_activo, tasa_contable, tipo_bien_fiscal]
+    valores:
+      - desde: "2014-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        estado: por_confirmar
+        fuente: "CRITERIO del despacho. La NIF C-6 pide depreciar según la vida útil que estime la entidad; ninguna ley fija estas tasas. A falta de estudio de vida útil se usa como referencia la tasa fiscal del art. 34 o 35 de la clave fiscal de la tercera columna. La tasa contable real la decide el contador por activo"
+        valor:
+          - ["computo", "30", "equipo_computo"]
+          - ["mobiliario", "10", "mobiliario_equipo_oficina"]
+          - ["automovil", "25", "automoviles"]
+          - ["transporte", "25", "automoviles"]
+          - ["maquinaria", "10", "maquinaria_otras_actividades"]
+          - ["construccion", "5", "construcciones"]
+          - ["telefonia", "10", "telefonia_otros"]
+          - ["satelital", "10", "satelital_tierra"]
+          - ["medico", "10", "maquinaria_otras_actividades"]
+          - ["otro", "10", "maquinaria_otras_actividades"]
   ISSIF_UMBRAL_INGRESOS:
     nombre: Ingresos del año anterior a partir de los cuales se presenta ISSIF
     tipo: importe
