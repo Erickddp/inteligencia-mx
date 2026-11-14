@@ -648,6 +648,83 @@ def serie(sid, fecha, carpeta=None):
     raise SinValor(f"{sid}: no hay valor para {fecha}")
 
 
+def _festivos_cff(b, f, anio):
+    """Fechas del CFF art. 12, primer párrafo, para un año (sin sábados ni domingos, que se revisan aparte)."""
+    out = {}
+    for conmemora, regla, mes, n in b.valor("CFF_DIAS_INHABILES", f):
+        mes, n = int(mes), int(n)
+        if regla == "fija":
+            d = dt.date(anio, mes, n)
+        else:  # n-ésimo lunes del mes
+            primero = dt.date(anio, mes, 1)
+            d = primero + dt.timedelta(days=(0 - primero.weekday()) % 7 + 7 * (n - 1))
+        out[d] = f"CFF 12: {conmemora}"
+    return out
+
+
+def _sat_inhabiles(carpeta=None):
+    p = Path(carpeta or dir_series()) / "dias_inhabiles.yaml"
+    if not p.is_file():
+        raise SinValor("DIAS_INHABILES: no hay archivo de serie (dias_inhabiles.yaml)")
+    s = yaml.safe_load(p.read_text(encoding="utf-8"))
+    return s["valores"], dt.date.fromisoformat(s["corte"])
+
+
+def _fecha(x):
+    return x if isinstance(x, dt.date) else dt.date.fromisoformat(str(x))
+
+
+def _es_habil(b, f, d, uso):
+    """(hábil, motivo). uso 'tramite': no corren ni vacaciones ni inhábiles del SAT. uso 'pago' (declaraciones y pago):
+    las vacaciones generales SÍ son hábiles (CFF 12, 2o párrafo); los inhábiles del SAT no."""
+    if d.weekday() >= 5:
+        return False, "sábado o domingo (CFF 12)"
+    fest = _festivos_cff(b, f, d.year)
+    if d in fest:
+        return False, fest[d]
+    sat, _corte = _sat_inhabiles()
+    e = sat.get(d.isoformat())
+    if e and not (uso == "pago" and e["tipo"] == "vacaciones"):
+        return False, f"{'vacaciones generales' if e['tipo'] == 'vacaciones' else 'inhábil para el SAT'} (RMF {e['regla']})"
+    return True, ""
+
+
+def _aviso_corte(d):
+    _sat, corte = _sat_inhabiles()
+    return f"Después del {corte.isoformat()} el SAT puede declarar días inhábiles que la base aún no tiene." if d > corte else ""
+
+
+def calc_dia_habil(b, f, fecha, uso="tramite"):
+    d = _fecha(fecha)
+    habil, motivo = _es_habil(b, f, d, uso)
+    return {"habil": "si" if habil else "no", "motivo": motivo, "aviso": _aviso_corte(d)}
+
+
+def calc_vencimiento_recorrido(b, f, fecha, uso="pago", medio="portal"):
+    """CFF 12, quinto párrafo: si el último día es inhábil se recorre al siguiente hábil; si se paga en banco y el último
+    día es viernes, también se recorre al siguiente hábil."""
+    d = _fecha(fecha)
+    motivos = []
+    while True:
+        habil, motivo = _es_habil(b, f, d, uso)
+        viernes_banco = habil and medio == "banco" and uso == "pago" and d.weekday() == 4
+        if habil and not viernes_banco:
+            break
+        motivos.append(f"{d.isoformat()}: {motivo or 'viernes, pago en banco (CFF 12, quinto párrafo)'}")
+        d += dt.timedelta(days=1)
+    return {"vence": d.isoformat(), "recorrido_por": "; ".join(motivos), "aviso": _aviso_corte(d)}
+
+
+def calc_plazo_dias_habiles(b, f, desde, dias, uso="tramite"):
+    """Plazo en días hábiles (CFF 12): se cuentan a partir del día siguiente a `desde` (el día en que surte efectos la notificación)."""
+    d, n = _fecha(desde), int(dias)
+    while n:
+        d += dt.timedelta(days=1)
+        if _es_habil(b, f, d, uso)[0]:
+            n -= 1
+    return {"vence": d.isoformat(), "aviso": _aviso_corte(d)}
+
+
 def _mes_anterior(fecha):
     y, m = int(fecha[:4]), int(fecha[5:7])
     return f"{y - 1}-12" if m == 1 else f"{y}-{m - 1:02d}"

@@ -20,6 +20,13 @@
     "contra": "Word del DOF de la nota 5777217 bajado el 2026-11-14 (SHA256 489d4d7c312816887f5cf69fd891c5843df93be6d9f87438a2a512476483ad5b, igual al de la biblioteca)",
     "resultado": "texto idéntico, 416 caracteres",
     "como": "comparación literal hecha por Claude; la firma de Rick es la aprobación del PR"
+   },
+   "2.1.6": {
+    "fecha": "2026-11-14",
+    "contra": "Word del DOF de la nota 5777217 (SHA256 489d4d7c…)",
+    "resultado": "texto idéntico, 1,044 caracteres",
+    "como": "comparación literal hecha por Claude",
+    "ojo": "la regla fue reformada por la Primera (nota 5793101, 9-jul-2026: agrega fr. III, vacaciones 20 al 31-jul-2026) y la Cuarta (nota 5802597, 30-oct-2026: fr. II agrega el 2-nov-2026) Resoluciones de Modificaciones, que aún no están en la biblioteca; la serie dias_inhabiles ya las trae"
    }
   }
  },

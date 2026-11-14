@@ -570,6 +570,28 @@ parametros:
     valores:
       - {valor: "4", desde: "2026-01-01", hasta: null, fuente: "CFF art. 29-A, 4o. párrafo, reforma DOF 07-nov-2025"}
 
+  CFF_DIAS_INHABILES:
+    nombre: Días inhábiles de ley para plazos fiscales (CFF art. 12, primer párrafo), además de sábados y domingos
+    tipo: tabla
+    columnas: [conmemora, regla, mes, dia_o_lunes]
+    citas: [{ley: CFF, articulo: "12"}]
+    que_dice: "En los plazos fiscales en días no cuentan sábados, domingos ni los festivos del art. 12: 1 de enero, primer lunes de febrero, tercer lunes de marzo, 1 y 5 de mayo, 16 de septiembre, tercer lunes de noviembre y 25 de diciembre."
+    correcto_si: "Las fechas fijas (regla fija) son ese día del mes; las de regla n_lunes son el n-ésimo lunes del mes (dia_o_lunes = n)."
+    valores:
+      - desde: "2014-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        fuente: "CFF art. 12, primer párrafo (texto de la Cámara de Diputados; cotejo con el DOF pendiente, M-102). El 1o. de diciembre cada 6 años, «cuando corresponda a la transmisión del Poder Ejecutivo», no se lista: desde 2024 la transmisión es el 1 de octubre (CPEUM art. 83) y el CFF no se ha ajustado; POR CONFIRMAR antes de 2030"
+        valor:
+          - ["1 de enero", "fija", "1", "1"]
+          - ["5 de febrero", "n_lunes", "2", "1"]
+          - ["21 de marzo", "n_lunes", "3", "3"]
+          - ["1 de mayo", "fija", "5", "1"]
+          - ["5 de mayo", "fija", "5", "5"]
+          - ["16 de septiembre", "fija", "9", "16"]
+          - ["20 de noviembre", "n_lunes", "11", "3"]
+          - ["25 de diciembre", "fija", "12", "25"]
+
   # ───────────────────────── FASE 2: plazos, CFDI, DIOT, contabilidad electrónica ─────────────────────────
   DIAS_EXTRA_SEXTO_DIGITO:
     nombre: Días hábiles adicionales al día 17 según el sexto dígito numérico del RFC
