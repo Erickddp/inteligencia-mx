@@ -10,7 +10,7 @@ UMA, salarios mínimos, tarifa art. 96 (2023-2025 y 2026) con cuotas fijas, subs
 ## Fase 2 · IVA, CFDI, DIOT, bancos, contabilidad electrónica y pagos tardíos · HECHA (5-nov-2026)
 Saldo a favor entre años y devolución (R-14/R-18), REP por fecha de pago (R-10), factura global 24 h (R-03), proporción con exentas y no objeto (R-17), pedimentos (R-19), DIOT de 54 campos con el orden oficial y tipos de tercero (R-30/R-32), tipo de cambio CFF 20 (R-52), depósitos y pagos sin CFDI (R-53), pólizas para Anexo 24 (R-60/R-61/R-64), contabilidad electrónica con relevos (R-101), actualización, recargos y ajuste a pesos (R-100/R-108), sexto dígito (R-27), plazos de CFDI (R-90).
 Resultado: 40 casos pasan.
-Queda esperando: tu firma (R-15, R-27, R-30, R-90), una carga real de DIOT (pipe final), la serie INPC del INEGI conectada, y tus fichas de criterio (R-40, R-54, R-64).
+Queda esperando: tu firma (R-15, R-27, R-30, R-90), una carga real de DIOT (pipe final), la app llamando la serie INPC (ya en `series/inpc.yaml`), y tus fichas de criterio (R-40, R-54, R-64).
 
 ## Fase 3 · ISR por régimen, anuales y estados financieros · INVESTIGADA, en base v0.4.0 como casos de oro
 Matriz régimen × obligación (601, 603, 605, 606, 612, 621, 625, 626 PF/PM): qué declara, cuándo y con qué base. R-20 a R-28 (tablas acumuladas oficiales, 606 con predial y trimestral, coeficiente y PTU/pérdidas, plataformas 2026), R-65, R-70 a R-76, estímulo ISR frontera (R-103), anuales PF/PM (R-104), donatarias (603).

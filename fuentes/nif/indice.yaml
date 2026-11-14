@@ -2,53 +2,55 @@
 #
 # - Las NIF las publica el CINIF con derechos reservados: aquí NO se copia su texto. Solo el identificador, el título,
 #   el tema y para qué se usan en las reglas de este repo.
-# - `cotejado: false` en todas: los títulos y la numeración salen del conocimiento general de la serie y deben verificarse
-#   contra la edición vigente del CINIF antes de firmar cualquier regla que dependa de una NIF.
+# - Cotejo del 2026-11-13 contra lo que el CINIF publica sin suscripción (el listado completo y el libro NIF 2026 piden
+#   cuenta de pago). `cotejado: true` + `cotejo: <clave de fuentes_cotejo>` = identificador y título leídos en un documento
+#   del CINIF. `cotejado: false` = no apareció en esas fuentes públicas: sigue sin confirmar, aunque el título sea el usual.
+# - Lo que el cotejo cambió: la NIF A-1 (Marco Conceptual) sustituyó desde 2023 a las A-1 a A-8 anteriores (van en `derogadas`),
+#   la A-2 es otra norma desde 2026 (negocio en marcha) y la B-1 y la B-3 tienen versión nueva en el libro 2026.
 # - Las reglas las citan así: citas: [{nif: "C-3"}]. Una NIF nunca fija un número de ley: sirve para justificar el
 #   criterio contable (cómo se reconoce, se valúa o se presenta algo), no para producir cifras fiscales.
-version: 1
+version: 2
+cotejo: "2026-11-13"
 fuente: "CINIF, Normas de Información Financiera (edición vigente); https://www.cinif.org.mx"
 nota: "Referencia y resumen propio. Texto con derechos reservados del CINIF."
+fuentes_cotejo:
+  mejoras_2023: {titulo: "CINIF, Mejoras a las NIF 2023 (D.R. CINIF 2022)", url: "https://www.cinif.org.mx/assets/mejoras_nif/MejorasNIF2023.pdf", sha256: "51912a7d243ad33b60ce06b2e85c34cbaf9b30e5c06580210a7253caf7e281e2", leido: "2026-11-13"}
+  aclaracion_2025: {titulo: "CINIF, Aclaración editorial al Libro NIF 2025 (28-mar-2025)", url: "https://www.cinif.org.mx/uploads/Libro_NIF_2025-Aclaracion_editorial.pdf", sha256: "b4f9126fcc7e7cb960259f0577dd35b4b579d0c4d28c65e7919475601d0d4a05", leido: "2026-11-13"}
+  libro_2026: {titulo: "CINIF, Libro NIF 2026 (página del libro: NIF vigentes al 1-ene-2026, novedades B-1 y B-3)", url: "https://www.cinif.org.mx/info_libro2026.php", leido: "2026-11-13"}
 nif:
   # ── Serie A · Marco conceptual ──
-  - {id: "A-1", titulo: "Estructura de las Normas de Información Financiera", tema: "marco conceptual", cotejado: false}
-  - {id: "A-2", titulo: "Postulados básicos", tema: "marco conceptual", uso: "devengación contable: reconocer cuando ocurre la operación, no cuando se cobra", cotejado: false}
-  - {id: "A-3", titulo: "Necesidades de los usuarios y objetivo de los estados financieros", tema: "marco conceptual", cotejado: false}
-  - {id: "A-4", titulo: "Características cualitativas de los estados financieros", tema: "marco conceptual", cotejado: false}
-  - {id: "A-5", titulo: "Elementos básicos de los estados financieros", tema: "marco conceptual", uso: "definición de activo, pasivo, capital, ingreso y gasto", cotejado: false}
-  - {id: "A-6", titulo: "Reconocimiento y valuación", tema: "marco conceptual", cotejado: false}
-  - {id: "A-7", titulo: "Presentación y revelación", tema: "marco conceptual", cotejado: false}
-  - {id: "A-8", titulo: "Supletoriedad", tema: "marco conceptual", cotejado: false}
+  - {id: "A-1", titulo: "Marco Conceptual de las Normas de Información Financiera", tema: "marco conceptual", uso: "postulados básicos (devengación contable: reconocer cuando ocurre la operación, no cuando se cobra), elementos de los estados financieros, reconocimiento y valuación", vigente_desde: "2023-01-01", sustituye: ["A-1 a A-8 anteriores"], cotejado: true, cotejo: mejoras_2023}
+  - {id: "A-2", titulo: "Incertidumbres sobre negocio en marcha", tema: "marco conceptual", uso: "evaluar y revelar si la entidad puede seguir operando", vigente_desde: "2026-01-01", cotejado: true, cotejo: aclaracion_2025}
   # ── Serie B · Normas aplicables a los estados financieros en su conjunto ──
-  - {id: "B-1", titulo: "Cambios contables y correcciones de errores", tema: "estados financieros", cotejado: false}
+  - {id: "B-1", titulo: "Cambios contables y correcciones de errores", tema: "estados financieros", cotejado: true, cotejo: mejoras_2023, nota: "El libro NIF 2026 anuncia una NIF B-1 nueva, «Bases para la preparación de los estados financieros». POR CONFIRMAR: fecha de entrada en vigor (fuentes secundarias dicen 2028, con aplicación anticipada) y si sustituye a este título."}
   - {id: "B-2", titulo: "Estado de flujos de efectivo", tema: "estados financieros", uso: "flujo directo e indirecto", cotejado: false}
-  - {id: "B-3", titulo: "Estado de resultado integral", tema: "estados financieros", uso: "estado de resultados", cotejado: false}
-  - {id: "B-4", titulo: "Estado de cambios en el capital contable", tema: "estados financieros", cotejado: false}
+  - {id: "B-3", titulo: "Estado de resultado integral", tema: "estados financieros", uso: "estado de resultados", cotejado: true, cotejo: libro_2026, nota: "El libro NIF 2026 trae una NIF B-3 nueva con el mismo título. POR CONFIRMAR: fecha de entrada en vigor de la versión nueva."}
+  - {id: "B-4", titulo: "Estado de cambios en el capital contable", tema: "estados financieros", cotejado: true, cotejo: mejoras_2023}
   - {id: "B-5", titulo: "Información financiera por segmentos", tema: "estados financieros", cotejado: false}
   - {id: "B-6", titulo: "Estado de situación financiera", tema: "estados financieros", uso: "balance general", cotejado: false}
   - {id: "B-7", titulo: "Adquisiciones de negocios", tema: "estados financieros", cotejado: false}
   - {id: "B-8", titulo: "Estados financieros consolidados o combinados", tema: "estados financieros", cotejado: false}
   - {id: "B-9", titulo: "Información financiera a fechas intermedias", tema: "estados financieros", cotejado: false}
-  - {id: "B-10", titulo: "Efectos de la inflación", tema: "estados financieros", cotejado: false}
-  - {id: "B-11", titulo: "Disposición de activos de larga duración y operaciones discontinuadas", tema: "estados financieros", cotejado: false}
+  - {id: "B-10", titulo: "Efectos de la inflación", tema: "estados financieros", cotejado: true, cotejo: mejoras_2023}
+  - {id: "B-11", titulo: "Disposición de activos de larga duración y operaciones discontinuadas", tema: "estados financieros", cotejado: true, cotejo: mejoras_2023}
   - {id: "B-12", titulo: "Compensación de activos financieros y pasivos financieros", tema: "estados financieros", cotejado: false}
   - {id: "B-13", titulo: "Hechos posteriores a la fecha de los estados financieros", tema: "estados financieros", cotejado: false}
   - {id: "B-14", titulo: "Utilidad por acción", tema: "estados financieros", cotejado: false}
-  - {id: "B-15", titulo: "Conversión de monedas extranjeras", tema: "estados financieros", uso: "diferencia cambiaria en cobros y pagos en divisa", cotejado: false}
+  - {id: "B-15", titulo: "Conversión de monedas extranjeras", tema: "estados financieros", uso: "diferencia cambiaria en cobros y pagos en divisa", cotejado: true, cotejo: mejoras_2023}
   - {id: "B-16", titulo: "Estados financieros de entidades con propósitos no lucrativos", tema: "estados financieros", uso: "estado de actividades de donatarias", cotejado: false}
   - {id: "B-17", titulo: "Determinación del valor razonable", tema: "estados financieros", cotejado: false}
   # ── Serie C · Normas aplicables a conceptos específicos de los estados financieros ──
   - {id: "C-1", titulo: "Efectivo y equivalentes de efectivo", tema: "activo", uso: "caja y bancos", cotejado: false}
-  - {id: "C-2", titulo: "Inversión en instrumentos financieros", tema: "activo", cotejado: false}
-  - {id: "C-3", titulo: "Cuentas por cobrar", tema: "activo", uso: "clientes", cotejado: false}
-  - {id: "C-4", titulo: "Inventarios", tema: "activo", uso: "costo de venta, inventario y mermas", cotejado: false}
-  - {id: "C-5", titulo: "Pagos anticipados", tema: "activo", cotejado: false}
+  - {id: "C-2", titulo: "Inversión en instrumentos financieros", tema: "activo", cotejado: true, cotejo: mejoras_2023}
+  - {id: "C-3", titulo: "Cuentas por cobrar", tema: "activo", uso: "clientes", cotejado: true, cotejo: mejoras_2023}
+  - {id: "C-4", titulo: "Inventarios", tema: "activo", uso: "costo de venta, inventario y mermas", cotejado: true, cotejo: mejoras_2023}
+  - {id: "C-5", titulo: "Pagos anticipados", tema: "activo", cotejado: true, cotejo: mejoras_2023}
   - {id: "C-6", titulo: "Propiedades, planta y equipo", tema: "activo", uso: "depreciación en línea recta", cotejado: false}
   - {id: "C-7", titulo: "Inversiones en asociadas, negocios conjuntos y otras inversiones permanentes", tema: "activo", cotejado: false}
   - {id: "C-8", titulo: "Activos intangibles", tema: "activo", cotejado: false}
-  - {id: "C-9", titulo: "Provisiones, contingencias y compromisos", tema: "pasivo", uso: "provisión de impuestos", cotejado: false}
+  - {id: "C-9", titulo: "Provisiones, contingencias y compromisos", tema: "pasivo", uso: "provisión de impuestos", cotejado: true, cotejo: aclaracion_2025}
   - {id: "C-10", titulo: "Instrumentos financieros derivados y relaciones de cobertura", tema: "activo y pasivo", cotejado: false}
-  - {id: "C-11", titulo: "Capital contable", tema: "capital", cotejado: false}
+  - {id: "C-11", titulo: "Capital contable", tema: "capital", cotejado: true, cotejo: mejoras_2023}
   - {id: "C-12", titulo: "Instrumentos financieros con características de pasivo y de capital", tema: "capital", cotejado: false}
   - {id: "C-13", titulo: "Partes relacionadas", tema: "revelación", cotejado: false}
   - {id: "C-14", titulo: "Transferencia y baja de activos financieros", tema: "activo", cotejado: false}
@@ -56,14 +58,24 @@ nif:
   - {id: "C-16", titulo: "Deterioro de instrumentos financieros por cobrar", tema: "activo", cotejado: false}
   - {id: "C-17", titulo: "Propiedades de inversión", tema: "activo", cotejado: false}
   - {id: "C-18", titulo: "Obligaciones asociadas con el retiro de propiedades, planta y equipo", tema: "pasivo", cotejado: false}
-  - {id: "C-19", titulo: "Instrumentos financieros por pagar", tema: "pasivo", uso: "proveedores y préstamos", cotejado: false}
-  - {id: "C-20", titulo: "Instrumentos financieros para cobrar principal e interés", tema: "activo", cotejado: false}
+  - {id: "C-19", titulo: "Instrumentos financieros por pagar", tema: "pasivo", uso: "proveedores y préstamos", cotejado: true, cotejo: mejoras_2023}
+  - {id: "C-20", titulo: "Instrumentos financieros para cobrar principal e interés", tema: "activo", cotejado: true, cotejo: aclaracion_2025}
   - {id: "C-21", titulo: "Acuerdos con control conjunto", tema: "activo", cotejado: false}
   - {id: "C-22", titulo: "Criptomonedas", tema: "activo", cotejado: false}
   # ── Serie D · Normas aplicables a problemas de determinación de resultados ──
   - {id: "D-1", titulo: "Ingresos por contratos con clientes", tema: "resultados", uso: "reconocimiento del ingreso", cotejado: false}
-  - {id: "D-2", titulo: "Costos por contratos con clientes", tema: "resultados", cotejado: false}
+  - {id: "D-2", titulo: "Costos por contratos con clientes", tema: "resultados", cotejado: true, cotejo: mejoras_2023}
   - {id: "D-3", titulo: "Beneficios a los empleados", tema: "resultados", uso: "sueldos, cuotas y provisiones de nómina; PTU", cotejado: false}
   - {id: "D-4", titulo: "Impuestos a la utilidad", tema: "resultados", uso: "ISR estimado y diferido", cotejado: false}
   - {id: "D-5", titulo: "Arrendamientos", tema: "resultados", cotejado: false}
-  - {id: "D-6", titulo: "Capitalización del resultado integral de financiamiento", tema: "resultados", cotejado: false}
+  - {id: "D-6", titulo: "Capitalización del resultado integral de financiamiento", tema: "resultados", cotejado: true, cotejo: mejoras_2023}
+# Derogadas: se conservan para leer citas viejas. Ninguna regla debe citarlas.
+derogadas:
+  - {id: "A-1", titulo: "Estructura de las Normas de Información Financiera", tema: "marco conceptual", derogada: "2022-12-31", sustituida_por: "A-1 Marco Conceptual", cotejo: mejoras_2023}
+  - {id: "A-2", titulo: "Postulados básicos", tema: "marco conceptual", derogada: "2022-12-31", sustituida_por: "A-1 Marco Conceptual", cotejo: mejoras_2023}
+  - {id: "A-3", titulo: "Necesidades de los usuarios y objetivo de los estados financieros", tema: "marco conceptual", derogada: "2022-12-31", sustituida_por: "A-1 Marco Conceptual", cotejo: mejoras_2023}
+  - {id: "A-4", titulo: "Características cualitativas de los estados financieros", tema: "marco conceptual", derogada: "2022-12-31", sustituida_por: "A-1 Marco Conceptual", cotejo: mejoras_2023}
+  - {id: "A-5", titulo: "Elementos básicos de los estados financieros", tema: "marco conceptual", derogada: "2022-12-31", sustituida_por: "A-1 Marco Conceptual", cotejo: mejoras_2023}
+  - {id: "A-6", titulo: "Reconocimiento y valuación", tema: "marco conceptual", derogada: "2022-12-31", sustituida_por: "A-1 Marco Conceptual", cotejo: mejoras_2023}
+  - {id: "A-7", titulo: "Presentación y revelación", tema: "marco conceptual", derogada: "2022-12-31", sustituida_por: "A-1 Marco Conceptual", cotejo: mejoras_2023}
+  - {id: "A-8", titulo: "Supletoriedad", tema: "marco conceptual", derogada: "2022-12-31", sustituida_por: "A-1 Marco Conceptual", cotejo: mejoras_2023}

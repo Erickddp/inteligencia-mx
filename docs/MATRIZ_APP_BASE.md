@@ -44,7 +44,7 @@ Cada fila es una categoría del trinquete. «Archivos» son los que el trinquete
 | DIOT: tipo de tercero 04 / 05 / 15 | `DIOT_NUM_CAMPOS`, `DIOT_LAYOUT_2025` | R-30, R-32 | El 2B ya usa el orden oficial; falta la captura de proveedores extranjeros y globales (decisión de Rick) | 2B (cierre) |
 | Plazo de cancelación | `CFDI_CANCELACION_MES_LIMITE_PM`, `CFDI_CANCELACION_MES_LIMITE_PF` | R-90 | El código de la app aún no lo usa | 3 |
 | REP y global | `REP_DIA_LIMITE`, `CFDI_EMISION_HORAS_MAX`, `CFDI_GLOBAL_HORAS_MAX` | R-137, R-03 | Aviso de extemporánea; las 24 h de la global | 3 |
-| Recargos y actualización | `RECARGOS_*`, `ACTUALIZACION_FACTOR_DECIMALES` | R-100, R-108 | Necesita la serie INPC (bloqueado por el token del INEGI) | D |
+| Recargos y actualización | `RECARGOS_*`, `ACTUALIZACION_FACTOR_DECIMALES` | R-100, R-108 | La serie INPC ya está en la base (`series/inpc.yaml`, oct-2021 a oct-2026, DOF cruzado con Banxico) y R-162 la usa con `serie(id, fecha)`; falta que la app la llame | D |
 | Aguinaldo, PTU, separación, IMSS, Infonavit, ISN, LFT | `EXENTO_*`, `SBC_*`, `IMSS_*`, `INFONAVIT_*`, `LFT_*`, `PTU_*`, `ISN_TASA_TABLA` | R-83 a R-134, R-102 | Pasan de `ParametroNomina` a la base. Los 3 recibos demo ya coinciden al centavo | 5 |
 
 ## 4. Huecos que van de regreso a esta base

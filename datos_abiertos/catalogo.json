@@ -1,7 +1,7 @@
 {
  "nombre": "Datos abiertos de inteligencia-mx",
  "licencia": "CC BY 4.0",
- "version_base": "0.4.2",
+ "version_base": "0.5.0",
  "archivos": {
   "parametros.csv": {
    "descripcion": "Cada parámetro de ley con sus tramos, estado y vigencia (valor solo si es un dato simple).",
@@ -38,7 +38,7 @@
     "fuente"
    ],
    "filas": 106,
-   "sha256": "721493306fa53d9c6e6f9578ead462ead322d59dc9f99f146aae5fa4ed2b0c64"
+   "sha256": "1f7683b5802c3992ffa430725c7623f97831d08bb7c6b294a6fd4ff71568eac8"
   },
   "leyes.csv": {
    "descripcion": "Cada ley, código o reglamento de la biblioteca con su ámbito, materia, huella y si tiene cotejo humano.",
@@ -70,7 +70,7 @@
     "existe_en_biblioteca"
    ],
    "filas": 138,
-   "sha256": "36b1431d2727fe88d76b1386785846a695e4fd3e5a1da83cc33c07df10cf05f1"
+   "sha256": "c639a2eef425bd38cc41b0ac7a7e33dc2bf63ab250beefcef92357f2eccb60f9"
   },
   "cotejo_pendiente.csv": {
    "descripcion": "Artículos citados por la base que nadie ha cotejado con el diario oficial, por prioridad.",
