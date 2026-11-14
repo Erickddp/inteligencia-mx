@@ -13,5 +13,171 @@
   "articulos": {}
  },
  "articulos": 421,
- "derogados": 85
+ "derogados": 85,
+ "cotejo_reformas": {
+  "28": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "CFF 28",
+   "fechas_en_notas": [
+    "12-11-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 4,
+     "coinciden": 4,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 2585,
+   "caracteres_articulo": 4754,
+   "cobertura_pct": 54.4,
+   "decreto_mas_reciente": "5635286",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "12": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "CFF 12",
+   "fechas_en_notas": [
+    "12-11-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 2,
+     "coinciden": 2,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 813,
+   "caracteres_articulo": 2730,
+   "cobertura_pct": 29.8,
+   "decreto_mas_reciente": "5635286",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "29-a": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "CFF 29-a",
+   "fechas_en_notas": [
+    "12-11-2021",
+    "07-11-2025"
+   ],
+   "decretos": [
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 7,
+     "coinciden": 6,
+     "no_coinciden": [
+      "Salvo que las disposiciones fiscales prevean un plazo menor, los comprobantes fiscales digitales por Internet sólo podrán cancelarse en el ejercicio en el que se expidan y siempre que la persona a fav"
+     ],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "07-11-2025",
+     "nota": "5772358",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5772358&fecha=07/11/2025",
+     "piezas": 4,
+     "coinciden": 4,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 3008,
+   "caracteres_articulo": 12266,
+   "cobertura_pct": 24.5,
+   "decreto_mas_reciente": "5772358",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "17-a": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "CFF 17-a",
+   "fechas_en_notas": [],
+   "decretos": [],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 0,
+   "caracteres_articulo": 4149,
+   "cobertura_pct": 0.0,
+   "decreto_mas_reciente": null,
+   "estado": "sin_decreto_que_lo_reimprima"
+  },
+  "20": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "CFF 20",
+   "fechas_en_notas": [
+    "29-12-2023",
+    "30-12-2024",
+    "28-12-2025"
+   ],
+   "decretos": [],
+   "fechas_sin_decreto": [
+    "29-12-2023",
+    "30-12-2024",
+    "28-12-2025"
+   ],
+   "caracteres_verificados": 0,
+   "caracteres_articulo": 5973,
+   "cobertura_pct": 0.0,
+   "decreto_mas_reciente": null,
+   "estado": "sin_decreto_que_lo_reimprima"
+  },
+  "21": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "CFF 21",
+   "fechas_en_notas": [
+    "12-11-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 2,
+     "coinciden": 2,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 685,
+   "caracteres_articulo": 4853,
+   "cobertura_pct": 14.1,
+   "decreto_mas_reciente": "5635286",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "4": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "CFF 4",
+   "fechas_en_notas": [],
+   "decretos": [],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 0,
+   "caracteres_articulo": 1217,
+   "cobertura_pct": 0.0,
+   "decreto_mas_reciente": null,
+   "estado": "sin_decreto_que_lo_reimprima"
+  }
+ }
 }

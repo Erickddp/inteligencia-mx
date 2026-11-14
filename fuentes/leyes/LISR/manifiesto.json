@@ -13,5 +13,920 @@
   "articulos": {}
  },
  "articulos": 236,
- "derogados": 12
+ "derogados": 12,
+ "cotejo_reformas": {
+  "93": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 93",
+   "fechas_en_notas": [
+    "18-11-2015"
+   ],
+   "decretos": [
+    {
+     "dof": "11-12-2013",
+     "nota": "5325373",
+     "tipo": "expide la ley",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013",
+     "piezas": 68,
+     "coinciden": 67,
+     "no_coinciden": [
+      "La exención prevista en este inciso será aplicable siempre que durante los cinco años inmediatos anteriores a la fecha de enajenación de que se trate el contribuyente no hubiere enajenado otra casa ha"
+     ],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "18-11-2015",
+     "nota": "5415878",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5415878&fecha=18/11/2015",
+     "piezas": 1,
+     "coinciden": 1,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 21367,
+   "caracteres_articulo": 22126,
+   "cobertura_pct": 96.6,
+   "decreto_mas_reciente": "5415878",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "106": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 106",
+   "fechas_en_notas": [
+    "09-12-2019",
+    "12-11-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "11-12-2013",
+     "nota": "5325373",
+     "tipo": "expide la ley",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013",
+     "piezas": 5,
+     "coinciden": 4,
+     "no_coinciden": [
+      "Cuando los contribuyentes presten servicios profesionales a las personas morales, éstas deberán retener, como pago provisional, el monto que resulte de aplicar la tasa del 10% sobre el monto de los pa"
+     ],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "09-12-2019",
+     "nota": "5581292",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5581292&fecha=09/12/2019",
+     "piezas": 2,
+     "coinciden": 1,
+     "no_coinciden": [
+      "Las personas morales obligadas a efectuar la retención podrán optar por no proporcionar el comprobante fiscal a que se refiere el párrafo anterior, siempre que la persona física que preste los servici"
+     ],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 1,
+     "coinciden": 1,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 3346,
+   "caracteres_articulo": 3843,
+   "cobertura_pct": 87.1,
+   "decreto_mas_reciente": "5635286",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "113-a": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 113-a",
+   "fechas_en_notas": [
+    "09-12-2019",
+    "08-12-2020"
+   ],
+   "decretos": [
+    {
+     "dof": "09-12-2019",
+     "nota": "5581292",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5581292&fecha=09/12/2019",
+     "piezas": 8,
+     "coinciden": 6,
+     "no_coinciden": [
+      "La retención se deberá efectuar sobre el total de los ingresos que efectivamente perciban las personas físicas por conducto de los citados medios a que se refiere el primer párrafo de este artículo, s",
+      "Las cantidades establecidas en moneda nacional contenidas en las tablas previstas en el párrafo anterior, se actualizarán en los términos y condiciones que establece el artículo 152, último párrafo de"
+     ],
+     "numeros_faltantes": [
+      "0.4%",
+      "0.5%",
+      "0.9%",
+      "1,500",
+      "1.1%",
+      "10",
+      "10,000",
+      "100,000",
+      "100,000",
+      "15,000",
+      "15,000",
+      "152",
+      "2",
+      "2",
+      "2.0%",
+      "21,000",
+      "21,000",
+      "25,000",
+      "3",
+      "3"
+     ]
+    },
+    {
+     "dof": "08-12-2020",
+     "nota": "5606951",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5606951&fecha=08/12/2020",
+     "piezas": 4,
+     "coinciden": 4,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 2900,
+   "caracteres_articulo": 3342,
+   "cobertura_pct": 86.8,
+   "decreto_mas_reciente": "5606951",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "151": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 151",
+   "fechas_en_notas": [
+    "18-11-2015",
+    "30-11-2016",
+    "08-12-2020",
+    "12-11-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "11-12-2013",
+     "nota": "5325373",
+     "tipo": "expide la ley",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013",
+     "piezas": 31,
+     "coinciden": 27,
+     "no_coinciden": [
+      "I. Los pagos por honorarios médicos y dentales, así como los gastos hospitalarios, efectuados por el contribuyente para sí, para su cónyuge o para la persona con quien viva en concubinato y para sus a",
+      "f) A programas de escuela empresa",
+      "Para los efectos del párrafo anterior, se consideran planes personales de retiro, aquellas cuentas o canales de inversión, que se establezcan con el único fin de recibir y administrar recursos destina",
+      "El monto total de las deducciones que podrán efectuar los contribuyentes en los términos de este artículo y del artículo 185, no podrá exceder de la cantidad que resulte menor entre cuatro salarios mí"
+     ],
+     "numeros_faltantes": [
+      "10%",
+      "185"
+     ]
+    },
+    {
+     "dof": "18-11-2015",
+     "nota": "5415878",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5415878&fecha=18/11/2015",
+     "piezas": 5,
+     "coinciden": 3,
+     "no_coinciden": [
+      "Para los efectos del párrafo anterior, se consideran planes personales de retiro, aquellas cuentas o canales de inversión, que se establezcan con el único fin de recibir y administrar recursos destina",
+      "El monto total de las deducciones que podrán efectuar los contribuyentes en los términos de este artículo, no podrá exceder de la cantidad que resulte menor entre cinco salarios mínimos generales elev"
+     ],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "30-11-2016",
+     "nota": "5463187",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5463187&fecha=30/11/2016",
+     "piezas": 2,
+     "coinciden": 1,
+     "no_coinciden": [
+      "Para los efectos del párrafo anterior, se consideran planes personales de retiro, aquellas cuentas o canales de inversión, que se establezcan con el único fin de recibir y administrar recursos destina"
+     ],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "08-12-2020",
+     "nota": "5606951",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5606951&fecha=08/12/2020",
+     "piezas": 0,
+     "coinciden": 0,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 2,
+     "coinciden": 2,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 13563,
+   "caracteres_articulo": 13975,
+   "cobertura_pct": 97.1,
+   "decreto_mas_reciente": "5635286",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "36": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 36",
+   "fechas_en_notas": [
+    "18-11-2015",
+    "30-11-2016"
+   ],
+   "decretos": [
+    {
+     "dof": "11-12-2013",
+     "nota": "5325371",
+     "tipo": "expide la ley",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5325371&fecha=11/12/2013",
+     "piezas": 14,
+     "coinciden": 12,
+     "no_coinciden": [
+      "II. Las inversiones en automóviles sólo serán deducibles hasta por un monto de $130,000.00",
+      "III. Las inversiones en casas habitación y en comedores, que por su naturaleza no estén a disposición de todos los trabajadores de la empresa, así como en aviones y embarcaciones que no tengan concesi"
+     ],
+     "numeros_faltantes": [
+      "130,000.00"
+     ]
+    },
+    {
+     "dof": "18-11-2015",
+     "nota": "5415878",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5415878&fecha=18/11/2015",
+     "piezas": 1,
+     "coinciden": 1,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "30-11-2016",
+     "nota": "5463187",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5463187&fecha=30/11/2016",
+     "piezas": 1,
+     "coinciden": 1,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 3813,
+   "caracteres_articulo": 4682,
+   "cobertura_pct": 81.4,
+   "decreto_mas_reciente": "5463187",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "96": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 96",
+   "fechas_en_notas": [],
+   "decretos": [
+    {
+     "dof": "11-12-2013",
+     "nota": "5325373",
+     "tipo": "expide la ley",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013",
+     "piezas": 8,
+     "coinciden": 8,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 3141,
+   "caracteres_articulo": 3589,
+   "cobertura_pct": 87.5,
+   "decreto_mas_reciente": "5325373",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "113-e": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 113-e",
+   "fechas_en_notas": [
+    "12-11-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 18,
+     "coinciden": 18,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 5067,
+   "caracteres_articulo": 5749,
+   "cobertura_pct": 88.1,
+   "decreto_mas_reciente": "5635286",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "14": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 14",
+   "fechas_en_notas": [
+    "09-12-2019",
+    "12-11-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "11-12-2013",
+     "nota": "5325371",
+     "tipo": "expide la ley",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5325371&fecha=11/12/2013",
+     "piezas": 18,
+     "coinciden": 15,
+     "no_coinciden": [
+      "Las personas morales que distribuyan anticipos o rendimientos en los términos de la fracción II del artículo 94 de esta Ley, disminuirán la utilidad fiscal para el pago provisional que se obtenga conf",
+      "A la utilidad fiscal determinada conforme a esta fracción se le restará, en su caso, la pérdida fiscal de ejercicios anteriores pendiente de aplicar contra las utilidades fiscales, sin perjuicio de di",
+      "b) Los contribuyentes que estimen que el coeficiente de utilidad que deben aplicar para determinar los pagos provisionales es superior al coeficiente de utilidad del ejercicio al que correspondan dich"
+     ],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "09-12-2019",
+     "nota": "5581292",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5581292&fecha=09/12/2019",
+     "piezas": 5,
+     "coinciden": 5,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 1,
+     "coinciden": 1,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 8733,
+   "caracteres_articulo": 8831,
+   "cobertura_pct": 98.9,
+   "decreto_mas_reciente": "5635286",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "27": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 27",
+   "fechas_en_notas": [
+    "18-11-2015",
+    "30-11-2016",
+    "09-12-2019",
+    "08-12-2020",
+    "23-04-2021",
+    "12-11-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "11-12-2013",
+     "nota": "5325371",
+     "tipo": "expide la ley",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5325371&fecha=11/12/2013",
+     "piezas": 79,
+     "coinciden": 68,
+     "no_coinciden": [
+      "f) A programas de escuela empresa",
+      "VII. Que en el caso de intereses por capitales tomados en préstamo, éstos se hayan invertido en los fines del negocio. Cuando el contribuyente otorgue préstamos a terceros, a sus trabajadores o a sus ",
+      "VIII. Que tratándose de pagos que a su vez sean ingresos de contribuyentes personas físicas, de los contribuyentes a que se refieren los artículos 72 y 73 de esta Ley, así como de aquéllos realizados ",
+      "X. Que en los casos de asistencia técnica, de transferencia de tecnología o de regalías, se compruebe ante las autoridades fiscales que quien proporciona los conocimientos, cuenta con elementos técnic",
+      "Tratándose de trabajadores no sindicalizados, se considera que las prestaciones de previsión social son generales cuando se otorguen las mismas prestaciones a todos ellos y siempre que las erogaciones",
+      "En el caso de las aportaciones a los fondos de ahorro, éstas sólo serán deducibles cuando, además de ser generales en los términos de los tres párrafos anteriores, el monto de las aportaciones efectua",
+      "Tratándose de las prestaciones de previsión social a que se refiere el párrafo anterior, se considera que éstas son generales cuando sean las mismas para todos los trabajadores de un mismo sindicato o",
+      "El monto de las prestaciones de previsión social deducibles otorgadas a los trabajadores no sindicalizados, excluidas las aportaciones de seguridad social, las aportaciones a los fondos de ahorro, a l",
+      "Lo dispuesto en el inciso a) de esta fracción será aplicable tratándose de créditos contratados con el público en general, cuya suerte principal al día de su vencimiento se encuentre entre cinco mil p",
+      "Lo dispuesto en el inciso a) de esta fracción será aplicable cuando el deudor del crédito de que se trate sea contribuyente que realiza actividades empresariales y el acreedor informe por escrito al d",
+      "b) Tratándose de créditos cuya suerte principal al día de su vencimiento sea mayor a treinta mil unidades de inversión cuando el acreedor haya demandado ante la autoridad judicial el pago del crédito "
+     ],
+     "numeros_faltantes": [
+      "29",
+      "29"
+     ]
+    },
+    {
+     "dof": "18-11-2015",
+     "nota": "5415878",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5415878&fecha=18/11/2015",
+     "piezas": 5,
+     "coinciden": 4,
+     "no_coinciden": [
+      "VIII. Que tratándose de pagos que a su vez sean ingresos de contribuyentes personas físicas, de los contribuyentes a que se refieren los artículos 72, 73 y 74 de esta Ley, así como de aquéllos realiza"
+     ],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "30-11-2016",
+     "nota": "5463187",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5463187&fecha=30/11/2016",
+     "piezas": 2,
+     "coinciden": 1,
+     "no_coinciden": [
+      "Tratándose de subcontratación laboral en términos de la Ley Federal del Trabajo, el contratante deberá obtener del contratista copia de los comprobantes fiscales por concepto de pago de salarios de lo"
+     ],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "09-12-2019",
+     "nota": "5581292",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5581292&fecha=09/12/2019",
+     "piezas": 2,
+     "coinciden": 2,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "08-12-2020",
+     "nota": "5606951",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5606951&fecha=08/12/2020",
+     "piezas": 0,
+     "coinciden": 0,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "23-04-2021",
+     "nota": "5616745",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5616745&fecha=23/04/2021",
+     "piezas": 1,
+     "coinciden": 1,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 7,
+     "coinciden": 7,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 27783,
+   "caracteres_articulo": 27783,
+   "cobertura_pct": 100.0,
+   "decreto_mas_reciente": "5635286",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "113-j": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 113-j",
+   "fechas_en_notas": [
+    "12-11-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 2,
+     "coinciden": 2,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 758,
+   "caracteres_articulo": 1357,
+   "cobertura_pct": 55.9,
+   "decreto_mas_reciente": "5635286",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "116": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 116",
+   "fechas_en_notas": [
+    "09-12-2019"
+   ],
+   "decretos": [
+    {
+     "dof": "11-12-2013",
+     "nota": "5325373",
+     "tipo": "expide la ley",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013",
+     "piezas": 5,
+     "coinciden": 4,
+     "no_coinciden": [
+      "Cuando los ingresos a que se refiere este Capítulo se obtengan por pagos que efectúen las personas morales, éstas deberán retener como pago provisional el monto que resulte de aplicar la tasa del 10% "
+     ],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "09-12-2019",
+     "nota": "5581292",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5581292&fecha=09/12/2019",
+     "piezas": 2,
+     "coinciden": 2,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 2764,
+   "caracteres_articulo": 3219,
+   "cobertura_pct": 85.9,
+   "decreto_mas_reciente": "5581292",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "152": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 152",
+   "fechas_en_notas": [
+    "12-11-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "11-12-2013",
+     "nota": "5325373",
+     "tipo": "expide la ley",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5325373&fecha=11/12/2013",
+     "piezas": 8,
+     "coinciden": 6,
+     "no_coinciden": [
+      "Las personas físicas calcularán el impuesto del ejercicio sumando, a los ingresos obtenidos conforme a los Capítulos I, III, IV, V, VI, VIII y IX de este Título, después de efectuar las deducciones au",
+      "Cuando la inflación observada acumulada desde el último mes que se utilizó en el cálculo de la última actualización de las cantidades establecidas en moneda nacional de las tarifas contenidas en este "
+     ],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 1,
+     "coinciden": 1,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 1509,
+   "caracteres_articulo": 2936,
+   "cobertura_pct": 51.4,
+   "decreto_mas_reciente": "5635286",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "209": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 209",
+   "fechas_en_notas": [
+    "12-11-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 50,
+     "coinciden": 50,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 6863,
+   "caracteres_articulo": 7657,
+   "cobertura_pct": 89.6,
+   "decreto_mas_reciente": "5635286",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "33": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 33",
+   "fechas_en_notas": [],
+   "decretos": [
+    {
+     "dof": "11-12-2013",
+     "nota": "5325371",
+     "tipo": "expide la ley",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5325371&fecha=11/12/2013",
+     "piezas": 6,
+     "coinciden": 6,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 990,
+   "caracteres_articulo": 1408,
+   "cobertura_pct": 70.3,
+   "decreto_mas_reciente": "5325371",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "34": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 34",
+   "fechas_en_notas": [
+    "30-11-2016",
+    "12-11-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "11-12-2013",
+     "nota": "5325371",
+     "tipo": "expide la ley",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5325371&fecha=11/12/2013",
+     "piezas": 28,
+     "coinciden": 28,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "30-11-2016",
+     "nota": "5463187",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5463187&fecha=30/11/2016",
+     "piezas": 1,
+     "coinciden": 1,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 2,
+     "coinciden": 2,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 5097,
+   "caracteres_articulo": 5719,
+   "cobertura_pct": 89.1,
+   "decreto_mas_reciente": "5635286",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "35": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 35",
+   "fechas_en_notas": [
+    "30-11-2016"
+   ],
+   "decretos": [
+    {
+     "dof": "11-12-2013",
+     "nota": "5325371",
+     "tipo": "expide la ley",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5325371&fecha=11/12/2013",
+     "piezas": 15,
+     "coinciden": 14,
+     "no_coinciden": [
+      "III. 7% en la fabricación de pulpa, papel y productos similares; en la extracción y procesamiento de petróleo crudo y gas natural"
+     ],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "30-11-2016",
+     "nota": "5463187",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5463187&fecha=30/11/2016",
+     "piezas": 2,
+     "coinciden": 2,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 2573,
+   "caracteres_articulo": 3045,
+   "cobertura_pct": 84.5,
+   "decreto_mas_reciente": "5463187",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "9": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 9",
+   "fechas_en_notas": [],
+   "decretos": [
+    {
+     "dof": "11-12-2013",
+     "nota": "5325371",
+     "tipo": "expide la ley",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5325371&fecha=11/12/2013",
+     "piezas": 7,
+     "coinciden": 7,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 1520,
+   "caracteres_articulo": 1860,
+   "cobertura_pct": 81.7,
+   "decreto_mas_reciente": "5325371",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "113-b": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 113-b",
+   "fechas_en_notas": [
+    "09-12-2019"
+   ],
+   "decretos": [
+    {
+     "dof": "09-12-2019",
+     "nota": "5581292",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5581292&fecha=09/12/2019",
+     "piezas": 12,
+     "coinciden": 12,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 4193,
+   "caracteres_articulo": 4859,
+   "cobertura_pct": 86.3,
+   "decreto_mas_reciente": "5581292",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "206": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 206",
+   "fechas_en_notas": [
+    "12-11-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 9,
+     "coinciden": 9,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 1904,
+   "caracteres_articulo": 2373,
+   "cobertura_pct": 80.2,
+   "decreto_mas_reciente": "5635286",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "207": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 207",
+   "fechas_en_notas": [
+    "12-11-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 6,
+     "coinciden": 6,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 2360,
+   "caracteres_articulo": 2805,
+   "cobertura_pct": 84.1,
+   "decreto_mas_reciente": "5635286",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "208": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 208",
+   "fechas_en_notas": [
+    "12-11-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 8,
+     "coinciden": 8,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 1242,
+   "caracteres_articulo": 1735,
+   "cobertura_pct": 71.6,
+   "decreto_mas_reciente": "5635286",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "210": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 210",
+   "fechas_en_notas": [
+    "12-11-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 12,
+     "coinciden": 12,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 3261,
+   "caracteres_articulo": 3751,
+   "cobertura_pct": 86.9,
+   "decreto_mas_reciente": "5635286",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "211": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LISR 211",
+   "fechas_en_notas": [
+    "12-11-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 2,
+     "coinciden": 2,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 1476,
+   "caracteres_articulo": 1913,
+   "cobertura_pct": 77.2,
+   "decreto_mas_reciente": "5635286",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  }
+ }
 }

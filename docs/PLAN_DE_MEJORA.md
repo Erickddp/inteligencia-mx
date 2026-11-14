@@ -17,7 +17,8 @@ Hoy el proyecto es un motor de reglas determinista y no usa aprendizaje automát
 | Reglas con citas a un artículo que se puede abrir | 54 de 106 |
 | Leyes en la biblioteca / artículos | 27 / 10,830 |
 | Leyes con **algún cotejo humano** contra el diario oficial | **0** |
-| Artículos que la base cita y nadie ha cotejado | 73 ([`cotejo_pendiente.csv`](../datos_abiertos/cotejo_pendiente.csv)) |
+| Artículos que la base cita y nadie ha cotejado | 80 ([`cotejo_pendiente.csv`](../datos_abiertos/cotejo_pendiente.csv)) |
+| …de ellos, **verificados automáticamente** contra los decretos de reforma del DOF (no es cotejo humano) | 38 verificados · 12 sin decreto que los reimprima · 30 sin revisar. Ninguna discrepancia. Ver [`scripts/cotejar_reformas.py`](../scripts/cotejar_reformas.py) |
 | Deuda de las reglas de oro | 81 ([`deuda_oro.json`](../scripts/deuda_oro.json)) |
 
 Las cifras salen de [`datos_abiertos/`](../datos_abiertos/README.md), que se regenera con `python scripts/exportar_datos_abiertos.py` y el CI comprueba que esté al día.

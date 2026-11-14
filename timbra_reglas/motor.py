@@ -33,7 +33,7 @@ def dir_base() -> Path:
         if (c / "parametros.yaml").is_file() and (c / "reglas.yaml").is_file():
             return c
     raise FileNotFoundError("No encontré parametros.yaml y reglas.yaml: " + ", ".join(str(c) for c in candidatas))
-VERSION_MOTOR = "0.6.0"
+VERSION_MOTOR = "0.7.0"
 
 # Estados de un tramo. Los NO_APLICABLES nunca se usan salvo en simulación.
 ESTADOS_APLICABLES = {"vigente", "por_confirmar"}

@@ -2,6 +2,25 @@
 
 Generado por `scripts/release.py --changelog` al preparar cada versión. Cada entrada sale de la comparación contra la versión anterior.
 
+## [v0.7.0] - 2026-11-14
+
+Pruebas: 265 pasan · 0 fallan · 0 pendientes   (* = pasa contra un esperado aún no confirmado).
+
+Pedido 03, bloques 7 a 10: contabilidad y verificación. Ningún valor publicado cambia de valor: no cae ninguna firma. Lo único que se mueve en la base es el código agrupador.
+
+- **Código agrupador (bloque 7):** `CONTA_CODIGO_AGRUPADOR` trae un tramo desde el 1-ene-2026 con el Anexo 24 de la RMF 2026 leído en el DOF (1,080 renglones, vigente): agrega 401.39 a 401.41 y 402.05 (zona fronteriza norte) y 000 (sector financiero), y corrige la escritura de «diésel» e «INFONAVIT». El catálogo de 2014 cierra el 31-dic-2025. Versión de los esquemas XML de catálogo, balanza y pólizas: POR CONFIRMAR (el Anexo 24 remite al documento técnico del SAT).
+- **NIF (bloque 8, fuera del paquete de la base):** 35 de 47 cotejadas con los boletines del CINIF; todas las que citan las reglas y Timbra, incluidas C-1, C-6, D-1, D-3 y D-4. `datos_abiertos/nif.csv` dice qué reglas citan cada NIF. Falta la fecha de entrada en vigor de las nuevas B-1 y B-3.
+- **NIIF (bloque 9, fuera del paquete):** índice de 41 IAS/IFRS con su NIF equivalente, sin cotejar (ifrs.org no abre desde el entorno de trabajo). Quién usa NIIF en México, sí cotejado en el DOF: las emisoras de la BMV desde el 1-ene-2012 (CNBV, art. 78); el resto usa NIF.
+- **Verificación de artículos (bloque 10, fuera del paquete):** `scripts/cotejar_reformas.py` compara lo que reimprimen los decretos de reforma del DOF contra la biblioteca, porque el DOF no publica leyes consolidadas. 50 artículos revisados: 38 verificados contra su decreto más reciente (incluidos CFF 28, LISR 34 y 93, LIVA 5, LISR 113-E y los artículos 206 a 211 de RESICO PM), 12 sin decreto que los reimprima y 0 discrepancias. NO es el cotejo humano de M-102: ningún artículo se marca cotejado.
+
+### Vigencias cambiadas
+
+- CONTA_CODIGO_AGRUPADOR desde 2015-01-01: hasta None -> 2025-12-31
+
+### Tramos nuevos
+
+- CONTA_CODIGO_AGRUPADOR desde 2026-01-01 (vigente)
+
 ## [v0.6.0] - 2026-11-14
 
 Pruebas: 261 pasan · 0 fallan · 0 pendientes   (* = pasa contra un esperado aún no confirmado).
@@ -72,6 +91,7 @@ Pedido 03 de Timbra, bloques 1 a 6. Cae UNA firma de valor (DEPRECIACION_TASAS_A
 - R-178
 - R-179
 
+
 ## [v0.5.0] - 2026-11-13
 
 Pruebas: 193 pasan · 0 fallan · 0 pendientes   (* = pasa contra un esperado aún no confirmado).
@@ -105,6 +125,7 @@ Para Timbra: toma lo que estaba en main sin publicar desde la v0.4.2 (pedido 02:
 - R-169
 - R-170
 - R-171
+
 
 
 ## [v0.4.2] - 2026-11-07
@@ -150,6 +171,7 @@ Sin cambios de valores: no cae ninguna firma. Se agregan reglas, calculadoras, p
 
 - R-138: CORREGIR -> OK
 - R-52: CORREGIR -> OK
+
 
 
 

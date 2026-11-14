@@ -13,5 +13,134 @@
   "articulos": {}
  },
  "articulos": 385,
- "derogados": 3
+ "derogados": 3,
+ "cotejo_reformas": {
+  "106": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LSS 106",
+   "fechas_en_notas": [],
+   "decretos": [],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 0,
+   "caracteres_articulo": 1446,
+   "cobertura_pct": 0.0,
+   "decreto_mas_reciente": null,
+   "estado": "sin_decreto_que_lo_reimprima"
+  },
+  "28": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LSS 28",
+   "fechas_en_notas": [],
+   "decretos": [],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 0,
+   "caracteres_articulo": 693,
+   "cobertura_pct": 0.0,
+   "decreto_mas_reciente": null,
+   "estado": "sin_decreto_que_lo_reimprima"
+  },
+  "107": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LSS 107",
+   "fechas_en_notas": [],
+   "decretos": [],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 0,
+   "caracteres_articulo": 807,
+   "cobertura_pct": 0.0,
+   "decreto_mas_reciente": null,
+   "estado": "sin_decreto_que_lo_reimprima"
+  },
+  "168": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LSS 168",
+   "fechas_en_notas": [
+    "26-05-2009",
+    "16-12-2020"
+   ],
+   "decretos": [
+    {
+     "dof": "26-05-2009",
+     "nota": "5092516",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5092516&fecha=26/05/2009",
+     "piezas": 9,
+     "coinciden": 4,
+     "no_coinciden": [
+      "IV. Una cantidad por cada día de salario cotizado, que aporte mensualmente el Gobierno Federal por concepto de cuota social para los trabajadores que ganen hasta quince veces el salario mínimo general",
+      "1.01 a 4 Salarios Mínimos",
+      "4.01 a 7 Salarios Mínimos",
+      "7.01 a 10 Salarios Mínimos",
+      "10.01 a 15.0 Salarios Mínimos"
+     ],
+     "numeros_faltantes": [
+      "1",
+      "10",
+      "10.01",
+      "15.0",
+      "3.22564",
+      "3.38692",
+      "3.54820",
+      "3.70949",
+      "3.87077",
+      "4",
+      "7",
+      "7.01"
+     ]
+    },
+    {
+     "dof": "16-12-2020",
+     "nota": "5607729",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5607729&fecha=16/12/2020",
+     "piezas": 6,
+     "coinciden": 6,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 1151,
+   "caracteres_articulo": 1952,
+   "cobertura_pct": 59.0,
+   "decreto_mas_reciente": "5607729",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "25": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LSS 25",
+   "fechas_en_notas": [],
+   "decretos": [],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 0,
+   "caracteres_articulo": 1250,
+   "cobertura_pct": 0.0,
+   "decreto_mas_reciente": null,
+   "estado": "sin_decreto_que_lo_reimprima"
+  },
+  "27": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LSS 27",
+   "fechas_en_notas": [
+    "20-12-2001",
+    "16-01-2009"
+   ],
+   "decretos": [],
+   "fechas_sin_decreto": [
+    "20-12-2001",
+    "16-01-2009"
+   ],
+   "caracteres_verificados": 0,
+   "caracteres_articulo": 3027,
+   "cobertura_pct": 0.0,
+   "decreto_mas_reciente": null,
+   "estado": "sin_decreto_que_lo_reimprima"
+  }
+ }
 }
