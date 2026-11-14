@@ -1,19 +1,28 @@
 name: Release
 
-# Se dispara al subir un tag vX.Y.Z. Si el tag no coincide con version_base, falla y no publica nada.
+# Publica solo. Se dispara:
+#  - al fusionar a main: si version_base sube a una versión que aún no tiene tag, crea el tag vX.Y.Z y publica;
+#    si el tag ya existe, no hace nada (los merges sin versión nueva no publican).
+#  - al subir un tag vX.Y.Z a mano (como antes), o desde Actions con «Run workflow».
+# Si el tag no coincide con version_base, falla y no publica nada.
 on:
   push:
+    branches: [main]
     tags: ["v[0-9]+.[0-9]+.[0-9]+"]
+  workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
 
 jobs:
   release:
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}
-      TAG: ${{ github.ref_name }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -22,15 +31,33 @@ jobs:
         with:
           python-version: "3.13"
           cache: pip
-      - run: pip install -e ".[test]"
+      - name: Decidir el tag (de main sale de version_base; si ya existe, no se publica nada)
+        id: tag
+        run: |
+          if [ "${{ github.ref_type }}" = "tag" ]; then
+            echo "TAG=${{ github.ref_name }}" >> "$GITHUB_ENV"; echo "publicar=si" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          V=$(sed -n 's/^version_base: "\(.*\)"$/\1/p' base/parametros.yaml)
+          [ -n "$V" ] || { echo "No encontré version_base en base/parametros.yaml"; exit 1; }
+          echo "TAG=v$V" >> "$GITHUB_ENV"
+          if git rev-parse -q --verify "refs/tags/v$V" >/dev/null || git ls-remote --exit-code --tags origin "refs/tags/v$V" >/dev/null; then
+            echo "v$V ya tiene tag: no hay versión nueva que publicar."; echo "publicar=no" >> "$GITHUB_OUTPUT"
+          else
+            echo "publicar=si" >> "$GITHUB_OUTPUT"; echo "nuevo=si" >> "$GITHUB_OUTPUT"
+          fi
+      - if: steps.tag.outputs.publicar == 'si'
+        run: pip install -e ".[test]"
       - name: El tag debe coincidir con version_base
+        if: steps.tag.outputs.publicar == 'si'
         run: python scripts/verificar_tag.py "$TAG"
       - name: Pruebas
+        if: steps.tag.outputs.publicar == 'si'
         run: |
           timbra-reglas probar
           python -m pytest -q
           python scripts/validar_oro.py
       - name: Bajar la versión anterior (para las diferencias)
+        if: steps.tag.outputs.publicar == 'si'
         run: |
           PREV=$(git tag --list 'v[0-9]*.[0-9]*.[0-9]*' --sort=-v:refname | grep -vx "$TAG" | head -1 || true)
           mkdir -p "$RUNNER_TEMP/anterior"
@@ -48,6 +75,7 @@ jobs:
             echo "No hay release anterior: sin diferencias."
           fi
       - name: Armar el paquete (zip, archivos sueltos, SHA256 y ORDEN_CAMBIO)
+        if: steps.tag.outputs.publicar == 'si'
         run: |
           V="${TAG#v}"
           if [ -n "${ANTERIOR:-}" ]; then
@@ -58,8 +86,17 @@ jobs:
           # release.py no debe haber tocado nada versionado: el tag ya traía la versión correcta
           git diff --exit-code
       - name: Probar el paquete plano SOLO, sin el repositorio (huellas de SHA256SUMS y motor.py probar)
+        if: steps.tag.outputs.publicar == 'si'
         run: python scripts/probar_paquete.py "$RUNNER_TEMP/salida"
+      - name: Crear el tag (sólo si salió de un merge a main)
+        if: steps.tag.outputs.nuevo == 'si'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "$TAG" -m "$TAG" "$GITHUB_SHA"
+          git push origin "refs/tags/$TAG"
       - name: Publicar el GitHub Release
+        if: steps.tag.outputs.publicar == 'si'
         run: |
           V="${TAG#v}"
           # los assets de un release son planos: solo archivos (la carpeta series/ viaja como series_<id>.yaml)
