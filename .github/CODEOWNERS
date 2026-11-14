@@ -1,4 +1,5 @@
-# Aprobar el PR de la persona dueña = firma de la base.
+# Firma de la base = que la persona dueña fusione el PR: con su clic o pidiéndoselo a Claude en el chat («fusiónalo»).
+# Claude nunca fusiona sin esa orden. Al fusionar a main con versión nueva, el workflow Release crea el tag y publica solo.
 /base/          @Erickddp
 /timbra_reglas/ @Erickddp
 /scripts/       @Erickddp
