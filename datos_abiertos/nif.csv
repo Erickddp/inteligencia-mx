@@ -1,0 +1,56 @@
+id,titulo,tema,estado,cotejado,fuente_cotejo,citada_por
+A-1,Marco Conceptual de las Normas de Información Financiera,marco conceptual,vigente,si,mejoras_2023,R-152
+A-2,Incertidumbres sobre negocio en marcha,marco conceptual,vigente,si,aclaracion_2025,
+B-1,Cambios contables y correcciones de errores,estados financieros,vigente,si,mejoras_2023,
+B-2,Estado de flujos de efectivo,estados financieros,vigente,si,mejoras_2019,
+B-3,Estado de resultado integral,estados financieros,vigente,si,libro_2026,R-154 R-171
+B-4,Estado de cambios en el capital contable,estados financieros,vigente,si,mejoras_2026,
+B-5,Información financiera por segmentos,estados financieros,vigente,no,,
+B-6,Estado de situación financiera,estados financieros,vigente,si,mejoras_2026,
+B-7,Adquisiciones de negocios,estados financieros,vigente,si,mejoras_2019,
+B-8,Estados financieros consolidados o combinados,estados financieros,vigente,si,mejoras_2020,
+B-9,Información financiera a fechas intermedias,estados financieros,vigente,si,mejoras_2019,
+B-10,Efectos de la inflación,estados financieros,vigente,si,mejoras_2023,
+B-11,Disposición de activos de larga duración y operaciones discontinuadas,estados financieros,vigente,si,mejoras_2023,
+B-12,Compensación de activos financieros y pasivos financieros,estados financieros,vigente,no,,
+B-13,Hechos posteriores a la fecha de los estados financieros,estados financieros,vigente,no,,
+B-14,Utilidad por acción,estados financieros,vigente,no,,
+B-15,Conversión de monedas extranjeras,estados financieros,vigente,si,mejoras_2023,R-151 R-153
+B-16,Estados financieros de entidades con propósitos no lucrativos,estados financieros,vigente,no,,
+B-17,Determinación del valor razonable,estados financieros,vigente,si,mejoras_2019,
+C-1,Efectivo y equivalentes de efectivo,activo,vigente,si,mejoras_2019,R-151 R-153
+C-2,Inversión en instrumentos financieros,activo,vigente,si,mejoras_2023,
+C-3,Cuentas por cobrar,activo,vigente,si,mejoras_2023,R-150 R-151
+C-4,Inventarios,activo,vigente,si,mejoras_2023,R-152
+C-5,Pagos anticipados,activo,vigente,si,mejoras_2023,
+C-6,"Propiedades, planta y equipo",activo,vigente,si,mejoras_2020,R-173
+C-7,"Inversiones en asociadas, negocios conjuntos y otras inversiones permanentes",activo,vigente,si,mejoras_2019,
+C-8,Activos intangibles,activo,vigente,si,mejoras_2020,
+C-9,"Provisiones, contingencias y compromisos",pasivo,vigente,si,aclaracion_2025,
+C-10,Instrumentos financieros derivados y relaciones de cobertura,activo y pasivo,vigente,si,mejoras_2026,
+C-11,Capital contable,capital,vigente,si,mejoras_2023,
+C-12,Instrumentos financieros con características de pasivo y de capital,capital,vigente,no,,
+C-13,Partes relacionadas,revelación,vigente,no,,
+C-14,Transferencia y baja de activos financieros,activo,vigente,si,mejoras_2019,
+C-15,Deterioro en el valor de los activos de larga duración,activo,vigente,no,,
+C-16,Deterioro de instrumentos financieros por cobrar,activo,vigente,si,mejoras_2020,
+C-17,Propiedades de inversión,activo,vigente,no,,
+C-18,"Obligaciones asociadas con el retiro de propiedades, planta y equipo",pasivo,vigente,no,,
+C-19,Instrumentos financieros por pagar,pasivo,vigente,si,mejoras_2023,R-156
+C-20,Instrumentos financieros para cobrar principal e interés,activo,vigente,si,mejoras_2026,
+C-21,Acuerdos con control conjunto,activo,vigente,no,,
+C-22,Criptomonedas,activo,vigente,no,,
+D-1,Ingresos por contratos con clientes,resultados,vigente,si,mejoras_2019,R-150 R-154
+D-2,Costos por contratos con clientes,resultados,vigente,si,mejoras_2023,
+D-3,Beneficios a los empleados,resultados,vigente,si,mejoras_2020,R-155
+D-4,Impuestos a la utilidad,resultados,vigente,si,mejoras_2026,
+D-5,Arrendamientos,resultados,vigente,si,mejoras_2020,
+D-6,Capitalización del resultado integral de financiamiento,resultados,vigente,si,mejoras_2023,
+A-1,Estructura de las Normas de Información Financiera,marco conceptual,derogada 2022-12-31,si,mejoras_2023,
+A-2,Postulados básicos,marco conceptual,derogada 2022-12-31,si,mejoras_2023,
+A-3,Necesidades de los usuarios y objetivo de los estados financieros,marco conceptual,derogada 2022-12-31,si,mejoras_2023,
+A-4,Características cualitativas de los estados financieros,marco conceptual,derogada 2022-12-31,si,mejoras_2023,
+A-5,Elementos básicos de los estados financieros,marco conceptual,derogada 2022-12-31,si,mejoras_2023,
+A-6,Reconocimiento y valuación,marco conceptual,derogada 2022-12-31,si,mejoras_2023,
+A-7,Presentación y revelación,marco conceptual,derogada 2022-12-31,si,mejoras_2023,
+A-8,Supletoriedad,marco conceptual,derogada 2022-12-31,si,mejoras_2023,

@@ -38,6 +38,7 @@ DESCRIPCIONES = {
     "leyes.csv": "Cada ley, código o reglamento de la biblioteca con su ámbito, materia, huella y si tiene cotejo humano.",
     "citas.csv": "Citas estructuradas de reglas y parámetros a artículos de la biblioteca.",
     "cotejo_pendiente.csv": "Artículos citados por la base que nadie ha cotejado con el diario oficial, por prioridad.",
+    "nif.csv": "Índice de las NIF (sin texto, que es del CINIF): si se cotejó, contra qué documento del CINIF y qué reglas o parámetros la citan.",
 }
 
 
@@ -178,13 +179,29 @@ def contar(texto: str) -> int:
     return max(0, len(list(csv.reader(io.StringIO(texto)))) - 1)
 
 
+def tabla_nif(raiz: Path, P: dict, reglas: list) -> str:
+    """Mapa NIF -> reglas y parámetros que la citan, con su estado de cotejo. Las derogadas van al final."""
+    ix = yaml.safe_load((raiz / "fuentes" / "nif" / "indice.yaml").read_text(encoding="utf-8"))
+    quien = {}
+    for origen, obj in [(r["id"], r) for r in reglas] + list(P["parametros"].items()):
+        for c in obj.get("citas") or []:
+            if "nif" in c:
+                quien.setdefault(c["nif"], []).append(origen)
+    filas = [[n["id"], n["titulo"], n["tema"], "vigente", "si" if n["cotejado"] else "no", n.get("cotejo", ""),
+              " ".join(sorted(quien.get(n["id"], [])))] for n in ix["nif"]]
+    filas += [[n["id"], n["titulo"], n["tema"], "derogada " + str(n.get("derogada", "")), "si" if n.get("cotejo") else "no",
+               n.get("cotejo", ""), ""] for n in ix.get("derogadas", [])]
+    return csv_texto(["id", "titulo", "tema", "estado", "cotejado", "fuente_cotejo", "citada_por"], filas)
+
+
 def exportar(raiz: Path = RAIZ, destino: Path | None = None) -> dict:
     destino = Path(destino or raiz / "datos_abiertos")
     destino.mkdir(parents=True, exist_ok=True)
     P, reglas = carga(raiz)
     L, RMF = leyes(raiz), reglas_rmf_idx(raiz)
     archivos = {"parametros.csv": tabla_parametros(P), "reglas.csv": tabla_reglas(reglas), "leyes.csv": tabla_leyes(L),
-                "citas.csv": tabla_citas(P, reglas, L, RMF), "cotejo_pendiente.csv": tabla_cotejo(P, reglas, L)}
+                "citas.csv": tabla_citas(P, reglas, L, RMF), "cotejo_pendiente.csv": tabla_cotejo(P, reglas, L),
+                "nif.csv": tabla_nif(raiz, P, reglas)}
     catalogo = {"nombre": "Datos abiertos de inteligencia-mx", "licencia": "CC BY 4.0", "version_base": P.get("version_base"),
                 "archivos": {}}
     for nombre, texto in archivos.items():

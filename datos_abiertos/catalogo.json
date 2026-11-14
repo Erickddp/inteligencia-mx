@@ -84,6 +84,20 @@
    ],
    "filas": 80,
    "sha256": "744fe2c046b47e1ae1d03d27ba2e27f1e3373ab741b5325c13800581b25e0e2c"
+  },
+  "nif.csv": {
+   "descripcion": "Índice de las NIF (sin texto, que es del CINIF): si se cotejó, contra qué documento del CINIF y qué reglas o parámetros la citan.",
+   "columnas": [
+    "id",
+    "titulo",
+    "tema",
+    "estado",
+    "cotejado",
+    "fuente_cotejo",
+    "citada_por"
+   ],
+   "filas": 55,
+   "sha256": "1cc9911207fcda08fe74b7a97e8ed1ca07e1a060b550bf7f33584b1d88498cea"
   }
  }
 }
