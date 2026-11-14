@@ -8,6 +8,8 @@ parametro,RESICO_PM_INVERSIONES,LISR,,209,si
 parametro,RESICO_PM_INVERSIONES_TOPE,LISR,,209,si
 regla,R-100,CFF,,17-a,si
 regla,R-100,CFF,,21,si
+regla,R-103,LISR,,113-i,si
+regla,R-103,RMF,2026,11.9.23,si
 regla,R-108,CFF,,20,si
 regla,R-110,LISR,,106,si
 regla,R-111,LISR,,115,si
@@ -141,6 +143,10 @@ regla,R-174,LIVA,,4-a,si
 regla,R-174,LIVA,,5,si
 regla,R-174,LIVA,,5-a,si
 regla,R-174,LIVA,,5-c,si
+regla,R-175,LIVA,,1,si
+regla,R-175,RMF,2026,11.9.2,si
+regla,R-175,RMF,2026,11.9.23,si
+regla,R-175,RMF,2026,11.9.3,si
 regla,R-20,LISR,,106,si
 regla,R-22,LISR,,113-e,si
 regla,R-22,LISR,,113-j,si

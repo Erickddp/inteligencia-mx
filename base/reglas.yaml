@@ -560,9 +560,15 @@ reglas:
     fase: 3
     parametros: [FRONTERA_ISR_DIVISOR, FRONTERA_ISR_PROPORCION_MIN]
     calculadora: estimulo_frontera_isr
-    hallazgo: "Vence 31-dic-2026; sin decreto 2027 publicado. Requiere aviso al padrón."
+    citas: [{ley: LISR, articulo: "113-i"}, {ley: RMF, anio: "2026", articulo: "11.9.23"}]
+    que_dice: "En la frontera, quien tributa en el 612 o como persona moral puede reducir su ISR en una tercera parte (si al menos 90 % de sus ingresos son de la región y está en el padrón); la RESICO de personas físicas no puede."
+    correcto_si: "El crédito es el ISR proporcional entre 3 sólo si los ingresos en la región son 90 % o más; para RESICO PF es cero (LISR 113-I y RMF 11.9.23); después del 31-dic-2026 no hay crédito sin decreto nuevo."
+    hallazgo: "Decreto vigente hasta el 31-dic-2026 (DOF 31-dic-2025, nota 5777697, cotejado en el DOF el 14-nov-2026); sin prórroga publicada al 14-nov-2026. Requiere aviso al padrón (RMF 11.9.1). RESICO PF excluida: regla 11.9.23 cotejada palabra por palabra contra el Word del DOF (SHA256 489d4d7c…, igual al de la biblioteca). RESICO PM (título VII cap. XII): si puede aplicar el crédito, POR CONFIRMAR (la regla 11.9.23 sólo habla de la sección IV del título IV)."
     casos:
       - {nombre: "100% en la región", fecha: "2026-12-31", entradas: {isr: "30000", proporcion_region: "1"}, esperado: "10000.00"}
+      - {nombre: "612 al 100 % en la región: tercera parte", fecha: "2026-12-31", entradas: {isr: "30000", proporcion_region: "1", regimen: "612"}, esperado: "10000.00"}
+      - {nombre: "RESICO PF en la frontera: sin crédito de ISR (RMF 11.9.23)", fecha: "2026-12-31", entradas: {isr: "30000", proporcion_region: "1", regimen: "626_pf"}, esperado: "0.00"}
+      - {nombre: "Límite: exactamente 90 % en la región sí aplica", fecha: "2026-12-31", entradas: {isr: "30000", proporcion_region: "0.90", regimen: "612"}, esperado: "9000.00"}
       - {nombre: "89.99% en la región", fecha: "2026-12-31", entradas: {isr: "30000", proporcion_region: "0.8999"}, esperado: "0.00"}
       - {nombre: "Enero 2027 sin decreto", fecha: "2027-01-31", entradas: {isr: "30000", proporcion_region: "1"}, espera_error: SinValor}
 
@@ -1205,3 +1211,19 @@ reglas:
         fecha: "2026-10-31"
         entradas: {iva_indistinto: "8000"}
         espera_error: SinValor
+  - id: R-175
+    nombre: "IVA en la región fronteriza (8 %) y qué pasa cuando vence el decreto"
+    estado: NUEVA
+    fase: 2
+    parametros: [IVA_TASA_FRONTERA_NORTE, IVA_TASA_FRONTERA_SUR, IVA_TASA_GENERAL]
+    calculadora: iva_frontera
+    fuente: "Decretos de estímulos fiscales región fronteriza norte (DOF 31-dic-2018) y sur (DOF 30-dic-2020), prorrogados al 31-dic-2026 por el Decreto DOF 31-dic-2025 (nota 5777697); RMF 2026 reglas 11.9.2, 11.9.3 y 11.9.23; LISR 113-I"
+    citas: [{ley: RMF, anio: "2026", articulo: "11.9.2"}, {ley: RMF, anio: "2026", articulo: "11.9.3"}, {ley: RMF, anio: "2026", articulo: "11.9.23"}, {ley: LIVA, articulo: "1"}]
+    que_dice: "En la frontera norte o sur el IVA se cobra al 8 % mientras el decreto esté vigente y se haya presentado el aviso; la RESICO de personas físicas sí puede usarlo (lo que no puede es el de ISR). Al vencer el decreto, se vuelve al 16 %."
+    correcto_si: "La tasa es 8 % hasta el 31-dic-2026 en la región que corresponde; desde el 1-ene-2027, sin decreto nuevo en el DOF, es 16 % y la app avisa."
+    hallazgo: "Al 14-nov-2026 no hay prórroga publicada. El 1-ene-2027 la tasa vuelve sola al 16 %: los CFDI desde esa fecha deben llevar 16 % y la app debe avisar desde noviembre (revisar_antes 2026-11-01). Si sale prórroga, se agrega un tramo nuevo desde 2027-01-01 con su nota del DOF. RESICO PF y el IVA de frontera: la LISR 113-I y la RMF 11.9.23 sólo prohíben el estímulo de ISR; que la RESICO PF sí aplique el de IVA es CRITERIO (no hay regla que lo diga en positivo). Requisito de aviso 72 horas antes de usarlo en el CFDI (RMF 11.9.2 y 11.9.3)."
+    casos:
+      - {nombre: "Frontera norte, venta de 1,000 en 2026: IVA 80", fecha: "2026-11-14", entradas: {base: "1000", region: norte}, esperado: {tasa: "8", iva: "80.00", aviso: ""}}
+      - {nombre: "Frontera sur, servicio de 2,500 en 2026: IVA 200", fecha: "2026-12-31", entradas: {base: "2500", region: sur}, esperado: {tasa: "8", iva: "200.00", aviso: ""}}
+      - {nombre: "Límite: 1-ene-2027 sin prórroga en el DOF: 16 % y aviso", fecha: "2027-01-01", entradas: {base: "1000", region: norte}, esperado: {tasa: "16", iva: "160.00", aviso: "Sin decreto de frontera norte vigente a 2027-01-01: se cobra la tasa general. Revisar prórroga en el DOF."}}
+      - {nombre: "Redondeo: 8 % de 333.33 es 26.67", fecha: "2026-06-30", entradas: {base: "333.33", region: norte}, esperado: {tasa: "8", iva: "26.67", aviso: ""}}

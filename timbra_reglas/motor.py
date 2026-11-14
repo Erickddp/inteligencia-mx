@@ -406,11 +406,29 @@ def calc_pm_coeficiente_provisional(b, f, cu, ingresos, mes, ptu="0", perdidas="
     return str(max(D("0.00"), isr - D(pagos_previos) - D(retenciones)))
 
 
-def calc_estimulo_frontera_isr(b, f, isr, proporcion_region):
+# Regímenes a los que el estímulo de ISR de frontera NO aplica: RESICO PF (LISR 113-I tercer párrafo; RMF 11.9.23).
+FRONTERA_ISR_EXCLUIDOS = {"626_pf": "RESICO de personas físicas: LISR 113-I, tercer párrafo, y RMF 2026 regla 11.9.23"}
+
+
+def calc_estimulo_frontera_isr(b, f, isr, proporcion_region, regimen=None):
+    if regimen in FRONTERA_ISR_EXCLUIDOS:
+        return "0.00"
     prop = D(proporcion_region)
     if prop * 100 < b.valor("FRONTERA_ISR_PROPORCION_MIN", f):
         return "0.00"
     return str(red(D(isr) * prop / b.valor("FRONTERA_ISR_DIVISOR", f)))
+
+
+def calc_iva_frontera(b, f, base, region="norte"):
+    """IVA de una operación en la región fronteriza: 8 % mientras el decreto esté vigente (al 31-dic-2026);
+    sin decreto vigente, la tasa general con aviso. El régimen no cambia la tasa (RESICO PF sí puede aplicar el de IVA)."""
+    pid = {"norte": "IVA_TASA_FRONTERA_NORTE", "sur": "IVA_TASA_FRONTERA_SUR"}[region]
+    try:
+        tasa, aviso = b.valor(pid, f), ""
+    except SinValor:
+        tasa = b.valor("IVA_TASA_GENERAL", f)
+        aviso = f"Sin decreto de frontera {region} vigente a {f}: se cobra la tasa general. Revisar prórroga en el DOF."
+    return {"tasa": str(tasa), "iva": str(red(D(base) * tasa / 100)), "aviso": aviso}
 
 
 def calc_tope_donativos(b, f, base_anio_anterior):

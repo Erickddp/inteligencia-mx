@@ -411,9 +411,19 @@ parametros:
       - valor: "8"
         desde: "2019-01-01"
         hasta: "2026-12-31"
-        fuente: "Decreto de estímulos fiscales región fronteriza norte DOF 31-dic-2018; prorrogado DOF 31-dic-2025 hasta 31-dic-2026"
+        fuente: "Decreto de estímulos fiscales región fronteriza norte DOF 31-dic-2018; prorrogado hasta el 31-dic-2026 por el Decreto DOF 31-dic-2025, art. Primero (https://dof.gob.mx/nota_detalle.php?codigo=5777697&fecha=31/12/2025)"
     revisar_antes: "2026-11-01"
     nota: "VENCE el 31-dic-2026. Si no sale prórroga en DOF, desde el 1-ene-2027 el motor ya no da 8% y la app debe avisar."
+  IVA_TASA_FRONTERA_SUR:
+    nombre: Tasa efectiva IVA región fronteriza sur (estímulo, no ley)
+    tipo: porcentaje
+    valores:
+      - valor: "8"
+        desde: "2021-01-01"
+        hasta: "2026-12-31"
+        fuente: "Decreto de estímulos fiscales región fronteriza sur DOF 30-dic-2020; prorrogado hasta el 31-dic-2026 por el Decreto DOF 31-dic-2025, art. Segundo (https://dof.gob.mx/nota_detalle.php?codigo=5777697&fecha=31/12/2025)"
+    revisar_antes: "2026-11-01"
+    nota: "VENCE el 31-dic-2026, igual que el de la frontera norte."
     firma: {validado: false, por: null, fecha: null}
 
   IVA_RET_DOS_TERCIOS:
@@ -1128,13 +1138,13 @@ parametros:
     nombre: Crédito ISR región fronteriza = ISR proporcional entre este divisor
     tipo: numero
     valores:
-      - {valor: "3", desde: "2019-01-01", hasta: "2026-12-31", fuente: "Decreto de estímulos región fronteriza norte, DOF 31-dic-2018; prorrogado DOF 31-dic-2025"}
+      - {valor: "3", desde: "2019-01-01", hasta: "2026-12-31", fuente: "Decreto de estímulos región fronteriza norte, DOF 31-dic-2018; prorrogado hasta el 31-dic-2026 por el Decreto DOF 31-dic-2025 (https://dof.gob.mx/nota_detalle.php?codigo=5777697&fecha=31/12/2025)"}
     revisar_antes: "2026-11-01"
   FRONTERA_ISR_PROPORCION_MIN:
     nombre: Ingresos mínimos en la región, % del total, para el estímulo de ISR
     tipo: porcentaje
     valores:
-      - {valor: "90", desde: "2019-01-01", hasta: "2026-12-31", fuente: "Decreto de estímulos región fronteriza norte, DOF 31-dic-2018; prorrogado DOF 31-dic-2025"}
+      - {valor: "90", desde: "2019-01-01", hasta: "2026-12-31", fuente: "Decreto de estímulos región fronteriza norte, DOF 31-dic-2018; prorrogado hasta el 31-dic-2026 por el Decreto DOF 31-dic-2025 (https://dof.gob.mx/nota_detalle.php?codigo=5777697&fecha=31/12/2025)"}
   PLATAFORMAS_ISR_TABLA:
     nombre: Retención ISR por plataformas digitales, por actividad
     tipo: tabla
