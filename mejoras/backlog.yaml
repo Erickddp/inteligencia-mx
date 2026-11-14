@@ -23,7 +23,7 @@ mejoras:
   - id: M-102
     fase: 1
     titulo: Cotejo humano de los artículos que la base cita
-    que_es: "Ninguna ley tiene cotejo humano contra el diario oficial. No hay que cotejar los 10,830 artículos: solo los que la base cita (ver cotejo_pendiente.csv), empezando por los que más cosas sostienen."
+    que_es: "Ninguna ley tiene cotejo humano contra el diario oficial. No hay que cotejar los 10,830 artículos: solo los que la base cita (ver cotejo_pendiente.csv), empezando por los que más cosas sostienen. El DOF no publica leyes consolidadas, solo decretos de reforma: scripts/cotejar_reformas.py compara lo que cada decreto reimprime contra la biblioteca y registra el resultado (cotejo_reformas) sin marcar el artículo como cotejado. A 14-nov-2026: 50 artículos revisados, 38 verificados contra su decreto más reciente, 12 sin decreto que los reimprima, 0 discrepancias. Falta la lectura humana."
     criterio_de_aceptacion: "Cada artículo cotejado queda en el manifiesto con fecha, decreto y persona; los parámetros que solo citan artículos cotejados pueden firmarse."
     estado: abierta
     quien: abierto

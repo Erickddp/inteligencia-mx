@@ -37,7 +37,7 @@ DESCRIPCIONES = {
     "reglas.csv": "Cada regla R-xx con su estado, calculadora, número de casos y citas.",
     "leyes.csv": "Cada ley, código o reglamento de la biblioteca con su ámbito, materia, huella y si tiene cotejo humano.",
     "citas.csv": "Citas estructuradas de reglas y parámetros a artículos de la biblioteca.",
-    "cotejo_pendiente.csv": "Artículos citados por la base que nadie ha cotejado con el diario oficial, por prioridad.",
+    "cotejo_pendiente.csv": "Artículos citados por la base que nadie ha cotejado con el diario oficial, por prioridad, con el estado de su verificación automática contra los decretos de reforma del DOF (no es cotejo humano).",
     "nif.csv": "Índice de las NIF (sin texto, que es del CINIF): si se cotejó, contra qué documento del CINIF y qué reglas o parámetros la citan.",
 }
 
@@ -166,13 +166,17 @@ def origenes_por_articulo(P: dict, reglas: list, L: dict) -> dict:
 
 
 def tabla_cotejo(P: dict, reglas: list, L: dict) -> str:
+    """Artículos que la base cita y nadie ha cotejado. `verificacion_reformas` y `cobertura_pct` salen de scripts/cotejar_reformas.py
+    (comparación automática contra los decretos del DOF): NO sustituyen el cotejo humano, por eso `cotejado` sigue en «no»."""
     filas = []
     for (ley, art), orig in origenes_por_articulo(P, reglas, L).items():
         m = L[ley][0]
         if not cotejado(m, art):
-            filas.append([ley, art, m.get("ambito", "federal"), len(orig), ";".join(sorted(orig)), "no"])
+            v = (m.get("cotejo_reformas") or {}).get(art) or {}
+            filas.append([ley, art, m.get("ambito", "federal"), len(orig), ";".join(sorted(orig)), "no",
+                          v.get("estado", ""), v.get("cobertura_pct", "")])
     filas.sort(key=lambda f: (-f[3], f[0], f[1]))
-    return csv_texto(["ley", "articulo", "ambito", "citado_por", "origenes", "cotejado"], filas)
+    return csv_texto(["ley", "articulo", "ambito", "citado_por", "origenes", "cotejado", "verificacion_reformas", "cobertura_pct"], filas)
 
 
 def contar(texto: str) -> int:

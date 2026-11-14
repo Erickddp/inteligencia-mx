@@ -13,5 +13,367 @@
   "articulos": {}
  },
  "articulos": 80,
- "derogados": 15
+ "derogados": 15,
+ "cotejo_reformas": {
+  "5": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LIVA 5",
+   "fechas_en_notas": [
+    "11-12-2013",
+    "30-11-2016",
+    "09-12-2019",
+    "23-04-2021",
+    "12-11-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "11-12-2013",
+     "nota": "5325371",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5325371&fecha=11/12/2013",
+     "piezas": 3,
+     "coinciden": 2,
+     "no_coinciden": [
+      "IV. Que tratándose del impuesto al valor agregado trasladado que se hubiese retenido conforme al artículo 1o.-A de esta Ley, dicha retención se entere en los términos y plazos establecidos en la misma"
+     ],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "30-11-2016",
+     "nota": "5463187",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5463187&fecha=30/11/2016",
+     "piezas": 20,
+     "coinciden": 18,
+     "no_coinciden": [
+      "II. Que el impuesto al valor agregado haya sido trasladado expresamente al contribuyente y que conste por separado en los comprobantes fiscales a que se refiere la fracción III del artículo 32 de esta",
+      "Cuando se ejerza cualquiera de las opciones a que se refieren los incisos a) o b) de esta fracción, el contribuyente deberá calcular en el doceavo mes, contado a partir del mes inmediato posterior a a"
+     ],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "09-12-2019",
+     "nota": "5581292",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5581292&fecha=09/12/2019",
+     "piezas": 2,
+     "coinciden": 2,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "23-04-2021",
+     "nota": "5616745",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5616745&fecha=23/04/2021",
+     "piezas": 1,
+     "coinciden": 1,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "12-11-2021",
+     "nota": "5635286",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5635286&fecha=12/11/2021",
+     "piezas": 8,
+     "coinciden": 8,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 15540,
+   "caracteres_articulo": 18101,
+   "cobertura_pct": 85.9,
+   "decreto_mas_reciente": "5635286",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "1-a": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LIVA 1-a",
+   "fechas_en_notas": [
+    "31-12-1998",
+    "31-12-1999",
+    "30-12-2002",
+    "11-12-2013",
+    "23-04-2021"
+   ],
+   "decretos": [
+    {
+     "dof": "30-12-2002",
+     "nota": "717020",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=717020&fecha=30/12/2002",
+     "piezas": 6,
+     "coinciden": 1,
+     "no_coinciden": [
+      "IV. Sean personas morales que cuenten con un programa autorizado conforme al Decreto que Establece Programas de Importación Temporal para Producir Artículos de Exportación o al Decreto para el Fomento",
+      "Las personas morales que hayan efectuado la retención del impuesto, y que a su vez se les retenga dicho impuesto conforme a esta fracción o realicen la exportación de bienes tangibles en los términos ",
+      "Cuando en el cálculo del impuesto mensual previsto en el artículo 5o. de este ordenamiento resulte saldo a favor, los contribuyentes a que se refiere esta fracción podrán obtener la devolución inmedia",
+      "Las cantidades por las cuales los contribuyentes hayan obtenido la devolución en los términos de esta fracción, no podrán acreditarse en declaraciones posteriores",
+      "El retenedor efectuará la retención del impuesto en el momento en el que pague el precio o la contraprestación y sobre el monto de lo efectivamente pagado y lo enterará mediante declaración en las ofi"
+     ],
+     "numeros_faltantes": [
+      "29",
+      "4",
+      "5"
+     ]
+    },
+    {
+     "dof": "11-12-2013",
+     "nota": "5325371",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5325371&fecha=11/12/2013",
+     "piezas": 1,
+     "coinciden": 1,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "23-04-2021",
+     "nota": "5616745",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5616745&fecha=23/04/2021",
+     "piezas": 0,
+     "coinciden": 0,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [
+    "31-12-1998",
+    "31-12-1999"
+   ],
+   "caracteres_verificados": 723,
+   "caracteres_articulo": 2691,
+   "cobertura_pct": 26.9,
+   "decreto_mas_reciente": "5616745",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "1-b": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LIVA 1-b",
+   "fechas_en_notas": [
+    "30-12-2002"
+   ],
+   "decretos": [
+    {
+     "dof": "30-12-2002",
+     "nota": "717020",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=717020&fecha=30/12/2002",
+     "piezas": 4,
+     "coinciden": 4,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 2140,
+   "caracteres_articulo": 2479,
+   "cobertura_pct": 86.3,
+   "decreto_mas_reciente": "717020",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "1": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LIVA 1",
+   "fechas_en_notas": [
+    "30-12-1980",
+    "31-12-1982",
+    "21-11-1991",
+    "27-03-1995",
+    "31-12-1998",
+    "07-12-2009",
+    "09-12-2019"
+   ],
+   "decretos": [
+    {
+     "dof": "09-12-2019",
+     "nota": "5581292",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5581292&fecha=09/12/2019",
+     "piezas": 1,
+     "coinciden": 1,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [
+    "30-12-1980",
+    "31-12-1982",
+    "21-11-1991",
+    "27-03-1995",
+    "31-12-1998",
+    "07-12-2009"
+   ],
+   "caracteres_verificados": 472,
+   "caracteres_articulo": 1806,
+   "cobertura_pct": 26.1,
+   "decreto_mas_reciente": "5581292",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "15": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LIVA 15",
+   "fechas_en_notas": [
+    "30-12-1980",
+    "31-12-1982",
+    "31-12-1987",
+    "31-12-1988",
+    "28-12-1989",
+    "26-12-1990",
+    "21-11-1991",
+    "03-12-1993",
+    "29-12-1993",
+    "28-12-1994",
+    "15-12-1995",
+    "15-05-1997",
+    "29-12-1997",
+    "31-12-1998",
+    "30-12-2002",
+    "22-06-2006",
+    "18-07-2006",
+    "07-12-2009",
+    "11-12-2013",
+    "09-12-2019",
+    "08-12-2020"
+   ],
+   "decretos": [
+    {
+     "dof": "30-12-2002",
+     "nota": "717020",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=717020&fecha=30/12/2002",
+     "piezas": 7,
+     "coinciden": 7,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "22-06-2006",
+     "nota": "4912383",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=4912383&fecha=22/06/2006",
+     "piezas": 1,
+     "coinciden": 0,
+     "no_coinciden": [
+      "El Consejo Directivo se reunirá, por lo menos, cuatro veces al año y sesionará válidamente con la asistencia, cuando menos, de cinco de sus miembros, siempre y cuando entre ellos se encuentren dos de "
+     ],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "18-07-2006",
+     "nota": "4925459",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=4925459&fecha=18/07/2006",
+     "piezas": 3,
+     "coinciden": 1,
+     "no_coinciden": [
+      "b) Reciban o paguen las instituciones de crédito, las uniones de crédito, las sociedades financieras de objeto limitado, las sociedades de ahorro y préstamo y las empresas de factoraje financiero, en ",
+      "ARTÍCULO DÉCIMO PRIMERO.- Se REFORMAN los artículos 32-C y 84-E del Código Fiscal de la Federación, para quedar como sigue:"
+     ],
+     "numeros_faltantes": [
+      "32",
+      "84"
+     ]
+    },
+    {
+     "dof": "11-12-2013",
+     "nota": "5325371",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5325371&fecha=11/12/2013",
+     "piezas": 4,
+     "coinciden": 4,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "09-12-2019",
+     "nota": "5581292",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5581292&fecha=09/12/2019",
+     "piezas": 3,
+     "coinciden": 3,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "08-12-2020",
+     "nota": "5606951",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5606951&fecha=08/12/2020",
+     "piezas": 1,
+     "coinciden": 1,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [
+    "30-12-1980",
+    "31-12-1982",
+    "31-12-1987",
+    "31-12-1988",
+    "28-12-1989",
+    "26-12-1990",
+    "21-11-1991",
+    "03-12-1993",
+    "29-12-1993",
+    "28-12-1994",
+    "15-12-1995",
+    "15-05-1997",
+    "29-12-1997",
+    "31-12-1998",
+    "07-12-2009"
+   ],
+   "caracteres_verificados": 4530,
+   "caracteres_articulo": 10975,
+   "cobertura_pct": 41.3,
+   "decreto_mas_reciente": "5606951",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "18-j": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LIVA 18-j",
+   "fechas_en_notas": [
+    "09-12-2019",
+    "08-12-2020"
+   ],
+   "decretos": [
+    {
+     "dof": "09-12-2019",
+     "nota": "5581292",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5581292&fecha=09/12/2019",
+     "piezas": 17,
+     "coinciden": 17,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "08-12-2020",
+     "nota": "5606951",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5606951&fecha=08/12/2020",
+     "piezas": 3,
+     "coinciden": 3,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 5312,
+   "caracteres_articulo": 5971,
+   "cobertura_pct": 89.0,
+   "decreto_mas_reciente": "5606951",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  }
+ }
 }

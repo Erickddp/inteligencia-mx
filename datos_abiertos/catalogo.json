@@ -1,7 +1,7 @@
 {
  "nombre": "Datos abiertos de inteligencia-mx",
  "licencia": "CC BY 4.0",
- "version_base": "0.6.0",
+ "version_base": "0.7.0",
  "archivos": {
   "parametros.csv": {
    "descripcion": "Cada parámetro de ley con sus tramos, estado y vigencia (valor solo si es un dato simple).",
@@ -73,17 +73,19 @@
    "sha256": "6e7c04be9e56e072667b1dd934ca2fdba3c2a9143182ac8cae225eafe8b70ad9"
   },
   "cotejo_pendiente.csv": {
-   "descripcion": "Artículos citados por la base que nadie ha cotejado con el diario oficial, por prioridad.",
+   "descripcion": "Artículos citados por la base que nadie ha cotejado con el diario oficial, por prioridad, con el estado de su verificación automática contra los decretos de reforma del DOF (no es cotejo humano).",
    "columnas": [
     "ley",
     "articulo",
     "ambito",
     "citado_por",
     "origenes",
-    "cotejado"
+    "cotejado",
+    "verificacion_reformas",
+    "cobertura_pct"
    ],
    "filas": 80,
-   "sha256": "744fe2c046b47e1ae1d03d27ba2e27f1e3373ab741b5325c13800581b25e0e2c"
+   "sha256": "f541bb6d93a12fb374e2f0a39d9b553da76cd91016cff1e7ab9e923329596d78"
   },
   "nif.csv": {
    "descripcion": "Índice de las NIF (sin texto, que es del CINIF): si se cotejó, contra qué documento del CINIF y qué reglas o parámetros la citan.",

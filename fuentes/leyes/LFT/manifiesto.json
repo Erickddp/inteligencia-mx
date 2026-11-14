@@ -13,5 +13,209 @@
   "articulos": {}
  },
  "articulos": 1266,
- "derogados": 156
+ "derogados": 156,
+ "cotejo_reformas": {
+  "76": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LFT 76",
+   "fechas_en_notas": [
+    "27-12-2022"
+   ],
+   "decretos": [
+    {
+     "dof": "27-12-2022",
+     "nota": "5675889",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5675889&fecha=27/12/2022",
+     "piezas": 2,
+     "coinciden": 2,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 379,
+   "caracteres_articulo": 726,
+   "cobertura_pct": 52.2,
+   "decreto_mas_reciente": "5675889",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "87": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LFT 87",
+   "fechas_en_notas": [
+    "31-12-1975"
+   ],
+   "decretos": [],
+   "fechas_sin_decreto": [
+    "31-12-1975"
+   ],
+   "caracteres_verificados": 0,
+   "caracteres_articulo": 781,
+   "cobertura_pct": 0.0,
+   "decreto_mas_reciente": null,
+   "estado": "sin_decreto_que_lo_reimprima"
+  },
+  "162": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LFT 162",
+   "fechas_en_notas": [
+    "05-06-1970"
+   ],
+   "decretos": [],
+   "fechas_sin_decreto": [
+    "05-06-1970"
+   ],
+   "caracteres_verificados": 0,
+   "caracteres_articulo": 2284,
+   "cobertura_pct": 0.0,
+   "decreto_mas_reciente": null,
+   "estado": "sin_decreto_que_lo_reimprima"
+  },
+  "80": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LFT 80",
+   "fechas_en_notas": [],
+   "decretos": [],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 0,
+   "caracteres_articulo": 497,
+   "cobertura_pct": 0.0,
+   "decreto_mas_reciente": null,
+   "estado": "sin_decreto_que_lo_reimprima"
+  },
+  "117": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LFT 117",
+   "fechas_en_notas": [],
+   "decretos": [],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 0,
+   "caracteres_articulo": 614,
+   "cobertura_pct": 0.0,
+   "decreto_mas_reciente": null,
+   "estado": "sin_decreto_que_lo_reimprima"
+  },
+  "127": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LFT 127",
+   "fechas_en_notas": [
+    "02-07-1976",
+    "30-11-2012",
+    "01-05-2019",
+    "23-04-2021",
+    "24-12-2024"
+   ],
+   "decretos": [
+    {
+     "dof": "30-11-2012",
+     "nota": "5280815",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5280815&fecha=30/11/2012",
+     "piezas": 1,
+     "coinciden": 1,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "23-04-2021",
+     "nota": "5616745",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5616745&fecha=23/04/2021",
+     "piezas": 2,
+     "coinciden": 2,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "24-12-2024",
+     "nota": "5746132",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5746132&fecha=24/12/2024",
+     "piezas": 4,
+     "coinciden": 4,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [
+    "02-07-1976",
+    "01-05-2019"
+   ],
+   "caracteres_verificados": 1107,
+   "caracteres_articulo": 2668,
+   "cobertura_pct": 41.5,
+   "decreto_mas_reciente": "5746132",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "50": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LFT 50",
+   "fechas_en_notas": [
+    "30-11-2012",
+    "24-12-2024"
+   ],
+   "decretos": [
+    {
+     "dof": "30-11-2012",
+     "nota": "5280815",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5280815&fecha=30/11/2012",
+     "piezas": 1,
+     "coinciden": 1,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    },
+    {
+     "dof": "24-12-2024",
+     "nota": "5746132",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5746132&fecha=24/12/2024",
+     "piezas": 4,
+     "coinciden": 4,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 1113,
+   "caracteres_articulo": 1654,
+   "cobertura_pct": 67.3,
+   "decreto_mas_reciente": "5746132",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  },
+  "61": {
+   "fecha": "2026-11-14",
+   "como": "scripts/cotejar_reformas.py (comparación automática contra decretos del DOF; no es cotejo humano)",
+   "articulo": "LFT 61",
+   "fechas_en_notas": [
+    "01-05-2026"
+   ],
+   "decretos": [
+    {
+     "dof": "01-05-2026",
+     "nota": "5786537",
+     "tipo": "reforma",
+     "url": "https://dof.gob.mx/nota_detalle.php?codigo=5786537&fecha=01/05/2026",
+     "piezas": 1,
+     "coinciden": 1,
+     "no_coinciden": [],
+     "numeros_faltantes": []
+    }
+   ],
+   "fechas_sin_decreto": [],
+   "caracteres_verificados": 111,
+   "caracteres_articulo": 464,
+   "cobertura_pct": 23.9,
+   "decreto_mas_reciente": "5786537",
+   "estado": "verificado_en_la_reforma_mas_reciente"
+  }
+ }
 }
