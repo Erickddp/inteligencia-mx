@@ -14,7 +14,14 @@
  "sha256_texto": "c1152ef89490106eb46c9eea9216269af57136fc163f065af5477f24970e3401",
  "cotejado_dof": {
   "ley_completa": null,
-  "articulos": {}
+  "articulos": {
+   "11.9.23": {
+    "fecha": "2026-11-14",
+    "contra": "Word del DOF de la nota 5777217 bajado el 2026-11-14 (SHA256 489d4d7c312816887f5cf69fd891c5843df93be6d9f87438a2a512476483ad5b, igual al de la biblioteca)",
+    "resultado": "texto idéntico, 416 caracteres",
+    "como": "comparación literal hecha por Claude; la firma de Rick es la aprobación del PR"
+   }
+  }
  },
  "reglas": 1208,
  "derogadas": 0

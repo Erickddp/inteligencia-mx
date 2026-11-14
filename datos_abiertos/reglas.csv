@@ -8,7 +8,7 @@ R-10,IVA a flujo (PUE al emitir; PPD con REP),CORREGIR,2,,0,,0,no,LIVA arts. 1-B
 R-100,Actualización y recargos por pago tardío,NUEVA,2,parametro,6,RECARGOS_MORA_MENSUAL;RECARGOS_PRORROGA_MENSUAL;RECARGOS_PARCIALIDADES_12M;RECARGOS_PARCIALIDADES_24M;RECARGOS_PARCIALIDADES_MAS24M;ACTUALIZACION_FACTOR_DECIMALES,2,si,
 R-101,Contabilidad electrónica (Anexo 24),NUEVA,2,,0,CONTA_ELEC_DIA_ENVIO_PM;CONTA_ELEC_DIA_ENVIO_PF;CONTA_ELEC_BALANZA_AJUSTADA_PM;CONTA_ELEC_BALANZA_AJUSTADA_PF;CONTA_ELEC_RELEVO_PF_INGRESOS,0,no,
 R-102,ISN por entidad (ampliada),REVISAR,4,isn,3,ISN_TASA_TABLA,0,no,
-R-103,Estímulo ISR región fronteriza (ampliada),NUEVA,3,estimulo_frontera_isr,3,FRONTERA_ISR_DIVISOR;FRONTERA_ISR_PROPORCION_MIN,0,no,
+R-103,Estímulo ISR región fronteriza (ampliada),NUEVA,3,estimulo_frontera_isr,6,FRONTERA_ISR_DIVISOR;FRONTERA_ISR_PROPORCION_MIN,2,si,
 R-104,Declaraciones anuales PF y PM,NUEVA,3,,0,,0,no,
 R-105,"PTU (10%, topes por trabajador)",NUEVA,4,,0,,0,no,
 R-106,Alertas de vigencia y propuestas de ley,NUEVA,1,parametro,3,RESICO_PF_TOPE_ANUAL;IVA_RESICO_PF_OPCION_TASA;RESICO_PM_TOPE_ANUAL;INTERESES_NETOS_LIMITE_PCT;ISR_RET_INTERESES,0,no,
@@ -65,6 +65,7 @@ R-171,Póliza tipo: cobro con tarjeta (la terminal deposita neto de comisión),C
 R-172,Deducción de inversiones en RESICO personas morales (art. 209),NUEVA,3,inversion_resico_pm,10,RESICO_PM_INVERSIONES;RESICO_PM_INVERSIONES_TOPE;DEPRECIACION_TASAS_ART34;AUTO_TOPE_DEDUCCION,6,si,"LISR arts. 31, 32, 36, 208 fr. IV, 209, 210 fr. I y 211"
 R-173,"Porciento máximo de deducción por bien, actividad o diferido (arts. 33 a 35)",NUEVA,3,tasa_depreciacion,6,DEPRECIACION_TASAS_ART34;DEPRECIACION_TASAS_ART35;DEPRECIACION_TASAS_ART33;DEPRECIACION_CONTABLE_REFERENCIA,4,si,"LISR arts. 33, 34 y 35; NIF C-6 para la tasa contable (CRITERIO)"
 R-174,"IVA acreditable por destino del gasto (LIVA 5 fr. V): gravado 100 %, exento 0 %, indistinto por proporción",NUEVA,2,iva_acreditable_destino,8,IVA_EXENTO_PROFESIONES_MEDICAS,5,si,"LIVA art. 5 fr. V incisos a), b), c) y d) numeral 3; arts. 4-A, 5-A, 5-C y 15 fr. XIV"
+R-175,IVA en la región fronteriza (8 %) y qué pasa cuando vence el decreto,NUEVA,2,iva_frontera,4,IVA_TASA_FRONTERA_NORTE;IVA_TASA_FRONTERA_SUR;IVA_TASA_GENERAL,4,si,"Decretos de estímulos fiscales región fronteriza norte (DOF 31-dic-2018) y sur (DOF 30-dic-2020), prorrogados al 31-dic-2026 por el Decreto DOF 31-dic-2025 (nota 5777697); RMF 2026 reglas 11.9.2, 11.9.3 y 11.9.23; LISR 113-I"
 R-18,Saldo a favor solicitado en devolución vs acreditado,OK,2,,0,,0,no,
 R-19,IVA de importaciones (pedimentos),NUEVA,2,,0,,0,no,
 R-20,Provisional 612 con tarifa acumulada oficial,OK,3,isr_art96_acumulada,3,ISR_TARIFA_MENSUAL;ISR_TARIFA_ACUMULADA_106;ISR_TARIFA_ANUAL,1,si,LISR art. 106; Anexo 8 RMF 2026 apartado B fr. VI (PDF oficial)
