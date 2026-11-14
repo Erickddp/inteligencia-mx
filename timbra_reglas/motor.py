@@ -405,18 +405,40 @@ def calc_retencion_plataforma(b, f, actividad, base, iva):
     return {"isr": str(red(D(base) * tasas[actividad] / 100)), "iva": str(red(D(iva) * pct_iva / 100))}
 
 
-def calc_depreciacion(b, f, moi, tipo_bien, meses, factor="1"):
-    tasas = {t: x for t, x in b.valor("DEPRECIACION_TASAS_ART34", f)}
-    moi = D(moi)
+def _tasa_titulo_ii(b, f, tipo_bien):
+    """Porciento máximo del título II: art. 34 (por bien), 35 (maquinaria por actividad) o 33 (diferidos)."""
+    for pid in ("DEPRECIACION_TASAS_ART34", "DEPRECIACION_TASAS_ART35", "DEPRECIACION_TASAS_ART33"):
+        tasas = {t: x for t, x in b.valor(pid, f)}
+        if tipo_bien in tasas:
+            return D(tasas[tipo_bien]), "LISR " + pid[-2:]
+    raise SinValor(f"No hay porciento máximo para «{tipo_bien}» en los arts. 33, 34 ni 35")
+
+
+def _tope_moi(b, f, tipo_bien, moi, avion_sin_concesion=False):
+    """LISR 36: autos 175,000; eléctricos o híbridos eléctricos 250,000; aviones sin concesión 8,600,000."""
     if tipo_bien == "automoviles":
-        moi = min(moi, b.valor("AUTO_TOPE_DEDUCCION", f))
-    return str(red(moi * tasas[tipo_bien] / 100 * D(meses) / 12 * max(D(factor), D(1))))
+        return min(moi, b.valor("AUTO_TOPE_DEDUCCION", f))
+    if tipo_bien == "automoviles_electricos_hibridos":
+        return min(moi, b.valor("AUTO_TOPE_DEDUCCION_ELECTRICO", f))
+    if tipo_bien == "aviones" and str(avion_sin_concesion).lower() in ("true", "si", "sí", "1"):
+        return min(moi, b.valor("AVION_TOPE_DEDUCCION", f))
+    return moi
 
 
-# Si las inversiones del ejercicio pasan del tope del art. 209, la RESICO PM usa el título II (arts. 33 a 35).
-_RESICO_PM_A_ART34 = {"construcciones": "construcciones", "mobiliario_equipo_oficina": "mobiliario_equipo_oficina",
-                      "automoviles": "automoviles", "equipo_computo": "equipo_computo",
-                      "dados_troqueles_moldes_herramienta": "moldes_troqueles"}
+def calc_depreciacion(b, f, moi, tipo_bien, meses, factor="1", avion_sin_concesion=False):
+    tasa, _art = _tasa_titulo_ii(b, f, tipo_bien)
+    moi = _tope_moi(b, f, tipo_bien, D(moi), avion_sin_concesion)
+    return str(red(moi * tasa / 100 * D(meses) / 12 * max(D(factor), D(1))))
+
+
+def calc_tasa_depreciacion(b, f, tipo_bien):
+    """Porciento máximo y artículo del título II para una clave de bien, actividad o concepto."""
+    tasa, art = _tasa_titulo_ii(b, f, tipo_bien)
+    return {"tasa": str(tasa), "articulo": art}
+
+
+# Claves del art. 209 que en el título II se llaman distinto. Las demás se llaman igual.
+_RESICO_PM_A_TITULO_II = {"dados_troqueles_moldes_herramienta": "moldes_troqueles"}
 
 
 def calc_inversion_resico_pm(b, f, monto, tipo_bien, inicio_uso, terreno="0", inversiones_ejercicio=None, mes=12):
@@ -426,15 +448,16 @@ def calc_inversion_resico_pm(b, f, monto, tipo_bien, inicio_uso, terreno="0", in
     if moi <= 0:
         raise SinValor("Sin monto deducible: el terreno no se deduce como inversión (LISR 32), sólo la construcción")
     if D(inversiones_ejercicio if inversiones_ejercicio is not None else monto) > b.valor("RESICO_PM_INVERSIONES_TOPE", f):
-        clave = _RESICO_PM_A_ART34.get(tipo_bien)
-        tasas = {t: x for t, x in b.valor("DEPRECIACION_TASAS_ART34", f)}
-        if clave not in tasas:
-            raise SinValor(f"Inversiones del ejercicio arriba del tope del art. 209: falta la tasa del art. 34 para {tipo_bien}")
-        tasa, articulo = D(tasas[clave]), "LISR 34 (inversiones del ejercicio arriba del tope del art. 209)"
+        tasa, art = _tasa_titulo_ii(b, f, _RESICO_PM_A_TITULO_II.get(tipo_bien, tipo_bien))
+        articulo = f"{art} (inversiones del ejercicio arriba del tope del art. 209)"
     else:
-        tasa, articulo = D({t: x for t, x in b.valor("RESICO_PM_INVERSIONES", f)}[tipo_bien]), "LISR 209"
-    if tipo_bien == "automoviles":
-        moi = min(moi, b.valor("AUTO_TOPE_DEDUCCION", f))
+        # el art. 209 B-VI no separa autos eléctricos: van al 25 % de automóviles, con su tope del art. 36
+        clave = "automoviles" if tipo_bien == "automoviles_electricos_hibridos" else tipo_bien
+        tasas = {t: x for t, x in b.valor("RESICO_PM_INVERSIONES", f)}
+        if clave not in tasas:
+            raise SinValor(f"El art. 209 no trae porciento para «{tipo_bien}»")
+        tasa, articulo = D(tasas[clave]), "LISR 209"
+    moi = _tope_moi(b, f, tipo_bien, moi)
     anio, m, d = (int(x) for x in str(inicio_uso).split("-"))
     corte = f if isinstance(f, dt.date) else dt.date.fromisoformat(str(f))
     if anio > corte.year:

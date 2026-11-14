@@ -599,17 +599,25 @@ reglas:
 
   - id: R-121
     nombre: Depreciación fiscal
-    citas: [{ley: "LISR", articulo: "33"}, {ley: "LISR", articulo: "34"}, {ley: "LISR", articulo: "36"}]
-    que_dice: "La inversión se deduce año con año con el porcentaje máximo de su tipo de bien desde que se empieza a usar, y los automóviles tienen un tope de monto."
-    correcto_si: "El porcentaje no pasa del máximo del art. 34 por tipo de bien, se cuentan meses completos de uso y la inversión en automóviles solo se deduce hasta su tope (art. 36 fr. II)."
+    citas: [{ley: "LISR", articulo: "33"}, {ley: "LISR", articulo: "34"}, {ley: "LISR", articulo: "35"}, {ley: "LISR", articulo: "36"}]
+    que_dice: "La inversión se deduce año con año con el porcentaje máximo de su tipo de bien (art. 34), de la actividad en que se usa la maquinaria (art. 35) o del tipo de diferido (art. 33), desde que se empieza a usar; autos y aviones tienen tope de monto."
+    correcto_si: "El porcentaje no pasa del máximo del art. 34, 35 o 33; se cuentan meses completos de uso; los autos se topan en 175,000 (eléctricos o híbridos eléctricos en 250,000) y los aviones sin concesión en 8,600,000 (art. 36 fr. II y III)."
     estado: NUEVA
     fase: 3
-    parametros: [DEPRECIACION_TASAS_ART34, AUTO_TOPE_DEDUCCION]
+    parametros: [DEPRECIACION_TASAS_ART34, DEPRECIACION_TASAS_ART35, DEPRECIACION_TASAS_ART33, AUTO_TOPE_DEDUCCION, AUTO_TOPE_DEDUCCION_ELECTRICO, AVION_TOPE_DEDUCCION]
     calculadora: depreciacion
     hallazgo: "Meses completos de uso; factor de actualización mínimo 1. Deducción inmediata Plan México: porcentajes POR CONFIRMAR."
     casos:
       - {nombre: "Cómputo 30,000, 9 meses", fecha: "2026-12-31", entradas: {moi: "30000", tipo_bien: equipo_computo, meses: 9}, esperado: "6750.00"}
       - {nombre: "Auto 400,000 topado a 175,000", fecha: "2026-12-31", entradas: {moi: "400000", tipo_bien: automoviles, meses: 12}, esperado: "43750.00"}
+      - {nombre: "Auto eléctrico 400,000 topado a 250,000", fecha: "2026-12-31", entradas: {moi: "400000", tipo_bien: automoviles_electricos_hibridos, meses: 12}, esperado: "62500.00"}
+      - {nombre: "Límite: auto eléctrico de 250,000 exactos, sin tope", fecha: "2026-12-31", entradas: {moi: "250000", tipo_bien: automoviles_electricos_hibridos, meses: 12}, esperado: "62500.00"}
+      - {nombre: "Horno de restaurante 80,000 (art. 35 fr. X, 20 %), 6 meses", fecha: "2026-12-31", entradas: {moi: "80000", tipo_bien: maquinaria_restaurantes, meses: 6}, esperado: "8000.00"}
+      - {nombre: "Equipo médico de consultorio 120,000 (otras actividades, 10 %)", fecha: "2026-12-31", entradas: {moi: "120000", tipo_bien: maquinaria_otras_actividades, meses: 12}, esperado: "12000.00"}
+      - {nombre: "Gastos preoperativos 50,000 (art. 33 fr. II, 10 %)", fecha: "2026-12-31", entradas: {moi: "50000", tipo_bien: periodos_preoperativos, meses: 12}, esperado: "5000.00"}
+      - {nombre: "Avión sin concesión 10,000,000 topado a 8,600,000 al 10 %", fecha: "2026-12-31", entradas: {moi: "10000000", tipo_bien: aviones, meses: 12, avion_sin_concesion: "si"}, esperado: "860000.00"}
+      - {nombre: "Construcción 1,000,000 en título II (5 %), 3 meses", fecha: "2026-12-31", entradas: {moi: "1000000", tipo_bien: construcciones, meses: 3}, esperado: "12500.00"}
+      - {nombre: "Bien que no está en ninguna tabla: avisa", fecha: "2026-12-31", entradas: {moi: "1000", tipo_bien: cosa_rara, meses: 12}, espera_error: SinValor}
 
   - id: R-125
     nombre: Aguinaldo (monto)
@@ -1127,3 +1135,21 @@ reglas:
       - {nombre: "Laptop de 30,000 todo el año al 50 %", fecha: "2026-12-31", entradas: {monto: "30000", tipo_bien: equipo_computo, inicio_uso: "2026-01-01"}, esperado: {articulo: "LISR 209", tasa: "50", monto_original: "30000.00", meses: "12", deduccion: "15000.00"}}
       - {nombre: "Auto de 400,000 topado a 175,000 al 25 %", fecha: "2026-12-31", entradas: {monto: "400000", tipo_bien: automoviles, inicio_uso: "2026-01-01"}, esperado: {articulo: "LISR 209", tasa: "25", monto_original: "175000.00", meses: "12", deduccion: "43750.00"}}
       - {nombre: "Sólo terreno: no hay inversión deducible, avisa", fecha: "2026-12-31", entradas: {monto: "500000", terreno: "500000", tipo_bien: construcciones, inicio_uso: "2026-10-01"}, espera_error: SinValor}
+  - id: R-173
+    nombre: "Porciento máximo de deducción por bien, actividad o diferido (arts. 33 a 35)"
+    estado: NUEVA
+    fase: 3
+    parametros: [DEPRECIACION_TASAS_ART34, DEPRECIACION_TASAS_ART35, DEPRECIACION_TASAS_ART33, DEPRECIACION_CONTABLE_REFERENCIA]
+    calculadora: tasa_depreciacion
+    fuente: "LISR arts. 33, 34 y 35; NIF C-6 para la tasa contable (CRITERIO)"
+    citas: [{ley: LISR, articulo: "33"}, {ley: LISR, articulo: "34"}, {ley: LISR, articulo: "35"}, {nif: "C-6"}]
+    que_dice: "Dice qué porcentaje máximo de deducción fiscal le toca a un bien: primero se busca por tipo de bien (art. 34); si es maquinaria que no está ahí, por la actividad en que se usa (art. 35); los diferidos, en el art. 33."
+    correcto_si: "La tasa y el artículo coinciden con la fracción que describe el bien; la tasa contable es aparte (vida útil, NIF C-6) y DEPRECIACION_CONTABLE_REFERENCIA sólo da una referencia y la clave fiscal de cada tipo de activo de la app."
+    hallazgo: "Las tasas contables NO salen de ninguna ley: la NIF C-6 pide la vida útil estimada por la entidad. DEPRECIACION_CONTABLE_REFERENCIA queda por_confirmar a propósito y trae la clave fiscal de cada tipo de activo de Timbra para que deje de tener tasas escritas a mano. Ojo: Timbra traía 25 % para equipo satelital; el art. 34 fr. XI da 8 % (en el espacio) y 10 % (en tierra)."
+    casos:
+      - {nombre: "Equipo de cómputo: 30 % del art. 34", fecha: "2026-12-31", entradas: {tipo_bien: equipo_computo}, esperado: {tasa: "30", articulo: "LISR 34"}}
+      - {nombre: "Maquinaria de restaurante: 20 % del art. 35", fecha: "2026-12-31", entradas: {tipo_bien: maquinaria_restaurantes}, esperado: {tasa: "20", articulo: "LISR 35"}}
+      - {nombre: "Maquinaria en actividad no especificada: 10 % del art. 35", fecha: "2026-12-31", entradas: {tipo_bien: maquinaria_otras_actividades}, esperado: {tasa: "10", articulo: "LISR 35"}}
+      - {nombre: "Regalías: 15 % del art. 33", fecha: "2026-12-31", entradas: {tipo_bien: regalias_asistencia_otros_diferidos}, esperado: {tasa: "15", articulo: "LISR 33"}}
+      - {nombre: "Equipo satelital en tierra: 10 %, no 25 %", fecha: "2026-12-31", entradas: {tipo_bien: satelital_tierra}, esperado: {tasa: "10", articulo: "LISR 34"}}
+      - {nombre: "Usufructo de inmueble: 5 % (fr. XV)", fecha: "2026-12-31", entradas: {tipo_bien: usufructo_inmueble}, esperado: {tasa: "5", articulo: "LISR 34"}}

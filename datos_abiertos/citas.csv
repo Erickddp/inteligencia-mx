@@ -1,4 +1,9 @@
 origen_tipo,origen_id,ley,anio,articulo,existe_en_biblioteca
+parametro,AUTO_TOPE_DEDUCCION_ELECTRICO,LISR,,36,si
+parametro,AVION_TOPE_DEDUCCION,LISR,,36,si
+parametro,DEPRECIACION_TASAS_ART33,LISR,,33,si
+parametro,DEPRECIACION_TASAS_ART34,LISR,,34,si
+parametro,DEPRECIACION_TASAS_ART35,LISR,,35,si
 parametro,RESICO_PM_INVERSIONES,LISR,,209,si
 parametro,RESICO_PM_INVERSIONES_TOPE,LISR,,209,si
 regla,R-100,CFF,,17-a,si
@@ -24,6 +29,7 @@ regla,R-120,LISR,,151,si
 regla,R-120,LISR,,152,si
 regla,R-121,LISR,,33,si
 regla,R-121,LISR,,34,si
+regla,R-121,LISR,,35,si
 regla,R-121,LISR,,36,si
 regla,R-125,LFT,,87,si
 regla,R-126,LISR,,93,si
@@ -126,6 +132,10 @@ regla,R-172,LISR,,211,si
 regla,R-172,LISR,,31,si
 regla,R-172,LISR,,32,si
 regla,R-172,LISR,,36,si
+regla,R-173,LISR,,33,si
+regla,R-173,LISR,,34,si
+regla,R-173,LISR,,35,si
+regla,R-173,NIF-C-6,,,referencia
 regla,R-20,LISR,,106,si
 regla,R-22,LISR,,113-e,si
 regla,R-22,LISR,,113-j,si
