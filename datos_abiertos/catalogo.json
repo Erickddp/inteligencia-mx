@@ -21,7 +21,7 @@
     "fuente_ultimo"
    ],
    "filas": 132,
-   "sha256": "7da5b05f3011623f1de4302481a37565e542ec825a49724042d799b07e15f515"
+   "sha256": "2c2d7c1d0efe2cb82d20837baf5e7f7149222ffee404e614543cc00355fced3d"
   },
   "reglas.csv": {
    "descripcion": "Cada regla R-xx con su estado, calculadora, número de casos y citas.",
@@ -38,7 +38,7 @@
     "fuente"
    ],
    "filas": 114,
-   "sha256": "1605be92147199c9c387c287185abbe0ee7e219fc44852734c5334dae354769f"
+   "sha256": "5343be06671459baa7e0f6c320b72bd5cee17c59c875b747c989cd6ac286fd17"
   },
   "leyes.csv": {
    "descripcion": "Cada ley, código o reglamento de la biblioteca con su ámbito, materia, huella y si tiene cotejo humano.",
