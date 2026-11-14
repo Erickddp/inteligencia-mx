@@ -39,7 +39,7 @@ Cada fila es una categoría del trinquete. «Archivos» son los que el trinquete
 |---|---|---|---|---|
 | Tipo de cambio por fecha de publicación en el DOF | `TIPO_CAMBIO_REGLA`, `BANXICO_SERIE_TC_CFF20` | R-52, R-138 | `services/tipo_cambio.py:29` usa la serie de fecha de determinación; la base manda la de liquidación (publicación en el DOF), con fecha de causación menos un día. Evidencia de ambas series contra el token: tarea de D en este repo | 2C |
 | Saldo a favor de IVA entre años | sin parámetro (es lógica de la regla) | R-13, R-14, R-18 | El saldo se arrastra solo dentro del año; que no muera en diciembre | 2C |
-| Proporción de IVA con exentas y no objeto | sin parámetro | R-17 | Hoy solo avisa; falta el cálculo (R-17 tiene un solo caso: no firmar sin segundo caso) | 2C |
+| Proporción de IVA con exentas y no objeto | sin parámetro | R-17 | La base ya calcula: R-17 (proporción, 7 casos) y R-174 (acreditamiento por destino, LIVA 5 fr. V, con caso de consultorio); falta que la app clasifique cada gasto como gravado, exento o indistinto | 2C |
 | Vencimiento día 17 y sexto dígito | `DIA_VENCIMIENTO_MENSUAL`, `DIAS_EXTRA_SEXTO_DIGITO` | R-27 | Vencimiento sin días extra. Espera la revisión de Rick (LISTO_FIRMA) | 3 |
 | DIOT: tipo de tercero 04 / 05 / 15 | `DIOT_NUM_CAMPOS`, `DIOT_LAYOUT_2025` | R-30, R-32 | El 2B ya usa el orden oficial; falta la captura de proveedores extranjeros y globales (decisión de Rick) | 2B (cierre) |
 | Plazo de cancelación | `CFDI_CANCELACION_MES_LIMITE_PM`, `CFDI_CANCELACION_MES_LIMITE_PF` | R-90 | El código de la app aún no lo usa | 3 |

@@ -143,6 +143,14 @@ reglas:
         fecha: "2026-10-31"
         entradas: {gravadas_16: "400000.00", gravadas_0: "0.00", exentas: "0.00", no_objeto: "600000.00", iva_indistinto: "5000.00"}
         esperado: "2000.00"
+      - nombre: "Consultorio: vende 100 mil de producto al 16 % y cobra 300 mil de consultas exentas; renta indistinta con IVA 8,000 → 25 %"
+        fecha: "2026-10-31"
+        entradas: {gravadas_16: "100000.00", gravadas_0: "0.00", exentas: "300000.00", no_objeto: "0.00", iva_indistinto: "8000.00"}
+        esperado: "2000.00"
+      - nombre: "Las ventas al 0 % cuentan como gravadas: 100 mil de medicinas de patente al 0 % y 300 mil exentas → 25 %"
+        fecha: "2026-10-31"
+        entradas: {gravadas_16: "0.00", gravadas_0: "100000.00", exentas: "300000.00", no_objeto: "0.00", iva_indistinto: "8000.00"}
+        esperado: "2000.00"
   - id: R-18
     nombre: Saldo a favor solicitado en devolución vs acreditado
     estado: OK
@@ -1153,3 +1161,47 @@ reglas:
       - {nombre: "Regalías: 15 % del art. 33", fecha: "2026-12-31", entradas: {tipo_bien: regalias_asistencia_otros_diferidos}, esperado: {tasa: "15", articulo: "LISR 33"}}
       - {nombre: "Equipo satelital en tierra: 10 %, no 25 %", fecha: "2026-12-31", entradas: {tipo_bien: satelital_tierra}, esperado: {tasa: "10", articulo: "LISR 34"}}
       - {nombre: "Usufructo de inmueble: 5 % (fr. XV)", fecha: "2026-12-31", entradas: {tipo_bien: usufructo_inmueble}, esperado: {tasa: "5", articulo: "LISR 34"}}
+  - id: R-174
+    nombre: "IVA acreditable por destino del gasto (LIVA 5 fr. V): gravado 100 %, exento 0 %, indistinto por proporción"
+    estado: NUEVA
+    fase: 2
+    parametros: [IVA_EXENTO_PROFESIONES_MEDICAS]
+    calculadora: iva_acreditable_destino
+    fuente: "LIVA art. 5 fr. V incisos a), b), c) y d) numeral 3; arts. 4-A, 5-A, 5-C y 15 fr. XIV"
+    citas: [{ley: LIVA, articulo: "5", fraccion: "V"}, {ley: LIVA, articulo: "4-a"}, {ley: LIVA, articulo: "5-a"}, {ley: LIVA, articulo: "5-c"}, {ley: LIVA, articulo: "15"}]
+    que_dice: "Si haces actividades gravadas y exentas a la vez, el IVA de cada gasto se acredita según para qué lo usas: todo si es sólo para lo gravado (16 % o 0 %), nada si es sólo para lo exento, y en proporción si sirve para las dos."
+    correcto_si: "Cada gasto se clasifica por destino; el IVA indistinto (gastos e inversiones) se multiplica por (actos al 16 % + al 0 %) / (todos los actos del mes, con los no objeto del 4-A); lo exclusivo de exentos no se acredita y es gasto."
+    hallazgo: "Consultorio médico: las consultas de médico con título son exentas (LIVA 15 fr. XIV); lo que vende de producto va al 16 %, y medicinas de patente al 0 %, que también cuenta como gravado. El IVA no acreditable se vuelve costo o gasto para ISR. Inversiones indistintas (inciso d-3): misma proporción del mes, con el ajuste del art. 5-A en los meses siguientes, que aquí NO se calcula (POR CONFIRMAR, va con R-17 y la opción del art. 5-B). Fuera de los valores, lo del art. 5-C (ventas de activo fijo, intereses, acciones, moneda, etc.)."
+    casos:
+      - nombre: "Consultorio: producto al 16 % 100 mil, consultas exentas 300 mil; IVA de producto para venta 3,200, de material de curación 4,800, de renta indistinta 8,000"
+        fecha: "2026-10-31"
+        entradas: {iva_gravadas: "3200", iva_exentas: "4800", iva_indistinto: "8000", gravadas_16: "100000", exentas: "300000"}
+        esperado: {proporcion: "0.2500", acreditable_gravadas: "3200.00", acreditable_indistinto: "2000.00", acreditable: "5200.00", no_acreditable: "10800.00"}
+      - nombre: "El mismo consultorio vende medicinas de patente al 0 %: la proporción no cambia"
+        fecha: "2026-10-31"
+        entradas: {iva_gravadas: "3200", iva_exentas: "4800", iva_indistinto: "8000", gravadas_0: "100000", exentas: "300000"}
+        esperado: {proporcion: "0.2500", acreditable_gravadas: "3200.00", acreditable_indistinto: "2000.00", acreditable: "5200.00", no_acreditable: "10800.00"}
+      - nombre: "Consultorio con un ultrasonido de uso indistinto: IVA 32,000 al 25 %"
+        fecha: "2026-10-31"
+        entradas: {iva_inversion_indistinta: "32000", gravadas_16: "100000", exentas: "300000"}
+        esperado: {proporcion: "0.2500", acreditable_gravadas: "0.00", acreditable_indistinto: "8000.00", acreditable: "8000.00", no_acreditable: "24000.00"}
+      - nombre: "Límite: un mes sólo con consultas exentas, nada se acredita"
+        fecha: "2026-10-31"
+        entradas: {iva_exentas: "4800", iva_indistinto: "8000", exentas: "300000"}
+        esperado: {proporcion: "0.0000", acreditable_gravadas: "0.00", acreditable_indistinto: "0.00", acreditable: "0.00", no_acreditable: "12800.00"}
+      - nombre: "Límite: sólo actividades gravadas, todo se acredita"
+        fecha: "2026-10-31"
+        entradas: {iva_gravadas: "1600", iva_indistinto: "8000", gravadas_16: "100000"}
+        esperado: {proporcion: "1.0000", acreditable_gravadas: "1600.00", acreditable_indistinto: "8000.00", acreditable: "9600.00", no_acreditable: "0.00"}
+      - nombre: "Los no objeto (art. 4-A) entran al denominador: 100 mil gravadas, 100 mil no objeto → 50 %"
+        fecha: "2026-10-31"
+        entradas: {iva_indistinto: "1000", gravadas_16: "100000", no_objeto: "100000"}
+        esperado: {proporcion: "0.5000", acreditable_gravadas: "0.00", acreditable_indistinto: "500.00", acreditable: "500.00", no_acreditable: "500.00"}
+      - nombre: "Redondeo: un tercio de 1,000 es 333.33 y lo demás no se acredita"
+        fecha: "2026-10-31"
+        entradas: {iva_indistinto: "1000", gravadas_16: "100000", exentas: "200000"}
+        esperado: {proporcion: "0.3333", acreditable_gravadas: "0.00", acreditable_indistinto: "333.33", acreditable: "333.33", no_acreditable: "666.67"}
+      - nombre: "IVA indistinto sin actos en el mes: avisa, no inventa la proporción"
+        fecha: "2026-10-31"
+        entradas: {iva_indistinto: "8000"}
+        espera_error: SinValor

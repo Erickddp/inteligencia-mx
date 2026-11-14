@@ -59,11 +59,12 @@ R-166,Venta de mostrador de menos de $100: no hay que expedir comprobante si no 
 R-167,Factura global con pagos parciales o diferidos: qué monto lleva,NUEVA,3,monto_en_global,3,,1,si,RMF 2026 regla 2.7.1.21 (texto del DOF sin revisión humana)
 R-168,RESICO PF: plazo para cancelar su factura global,NUEVA,3,cancelacion_global_resico,4,RESICO_GLOBAL_CANCELACION_MES,3,si,RMF 2026 regla 3.13.29; LISR art. 113-G (texto del DOF sin revisión humana)
 R-169,IVA de los servicios médicos: exento o gravado,NUEVA,3,iva_servicio_medico,5,IVA_EXENTO_PROFESIONES_MEDICAS;IVA_EXENTO_PRESTADORES_MEDICOS,2,si,"LIVA art. 15 fr. XIV; RLIVA art. 41 (texto de la Cámara, sin cotejar con el DOF)"
-R-17,Proporción de IVA acreditable con actividades exentas o no objeto,NUEVA,2,proporcion_iva,5,,4,si,"LIVA art. 5 fr. V incisos c) y d), 4-A, 5-B y 5-C"
+R-17,Proporción de IVA acreditable con actividades exentas o no objeto,NUEVA,2,proporcion_iva,7,,4,si,"LIVA art. 5 fr. V incisos c) y d), 4-A, 5-B y 5-C"
 R-170,RESICO PF: retención de 1.25 % cuando factura a una persona moral,NUEVA,3,retencion_resico_pf,5,RESICO_PF_RETENCION_PM,3,si,"LISR art. 113-J y 113-E; RMF 2026 regla 2.7.1.45 (texto de la Cámara y del DOF, sin cotejar)"
 R-171,Póliza tipo: cobro con tarjeta (la terminal deposita neto de comisión),CRITERIO,4,poliza_cobro_terminal,4,,4,si,LIVA art. 5 fr. II; LISR art. 27; CFF art. 28; NIF B-3 (referencia)
 R-172,Deducción de inversiones en RESICO personas morales (art. 209),NUEVA,3,inversion_resico_pm,10,RESICO_PM_INVERSIONES;RESICO_PM_INVERSIONES_TOPE;DEPRECIACION_TASAS_ART34;AUTO_TOPE_DEDUCCION,6,si,"LISR arts. 31, 32, 36, 208 fr. IV, 209, 210 fr. I y 211"
 R-173,"Porciento máximo de deducción por bien, actividad o diferido (arts. 33 a 35)",NUEVA,3,tasa_depreciacion,6,DEPRECIACION_TASAS_ART34;DEPRECIACION_TASAS_ART35;DEPRECIACION_TASAS_ART33;DEPRECIACION_CONTABLE_REFERENCIA,4,si,"LISR arts. 33, 34 y 35; NIF C-6 para la tasa contable (CRITERIO)"
+R-174,"IVA acreditable por destino del gasto (LIVA 5 fr. V): gravado 100 %, exento 0 %, indistinto por proporción",NUEVA,2,iva_acreditable_destino,8,IVA_EXENTO_PROFESIONES_MEDICAS,5,si,"LIVA art. 5 fr. V incisos a), b), c) y d) numeral 3; arts. 4-A, 5-A, 5-C y 15 fr. XIV"
 R-18,Saldo a favor solicitado en devolución vs acreditado,OK,2,,0,,0,no,
 R-19,IVA de importaciones (pedimentos),NUEVA,2,,0,,0,no,
 R-20,Provisional 612 con tarifa acumulada oficial,OK,3,isr_art96_acumulada,3,ISR_TARIFA_MENSUAL;ISR_TARIFA_ACUMULADA_106;ISR_TARIFA_ANUAL,1,si,LISR art. 106; Anexo 8 RMF 2026 apartado B fr. VI (PDF oficial)

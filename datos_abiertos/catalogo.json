@@ -37,8 +37,8 @@
     "tiene_que_dice",
     "fuente"
    ],
-   "filas": 108,
-   "sha256": "d7678c360635cc5e5b717bedec7324a7539a92d36041620103b419e3a0d5c3fb"
+   "filas": 109,
+   "sha256": "eb9805cd5867a84ca4d0b368da78cda37532d44edb40a96b89ee0b8148b37032"
   },
   "leyes.csv": {
    "descripcion": "Cada ley, código o reglamento de la biblioteca con su ámbito, materia, huella y si tiene cotejo humano.",
@@ -69,8 +69,8 @@
     "articulo",
     "existe_en_biblioteca"
    ],
-   "filas": 156,
-   "sha256": "0ff018a6370ee979b90625f552654cde9a67a152302ef9aee18f77d3931cf81c"
+   "filas": 161,
+   "sha256": "d80885fbd652fd6cc8372c0cb8bbeb9c83baadc4b1030e2e21f5604ac01b9eb6"
   },
   "cotejo_pendiente.csv": {
    "descripcion": "Artículos citados por la base que nadie ha cotejado con el diario oficial, por prioridad.",
@@ -82,8 +82,8 @@
     "origenes",
     "cotejado"
    ],
-   "filas": 78,
-   "sha256": "5b77cd09fb1a1df34db0ba1189040cb4e68f7942a4fe6ea55603077db410ca22"
+   "filas": 79,
+   "sha256": "01994c7653d8220ba417d938c2677d1c3979d7c16e8fbfb6a30ccedb34280667"
   }
  }
 }
