@@ -63,3 +63,18 @@ def test_citas_resuelven(id_, obj):
 @pytest.mark.parametrize("id_,obj", CON_CITAS, ids=[i for i, _ in CON_CITAS])
 def test_con_citas_dice_que_dice_y_cuando_es_correcto(id_, obj):
     assert obj.get("que_dice") and obj.get("correcto_si"), f"{id_}: con `citas` también van `que_dice` y `correcto_si`"
+
+
+def test_indice_niif_apunta_a_nif_que_existen_y_no_se_hace_pasar_por_cotejado():
+    """El índice de NIIF es referencia: ninguna NIIF está cotejada y todo equivalente en NIF existe en el índice de NIF."""
+    niif = yaml.safe_load((RAIZ / "fuentes" / "niif" / "indice.yaml").read_text(encoding="utf-8"))
+    ids = [n["id"] for n in niif["niif"]]
+    assert len(ids) == len(set(ids)) >= 35 and {"IAS 1", "IFRS 9", "IFRS 15", "IFRS 16", "IFRS 18"} <= set(ids)
+    assert all(n["cotejado"] is False for n in niif["niif"]), "la IFRS Foundation no se ha abierto: nada se marca cotejado"
+    for n in niif["niif"]:
+        assert n["titulo"] and n["tema"] and n["diferencia"] and n["estado"] in {"vigente", "vigente_hasta_2026", "por_confirmar"}, n["id"]
+        for nif in [x.strip() for x in n["nif"].split(",") if x.strip()]:
+            assert nif in NIF, f"{n['id']}: la NIF {nif} no existe en fuentes/nif/indice.yaml"
+    # lo único cotejado: quién está obligado a NIIF en México (DOF, CNBV)
+    cotejados = [o for o in niif["obligados"] if o["cotejado"]]
+    assert any("2012-01-01" == str(o.get("desde")) and "5078507" in o["url"] for o in cotejados)
