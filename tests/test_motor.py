@@ -38,19 +38,42 @@ def test_vigencias_encimadas_frenan_la_carga(copia):
         Base(base_dir=carpeta)
 
 
-def test_tramo_pendiente_de_dof_no_se_aplica(base):
-    # RESICO PF: el tope de 5 M está aprobado por el Congreso, sin DOF: sigue valiendo 3.5 M
-    d = base.detalle("RESICO_PF_TOPE_ANUAL", "2027-01-15")
-    assert D(str(d["valor"])) == D("3500000")
+def _base_con_pendiente(tmp_path):
+    """Copia de la base con un tramo pendiente de DOF inventado: prueba el mecanismo sin depender de que haya una reforma real en curso."""
+    import shutil
+    import yaml as _y
+    for f in ("parametros.yaml", "reglas.yaml"):
+        shutil.copy(BASE / f, tmp_path / f)
+    P = _y.safe_load((tmp_path / "parametros.yaml").read_text(encoding="utf-8"))
+    P["parametros"]["RESICO_PF_TOPE_ANUAL"]["valores"].append(
+        {"valor": "9000000.00", "desde": "2099-01-01", "hasta": None, "estado": "aprobado_congreso_pendiente_dof", "fuente": "prueba"})
+    P["parametros"]["PRUEBA_SOLO_PENDIENTE"] = {"nombre": "prueba", "tipo": "porcentaje", "valores": [
+        {"valor": "1", "desde": "2099-01-01", "hasta": None, "estado": "aprobado_congreso_pendiente_dof", "fuente": "prueba"}]}
+    (tmp_path / "parametros.yaml").write_text(_y.safe_dump(P, allow_unicode=True, sort_keys=False), encoding="utf-8")
+    return tmp_path
+
+
+def test_tramo_pendiente_de_dof_no_se_aplica(tmp_path):
+    d_base = _base_con_pendiente(tmp_path)
+    d = Base(base_dir=d_base).detalle("RESICO_PF_TOPE_ANUAL", "2099-01-15")
+    assert D(str(d["valor"])) == D("5000000")  # sigue el vigente (el de 2027)
     assert d["reforma_pendiente"]["estado"] == "aprobado_congreso_pendiente_dof"
     # solo entra al simular
-    assert Base(base_dir=BASE, propuestas=True).valor("RESICO_PF_TOPE_ANUAL", "2027-01-15") == D("5000000")
+    assert Base(base_dir=d_base, propuestas=True).valor("RESICO_PF_TOPE_ANUAL", "2099-01-15") == D("9000000")
 
 
-def test_solo_pendiente_da_sin_valor_y_avisa(base):
-    # ISR_RET_INTERESES: solo hay tramo 2027 pendiente; no se aplica
+def test_solo_pendiente_da_sin_valor_y_avisa(tmp_path):
     with pytest.raises(SinValor, match="no se aplica sin DOF"):
-        base.valor("ISR_RET_INTERESES", "2027-06-30")
+        Base(base_dir=_base_con_pendiente(tmp_path)).valor("PRUEBA_SOLO_PENDIENTE", "2099-06-30")
+
+
+def test_paquete_2027_publicado_en_el_dof_ya_es_vigente(base):
+    """LIF 2027 y reforma a la LISR, DOF 13-nov-2026: ya no quedan tramos 2027 pendientes."""
+    assert base.valor("RESICO_PF_TOPE_ANUAL", "2027-01-15") == D("5000000.00")
+    assert base.valor("RESICO_PM_TOPE_ANUAL", "2027-01-15") == D("50000000.00")
+    assert base.valor("ISR_RET_INTERESES", "2027-06-30") == D("0.68")
+    assert base.valor("INTERESES_NETOS_LIMITE_PCT", "2027-06-30") == D("20")
+    assert base.valor("RESICO_PF_TOPE_ANUAL", "2026-12-31") == D("3500000.00")
 
 
 def test_estados_de_los_tramos_son_validos(base):

@@ -33,7 +33,7 @@ def dir_base() -> Path:
         if (c / "parametros.yaml").is_file() and (c / "reglas.yaml").is_file():
             return c
     raise FileNotFoundError("No encontré parametros.yaml y reglas.yaml: " + ", ".join(str(c) for c in candidatas))
-VERSION_MOTOR = "0.5.0"
+VERSION_MOTOR = "0.6.0"
 
 # Estados de un tramo. Los NO_APLICABLES nunca se usan salvo en simulación.
 ESTADOS_APLICABLES = {"vigente", "por_confirmar"}
@@ -502,6 +502,30 @@ def calc_inversion_resico_pm(b, f, monto, tipo_bien, inicio_uso, terreno="0", in
     meses = max(0, int(mes) - primer_mes + 1)
     return {"articulo": articulo, "tasa": str(tasa), "monto_original": str(red(moi)), "meses": str(meses),
             "deduccion": str(red(moi * tasa / 100 * meses / 12))}
+
+
+DI_EXCLUIDOS = {"mobiliario_equipo_oficina": "mobiliario y equipo de oficina", "automoviles": "automóviles de combustión interna",
+               "aviones": "aviones que no son de aerofumigación"}
+
+
+def calc_deduccion_inmediata(b, f, monto, tipo_bien, adquisicion, regimen="titulo_ii", constancia="si", nuevo="si"):
+    """Plan México 2027-2030 (Decreto DOF 13-nov-2026, art. Segundo fr. I): deducción inmediata en el ejercicio de la inversión,
+    sólo bienes nuevos, con constancia, de título II, RESICO PM o PF sección I. El excedente se deduce después (inciso d)."""
+    d = _fecha(adquisicion)
+    if not (dt.date(2027, 1, 1) <= d <= dt.date(2030, 9, 30)):
+        raise SinValor("La deducción inmediata del Plan México sólo es para bienes adquiridos del 1-ene-2027 al 30-sep-2030")
+    if regimen not in ("titulo_ii", "resico_pm", "pf_actividad_empresarial"):
+        raise SinValor("La deducción inmediata del Plan México es sólo para personas morales del título II, RESICO PM y personas físicas de la sección I")
+    if str(constancia).lower() not in ("si", "sí", "true", "1") or str(nuevo).lower() not in ("si", "sí", "true", "1"):
+        raise SinValor("Requiere bien nuevo (primer uso en México) y constancia de cumplimiento del Comité de Evaluación")
+    if tipo_bien in DI_EXCLUIDOS:
+        raise SinValor(f"La deducción inmediata no aplica a {DI_EXCLUIDOS[tipo_bien]}")
+    tasas = {t: x for t, x in b.valor("DEDUCCION_INMEDIATA_PLAN_MEXICO", d.isoformat())}
+    if tipo_bien not in tasas:
+        raise SinValor(f"«{tipo_bien}» no tiene porciento de deducción inmediata")
+    moi = D(monto)
+    ded = red(moi * D(tasas[tipo_bien]) / 100)
+    return {"tasa": str(tasas[tipo_bien]), "deduccion_inmediata": str(ded), "excedente": str(red(moi) - ded)}
 
 
 def _vacaciones(b, f, anio):
