@@ -1,4 +1,6 @@
 origen_tipo,origen_id,ley,anio,articulo,existe_en_biblioteca
+parametro,RESICO_PM_INVERSIONES,LISR,,209,si
+parametro,RESICO_PM_INVERSIONES_TOPE,LISR,,209,si
 regla,R-100,CFF,,17-a,si
 regla,R-100,CFF,,21,si
 regla,R-108,CFF,,20,si
@@ -118,6 +120,12 @@ regla,R-171,CFF,,28,si
 regla,R-171,LISR,,27,si
 regla,R-171,LIVA,,5,si
 regla,R-171,NIF-B-3,,,referencia
+regla,R-172,LISR,,209,si
+regla,R-172,LISR,,210,si
+regla,R-172,LISR,,211,si
+regla,R-172,LISR,,31,si
+regla,R-172,LISR,,32,si
+regla,R-172,LISR,,36,si
 regla,R-20,LISR,,106,si
 regla,R-22,LISR,,113-e,si
 regla,R-22,LISR,,113-j,si

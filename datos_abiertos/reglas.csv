@@ -62,6 +62,7 @@ R-169,IVA de los servicios médicos: exento o gravado,NUEVA,3,iva_servicio_medic
 R-17,Proporción de IVA acreditable con actividades exentas o no objeto,NUEVA,2,proporcion_iva,5,,4,si,"LIVA art. 5 fr. V incisos c) y d), 4-A, 5-B y 5-C"
 R-170,RESICO PF: retención de 1.25 % cuando factura a una persona moral,NUEVA,3,retencion_resico_pf,5,RESICO_PF_RETENCION_PM,3,si,"LISR art. 113-J y 113-E; RMF 2026 regla 2.7.1.45 (texto de la Cámara y del DOF, sin cotejar)"
 R-171,Póliza tipo: cobro con tarjeta (la terminal deposita neto de comisión),CRITERIO,4,poliza_cobro_terminal,4,,4,si,LIVA art. 5 fr. II; LISR art. 27; CFF art. 28; NIF B-3 (referencia)
+R-172,Deducción de inversiones en RESICO personas morales (art. 209),NUEVA,3,inversion_resico_pm,10,RESICO_PM_INVERSIONES;RESICO_PM_INVERSIONES_TOPE;DEPRECIACION_TASAS_ART34;AUTO_TOPE_DEDUCCION,6,si,"LISR arts. 31, 32, 36, 208 fr. IV, 209, 210 fr. I y 211"
 R-18,Saldo a favor solicitado en devolución vs acreditado,OK,2,,0,,0,no,
 R-19,IVA de importaciones (pedimentos),NUEVA,2,,0,,0,no,
 R-20,Provisional 612 con tarifa acumulada oficial,OK,3,isr_art96_acumulada,3,ISR_TARIFA_MENSUAL;ISR_TARIFA_ACUMULADA_106;ISR_TARIFA_ANUAL,1,si,LISR art. 106; Anexo 8 RMF 2026 apartado B fr. VI (PDF oficial)

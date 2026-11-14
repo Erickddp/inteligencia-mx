@@ -413,6 +413,38 @@ def calc_depreciacion(b, f, moi, tipo_bien, meses, factor="1"):
     return str(red(moi * tasas[tipo_bien] / 100 * D(meses) / 12 * max(D(factor), D(1))))
 
 
+# Si las inversiones del ejercicio pasan del tope del art. 209, la RESICO PM usa el título II (arts. 33 a 35).
+_RESICO_PM_A_ART34 = {"construcciones": "construcciones", "mobiliario_equipo_oficina": "mobiliario_equipo_oficina",
+                      "automoviles": "automoviles", "equipo_computo": "equipo_computo",
+                      "dados_troqueles_moldes_herramienta": "moldes_troqueles"}
+
+
+def calc_inversion_resico_pm(b, f, monto, tipo_bien, inicio_uso, terreno="0", inversiones_ejercicio=None, mes=12):
+    """LISR 209 (porcientos), 31 (meses completos de uso), 32 (el terreno no se demerita), 36 (tope de autos).
+    Deducción acumulada del ejercicio de `f` hasta el mes `mes` (12 = anual; 1..11 = pago provisional, art. 211)."""
+    moi = D(monto) - D(terreno)
+    if moi <= 0:
+        raise SinValor("Sin monto deducible: el terreno no se deduce como inversión (LISR 32), sólo la construcción")
+    if D(inversiones_ejercicio if inversiones_ejercicio is not None else monto) > b.valor("RESICO_PM_INVERSIONES_TOPE", f):
+        clave = _RESICO_PM_A_ART34.get(tipo_bien)
+        tasas = {t: x for t, x in b.valor("DEPRECIACION_TASAS_ART34", f)}
+        if clave not in tasas:
+            raise SinValor(f"Inversiones del ejercicio arriba del tope del art. 209: falta la tasa del art. 34 para {tipo_bien}")
+        tasa, articulo = D(tasas[clave]), "LISR 34 (inversiones del ejercicio arriba del tope del art. 209)"
+    else:
+        tasa, articulo = D({t: x for t, x in b.valor("RESICO_PM_INVERSIONES", f)}[tipo_bien]), "LISR 209"
+    if tipo_bien == "automoviles":
+        moi = min(moi, b.valor("AUTO_TOPE_DEDUCCION", f))
+    anio, m, d = (int(x) for x in str(inicio_uso).split("-"))
+    corte = f if isinstance(f, dt.date) else dt.date.fromisoformat(str(f))
+    if anio > corte.year:
+        raise SinValor("El bien empieza a usarse después del ejercicio: todavía no se deduce")
+    primer_mes = 1 if anio < corte.year else (m if d == 1 else m + 1)  # mes completo de uso (art. 31)
+    meses = max(0, int(mes) - primer_mes + 1)
+    return {"articulo": articulo, "tasa": str(tasa), "monto_original": str(red(moi)), "meses": str(meses),
+            "deduccion": str(red(moi * tasa / 100 * meses / 12))}
+
+
 def _vacaciones(b, f, anio):
     for hasta, dias in b.valor("LFT_VACACIONES_TABLA", f):
         if D(anio) <= hasta:
