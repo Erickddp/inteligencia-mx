@@ -136,6 +136,11 @@ regla,R-173,LISR,,33,si
 regla,R-173,LISR,,34,si
 regla,R-173,LISR,,35,si
 regla,R-173,NIF-C-6,,,referencia
+regla,R-174,LIVA,,15,si
+regla,R-174,LIVA,,4-a,si
+regla,R-174,LIVA,,5,si
+regla,R-174,LIVA,,5-a,si
+regla,R-174,LIVA,,5-c,si
 regla,R-20,LISR,,106,si
 regla,R-22,LISR,,113-e,si
 regla,R-22,LISR,,113-j,si

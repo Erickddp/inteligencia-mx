@@ -278,6 +278,24 @@ def calc_proporcion_iva(b, f, gravadas_16, gravadas_0, exentas, no_objeto, iva_i
     return red(D(iva_indistinto) * num / den)
 
 
+def calc_iva_acreditable_destino(b, f, iva_gravadas="0", iva_exentas="0", iva_indistinto="0", iva_inversion_indistinta="0",
+                                gravadas_16="0", gravadas_0="0", exentas="0", no_objeto="0"):
+    """LIVA 5 fr. V: por destino del gasto. a) sólo gravadas (16 % o 0 %): 100 %; b) sólo exentas o no objeto (4-A): 0 %;
+    c) indistinto: proporción del mes (gravadas 16 % + 0 %) / (todas, con las del 4-A); d-3) inversiones indistintas: misma
+    proporción del mes (el ajuste del art. 5-A va aparte). Lo del art. 5-C no entra en los valores."""
+    num = D(gravadas_16) + D(gravadas_0)
+    den = num + D(exentas) + D(no_objeto)
+    mixto = D(iva_indistinto) + D(iva_inversion_indistinta)
+    if den == 0 and mixto != 0:
+        raise SinValor("Hay IVA de uso indistinto pero no hay actos en el mes para calcular la proporción (LIVA 5 fr. V c)")
+    prop = num / den if den else D(0)
+    acred_mixto = red(mixto * prop)
+    total = red(D(iva_gravadas)) + acred_mixto
+    no_acred = red(D(iva_exentas)) + (red(mixto) - acred_mixto)
+    return {"proporcion": str(red(prop, 4)), "acreditable_gravadas": str(red(D(iva_gravadas))),
+            "acreditable_indistinto": str(acred_mixto), "acreditable": str(total), "no_acreditable": str(no_acred)}
+
+
 def calc_actualizacion(b, f, monto, inpc_reciente, inpc_antiguo):
     """CFF 17-A: factor = INPC del mes anterior al más reciente / INPC del mes anterior al más antiguo; si < 1, es 1."""
     dec = int(b.valor("ACTUALIZACION_FACTOR_DECIMALES", f))
