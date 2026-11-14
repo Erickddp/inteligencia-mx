@@ -1,0 +1,64 @@
+# Índice de las NIIF (IAS e IFRS) como REFERENCIA: identificador, título, tema, NIF equivalente y la diferencia principal en una línea.
+#
+# - Las IFRS las publica la Fundación IFRS con derechos reservados: aquí NO se copia su texto, sólo identificador, título, tema, el equivalente en NIF y un resumen propio.
+# - NINGUNA está cotejada (`cotejado: false`): la IFRS Foundation (ifrs.org) no se pudo abrir desde el entorno de trabajo del 2026-11-14. Los números y títulos son los de uso común; antes de firmar una regla que dependa de una NIIF, cotejar contra la lista oficial.
+# - La columna `nif` dice el equivalente en el índice de NIF (fuentes/nif/indice.yaml). Las diferencias son un resumen propio y deben leerse como orientación, no como análisis técnico.
+# - Lo único cotejado contra fuente primaria es la obligación de usar NIIF en México (`obligados`, abajo).
+version: 1
+cotejo: "2026-11-14"
+fuente: "IFRS Foundation, IFRS Accounting Standards (edición vigente); https://www.ifrs.org"
+nota: "Referencia y resumen propio. Texto con derechos reservados de la Fundación IFRS."
+obligados:
+  # Cotejado contra el DOF (CNBV). El resto de las entidades usa NIF; Timbra usa NIF.
+  - {quien: "Emisoras de valores inscritas en el Registro Nacional de Valores", norma: "NIIF (IFRS del IASB)", desde: "2012-01-01", fuente: "CNBV, Resolución que modifica las Disposiciones de carácter general aplicables a las emisoras de valores, DOF 27-ene-2009, art. 78 y segundo transitorio", url: "https://dof.gob.mx/nota_detalle_popup.php?codigo=5078507", cotejado: true, detalle: "Las emisoras podían adoptar NIIF antes (tercer transitorio, con aviso a la CNBV y a la bolsa); las extranjeras pueden usar NIIF, US GAAP o la norma de su país (art. 79)."}
+  - {quien: "Entidades financieras que presentan estados financieros a la CNBV", norma: "Normas contables de las autoridades mexicanas competentes", desde: "2009-01-28", fuente: "CNBV, misma resolución, art. 78 tercer párrafo", url: "https://dof.gob.mx/nota_detalle_popup.php?codigo=5078507", cotejado: true}
+  - {quien: "Todas las demás entidades (pequeñas y medianas, personas físicas con contabilidad, despachos y sus clientes)", norma: "NIF del CINIF", fuente: "No hay norma que las obligue a NIIF: la CNBV sólo lo exige a las emisoras", cotejado: false, nota: "Ausencia de obligación: POR CONFIRMAR con un abogado o el CINIF; lo que sí es seguro es que la CUE de 2003 pedía NIF y la reforma de 2009 la cambió sólo para emisoras"}
+  - {quien: "Emisoras: información de sostenibilidad", norma: "NIIF S1 y S2 del ISSB (no son NIIF financieras)", fuente: "CNBV, Resolución que modifica las Disposiciones de carácter general aplicables a las emisoras de valores, art. 82 Bis; https://sidof.segob.gob.mx/notas/docFuente/5747872", url: "https://sidof.segob.gob.mx/notas/docFuente/5747872", cotejado: true}
+por_confirmar:
+  - "Lista oficial de la IFRS Foundation: no se pudo abrir ifrs.org. Cotejar números, títulos, estado (vigente o derogada) y fechas."
+  - "IFRS 18 e IFRS 19: vigencia 1-ene-2027 según búsquedas; falta verificar en la IFRS Foundation y si el CINIF las incorporará."
+  - "IFRS 20 (cuentas regulatorias): fuentes contradictorias sobre su existencia y vigencia; no se carga."
+  - "Mapeo de IAS 20, IAS 27, IAS 40, IAS 41 e IFRS 2 contra NIF: el índice de NIF no trae la serie E ni una NIF equivalente confirmada."
+  - "Fecha de entrada en vigor de las nuevas NIF B-1 y B-3 del CINIF (libro 2026): sólo en el libro de pago."
+niif:
+  - {id: "IAS 1", titulo: "Presentación de estados financieros", tema: "estados financieros", nif: "B-3, B-6, A-1", diferencia: "Mismo esquema general de estados financieros; detalles de presentación por revisar. La IFRS 18 la sustituye desde 2027 (POR CONFIRMAR)", estado: vigente_hasta_2026, cotejado: false}
+  - {id: "IAS 2", titulo: "Inventarios", tema: "activo", nif: "C-4", diferencia: "Costo o valor neto de realización; ambas prohíben el UEPS", estado: vigente, cotejado: false}
+  - {id: "IAS 7", titulo: "Estado de flujos de efectivo", tema: "estados financieros", nif: "B-2", diferencia: "Equivalentes en lo esencial (flujo directo o indirecto); clasificación de intereses y dividendos por revisar", estado: vigente, cotejado: false}
+  - {id: "IAS 8", titulo: "Políticas contables, cambios en estimaciones y errores", tema: "estados financieros", nif: "B-1", diferencia: "Equivalentes en lo esencial: cambios y errores se tratan retrospectivamente", estado: vigente, cotejado: false}
+  - {id: "IAS 10", titulo: "Hechos posteriores al periodo sobre el que se informa", tema: "revelación", nif: "B-13", diferencia: "Equivalentes: se ajustan los que dan evidencia de condiciones ya existentes", estado: vigente, cotejado: false}
+  - {id: "IAS 12", titulo: "Impuestos a las ganancias", tema: "resultados", nif: "D-4", diferencia: "Equivalentes: método de activos y pasivos (diferido); la NIF D-4 aplica a entidades lucrativas", estado: vigente, cotejado: false}
+  - {id: "IAS 16", titulo: "Propiedades, planta y equipo", tema: "activo", nif: "C-6", diferencia: "Costo o revaluación en IAS 16; la NIF C-6 sólo permite el modelo de costo", estado: vigente, cotejado: false}
+  - {id: "IAS 19", titulo: "Beneficios a los empleados", tema: "resultados", nif: "D-3", diferencia: "Muy cercanas; la NIF D-3 trata la PTU como beneficio a los empleados", estado: vigente, cotejado: false}
+  - {id: "IAS 20", titulo: "Subvenciones del gobierno e información a revelar sobre ayudas", tema: "resultados", nif: "", diferencia: "Sin equivalente directo en el índice de NIF: POR CONFIRMAR", estado: por_confirmar, cotejado: false}
+  - {id: "IAS 21", titulo: "Efectos de las variaciones en las tasas de cambio de la moneda extranjera", tema: "estados financieros", nif: "B-15", diferencia: "Equivalentes: moneda funcional, de registro y de informe", estado: vigente, cotejado: false}
+  - {id: "IAS 23", titulo: "Costos por préstamos", tema: "resultados", nif: "D-6", diferencia: "Ambas capitalizan el costo de financiamiento de activos calificables", estado: vigente, cotejado: false}
+  - {id: "IAS 24", titulo: "Información a revelar sobre partes relacionadas", tema: "revelación", nif: "C-13", diferencia: "Equivalentes en lo esencial", estado: vigente, cotejado: false}
+  - {id: "IAS 27", titulo: "Estados financieros separados", tema: "estados financieros", nif: "B-8, C-7", diferencia: "POR CONFIRMAR el mapeo exacto de NIF para estados separados", estado: por_confirmar, cotejado: false}
+  - {id: "IAS 28", titulo: "Inversiones en asociadas y negocios conjuntos", tema: "activo", nif: "C-7", diferencia: "Método de participación en ambas", estado: vigente, cotejado: false}
+  - {id: "IAS 29", titulo: "Información financiera en economías hiperinflacionarias", tema: "estados financieros", nif: "B-10", diferencia: "La NIF B-10 toma 8 % de inflación promedio anual como umbral del entorno inflacionario (Mejoras a las NIF 2023); la IAS 29 da indicios sin una cifra única", estado: vigente, cotejado: false}
+  - {id: "IAS 32", titulo: "Instrumentos financieros: presentación", tema: "pasivo y capital", nif: "C-12", diferencia: "Distinción entre pasivo y capital muy parecida", estado: vigente, cotejado: false}
+  - {id: "IAS 33", titulo: "Ganancias por acción", tema: "estados financieros", nif: "B-14", diferencia: "Equivalentes", estado: vigente, cotejado: false}
+  - {id: "IAS 34", titulo: "Información financiera intermedia", tema: "estados financieros", nif: "B-9", diferencia: "Equivalentes", estado: vigente, cotejado: false}
+  - {id: "IAS 36", titulo: "Deterioro del valor de los activos", tema: "activo", nif: "C-15", diferencia: "Equivalentes en lo esencial", estado: vigente, cotejado: false}
+  - {id: "IAS 37", titulo: "Provisiones, pasivos contingentes y activos contingentes", tema: "pasivo", nif: "C-9", diferencia: "Equivalentes; ver las precisiones de la Aclaración editorial del CINIF de 2025 a la C-9", estado: vigente, cotejado: false}
+  - {id: "IAS 38", titulo: "Activos intangibles", tema: "activo", nif: "C-8", diferencia: "La NIF C-8 no permite el modelo de revaluación", estado: vigente, cotejado: false}
+  - {id: "IAS 40", titulo: "Propiedades de inversión", tema: "activo", nif: "C-17", diferencia: "POR CONFIRMAR si la NIF C-17 admite el valor razonable como la IAS 40", estado: por_confirmar, cotejado: false}
+  - {id: "IAS 41", titulo: "Agricultura", tema: "activo", nif: "", diferencia: "La NIF equivalente (actividades agropecuarias) es de la serie E, que este índice aún no trae: POR CONFIRMAR", estado: por_confirmar, cotejado: false}
+  - {id: "IFRS 1", titulo: "Adopción por primera vez de las NIIF", tema: "adopción", nif: "", diferencia: "Sin equivalente directo: aplica a quien pasa a NIIF", estado: vigente, cotejado: false}
+  - {id: "IFRS 2", titulo: "Pagos basados en acciones", tema: "resultados", nif: "", diferencia: "Sin equivalente directo en el índice de NIF: POR CONFIRMAR", estado: por_confirmar, cotejado: false}
+  - {id: "IFRS 3", titulo: "Combinaciones de negocios", tema: "estados financieros", nif: "B-7", diferencia: "Equivalentes en lo esencial (método de adquisición)", estado: vigente, cotejado: false}
+  - {id: "IFRS 5", titulo: "Activos no corrientes mantenidos para la venta y operaciones discontinuadas", tema: "activo", nif: "B-11", diferencia: "Equivalentes", estado: vigente, cotejado: false}
+  - {id: "IFRS 6", titulo: "Exploración y evaluación de recursos minerales", tema: "activo", nif: "", diferencia: "Sin equivalente directo", estado: vigente, cotejado: false}
+  - {id: "IFRS 7", titulo: "Instrumentos financieros: información a revelar", tema: "revelación", nif: "C-2, C-3, C-10, C-16, C-19, C-20", diferencia: "Las NIF reparten las revelaciones en cada norma de instrumentos financieros", estado: vigente, cotejado: false}
+  - {id: "IFRS 8", titulo: "Segmentos de operación", tema: "revelación", nif: "B-5", diferencia: "Equivalentes", estado: vigente, cotejado: false}
+  - {id: "IFRS 9", titulo: "Instrumentos financieros", tema: "activo y pasivo", nif: "C-2, C-3, C-10, C-14, C-16, C-19, C-20", diferencia: "Las NIF lo parten en varias normas; el modelo de pérdida esperada es parecido", estado: vigente, cotejado: false}
+  - {id: "IFRS 10", titulo: "Estados financieros consolidados", tema: "estados financieros", nif: "B-8", diferencia: "Control como base de consolidación en ambas", estado: vigente, cotejado: false}
+  - {id: "IFRS 11", titulo: "Acuerdos conjuntos", tema: "activo", nif: "C-21", diferencia: "Operación conjunta y negocio conjunto en ambas", estado: vigente, cotejado: false}
+  - {id: "IFRS 12", titulo: "Información a revelar sobre participaciones en otras entidades", tema: "revelación", nif: "B-8, C-7, C-21", diferencia: "Las NIF reparten las revelaciones entre B-8, C-7 y C-21", estado: vigente, cotejado: false}
+  - {id: "IFRS 13", titulo: "Medición del valor razonable", tema: "valuación", nif: "B-17", diferencia: "Equivalentes", estado: vigente, cotejado: false}
+  - {id: "IFRS 14", titulo: "Cuentas regulatorias diferidas", tema: "activo", nif: "", diferencia: "Sin equivalente directo (norma opcional y transitoria)", estado: vigente, cotejado: false}
+  - {id: "IFRS 15", titulo: "Ingresos de actividades ordinarias procedentes de contratos con clientes", tema: "resultados", nif: "D-1, D-2", diferencia: "Mismo modelo de cinco pasos", estado: vigente, cotejado: false}
+  - {id: "IFRS 16", titulo: "Arrendamientos", tema: "resultados", nif: "D-5", diferencia: "Mismo modelo de derecho de uso para el arrendatario", estado: vigente, cotejado: false}
+  - {id: "IFRS 17", titulo: "Contratos de seguros", tema: "resultados", nif: "", diferencia: "Sin NIF equivalente en el índice; las aseguradoras siguen la normativa de la CNSF", estado: vigente, cotejado: false}
+  - {id: "IFRS 18", titulo: "Presentación e información a revelar en los estados financieros", tema: "estados financieros", nif: "B-3", diferencia: "Sustituye a la IAS 1; vigencia 1-ene-2027 según la IFRS Foundation (no abierta desde aquí): POR CONFIRMAR", estado: por_confirmar, cotejado: false}
+  - {id: "IFRS 19", titulo: "Subsidiarias sin obligación pública de rendir cuentas: información a revelar", tema: "revelación", nif: "", diferencia: "Opcional para subsidiarias; vigencia 1-ene-2027: POR CONFIRMAR", estado: por_confirmar, cotejado: false}
