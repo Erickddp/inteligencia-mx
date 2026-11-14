@@ -250,6 +250,70 @@ parametros:
         estado: aprobado_congreso_pendiente_dof
         fuente: "Reforma LISR 2027: Senado 27-oct-2026, Diputados 3-nov-2026; pendiente de DOF"
 
+  RESICO_PM_INVERSIONES:
+    nombre: Porcientos máximos de deducción de inversiones en RESICO personas morales (art. 209)
+    tipo: tabla
+    columnas: [tipo_bien, tasa]
+    citas: [{ley: LISR, articulo: "209"}]
+    que_dice: "La persona moral en RESICO deduce cada tipo de inversión con su porcentaje máximo del art. 209, más alto que el del art. 34 (construcciones 13 %, cómputo 50 %)."
+    correcto_si: "El porcentaje coincide con el apartado A, B o C del art. 209 para ese bien o, en maquinaria, para la actividad en que se usa."
+    valores:
+      - desde: "2022-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        fuente: "LISR art. 209, apartados A, B y C (capítulo XII del título VII, adicionado DOF 12-11-2021); texto de la Cámara de Diputados, cotejo con el DOF pendiente (M-102)"
+        valor:
+          - ["cargos_diferidos", "5"]
+          - ["periodos_preoperativos", "10"]
+          - ["regalias_asistencia_otros_diferidos", "15"]
+          - ["construcciones_monumento_restaurado", "20"]
+          - ["construcciones", "13"]
+          - ["ferrocarril_bombas_combustible", "10"]
+          - ["ferrocarril_vias", "10"]
+          - ["ferrocarril_carros_locomotoras", "10"]
+          - ["ferrocarril_maquinaria_vias", "20"]
+          - ["ferrocarril_comunicacion_senalizacion", "20"]
+          - ["mobiliario_equipo_oficina", "25"]
+          - ["embarcaciones", "20"]
+          - ["aviones_aerofumigacion", "25"]
+          - ["aviones", "20"]
+          - ["automoviles", "25"]
+          - ["equipo_computo", "50"]
+          - ["dados_troqueles_moldes_herramienta", "50"]
+          - ["semovientes_vegetales", "100"]
+          - ["telefonia_torres_cables", "10"]
+          - ["telefonia_radio", "20"]
+          - ["telefonia_transmision", "20"]
+          - ["telefonia_conmutacion", "25"]
+          - ["telefonia_otros", "20"]
+          - ["satelital_espacio", "20"]
+          - ["satelital_tierra", "20"]
+          - ["adaptaciones_discapacidad", "100"]
+          - ["energia_renovable_cogeneracion", "100"]
+          - ["bicicletas_motos_electricas", "50"]
+          - ["maquinaria_electricidad_granos_azucar_aceites_maritimo", "20"]
+          - ["maquinaria_metal_primer_proceso_tabaco_carbon", "10"]
+          - ["maquinaria_pulpa_papel", "13"]
+          - ["maquinaria_vehiculos_metal_alimentos_bebidas", "13"]
+          - ["maquinaria_piel_quimicos_caucho_plastico_imprenta", "20"]
+          - ["maquinaria_transporte_electrico_hidrocarburos", "20"]
+          - ["maquinaria_textil_vestido", "25"]
+          - ["maquinaria_mineria_aeronaves_transporte_terrestre", "25"]
+          - ["maquinaria_transporte_aereo_radio_tv", "25"]
+          - ["maquinaria_restaurantes", "33"]
+          - ["maquinaria_construccion_agro", "25"]
+          - ["maquinaria_investigacion_desarrollo", "35"]
+          - ["maquinaria_componentes_computo", "50"]
+          - ["maquinaria_otras_actividades", "20"]
+  RESICO_PM_INVERSIONES_TOPE:
+    nombre: Monto total de inversiones del ejercicio hasta el cual la RESICO PM usa los porcientos del art. 209
+    tipo: importe
+    citas: [{ley: LISR, articulo: "209"}]
+    que_dice: "Los porcentajes del art. 209 sólo valen si lo invertido en el año no pasa de 3 millones; si pasa, se usan los del título II."
+    correcto_si: "Se compara el total de inversiones del ejercicio contra 3,000,000: hasta esa cantidad, art. 209; arriba, arts. 33 a 35."
+    valores:
+      - {valor: "3000000.00", desde: "2022-01-01", hasta: null, confirmado_hasta: "2026-12-31", fuente: "LISR art. 209, primer párrafo: si las inversiones del ejercicio exceden 3 millones se aplican los porcientos del título II (arts. 33 a 35)"}
+
   # ───────────────────────── ISR personas morales y otros ─────────────────────────
   ISR_PM_TASA:
     nombre: Tasa ISR personas morales
