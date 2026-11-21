@@ -71,6 +71,8 @@ R-177,"Vencimiento recorrido al siguiente día hábil (CFF 12, quinto párrafo),
 R-178,Plazo en días hábiles contado desde que surte efectos la notificación (CFF 12),NUEVA,2,plazo_dias_habiles,4,CFF_DIAS_INHABILES,2,si,"CFF art. 12, primer y segundo párrafos; RMF 2026 regla 2.1.6 y modificaciones; serie dias_inhabiles"
 R-179,"Deducción inmediata de bienes nuevos, Plan México 2027-2030 (incluye RESICO PM)",NUEVA,3,deduccion_inmediata,8,DEDUCCION_INMEDIATA_PLAN_MEXICO,0,si,"Decreto por el que se reforma la LISR, DOF 13-nov-2026 (nota 5803758), art. Segundo fr. I incisos a) a d)"
 R-18,Saldo a favor solicitado en devolución vs acreditado,OK,2,,0,,0,no,
+R-180,RESICO PF: declaración anual (tabla anual del 113-F),NUEVA,3,resico_pf_anual,6,RESICO_PF_TABLA_ANUAL;RESICO_PF_TOPE_ANUAL;RESICO_PF_RETENCION_PM,3,si,"LISR art. 113-F (tabla anual y acreditamiento de pagos mensuales y retenciones del 113-J); texto de la Cámara de Diputados, sin cotejar con el DOF"
+R-181,RESICO PF: cuándo deja de aplicar el régimen y desde qué fecha,NUEVA,3,resico_pf_salida,8,RESICO_PF_TOPE_ANUAL,4,si,"LISR art. 113-E (tercer y séptimo párrafos) y 113-I; RMF 2026 regla 3.13.5 (el texto sale del Word del DOF, sin revisión humana)"
 R-19,IVA de importaciones (pedimentos),NUEVA,2,,0,,0,no,
 R-20,Provisional 612 con tarifa acumulada oficial,OK,3,isr_art96_acumulada,3,ISR_TARIFA_MENSUAL;ISR_TARIFA_ACUMULADA_106;ISR_TARIFA_ANUAL,1,si,LISR art. 106; Anexo 8 RMF 2026 apartado B fr. VI (PDF oficial)
 R-21,Provisional 606 arrendamiento,CORREGIR,3,,0,ARREND_DEDUCCION_CIEGA_PCT;ARREND_TRIMESTRAL_VECES_UMA;ISR_RET_ARRENDAMIENTO_PM;ISR_TARIFA_MENSUAL;UMA_MENSUAL,0,no,

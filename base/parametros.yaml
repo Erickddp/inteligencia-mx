@@ -222,6 +222,36 @@ parametros:
           - ["5000000.00", "2.50"]
     firma: {validado: false, por: null, fecha: null}
 
+  RESICO_PF_TABLA_ANUAL:
+    nombre: Tasas RESICO PF sobre ingreso ANUAL cobrado sin IVA (declaración anual; tasa al total, no por excedente)
+    tipo: tabla
+    columnas: [hasta_ingreso_anual, tasa]
+    citas: [{ley: LISR, articulo: "113-f"}]
+    que_dice: "En la declaración anual del RESICO de personas físicas se aplica una tasa sobre TODO el ingreso del año cobrado sin IVA; la tasa sube por tramos anuales propios (300 mil, 600 mil, 1 M, 2.5 M, tope), que no son la tabla mensual multiplicada por 12."
+    correcto_si: "La tasa es la del primer renglón cuyo límite alcanza el ingreso anual y se aplica a todo el ingreso, sin deducciones; contra el resultado se restan los pagos mensuales y las retenciones del art. 113-J."
+    valores:
+      - desde: "2022-01-01"
+        hasta: "2026-12-31"
+        fuente: "LISR art. 113-F, TABLA ANUAL (texto de la Cámara de Diputados, última reforma DOF 01-abr-2024; el artículo se adicionó en el DOF 12-nov-2021)"
+        valor:
+          - ["300000.00",  "1.00"]
+          - ["600000.00",  "1.10"]
+          - ["1000000.00", "1.50"]
+          - ["2500000.00", "2.00"]
+          - ["3500000.00", "2.50"]
+      - desde: "2027-01-01"
+        hasta: null
+        confirmado_hasta: "2027-12-31"
+        estado: por_confirmar
+        fuente: "LISR art. 113-F, TABLA ANUAL. POR CONFIRMAR: el Decreto DOF 13-nov-2026 (nota 5803758) sube a 5,000,000.00 el tope de 113-E y el último renglón de su TABLA MENSUAL; el texto del decreto sobre la TABLA ANUAL no está en la biblioteca. Se supone que sólo cambia el último renglón (a 5,000,000.00) para igualar el tope; una persona debe leer el decreto antes de firmar"
+        valor:
+          - ["300000.00",  "1.00"]
+          - ["600000.00",  "1.10"]
+          - ["1000000.00", "1.50"]
+          - ["2500000.00", "2.00"]
+          - ["5000000.00", "2.50"]
+    firma: {validado: false, por: null, fecha: null}
+
   RESICO_PF_TOPE_ANUAL:
     nombre: Tope de ingresos anuales RESICO PF
     tipo: importe

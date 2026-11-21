@@ -1306,3 +1306,44 @@ reglas:
       - {nombre: "Mobiliario de oficina: excluido", fecha: "2027-03-31", entradas: {monto: "50000", tipo_bien: mobiliario_equipo_oficina, adquisicion: "2027-03-15"}, espera_error: SinValor}
       - {nombre: "Sin constancia del Comité: no aplica", fecha: "2027-03-31", entradas: {monto: "100000", tipo_bien: equipo_computo, adquisicion: "2027-03-15", constancia: "no"}, espera_error: SinValor}
       - {nombre: "RESICO PF: no está en el decreto", fecha: "2027-03-31", entradas: {monto: "100000", tipo_bien: equipo_computo, adquisicion: "2027-03-15", regimen: resico_pf}, espera_error: SinValor}
+
+  # ───────────── M. Pedido 06 de Timbra: bloque 1, RESICO persona física anual ─────────────
+  - id: R-180
+    nombre: "RESICO PF: declaración anual (tabla anual del 113-F)"
+    estado: NUEVA
+    fase: 3
+    parametros: [RESICO_PF_TABLA_ANUAL, RESICO_PF_TOPE_ANUAL, RESICO_PF_RETENCION_PM]
+    calculadora: resico_pf_anual
+    citas: [{ley: LISR, articulo: "113-f"}, {ley: LISR, articulo: "113-e"}, {ley: LISR, articulo: "113-j"}]
+    fuente: "LISR art. 113-F (tabla anual y acreditamiento de pagos mensuales y retenciones del 113-J); texto de la Cámara de Diputados, sin cotejar con el DOF"
+    que_dice: "En abril, el RESICO de personas físicas declara el año: aplica la tasa de la tabla ANUAL sobre todo lo cobrado en el año sin IVA, y le resta lo que ya pagó cada mes y lo que le retuvieron las personas morales."
+    correcto_si: "La tasa sale de la tabla anual (300 mil, 600 mil, 1 M, 2.5 M y el tope), no de la mensual por 12; se aplica a todo el ingreso, sin deducciones; el saldo es el ISR anual menos pagos mensuales y retenciones (a cargo o a favor)."
+    hallazgo: "Las dos tablas casi nunca dan lo mismo que sumar los pagos mensuales: la mensual brinca de tasa por mes y la anual por año, por eso puede haber saldo a cargo o a favor. Si el ingreso rebasa el último renglón la calculadora avisa (SinValor): el contribuyente ya salió del régimen (R-181). El tramo 2027 es por_confirmar: sólo está leído el artículo 113-E reformado por el DOF 13-nov-2026, no su 113-F. Para Motor626PF.anual de Timbra."
+    casos:
+      - {nombre: "900,000 anuales: tasa 1.50 %", fecha: "2026-12-31", entradas: {ingresos_del_anio: "900000.00", pagos_mensuales: "11000.00", retenciones: "1000.00"}, esperado: {isr_anual: "13500.00", a_cargo: "1500.00", a_favor: "0.00"}}
+      - {nombre: "3,000,000 anuales: tasa 2.50 %, queda saldo a favor", fecha: "2026-12-31", entradas: {ingresos_del_anio: "3000000.00", pagos_mensuales: "70000.00", retenciones: "7500.00"}, esperado: {isr_anual: "75000.00", a_cargo: "0.00", a_favor: "2500.00"}}
+      - {nombre: "Límite exacto 1,000,000: todavía 1.50 %", fecha: "2026-12-31", entradas: {ingresos_del_anio: "1000000.00", pagos_mensuales: "15000.00"}, esperado: {isr_anual: "15000.00", a_cargo: "0.00", a_favor: "0.00"}}
+      - {nombre: "Un centavo arriba: brinca a 2.00 % sobre TODO", fecha: "2026-12-31", entradas: {ingresos_del_anio: "1000000.01"}, esperado: {isr_anual: "20000.00", a_cargo: "20000.00", a_favor: "0.00"}}
+      - {nombre: "Rebasa el tope de 3.5 M en 2026: sin tasa", fecha: "2026-12-31", entradas: {ingresos_del_anio: "3500000.01"}, espera_error: SinValor}
+      - {nombre: "2027 (tope 5 M, tabla anual por confirmar): 4 M a 2.50 %", fecha: "2027-12-31", entradas: {ingresos_del_anio: "4000000.00"}, esperado: {isr_anual: "100000.00", a_cargo: "100000.00", a_favor: "0.00"}, confirmado: false}
+
+  - id: R-181
+    nombre: "RESICO PF: cuándo deja de aplicar el régimen y desde qué fecha"
+    estado: NUEVA
+    fase: 3
+    parametros: [RESICO_PF_TOPE_ANUAL]
+    calculadora: resico_pf_salida
+    citas: [{ley: LISR, articulo: "113-e"}, {ley: LISR, articulo: "113-g"}, {ley: LISR, articulo: "113-i"}, {ley: RMF, anio: "2026", articulo: "3.13.5"}]
+    fuente: "LISR art. 113-E (tercer y séptimo párrafos) y 113-I; RMF 2026 regla 3.13.5 (el texto sale del Word del DOF, sin revisión humana)"
+    que_dice: "Quien rebasa el tope de ingresos del año, incumple sus obligaciones, omite tres o más pagos mensuales o no presenta su anual, deja el RESICO a partir del mes siguiente. Si salió por rebasar el tope, puede volver cuando el año anterior no pasó del tope y está al corriente; si salió por incumplir, ya no vuelve."
+    correcto_si: "La fecha de salida es el día 1 del mes siguiente al del supuesto; el tope es el de la fecha (3.5 M hasta 2026, 5 M desde 2027) y se compara con lo acumulado en el año; tres omisiones (no dos) o falta de anual ya son salida."
+    hallazgo: "La fecha del supuesto es la `fecha` del caso. La ley (113-E tercer párrafo) dice «a partir del mes siguiente a la fecha en que tales ingresos excedan»; la regla 3.13.5 de la RMF 2026 lo extiende a cualquiera de los supuestos del párrafo. POR CONFIRMAR: que las omisiones del 113-I salgan también al mes siguiente (el 113-I no trae fecha) y que no puedan volver (se aplica el séptimo párrafo del 113-E, «incumplimiento de sus obligaciones fiscales»). Qué hacer con los pagos ya hechos lo dice la regla 3.13.5 (opciones I y II) y no se calcula aquí. Para Motor626PF."
+    casos:
+      - {nombre: "Rebasa 3.5 M en julio de 2026: sale desde agosto", fecha: "2026-07-15", entradas: {motivo: tope, ingresos_acumulados: "3600000.00"}, esperado: {sale: "si", deja_de_aplicar_desde: "2026-08-01", puede_volver: si_condicionado}}
+      - {nombre: "Límite: exactamente 3.5 M no rebasa", fecha: "2026-07-15", entradas: {motivo: tope, ingresos_acumulados: "3500000.00"}, esperado: {sale: "no", deja_de_aplicar_desde: "", puede_volver: ""}}
+      - {nombre: "Rebasa en diciembre: sale desde enero del año siguiente", fecha: "2026-12-20", entradas: {motivo: tope, ingresos_acumulados: "3500000.01"}, esperado: {sale: "si", deja_de_aplicar_desde: "2027-01-01", puede_volver: si_condicionado}}
+      - {nombre: "2027: 4.8 M ya no rebasa (tope 5 M)", fecha: "2027-09-10", entradas: {motivo: tope, ingresos_acumulados: "4800000.00"}, esperado: {sale: "no", deja_de_aplicar_desde: "", puede_volver: ""}}
+      - {nombre: "Tres pagos mensuales omitidos: sale y no vuelve", fecha: "2026-10-31", entradas: {motivo: omision_pagos, pagos_omitidos: "3"}, esperado: {sale: "si", deja_de_aplicar_desde: "2026-11-01", puede_volver: "no"}}
+      - {nombre: "Dos pagos omitidos: todavía no", fecha: "2026-10-31", entradas: {motivo: omision_pagos, pagos_omitidos: "2"}, esperado: {sale: "no", deja_de_aplicar_desde: "", puede_volver: ""}}
+      - {nombre: "Sin declaración anual: sale", fecha: "2026-05-01", entradas: {motivo: omision_pagos, anual_presentada: "no"}, esperado: {sale: "si", deja_de_aplicar_desde: "2026-06-01", puede_volver: "no"}}
+      - {nombre: "Incumple obligaciones del 113-G: sale y no vuelve", fecha: "2026-03-10", entradas: {motivo: incumplimiento_obligaciones}, esperado: {sale: "si", deja_de_aplicar_desde: "2026-04-01", puede_volver: "no"}}

@@ -958,6 +958,44 @@ def calc_poliza_cobro_terminal(b, f, bruto, comision, iva_comision="0", con_cfdi
                     ("D", "iva_trasladado_no_cobrado", iva_cob), ("H", "clientes", bruto), ("H", "iva_trasladado_cobrado", iva_cob)])
 
 
+# ---------- RESICO persona física: anual y salida del régimen (pedido 06, bloque 1) ----------
+def calc_resico_pf_anual(b, f, ingresos_del_anio, pagos_mensuales="0", retenciones="0"):
+    """LISR 113-F: tasa de la TABLA ANUAL (no la mensual × 12) sobre el total del ingreso del año cobrado sin IVA y sin deducciones.
+    Contra el resultado se restan los pagos mensuales (113-E) y las retenciones de las personas morales (113-J).
+    Si el ingreso rebasa el último renglón, el contribuyente ya no estaba en el régimen: SinValor, no se inventa una tasa."""
+    ingreso = D(ingresos_del_anio)
+    for hasta, tasa in b.valor("RESICO_PF_TABLA_ANUAL", f):
+        if ingreso <= hasta:
+            isr = red(ingreso * tasa / 100)
+            acreditable = D(pagos_mensuales) + D(retenciones)
+            return {"isr_anual": str(isr), "a_cargo": str(red(max(isr - acreditable, D(0)))),
+                    "a_favor": str(red(max(acreditable - isr, D(0))))}
+    raise SinValor("El ingreso anual rebasa la tabla de RESICO PF: ya no corresponde el régimen (113-E)")
+
+
+def _primer_dia_mes_siguiente(f):
+    d = dt.date.fromisoformat(f)
+    return (d.replace(day=1) + dt.timedelta(days=32)).replace(day=1).isoformat()
+
+
+def calc_resico_pf_salida(b, f, motivo, ingresos_acumulados="0", pagos_omitidos="0", anual_presentada="si"):
+    """LISR 113-E (tercer y séptimo párrafos), 113-I y RMF 2026 regla 3.13.5: el régimen deja de aplicar a partir del mes siguiente a aquel en
+    que se actualiza el supuesto (`f` es la fecha del supuesto). motivo: tope (ingresos del año acumulados rebasan el tope de la fecha),
+    incumplimiento_obligaciones (113-G) u omision_pagos (113-I: tres o más pagos mensuales omitidos en el año o sin declaración anual).
+    Volver: tras rebasar el tope sí, si el ejercicio anterior no pasó del tope y está al corriente; tras incumplir, nunca."""
+    if motivo == "tope":
+        sale = D(ingresos_acumulados) > b.valor("RESICO_PF_TOPE_ANUAL", f)
+        volver = "si_condicionado"
+    elif motivo == "incumplimiento_obligaciones":
+        sale, volver = True, "no"
+    elif motivo == "omision_pagos":
+        sale, volver = int(pagos_omitidos) >= 3 or anual_presentada == "no", "no"
+    else:
+        raise ValueError("motivo debe ser tope, incumplimiento_obligaciones u omision_pagos")
+    return {"sale": "si" if sale else "no", "deja_de_aplicar_desde": _primer_dia_mes_siguiente(f) if sale else "",
+            "puede_volver": volver if sale else ""}
+
+
 CALC = {k[5:]: v for k, v in globals().items() if k.startswith("calc_")}
 
 

@@ -20,8 +20,8 @@
     "formula",
     "fuente_ultimo"
    ],
-   "filas": 132,
-   "sha256": "2c2d7c1d0efe2cb82d20837baf5e7f7149222ffee404e614543cc00355fced3d"
+   "filas": 133,
+   "sha256": "c8584582e4ada6d4fefdceeafc7728f74ad4de4e09a306316204708911501912"
   },
   "reglas.csv": {
    "descripcion": "Cada regla R-xx con su estado, calculadora, número de casos y citas.",
@@ -37,8 +37,8 @@
     "tiene_que_dice",
     "fuente"
    ],
-   "filas": 114,
-   "sha256": "5343be06671459baa7e0f6c320b72bd5cee17c59c875b747c989cd6ac286fd17"
+   "filas": 116,
+   "sha256": "ae93977666fdc22b18e2a069b0f81ed5937c0b12ae74435190b0cfa4320218c1"
   },
   "leyes.csv": {
    "descripcion": "Cada ley, código o reglamento de la biblioteca con su ámbito, materia, huella y si tiene cotejo humano.",
@@ -69,8 +69,8 @@
     "articulo",
     "existe_en_biblioteca"
    ],
-   "filas": 174,
-   "sha256": "6e7c04be9e56e072667b1dd934ca2fdba3c2a9143182ac8cae225eafe8b70ad9"
+   "filas": 182,
+   "sha256": "93bf7bdd6969960af1abf39ef42275ab2ccb95ea0973e2700b8613361e77f88e"
   },
   "cotejo_pendiente.csv": {
    "descripcion": "Artículos citados por la base que nadie ha cotejado con el diario oficial, por prioridad.",
@@ -82,8 +82,8 @@
     "origenes",
     "cotejado"
    ],
-   "filas": 80,
-   "sha256": "744fe2c046b47e1ae1d03d27ba2e27f1e3373ab741b5325c13800581b25e0e2c"
+   "filas": 81,
+   "sha256": "f676125797492b254067b8029f449856ed549055c18704d1f10d09d94ba00e2b"
   },
   "nif.csv": {
    "descripcion": "Índice de las NIF (sin texto, que es del CINIF): si se cotejó, contra qué documento del CINIF y qué reglas o parámetros la citan.",
