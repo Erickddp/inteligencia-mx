@@ -996,6 +996,54 @@ def calc_resico_pf_salida(b, f, motivo, ingresos_acumulados="0", pagos_omitidos=
             "puede_volver": volver if sale else ""}
 
 
+# ---------- personas morales: coeficiente, pérdidas y anual del RESICO PM (pedido 06, bloque 2) ----------
+def calc_coeficiente_utilidad(b, f, utilidad_fiscal, ingresos_nominales, ptu_pagada="0", perdidas_aplicadas="0"):
+    """LISR 14 fr. I y RLISR 10: coeficiente = utilidad fiscal del ejercicio ÷ ingresos nominales, hasta el diezmilésimo.
+    `utilidad_fiscal` entra ANTES de la PTU pagada y de las pérdidas de ejercicios anteriores: la utilidad fiscal del art. 9 fr. I ya
+    resta la PTU pagada; las pérdidas de ejercicios anteriores se restan hasta la fr. II (resultado fiscal) y NO entran al coeficiente.
+    Pérdida fiscal del ejercicio (utilidad ≤ 0) o sin ingresos: no resulta coeficiente (0.0000) y se usa el último con coeficiente.
+    El redondeo es el de siempre (mitad hacia arriba); «hasta el diezmilésimo» no dice si trunca (POR CONFIRMAR)."""
+    utilidad, ingresos = D(utilidad_fiscal) - D(ptu_pagada), D(ingresos_nominales)
+    cu = red(utilidad / ingresos, 4) if utilidad > 0 and ingresos > 0 else D("0.0000")
+    return {"coeficiente": str(cu), "utilidad_fiscal": str(red(utilidad)),
+            "resultado_fiscal": str(red(max(utilidad - D(perdidas_aplicadas), D(0))))}
+
+
+def calc_coeficiente_aplicable(b, f, ejercicio_pagos, coeficientes):
+    """LISR 14 fr. I, último párrafo: el coeficiente es el del último ejercicio de doce meses (ejercicio_pagos − 1); si ese no resulta,
+    el del último ejercicio con coeficiente, sin que sea anterior en más de cinco años al ejercicio de los pagos.
+    `coeficientes` es una lista de [ejercicio, coeficiente]; un coeficiente 0 es «no resultó»."""
+    y = int(ejercicio_pagos)
+    for ej, cu in sorted(((int(e), D(str(c))) for e, c in coeficientes), reverse=True):
+        if ej < y and cu > 0:
+            if ej < y - 5:
+                break
+            return {"coeficiente": str(red(cu, 4)), "ejercicio": str(ej)}
+    raise SinValor("Ningún ejercicio con coeficiente dentro de los cinco años anteriores: la app debe avisar, no inventar")
+
+
+def calc_perdida_fiscal_actualizada(b, f, perdida, ejercicio_perdida, ejercicio_aplicacion):
+    """LISR 57 (ejercicios de enero a diciembre): la pérdida se actualiza de julio a diciembre de su ejercicio y lo pendiente, del
+    mes de la última actualización (diciembre) al último mes de la primera mitad del ejercicio en que se aplica (junio). Cada factor
+    es el de CFF 17-A con el INPC real de la serie. Sólo se aplica contra las utilidades de los diez ejercicios siguientes."""
+    o, a = int(ejercicio_perdida), int(ejercicio_aplicacion)
+    if not o < a <= o + 10:
+        raise SinValor("La pérdida fiscal sólo se aplica en los diez ejercicios siguientes al que ocurrió (LISR 57)")
+    p1 = calc_actualizacion_inpc(b, f, perdida, f"{o}-07-01", f"{o}-12-01")
+    p2 = calc_actualizacion_inpc(b, f, p1["monto_actualizado"], f"{o}-12-01", f"{a}-06-01")
+    return {"factor_primer_periodo": p1["factor"], "factor_segundo_periodo": p2["factor"], "perdida_actualizada": p2["monto_actualizado"]}
+
+
+def calc_resico_pm_anual(b, f, ingresos_percibidos, deducciones_erogadas, ptu_pagada="0", perdidas_anteriores="0",
+                         pagos_provisionales="0", retenciones="0", impuesto_acreditable_5_10="0"):
+    """LISR 212 (con 207, 208, 210 y 211): el impuesto del ejercicio se calcula con el art. 9 sobre ingresos efectivamente percibidos menos
+    deducciones efectivamente erogadas (inversiones con los porcientos del 209) y PTU pagada, menos pérdidas de ejercicios anteriores
+    (ya actualizadas). Es el mismo acumulado de diciembre del pago provisional (211); lo propio de la anual es acreditar, además de los
+    pagos provisionales, el impuesto acreditable de los arts. 5 y 10. No hay coeficiente de utilidad ni ajuste anual por inflación."""
+    return calc_isr_anual_pm(b, f, ingresos_percibidos, deducciones_erogadas, ptu_pagada, perdidas_anteriores, pagos_provisionales,
+                             str(D(retenciones) + D(impuesto_acreditable_5_10)))
+
+
 CALC = {k[5:]: v for k, v in globals().items() if k.startswith("calc_")}
 
 

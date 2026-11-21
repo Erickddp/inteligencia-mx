@@ -37,8 +37,8 @@
     "tiene_que_dice",
     "fuente"
    ],
-   "filas": 116,
-   "sha256": "ae93977666fdc22b18e2a069b0f81ed5937c0b12ae74435190b0cfa4320218c1"
+   "filas": 120,
+   "sha256": "d532f6926564bd685218ba78357b9ff9b23a07903e98b8ad855c2019d95e6fce"
   },
   "leyes.csv": {
    "descripcion": "Cada ley, código o reglamento de la biblioteca con su ámbito, materia, huella y si tiene cotejo humano.",
@@ -69,8 +69,8 @@
     "articulo",
     "existe_en_biblioteca"
    ],
-   "filas": 182,
-   "sha256": "93bf7bdd6969960af1abf39ef42275ab2ccb95ea0973e2700b8613361e77f88e"
+   "filas": 195,
+   "sha256": "4ede69300ee9ea45158c359673bfc6c11255de8703eda6825eb85ba921167507"
   },
   "cotejo_pendiente.csv": {
    "descripcion": "Artículos citados por la base que nadie ha cotejado con el diario oficial, por prioridad.",
@@ -82,8 +82,8 @@
     "origenes",
     "cotejado"
    ],
-   "filas": 81,
-   "sha256": "f676125797492b254067b8029f449856ed549055c18704d1f10d09d94ba00e2b"
+   "filas": 84,
+   "sha256": "a905229247e54a1e74d93de8442e0f047269d22f43dbc5ce24e361579c6391a3"
   },
   "nif.csv": {
    "descripcion": "Índice de las NIF (sin texto, que es del CINIF): si se cotejó, contra qué documento del CINIF y qué reglas o parámetros la citan.",

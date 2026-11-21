@@ -556,6 +556,10 @@ reglas:
     casos:
       - {nombre: "CU 0.12, junio, ingresos 6 M, PTU 160 mil, previos 150 mil", fecha: "2026-06-30", entradas: {cu: "0.1200", ingresos: "6000000", mes: 6, ptu: "160000", pagos_previos: "150000"}, esperado: "54000.00"}
       - {nombre: "Abril: no resta PTU", fecha: "2026-04-30", entradas: {cu: "0.1200", ingresos: "4000000", mes: 4, ptu: "160000"}, esperado: "144000.00"}
+      - {nombre: "Mayo: la PTU entra por primera vez (1/8 de 160 mil = 20 mil)", fecha: "2026-05-31", entradas: {cu: "0.1200", ingresos: "5000000", mes: 5, ptu: "160000", pagos_previos: "120000"}, esperado: "54000.00"}
+      - {nombre: "Diciembre: ya se restó toda la PTU (8/8 = 160 mil)", fecha: "2026-12-31", entradas: {cu: "0.1200", ingresos: "12000000", mes: 12, ptu: "160000", pagos_previos: "330000"}, esperado: "54000.00"}
+      - {nombre: "Pérdida de 2023 (500 mil) ya actualizada a 2025 = 546,021.52 (R-184)", fecha: "2025-06-30", entradas: {cu: "0.1200", ingresos: "6000000", mes: 6, perdidas: "546021.52"}, esperado: "52193.54"}
+      - {nombre: "Límite: la pérdida absorbe toda la utilidad del periodo, pago en cero", fecha: "2025-06-30", entradas: {cu: "0.1200", ingresos: "6000000", mes: 6, perdidas: "720000.00"}, esperado: "0.00"}
 
   - id: R-103
     nombre: Estímulo ISR región fronteriza (ampliada)
@@ -1347,3 +1351,75 @@ reglas:
       - {nombre: "Dos pagos omitidos: todavía no", fecha: "2026-10-31", entradas: {motivo: omision_pagos, pagos_omitidos: "2"}, esperado: {sale: "no", deja_de_aplicar_desde: "", puede_volver: ""}}
       - {nombre: "Sin declaración anual: sale", fecha: "2026-05-01", entradas: {motivo: omision_pagos, anual_presentada: "no"}, esperado: {sale: "si", deja_de_aplicar_desde: "2026-06-01", puede_volver: "no"}}
       - {nombre: "Incumple obligaciones del 113-G: sale y no vuelve", fecha: "2026-03-10", entradas: {motivo: incumplimiento_obligaciones}, esperado: {sale: "si", deja_de_aplicar_desde: "2026-04-01", puede_volver: "no"}}
+
+  # ───────────── N. Pedido 06 de Timbra: bloque 2, personas morales (601 y 626 PM) ─────────────
+  - id: R-182
+    nombre: "Coeficiente de utilidad del ejercicio (para los pagos provisionales del siguiente)"
+    estado: NUEVA
+    fase: 3
+    parametros: [ISR_PM_TASA]
+    calculadora: coeficiente_utilidad
+    citas: [{ley: LISR, articulo: "14"}, {ley: LISR, articulo: "9"}, {ley: RLISR, articulo: "10"}]
+    fuente: "LISR art. 14 fr. I y art. 9 fr. I; RLISR art. 10 (calcula el coeficiente «hasta el diezmilésimo»); textos de la Cámara de Diputados, sin cotejar con el DOF"
+    que_dice: "El coeficiente de utilidad es la utilidad fiscal del ejercicio entre sus ingresos nominales, con cuatro decimales; si el ejercicio tuvo pérdida fiscal no hay coeficiente y se usa el del último año que sí lo tuvo."
+    correcto_si: "La utilidad es la del art. 9 fr. I (ingresos acumulables menos deducciones y menos la PTU pagada); las pérdidas de ejercicios anteriores NO se restan en el coeficiente; pérdida o ingresos en cero dan 0.0000; son cuatro decimales."
+    hallazgo: "`utilidad_fiscal` entra ANTES de PTU pagada y de pérdidas: la calculadora resta la PTU y reporta el resultado fiscal (después de pérdidas) para la declaración, pero el coeficiente no cambia con `perdidas_aplicadas` (el art. 14 fr. I habla de la «utilidad fiscal» y las pérdidas se restan hasta la fr. II del art. 9). Ingresos nominales = ingresos acumulables sin el ajuste anual por inflación (art. 14, penúltimo párrafo); se calculan fuera. POR CONFIRMAR por una persona: RLISR 10 dice «hasta el diezmilésimo» sin decir si se redondea o se trunca (aquí: redondeo, igual que R-114). Para Motor601.anual de Timbra."
+    casos:
+      - {nombre: "Utilidad de 1.2 M sobre ingresos de 10 M", fecha: "2026-12-31", entradas: {utilidad_fiscal: "1200000.00", ingresos_nominales: "10000000.00"}, esperado: {coeficiente: "0.1200", utilidad_fiscal: "1200000.00", resultado_fiscal: "1200000.00"}}
+      - {nombre: "Con PTU pagada de 300 mil: la utilidad baja a 1.2 M", fecha: "2026-12-31", entradas: {utilidad_fiscal: "1500000.00", ingresos_nominales: "10000000.00", ptu_pagada: "300000.00"}, esperado: {coeficiente: "0.1200", utilidad_fiscal: "1200000.00", resultado_fiscal: "1200000.00"}}
+      - {nombre: "Con pérdidas de ejercicios anteriores: el resultado baja, el coeficiente no", fecha: "2026-12-31", entradas: {utilidad_fiscal: "1200000.00", ingresos_nominales: "10000000.00", perdidas_aplicadas: "700000.00"}, esperado: {coeficiente: "0.1200", utilidad_fiscal: "1200000.00", resultado_fiscal: "500000.00"}}
+      - {nombre: "Pérdida fiscal del ejercicio: no hay coeficiente (0)", fecha: "2026-12-31", entradas: {utilidad_fiscal: "-800000.00", ingresos_nominales: "10000000.00"}, esperado: {coeficiente: "0.0000", utilidad_fiscal: "-800000.00", resultado_fiscal: "0.00"}}
+      - {nombre: "La PTU deja la utilidad en pérdida: no hay coeficiente", fecha: "2026-12-31", entradas: {utilidad_fiscal: "100000.00", ingresos_nominales: "10000000.00", ptu_pagada: "150000.00"}, esperado: {coeficiente: "0.0000", utilidad_fiscal: "-50000.00", resultado_fiscal: "0.00"}}
+      - {nombre: "Sin ingresos: no hay coeficiente", fecha: "2026-12-31", entradas: {utilidad_fiscal: "1000.00", ingresos_nominales: "0.00"}, esperado: {coeficiente: "0.0000", utilidad_fiscal: "1000.00", resultado_fiscal: "1000.00"}}
+      - {nombre: "Cuatro decimales: 1,234,567 / 10 M = 0.1234567 se redondea a 0.1235 (¿o se trunca a 0.1234? por confirmar)", fecha: "2026-12-31", entradas: {utilidad_fiscal: "1234567.00", ingresos_nominales: "10000000.00"}, esperado: {coeficiente: "0.1235", utilidad_fiscal: "1234567.00", resultado_fiscal: "1234567.00"}, confirmado: false}
+
+  - id: R-183
+    nombre: "Qué coeficiente de utilidad usar si el último ejercicio no tuvo (máximo cinco años atrás)"
+    estado: NUEVA
+    fase: 3
+    parametros: []
+    calculadora: coeficiente_aplicable
+    citas: [{ley: LISR, articulo: "14"}]
+    fuente: "LISR art. 14 fr. I, último párrafo (texto de la Cámara de Diputados, sin cotejar con el DOF)"
+    que_dice: "Los pagos provisionales usan el coeficiente del año anterior; si ese año no tuvo coeficiente, el del último año que sí lo tuvo, siempre que no sea de hace más de cinco años."
+    correcto_si: "Se busca de adelante hacia atrás entre los ejercicios anteriores al de los pagos; un coeficiente 0 es «no resultó»; el ejercicio más viejo permitido es el de hace cinco años; si no hay, la app avisa."
+    hallazgo: "No cubre los ejercicios de inicio, fusión o escisión (art. 14 fr. I tercer párrafo y art. 14 fr. III), que siguen sus propias reglas."
+    casos:
+      - {nombre: "2025 sin coeficiente: se usa el de 2024", fecha: "2026-01-31", entradas: {ejercicio_pagos: 2026, coeficientes: [[2025, "0.0000"], [2024, "0.1100"], [2023, "0.2000"]]}, esperado: {coeficiente: "0.1100", ejercicio: "2024"}}
+      - {nombre: "Año anterior con coeficiente: es ese", fecha: "2026-01-31", entradas: {ejercicio_pagos: 2026, coeficientes: [[2025, "0.0800"], [2024, "0.1100"]]}, esperado: {coeficiente: "0.0800", ejercicio: "2025"}}
+      - {nombre: "Límite: 2021 está a exactamente cinco años de 2026, todavía vale", fecha: "2026-01-31", entradas: {ejercicio_pagos: 2026, coeficientes: [[2025, "0.0000"], [2021, "0.1500"]]}, esperado: {coeficiente: "0.1500", ejercicio: "2021"}}
+      - {nombre: "2020 es de hace seis años: ya no, la app avisa", fecha: "2026-01-31", entradas: {ejercicio_pagos: 2026, coeficientes: [[2025, "0.0000"], [2020, "0.1500"]]}, espera_error: SinValor}
+
+  - id: R-184
+    nombre: "Pérdida fiscal de ejercicios anteriores, actualizada con el INPC (LISR 57)"
+    estado: NUEVA
+    fase: 3
+    parametros: [ACTUALIZACION_FACTOR_DECIMALES]
+    calculadora: perdida_fiscal_actualizada
+    citas: [{ley: LISR, articulo: "57"}, {ley: CFF, articulo: "17-a"}]
+    fuente: "LISR art. 57 (actualización de la pérdida) y CFF art. 17-A (factor, con la serie INPC de series/inpc.yaml, DOF); texto de la Cámara de Diputados, sin cotejar con el DOF"
+    que_dice: "La pérdida de un año se actualiza con el INPC de julio a diciembre de ese año, y lo pendiente se vuelve a actualizar hasta junio del año en que se aplica. Sólo se puede aplicar en los diez ejercicios siguientes."
+    correcto_si: "Dos factores seguidos (cada uno con cuatro decimales y nunca menor a 1), primero julio-diciembre del año de la pérdida y luego diciembre-junio del año de aplicación; después del décimo ejercicio, la app avisa."
+    hallazgo: "Sólo ejercicios de enero a diciembre. La serie INPC cubre 2021-10 a 2026-10: antes o después de eso la calculadora avisa (SinValor). Este monto es el que entra como `perdidas` en pm_coeficiente_provisional (R-114) y como `perdidas_anteriores` en la anual (R-185). POR CONFIRMAR: en los pagos provisionales de enero a junio, qué factor se usa mientras no llega la mitad del ejercicio (el art. 57 sólo dice «último mes de la primera mitad del ejercicio en el que se aplicará»); aquí se usa siempre el de junio."
+    casos:
+      - {nombre: "Pérdida de 500 mil de 2023 aplicada en 2025", fecha: "2025-06-30", entradas: {perdida: "500000.00", ejercicio_perdida: 2023, ejercicio_aplicacion: 2025}, esperado: {factor_primer_periodo: "1.0252", factor_segundo_periodo: "1.0652", perdida_actualizada: "546021.52"}}
+      - {nombre: "Pérdida de 1 M de 2023 aplicada en 2025", fecha: "2025-06-30", entradas: {perdida: "1000000.00", ejercicio_perdida: 2023, ejercicio_aplicacion: 2025}, esperado: {factor_primer_periodo: "1.0252", factor_segundo_periodo: "1.0652", perdida_actualizada: "1092043.04"}}
+      - {nombre: "Límite: de 2013 a 2024 es el undécimo ejercicio siguiente: ya no se puede aplicar", fecha: "2025-06-30", entradas: {perdida: "1000.00", ejercicio_perdida: 2013, ejercicio_aplicacion: 2024}, espera_error: SinValor}
+      - {nombre: "Sin INPC para el año de la pérdida: la app avisa", fecha: "2025-06-30", entradas: {perdida: "1000.00", ejercicio_perdida: 2019, ejercicio_aplicacion: 2025}, espera_error: SinValor}
+
+  - id: R-185
+    nombre: "Anual de RESICO persona moral (626 PM): impuesto del ejercicio"
+    estado: NUEVA
+    fase: 3
+    parametros: [ISR_PM_TASA, RESICO_PM_TOPE_ANUAL]
+    calculadora: resico_pm_anual
+    citas: [{ley: LISR, articulo: "212"}, {ley: LISR, articulo: "207"}, {ley: LISR, articulo: "208"}, {ley: LISR, articulo: "209"}, {ley: LISR, articulo: "210"}, {ley: LISR, articulo: "211"}, {ley: LISR, articulo: "9"}]
+    fuente: "LISR arts. 206 a 213 (Título VII, Capítulo XII), texto de la Cámara de Diputados, sin cotejar con el DOF"
+    que_dice: "La anual del RESICO de personas morales es el mismo cálculo que el pago provisional de diciembre (lo cobrado menos lo pagado y la PTU pagada, menos pérdidas, por 30 %), y además se pueden acreditar el impuesto de los artículos 5 y 10 y los pagos provisionales."
+    correcto_si: "Ingresos efectivamente cobrados y deducciones efectivamente pagadas (inversiones con los porcientos del 209, R-172), PTU pagada, pérdidas de ejercicios anteriores ya actualizadas, 30 %, y se acreditan pagos provisionales, retenciones y el impuesto de los arts. 5 y 10; si las deducciones y la PTU superan a los ingresos hay pérdida fiscal, no impuesto."
+    hallazgo: "Respuesta a la pregunta del pedido: SÍ es el mismo cálculo acumulado de diciembre (211 y 212 llevan al art. 9 con la misma base de flujo de efectivo). Diferencias reales: (1) acredita además el impuesto de los arts. 5 y 10 (212 fr. II); (2) el art. 210 fr. VIII permite reunir los requisitos de la deducción hasta el último día del ejercicio, así que las deducciones de la anual pueden ser más que las acumuladas en los provisionales; (3) no hay coeficiente de utilidad ni ajuste anual por inflación; (4) la pérdida fiscal suma la PTU pagada (212, cuarto párrafo) y sigue el Capítulo V del Título II. Para PTU, el art. 212 define la renta gravable como la utilidad fiscal del art. 9. El acreditamiento del art. 10 tiene topes y plazos de tres ejercicios que NO se calculan aquí: la app captura el monto ya acreditable. Para Motor626PM.anual de Timbra."
+    casos:
+      - {nombre: "Utilidad con PTU y pérdidas, a cargo", fecha: "2026-12-31", entradas: {ingresos_percibidos: "12000000.00", deducciones_erogadas: "9000000.00", ptu_pagada: "100000.00", perdidas_anteriores: "500000.00", pagos_provisionales: "450000.00"}, esperado: {utilidad_fiscal: "2900000.00", resultado_fiscal: "2400000.00", isr: "720000.00", a_cargo: "270000.00", saldo_a_favor: "0.00", perdidas_por_amortizar: "0.00"}}
+      - {nombre: "Pérdida fiscal del ejercicio: sin impuesto, saldo a favor y pérdida por amortizar", fecha: "2026-12-31", entradas: {ingresos_percibidos: "5000000.00", deducciones_erogadas: "5400000.00", pagos_provisionales: "30000.00"}, esperado: {utilidad_fiscal: "-400000.00", resultado_fiscal: "0.00", isr: "0.00", a_cargo: "0.00", saldo_a_favor: "30000.00", perdidas_por_amortizar: "400000.00"}}
+      - {nombre: "Acreditamiento del art. 10 de 40 mil: queda saldo a favor", fecha: "2026-12-31", entradas: {ingresos_percibidos: "1000000.00", deducciones_erogadas: "400000.00", pagos_provisionales: "150000.00", impuesto_acreditable_5_10: "40000.00"}, esperado: {utilidad_fiscal: "600000.00", resultado_fiscal: "600000.00", isr: "180000.00", a_cargo: "0.00", saldo_a_favor: "10000.00", perdidas_por_amortizar: "0.00"}}
+      - {nombre: "Límite: la PTU empuja a pérdida aunque lo cobrado supera lo pagado", fecha: "2026-12-31", entradas: {ingresos_percibidos: "1000000.00", deducciones_erogadas: "900000.00", ptu_pagada: "150000.00"}, esperado: {utilidad_fiscal: "-50000.00", resultado_fiscal: "0.00", isr: "0.00", a_cargo: "0.00", saldo_a_favor: "0.00", perdidas_por_amortizar: "50000.00"}}

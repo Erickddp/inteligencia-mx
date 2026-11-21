@@ -19,7 +19,7 @@ R-11,IVA acreditable,OK,2,,0,DEDUCCION_EFECTIVO_TOPE,0,no,
 R-110,Provisional 612 (enero = tarifa mensual),NUEVA,3,isr_tarifa,2,ISR_TARIFA_MENSUAL,1,si,
 R-111,Provisional 606 con ciega y predial,NUEVA,3,isr_606,3,ARREND_DEDUCCION_CIEGA_PCT;ISR_TARIFA_MENSUAL,2,si,
 R-113,Provisional RESICO PM,NUEVA,3,resico_pm_provisional,2,ISR_PM_TASA;RESICO_PM_TOPE_ANUAL,4,si,"LISR art. 206, 207, 208 y 211 (texto de la Cámara; sin cotejar con el DOF)"
-R-114,Provisional 601 con coeficiente y PTU de mayo a diciembre,NUEVA,3,pm_coeficiente_provisional,2,ISR_PM_TASA,2,si,
+R-114,Provisional 601 con coeficiente y PTU de mayo a diciembre,NUEVA,3,pm_coeficiente_provisional,6,ISR_PM_TASA,2,si,
 R-117,Donatarias y tope de donativos,NUEVA,3,tope_donativos,1,DONATIVOS_DEDUCIBLE_PCT;DONATARIA_INGRESOS_NO_RELACIONADOS_PCT;DONATARIA_GASTOS_ADMIN_PCT,4,si,
 R-118,Retenciones de plataformas digitales,NUEVA,3,retencion_plataforma,2,PLATAFORMAS_ISR_TABLA;PLATAFORMAS_IVA_RET_PCT,3,si,
 R-12,No deducible / no acreditable,OK,2,,0,DEDUCCION_EFECTIVO_TOPE,0,no,
@@ -73,6 +73,10 @@ R-179,"Deducción inmediata de bienes nuevos, Plan México 2027-2030 (incluye RE
 R-18,Saldo a favor solicitado en devolución vs acreditado,OK,2,,0,,0,no,
 R-180,RESICO PF: declaración anual (tabla anual del 113-F),NUEVA,3,resico_pf_anual,6,RESICO_PF_TABLA_ANUAL;RESICO_PF_TOPE_ANUAL;RESICO_PF_RETENCION_PM,3,si,"LISR art. 113-F (tabla anual y acreditamiento de pagos mensuales y retenciones del 113-J); texto de la Cámara de Diputados, sin cotejar con el DOF"
 R-181,RESICO PF: cuándo deja de aplicar el régimen y desde qué fecha,NUEVA,3,resico_pf_salida,8,RESICO_PF_TOPE_ANUAL,4,si,"LISR art. 113-E (tercer y séptimo párrafos) y 113-I; RMF 2026 regla 3.13.5 (el texto sale del Word del DOF, sin revisión humana)"
+R-182,Coeficiente de utilidad del ejercicio (para los pagos provisionales del siguiente),NUEVA,3,coeficiente_utilidad,7,ISR_PM_TASA,3,si,"LISR art. 14 fr. I y art. 9 fr. I; RLISR art. 10 (calcula el coeficiente «hasta el diezmilésimo»); textos de la Cámara de Diputados, sin cotejar con el DOF"
+R-183,Qué coeficiente de utilidad usar si el último ejercicio no tuvo (máximo cinco años atrás),NUEVA,3,coeficiente_aplicable,4,,1,si,"LISR art. 14 fr. I, último párrafo (texto de la Cámara de Diputados, sin cotejar con el DOF)"
+R-184,"Pérdida fiscal de ejercicios anteriores, actualizada con el INPC (LISR 57)",NUEVA,3,perdida_fiscal_actualizada,4,ACTUALIZACION_FACTOR_DECIMALES,2,si,"LISR art. 57 (actualización de la pérdida) y CFF art. 17-A (factor, con la serie INPC de series/inpc.yaml, DOF); texto de la Cámara de Diputados, sin cotejar con el DOF"
+R-185,Anual de RESICO persona moral (626 PM): impuesto del ejercicio,NUEVA,3,resico_pm_anual,4,ISR_PM_TASA;RESICO_PM_TOPE_ANUAL,7,si,"LISR arts. 206 a 213 (Título VII, Capítulo XII), texto de la Cámara de Diputados, sin cotejar con el DOF"
 R-19,IVA de importaciones (pedimentos),NUEVA,2,,0,,0,no,
 R-20,Provisional 612 con tarifa acumulada oficial,OK,3,isr_art96_acumulada,3,ISR_TARIFA_MENSUAL;ISR_TARIFA_ACUMULADA_106;ISR_TARIFA_ANUAL,1,si,LISR art. 106; Anexo 8 RMF 2026 apartado B fr. VI (PDF oficial)
 R-21,Provisional 606 arrendamiento,CORREGIR,3,,0,ARREND_DEDUCCION_CIEGA_PCT;ARREND_TRIMESTRAL_VECES_UMA;ISR_RET_ARRENDAMIENTO_PM;ISR_TARIFA_MENSUAL;UMA_MENSUAL,0,no,
