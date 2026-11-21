@@ -196,6 +196,17 @@ regla,R-189,LISR,,152,si
 regla,R-189,LISR,,79,si
 regla,R-189,LISR,,80,si
 regla,R-190,LISR,,80,si
+regla,R-191,LISR,,106,si
+regla,R-191,LISR,,152,si
+regla,R-191,LISR,,96,si
+regla,R-192,LISR,,106,si
+regla,R-192,LISR,,152,si
+regla,R-192,LISR,,96,si
+regla,R-193,CFF,,29-a,si
+regla,R-194,CFF,,28,si
+regla,R-194,LISR,,96,si
+regla,R-194,NIF-D-3,,,referencia
+regla,R-194,RMF,2026,2.8.1.5,si
 regla,R-20,LISR,,106,si
 regla,R-22,LISR,,113-e,si
 regla,R-22,LISR,,113-j,si

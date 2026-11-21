@@ -34,7 +34,7 @@ R-130,SBC con factor de integración por antigüedad,NUEVA,4,sbc,2,LFT_VACACIONE
 R-131,Retención por periodicidad con tarifa oficial y subsidio,NUEVA,4,isr_periodo_con_subsidio,3,ISR_TARIFA_QUINCENAL;ISR_TARIFA_SEMANAL;ISR_TARIFA_DECENAL;ISR_TARIFA_DIARIA;SUBSIDIO_EMPLEO_MENSUAL;SUBSIDIO_EMPLEO_LIMITE_INGRESO,1,si,
 R-133,"PTU, tope individual",NUEVA,4,ptu_tope,2,PTU_PCT;PTU_TOPE_MESES_SALARIO;EXENTO_PTU_IMPORTE,3,si,
 R-134,Finiquito y liquidación (ISR por separación),NUEVA,4,separacion_isr,2,EXENTO_SEPARACION_IMPORTE_ANUAL;ISR_TARIFA_MENSUAL;LFT_PRIMA_ANTIGUEDAD_DIAS;LFT_PRIMA_ANTIGUEDAD_TOPE_SM;LFT_INDEMNIZACION_DIAS,3,si,
-R-136,Vacaciones y jornada,NUEVA,4,vacaciones_dias,3,LFT_VACACIONES_TABLA;LFT_JORNADA_MAX_SEMANAL,2,si,
+R-136,Vacaciones y jornada,NUEVA,4,vacaciones_dias,10,LFT_VACACIONES_TABLA;LFT_JORNADA_MAX_SEMANAL,2,si,
 R-137,Plazo del complemento de pago,OK,2,rep_fecha_limite,2,REP_DIA_LIMITE,1,si,RMF 2026 regla 2.7.1.32
 R-138,Serie de tipo de cambio para CFF 20,OK,2,,0,BANXICO_SERIE_TC_CFF20;TIPO_CAMBIO_REGLA,0,no,
 R-14,Saldo a favor de IVA,CORREGIR,2,iva_mes,1,,1,si,LIVA art. 6
@@ -83,6 +83,10 @@ R-188,"Dividendos a persona física (611): acumulación, acreditamiento del ISR 
 R-189,"Donatarias autorizadas (603): remanente distribuible, remanente ficto y su impuesto",NUEVA,3,donataria_remanente,3,ISR_TARIFA_ANUAL,3,si,"LISR art. 79 (penúltimo y último párrafos) y art. 80 (primero a quinto párrafos); texto de la Cámara de Diputados, sin cotejar con el DOF"
 R-19,IVA de importaciones (pedimentos),NUEVA,2,,0,,0,no,
 R-190,Donatarias autorizadas (603): tope de ingresos por actividades distintas a su objeto (10 %) y pérdida de la autorización (50 %),NUEVA,3,donataria_actividades_distintas,5,DONATARIA_INGRESOS_NO_RELACIONADOS_PCT;DONATARIA_PERDIDA_AUTORIZACION_PCT;ISR_PM_TASA,1,si,"LISR art. 80, séptimo y octavo párrafos (el octavo, adicionado por el Decreto DOF 08-12-2020, en vigor el 1-ene-2021); texto de la Cámara de Diputados, sin cotejar con el DOF"
+R-191,"Tasa marginal del ISR de persona física: el % del renglón de la tarifa (arts. 96, 106 y 152)",NUEVA,3,isr_tasa_marginal,7,ISR_TARIFA_MENSUAL;ISR_TARIFA_ACUMULADA_106;ISR_TARIFA_ANUAL,3,si,"Tarifas del Anexo 8 de la RMF 2026 ya cargadas (mensual del art. 96, acumuladas del art. 106 y anual del art. 152)"
+R-192,Ahorro exacto de ISR de una deducción en persona física,NUEVA,3,isr_ahorro_deduccion,2,ISR_TARIFA_MENSUAL;ISR_TARIFA_ACUMULADA_106;ISR_TARIFA_ANUAL,3,si,"Tarifas del Anexo 8 de la RMF 2026 ya cargadas (arts. 96, 106 y 152); aritmética de la tarifa, sin fuente adicional"
+R-193,Plazo para cancelar un CFDI según el ejercicio en que se emitió,NUEVA,3,cfdi_plazo_cancelacion,7,CFDI_CANCELACION_MES_LIMITE_PM;CFDI_CANCELACION_MES_LIMITE_PF,1,si,"CFF art. 29-A, cuarto párrafo, reformado por el Decreto DOF 07-nov-2025 (texto de la Cámara de Diputados, sin cotejar con el DOF); transitorios Primero y Segundo del decreto, en la biblioteca"
+R-194,"Póliza de nómina con cada pasivo en su cuenta: ISR de sueldos o asimilados, IMSS retenido y provisión patronal",CRITERIO,4,poliza_nomina_desglosada,10,CONTA_CONCEPTO_AGRUPADOR;CONTA_CODIGO_AGRUPADOR,4,si,"CFF art. 28; RMF 2026 regla 2.8.1.5 (código agrupador, Anexo 24); NIF D-3 (referencia); criterio de las pólizas tipo, sin firma"
 R-20,Provisional 612 con tarifa acumulada oficial,OK,3,isr_art96_acumulada,3,ISR_TARIFA_MENSUAL;ISR_TARIFA_ACUMULADA_106;ISR_TARIFA_ANUAL,1,si,LISR art. 106; Anexo 8 RMF 2026 apartado B fr. VI (PDF oficial)
 R-21,Provisional 606 arrendamiento,CORREGIR,3,,0,ARREND_DEDUCCION_CIEGA_PCT;ARREND_TRIMESTRAL_VECES_UMA;ISR_RET_ARRENDAMIENTO_PM;ISR_TARIFA_MENSUAL;UMA_MENSUAL,0,no,
 R-22,RESICO PF pago mensual,OK,1,resico_pf_mensual,4,RESICO_PF_TABLA;RESICO_PF_TOPE_ANUAL;RESICO_PF_RETENCION_PM,2,si,

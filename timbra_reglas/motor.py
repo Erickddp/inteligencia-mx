@@ -530,10 +530,15 @@ def calc_deduccion_inmediata(b, f, monto, tipo_bien, adquisicion, regimen="titul
 
 
 def _vacaciones(b, f, anio):
-    for hasta, dias in b.valor("LFT_VACACIONES_TABLA", f):
+    """LFT 76: la tabla llega hasta su último renglón; después la ley sigue sumando 2 días por cada cinco años de servicio, sin tope."""
+    tabla = b.valor("LFT_VACACIONES_TABLA", f)
+    for hasta, dias in tabla:
         if D(anio) <= hasta:
             return dias
-    return b.valor("LFT_VACACIONES_TABLA", f)[-1][1]
+    ultimo_anio, ultimo_dias = tabla[-1]
+    exceso = int(D(anio)) - int(ultimo_anio)
+    quinquenios = -(-exceso // 5)  # techo de exceso / 5, con enteros
+    return ultimo_dias + 2 * quinquenios
 
 
 def calc_vacaciones_dias(b, f, anio_servicio):
@@ -1128,6 +1133,51 @@ def calc_donataria_actividades_distintas(b, f, ingresos_totales, ingresos_distin
     return {"limite": str(red(limite)), "porcentaje": str(red(dist * 100 / tot)), "excedente": str(red(excedente)),
             "isr_del_excedente": str(red(max(D(utilidad_del_excedente), D(0)) * b.valor("ISR_PM_TASA", f) / 100)) if excedente > 0 else "0.00",
             "pierde_autorizacion": "si" if pierde else "no"}
+
+
+# ---------- chicos (pedido 06, bloque 5) ----------
+def calc_isr_tasa_marginal(b, f, base, meses="1"):
+    """El % del renglón de la tarifa que le toca a una base: art. 96 (mensual, meses=1), 106 (acumulada, 2 a 11) o 152 (anual, 12).
+    Es la tasa de la última unidad de la base; ahorrar una deducción grande puede cruzar renglones (ver isr_ahorro_deduccion)."""
+    tabla, base = tabla_106(b, f, meses), D(base)
+    for li, ls, cuota, pct in reversed(tabla):
+        if base >= li:
+            return {"tasa_marginal": str(pct), "limite_inferior": str(li), "limite_superior": "" if ls is None else str(ls),
+                    "cuota_fija": str(cuota)}
+    return {"tasa_marginal": "0.00", "limite_inferior": "", "limite_superior": "", "cuota_fija": "0.00"}
+
+
+def calc_isr_ahorro_deduccion(b, f, base, deduccion, meses="1"):
+    """Ahorro exacto de una deducción en persona física: ISR de la base menos ISR de la base ya sin la deducción, con la misma tarifa
+    (96, 106 o 152). Es lo que se ahorra de verdad aunque la deducción cruce renglones; la tasa marginal sólo es una aproximación."""
+    tabla = tabla_106(b, f, meses)
+    sin, con = isr_tarifa(D(base), tabla), isr_tarifa(max(D(base) - D(deduccion), D(0)), tabla)
+    return {"isr_sin_deduccion": str(sin), "isr_con_deduccion": str(con), "ahorro": str(red(sin - con)),
+            "tasa_marginal": calc_isr_tasa_marginal(b, f, base, meses)["tasa_marginal"]}
+
+
+def calc_cfdi_plazo_cancelacion(b, f, tipo, ejercicio_emision):
+    """CFF 29-A, cuarto párrafo (reforma DOF 07-nov-2025, en vigor el 1-ene-2026): un CFDI se cancela a más tardar en el mes de la declaración
+    anual del ejercicio en que se expidió (persona moral, marzo; persona física, abril, del año siguiente) y si el receptor acepta.
+    `f` es la fecha en que se cancela. El decreto no trae régimen transitorio: se aplica por la fecha de la cancelación a CFDI de
+    cualquier ejercicio emisor (POR CONFIRMAR). Antes de 2026 la base no trae la regla y avisa."""
+    mes = int(b.valor("CFDI_CANCELACION_MES_LIMITE_PM" if tipo == "pm" else "CFDI_CANCELACION_MES_LIMITE_PF", f))
+    anio = int(ejercicio_emision) + 1
+    ultimo = f"{anio}-{mes:02d}-{calendar.monthrange(anio, mes)[1]:02d}"
+    return {"ultimo_dia": ultimo, "dentro_de_plazo": "si" if f <= ultimo else "no", "requiere_aceptacion_receptor": "si"}
+
+
+def calc_poliza_nomina_desglosada(b, f, percepciones, isr_retenido="0", imss_obrero="0", imss_patron="0", sar_patron="0",
+                                  infonavit_patron="0", tipo="sueldos"):
+    """Nómina con cada pasivo en su cuenta (R-155 las mezclaba): ISR retenido (sueldos o asimilados), IMSS retenido al trabajador, y la
+    provisión patronal de IMSS, SAR e Infonavit. Los conceptos se apuntan al código agrupador con CONTA_CONCEPTO_AGRUPADOR."""
+    isr_concepto = {"sueldos": "isr_retenido_por_pagar", "asimilados": "isr_retenido_asimilados_por_pagar"}[tipo]
+    neto = D(percepciones) - D(isr_retenido) - D(imss_obrero)
+    return _poliza([("D", "sueldos_y_salarios", percepciones), ("D", "cuotas_patronales", imss_patron),
+                    ("D", "aportaciones_sar", sar_patron), ("D", "aportaciones_infonavit", infonavit_patron),
+                    ("H", "bancos", neto), ("H", isr_concepto, isr_retenido), ("H", "imss_retenido_trabajadores", imss_obrero),
+                    ("H", "imss_patronal_por_pagar", imss_patron), ("H", "sar_por_pagar", sar_patron),
+                    ("H", "infonavit_por_pagar", infonavit_patron)])
 
 
 CALC = {k[5:]: v for k, v in globals().items() if k.startswith("calc_")}

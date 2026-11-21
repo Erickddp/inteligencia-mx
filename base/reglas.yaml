@@ -766,6 +766,13 @@ reglas:
     casos:
       - {nombre: "7 años de servicio", fecha: "2026-11-05", entradas: {anio_servicio: 7}, esperado: "22"}
       - {nombre: "Primer año", fecha: "2026-11-05", entradas: {anio_servicio: 1}, esperado: "12"}
+      - {nombre: "Límite 25 años: 28 días (21 a 25)", fecha: "2026-11-05", entradas: {anio_servicio: 25}, esperado: "28"}
+      - {nombre: "Año 26: sube a 30 días", fecha: "2026-11-05", entradas: {anio_servicio: 26}, esperado: "30"}
+      - {nombre: "Año 35: 32 días; año 36 ya son 34", fecha: "2026-11-05", entradas: {anio_servicio: 36}, esperado: "34"}
+      - {nombre: "Más allá de la tabla (año 61): la ley sigue sumando 2 días por cada cinco años", fecha: "2026-11-05", entradas: {anio_servicio: 61}, esperado: "44"}
+      - {nombre: "Límite: año 65 todavía 44 y año 66 pasa a 46", fecha: "2026-11-05", entradas: {anio_servicio: 66}, esperado: "46"}
+      - {nombre: "Primer día de vigencia (1-ene-2023)", fecha: "2023-01-01", entradas: {anio_servicio: 1}, esperado: "12"}
+      - {nombre: "Antes de 2023 la base no trae la tabla anterior: avisa", fecha: "2022-12-31", entradas: {anio_servicio: 1}, espera_error: SinValor}
       - {nombre: "Jornada máxima 2027", fecha: "2027-01-04", calculadora: parametro, entradas: {id: LFT_JORNADA_MAX_SEMANAL}, esperado: "46"}
 
   - id: R-137
@@ -1513,3 +1520,82 @@ reglas:
       - {nombre: "Límite: exactamente 50 % todavía no pierde la autorización", fecha: "2026-12-31", entradas: {ingresos_totales: "10000000.00", ingresos_distintos: "5000000.00", utilidad_del_excedente: "400000.00"}, esperado: {limite: "1000000.00", porcentaje: "50.00", excedente: "4000000.00", isr_del_excedente: "120000.00", pierde_autorizacion: "no"}}
       - {nombre: "Un centavo arriba de 50 %: pierde la autorización", fecha: "2026-12-31", entradas: {ingresos_totales: "10000000.00", ingresos_distintos: "5000000.01"}, esperado: {limite: "1000000.00", porcentaje: "50.00", excedente: "4000000.01", isr_del_excedente: "0.00", pierde_autorizacion: "si"}}
       - {nombre: "Antes de 2021 no existía la pérdida por 50 %: la base avisa", fecha: "2020-12-31", entradas: {ingresos_totales: "10000000.00", ingresos_distintos: "5000000.01"}, espera_error: SinValor}
+
+  # ───────────── Q. Pedido 06 de Timbra: bloque 5, chicos ─────────────
+  - id: R-191
+    nombre: "Tasa marginal del ISR de persona física: el % del renglón de la tarifa (arts. 96, 106 y 152)"
+    estado: NUEVA
+    fase: 3
+    parametros: [ISR_TARIFA_MENSUAL, ISR_TARIFA_ACUMULADA_106, ISR_TARIFA_ANUAL]
+    calculadora: isr_tasa_marginal
+    citas: [{ley: LISR, articulo: "96"}, {ley: LISR, articulo: "106"}, {ley: LISR, articulo: "152"}]
+    fuente: "Tarifas del Anexo 8 de la RMF 2026 ya cargadas (mensual del art. 96, acumuladas del art. 106 y anual del art. 152)"
+    que_dice: "La tasa marginal es el porcentaje del renglón de la tarifa en que cae la base: cada peso más de base paga ese porcentaje. Enero usa la tarifa mensual, febrero a noviembre la acumulada del mes y diciembre la anual."
+    correcto_si: "El renglón es el que contiene la base (el límite inferior ya es del renglón siguiente); con meses 1 se usa la mensual, de 2 a 11 la acumulada y con 12 la anual; una base menor a 0.01 tiene tasa cero."
+    hallazgo: "Reemplaza la tasa de personas morales que Timbra usaba como aproximación para estimar el ahorro de una deducción. La tasa marginal sólo es exacta si la deducción no cruza de renglón: para el ahorro exacto usa isr_ahorro_deduccion (R-192). Las tarifas de 2027 se arrastran del último ejercicio cargado hasta que salga el Anexo 8 de 2027, y la `fecha` dice cuál se usó."
+    casos:
+      - {nombre: "Enero, base 20,000: renglón de 21.36 %", fecha: "2026-06-30", entradas: {base: "20000.00", meses: 1}, esperado: {tasa_marginal: "21.36", limite_inferior: "17533.65", limite_superior: "35362.83", cuota_fija: "1856.84"}}
+      - {nombre: "Límite: 844.59 es el último centavo del 1.92 %", fecha: "2026-06-30", entradas: {base: "844.59", meses: 1}, esperado: {tasa_marginal: "1.92", limite_inferior: "0.01", limite_superior: "844.59", cuota_fija: "0.00"}}
+      - {nombre: "Un centavo arriba: 844.60 ya es 6.40 %", fecha: "2026-06-30", entradas: {base: "844.60", meses: 1}, esperado: {tasa_marginal: "6.40", limite_inferior: "844.60", limite_superior: "7168.51", cuota_fija: "16.22"}}
+      - {nombre: "Junio (acumulada de 6 meses), base 50,000", fecha: "2026-06-30", entradas: {base: "50000.00", meses: 6}, esperado: {tasa_marginal: "10.88", limite_inferior: "43011.07", limite_superior: "75588.12", cuota_fija: "2525.70"}}
+      - {nombre: "Anual: 5,107,703.93 entra al renglón de 35 %", fecha: "2026-12-31", entradas: {base: "5107703.93", meses: 12}, esperado: {tasa_marginal: "35.00", limite_inferior: "5107703.93", limite_superior: "", cuota_fija: "1601862.46"}}
+      - {nombre: "Anual: un centavo menos sigue en 34 %", fecha: "2026-12-31", entradas: {base: "5107703.92", meses: 12}, esperado: {tasa_marginal: "34.00", limite_inferior: "1702567.98", limite_superior: "5107703.92", cuota_fija: "444116.23"}}
+      - {nombre: "Base cero: tasa cero", fecha: "2026-06-30", entradas: {base: "0.00", meses: 1}, esperado: {tasa_marginal: "0.00", limite_inferior: "", limite_superior: "", cuota_fija: "0.00"}}
+
+  - id: R-192
+    nombre: "Ahorro exacto de ISR de una deducción en persona física"
+    estado: NUEVA
+    fase: 3
+    parametros: [ISR_TARIFA_MENSUAL, ISR_TARIFA_ACUMULADA_106, ISR_TARIFA_ANUAL]
+    calculadora: isr_ahorro_deduccion
+    citas: [{ley: LISR, articulo: "96"}, {ley: LISR, articulo: "106"}, {ley: LISR, articulo: "152"}]
+    fuente: "Tarifas del Anexo 8 de la RMF 2026 ya cargadas (arts. 96, 106 y 152); aritmética de la tarifa, sin fuente adicional"
+    que_dice: "Lo que de verdad se ahorra una persona física con una deducción es el ISR de su base menos el ISR de su base sin esa deducción; cuando la deducción cruza renglones, el ahorro mezcla varias tasas."
+    correcto_si: "Las dos cuentas usan la misma tarifa y el mismo número de meses; la base con deducción nunca baja de cero; el ahorro nunca es mayor que el ISR sin deducción."
+    hallazgo: "Complementa R-191: la tasa marginal sirve para una estimación rápida, este cálculo es el exacto. No aplica los topes de deducciones personales (art. 151): eso se resuelve antes con tope_deducciones_personales."
+    casos:
+      - {nombre: "Base 20,000 con deducción de 5,000: cruza de renglón (21.36 % y 17.92 %)", fecha: "2026-06-30", entradas: {base: "20000.00", deduccion: "5000.00", meses: 1}, esperado: {isr_sin_deduccion: "2383.65", isr_con_deduccion: "1402.82", ahorro: "980.83", tasa_marginal: "21.36"}}
+      - {nombre: "Límite: la deducción es mayor que la base, el ahorro es todo el ISR", fecha: "2026-06-30", entradas: {base: "3000.00", deduccion: "10000.00", meses: 1}, esperado: {isr_sin_deduccion: "154.17", isr_con_deduccion: "0.00", ahorro: "154.17", tasa_marginal: "6.40"}}
+
+  - id: R-193
+    nombre: "Plazo para cancelar un CFDI según el ejercicio en que se emitió"
+    estado: NUEVA
+    fase: 3
+    parametros: [CFDI_CANCELACION_MES_LIMITE_PM, CFDI_CANCELACION_MES_LIMITE_PF]
+    calculadora: cfdi_plazo_cancelacion
+    citas: [{ley: CFF, articulo: "29-a"}]
+    fuente: "CFF art. 29-A, cuarto párrafo, reformado por el Decreto DOF 07-nov-2025 (texto de la Cámara de Diputados, sin cotejar con el DOF); transitorios Primero y Segundo del decreto, en la biblioteca"
+    que_dice: "Un CFDI se cancela a más tardar en el mes en que se presenta la anual del año en que se emitió (marzo las personas morales y abril las personas físicas, del año siguiente) y siempre que el receptor acepte la cancelación."
+    correcto_si: "El último día es el último día del mes de la anual del año siguiente al de emisión; si se cancela después, ya no procede cancelar (se emite un egreso); siempre se requiere la aceptación del receptor."
+    hallazgo: "Responde al pendiente del pedido 05 sobre ejercicios anteriores a 2026: el decreto de 07-nov-2025 sólo trae transitorios de entrada en vigor (1-ene-2026), de procedimientos iniciados, de la Comisión Nacional de Energía y de presupuesto; NO trae régimen para CFDI emitidos antes de 2026. Se aplica la ley vigente a la fecha en que se cancela, sin importar el año de emisión (la ley habla del «ejercicio fiscal en el cual se expidió»). POR CONFIRMAR por una persona: el texto de 29-A anterior a la reforma de 2025 no está en la biblioteca, así que no se sabe si el plazo era distinto; una cancelación hecha antes del 1-ene-2026 la base no la califica (avisa). Procedimientos iniciados antes de 2026 siguen la regla anterior (Segundo transitorio)."
+    casos:
+      - {nombre: "PF, emitido en 2025 y cancelado en marzo de 2026: dentro de plazo", fecha: "2026-03-10", entradas: {tipo: pf, ejercicio_emision: 2025}, esperado: {ultimo_dia: "2026-04-30", dentro_de_plazo: "si", requiere_aceptacion_receptor: "si"}}
+      - {nombre: "Límite PF: el 30 de abril todavía", fecha: "2026-04-30", entradas: {tipo: pf, ejercicio_emision: 2025}, esperado: {ultimo_dia: "2026-04-30", dentro_de_plazo: "si", requiere_aceptacion_receptor: "si"}}
+      - {nombre: "Un día después, PF: ya no", fecha: "2026-05-01", entradas: {tipo: pf, ejercicio_emision: 2025}, esperado: {ultimo_dia: "2026-04-30", dentro_de_plazo: "no", requiere_aceptacion_receptor: "si"}}
+      - {nombre: "Límite PM: el 31 de marzo todavía", fecha: "2026-03-31", entradas: {tipo: pm, ejercicio_emision: 2025}, esperado: {ultimo_dia: "2026-03-31", dentro_de_plazo: "si", requiere_aceptacion_receptor: "si"}}
+      - {nombre: "PM, 1 de abril: ya no", fecha: "2026-04-01", entradas: {tipo: pm, ejercicio_emision: 2025}, esperado: {ultimo_dia: "2026-03-31", dentro_de_plazo: "no", requiere_aceptacion_receptor: "si"}}
+      - {nombre: "Emitido en 2024 y cancelado en febrero de 2026: el plazo (abril de 2025) ya venció", fecha: "2026-02-01", entradas: {tipo: pf, ejercicio_emision: 2024}, esperado: {ultimo_dia: "2025-04-30", dentro_de_plazo: "no", requiere_aceptacion_receptor: "si"}}
+      - {nombre: "Cancelación hecha en 2025: la base no trae la regla anterior, avisa", fecha: "2025-12-31", entradas: {tipo: pf, ejercicio_emision: 2025}, espera_error: SinValor}
+
+  - id: R-194
+    nombre: "Póliza de nómina con cada pasivo en su cuenta: ISR de sueldos o asimilados, IMSS retenido y provisión patronal"
+    estado: CRITERIO
+    fase: 4
+    parametros: [CONTA_CONCEPTO_AGRUPADOR, CONTA_CODIGO_AGRUPADOR]
+    calculadora: poliza_nomina_desglosada
+    citas: [{ley: CFF, articulo: "28"}, {ley: LISR, articulo: "96"}, {ley: RMF, anio: "2026", articulo: "2.8.1.5"}, {nif: "D-3"}]
+    fuente: "CFF art. 28; RMF 2026 regla 2.8.1.5 (código agrupador, Anexo 24); NIF D-3 (referencia); criterio de las pólizas tipo, sin firma"
+    que_dice: "Al pagar la nómina, el ISR retenido de sueldos va a 216.01 y el de asimilados a 216.02, el IMSS retenido al trabajador a 216.11, y lo que debe el patrón queda provisionado en IMSS 211.01, SAR 211.02 e Infonavit 211.03."
+    correcto_si: "La póliza cuadra; el neto es percepciones menos ISR y cuota obrera; cada pasivo tiene su concepto (y su código agrupador del SAT) y el gasto patronal va a sus cuentas 601.26, 601.27 y 601.28."
+    hallazgo: "Separa lo que R-155 mezclaba en imss_por_pagar (cuota obrera y cuota patronal) y agrega el SAR. Los códigos salen de CONTA_CONCEPTO_AGRUPADOR (por_confirmar, criterio) y cada uno se verificó contra el catálogo de 2026. Los asimilados llevan su propio concepto de ISR y no llevan IMSS. `isr_retenido` entra neto del subsidio para el empleo. Es criterio contable, no una cifra de ley."
+    casos:
+      - {nombre: "Nómina de sueldos con todas las cuentas", fecha: "2026-06-30", entradas: {percepciones: "10000", isr_retenido: "850", imss_obrero: "250", imss_patron: "1500", sar_patron: "200", infonavit_patron: "500"}, esperado: "D aportaciones_infonavit 500.00; D aportaciones_sar 200.00; D cuotas_patronales 1500.00; D sueldos_y_salarios 10000.00; H bancos 8900.00; H imss_patronal_por_pagar 1500.00; H imss_retenido_trabajadores 250.00; H infonavit_por_pagar 500.00; H isr_retenido_por_pagar 850.00; H sar_por_pagar 200.00"}
+      - {nombre: "Límite: asimilados a salarios, sin IMSS", fecha: "2026-06-30", entradas: {percepciones: "8000", isr_retenido: "640", tipo: asimilados}, esperado: "D sueldos_y_salarios 8000.00; H bancos 7360.00; H isr_retenido_asimilados_por_pagar 640.00"}
+      - {nombre: "ISR retenido de sueldos → 216.01", fecha: "2026-06-30", calculadora: agrupador_de_concepto, entradas: {concepto: isr_retenido_por_pagar, contexto: sueldos}, esperado: {concepto: isr_retenido_por_pagar, codigo: "216.01", nombre: "Impuestos retenidos de ISR por sueldos y salarios", nivel: "2"}}
+      - {nombre: "ISR retenido de asimilados → 216.02", fecha: "2026-06-30", calculadora: agrupador_de_concepto, entradas: {concepto: isr_retenido_asimilados_por_pagar}, esperado: {concepto: isr_retenido_asimilados_por_pagar, codigo: "216.02", nombre: "Impuestos retenidos de ISR por asimilados a salarios", nivel: "2"}}
+      - {nombre: "ISR retenido por pagar con contexto asimilados → 216.02", fecha: "2026-06-30", calculadora: agrupador_de_concepto, entradas: {concepto: isr_retenido_por_pagar, contexto: asimilados}, esperado: {concepto: isr_retenido_por_pagar, codigo: "216.02", nombre: "Impuestos retenidos de ISR por asimilados a salarios", nivel: "2"}}
+      - {nombre: "IMSS retenido al trabajador → 216.11", fecha: "2026-06-30", calculadora: agrupador_de_concepto, entradas: {concepto: imss_retenido_trabajadores}, esperado: {concepto: imss_retenido_trabajadores, codigo: "216.11", nombre: "Retenciones de IMSS a los trabajadores", nivel: "2"}}
+      - {nombre: "Provisión de IMSS patronal → 211.01", fecha: "2026-06-30", calculadora: agrupador_de_concepto, entradas: {concepto: imss_patronal_por_pagar}, esperado: {concepto: imss_patronal_por_pagar, codigo: "211.01", nombre: "Provisión de IMSS patronal por pagar", nivel: "2"}}
+      - {nombre: "Provisión de SAR → 211.02", fecha: "2026-06-30", calculadora: agrupador_de_concepto, entradas: {concepto: sar_por_pagar}, esperado: {concepto: sar_por_pagar, codigo: "211.02", nombre: "Provisión de SAR por pagar", nivel: "2"}}
+      - {nombre: "Provisión de Infonavit → 211.03", fecha: "2026-06-30", calculadora: agrupador_de_concepto, entradas: {concepto: infonavit_por_pagar}, esperado: {concepto: infonavit_por_pagar, codigo: "211.03", nombre: "Provisión de INFONAVIT por pagar", nivel: "2"}}
+      - {nombre: "Gasto del SAR patronal → 601.28", fecha: "2026-06-30", calculadora: agrupador_de_concepto, entradas: {concepto: aportaciones_sar}, esperado: {concepto: aportaciones_sar, codigo: "601.28", nombre: "Aportaciones al SAR", nivel: "2"}}

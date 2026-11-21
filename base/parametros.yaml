@@ -1208,7 +1208,8 @@ parametros:
     valores:
       - desde: "2023-01-01"
         hasta: null
-        fuente: "LFT art. 76, reforma DOF 27-dic-2022"
+        confirmado_hasta: "2026-12-31"
+        fuente: "LFT art. 76, reforma DOF 27-dic-2022 (en vigor el 1-ene-2023, Transitorio Primero); texto de la Cámara de Diputados, última reforma DOF 14-may-2026, sin cotejar con el DOF"
         valor:
           - ["1", "12"]
           - ["2", "14"]
@@ -1221,7 +1222,12 @@ parametros:
           - ["25", "28"]
           - ["30", "30"]
           - ["35", "32"]
-    nota: "Cada 5 años después del quinto suben 2 días. LFT_VACACIONES_PRIMER_ANIO debe coincidir con el primer renglón."
+          - ["40", "34"]
+          - ["45", "36"]
+          - ["50", "38"]
+          - ["55", "40"]
+          - ["60", "42"]
+    nota: "Cada 5 años después del quinto suben 2 días, sin tope (art. 76, segundo párrafo); la tabla llega a 60 años y la calculadora vacaciones_dias sigue sumando 2 días por cada cinco años más allá. En vigor el 1-ene-2023 (Decreto DOF 27-dic-2022, Transitorio Primero, en el texto de la biblioteca); la tabla anterior (6, 8, 10 y 12 días) no está en la biblioteca y no se carga: antes de 2023 la base avisa. LFT_VACACIONES_PRIMER_ANIO debe coincidir con el primer renglón."
 
   LFT_PRIMA_ANTIGUEDAD_DIAS:
     nombre: Días de prima de antigüedad por año
@@ -3894,6 +3900,12 @@ parametros:
           - ["isr_retenido_por_pagar", "arrendamiento", "216.03", ""]
           - ["iva_retenido_por_pagar", "", "216.10", ""]
           - ["imss_por_pagar", "", "211.01", "Mezcla IMSS patronal (211.01) y retenciones a trabajadores (216.11): conviene separarlas"]
+          - ["imss_patronal_por_pagar", "", "211.01", "Provisión de IMSS patronal (la parte retenida al trabajador es imss_retenido_trabajadores, 216.11)"]
+          - ["sar_por_pagar", "", "211.02", "Provisión de SAR patronal"]
+          - ["imss_retenido_trabajadores", "", "216.11", "Retenciones de IMSS a los trabajadores (cuota obrera)"]
+          - ["isr_retenido_por_pagar", "asimilados", "216.02", "Asimilados a salarios"]
+          - ["isr_retenido_asimilados_por_pagar", "", "216.02", "Mismo código que isr_retenido_por_pagar con contexto asimilados; concepto propio para que la póliza lo diga sola"]
+          - ["aportaciones_sar", "", "601.28", "Gasto por el SAR patronal"]
           - ["infonavit_por_pagar", "", "211.03", ""]
           - ["ingreso_gravado", "", "401.01", ""]
           - ["ingreso_tasa0", "", "401.04", ""]
