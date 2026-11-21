@@ -16,7 +16,7 @@
 #    pero marcado ARRASTRADO (estimación en pantalla), para que enero no se quede en blanco.
 #    hasta con fecha = vence de verdad (estímulos con plazo, LIF anual): después da SinValor.
 
-version_base: "0.6.0"
+version_base: "0.7.0"
 fecha_corte: "2026-11-05"
 
 parametros:
@@ -219,6 +219,36 @@ parametros:
           - ["50000.00",   "1.10"]
           - ["83333.33",   "1.50"]
           - ["208333.33",  "2.00"]
+          - ["5000000.00", "2.50"]
+    firma: {validado: false, por: null, fecha: null}
+
+  RESICO_PF_TABLA_ANUAL:
+    nombre: Tasas RESICO PF sobre ingreso ANUAL cobrado sin IVA (declaración anual; tasa al total, no por excedente)
+    tipo: tabla
+    columnas: [hasta_ingreso_anual, tasa]
+    citas: [{ley: LISR, articulo: "113-f"}]
+    que_dice: "En la declaración anual del RESICO de personas físicas se aplica una tasa sobre TODO el ingreso del año cobrado sin IVA; la tasa sube por tramos anuales propios (300 mil, 600 mil, 1 M, 2.5 M, tope), que no son la tabla mensual multiplicada por 12."
+    correcto_si: "La tasa es la del primer renglón cuyo límite alcanza el ingreso anual y se aplica a todo el ingreso, sin deducciones; contra el resultado se restan los pagos mensuales y las retenciones del art. 113-J."
+    valores:
+      - desde: "2022-01-01"
+        hasta: "2026-12-31"
+        fuente: "LISR art. 113-F, TABLA ANUAL (texto de la Cámara de Diputados, última reforma DOF 01-abr-2024; el artículo se adicionó en el DOF 12-nov-2021)"
+        valor:
+          - ["300000.00",  "1.00"]
+          - ["600000.00",  "1.10"]
+          - ["1000000.00", "1.50"]
+          - ["2500000.00", "2.00"]
+          - ["3500000.00", "2.50"]
+      - desde: "2027-01-01"
+        hasta: null
+        confirmado_hasta: "2027-12-31"
+        estado: por_confirmar
+        fuente: "LISR art. 113-F, TABLA ANUAL. POR CONFIRMAR: el Decreto DOF 13-nov-2026 (nota 5803758) sube a 5,000,000.00 el tope de 113-E y el último renglón de su TABLA MENSUAL; el texto del decreto sobre la TABLA ANUAL no está en la biblioteca. Se supone que sólo cambia el último renglón (a 5,000,000.00) para igualar el tope; una persona debe leer el decreto antes de firmar"
+        valor:
+          - ["300000.00",  "1.00"]
+          - ["600000.00",  "1.10"]
+          - ["1000000.00", "1.50"]
+          - ["2500000.00", "2.00"]
           - ["5000000.00", "2.50"]
     firma: {validado: false, por: null, fecha: null}
 
@@ -1178,7 +1208,8 @@ parametros:
     valores:
       - desde: "2023-01-01"
         hasta: null
-        fuente: "LFT art. 76, reforma DOF 27-dic-2022"
+        confirmado_hasta: "2026-12-31"
+        fuente: "LFT art. 76, reforma DOF 27-dic-2022 (en vigor el 1-ene-2023, Transitorio Primero); texto de la Cámara de Diputados, última reforma DOF 14-may-2026, sin cotejar con el DOF"
         valor:
           - ["1", "12"]
           - ["2", "14"]
@@ -1191,7 +1222,12 @@ parametros:
           - ["25", "28"]
           - ["30", "30"]
           - ["35", "32"]
-    nota: "Cada 5 años después del quinto suben 2 días. LFT_VACACIONES_PRIMER_ANIO debe coincidir con el primer renglón."
+          - ["40", "34"]
+          - ["45", "36"]
+          - ["50", "38"]
+          - ["55", "40"]
+          - ["60", "42"]
+    nota: "Cada 5 años después del quinto suben 2 días, sin tope (art. 76, segundo párrafo); la tabla llega a 60 años y la calculadora vacaciones_dias sigue sumando 2 días por cada cinco años más allá. En vigor el 1-ene-2023 (Decreto DOF 27-dic-2022, Transitorio Primero, en el texto de la biblioteca); la tabla anterior (6, 8, 10 y 12 días) no está en la biblioteca y no se carga: antes de 2023 la base avisa. LFT_VACACIONES_PRIMER_ANIO debe coincidir con el primer renglón."
 
   LFT_PRIMA_ANTIGUEDAD_DIAS:
     nombre: Días de prima de antigüedad por año
@@ -1252,11 +1288,27 @@ parametros:
     tipo: porcentaje
     valores:
       - {valor: "10", desde: "2014-01-01", hasta: null, fuente: "LISR art. 80"}
+  DONATARIA_PERDIDA_AUTORIZACION_PCT:
+    nombre: Ingresos por actividades distintas, % de los ingresos totales, a partir del cual la donataria pierde la autorización
+    tipo: porcentaje
+    valores:
+      - {valor: "50", desde: "2021-01-01", hasta: null, confirmado_hasta: "2026-12-31", fuente: "LISR art. 80, octavo párrafo (adicionado por el Decreto DOF 08-12-2020, en vigor el 1-ene-2021, Transitorio Único); texto de la Cámara de Diputados, sin cotejar con el DOF"}
   DONATARIA_GASTOS_ADMIN_PCT:
     nombre: Máximo de gastos de administración, % de los donativos
     tipo: porcentaje
     valores:
       - {valor: "5", desde: "2016-01-01", hasta: null, fuente: "RLISR art. 138"}
+  DIVIDENDOS_FACTOR_PIRAMIDACION:
+    nombre: Factor para determinar el ISR pagado por la sociedad que distribuye dividendos (piramidación de la base)
+    tipo: numero
+    valores:
+      - {valor: "1.4286", desde: "2014-01-01", hasta: null, confirmado_hasta: "2026-12-31", fuente: "LISR art. 10, primer párrafo, y art. 140, primer párrafo (dividendo × 1.4286 × tasa del art. 9); texto de la Cámara de Diputados, sin cotejar con el DOF"}
+    nota: "El factor es el inverso de (1 − tasa del art. 9): con 30 % es 1 / 0.70 = 1.4286 a cuatro decimales. Si la tasa del art. 9 cambia, el factor debe cambiar por fecha (otro tramo), no se recalcula solo."
+  DIVIDENDOS_RETENCION_ADICIONAL_PCT:
+    nombre: Retención adicional de ISR sobre dividendos a personas físicas (pago definitivo)
+    tipo: porcentaje
+    valores:
+      - {valor: "10", desde: "2014-01-01", hasta: null, confirmado_hasta: "2026-12-31", fuente: "LISR art. 140, segundo párrafo (tasa adicional de 10 % sobre dividendos distribuidos por personas morales residentes en México, retención definitiva); texto de la Cámara de Diputados, sin cotejar con el DOF"}
   FRONTERA_ISR_DIVISOR:
     nombre: Crédito ISR región fronteriza = ISR proporcional entre este divisor
     tipo: numero
@@ -3848,6 +3900,12 @@ parametros:
           - ["isr_retenido_por_pagar", "arrendamiento", "216.03", ""]
           - ["iva_retenido_por_pagar", "", "216.10", ""]
           - ["imss_por_pagar", "", "211.01", "Mezcla IMSS patronal (211.01) y retenciones a trabajadores (216.11): conviene separarlas"]
+          - ["imss_patronal_por_pagar", "", "211.01", "Provisión de IMSS patronal (la parte retenida al trabajador es imss_retenido_trabajadores, 216.11)"]
+          - ["sar_por_pagar", "", "211.02", "Provisión de SAR patronal"]
+          - ["imss_retenido_trabajadores", "", "216.11", "Retenciones de IMSS a los trabajadores (cuota obrera)"]
+          - ["isr_retenido_por_pagar", "asimilados", "216.02", "Asimilados a salarios"]
+          - ["isr_retenido_asimilados_por_pagar", "", "216.02", "Mismo código que isr_retenido_por_pagar con contexto asimilados; concepto propio para que la póliza lo diga sola"]
+          - ["aportaciones_sar", "", "601.28", "Gasto por el SAR patronal"]
           - ["infonavit_por_pagar", "", "211.03", ""]
           - ["ingreso_gravado", "", "401.01", ""]
           - ["ingreso_tasa0", "", "401.04", ""]
@@ -3862,6 +3920,28 @@ parametros:
           - ["perdida_cambiaria", "", "701.01", ""]
           - ["utilidad_cambiaria", "", "702.01", ""]
     nota: "Sugerencia, no obligación: cada app puede usar su propio catálogo mientras asocie cada cuenta al agrupador (RMF 2.8.1.5). `contexto` distingue cuentas que cambian según el origen (el ISR retenido por pagar es 216.01 en nómina, 216.04 en honorarios y 216.03 en arrendamiento)."
+
+  OBLIGACIONES_625_PF:
+    nombre: Obligaciones de la persona física en plataformas tecnológicas (625) según haya optado o no por el pago definitivo
+    tipo: lista
+    columnas: [obligacion, supuesto, resultado, plazo, fundamento]
+    citas: [{ley: LISR, articulo: "113-a"}, {ley: LISR, articulo: "113-b"}, {ley: LISR, articulo: "150"}, {ley: RMF, anio: "2026", articulo: "12.3.13"}, {ley: RMF, anio: "2026", articulo: "2.8.1.17"}]
+    que_dice: "Si la persona física optó por el pago definitivo y cumple, no presenta pagos provisionales ni anual por esos ingresos; si no optó (o ya no cumple), presenta pago provisional cada mes y anual en abril; la DIOT y la contabilidad electrónica se relevan si el año anterior sus ingresos no pasaron de 4 millones."
+    correcto_si: "La fila se elige por si optó y cumple el tope del año anterior (PLATAFORMAS_PD_TOPE_ANUAL); con otros ingresos la anual se presenta de todos modos; DIOT y contabilidad electrónica se miden con los ingresos totales del año anterior (CONTA_ELEC_RELEVO_PF_INGRESOS)."
+    valores:
+      - desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        estado: por_confirmar
+        fuente: "LISR arts. 113-A (tercer párrafo), 113-B y 150 (texto de la Cámara de Diputados); RMF 2026 reglas 12.3.13 y 2.8.1.17 (texto del DOF 28-dic-2025 en la biblioteca, sin revisión humana)"
+        valor:
+          - ["pago_provisional", "no_opto_o_dejo_de_cumplir", "si", "mensual, a más tardar el día 17 del mes siguiente (declaración de pago del ISR personas físicas plataformas tecnológicas)", "LISR 113-A tercer párrafo; RMF 12.3.13"]
+          - ["pago_provisional", "opto_y_cumple", "no", "la retención es pago definitivo", "LISR 113-B"]
+          - ["declaracion_anual", "no_opto_o_dejo_de_cumplir", "si", "abril del año siguiente; se acumulan los ingresos de plataformas y se acredita la retención", "LISR 150 primer párrafo"]
+          - ["declaracion_anual", "opto_y_cumple", "no", "no se presenta por estos ingresos; sí si tiene otros ingresos acumulables", "LISR 150 primer párrafo"]
+          - ["diot", "ingresos_ejercicio_anterior_hasta_el_tope", "no", "relevada (también la contabilidad electrónica)", "RMF 2.8.1.17 (Capítulo II, Sección III del Título IV, hasta 4 M)"]
+          - ["diot", "ingresos_ejercicio_anterior_arriba_del_tope", "si", "mensual, a más tardar el día 17 del mes siguiente", "LIVA 32 fr. VIII"]
+    nota: "Sólo personas físicas. Una persona moral que recibe retención de plataformas no tiene pago definitivo (R-160). El IVA retenido tiene su propia regla (RMF 12.3.8 y 12.3.10) y no se resume aquí."
 
   GLOBAL_PERIODICIDAD_POR_REGIMEN:
     nombre: Periodicidades de la factura global por régimen y cómo se detalla

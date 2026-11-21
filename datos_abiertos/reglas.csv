@@ -19,7 +19,7 @@ R-11,IVA acreditable,OK,2,,0,DEDUCCION_EFECTIVO_TOPE,0,no,
 R-110,Provisional 612 (enero = tarifa mensual),NUEVA,3,isr_tarifa,2,ISR_TARIFA_MENSUAL,1,si,
 R-111,Provisional 606 con ciega y predial,NUEVA,3,isr_606,3,ARREND_DEDUCCION_CIEGA_PCT;ISR_TARIFA_MENSUAL,2,si,
 R-113,Provisional RESICO PM,NUEVA,3,resico_pm_provisional,2,ISR_PM_TASA;RESICO_PM_TOPE_ANUAL,4,si,"LISR art. 206, 207, 208 y 211 (texto de la Cámara; sin cotejar con el DOF)"
-R-114,Provisional 601 con coeficiente y PTU de mayo a diciembre,NUEVA,3,pm_coeficiente_provisional,2,ISR_PM_TASA,2,si,
+R-114,Provisional 601 con coeficiente y PTU de mayo a diciembre,NUEVA,3,pm_coeficiente_provisional,6,ISR_PM_TASA,2,si,
 R-117,Donatarias y tope de donativos,NUEVA,3,tope_donativos,1,DONATIVOS_DEDUCIBLE_PCT;DONATARIA_INGRESOS_NO_RELACIONADOS_PCT;DONATARIA_GASTOS_ADMIN_PCT,4,si,
 R-118,Retenciones de plataformas digitales,NUEVA,3,retencion_plataforma,2,PLATAFORMAS_ISR_TABLA;PLATAFORMAS_IVA_RET_PCT,3,si,
 R-12,No deducible / no acreditable,OK,2,,0,DEDUCCION_EFECTIVO_TOPE,0,no,
@@ -34,7 +34,7 @@ R-130,SBC con factor de integración por antigüedad,NUEVA,4,sbc,2,LFT_VACACIONE
 R-131,Retención por periodicidad con tarifa oficial y subsidio,NUEVA,4,isr_periodo_con_subsidio,3,ISR_TARIFA_QUINCENAL;ISR_TARIFA_SEMANAL;ISR_TARIFA_DECENAL;ISR_TARIFA_DIARIA;SUBSIDIO_EMPLEO_MENSUAL;SUBSIDIO_EMPLEO_LIMITE_INGRESO,1,si,
 R-133,"PTU, tope individual",NUEVA,4,ptu_tope,2,PTU_PCT;PTU_TOPE_MESES_SALARIO;EXENTO_PTU_IMPORTE,3,si,
 R-134,Finiquito y liquidación (ISR por separación),NUEVA,4,separacion_isr,2,EXENTO_SEPARACION_IMPORTE_ANUAL;ISR_TARIFA_MENSUAL;LFT_PRIMA_ANTIGUEDAD_DIAS;LFT_PRIMA_ANTIGUEDAD_TOPE_SM;LFT_INDEMNIZACION_DIAS,3,si,
-R-136,Vacaciones y jornada,NUEVA,4,vacaciones_dias,3,LFT_VACACIONES_TABLA;LFT_JORNADA_MAX_SEMANAL,2,si,
+R-136,Vacaciones y jornada,NUEVA,4,vacaciones_dias,10,LFT_VACACIONES_TABLA;LFT_JORNADA_MAX_SEMANAL,2,si,
 R-137,Plazo del complemento de pago,OK,2,rep_fecha_limite,2,REP_DIA_LIMITE,1,si,RMF 2026 regla 2.7.1.32
 R-138,Serie de tipo de cambio para CFF 20,OK,2,,0,BANXICO_SERIE_TC_CFF20;TIPO_CAMBIO_REGLA,0,no,
 R-14,Saldo a favor de IVA,CORREGIR,2,iva_mes,1,,1,si,LIVA art. 6
@@ -71,7 +71,22 @@ R-177,"Vencimiento recorrido al siguiente día hábil (CFF 12, quinto párrafo),
 R-178,Plazo en días hábiles contado desde que surte efectos la notificación (CFF 12),NUEVA,2,plazo_dias_habiles,4,CFF_DIAS_INHABILES,2,si,"CFF art. 12, primer y segundo párrafos; RMF 2026 regla 2.1.6 y modificaciones; serie dias_inhabiles"
 R-179,"Deducción inmediata de bienes nuevos, Plan México 2027-2030 (incluye RESICO PM)",NUEVA,3,deduccion_inmediata,8,DEDUCCION_INMEDIATA_PLAN_MEXICO,0,si,"Decreto por el que se reforma la LISR, DOF 13-nov-2026 (nota 5803758), art. Segundo fr. I incisos a) a d)"
 R-18,Saldo a favor solicitado en devolución vs acreditado,OK,2,,0,,0,no,
+R-180,RESICO PF: declaración anual (tabla anual del 113-F),NUEVA,3,resico_pf_anual,6,RESICO_PF_TABLA_ANUAL;RESICO_PF_TOPE_ANUAL;RESICO_PF_RETENCION_PM,3,si,"LISR art. 113-F (tabla anual y acreditamiento de pagos mensuales y retenciones del 113-J); texto de la Cámara de Diputados, sin cotejar con el DOF"
+R-181,RESICO PF: cuándo deja de aplicar el régimen y desde qué fecha,NUEVA,3,resico_pf_salida,8,RESICO_PF_TOPE_ANUAL,4,si,"LISR art. 113-E (tercer y séptimo párrafos) y 113-I; RMF 2026 regla 3.13.5 (el texto sale del Word del DOF, sin revisión humana)"
+R-182,Coeficiente de utilidad del ejercicio (para los pagos provisionales del siguiente),NUEVA,3,coeficiente_utilidad,7,ISR_PM_TASA,3,si,"LISR art. 14 fr. I y art. 9 fr. I; RLISR art. 10 (calcula el coeficiente «hasta el diezmilésimo»); textos de la Cámara de Diputados, sin cotejar con el DOF"
+R-183,Qué coeficiente de utilidad usar si el último ejercicio no tuvo (máximo cinco años atrás),NUEVA,3,coeficiente_aplicable,4,,1,si,"LISR art. 14 fr. I, último párrafo (texto de la Cámara de Diputados, sin cotejar con el DOF)"
+R-184,"Pérdida fiscal de ejercicios anteriores, actualizada con el INPC (LISR 57)",NUEVA,3,perdida_fiscal_actualizada,4,ACTUALIZACION_FACTOR_DECIMALES,2,si,"LISR art. 57 (actualización de la pérdida) y CFF art. 17-A (factor, con la serie INPC de series/inpc.yaml, DOF); texto de la Cámara de Diputados, sin cotejar con el DOF"
+R-185,Anual de RESICO persona moral (626 PM): impuesto del ejercicio,NUEVA,3,resico_pm_anual,4,ISR_PM_TASA;RESICO_PM_TOPE_ANUAL,7,si,"LISR arts. 206 a 213 (Título VII, Capítulo XII), texto de la Cámara de Diputados, sin cotejar con el DOF"
+R-186,Plataformas (625): ¿los ingresos con retención se acumulan en la anual de la persona física?,NUEVA,3,plataformas_en_anual,5,PLATAFORMAS_PD_TOPE_ANUAL,4,si,"LISR art. 113-A (tercer párrafo), 113-B y 150 (texto de la Cámara de Diputados, sin cotejar con el DOF); RMF 2026 regla 12.3.9 (texto del DOF, sin revisión humana)"
+R-187,"Plataformas (625): fila de obligaciones en la matriz régimen × obligación (R-109): provisional, anual y DIOT",NUEVA,3,obligaciones_625_pf,4,OBLIGACIONES_625_PF;PLATAFORMAS_PD_TOPE_ANUAL;CONTA_ELEC_RELEVO_PF_INGRESOS,4,si,"OBLIGACIONES_625_PF: LISR 113-A, 113-B y 150; RMF 2026 reglas 12.3.13 y 2.8.1.17 (texto del DOF, sin revisión humana)"
+R-188,"Dividendos a persona física (611): acumulación, acreditamiento del ISR corporativo y retención adicional de 10 %",NUEVA,3,dividendos_pf,6,DIVIDENDOS_FACTOR_PIRAMIDACION;DIVIDENDOS_RETENCION_ADICIONAL_PCT;ISR_PM_TASA,4,si,"LISR art. 140 (primer y segundo párrafos) y art. 10 (factor 1.4286); texto de la Cámara de Diputados, sin cotejar con el DOF"
+R-189,"Donatarias autorizadas (603): remanente distribuible, remanente ficto y su impuesto",NUEVA,3,donataria_remanente,3,ISR_TARIFA_ANUAL,3,si,"LISR art. 79 (penúltimo y último párrafos) y art. 80 (primero a quinto párrafos); texto de la Cámara de Diputados, sin cotejar con el DOF"
 R-19,IVA de importaciones (pedimentos),NUEVA,2,,0,,0,no,
+R-190,Donatarias autorizadas (603): tope de ingresos por actividades distintas a su objeto (10 %) y pérdida de la autorización (50 %),NUEVA,3,donataria_actividades_distintas,5,DONATARIA_INGRESOS_NO_RELACIONADOS_PCT;DONATARIA_PERDIDA_AUTORIZACION_PCT;ISR_PM_TASA,1,si,"LISR art. 80, séptimo y octavo párrafos (el octavo, adicionado por el Decreto DOF 08-12-2020, en vigor el 1-ene-2021); texto de la Cámara de Diputados, sin cotejar con el DOF"
+R-191,"Tasa marginal del ISR de persona física: el % del renglón de la tarifa (arts. 96, 106 y 152)",NUEVA,3,isr_tasa_marginal,7,ISR_TARIFA_MENSUAL;ISR_TARIFA_ACUMULADA_106;ISR_TARIFA_ANUAL,3,si,"Tarifas del Anexo 8 de la RMF 2026 ya cargadas (mensual del art. 96, acumuladas del art. 106 y anual del art. 152)"
+R-192,Ahorro exacto de ISR de una deducción en persona física,NUEVA,3,isr_ahorro_deduccion,2,ISR_TARIFA_MENSUAL;ISR_TARIFA_ACUMULADA_106;ISR_TARIFA_ANUAL,3,si,"Tarifas del Anexo 8 de la RMF 2026 ya cargadas (arts. 96, 106 y 152); aritmética de la tarifa, sin fuente adicional"
+R-193,Plazo para cancelar un CFDI según el ejercicio en que se emitió,NUEVA,3,cfdi_plazo_cancelacion,7,CFDI_CANCELACION_MES_LIMITE_PM;CFDI_CANCELACION_MES_LIMITE_PF,1,si,"CFF art. 29-A, cuarto párrafo, reformado por el Decreto DOF 07-nov-2025 (texto de la Cámara de Diputados, sin cotejar con el DOF); transitorios Primero y Segundo del decreto, en la biblioteca"
+R-194,"Póliza de nómina con cada pasivo en su cuenta: ISR de sueldos o asimilados, IMSS retenido y provisión patronal",CRITERIO,4,poliza_nomina_desglosada,10,CONTA_CONCEPTO_AGRUPADOR;CONTA_CODIGO_AGRUPADOR,4,si,"CFF art. 28; RMF 2026 regla 2.8.1.5 (código agrupador, Anexo 24); NIF D-3 (referencia); criterio de las pólizas tipo, sin firma"
 R-20,Provisional 612 con tarifa acumulada oficial,OK,3,isr_art96_acumulada,3,ISR_TARIFA_MENSUAL;ISR_TARIFA_ACUMULADA_106;ISR_TARIFA_ANUAL,1,si,LISR art. 106; Anexo 8 RMF 2026 apartado B fr. VI (PDF oficial)
 R-21,Provisional 606 arrendamiento,CORREGIR,3,,0,ARREND_DEDUCCION_CIEGA_PCT;ARREND_TRIMESTRAL_VECES_UMA;ISR_RET_ARRENDAMIENTO_PM;ISR_TARIFA_MENSUAL;UMA_MENSUAL,0,no,
 R-22,RESICO PF pago mensual,OK,1,resico_pf_mensual,4,RESICO_PF_TABLA;RESICO_PF_TOPE_ANUAL;RESICO_PF_RETENCION_PM,2,si,

@@ -5,7 +5,7 @@
 # fase: en qué fase se termina de investigar
 # casos: los corre "python motor.py probar". confirmado:false = no cuenta como falla (espera firma o dato oficial)
 
-version_base: "0.6.0"
+version_base: "0.7.0"
 
 reglas:
 
@@ -556,6 +556,10 @@ reglas:
     casos:
       - {nombre: "CU 0.12, junio, ingresos 6 M, PTU 160 mil, previos 150 mil", fecha: "2026-06-30", entradas: {cu: "0.1200", ingresos: "6000000", mes: 6, ptu: "160000", pagos_previos: "150000"}, esperado: "54000.00"}
       - {nombre: "Abril: no resta PTU", fecha: "2026-04-30", entradas: {cu: "0.1200", ingresos: "4000000", mes: 4, ptu: "160000"}, esperado: "144000.00"}
+      - {nombre: "Mayo: la PTU entra por primera vez (1/8 de 160 mil = 20 mil)", fecha: "2026-05-31", entradas: {cu: "0.1200", ingresos: "5000000", mes: 5, ptu: "160000", pagos_previos: "120000"}, esperado: "54000.00"}
+      - {nombre: "Diciembre: ya se restó toda la PTU (8/8 = 160 mil)", fecha: "2026-12-31", entradas: {cu: "0.1200", ingresos: "12000000", mes: 12, ptu: "160000", pagos_previos: "330000"}, esperado: "54000.00"}
+      - {nombre: "Pérdida de 2023 (500 mil) ya actualizada a 2025 = 546,021.52 (R-184)", fecha: "2025-06-30", entradas: {cu: "0.1200", ingresos: "6000000", mes: 6, perdidas: "546021.52"}, esperado: "52193.54"}
+      - {nombre: "Límite: la pérdida absorbe toda la utilidad del periodo, pago en cero", fecha: "2025-06-30", entradas: {cu: "0.1200", ingresos: "6000000", mes: 6, perdidas: "720000.00"}, esperado: "0.00"}
 
   - id: R-103
     nombre: Estímulo ISR región fronteriza (ampliada)
@@ -762,6 +766,13 @@ reglas:
     casos:
       - {nombre: "7 años de servicio", fecha: "2026-11-05", entradas: {anio_servicio: 7}, esperado: "22"}
       - {nombre: "Primer año", fecha: "2026-11-05", entradas: {anio_servicio: 1}, esperado: "12"}
+      - {nombre: "Límite 25 años: 28 días (21 a 25)", fecha: "2026-11-05", entradas: {anio_servicio: 25}, esperado: "28"}
+      - {nombre: "Año 26: sube a 30 días", fecha: "2026-11-05", entradas: {anio_servicio: 26}, esperado: "30"}
+      - {nombre: "Año 35: 32 días; año 36 ya son 34", fecha: "2026-11-05", entradas: {anio_servicio: 36}, esperado: "34"}
+      - {nombre: "Más allá de la tabla (año 61): la ley sigue sumando 2 días por cada cinco años", fecha: "2026-11-05", entradas: {anio_servicio: 61}, esperado: "44"}
+      - {nombre: "Límite: año 65 todavía 44 y año 66 pasa a 46", fecha: "2026-11-05", entradas: {anio_servicio: 66}, esperado: "46"}
+      - {nombre: "Primer día de vigencia (1-ene-2023)", fecha: "2023-01-01", entradas: {anio_servicio: 1}, esperado: "12"}
+      - {nombre: "Antes de 2023 la base no trae la tabla anterior: avisa", fecha: "2022-12-31", entradas: {anio_servicio: 1}, espera_error: SinValor}
       - {nombre: "Jornada máxima 2027", fecha: "2027-01-04", calculadora: parametro, entradas: {id: LFT_JORNADA_MAX_SEMANAL}, esperado: "46"}
 
   - id: R-137
@@ -1306,3 +1317,285 @@ reglas:
       - {nombre: "Mobiliario de oficina: excluido", fecha: "2027-03-31", entradas: {monto: "50000", tipo_bien: mobiliario_equipo_oficina, adquisicion: "2027-03-15"}, espera_error: SinValor}
       - {nombre: "Sin constancia del Comité: no aplica", fecha: "2027-03-31", entradas: {monto: "100000", tipo_bien: equipo_computo, adquisicion: "2027-03-15", constancia: "no"}, espera_error: SinValor}
       - {nombre: "RESICO PF: no está en el decreto", fecha: "2027-03-31", entradas: {monto: "100000", tipo_bien: equipo_computo, adquisicion: "2027-03-15", regimen: resico_pf}, espera_error: SinValor}
+
+  # ───────────── M. Pedido 06 de Timbra: bloque 1, RESICO persona física anual ─────────────
+  - id: R-180
+    nombre: "RESICO PF: declaración anual (tabla anual del 113-F)"
+    estado: NUEVA
+    fase: 3
+    parametros: [RESICO_PF_TABLA_ANUAL, RESICO_PF_TOPE_ANUAL, RESICO_PF_RETENCION_PM]
+    calculadora: resico_pf_anual
+    citas: [{ley: LISR, articulo: "113-f"}, {ley: LISR, articulo: "113-e"}, {ley: LISR, articulo: "113-j"}]
+    fuente: "LISR art. 113-F (tabla anual y acreditamiento de pagos mensuales y retenciones del 113-J); texto de la Cámara de Diputados, sin cotejar con el DOF"
+    que_dice: "En abril, el RESICO de personas físicas declara el año: aplica la tasa de la tabla ANUAL sobre todo lo cobrado en el año sin IVA, y le resta lo que ya pagó cada mes y lo que le retuvieron las personas morales."
+    correcto_si: "La tasa sale de la tabla anual (300 mil, 600 mil, 1 M, 2.5 M y el tope), no de la mensual por 12; se aplica a todo el ingreso, sin deducciones; el saldo es el ISR anual menos pagos mensuales y retenciones (a cargo o a favor)."
+    hallazgo: "Las dos tablas casi nunca dan lo mismo que sumar los pagos mensuales: la mensual brinca de tasa por mes y la anual por año, por eso puede haber saldo a cargo o a favor. Si el ingreso rebasa el último renglón la calculadora avisa (SinValor): el contribuyente ya salió del régimen (R-181). El tramo 2027 es por_confirmar: sólo está leído el artículo 113-E reformado por el DOF 13-nov-2026, no su 113-F. Para Motor626PF.anual de Timbra."
+    casos:
+      - {nombre: "900,000 anuales: tasa 1.50 %", fecha: "2026-12-31", entradas: {ingresos_del_anio: "900000.00", pagos_mensuales: "11000.00", retenciones: "1000.00"}, esperado: {isr_anual: "13500.00", a_cargo: "1500.00", a_favor: "0.00"}}
+      - {nombre: "3,000,000 anuales: tasa 2.50 %, queda saldo a favor", fecha: "2026-12-31", entradas: {ingresos_del_anio: "3000000.00", pagos_mensuales: "70000.00", retenciones: "7500.00"}, esperado: {isr_anual: "75000.00", a_cargo: "0.00", a_favor: "2500.00"}}
+      - {nombre: "Límite exacto 1,000,000: todavía 1.50 %", fecha: "2026-12-31", entradas: {ingresos_del_anio: "1000000.00", pagos_mensuales: "15000.00"}, esperado: {isr_anual: "15000.00", a_cargo: "0.00", a_favor: "0.00"}}
+      - {nombre: "Un centavo arriba: brinca a 2.00 % sobre TODO", fecha: "2026-12-31", entradas: {ingresos_del_anio: "1000000.01"}, esperado: {isr_anual: "20000.00", a_cargo: "20000.00", a_favor: "0.00"}}
+      - {nombre: "Rebasa el tope de 3.5 M en 2026: sin tasa", fecha: "2026-12-31", entradas: {ingresos_del_anio: "3500000.01"}, espera_error: SinValor}
+      - {nombre: "2027 (tope 5 M, tabla anual por confirmar): 4 M a 2.50 %", fecha: "2027-12-31", entradas: {ingresos_del_anio: "4000000.00"}, esperado: {isr_anual: "100000.00", a_cargo: "100000.00", a_favor: "0.00"}, confirmado: false}
+
+  - id: R-181
+    nombre: "RESICO PF: cuándo deja de aplicar el régimen y desde qué fecha"
+    estado: NUEVA
+    fase: 3
+    parametros: [RESICO_PF_TOPE_ANUAL]
+    calculadora: resico_pf_salida
+    citas: [{ley: LISR, articulo: "113-e"}, {ley: LISR, articulo: "113-g"}, {ley: LISR, articulo: "113-i"}, {ley: RMF, anio: "2026", articulo: "3.13.5"}]
+    fuente: "LISR art. 113-E (tercer y séptimo párrafos) y 113-I; RMF 2026 regla 3.13.5 (el texto sale del Word del DOF, sin revisión humana)"
+    que_dice: "Quien rebasa el tope de ingresos del año, incumple sus obligaciones, omite tres o más pagos mensuales o no presenta su anual, deja el RESICO a partir del mes siguiente. Si salió por rebasar el tope, puede volver cuando el año anterior no pasó del tope y está al corriente; si salió por incumplir, ya no vuelve."
+    correcto_si: "La fecha de salida es el día 1 del mes siguiente al del supuesto; el tope es el de la fecha (3.5 M hasta 2026, 5 M desde 2027) y se compara con lo acumulado en el año; tres omisiones (no dos) o falta de anual ya son salida."
+    hallazgo: "La fecha del supuesto es la `fecha` del caso. La ley (113-E tercer párrafo) dice «a partir del mes siguiente a la fecha en que tales ingresos excedan»; la regla 3.13.5 de la RMF 2026 lo extiende a cualquiera de los supuestos del párrafo. POR CONFIRMAR: que las omisiones del 113-I salgan también al mes siguiente (el 113-I no trae fecha) y que no puedan volver (se aplica el séptimo párrafo del 113-E, «incumplimiento de sus obligaciones fiscales»). Qué hacer con los pagos ya hechos lo dice la regla 3.13.5 (opciones I y II) y no se calcula aquí. Para Motor626PF."
+    casos:
+      - {nombre: "Rebasa 3.5 M en julio de 2026: sale desde agosto", fecha: "2026-07-15", entradas: {motivo: tope, ingresos_acumulados: "3600000.00"}, esperado: {sale: "si", deja_de_aplicar_desde: "2026-08-01", puede_volver: si_condicionado}}
+      - {nombre: "Límite: exactamente 3.5 M no rebasa", fecha: "2026-07-15", entradas: {motivo: tope, ingresos_acumulados: "3500000.00"}, esperado: {sale: "no", deja_de_aplicar_desde: "", puede_volver: ""}}
+      - {nombre: "Rebasa en diciembre: sale desde enero del año siguiente", fecha: "2026-12-20", entradas: {motivo: tope, ingresos_acumulados: "3500000.01"}, esperado: {sale: "si", deja_de_aplicar_desde: "2027-01-01", puede_volver: si_condicionado}}
+      - {nombre: "2027: 4.8 M ya no rebasa (tope 5 M)", fecha: "2027-09-10", entradas: {motivo: tope, ingresos_acumulados: "4800000.00"}, esperado: {sale: "no", deja_de_aplicar_desde: "", puede_volver: ""}}
+      - {nombre: "Tres pagos mensuales omitidos: sale y no vuelve", fecha: "2026-10-31", entradas: {motivo: omision_pagos, pagos_omitidos: "3"}, esperado: {sale: "si", deja_de_aplicar_desde: "2026-11-01", puede_volver: "no"}}
+      - {nombre: "Dos pagos omitidos: todavía no", fecha: "2026-10-31", entradas: {motivo: omision_pagos, pagos_omitidos: "2"}, esperado: {sale: "no", deja_de_aplicar_desde: "", puede_volver: ""}}
+      - {nombre: "Sin declaración anual: sale", fecha: "2026-05-01", entradas: {motivo: omision_pagos, anual_presentada: "no"}, esperado: {sale: "si", deja_de_aplicar_desde: "2026-06-01", puede_volver: "no"}}
+      - {nombre: "Incumple obligaciones del 113-G: sale y no vuelve", fecha: "2026-03-10", entradas: {motivo: incumplimiento_obligaciones}, esperado: {sale: "si", deja_de_aplicar_desde: "2026-04-01", puede_volver: "no"}}
+
+  # ───────────── N. Pedido 06 de Timbra: bloque 2, personas morales (601 y 626 PM) ─────────────
+  - id: R-182
+    nombre: "Coeficiente de utilidad del ejercicio (para los pagos provisionales del siguiente)"
+    estado: NUEVA
+    fase: 3
+    parametros: [ISR_PM_TASA]
+    calculadora: coeficiente_utilidad
+    citas: [{ley: LISR, articulo: "14"}, {ley: LISR, articulo: "9"}, {ley: RLISR, articulo: "10"}]
+    fuente: "LISR art. 14 fr. I y art. 9 fr. I; RLISR art. 10 (calcula el coeficiente «hasta el diezmilésimo»); textos de la Cámara de Diputados, sin cotejar con el DOF"
+    que_dice: "El coeficiente de utilidad es la utilidad fiscal del ejercicio entre sus ingresos nominales, con cuatro decimales; si el ejercicio tuvo pérdida fiscal no hay coeficiente y se usa el del último año que sí lo tuvo."
+    correcto_si: "La utilidad es la del art. 9 fr. I (ingresos acumulables menos deducciones y menos la PTU pagada); las pérdidas de ejercicios anteriores NO se restan en el coeficiente; pérdida o ingresos en cero dan 0.0000; son cuatro decimales."
+    hallazgo: "`utilidad_fiscal` entra ANTES de PTU pagada y de pérdidas: la calculadora resta la PTU y reporta el resultado fiscal (después de pérdidas) para la declaración, pero el coeficiente no cambia con `perdidas_aplicadas` (el art. 14 fr. I habla de la «utilidad fiscal» y las pérdidas se restan hasta la fr. II del art. 9). Ingresos nominales = ingresos acumulables sin el ajuste anual por inflación (art. 14, penúltimo párrafo); se calculan fuera. POR CONFIRMAR por una persona: RLISR 10 dice «hasta el diezmilésimo» sin decir si se redondea o se trunca (aquí: redondeo, igual que R-114). Para Motor601.anual de Timbra."
+    casos:
+      - {nombre: "Utilidad de 1.2 M sobre ingresos de 10 M", fecha: "2026-12-31", entradas: {utilidad_fiscal: "1200000.00", ingresos_nominales: "10000000.00"}, esperado: {coeficiente: "0.1200", utilidad_fiscal: "1200000.00", resultado_fiscal: "1200000.00"}}
+      - {nombre: "Con PTU pagada de 300 mil: la utilidad baja a 1.2 M", fecha: "2026-12-31", entradas: {utilidad_fiscal: "1500000.00", ingresos_nominales: "10000000.00", ptu_pagada: "300000.00"}, esperado: {coeficiente: "0.1200", utilidad_fiscal: "1200000.00", resultado_fiscal: "1200000.00"}}
+      - {nombre: "Con pérdidas de ejercicios anteriores: el resultado baja, el coeficiente no", fecha: "2026-12-31", entradas: {utilidad_fiscal: "1200000.00", ingresos_nominales: "10000000.00", perdidas_aplicadas: "700000.00"}, esperado: {coeficiente: "0.1200", utilidad_fiscal: "1200000.00", resultado_fiscal: "500000.00"}}
+      - {nombre: "Pérdida fiscal del ejercicio: no hay coeficiente (0)", fecha: "2026-12-31", entradas: {utilidad_fiscal: "-800000.00", ingresos_nominales: "10000000.00"}, esperado: {coeficiente: "0.0000", utilidad_fiscal: "-800000.00", resultado_fiscal: "0.00"}}
+      - {nombre: "La PTU deja la utilidad en pérdida: no hay coeficiente", fecha: "2026-12-31", entradas: {utilidad_fiscal: "100000.00", ingresos_nominales: "10000000.00", ptu_pagada: "150000.00"}, esperado: {coeficiente: "0.0000", utilidad_fiscal: "-50000.00", resultado_fiscal: "0.00"}}
+      - {nombre: "Sin ingresos: no hay coeficiente", fecha: "2026-12-31", entradas: {utilidad_fiscal: "1000.00", ingresos_nominales: "0.00"}, esperado: {coeficiente: "0.0000", utilidad_fiscal: "1000.00", resultado_fiscal: "1000.00"}}
+      - {nombre: "Cuatro decimales: 1,234,567 / 10 M = 0.1234567 se redondea a 0.1235 (¿o se trunca a 0.1234? por confirmar)", fecha: "2026-12-31", entradas: {utilidad_fiscal: "1234567.00", ingresos_nominales: "10000000.00"}, esperado: {coeficiente: "0.1235", utilidad_fiscal: "1234567.00", resultado_fiscal: "1234567.00"}, confirmado: false}
+
+  - id: R-183
+    nombre: "Qué coeficiente de utilidad usar si el último ejercicio no tuvo (máximo cinco años atrás)"
+    estado: NUEVA
+    fase: 3
+    parametros: []
+    calculadora: coeficiente_aplicable
+    citas: [{ley: LISR, articulo: "14"}]
+    fuente: "LISR art. 14 fr. I, último párrafo (texto de la Cámara de Diputados, sin cotejar con el DOF)"
+    que_dice: "Los pagos provisionales usan el coeficiente del año anterior; si ese año no tuvo coeficiente, el del último año que sí lo tuvo, siempre que no sea de hace más de cinco años."
+    correcto_si: "Se busca de adelante hacia atrás entre los ejercicios anteriores al de los pagos; un coeficiente 0 es «no resultó»; el ejercicio más viejo permitido es el de hace cinco años; si no hay, la app avisa."
+    hallazgo: "No cubre los ejercicios de inicio, fusión o escisión (art. 14 fr. I tercer párrafo y art. 14 fr. III), que siguen sus propias reglas."
+    casos:
+      - {nombre: "2025 sin coeficiente: se usa el de 2024", fecha: "2026-01-31", entradas: {ejercicio_pagos: 2026, coeficientes: [[2025, "0.0000"], [2024, "0.1100"], [2023, "0.2000"]]}, esperado: {coeficiente: "0.1100", ejercicio: "2024"}}
+      - {nombre: "Año anterior con coeficiente: es ese", fecha: "2026-01-31", entradas: {ejercicio_pagos: 2026, coeficientes: [[2025, "0.0800"], [2024, "0.1100"]]}, esperado: {coeficiente: "0.0800", ejercicio: "2025"}}
+      - {nombre: "Límite: 2021 está a exactamente cinco años de 2026, todavía vale", fecha: "2026-01-31", entradas: {ejercicio_pagos: 2026, coeficientes: [[2025, "0.0000"], [2021, "0.1500"]]}, esperado: {coeficiente: "0.1500", ejercicio: "2021"}}
+      - {nombre: "2020 es de hace seis años: ya no, la app avisa", fecha: "2026-01-31", entradas: {ejercicio_pagos: 2026, coeficientes: [[2025, "0.0000"], [2020, "0.1500"]]}, espera_error: SinValor}
+
+  - id: R-184
+    nombre: "Pérdida fiscal de ejercicios anteriores, actualizada con el INPC (LISR 57)"
+    estado: NUEVA
+    fase: 3
+    parametros: [ACTUALIZACION_FACTOR_DECIMALES]
+    calculadora: perdida_fiscal_actualizada
+    citas: [{ley: LISR, articulo: "57"}, {ley: CFF, articulo: "17-a"}]
+    fuente: "LISR art. 57 (actualización de la pérdida) y CFF art. 17-A (factor, con la serie INPC de series/inpc.yaml, DOF); texto de la Cámara de Diputados, sin cotejar con el DOF"
+    que_dice: "La pérdida de un año se actualiza con el INPC de julio a diciembre de ese año, y lo pendiente se vuelve a actualizar hasta junio del año en que se aplica. Sólo se puede aplicar en los diez ejercicios siguientes."
+    correcto_si: "Dos factores seguidos (cada uno con cuatro decimales y nunca menor a 1), primero julio-diciembre del año de la pérdida y luego diciembre-junio del año de aplicación; después del décimo ejercicio, la app avisa."
+    hallazgo: "Sólo ejercicios de enero a diciembre. La serie INPC cubre 2021-10 a 2026-10: antes o después de eso la calculadora avisa (SinValor). Este monto es el que entra como `perdidas` en pm_coeficiente_provisional (R-114) y como `perdidas_anteriores` en la anual (R-185). POR CONFIRMAR: en los pagos provisionales de enero a junio, qué factor se usa mientras no llega la mitad del ejercicio (el art. 57 sólo dice «último mes de la primera mitad del ejercicio en el que se aplicará»); aquí se usa siempre el de junio."
+    casos:
+      - {nombre: "Pérdida de 500 mil de 2023 aplicada en 2025", fecha: "2025-06-30", entradas: {perdida: "500000.00", ejercicio_perdida: 2023, ejercicio_aplicacion: 2025}, esperado: {factor_primer_periodo: "1.0252", factor_segundo_periodo: "1.0652", perdida_actualizada: "546021.52"}}
+      - {nombre: "Pérdida de 1 M de 2023 aplicada en 2025", fecha: "2025-06-30", entradas: {perdida: "1000000.00", ejercicio_perdida: 2023, ejercicio_aplicacion: 2025}, esperado: {factor_primer_periodo: "1.0252", factor_segundo_periodo: "1.0652", perdida_actualizada: "1092043.04"}}
+      - {nombre: "Límite: de 2013 a 2024 es el undécimo ejercicio siguiente: ya no se puede aplicar", fecha: "2025-06-30", entradas: {perdida: "1000.00", ejercicio_perdida: 2013, ejercicio_aplicacion: 2024}, espera_error: SinValor}
+      - {nombre: "Sin INPC para el año de la pérdida: la app avisa", fecha: "2025-06-30", entradas: {perdida: "1000.00", ejercicio_perdida: 2019, ejercicio_aplicacion: 2025}, espera_error: SinValor}
+
+  - id: R-185
+    nombre: "Anual de RESICO persona moral (626 PM): impuesto del ejercicio"
+    estado: NUEVA
+    fase: 3
+    parametros: [ISR_PM_TASA, RESICO_PM_TOPE_ANUAL]
+    calculadora: resico_pm_anual
+    citas: [{ley: LISR, articulo: "212"}, {ley: LISR, articulo: "207"}, {ley: LISR, articulo: "208"}, {ley: LISR, articulo: "209"}, {ley: LISR, articulo: "210"}, {ley: LISR, articulo: "211"}, {ley: LISR, articulo: "9"}]
+    fuente: "LISR arts. 206 a 213 (Título VII, Capítulo XII), texto de la Cámara de Diputados, sin cotejar con el DOF"
+    que_dice: "La anual del RESICO de personas morales es el mismo cálculo que el pago provisional de diciembre (lo cobrado menos lo pagado y la PTU pagada, menos pérdidas, por 30 %), y además se pueden acreditar el impuesto de los artículos 5 y 10 y los pagos provisionales."
+    correcto_si: "Ingresos efectivamente cobrados y deducciones efectivamente pagadas (inversiones con los porcientos del 209, R-172), PTU pagada, pérdidas de ejercicios anteriores ya actualizadas, 30 %, y se acreditan pagos provisionales, retenciones y el impuesto de los arts. 5 y 10; si las deducciones y la PTU superan a los ingresos hay pérdida fiscal, no impuesto."
+    hallazgo: "Respuesta a la pregunta del pedido: SÍ es el mismo cálculo acumulado de diciembre (211 y 212 llevan al art. 9 con la misma base de flujo de efectivo). Diferencias reales: (1) acredita además el impuesto de los arts. 5 y 10 (212 fr. II); (2) el art. 210 fr. VIII permite reunir los requisitos de la deducción hasta el último día del ejercicio, así que las deducciones de la anual pueden ser más que las acumuladas en los provisionales; (3) no hay coeficiente de utilidad ni ajuste anual por inflación; (4) la pérdida fiscal suma la PTU pagada (212, cuarto párrafo) y sigue el Capítulo V del Título II. Para PTU, el art. 212 define la renta gravable como la utilidad fiscal del art. 9. El acreditamiento del art. 10 tiene topes y plazos de tres ejercicios que NO se calculan aquí: la app captura el monto ya acreditable. Para Motor626PM.anual de Timbra."
+    casos:
+      - {nombre: "Utilidad con PTU y pérdidas, a cargo", fecha: "2026-12-31", entradas: {ingresos_percibidos: "12000000.00", deducciones_erogadas: "9000000.00", ptu_pagada: "100000.00", perdidas_anteriores: "500000.00", pagos_provisionales: "450000.00"}, esperado: {utilidad_fiscal: "2900000.00", resultado_fiscal: "2400000.00", isr: "720000.00", a_cargo: "270000.00", saldo_a_favor: "0.00", perdidas_por_amortizar: "0.00"}}
+      - {nombre: "Pérdida fiscal del ejercicio: sin impuesto, saldo a favor y pérdida por amortizar", fecha: "2026-12-31", entradas: {ingresos_percibidos: "5000000.00", deducciones_erogadas: "5400000.00", pagos_provisionales: "30000.00"}, esperado: {utilidad_fiscal: "-400000.00", resultado_fiscal: "0.00", isr: "0.00", a_cargo: "0.00", saldo_a_favor: "30000.00", perdidas_por_amortizar: "400000.00"}}
+      - {nombre: "Acreditamiento del art. 10 de 40 mil: queda saldo a favor", fecha: "2026-12-31", entradas: {ingresos_percibidos: "1000000.00", deducciones_erogadas: "400000.00", pagos_provisionales: "150000.00", impuesto_acreditable_5_10: "40000.00"}, esperado: {utilidad_fiscal: "600000.00", resultado_fiscal: "600000.00", isr: "180000.00", a_cargo: "0.00", saldo_a_favor: "10000.00", perdidas_por_amortizar: "0.00"}}
+      - {nombre: "Límite: la PTU empuja a pérdida aunque lo cobrado supera lo pagado", fecha: "2026-12-31", entradas: {ingresos_percibidos: "1000000.00", deducciones_erogadas: "900000.00", ptu_pagada: "150000.00"}, esperado: {utilidad_fiscal: "-50000.00", resultado_fiscal: "0.00", isr: "0.00", a_cargo: "0.00", saldo_a_favor: "0.00", perdidas_por_amortizar: "50000.00"}}
+
+  # ───────────── O. Pedido 06 de Timbra: bloque 3, plataformas (625) en la anual ─────────────
+  - id: R-186
+    nombre: "Plataformas (625): ¿los ingresos con retención se acumulan en la anual de la persona física?"
+    estado: NUEVA
+    fase: 3
+    parametros: [PLATAFORMAS_PD_TOPE_ANUAL]
+    calculadora: plataformas_en_anual
+    citas: [{ley: LISR, articulo: "113-a"}, {ley: LISR, articulo: "113-b"}, {ley: LISR, articulo: "150"}, {ley: RMF, anio: "2026", articulo: "12.3.9"}]
+    fuente: "LISR art. 113-A (tercer párrafo), 113-B y 150 (texto de la Cámara de Diputados, sin cotejar con el DOF); RMF 2026 regla 12.3.9 (texto del DOF, sin revisión humana)"
+    que_dice: "Si la persona física optó por el pago definitivo y el año anterior no pasó de 300 mil, la retención de la plataforma es definitiva: esos ingresos no se acumulan en la anual ni se acredita la retención. Si no optó, o el año anterior ya rebasó el tope, la retención es sólo un pago provisional: se acumulan y se acredita."
+    correcto_si: "Definitivo sólo con las dos condiciones (aviso de opción y tope del ejercicio inmediato anterior); entonces ingreso acumulable y retención acreditable son cero; si no, el ingreso sin IVA se acumula y toda la retención se acredita."
+    hallazgo: "Resuelve el [CONFIRMAR] de Timbra (hoy acumula siempre): la ley no los acumula cuando son definitivos (LISR 150: la anual excluye los ingresos «por los que se haya pagado impuesto definitivo»). POR CONFIRMAR por una persona: (1) cuándo cesa la opción al rebasar el tope: el 113-B fr. I mide el tope con el ejercicio INMEDIATO ANTERIOR y la RMF 12.3.9 dice que se deja de aplicar «a partir del ejercicio inmediato siguiente a aquel en que dejen de reunir los requisitos»; aquí se aplica la lectura de la ley (si el año anterior rebasó, este año ya no es definitivo) y se avisa en `siguiente_ejercicio_definitivo` cuando se rebasa en el ejercicio que corre; si el SAT entiende que se pierde un año después, el caso 3 cambia; (2) el 150, tercer párrafo, obliga a informar todos los ingresos si pasan de 500 mil, pero sólo menciona el art. 138, no el 113-B; (3) la opción exige además que sólo tenga ingresos de plataformas (más salarios e intereses, 113-B fr. II): lo valida la app. El tope es PLATAFORMAS_PD_TOPE_ANUAL (por_confirmar). Para Motor625.anual de Timbra."
+    casos:
+      - {nombre: "Optó y cumple: 280 mil con 2,800 retenidos no se acumulan", fecha: "2026-12-31", entradas: {opta_definitivo: "si", ingresos_plataformas_ejercicio_anterior: "250000.00", ingresos_plataformas_ejercicio: "280000.00", isr_retenido: "2800.00"}, esperado: {pago_definitivo: "si", acumula_en_anual: "no", ingreso_acumulable: "0.00", isr_retenido_acreditable: "0.00", siguiente_ejercicio_definitivo: "si"}}
+      - {nombre: "Límite: el año anterior exactamente en 300 mil todavía cumple", fecha: "2026-12-31", entradas: {opta_definitivo: "si", ingresos_plataformas_ejercicio_anterior: "300000.00", ingresos_plataformas_ejercicio: "300000.00", isr_retenido: "3000.00"}, esperado: {pago_definitivo: "si", acumula_en_anual: "no", ingreso_acumulable: "0.00", isr_retenido_acreditable: "0.00", siguiente_ejercicio_definitivo: "si"}}
+      - {nombre: "Optó y rebasa el tope en este ejercicio: este año sigue definitivo, el siguiente ya no", fecha: "2026-12-31", entradas: {opta_definitivo: "si", ingresos_plataformas_ejercicio_anterior: "250000.00", ingresos_plataformas_ejercicio: "350000.00", isr_retenido: "3500.00"}, esperado: {pago_definitivo: "si", acumula_en_anual: "no", ingreso_acumulable: "0.00", isr_retenido_acreditable: "0.00", siguiente_ejercicio_definitivo: "no"}}
+      - {nombre: "Optó pero el año anterior pasó el tope por un centavo: se acumula y se acredita", fecha: "2026-12-31", entradas: {opta_definitivo: "si", ingresos_plataformas_ejercicio_anterior: "300000.01", ingresos_plataformas_ejercicio: "400000.00", isr_retenido: "4000.00"}, esperado: {pago_definitivo: "no", acumula_en_anual: "si", ingreso_acumulable: "400000.00", isr_retenido_acreditable: "4000.00", siguiente_ejercicio_definitivo: "no"}}
+      - {nombre: "No optó: se acumula y se acredita aunque sea poco", fecha: "2026-12-31", entradas: {opta_definitivo: "no", ingresos_plataformas_ejercicio_anterior: "100000.00", ingresos_plataformas_ejercicio: "120000.00", isr_retenido: "1200.00"}, esperado: {pago_definitivo: "no", acumula_en_anual: "si", ingreso_acumulable: "120000.00", isr_retenido_acreditable: "1200.00", siguiente_ejercicio_definitivo: "no"}}
+
+  - id: R-187
+    nombre: "Plataformas (625): fila de obligaciones en la matriz régimen × obligación (R-109): provisional, anual y DIOT"
+    estado: NUEVA
+    fase: 3
+    parametros: [OBLIGACIONES_625_PF, PLATAFORMAS_PD_TOPE_ANUAL, CONTA_ELEC_RELEVO_PF_INGRESOS]
+    calculadora: obligaciones_625_pf
+    citas: [{ley: LISR, articulo: "113-b"}, {ley: LISR, articulo: "150"}, {ley: RMF, anio: "2026", articulo: "12.3.13"}, {ley: RMF, anio: "2026", articulo: "2.8.1.17"}]
+    fuente: "OBLIGACIONES_625_PF: LISR 113-A, 113-B y 150; RMF 2026 reglas 12.3.13 y 2.8.1.17 (texto del DOF, sin revisión humana)"
+    que_dice: "La persona física en plataformas presenta pago provisional el día 17 de cada mes y anual en abril, salvo que haya optado por el pago definitivo y cumpla; la DIOT mensual se le releva si el año anterior no pasó de 4 millones."
+    correcto_si: "Provisional y anual dependen de optar y cumplir el tope del año anterior; con otros ingresos la anual se presenta siempre; la DIOT sólo se presenta si el año anterior se pasó de 4 millones (ingresos totales)."
+    hallazgo: "Completa la fila del 625 de R-109, que sólo decía «retención». Sólo personas físicas. Las dos tablas de decisión (pago definitivo y relevo de DIOT) son las de R-186 y R-109. POR CONFIRMAR: RMF 2.8.1.17 habla de «Capítulo II, Secciones I y III»; las plataformas son la Sección III (RMF 12.3.5), por lo que se aplica el relevo. Para el 625 de la matriz de Timbra."
+    casos:
+      - {nombre: "Optó y cumple, 1 M de ingresos: sin provisional, sin anual, sin DIOT", fecha: "2026-12-31", entradas: {opta_definitivo: "si", ingresos_plataformas_ejercicio_anterior: "200000.00", ingresos_totales_ejercicio_anterior: "1000000.00"}, esperado: {pago_provisional: "no", declaracion_anual: "no", diot: "no"}}
+      - {nombre: "Optó y cumple pero tiene otros ingresos: la anual sí", fecha: "2026-12-31", entradas: {opta_definitivo: "si", ingresos_plataformas_ejercicio_anterior: "200000.00", ingresos_totales_ejercicio_anterior: "1000000.00", otros_ingresos: "si"}, esperado: {pago_provisional: "no", declaracion_anual: "abril", diot: "no"}}
+      - {nombre: "No optó, 4 M exactos: provisional y anual, DIOT relevada", fecha: "2026-12-31", entradas: {opta_definitivo: "no", ingresos_plataformas_ejercicio_anterior: "200000.00", ingresos_totales_ejercicio_anterior: "4000000.00"}, esperado: {pago_provisional: "mensual_dia_17", declaracion_anual: "abril", diot: "no"}}
+      - {nombre: "Límite: un centavo arriba de 4 M ya presenta DIOT", fecha: "2026-12-31", entradas: {opta_definitivo: "no", ingresos_plataformas_ejercicio_anterior: "200000.00", ingresos_totales_ejercicio_anterior: "4000000.01"}, esperado: {pago_provisional: "mensual_dia_17", declaracion_anual: "abril", diot: "mensual_dia_17"}}
+
+  # ───────────── P. Pedido 06 de Timbra: bloque 4, dividendos y donatarias ─────────────
+  - id: R-188
+    nombre: "Dividendos a persona física (611): acumulación, acreditamiento del ISR corporativo y retención adicional de 10 %"
+    estado: NUEVA
+    fase: 3
+    parametros: [DIVIDENDOS_FACTOR_PIRAMIDACION, DIVIDENDOS_RETENCION_ADICIONAL_PCT, ISR_PM_TASA]
+    calculadora: dividendos_pf
+    citas: [{ley: LISR, articulo: "140"}, {ley: LISR, articulo: "10"}, {ley: LISR, articulo: "9"}, {ley: LISR, articulo: "76"}]
+    fuente: "LISR art. 140 (primer y segundo párrafos) y art. 10 (factor 1.4286); texto de la Cámara de Diputados, sin cotejar con el DOF"
+    que_dice: "El accionista persona física suma el dividendo a sus ingresos y, si quiere acreditar el ISR que pagó la sociedad, suma también ese impuesto (30 % de dividendo × 1.4286) y lo acredita en su anual; además la sociedad le retiene 10 % del dividendo como pago definitivo."
+    correcto_si: "El ISR de la sociedad se calcula con el factor y la tasa de la fecha, no con lo que diga la constancia (se compara); acreditar exige acumularlo y tener la constancia y el CFDI del art. 76 fr. XI; la retención de 10 % es sobre el dividendo y es definitiva (no se acredita)."
+    hallazgo: "Para el accionista de una SAPI (601): la retención de 10 % la hace la sociedad al distribuir y la entera con su pago provisional (140, segundo párrafo). POR CONFIRMAR: (1) el 10 % sólo aplica a utilidades generadas desde 2014 (disposición transitoria de 2014 que no está en la biblioteca): con `utilidad_generada_desde_2014: no` la calculadora avisa y no calcula; (2) el estímulo del Artículo Tercero, fr. I, de las disposiciones de vigencia temporal (utilidades 2014 a 2016 reinvertidas: crédito de 1 %, 2 % o 5 % según el año de distribución) NO está modelado; (3) la ley dice que el impuesto de la sociedad «se determinará» con la fórmula, así que `isr_corporativo_pagado` (la constancia) sólo se compara y no cambia el acreditamiento. Si el dividendo viene de la CUFIN o no, el acreditamiento del accionista usa la misma fórmula. Para Timbra, régimen 611 con accionista de una 601."
+    casos:
+      - {nombre: "Dividendo de 100,000 con constancia correcta", fecha: "2026-06-30", entradas: {dividendo: "100000.00", isr_corporativo_pagado: "42858.00"}, esperado: {ingreso_acumulable: "142858.00", isr_corporativo_acreditable: "42858.00", retencion_adicional: "10000.00", constancia_coincide: "si"}}
+      - {nombre: "Centavos: 12,345.67 sin constancia", fecha: "2026-06-30", entradas: {dividendo: "12345.67"}, esperado: {ingreso_acumulable: "17636.78", isr_corporativo_acreditable: "5291.11", retencion_adicional: "1234.57", constancia_coincide: "no_informada"}}
+      - {nombre: "No acredita: sólo acumula el dividendo; la constancia de 40,000 no coincide", fecha: "2026-06-30", entradas: {dividendo: "100000.00", isr_corporativo_pagado: "40000.00", acredita: "no"}, esperado: {ingreso_acumulable: "100000.00", isr_corporativo_acreditable: "0.00", retencion_adicional: "10000.00", constancia_coincide: "no"}}
+      - {nombre: "Límite: primer día de 2014, ya aplica el factor 1.4286", fecha: "2014-01-01", entradas: {dividendo: "10000.00"}, esperado: {ingreso_acumulable: "14285.80", isr_corporativo_acreditable: "4285.80", retencion_adicional: "1000.00", constancia_coincide: "no_informada"}}
+      - {nombre: "Antes de 2014 la base no trae el factor", fecha: "2013-12-31", entradas: {dividendo: "10000.00"}, espera_error: SinValor}
+      - {nombre: "Utilidades generadas antes de 2014: la base avisa", fecha: "2026-06-30", entradas: {dividendo: "10000.00", utilidad_generada_desde_2014: "no"}, espera_error: SinValor}
+
+  - id: R-189
+    nombre: "Donatarias autorizadas (603): remanente distribuible, remanente ficto y su impuesto"
+    estado: NUEVA
+    fase: 3
+    parametros: [ISR_TARIFA_ANUAL]
+    calculadora: donataria_remanente
+    citas: [{ley: LISR, articulo: "79"}, {ley: LISR, articulo: "80"}, {ley: LISR, articulo: "152"}]
+    fuente: "LISR art. 79 (penúltimo y último párrafos) y art. 80 (primero a quinto párrafos); texto de la Cámara de Diputados, sin cotejar con el DOF"
+    que_dice: "La donataria no paga ISR por sus ingresos, pero determina el remanente distribuible del año (ingresos menos deducciones) que sus integrantes acumulan sólo si lo reciben en efectivo o bienes. Si omite ingresos, registra compras que no hicieron, tiene gastos no deducibles o presta a sus integrantes, ese monto se trata como remanente ficto y la donataria paga sobre él la tasa máxima de la tarifa (35 %) a más tardar en febrero del año siguiente."
+    correcto_si: "Distribuible = ingresos (sin los del art. 93 ni los de impuesto definitivo) − deducciones, nunca menor a cero; ficto = omisiones + compras no realizadas + erogaciones no deducibles + préstamos a integrantes o a sus cónyuges, ascendientes o descendientes; impuesto del ficto = ficto × tasa máxima del art. 152 (definitivo); los préstamos se restan del remanente que la donataria entregue."
+    hallazgo: "No hay una «tasa» del remanente distribuible real: lo gravan sus perceptores en su propio régimen (art. 80, tercer párrafo). La única tasa de la donataria es la del remanente ficto: la máxima del art. 152 (35 % en la tarifa cargada; sale de la tabla por fecha). Cuando la mayoría de integrantes son del Título II o de la Sección I del Capítulo II del Título IV, el cálculo se hace con las reglas de esos regímenes (art. 80, segundo párrafo): no se modela. Fracciones del art. 79 a las que aplica el ficto: V, VI, VII, IX, X, XI, XIII, XVI, XVII, XVIII, XIX, XX, XXIV y XXV y las donatarias autorizadas. Para la fecha de entero (febrero del año siguiente) la `fecha` es la del supuesto."
+    casos:
+      - {nombre: "Distribuible de 500 mil y ficto de 500 mil a 35 %", fecha: "2026-12-31", entradas: {ingresos_obtenidos: "5000000.00", ingresos_excluidos: "200000.00", deducciones_autorizadas: "4300000.00", omisiones_ingresos: "100000.00", erogaciones_no_deducibles: "50000.00", prestamos_a_integrantes: "350000.00", remanente_entregado: "400000.00"}, esperado: {remanente_distribuible: "500000.00", remanente_ficto: "500000.00", tasa_remanente_ficto: "35.00", isr_remanente_ficto: "175000.00", entero_a_mas_tardar: "2027-02-28", prestamos_que_se_restan_del_remanente_entregado: "350000.00"}}
+      - {nombre: "Límite: deducciones mayores que ingresos, sin remanente ni ficto; entero en febrero bisiesto", fecha: "2027-06-30", entradas: {ingresos_obtenidos: "1000000.00", deducciones_autorizadas: "1200000.00"}, esperado: {remanente_distribuible: "0.00", remanente_ficto: "0.00", tasa_remanente_ficto: "35.00", isr_remanente_ficto: "0.00", entero_a_mas_tardar: "2028-02-29", prestamos_que_se_restan_del_remanente_entregado: "0.00"}}
+      - {nombre: "Préstamo mayor que lo entregado: sólo se resta lo entregado", fecha: "2026-12-31", entradas: {ingresos_obtenidos: "800000.00", deducciones_autorizadas: "700000.00", prestamos_a_integrantes: "300000.00", remanente_entregado: "60000.00"}, esperado: {remanente_distribuible: "100000.00", remanente_ficto: "300000.00", tasa_remanente_ficto: "35.00", isr_remanente_ficto: "105000.00", entero_a_mas_tardar: "2027-02-28", prestamos_que_se_restan_del_remanente_entregado: "60000.00"}}
+
+  - id: R-190
+    nombre: "Donatarias autorizadas (603): tope de ingresos por actividades distintas a su objeto (10 %) y pérdida de la autorización (50 %)"
+    estado: NUEVA
+    fase: 3
+    parametros: [DONATARIA_INGRESOS_NO_RELACIONADOS_PCT, DONATARIA_PERDIDA_AUTORIZACION_PCT, ISR_PM_TASA]
+    calculadora: donataria_actividades_distintas
+    citas: [{ley: LISR, articulo: "80"}]
+    fuente: "LISR art. 80, séptimo y octavo párrafos (el octavo, adicionado por el Decreto DOF 08-12-2020, en vigor el 1-ene-2021); texto de la Cámara de Diputados, sin cotejar con el DOF"
+    que_dice: "Una donataria puede tener ingresos por actividades distintas a su objeto hasta 10 % de sus ingresos totales del año; lo que pase del 10 % paga ISR del Título II; si pasa de 50 %, pierde la autorización para recibir donativos."
+    correcto_si: "El porcentaje se mide contra los ingresos totales (con donativos, apoyos públicos, venta de activo fijo, cuotas, intereses y demás ingresos que el art. 80 no cuenta como actividades distintas); sólo los ingresos distintos computables entran al numerador; exactamente 10 % o 50 % no excede; el ISR del excedente es 30 % de la utilidad que corresponda a ese excedente."
+    hallazgo: "El art. 80 dice «determinar el impuesto que corresponda a dicho excedente» conforme al Título II, sin fórmula para prorratear la utilidad: la calculadora pide la `utilidad_del_excedente` ya determinada y le aplica 30 %. Los ingresos que no cuentan (donativos, apoyos de la Federación, entidades o municipios, activo fijo e intangible, cuotas de integrantes, cuotas de recuperación, intereses, propiedad intelectual, uso o goce de inmuebles y rendimientos de acciones colocadas entre el gran público) se excluyen ANTES de llamar a la calculadora. REVISAR: DONATARIA_INGRESOS_NO_RELACIONADOS_PCT trae 10 % desde 2014-01-01, pero el séptimo párrafo del art. 80 fue reformado por el Decreto DOF 30-nov-2016 y la base no tiene el texto anterior para saber si el porcentaje de 2014 a 2016 era otro. Para Timbra, régimen 603."
+    casos:
+      - {nombre: "Límite: exactamente 10 % no excede", fecha: "2026-12-31", entradas: {ingresos_totales: "10000000.00", ingresos_distintos: "1000000.00"}, esperado: {limite: "1000000.00", porcentaje: "10.00", excedente: "0.00", isr_del_excedente: "0.00", pierde_autorizacion: "no"}}
+      - {nombre: "15 %: excedente de 500 mil y utilidad de 100 mil paga 30 %", fecha: "2026-12-31", entradas: {ingresos_totales: "10000000.00", ingresos_distintos: "1500000.00", utilidad_del_excedente: "100000.00"}, esperado: {limite: "1000000.00", porcentaje: "15.00", excedente: "500000.00", isr_del_excedente: "30000.00", pierde_autorizacion: "no"}}
+      - {nombre: "Límite: exactamente 50 % todavía no pierde la autorización", fecha: "2026-12-31", entradas: {ingresos_totales: "10000000.00", ingresos_distintos: "5000000.00", utilidad_del_excedente: "400000.00"}, esperado: {limite: "1000000.00", porcentaje: "50.00", excedente: "4000000.00", isr_del_excedente: "120000.00", pierde_autorizacion: "no"}}
+      - {nombre: "Un centavo arriba de 50 %: pierde la autorización", fecha: "2026-12-31", entradas: {ingresos_totales: "10000000.00", ingresos_distintos: "5000000.01"}, esperado: {limite: "1000000.00", porcentaje: "50.00", excedente: "4000000.01", isr_del_excedente: "0.00", pierde_autorizacion: "si"}}
+      - {nombre: "Antes de 2021 no existía la pérdida por 50 %: la base avisa", fecha: "2020-12-31", entradas: {ingresos_totales: "10000000.00", ingresos_distintos: "5000000.01"}, espera_error: SinValor}
+
+  # ───────────── Q. Pedido 06 de Timbra: bloque 5, chicos ─────────────
+  - id: R-191
+    nombre: "Tasa marginal del ISR de persona física: el % del renglón de la tarifa (arts. 96, 106 y 152)"
+    estado: NUEVA
+    fase: 3
+    parametros: [ISR_TARIFA_MENSUAL, ISR_TARIFA_ACUMULADA_106, ISR_TARIFA_ANUAL]
+    calculadora: isr_tasa_marginal
+    citas: [{ley: LISR, articulo: "96"}, {ley: LISR, articulo: "106"}, {ley: LISR, articulo: "152"}]
+    fuente: "Tarifas del Anexo 8 de la RMF 2026 ya cargadas (mensual del art. 96, acumuladas del art. 106 y anual del art. 152)"
+    que_dice: "La tasa marginal es el porcentaje del renglón de la tarifa en que cae la base: cada peso más de base paga ese porcentaje. Enero usa la tarifa mensual, febrero a noviembre la acumulada del mes y diciembre la anual."
+    correcto_si: "El renglón es el que contiene la base (el límite inferior ya es del renglón siguiente); con meses 1 se usa la mensual, de 2 a 11 la acumulada y con 12 la anual; una base menor a 0.01 tiene tasa cero."
+    hallazgo: "Reemplaza la tasa de personas morales que Timbra usaba como aproximación para estimar el ahorro de una deducción. La tasa marginal sólo es exacta si la deducción no cruza de renglón: para el ahorro exacto usa isr_ahorro_deduccion (R-192). Las tarifas de 2027 se arrastran del último ejercicio cargado hasta que salga el Anexo 8 de 2027, y la `fecha` dice cuál se usó."
+    casos:
+      - {nombre: "Enero, base 20,000: renglón de 21.36 %", fecha: "2026-06-30", entradas: {base: "20000.00", meses: 1}, esperado: {tasa_marginal: "21.36", limite_inferior: "17533.65", limite_superior: "35362.83", cuota_fija: "1856.84"}}
+      - {nombre: "Límite: 844.59 es el último centavo del 1.92 %", fecha: "2026-06-30", entradas: {base: "844.59", meses: 1}, esperado: {tasa_marginal: "1.92", limite_inferior: "0.01", limite_superior: "844.59", cuota_fija: "0.00"}}
+      - {nombre: "Un centavo arriba: 844.60 ya es 6.40 %", fecha: "2026-06-30", entradas: {base: "844.60", meses: 1}, esperado: {tasa_marginal: "6.40", limite_inferior: "844.60", limite_superior: "7168.51", cuota_fija: "16.22"}}
+      - {nombre: "Junio (acumulada de 6 meses), base 50,000", fecha: "2026-06-30", entradas: {base: "50000.00", meses: 6}, esperado: {tasa_marginal: "10.88", limite_inferior: "43011.07", limite_superior: "75588.12", cuota_fija: "2525.70"}}
+      - {nombre: "Anual: 5,107,703.93 entra al renglón de 35 %", fecha: "2026-12-31", entradas: {base: "5107703.93", meses: 12}, esperado: {tasa_marginal: "35.00", limite_inferior: "5107703.93", limite_superior: "", cuota_fija: "1601862.46"}}
+      - {nombre: "Anual: un centavo menos sigue en 34 %", fecha: "2026-12-31", entradas: {base: "5107703.92", meses: 12}, esperado: {tasa_marginal: "34.00", limite_inferior: "1702567.98", limite_superior: "5107703.92", cuota_fija: "444116.23"}}
+      - {nombre: "Base cero: tasa cero", fecha: "2026-06-30", entradas: {base: "0.00", meses: 1}, esperado: {tasa_marginal: "0.00", limite_inferior: "", limite_superior: "", cuota_fija: "0.00"}}
+
+  - id: R-192
+    nombre: "Ahorro exacto de ISR de una deducción en persona física"
+    estado: NUEVA
+    fase: 3
+    parametros: [ISR_TARIFA_MENSUAL, ISR_TARIFA_ACUMULADA_106, ISR_TARIFA_ANUAL]
+    calculadora: isr_ahorro_deduccion
+    citas: [{ley: LISR, articulo: "96"}, {ley: LISR, articulo: "106"}, {ley: LISR, articulo: "152"}]
+    fuente: "Tarifas del Anexo 8 de la RMF 2026 ya cargadas (arts. 96, 106 y 152); aritmética de la tarifa, sin fuente adicional"
+    que_dice: "Lo que de verdad se ahorra una persona física con una deducción es el ISR de su base menos el ISR de su base sin esa deducción; cuando la deducción cruza renglones, el ahorro mezcla varias tasas."
+    correcto_si: "Las dos cuentas usan la misma tarifa y el mismo número de meses; la base con deducción nunca baja de cero; el ahorro nunca es mayor que el ISR sin deducción."
+    hallazgo: "Complementa R-191: la tasa marginal sirve para una estimación rápida, este cálculo es el exacto. No aplica los topes de deducciones personales (art. 151): eso se resuelve antes con tope_deducciones_personales."
+    casos:
+      - {nombre: "Base 20,000 con deducción de 5,000: cruza de renglón (21.36 % y 17.92 %)", fecha: "2026-06-30", entradas: {base: "20000.00", deduccion: "5000.00", meses: 1}, esperado: {isr_sin_deduccion: "2383.65", isr_con_deduccion: "1402.82", ahorro: "980.83", tasa_marginal: "21.36"}}
+      - {nombre: "Límite: la deducción es mayor que la base, el ahorro es todo el ISR", fecha: "2026-06-30", entradas: {base: "3000.00", deduccion: "10000.00", meses: 1}, esperado: {isr_sin_deduccion: "154.17", isr_con_deduccion: "0.00", ahorro: "154.17", tasa_marginal: "6.40"}}
+
+  - id: R-193
+    nombre: "Plazo para cancelar un CFDI según el ejercicio en que se emitió"
+    estado: NUEVA
+    fase: 3
+    parametros: [CFDI_CANCELACION_MES_LIMITE_PM, CFDI_CANCELACION_MES_LIMITE_PF]
+    calculadora: cfdi_plazo_cancelacion
+    citas: [{ley: CFF, articulo: "29-a"}]
+    fuente: "CFF art. 29-A, cuarto párrafo, reformado por el Decreto DOF 07-nov-2025 (texto de la Cámara de Diputados, sin cotejar con el DOF); transitorios Primero y Segundo del decreto, en la biblioteca"
+    que_dice: "Un CFDI se cancela a más tardar en el mes en que se presenta la anual del año en que se emitió (marzo las personas morales y abril las personas físicas, del año siguiente) y siempre que el receptor acepte la cancelación."
+    correcto_si: "El último día es el último día del mes de la anual del año siguiente al de emisión; si se cancela después, ya no procede cancelar (se emite un egreso); siempre se requiere la aceptación del receptor."
+    hallazgo: "Responde al pendiente del pedido 05 sobre ejercicios anteriores a 2026: el decreto de 07-nov-2025 sólo trae transitorios de entrada en vigor (1-ene-2026), de procedimientos iniciados, de la Comisión Nacional de Energía y de presupuesto; NO trae régimen para CFDI emitidos antes de 2026. Se aplica la ley vigente a la fecha en que se cancela, sin importar el año de emisión (la ley habla del «ejercicio fiscal en el cual se expidió»). POR CONFIRMAR por una persona: el texto de 29-A anterior a la reforma de 2025 no está en la biblioteca, así que no se sabe si el plazo era distinto; una cancelación hecha antes del 1-ene-2026 la base no la califica (avisa). Procedimientos iniciados antes de 2026 siguen la regla anterior (Segundo transitorio)."
+    casos:
+      - {nombre: "PF, emitido en 2025 y cancelado en marzo de 2026: dentro de plazo", fecha: "2026-03-10", entradas: {tipo: pf, ejercicio_emision: 2025}, esperado: {ultimo_dia: "2026-04-30", dentro_de_plazo: "si", requiere_aceptacion_receptor: "si"}}
+      - {nombre: "Límite PF: el 30 de abril todavía", fecha: "2026-04-30", entradas: {tipo: pf, ejercicio_emision: 2025}, esperado: {ultimo_dia: "2026-04-30", dentro_de_plazo: "si", requiere_aceptacion_receptor: "si"}}
+      - {nombre: "Un día después, PF: ya no", fecha: "2026-05-01", entradas: {tipo: pf, ejercicio_emision: 2025}, esperado: {ultimo_dia: "2026-04-30", dentro_de_plazo: "no", requiere_aceptacion_receptor: "si"}}
+      - {nombre: "Límite PM: el 31 de marzo todavía", fecha: "2026-03-31", entradas: {tipo: pm, ejercicio_emision: 2025}, esperado: {ultimo_dia: "2026-03-31", dentro_de_plazo: "si", requiere_aceptacion_receptor: "si"}}
+      - {nombre: "PM, 1 de abril: ya no", fecha: "2026-04-01", entradas: {tipo: pm, ejercicio_emision: 2025}, esperado: {ultimo_dia: "2026-03-31", dentro_de_plazo: "no", requiere_aceptacion_receptor: "si"}}
+      - {nombre: "Emitido en 2024 y cancelado en febrero de 2026: el plazo (abril de 2025) ya venció", fecha: "2026-02-01", entradas: {tipo: pf, ejercicio_emision: 2024}, esperado: {ultimo_dia: "2025-04-30", dentro_de_plazo: "no", requiere_aceptacion_receptor: "si"}}
+      - {nombre: "Cancelación hecha en 2025: la base no trae la regla anterior, avisa", fecha: "2025-12-31", entradas: {tipo: pf, ejercicio_emision: 2025}, espera_error: SinValor}
+
+  - id: R-194
+    nombre: "Póliza de nómina con cada pasivo en su cuenta: ISR de sueldos o asimilados, IMSS retenido y provisión patronal"
+    estado: CRITERIO
+    fase: 4
+    parametros: [CONTA_CONCEPTO_AGRUPADOR, CONTA_CODIGO_AGRUPADOR]
+    calculadora: poliza_nomina_desglosada
+    citas: [{ley: CFF, articulo: "28"}, {ley: LISR, articulo: "96"}, {ley: RMF, anio: "2026", articulo: "2.8.1.5"}, {nif: "D-3"}]
+    fuente: "CFF art. 28; RMF 2026 regla 2.8.1.5 (código agrupador, Anexo 24); NIF D-3 (referencia); criterio de las pólizas tipo, sin firma"
+    que_dice: "Al pagar la nómina, el ISR retenido de sueldos va a 216.01 y el de asimilados a 216.02, el IMSS retenido al trabajador a 216.11, y lo que debe el patrón queda provisionado en IMSS 211.01, SAR 211.02 e Infonavit 211.03."
+    correcto_si: "La póliza cuadra; el neto es percepciones menos ISR y cuota obrera; cada pasivo tiene su concepto (y su código agrupador del SAT) y el gasto patronal va a sus cuentas 601.26, 601.27 y 601.28."
+    hallazgo: "Separa lo que R-155 mezclaba en imss_por_pagar (cuota obrera y cuota patronal) y agrega el SAR. Los códigos salen de CONTA_CONCEPTO_AGRUPADOR (por_confirmar, criterio) y cada uno se verificó contra el catálogo de 2026. Los asimilados llevan su propio concepto de ISR y no llevan IMSS. `isr_retenido` entra neto del subsidio para el empleo. Es criterio contable, no una cifra de ley."
+    casos:
+      - {nombre: "Nómina de sueldos con todas las cuentas", fecha: "2026-06-30", entradas: {percepciones: "10000", isr_retenido: "850", imss_obrero: "250", imss_patron: "1500", sar_patron: "200", infonavit_patron: "500"}, esperado: "D aportaciones_infonavit 500.00; D aportaciones_sar 200.00; D cuotas_patronales 1500.00; D sueldos_y_salarios 10000.00; H bancos 8900.00; H imss_patronal_por_pagar 1500.00; H imss_retenido_trabajadores 250.00; H infonavit_por_pagar 500.00; H isr_retenido_por_pagar 850.00; H sar_por_pagar 200.00"}
+      - {nombre: "Límite: asimilados a salarios, sin IMSS", fecha: "2026-06-30", entradas: {percepciones: "8000", isr_retenido: "640", tipo: asimilados}, esperado: "D sueldos_y_salarios 8000.00; H bancos 7360.00; H isr_retenido_asimilados_por_pagar 640.00"}
+      - {nombre: "ISR retenido de sueldos → 216.01", fecha: "2026-06-30", calculadora: agrupador_de_concepto, entradas: {concepto: isr_retenido_por_pagar, contexto: sueldos}, esperado: {concepto: isr_retenido_por_pagar, codigo: "216.01", nombre: "Impuestos retenidos de ISR por sueldos y salarios", nivel: "2"}}
+      - {nombre: "ISR retenido de asimilados → 216.02", fecha: "2026-06-30", calculadora: agrupador_de_concepto, entradas: {concepto: isr_retenido_asimilados_por_pagar}, esperado: {concepto: isr_retenido_asimilados_por_pagar, codigo: "216.02", nombre: "Impuestos retenidos de ISR por asimilados a salarios", nivel: "2"}}
+      - {nombre: "ISR retenido por pagar con contexto asimilados → 216.02", fecha: "2026-06-30", calculadora: agrupador_de_concepto, entradas: {concepto: isr_retenido_por_pagar, contexto: asimilados}, esperado: {concepto: isr_retenido_por_pagar, codigo: "216.02", nombre: "Impuestos retenidos de ISR por asimilados a salarios", nivel: "2"}}
+      - {nombre: "IMSS retenido al trabajador → 216.11", fecha: "2026-06-30", calculadora: agrupador_de_concepto, entradas: {concepto: imss_retenido_trabajadores}, esperado: {concepto: imss_retenido_trabajadores, codigo: "216.11", nombre: "Retenciones de IMSS a los trabajadores", nivel: "2"}}
+      - {nombre: "Provisión de IMSS patronal → 211.01", fecha: "2026-06-30", calculadora: agrupador_de_concepto, entradas: {concepto: imss_patronal_por_pagar}, esperado: {concepto: imss_patronal_por_pagar, codigo: "211.01", nombre: "Provisión de IMSS patronal por pagar", nivel: "2"}}
+      - {nombre: "Provisión de SAR → 211.02", fecha: "2026-06-30", calculadora: agrupador_de_concepto, entradas: {concepto: sar_por_pagar}, esperado: {concepto: sar_por_pagar, codigo: "211.02", nombre: "Provisión de SAR por pagar", nivel: "2"}}
+      - {nombre: "Provisión de Infonavit → 211.03", fecha: "2026-06-30", calculadora: agrupador_de_concepto, entradas: {concepto: infonavit_por_pagar}, esperado: {concepto: infonavit_por_pagar, codigo: "211.03", nombre: "Provisión de INFONAVIT por pagar", nivel: "2"}}
+      - {nombre: "Gasto del SAR patronal → 601.28", fecha: "2026-06-30", calculadora: agrupador_de_concepto, entradas: {concepto: aportaciones_sar}, esperado: {concepto: aportaciones_sar, codigo: "601.28", nombre: "Aportaciones al SAR", nivel: "2"}}

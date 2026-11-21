@@ -1,7 +1,7 @@
 {
  "nombre": "Datos abiertos de inteligencia-mx",
  "licencia": "CC BY 4.0",
- "version_base": "0.6.0",
+ "version_base": "0.7.0",
  "archivos": {
   "parametros.csv": {
    "descripcion": "Cada parámetro de ley con sus tramos, estado y vigencia (valor solo si es un dato simple).",
@@ -20,8 +20,8 @@
     "formula",
     "fuente_ultimo"
    ],
-   "filas": 132,
-   "sha256": "2c2d7c1d0efe2cb82d20837baf5e7f7149222ffee404e614543cc00355fced3d"
+   "filas": 137,
+   "sha256": "62398e738b57f3cf72dc073773b149367d30a003f30c5d50baf0e1790ee133cd"
   },
   "reglas.csv": {
    "descripcion": "Cada regla R-xx con su estado, calculadora, número de casos y citas.",
@@ -37,8 +37,8 @@
     "tiene_que_dice",
     "fuente"
    ],
-   "filas": 114,
-   "sha256": "5343be06671459baa7e0f6c320b72bd5cee17c59c875b747c989cd6ac286fd17"
+   "filas": 129,
+   "sha256": "5a46fb7b6a2c244dee9a3734aa27930e1aab9383806c3cb3d0f51b8ee2749864"
   },
   "leyes.csv": {
    "descripcion": "Cada ley, código o reglamento de la biblioteca con su ámbito, materia, huella y si tiene cotejo humano.",
@@ -69,8 +69,8 @@
     "articulo",
     "existe_en_biblioteca"
    ],
-   "filas": 174,
-   "sha256": "6e7c04be9e56e072667b1dd934ca2fdba3c2a9143182ac8cae225eafe8b70ad9"
+   "filas": 227,
+   "sha256": "316d0ef8c2ff70418aef40397c35be4c3bd2995cbe355415296d19fa0819bd03"
   },
   "cotejo_pendiente.csv": {
    "descripcion": "Artículos citados por la base que nadie ha cotejado con el diario oficial, por prioridad.",
@@ -82,8 +82,8 @@
     "origenes",
     "cotejado"
    ],
-   "filas": 80,
-   "sha256": "744fe2c046b47e1ae1d03d27ba2e27f1e3373ab741b5325c13800581b25e0e2c"
+   "filas": 88,
+   "sha256": "f8eb2c1a259031561642999ffbfc5aab78c6f251dacb7ef27a55166db37c137d"
   },
   "nif.csv": {
    "descripcion": "Índice de las NIF (sin texto, que es del CINIF): si se cotejó, contra qué documento del CINIF y qué reglas o parámetros la citan.",
@@ -97,7 +97,7 @@
     "citada_por"
    ],
    "filas": 55,
-   "sha256": "1cc9911207fcda08fe74b7a97e8ed1ca07e1a060b550bf7f33584b1d88498cea"
+   "sha256": "5c20fc67eec29913e73653904c2981b5c3df0331f4463e7baa7709cdf2a49555"
   }
  }
 }

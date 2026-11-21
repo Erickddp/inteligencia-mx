@@ -12,6 +12,7 @@ Uso (también: timbra-reglas <comando> o python -m timbra_reglas <comando>):
 Requisito: PyYAML. Todo importe y tasa es Decimal; nunca float.
 """
 import ast
+import calendar
 import json
 import os
 import sys
@@ -33,7 +34,7 @@ def dir_base() -> Path:
         if (c / "parametros.yaml").is_file() and (c / "reglas.yaml").is_file():
             return c
     raise FileNotFoundError("No encontré parametros.yaml y reglas.yaml: " + ", ".join(str(c) for c in candidatas))
-VERSION_MOTOR = "0.6.0"
+VERSION_MOTOR = "0.7.0"
 
 # Estados de un tramo. Los NO_APLICABLES nunca se usan salvo en simulación.
 ESTADOS_APLICABLES = {"vigente", "por_confirmar"}
@@ -529,10 +530,15 @@ def calc_deduccion_inmediata(b, f, monto, tipo_bien, adquisicion, regimen="titul
 
 
 def _vacaciones(b, f, anio):
-    for hasta, dias in b.valor("LFT_VACACIONES_TABLA", f):
+    """LFT 76: la tabla llega hasta su último renglón; después la ley sigue sumando 2 días por cada cinco años de servicio, sin tope."""
+    tabla = b.valor("LFT_VACACIONES_TABLA", f)
+    for hasta, dias in tabla:
         if D(anio) <= hasta:
             return dias
-    return b.valor("LFT_VACACIONES_TABLA", f)[-1][1]
+    ultimo_anio, ultimo_dias = tabla[-1]
+    exceso = int(D(anio)) - int(ultimo_anio)
+    quinquenios = -(-exceso // 5)  # techo de exceso / 5, con enteros
+    return ultimo_dias + 2 * quinquenios
 
 
 def calc_vacaciones_dias(b, f, anio_servicio):
@@ -956,6 +962,222 @@ def calc_poliza_cobro_terminal(b, f, bruto, comision, iva_comision="0", con_cfdi
     iva_cob = red(D(iva_trasladado) * D(bruto) / D(total_cfdi)) if D(total_cfdi) else D(0)
     return _poliza([("D", "bancos", neto), ("D", "comisiones_bancarias", gasto), ("D", "iva_acreditable_pagado", acred),
                     ("D", "iva_trasladado_no_cobrado", iva_cob), ("H", "clientes", bruto), ("H", "iva_trasladado_cobrado", iva_cob)])
+
+
+# ---------- RESICO persona física: anual y salida del régimen (pedido 06, bloque 1) ----------
+def calc_resico_pf_anual(b, f, ingresos_del_anio, pagos_mensuales="0", retenciones="0"):
+    """LISR 113-F: tasa de la TABLA ANUAL (no la mensual × 12) sobre el total del ingreso del año cobrado sin IVA y sin deducciones.
+    Contra el resultado se restan los pagos mensuales (113-E) y las retenciones de las personas morales (113-J).
+    Si el ingreso rebasa el último renglón, el contribuyente ya no estaba en el régimen: SinValor, no se inventa una tasa."""
+    ingreso = D(ingresos_del_anio)
+    for hasta, tasa in b.valor("RESICO_PF_TABLA_ANUAL", f):
+        if ingreso <= hasta:
+            isr = red(ingreso * tasa / 100)
+            acreditable = D(pagos_mensuales) + D(retenciones)
+            return {"isr_anual": str(isr), "a_cargo": str(red(max(isr - acreditable, D(0)))),
+                    "a_favor": str(red(max(acreditable - isr, D(0))))}
+    raise SinValor("El ingreso anual rebasa la tabla de RESICO PF: ya no corresponde el régimen (113-E)")
+
+
+def _primer_dia_mes_siguiente(f):
+    d = dt.date.fromisoformat(f)
+    return (d.replace(day=1) + dt.timedelta(days=32)).replace(day=1).isoformat()
+
+
+def calc_resico_pf_salida(b, f, motivo, ingresos_acumulados="0", pagos_omitidos="0", anual_presentada="si"):
+    """LISR 113-E (tercer y séptimo párrafos), 113-I y RMF 2026 regla 3.13.5: el régimen deja de aplicar a partir del mes siguiente a aquel en
+    que se actualiza el supuesto (`f` es la fecha del supuesto). motivo: tope (ingresos del año acumulados rebasan el tope de la fecha),
+    incumplimiento_obligaciones (113-G) u omision_pagos (113-I: tres o más pagos mensuales omitidos en el año o sin declaración anual).
+    Volver: tras rebasar el tope sí, si el ejercicio anterior no pasó del tope y está al corriente; tras incumplir, nunca."""
+    if motivo == "tope":
+        sale = D(ingresos_acumulados) > b.valor("RESICO_PF_TOPE_ANUAL", f)
+        volver = "si_condicionado"
+    elif motivo == "incumplimiento_obligaciones":
+        sale, volver = True, "no"
+    elif motivo == "omision_pagos":
+        sale, volver = int(pagos_omitidos) >= 3 or anual_presentada == "no", "no"
+    else:
+        raise ValueError("motivo debe ser tope, incumplimiento_obligaciones u omision_pagos")
+    return {"sale": "si" if sale else "no", "deja_de_aplicar_desde": _primer_dia_mes_siguiente(f) if sale else "",
+            "puede_volver": volver if sale else ""}
+
+
+# ---------- personas morales: coeficiente, pérdidas y anual del RESICO PM (pedido 06, bloque 2) ----------
+def calc_coeficiente_utilidad(b, f, utilidad_fiscal, ingresos_nominales, ptu_pagada="0", perdidas_aplicadas="0"):
+    """LISR 14 fr. I y RLISR 10: coeficiente = utilidad fiscal del ejercicio ÷ ingresos nominales, hasta el diezmilésimo.
+    `utilidad_fiscal` entra ANTES de la PTU pagada y de las pérdidas de ejercicios anteriores: la utilidad fiscal del art. 9 fr. I ya
+    resta la PTU pagada; las pérdidas de ejercicios anteriores se restan hasta la fr. II (resultado fiscal) y NO entran al coeficiente.
+    Pérdida fiscal del ejercicio (utilidad ≤ 0) o sin ingresos: no resulta coeficiente (0.0000) y se usa el último con coeficiente.
+    El redondeo es el de siempre (mitad hacia arriba); «hasta el diezmilésimo» no dice si trunca (POR CONFIRMAR)."""
+    utilidad, ingresos = D(utilidad_fiscal) - D(ptu_pagada), D(ingresos_nominales)
+    cu = red(utilidad / ingresos, 4) if utilidad > 0 and ingresos > 0 else D("0.0000")
+    return {"coeficiente": str(cu), "utilidad_fiscal": str(red(utilidad)),
+            "resultado_fiscal": str(red(max(utilidad - D(perdidas_aplicadas), D(0))))}
+
+
+def calc_coeficiente_aplicable(b, f, ejercicio_pagos, coeficientes):
+    """LISR 14 fr. I, último párrafo: el coeficiente es el del último ejercicio de doce meses (ejercicio_pagos − 1); si ese no resulta,
+    el del último ejercicio con coeficiente, sin que sea anterior en más de cinco años al ejercicio de los pagos.
+    `coeficientes` es una lista de [ejercicio, coeficiente]; un coeficiente 0 es «no resultó»."""
+    y = int(ejercicio_pagos)
+    for ej, cu in sorted(((int(e), D(str(c))) for e, c in coeficientes), reverse=True):
+        if ej < y and cu > 0:
+            if ej < y - 5:
+                break
+            return {"coeficiente": str(red(cu, 4)), "ejercicio": str(ej)}
+    raise SinValor("Ningún ejercicio con coeficiente dentro de los cinco años anteriores: la app debe avisar, no inventar")
+
+
+def calc_perdida_fiscal_actualizada(b, f, perdida, ejercicio_perdida, ejercicio_aplicacion):
+    """LISR 57 (ejercicios de enero a diciembre): la pérdida se actualiza de julio a diciembre de su ejercicio y lo pendiente, del
+    mes de la última actualización (diciembre) al último mes de la primera mitad del ejercicio en que se aplica (junio). Cada factor
+    es el de CFF 17-A con el INPC real de la serie. Sólo se aplica contra las utilidades de los diez ejercicios siguientes."""
+    o, a = int(ejercicio_perdida), int(ejercicio_aplicacion)
+    if not o < a <= o + 10:
+        raise SinValor("La pérdida fiscal sólo se aplica en los diez ejercicios siguientes al que ocurrió (LISR 57)")
+    p1 = calc_actualizacion_inpc(b, f, perdida, f"{o}-07-01", f"{o}-12-01")
+    p2 = calc_actualizacion_inpc(b, f, p1["monto_actualizado"], f"{o}-12-01", f"{a}-06-01")
+    return {"factor_primer_periodo": p1["factor"], "factor_segundo_periodo": p2["factor"], "perdida_actualizada": p2["monto_actualizado"]}
+
+
+def calc_resico_pm_anual(b, f, ingresos_percibidos, deducciones_erogadas, ptu_pagada="0", perdidas_anteriores="0",
+                         pagos_provisionales="0", retenciones="0", impuesto_acreditable_5_10="0"):
+    """LISR 212 (con 207, 208, 210 y 211): el impuesto del ejercicio se calcula con el art. 9 sobre ingresos efectivamente percibidos menos
+    deducciones efectivamente erogadas (inversiones con los porcientos del 209) y PTU pagada, menos pérdidas de ejercicios anteriores
+    (ya actualizadas). Es el mismo acumulado de diciembre del pago provisional (211); lo propio de la anual es acreditar, además de los
+    pagos provisionales, el impuesto acreditable de los arts. 5 y 10. No hay coeficiente de utilidad ni ajuste anual por inflación."""
+    return calc_isr_anual_pm(b, f, ingresos_percibidos, deducciones_erogadas, ptu_pagada, perdidas_anteriores, pagos_provisionales,
+                             str(D(retenciones) + D(impuesto_acreditable_5_10)))
+
+
+# ---------- plataformas (625) en la anual de persona física (pedido 06, bloque 3) ----------
+def _pago_definitivo_plataformas(b, f, opta_definitivo, ingresos_plataformas_ejercicio_anterior):
+    """LISR 113-B fr. I: la retención es pago definitivo si la persona física optó (aviso) y sus ingresos del ejercicio inmediato anterior
+    no pasaron del tope. Con el tope vencido la opción cesa; la RMF 2026 regla 12.3.9 la deja de aplicar desde el ejercicio siguiente
+    al que dejó de reunir los requisitos (aquí: el ejercicio cuyo año anterior ya rebasó el tope; POR CONFIRMAR)."""
+    return opta_definitivo == "si" and D(ingresos_plataformas_ejercicio_anterior) <= b.valor("PLATAFORMAS_PD_TOPE_ANUAL", f)
+
+
+def calc_plataformas_en_anual(b, f, opta_definitivo, ingresos_plataformas_ejercicio_anterior, ingresos_plataformas_ejercicio,
+                              isr_retenido="0"):
+    """Los ingresos por plataformas con retención, ¿se acumulan en la anual de la persona física? LISR 113-A tercer párrafo (la retención es
+    pago PROVISIONAL), 113-B (si optó y cumple, es pago DEFINITIVO) y 150 primer párrafo (la anual excluye los ingresos por los que se pagó
+    impuesto definitivo). Definitivo: no se acumulan y la retención no se acredita. Provisional (no optó, o el año anterior rebasó el tope):
+    se acumulan y la retención se acredita contra el ISR anual. `ingresos_plataformas_ejercicio` va sin IVA."""
+    definitivo = _pago_definitivo_plataformas(b, f, opta_definitivo, ingresos_plataformas_ejercicio_anterior)
+    pasa_tope = D(ingresos_plataformas_ejercicio) > b.valor("PLATAFORMAS_PD_TOPE_ANUAL", f)
+    return {"pago_definitivo": "si" if definitivo else "no", "acumula_en_anual": "no" if definitivo else "si",
+            "ingreso_acumulable": str(red(D(0) if definitivo else D(ingresos_plataformas_ejercicio))),
+            "isr_retenido_acreditable": str(red(D(0) if definitivo else D(isr_retenido))),
+            "siguiente_ejercicio_definitivo": "si" if (definitivo and not pasa_tope) else "no"}
+
+
+def calc_obligaciones_625_pf(b, f, opta_definitivo, ingresos_plataformas_ejercicio_anterior, ingresos_totales_ejercicio_anterior,
+                             otros_ingresos="no"):
+    """Obligaciones de la persona física en plataformas (625): pago provisional mensual (RMF 12.3.13, día 17), declaración anual (LISR 150:
+    abril; no la presenta por los ingresos definitivos, pero sí si tiene otros ingresos) y DIOT/contabilidad electrónica (relevadas con
+    ingresos del ejercicio anterior hasta el tope de RMF 2.8.1.17; si no, LIVA 32 fr. VIII, mensual)."""
+    definitivo = _pago_definitivo_plataformas(b, f, opta_definitivo, ingresos_plataformas_ejercicio_anterior)
+    relevada = D(ingresos_totales_ejercicio_anterior) <= b.valor("CONTA_ELEC_RELEVO_PF_INGRESOS", f)
+    return {"pago_provisional": "no" if definitivo else "mensual_dia_17",
+            "declaracion_anual": "abril" if (not definitivo or otros_ingresos == "si") else "no",
+            "diot": "no" if relevada else "mensual_dia_17"}
+
+
+# ---------- dividendos y donatarias (pedido 06, bloque 4) ----------
+def calc_dividendos_pf(b, f, dividendo, isr_corporativo_pagado="", acredita="si", utilidad_generada_desde_2014="si"):
+    """LISR 140 (y 10): la persona física acumula el dividendo; si quiere acreditar el ISR de la sociedad, acumula además ese impuesto, que la ley
+    determina como tasa del art. 9 × (dividendo × factor 1.4286), no con lo que diga la constancia. Además, retención definitiva de 10 % sobre
+    el dividendo. `isr_corporativo_pagado` (la constancia, art. 76 fr. XI) sólo se compara. Utilidades generadas antes de 2014: la base no
+    trae su régimen transitorio y avisa."""
+    if utilidad_generada_desde_2014 != "si":
+        raise SinValor("Dividendos de utilidades generadas antes de 2014: la base no trae su régimen transitorio (no se calcula la retención de 10 %)")
+    div = D(dividendo)
+    isr_corp = div * b.valor("DIVIDENDOS_FACTOR_PIRAMIDACION", f) * b.valor("ISR_PM_TASA", f) / 100
+    acreditable = red(isr_corp) if acredita == "si" else D("0.00")
+    out = {"ingreso_acumulable": str(red(div + acreditable)), "isr_corporativo_acreditable": str(acreditable),
+           "retencion_adicional": str(red(div * b.valor("DIVIDENDOS_RETENCION_ADICIONAL_PCT", f) / 100))}
+    out["constancia_coincide"] = "no_informada" if isr_corporativo_pagado == "" else ("si" if red(D(isr_corporativo_pagado)) == red(isr_corp) else "no")
+    return out
+
+
+def calc_donataria_remanente(b, f, ingresos_obtenidos, ingresos_excluidos="0", deducciones_autorizadas="0", omisiones_ingresos="0",
+                             compras_no_realizadas="0", erogaciones_no_deducibles="0", prestamos_a_integrantes="0", remanente_entregado="0"):
+    """LISR 79 (penúltimo y último párrafos) y 80. Remanente distribuible = ingresos (sin los del art. 93 ni los de impuesto definitivo) menos
+    deducciones autorizadas del Título IV; los integrantes sólo lo acumulan si lo reciben en efectivo o bienes, y quien lo recibe lo
+    declara en su propio régimen (la donataria no paga ISR por él). Remanente distribuible FICTO, aunque no se entregue: omisiones de
+    ingresos, compras no realizadas, erogaciones no deducibles y préstamos a integrantes o sus familiares; la persona moral paga sobre
+    él la tasa máxima de la tarifa del art. 152 (impuesto definitivo) a más tardar en febrero del año siguiente."""
+    distribuible = max(D(ingresos_obtenidos) - D(ingresos_excluidos) - D(deducciones_autorizadas), D(0))
+    ficto = D(omisiones_ingresos) + D(compras_no_realizadas) + D(erogaciones_no_deducibles) + D(prestamos_a_integrantes)
+    tasa = D(str(b.valor("ISR_TARIFA_ANUAL", f)[-1][3]))
+    descuento = min(D(prestamos_a_integrantes), D(remanente_entregado))
+    anio = int(f[:4]) + 1
+    entero = f"{anio}-02-{calendar.monthrange(anio, 2)[1]:02d}"
+    return {"remanente_distribuible": str(red(distribuible)), "remanente_ficto": str(red(ficto)), "tasa_remanente_ficto": str(tasa),
+            "isr_remanente_ficto": str(red(ficto * tasa / 100)), "entero_a_mas_tardar": entero,
+            "prestamos_que_se_restan_del_remanente_entregado": str(red(descuento))}
+
+
+def calc_donataria_actividades_distintas(b, f, ingresos_totales, ingresos_distintos, utilidad_del_excedente="0"):
+    """LISR 80 (séptimo y octavo párrafos): los ingresos por actividades distintas al objeto no pueden pasar de 10 % de los ingresos totales
+    del ejercicio (no cuentan los donativos, apoyos públicos, venta de activo fijo, cuotas, intereses, etc.: se excluyen antes). Sobre el
+    excedente se paga ISR (art. 9) por la utilidad que corresponda a ese excedente, que se pasa como `utilidad_del_excedente`. Si pasan de
+    50 %, pierde la autorización para recibir donativos."""
+    tot, dist = D(ingresos_totales), D(ingresos_distintos)
+    if tot <= 0:
+        raise ValueError("ingresos_totales debe ser mayor que cero")
+    limite = tot * b.valor("DONATARIA_INGRESOS_NO_RELACIONADOS_PCT", f) / 100
+    excedente = max(dist - limite, D(0))
+    pierde = dist * 100 > tot * b.valor("DONATARIA_PERDIDA_AUTORIZACION_PCT", f)
+    return {"limite": str(red(limite)), "porcentaje": str(red(dist * 100 / tot)), "excedente": str(red(excedente)),
+            "isr_del_excedente": str(red(max(D(utilidad_del_excedente), D(0)) * b.valor("ISR_PM_TASA", f) / 100)) if excedente > 0 else "0.00",
+            "pierde_autorizacion": "si" if pierde else "no"}
+
+
+# ---------- chicos (pedido 06, bloque 5) ----------
+def calc_isr_tasa_marginal(b, f, base, meses="1"):
+    """El % del renglón de la tarifa que le toca a una base: art. 96 (mensual, meses=1), 106 (acumulada, 2 a 11) o 152 (anual, 12).
+    Es la tasa de la última unidad de la base; ahorrar una deducción grande puede cruzar renglones (ver isr_ahorro_deduccion)."""
+    tabla, base = tabla_106(b, f, meses), D(base)
+    for li, ls, cuota, pct in reversed(tabla):
+        if base >= li:
+            return {"tasa_marginal": str(pct), "limite_inferior": str(li), "limite_superior": "" if ls is None else str(ls),
+                    "cuota_fija": str(cuota)}
+    return {"tasa_marginal": "0.00", "limite_inferior": "", "limite_superior": "", "cuota_fija": "0.00"}
+
+
+def calc_isr_ahorro_deduccion(b, f, base, deduccion, meses="1"):
+    """Ahorro exacto de una deducción en persona física: ISR de la base menos ISR de la base ya sin la deducción, con la misma tarifa
+    (96, 106 o 152). Es lo que se ahorra de verdad aunque la deducción cruce renglones; la tasa marginal sólo es una aproximación."""
+    tabla = tabla_106(b, f, meses)
+    sin, con = isr_tarifa(D(base), tabla), isr_tarifa(max(D(base) - D(deduccion), D(0)), tabla)
+    return {"isr_sin_deduccion": str(sin), "isr_con_deduccion": str(con), "ahorro": str(red(sin - con)),
+            "tasa_marginal": calc_isr_tasa_marginal(b, f, base, meses)["tasa_marginal"]}
+
+
+def calc_cfdi_plazo_cancelacion(b, f, tipo, ejercicio_emision):
+    """CFF 29-A, cuarto párrafo (reforma DOF 07-nov-2025, en vigor el 1-ene-2026): un CFDI se cancela a más tardar en el mes de la declaración
+    anual del ejercicio en que se expidió (persona moral, marzo; persona física, abril, del año siguiente) y si el receptor acepta.
+    `f` es la fecha en que se cancela. El decreto no trae régimen transitorio: se aplica por la fecha de la cancelación a CFDI de
+    cualquier ejercicio emisor (POR CONFIRMAR). Antes de 2026 la base no trae la regla y avisa."""
+    mes = int(b.valor("CFDI_CANCELACION_MES_LIMITE_PM" if tipo == "pm" else "CFDI_CANCELACION_MES_LIMITE_PF", f))
+    anio = int(ejercicio_emision) + 1
+    ultimo = f"{anio}-{mes:02d}-{calendar.monthrange(anio, mes)[1]:02d}"
+    return {"ultimo_dia": ultimo, "dentro_de_plazo": "si" if f <= ultimo else "no", "requiere_aceptacion_receptor": "si"}
+
+
+def calc_poliza_nomina_desglosada(b, f, percepciones, isr_retenido="0", imss_obrero="0", imss_patron="0", sar_patron="0",
+                                  infonavit_patron="0", tipo="sueldos"):
+    """Nómina con cada pasivo en su cuenta (R-155 las mezclaba): ISR retenido (sueldos o asimilados), IMSS retenido al trabajador, y la
+    provisión patronal de IMSS, SAR e Infonavit. Los conceptos se apuntan al código agrupador con CONTA_CONCEPTO_AGRUPADOR."""
+    isr_concepto = {"sueldos": "isr_retenido_por_pagar", "asimilados": "isr_retenido_asimilados_por_pagar"}[tipo]
+    neto = D(percepciones) - D(isr_retenido) - D(imss_obrero)
+    return _poliza([("D", "sueldos_y_salarios", percepciones), ("D", "cuotas_patronales", imss_patron),
+                    ("D", "aportaciones_sar", sar_patron), ("D", "aportaciones_infonavit", infonavit_patron),
+                    ("H", "bancos", neto), ("H", isr_concepto, isr_retenido), ("H", "imss_retenido_trabajadores", imss_obrero),
+                    ("H", "imss_patronal_por_pagar", imss_patron), ("H", "sar_por_pagar", sar_patron),
+                    ("H", "infonavit_por_pagar", infonavit_patron)])
 
 
 CALC = {k[5:]: v for k, v in globals().items() if k.startswith("calc_")}

@@ -2,6 +2,50 @@
 
 Generado por `scripts/release.py --changelog` al preparar cada versión. Cada entrada sale de la comparación contra la versión anterior.
 
+## [v0.7.0] - 2026-11-21
+
+Pruebas: 358 pasan · 0 fallan · 0 pendientes   (* = pasa contra un esperado aún no confirmado).
+
+### Valores cambiados (firmas que se caen)
+
+- CONTA_CONCEPTO_AGRUPADOR desde 2026-01-01
+- LFT_VACACIONES_TABLA desde 2023-01-01
+
+### Vigencias cambiadas
+
+- CONTA_CODIGO_AGRUPADOR desde 2015-01-01: hasta None -> 2025-12-31
+- LFT_VACACIONES_TABLA desde 2023-01-01: hasta None -> None
+
+### Tramos nuevos
+
+- CONTA_CODIGO_AGRUPADOR desde 2026-01-01 (vigente)
+
+### Parámetros nuevos
+
+- DIVIDENDOS_FACTOR_PIRAMIDACION
+- DIVIDENDOS_RETENCION_ADICIONAL_PCT
+- DONATARIA_PERDIDA_AUTORIZACION_PCT
+- OBLIGACIONES_625_PF
+- RESICO_PF_TABLA_ANUAL
+
+### Reglas nuevas
+
+- R-180
+- R-181
+- R-182
+- R-183
+- R-184
+- R-185
+- R-186
+- R-187
+- R-188
+- R-189
+- R-190
+- R-191
+- R-192
+- R-193
+- R-194
+
 ## [v0.6.0] - 2026-11-14
 
 Pruebas: 261 pasan · 0 fallan · 0 pendientes   (* = pasa contra un esperado aún no confirmado).
@@ -72,6 +116,7 @@ Pedido 03 de Timbra, bloques 1 a 6. Cae UNA firma de valor (DEPRECIACION_TASAS_A
 - R-178
 - R-179
 
+
 ## [v0.5.0] - 2026-11-13
 
 Pruebas: 193 pasan · 0 fallan · 0 pendientes   (* = pasa contra un esperado aún no confirmado).
@@ -105,6 +150,7 @@ Para Timbra: toma lo que estaba en main sin publicar desde la v0.4.2 (pedido 02:
 - R-169
 - R-170
 - R-171
+
 
 
 ## [v0.4.2] - 2026-11-07
@@ -150,6 +196,7 @@ Sin cambios de valores: no cae ninguna firma. Se agregan reglas, calculadoras, p
 
 - R-138: CORREGIR -> OK
 - R-52: CORREGIR -> OK
+
 
 
 
