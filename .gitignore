@@ -9,3 +9,4 @@ anterior/
 build/
 *.egg-info/
 dist/
+_site/

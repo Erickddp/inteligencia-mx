@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Inteligencia MX · Leyes, cifras y reglas fiscales de México</title>
+<meta name="description" content="Consola pública y verificable: __NLEYES__ leyes con su fuente oficial, __NPAR__ cifras de ley por fecha y __NREG__ reglas de cálculo de México. Orientación, no asesoría.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:title" content="Inteligencia MX">
+<meta property="og:description" content="Leyes, cifras por fecha y reglas de cálculo de México en un solo lugar público y verificable.">
+<meta name="theme-color" content="#0b6b4f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}</style>
+<style>
+/* Concepto: consola pública de consulta, papel claro y tinta azul-negra, un solo acento verde bandera. */
+:root{
+  --bg:#f5f7f6; --panel:#ffffff; --ink:#14201d; --muted:#5a6b66; --line:#d9e1de;
+  --accent:#0b6b4f; --accent-ink:#ffffff; --warn:#8a5a00; --warn-bg:#fbf0d8; --ok-bg:#dff1e8; --bad:#a3262a; --bad-bg:#f8e1e1;
+  --sans:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e1513; --panel:#16201d; --ink:#e6efec; --muted:#9bb0aa; --line:#2a3a35;
+  --accent:#4fc59a; --accent-ink:#06231a; --warn:#f0c36a; --warn-bg:#3a2e12; --ok-bg:#12382b; --bad:#ff8f8f; --bad-bg:#3c1a1a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1513; --panel:#16201d; --ink:#e6efec; --muted:#9bb0aa; --line:#2a3a35;
+  --accent:#4fc59a; --accent-ink:#06231a; --warn:#f0c36a; --warn-bg:#3a2e12; --ok-bg:#12382b; --bad:#ff8f8f; --bad-bg:#3c1a1a; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.5;
+  padding-block:0 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:980px;margin:0 auto}
+header{padding-top:28px;display:flex;flex-direction:column;gap:10px}
+.sello{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.1;margin:0;font-weight:600;letter-spacing:-.01em;text-wrap:balance}
+.lema{max-width:62ch;color:var(--muted);margin:0;font-size:16px}
+.aviso{margin-top:6px;padding:10px 12px;border:1px solid var(--line);border-left:3px solid var(--warn);background:var(--warn-bg);color:var(--ink);font-size:13px;max-width:80ch}
+.cifras{display:flex;flex-wrap:wrap;gap:8px 28px;margin:22px 0 6px;font-family:var(--mono);font-size:13px;color:var(--muted)}
+.cifras b{color:var(--ink);font-weight:500;font-size:18px;margin-right:6px}
+.consola{background:var(--panel);border:1px solid var(--line);border-radius:8px;margin-top:18px;overflow:hidden}
+.barra{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.barra span{font-family:var(--mono);color:var(--accent);font-size:18px}
+#q{flex:1;min-width:0;font:inherit;font-family:var(--mono);font-size:15px;color:var(--ink);background:transparent;border:0;outline:0}
+#q::placeholder{color:var(--muted)}
+.barra:focus-within{box-shadow:inset 0 -2px 0 var(--accent)}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;padding:10px 14px;border-bottom:1px solid var(--line)}
+.tabs button{font:inherit;font-size:13px;padding:5px 12px;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.tabs button:focus-visible,a:focus-visible,#q:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#estado{padding:8px 14px;font-family:var(--mono);font-size:12px;color:var(--muted);border-bottom:1px solid var(--line)}
+ul#res{list-style:none;margin:0;padding:0}
+#res li{padding:12px 14px;border-bottom:1px solid var(--line);display:grid;gap:4px;min-width:0}
+#res li:last-child{border-bottom:0}
+.t{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline;min-width:0}
+.id{font-family:var(--mono);font-size:13px;font-weight:500;color:var(--accent)}
+.nom{font-weight:500;min-width:0;overflow-wrap:anywhere}
+.det{font-size:13px;color:var(--muted);overflow-wrap:anywhere}
+.det code{font-family:var(--mono);font-size:12.5px;color:var(--ink)}
+.pill{font-family:var(--mono);font-size:11px;padding:1px 8px;border-radius:999px;background:var(--ok-bg);color:var(--ink)}
+.pill.pc{background:var(--warn-bg);color:var(--warn)}
+.pill.no{background:var(--bad-bg);color:var(--bad)}
+a{color:var(--accent)}
+.vacio{padding:24px 14px;color:var(--muted)}
+.dos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:26px}
+.dos section{border-top:2px solid var(--ink);padding-top:10px}
+.dos h2{font-size:15px;margin:0 0 6px;font-weight:600}
+.dos p,.dos li{font-size:14px;color:var(--muted);margin:0 0 6px}
+.dos ul{padding-left:18px;margin:0}
+footer{margin-top:30px;font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 18px}
+@media (prefers-reduced-motion:no-preference){.tabs button{transition:background .15s}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="sello">Conocimiento legal de México · abierto · versión de prueba</div>
+  <h1>Inteligencia MX</h1>
+  <p class="lema">Las leyes, sus cifras por fecha y las reglas de cálculo de México, en un solo lugar público y verificable. Empezamos con leyes fiscales y contables; el objetivo es que cada persona tenga sus derechos a la mano y una defensa informada.</p>
+  <div class="aviso">Orientación técnica, no asesoría fiscal, contable ni legal. Cada cifra trae su fuente y su fecha; las marcadas «por confirmar» todavía no tienen fuente primaria cotejada. Verifica siempre con la fuente oficial.</div>
+</header>
+
+<div class="cifras" id="cifras"></div>
+
+<div class="consola">
+  <div class="barra"><span aria-hidden="true">›</span><input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Busca: resico, dividendos, UMA, vacaciones, ISR, CFF…" aria-label="Buscar en la base"></div>
+  <div class="tabs" role="group" aria-label="Qué buscar">
+    <button type="button" data-k="todo" aria-pressed="true">Todo</button>
+    <button type="button" data-k="leyes" aria-pressed="false">Leyes</button>
+    <button type="button" data-k="par" aria-pressed="false">Cifras de ley</button>
+    <button type="button" data-k="reg" aria-pressed="false">Reglas de cálculo</button>
+  </div>
+  <div id="estado" aria-live="polite"></div>
+  <ul id="res"></ul>
+</div>
+
+<div class="dos">
+  <section><h2>Fase 1 · hoy</h2>
+    <ul><li>Consulta de __NLEYES__ leyes y reglamentos (federales y de la Ciudad de México).</li><li>Cifras de ley por fecha, con su fuente y estado.</li><li>Reglas de cálculo con casos al centavo.</li></ul></section>
+  <section><h2>Fase 2 · propuesta</h2>
+    <ul><li>Texto de cada artículo y búsqueda por palabra dentro de la ley.</li><li>Calculadoras públicas (ISR, RESICO, dividendos, vacaciones).</li><li>Más materias: laboral, civil, derechos del contribuyente; más estados.</li></ul></section>
+  <section><h2>Cómo se mantiene</h2>
+    <p>Nada entra sin fuente oficial (DOF, SAT, Cámara de Diputados), sin casos de prueba y sin la firma de quien mantiene el repositorio.</p></section>
+</div>
+
+<footer>
+  <a href="https://github.com/Erickddp/inteligencia-mx" target="_blank" rel="noopener">Código y datos abiertos</a>
+  <a href="https://github.com/Erickddp/inteligencia-mx/releases/tag/v__VERSION__" target="_blank" rel="noopener">Base v__VERSION__</a>
+  <span>Datos de la base v__VERSION__ · generado el __FECHA__</span>
+  <a href="https://erickddp.com" target="_blank" rel="noopener">Un proyecto de Erick DDP, C.P.</a>
+</footer>
+</div>
+
+<script>
+const D = __DATOS__;
+const $ = s => document.querySelector(s);
+let kind = "todo";
+const norm = s => (s||"").toString().normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+const esc = s => (s||"").toString().replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pillEstado = s => {
+  if (!s) return "";
+  const pc = /confirmar|CRITERIO|NUEVA|LISTO|REVISAR|FALTA/i.test(s);
+  return `<span class="pill ${pc ? "pc" : ""}">${esc(s.replace(/_/g," "))}</span>`;
+};
+D.leyes.forEach(x => x._t = norm([x.c,x.n,x.e,x.m,x.a].join(" ")));
+D.par.forEach(x => x._t = norm([x.i,x.n,x.v,x.f].join(" ")));
+D.reg.forEach(x => x._t = norm([x.i,x.n,x.c].join(" ")));
+
+const vLey = x => `<li><div class="t"><span class="id">${esc(x.c)}</span><span class="nom">${esc(x.n)}</span><span class="pill">${esc(x.a)}${x.e ? " · "+esc(x.e) : ""}</span></div>
+  <div class="det">${esc(x.t)} artículos · última reforma ${esc(x.r)} · ${x.h==="si" ? "cotejada con el DOF" : "sin cotejar con el DOF"} · <a href="${esc(x.u)}" target="_blank" rel="noopener">fuente oficial</a></div></li>`;
+const vPar = x => `<li><div class="t"><span class="id">${esc(x.i)}</span>${pillEstado(x.s)}</div><div class="nom">${esc(x.n)}</div>
+  <div class="det">${x.d ? "Último valor desde "+esc(x.d) : "Se calcula con"}: <code>${esc(x.v)}${x.u==="%" ? " %" : ""}</code></div><div class="det">${esc(x.f)}</div></li>`;
+const vReg = x => `<li><div class="t"><span class="id">${esc(x.i)}</span><span class="nom">${esc(x.n)}</span>${pillEstado(x.s)}</div>
+  <div class="det">${x.c ? "Calculadora <code>"+esc(x.c)+"</code> · " : ""}${esc(x.k)} casos de prueba</div></li>`;
+
+function buscar() {
+  const q = norm($("#q").value.trim()), partes = q.split(/\s+/).filter(Boolean);
+  const ok = x => partes.every(p => x._t.includes(p));
+  const grupos = [["leyes","Leyes",vLey],["par","Cifras de ley",vPar],["reg","Reglas de cálculo",vReg]]
+    .filter(g => kind === "todo" || kind === g[0]);
+  let html = "", total = 0;
+  const lim = kind === "todo" ? 8 : 60;
+  for (const [k, titulo, fn] of grupos) {
+    const hits = D[k].filter(ok);
+    total += hits.length;
+    if (!hits.length) continue;
+    if (kind === "todo") html += `<li style="background:var(--bg)"><span class="det"><b>${titulo}</b> · ${hits.length}</span></li>`;
+    html += hits.slice(0, lim).map(fn).join("");
+    if (hits.length > lim) html += `<li class="det">… y ${hits.length - lim} más. Elige la pestaña «${titulo}» para verlos.</li>`;
+  }
+  $("#res").innerHTML = html || `<li class="vacio">Sin resultados. Prueba con una sola palabra (por ejemplo «ISR» o «plataformas»).</li>`;
+  $("#estado").textContent = q ? `${total} resultado${total===1?"":"s"} para «${$("#q").value.trim()}»` : "Escribe para buscar o recorre la lista.";
+}
+document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => {
+  kind = b.dataset.k;
+  document.querySelectorAll(".tabs button").forEach(o => o.setAttribute("aria-pressed", String(o === b)));
+  buscar();
+}));
+$("#q").addEventListener("input", buscar);
+document.addEventListener("keydown", e => { if (e.key === "/" && document.activeElement !== $("#q")) { e.preventDefault(); $("#q").focus(); } });
+$("#cifras").innerHTML = `<span><b>${D.leyes.length}</b>leyes</span><span><b>${D.par.length}</b>cifras de ley</span><span><b>${D.reg.length}</b>reglas</span><span><b>${D.casos}</b>casos de prueba</span>`;
+buscar();
+</script>
+</body>
+</html>
