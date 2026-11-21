@@ -1282,11 +1282,27 @@ parametros:
     tipo: porcentaje
     valores:
       - {valor: "10", desde: "2014-01-01", hasta: null, fuente: "LISR art. 80"}
+  DONATARIA_PERDIDA_AUTORIZACION_PCT:
+    nombre: Ingresos por actividades distintas, % de los ingresos totales, a partir del cual la donataria pierde la autorización
+    tipo: porcentaje
+    valores:
+      - {valor: "50", desde: "2021-01-01", hasta: null, confirmado_hasta: "2026-12-31", fuente: "LISR art. 80, octavo párrafo (adicionado por el Decreto DOF 08-12-2020, en vigor el 1-ene-2021, Transitorio Único); texto de la Cámara de Diputados, sin cotejar con el DOF"}
   DONATARIA_GASTOS_ADMIN_PCT:
     nombre: Máximo de gastos de administración, % de los donativos
     tipo: porcentaje
     valores:
       - {valor: "5", desde: "2016-01-01", hasta: null, fuente: "RLISR art. 138"}
+  DIVIDENDOS_FACTOR_PIRAMIDACION:
+    nombre: Factor para determinar el ISR pagado por la sociedad que distribuye dividendos (piramidación de la base)
+    tipo: numero
+    valores:
+      - {valor: "1.4286", desde: "2014-01-01", hasta: null, confirmado_hasta: "2026-12-31", fuente: "LISR art. 10, primer párrafo, y art. 140, primer párrafo (dividendo × 1.4286 × tasa del art. 9); texto de la Cámara de Diputados, sin cotejar con el DOF"}
+    nota: "El factor es el inverso de (1 − tasa del art. 9): con 30 % es 1 / 0.70 = 1.4286 a cuatro decimales. Si la tasa del art. 9 cambia, el factor debe cambiar por fecha (otro tramo), no se recalcula solo."
+  DIVIDENDOS_RETENCION_ADICIONAL_PCT:
+    nombre: Retención adicional de ISR sobre dividendos a personas físicas (pago definitivo)
+    tipo: porcentaje
+    valores:
+      - {valor: "10", desde: "2014-01-01", hasta: null, confirmado_hasta: "2026-12-31", fuente: "LISR art. 140, segundo párrafo (tasa adicional de 10 % sobre dividendos distribuidos por personas morales residentes en México, retención definitiva); texto de la Cámara de Diputados, sin cotejar con el DOF"}
   FRONTERA_ISR_DIVISOR:
     nombre: Crédito ISR región fronteriza = ISR proporcional entre este divisor
     tipo: numero

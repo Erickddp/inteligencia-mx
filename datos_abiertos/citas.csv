@@ -188,6 +188,14 @@ regla,R-187,LISR,,113-b,si
 regla,R-187,LISR,,150,si
 regla,R-187,RMF,2026,12.3.13,si
 regla,R-187,RMF,2026,2.8.1.17,si
+regla,R-188,LISR,,10,si
+regla,R-188,LISR,,140,si
+regla,R-188,LISR,,76,si
+regla,R-188,LISR,,9,si
+regla,R-189,LISR,,152,si
+regla,R-189,LISR,,79,si
+regla,R-189,LISR,,80,si
+regla,R-190,LISR,,80,si
 regla,R-20,LISR,,106,si
 regla,R-22,LISR,,113-e,si
 regla,R-22,LISR,,113-j,si

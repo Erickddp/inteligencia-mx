@@ -12,6 +12,7 @@ Uso (también: timbra-reglas <comando> o python -m timbra_reglas <comando>):
 Requisito: PyYAML. Todo importe y tasa es Decimal; nunca float.
 """
 import ast
+import calendar
 import json
 import os
 import sys
@@ -1076,6 +1077,57 @@ def calc_obligaciones_625_pf(b, f, opta_definitivo, ingresos_plataformas_ejercic
     return {"pago_provisional": "no" if definitivo else "mensual_dia_17",
             "declaracion_anual": "abril" if (not definitivo or otros_ingresos == "si") else "no",
             "diot": "no" if relevada else "mensual_dia_17"}
+
+
+# ---------- dividendos y donatarias (pedido 06, bloque 4) ----------
+def calc_dividendos_pf(b, f, dividendo, isr_corporativo_pagado="", acredita="si", utilidad_generada_desde_2014="si"):
+    """LISR 140 (y 10): la persona física acumula el dividendo; si quiere acreditar el ISR de la sociedad, acumula además ese impuesto, que la ley
+    determina como tasa del art. 9 × (dividendo × factor 1.4286), no con lo que diga la constancia. Además, retención definitiva de 10 % sobre
+    el dividendo. `isr_corporativo_pagado` (la constancia, art. 76 fr. XI) sólo se compara. Utilidades generadas antes de 2014: la base no
+    trae su régimen transitorio y avisa."""
+    if utilidad_generada_desde_2014 != "si":
+        raise SinValor("Dividendos de utilidades generadas antes de 2014: la base no trae su régimen transitorio (no se calcula la retención de 10 %)")
+    div = D(dividendo)
+    isr_corp = div * b.valor("DIVIDENDOS_FACTOR_PIRAMIDACION", f) * b.valor("ISR_PM_TASA", f) / 100
+    acreditable = red(isr_corp) if acredita == "si" else D("0.00")
+    out = {"ingreso_acumulable": str(red(div + acreditable)), "isr_corporativo_acreditable": str(acreditable),
+           "retencion_adicional": str(red(div * b.valor("DIVIDENDOS_RETENCION_ADICIONAL_PCT", f) / 100))}
+    out["constancia_coincide"] = "no_informada" if isr_corporativo_pagado == "" else ("si" if red(D(isr_corporativo_pagado)) == red(isr_corp) else "no")
+    return out
+
+
+def calc_donataria_remanente(b, f, ingresos_obtenidos, ingresos_excluidos="0", deducciones_autorizadas="0", omisiones_ingresos="0",
+                             compras_no_realizadas="0", erogaciones_no_deducibles="0", prestamos_a_integrantes="0", remanente_entregado="0"):
+    """LISR 79 (penúltimo y último párrafos) y 80. Remanente distribuible = ingresos (sin los del art. 93 ni los de impuesto definitivo) menos
+    deducciones autorizadas del Título IV; los integrantes sólo lo acumulan si lo reciben en efectivo o bienes, y quien lo recibe lo
+    declara en su propio régimen (la donataria no paga ISR por él). Remanente distribuible FICTO, aunque no se entregue: omisiones de
+    ingresos, compras no realizadas, erogaciones no deducibles y préstamos a integrantes o sus familiares; la persona moral paga sobre
+    él la tasa máxima de la tarifa del art. 152 (impuesto definitivo) a más tardar en febrero del año siguiente."""
+    distribuible = max(D(ingresos_obtenidos) - D(ingresos_excluidos) - D(deducciones_autorizadas), D(0))
+    ficto = D(omisiones_ingresos) + D(compras_no_realizadas) + D(erogaciones_no_deducibles) + D(prestamos_a_integrantes)
+    tasa = D(str(b.valor("ISR_TARIFA_ANUAL", f)[-1][3]))
+    descuento = min(D(prestamos_a_integrantes), D(remanente_entregado))
+    anio = int(f[:4]) + 1
+    entero = f"{anio}-02-{calendar.monthrange(anio, 2)[1]:02d}"
+    return {"remanente_distribuible": str(red(distribuible)), "remanente_ficto": str(red(ficto)), "tasa_remanente_ficto": str(tasa),
+            "isr_remanente_ficto": str(red(ficto * tasa / 100)), "entero_a_mas_tardar": entero,
+            "prestamos_que_se_restan_del_remanente_entregado": str(red(descuento))}
+
+
+def calc_donataria_actividades_distintas(b, f, ingresos_totales, ingresos_distintos, utilidad_del_excedente="0"):
+    """LISR 80 (séptimo y octavo párrafos): los ingresos por actividades distintas al objeto no pueden pasar de 10 % de los ingresos totales
+    del ejercicio (no cuentan los donativos, apoyos públicos, venta de activo fijo, cuotas, intereses, etc.: se excluyen antes). Sobre el
+    excedente se paga ISR (art. 9) por la utilidad que corresponda a ese excedente, que se pasa como `utilidad_del_excedente`. Si pasan de
+    50 %, pierde la autorización para recibir donativos."""
+    tot, dist = D(ingresos_totales), D(ingresos_distintos)
+    if tot <= 0:
+        raise ValueError("ingresos_totales debe ser mayor que cero")
+    limite = tot * b.valor("DONATARIA_INGRESOS_NO_RELACIONADOS_PCT", f) / 100
+    excedente = max(dist - limite, D(0))
+    pierde = dist * 100 > tot * b.valor("DONATARIA_PERDIDA_AUTORIZACION_PCT", f)
+    return {"limite": str(red(limite)), "porcentaje": str(red(dist * 100 / tot)), "excedente": str(red(excedente)),
+            "isr_del_excedente": str(red(max(D(utilidad_del_excedente), D(0)) * b.valor("ISR_PM_TASA", f) / 100)) if excedente > 0 else "0.00",
+            "pierde_autorizacion": "si" if pierde else "no"}
 
 
 CALC = {k[5:]: v for k, v in globals().items() if k.startswith("calc_")}
