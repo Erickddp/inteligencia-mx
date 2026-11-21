@@ -5,6 +5,11 @@ parametro,CFF_DIAS_INHABILES,CFF,,12,si
 parametro,DEPRECIACION_TASAS_ART33,LISR,,33,si
 parametro,DEPRECIACION_TASAS_ART34,LISR,,34,si
 parametro,DEPRECIACION_TASAS_ART35,LISR,,35,si
+parametro,OBLIGACIONES_625_PF,LISR,,113-a,si
+parametro,OBLIGACIONES_625_PF,LISR,,113-b,si
+parametro,OBLIGACIONES_625_PF,LISR,,150,si
+parametro,OBLIGACIONES_625_PF,RMF,2026,12.3.13,si
+parametro,OBLIGACIONES_625_PF,RMF,2026,2.8.1.17,si
 parametro,RESICO_PF_TABLA_ANUAL,LISR,,113-f,si
 parametro,RESICO_PM_INVERSIONES,LISR,,209,si
 parametro,RESICO_PM_INVERSIONES_TOPE,LISR,,209,si
@@ -175,6 +180,14 @@ regla,R-185,LISR,,210,si
 regla,R-185,LISR,,211,si
 regla,R-185,LISR,,212,si
 regla,R-185,LISR,,9,si
+regla,R-186,LISR,,113-a,si
+regla,R-186,LISR,,113-b,si
+regla,R-186,LISR,,150,si
+regla,R-186,RMF,2026,12.3.9,si
+regla,R-187,LISR,,113-b,si
+regla,R-187,LISR,,150,si
+regla,R-187,RMF,2026,12.3.13,si
+regla,R-187,RMF,2026,2.8.1.17,si
 regla,R-20,LISR,,106,si
 regla,R-22,LISR,,113-e,si
 regla,R-22,LISR,,113-j,si

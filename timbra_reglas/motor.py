@@ -1044,6 +1044,40 @@ def calc_resico_pm_anual(b, f, ingresos_percibidos, deducciones_erogadas, ptu_pa
                              str(D(retenciones) + D(impuesto_acreditable_5_10)))
 
 
+# ---------- plataformas (625) en la anual de persona física (pedido 06, bloque 3) ----------
+def _pago_definitivo_plataformas(b, f, opta_definitivo, ingresos_plataformas_ejercicio_anterior):
+    """LISR 113-B fr. I: la retención es pago definitivo si la persona física optó (aviso) y sus ingresos del ejercicio inmediato anterior
+    no pasaron del tope. Con el tope vencido la opción cesa; la RMF 2026 regla 12.3.9 la deja de aplicar desde el ejercicio siguiente
+    al que dejó de reunir los requisitos (aquí: el ejercicio cuyo año anterior ya rebasó el tope; POR CONFIRMAR)."""
+    return opta_definitivo == "si" and D(ingresos_plataformas_ejercicio_anterior) <= b.valor("PLATAFORMAS_PD_TOPE_ANUAL", f)
+
+
+def calc_plataformas_en_anual(b, f, opta_definitivo, ingresos_plataformas_ejercicio_anterior, ingresos_plataformas_ejercicio,
+                              isr_retenido="0"):
+    """Los ingresos por plataformas con retención, ¿se acumulan en la anual de la persona física? LISR 113-A tercer párrafo (la retención es
+    pago PROVISIONAL), 113-B (si optó y cumple, es pago DEFINITIVO) y 150 primer párrafo (la anual excluye los ingresos por los que se pagó
+    impuesto definitivo). Definitivo: no se acumulan y la retención no se acredita. Provisional (no optó, o el año anterior rebasó el tope):
+    se acumulan y la retención se acredita contra el ISR anual. `ingresos_plataformas_ejercicio` va sin IVA."""
+    definitivo = _pago_definitivo_plataformas(b, f, opta_definitivo, ingresos_plataformas_ejercicio_anterior)
+    pasa_tope = D(ingresos_plataformas_ejercicio) > b.valor("PLATAFORMAS_PD_TOPE_ANUAL", f)
+    return {"pago_definitivo": "si" if definitivo else "no", "acumula_en_anual": "no" if definitivo else "si",
+            "ingreso_acumulable": str(red(D(0) if definitivo else D(ingresos_plataformas_ejercicio))),
+            "isr_retenido_acreditable": str(red(D(0) if definitivo else D(isr_retenido))),
+            "siguiente_ejercicio_definitivo": "si" if (definitivo and not pasa_tope) else "no"}
+
+
+def calc_obligaciones_625_pf(b, f, opta_definitivo, ingresos_plataformas_ejercicio_anterior, ingresos_totales_ejercicio_anterior,
+                             otros_ingresos="no"):
+    """Obligaciones de la persona física en plataformas (625): pago provisional mensual (RMF 12.3.13, día 17), declaración anual (LISR 150:
+    abril; no la presenta por los ingresos definitivos, pero sí si tiene otros ingresos) y DIOT/contabilidad electrónica (relevadas con
+    ingresos del ejercicio anterior hasta el tope de RMF 2.8.1.17; si no, LIVA 32 fr. VIII, mensual)."""
+    definitivo = _pago_definitivo_plataformas(b, f, opta_definitivo, ingresos_plataformas_ejercicio_anterior)
+    relevada = D(ingresos_totales_ejercicio_anterior) <= b.valor("CONTA_ELEC_RELEVO_PF_INGRESOS", f)
+    return {"pago_provisional": "no" if definitivo else "mensual_dia_17",
+            "declaracion_anual": "abril" if (not definitivo or otros_ingresos == "si") else "no",
+            "diot": "no" if relevada else "mensual_dia_17"}
+
+
 CALC = {k[5:]: v for k, v in globals().items() if k.startswith("calc_")}
 
 
