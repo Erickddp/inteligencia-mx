@@ -78,3 +78,12 @@ def test_indice_niif_apunta_a_nif_que_existen_y_no_se_hace_pasar_por_cotejado():
     # lo único cotejado: quién está obligado a NIIF en México (DOF, CNBV)
     cotejados = [o for o in niif["obligados"] if o["cotejado"]]
     assert any("2012-01-01" == str(o.get("desde")) and "5078507" in o["url"] for o in cotejados)
+
+
+def test_indice_nia_es_referencia_y_nada_se_marca_cotejado():
+    """El índice de NIA es referencia: títulos de uso común, ninguna cotejada, sin copiar texto con derechos reservados."""
+    nia = yaml.safe_load((RAIZ / "fuentes" / "nia" / "indice.yaml").read_text(encoding="utf-8"))
+    ids = [n["id"] for n in nia["nia"]]
+    assert len(ids) == len(set(ids)) >= 35 and {"NIA 200", "NIA 315", "NIA 500", "NIA 700"} <= set(ids)
+    assert nia["cotejo"] is None and all(n["cotejado"] is False and n["estado"] == "por_confirmar" for n in nia["nia"])
+    assert all(n["titulo"] and n["tema"] and n["uso"] for n in nia["nia"])
