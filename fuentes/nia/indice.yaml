@@ -1,0 +1,56 @@
+# Índice de las NIA (Normas Internacionales de Auditoría) como REFERENCIA: identificador, título, tema y para qué sirven.
+#
+# - Las NIA las emite el IAASB (IFAC) y en México las difunde el IMCP con derechos reservados: aquí NO se copia su texto, sólo
+#   identificador, título (traducción de uso común) y un resumen propio de una línea.
+# - NINGUNA está cotejada (`cotejado: false`): ni el sitio del IMCP ni el del IAASB se pudieron abrir desde el entorno de trabajo del
+#   2026-11-23. Los números y títulos son los de uso común; falta cotejarlos con la edición vigente del IMCP, y también cuáles NIA se
+#   renumeraron o sustituyeron (por ejemplo la NIA 220 revisada y las normas de control de calidad NICC 1 y 2, que no se cargan).
+# - Ninguna NIA fija un número de ley: sirven de criterio profesional de auditoría. Lo único leído en la biblioteca: el dictamen fiscal
+#   exige al contador público inscrito cumplir «las normas de auditoría vigentes a la fecha de presentación del dictamen» (RCFF art. 60,
+#   para los efectos del CFF art. 52 fr. II). Los textos no dicen cuáles son esas normas; que sean las NIA del IMCP es lo usual y NO está cotejado.
+version: 1
+cotejo: null
+fuente: "IAASB, Normas Internacionales de Auditoría; edición en español del IMCP (https://www.imcp.org.mx)"
+nota: "Referencia y resumen propio. Texto con derechos reservados."
+pendientes:
+  - "Cotejar identificador y título de cada NIA contra la edición vigente del IMCP."
+  - "NICC 1 y NICC 2 (control de calidad de firmas) y las demás normas del IAASB (ISRE, ISAE, ISRS): no se cargan."
+  - "Confirmar con el IMCP y el SAT qué normas de auditoría son «las vigentes» para el RCFF art. 60 (el texto no las nombra)."
+nia:
+  - {id: "NIA 200", titulo: "Objetivos globales del auditor independiente y realización de la auditoría de conformidad con las NIA", tema: "principios generales", uso: "escepticismo profesional, seguridad razonable y marco de toda la auditoría", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 210", titulo: "Acuerdo de los términos del encargo de auditoría", tema: "aceptación del trabajo", uso: "carta de contratación: alcance, responsabilidades y marco de información financiera", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 220", titulo: "Control de calidad de la auditoría de estados financieros", tema: "control de calidad", uso: "responsabilidad del socio del encargo y revisión del trabajo", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 230", titulo: "Documentación de auditoría", tema: "documentación", uso: "qué papeles de trabajo deben quedar y por cuánto tiempo conservarlos", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 240", titulo: "Responsabilidades del auditor en la auditoría de estados financieros con respecto al fraude", tema: "riesgos", uso: "identificar y responder a riesgos de fraude", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 250", titulo: "Consideración de las disposiciones legales y reglamentarias en la auditoría de estados financieros", tema: "cumplimiento", uso: "incumplimientos de leyes que afectan los estados financieros", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 260", titulo: "Comunicación con los responsables del gobierno de la entidad", tema: "comunicación", uso: "qué se informa a los encargados del gobierno corporativo", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 265", titulo: "Comunicación de las deficiencias en el control interno a los responsables del gobierno y a la dirección", tema: "comunicación", uso: "deficiencias significativas de control interno", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 300", titulo: "Planeación de la auditoría de estados financieros", tema: "planeación", uso: "estrategia global y plan de auditoría", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 315", titulo: "Identificación y valoración de los riesgos de incorrección material", tema: "riesgos", uso: "entender la entidad y su control interno para valorar riesgos", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 320", titulo: "Importancia relativa o materialidad en la planeación y ejecución de la auditoría", tema: "riesgos", uso: "cómo fijar la materialidad y la de ejecución", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 330", titulo: "Respuestas del auditor a los riesgos valorados", tema: "respuesta a riesgos", uso: "pruebas de controles y procedimientos sustantivos", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 402", titulo: "Consideraciones de auditoría relativas a una entidad que utiliza una organización de servicios", tema: "evidencia", uso: "cuando la entidad subcontrata procesos (por ejemplo nómina)", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 450", titulo: "Evaluación de las incorrecciones identificadas durante la realización de la auditoría", tema: "evaluación", uso: "qué hacer con diferencias detectadas", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 500", titulo: "Evidencia de auditoría", tema: "evidencia", uso: "qué hace suficiente y adecuada a la evidencia", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 501", titulo: "Evidencia de auditoría: consideraciones específicas para determinadas áreas", tema: "evidencia", uso: "inventarios, litigios y segmentos", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 505", titulo: "Confirmaciones externas", tema: "evidencia", uso: "confirmaciones de saldos con terceros", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 510", titulo: "Encargos iniciales de auditoría: saldos de apertura", tema: "evidencia", uso: "primer año con otro auditor", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 520", titulo: "Procedimientos analíticos", tema: "evidencia", uso: "comparar cifras y relaciones para detectar anomalías", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 530", titulo: "Muestreo de auditoría", tema: "evidencia", uso: "selección de muestras y proyección de errores", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 540", titulo: "Auditoría de estimaciones contables y de la información relacionada a revelar", tema: "evidencia", uso: "estimaciones y valor razonable", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 550", titulo: "Partes relacionadas", tema: "evidencia", uso: "identificar y revisar operaciones con partes relacionadas", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 560", titulo: "Hechos posteriores al cierre", tema: "evidencia", uso: "hechos entre el cierre y la fecha del informe", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 570", titulo: "Empresa en funcionamiento", tema: "evidencia", uso: "negocio en marcha", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 580", titulo: "Manifestaciones escritas", tema: "evidencia", uso: "carta de manifestaciones de la dirección", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 600", titulo: "Consideraciones especiales: auditorías de estados financieros de grupos", tema: "grupos", uso: "auditoría de grupos y trabajo de auditores de componentes", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 610", titulo: "Utilización del trabajo de los auditores internos", tema: "uso del trabajo de otros", uso: "apoyarse en auditoría interna", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 620", titulo: "Utilización del trabajo de un experto del auditor", tema: "uso del trabajo de otros", uso: "expertos contratados por el auditor", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 700", titulo: "Formación de la opinión y emisión del informe de auditoría sobre los estados financieros", tema: "informe", uso: "estructura del dictamen", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 701", titulo: "Comunicación de las cuestiones clave de la auditoría en el informe emitido por el auditor independiente", tema: "informe", uso: "asuntos clave de la auditoría", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 705", titulo: "Opinión modificada en el informe emitido por un auditor independiente", tema: "informe", uso: "con salvedades, adversa o abstención", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 706", titulo: "Párrafos de énfasis y de otras cuestiones en el informe emitido por un auditor independiente", tema: "informe", uso: "párrafos de énfasis y de otras cuestiones", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 710", titulo: "Información comparativa: cifras correspondientes de periodos anteriores y estados financieros comparativos", tema: "informe", uso: "cifras comparativas", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 720", titulo: "Responsabilidades del auditor con respecto a otra información", tema: "informe", uso: "información que acompaña a los estados financieros", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 800", titulo: "Consideraciones especiales: auditorías de estados financieros preparados de conformidad con marcos de información con fines específicos", tema: "encargos especiales", uso: "marcos con fines específicos", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 805", titulo: "Consideraciones especiales: auditorías de un solo estado financiero o de un elemento específico", tema: "encargos especiales", uso: "un solo estado o una partida", estado: por_confirmar, cotejado: false}
+  - {id: "NIA 810", titulo: "Encargos para informar sobre estados financieros resumidos", tema: "encargos especiales", uso: "estados financieros resumidos", estado: por_confirmar, cotejado: false}

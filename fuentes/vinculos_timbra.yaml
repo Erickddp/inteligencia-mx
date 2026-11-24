@@ -1,0 +1,99 @@
+# Vínculos entre los rubros de nómina y de estados financieros que usa Timbra y lo que ya tiene esta base.
+#
+# - `nomina`: cada rubro apunta a los artículos de la biblioteca que lo fundamentan (LFT, LSS, Ley del Infonavit, LISR), a los parámetros
+#   que Timbra ya carga y a las reglas que los usan. Los artículos y parámetros se comprueban con pruebas contra fuentes/leyes/ y base/.
+#   Es un mapa de lectura: no cambia ninguna cifra y no es una cita firmada (los textos siguen sin cotejar con el DOF).
+# - `estados_financieros`: cada rubro apunta a la NIF indexada que lo trata y a las reglas de la base que ya la citan. NO se carga texto
+#   de las NIF (derechos reservados del CINIF); `cotejado` repite lo que dice fuentes/nif/indice.yaml.
+# - Pedido de Timbra del 2026-11-24. Las reglas se calcularon al generar el archivo; la prueba comprueba que existan.
+version: 1
+generado: "2026-11-24"
+nomina:
+  - rubro: aguinaldo
+    nombre: "Aguinaldo (anual y proporcional) y su exención"
+    citas: [{ley: LFT, articulo: "87"}, {ley: LISR, articulo: "93"}]
+    parametros: [LFT_AGUINALDO_DIAS, EXENTO_AGUINALDO_VECES_UMA, EXENTO_AGUINALDO_IMPORTE]
+    reglas: [R-83, R-125, R-126, R-130]
+  - rubro: ptu
+    nombre: "Reparto de utilidades (PTU), su tope y su exención"
+    citas: [{ley: LFT, articulo: "117"}, {ley: LFT, articulo: "120"}, {ley: LFT, articulo: "122"}, {ley: LFT, articulo: "127"}, {ley: LISR, articulo: "93"}]
+    parametros: [PTU_PCT, PTU_TOPE_MESES_SALARIO, EXENTO_PTU_VECES_UMA, EXENTO_PTU_IMPORTE]
+    reglas: [R-83, R-133]
+  - rubro: vacaciones
+    nombre: "Vacaciones, prima vacacional y su exención"
+    citas: [{ley: LFT, articulo: "76"}, {ley: LFT, articulo: "78"}, {ley: LFT, articulo: "80"}, {ley: LISR, articulo: "93"}]
+    parametros: [LFT_VACACIONES_TABLA, LFT_VACACIONES_PRIMER_ANIO, LFT_PRIMA_VACACIONAL_PCT, EXENTO_PRIMA_VAC_VECES_UMA, EXENTO_PRIMA_VAC_IMPORTE]
+    reglas: [R-83, R-130, R-136]
+  - rubro: salario_base_de_cotizacion
+    nombre: "Salario base de cotización y su tope"
+    citas: [{ley: LSS, articulo: "27"}, {ley: LSS, articulo: "28"}]
+    parametros: [SBC_TOPE_VECES_UMA, SBC_TOPE_IMPORTE, UMA_DIARIA]
+    reglas: [R-26, R-81, R-83, R-107, R-128, R-130]
+  - rubro: imss_enfermedad_maternidad
+    nombre: "Cuotas de enfermedad y maternidad, prestaciones en dinero y gastos médicos de pensionados"
+    citas: [{ley: LSS, articulo: "25"}, {ley: LSS, articulo: "106"}, {ley: LSS, articulo: "107"}]
+    parametros: [IMSS_EYM_CUOTA_FIJA_PATRON, IMSS_EYM_EXCEDENTE_UMA, IMSS_EYM_EXCEDENTE_PATRON, IMSS_EYM_EXCEDENTE_OBRERO, IMSS_PD_PATRON, IMSS_PD_OBRERO, IMSS_GMP_PATRON, IMSS_GMP_OBRERO]
+    reglas: [R-128]
+  - rubro: imss_riesgos_de_trabajo
+    nombre: "Prima del seguro de riesgos de trabajo"
+    citas: [{ley: LSS, articulo: "73"}, {ley: LSS, articulo: "74"}]
+    parametros: [PRIMA_RIESGO_INICIAL_POR_CLASE, PRIMA_RIESGO_MINIMA, PRIMA_RIESGO_MAXIMA]
+    reglas: [R-84]
+  - rubro: imss_invalidez_vida_guarderias
+    nombre: "Invalidez y vida; guarderías"
+    citas: [{ley: LSS, articulo: "147"}, {ley: LSS, articulo: "211"}]
+    parametros: [IMSS_IV_PATRON, IMSS_IV_OBRERO, IMSS_GUARDERIAS_PATRON]
+    reglas: [R-128]
+  - rubro: imss_retiro_cesantia_vejez
+    nombre: "Retiro, cesantía en edad avanzada y vejez"
+    citas: [{ley: LSS, articulo: "168"}]
+    parametros: [IMSS_RETIRO_PATRON, IMSS_CEAV_OBRERO, IMSS_CEAV_PATRON_TABLA]
+    reglas: [R-128]
+  - rubro: infonavit
+    nombre: "Aportación patronal al Infonavit"
+    citas: [{ley: LINFONAVIT, articulo: "29"}]
+    parametros: [INFONAVIT_APORTACION_PATRON]
+    reglas: [R-128]
+estados_financieros:
+  - rubro: estado_de_resultados
+    nombre: "Estado de resultados"
+    nif: "B-3"
+    titulo_nif: "Estado de resultado integral"
+    cotejado: true
+    reglas: [R-154, R-171]
+  - rubro: balance
+    nombre: "Balance (estado de situación financiera)"
+    nif: "B-6"
+    titulo_nif: "Estado de situación financiera"
+    cotejado: true
+    reglas: []
+  - rubro: flujo_de_efectivo
+    nombre: "Estado de flujos de efectivo"
+    nif: "B-2"
+    titulo_nif: "Estado de flujos de efectivo"
+    cotejado: true
+    reglas: []
+  - rubro: cuentas_por_cobrar
+    nombre: "Cuentas por cobrar"
+    nif: "C-3"
+    titulo_nif: "Cuentas por cobrar"
+    cotejado: true
+    reglas: [R-150, R-151]
+  - rubro: inventarios
+    nombre: "Inventarios"
+    nif: "C-4"
+    titulo_nif: "Inventarios"
+    cotejado: true
+    reglas: [R-152]
+  - rubro: activos_fijos
+    nombre: "Activos fijos (propiedades, planta y equipo)"
+    nif: "C-6"
+    titulo_nif: "Propiedades, planta y equipo"
+    cotejado: true
+    reglas: [R-173]
+  - rubro: beneficios_a_empleados
+    nombre: "Beneficios a empleados"
+    nif: "D-3"
+    titulo_nif: "Beneficios a los empleados"
+    cotejado: true
+    reglas: [R-155, R-194]

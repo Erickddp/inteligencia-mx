@@ -2,6 +2,26 @@
 
 Generado por `scripts/release.py --changelog` al preparar cada versión. Cada entrada sale de la comparación contra la versión anterior.
 
+## [v0.8.0] - 2026-11-24
+
+Pruebas: 389 pasan · 0 fallan · 0 pendientes   (* = pasa contra un esperado aún no confirmado).
+
+### Parámetros nuevos
+
+- CFF_113BIS_PENA
+- CFF_69B_PLAZOS_DIAS
+- CFF_DEFRAUDACION_AJUSTES_PCT
+- CFF_DEFRAUDACION_PENAS
+- CFF_DEFRAUDACION_TOPES
+
+### Reglas nuevas
+
+- R-195
+- R-196
+- R-197
+- R-198
+- R-199
+
 ## [v0.7.0] - 2026-11-21
 
 Pruebas: 358 pasan · 0 fallan · 0 pendientes   (* = pasa contra un esperado aún no confirmado).
@@ -45,6 +65,7 @@ Pruebas: 358 pasan · 0 fallan · 0 pendientes   (* = pasa contra un esperado a�
 - R-192
 - R-193
 - R-194
+
 
 ## [v0.6.0] - 2026-11-14
 
@@ -117,6 +138,7 @@ Pedido 03 de Timbra, bloques 1 a 6. Cae UNA firma de valor (DEPRECIACION_TASAS_A
 - R-179
 
 
+
 ## [v0.5.0] - 2026-11-13
 
 Pruebas: 193 pasan · 0 fallan · 0 pendientes   (* = pasa contra un esperado aún no confirmado).
@@ -150,6 +172,7 @@ Para Timbra: toma lo que estaba en main sin publicar desde la v0.4.2 (pedido 02:
 - R-169
 - R-170
 - R-171
+
 
 
 
@@ -196,6 +219,7 @@ Sin cambios de valores: no cae ninguna firma. Se agregan reglas, calculadoras, p
 
 - R-138: CORREGIR -> OK
 - R-52: CORREGIR -> OK
+
 
 
 

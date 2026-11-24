@@ -78,3 +78,27 @@ def test_indice_niif_apunta_a_nif_que_existen_y_no_se_hace_pasar_por_cotejado():
     # lo único cotejado: quién está obligado a NIIF en México (DOF, CNBV)
     cotejados = [o for o in niif["obligados"] if o["cotejado"]]
     assert any("2012-01-01" == str(o.get("desde")) and "5078507" in o["url"] for o in cotejados)
+
+
+def test_indice_nia_es_referencia_y_nada_se_marca_cotejado():
+    """El índice de NIA es referencia: títulos de uso común, ninguna cotejada, sin copiar texto con derechos reservados."""
+    nia = yaml.safe_load((RAIZ / "fuentes" / "nia" / "indice.yaml").read_text(encoding="utf-8"))
+    ids = [n["id"] for n in nia["nia"]]
+    assert len(ids) == len(set(ids)) >= 35 and {"NIA 200", "NIA 315", "NIA 500", "NIA 700"} <= set(ids)
+    assert nia["cotejo"] is None and all(n["cotejado"] is False and n["estado"] == "por_confirmar" for n in nia["nia"])
+    assert all(n["titulo"] and n["tema"] and n["uso"] for n in nia["nia"])
+
+
+def test_vinculos_de_timbra_apuntan_a_cosas_que_existen():
+    """El mapa de rubros de Timbra sólo cita artículos de la biblioteca, parámetros, reglas y NIF que existen; las NIF no se hacen pasar por cotejadas."""
+    v = yaml.safe_load((RAIZ / "fuentes" / "vinculos_timbra.yaml").read_text(encoding="utf-8"))
+    ids_reglas = {r["id"] for r in REGLAS}
+    assert len(v["nomina"]) >= 9 and len(v["estados_financieros"]) == 7
+    for n in v["nomina"]:
+        assert n["parametros"] and n["citas"], n["rubro"]
+        for c in n["citas"]:
+            assert str(c["articulo"]) in indice_de(c["ley"]), f"{n['rubro']}: {c} no existe en la biblioteca"
+        assert all(p in PARAMS for p in n["parametros"]) and all(r in ids_reglas for r in n["reglas"]), n["rubro"]
+    for e in v["estados_financieros"]:
+        assert e["nif"] in NIF and e["cotejado"] is NIF[e["nif"]]["cotejado"], e["rubro"]
+        assert all(r in ids_reglas for r in e["reglas"]), e["rubro"]

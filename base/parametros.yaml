@@ -16,7 +16,7 @@
 #    pero marcado ARRASTRADO (estimación en pantalla), para que enero no se quede en blanco.
 #    hasta con fecha = vence de verdad (estímulos con plazo, LIF anual): después da SinValor.
 
-version_base: "0.7.0"
+version_base: "0.8.0"
 fecha_corte: "2026-11-05"
 
 parametros:
@@ -3943,6 +3943,88 @@ parametros:
           - ["diot", "ingresos_ejercicio_anterior_arriba_del_tope", "si", "mensual, a más tardar el día 17 del mes siguiente", "LIVA 32 fr. VIII"]
     nota: "Sólo personas físicas. Una persona moral que recibe retención de plataformas no tiene pago definitivo (R-160). El IVA retenido tiene su propia regla (RMF 12.3.8 y 12.3.10) y no se resume aquí."
 
+  CFF_DEFRAUDACION_TOPES:
+    nombre: "Montos defraudados que separan las penas del delito de defraudación fiscal (fracciones I, II y III)"
+    tipo: tabla
+    columnas: [hasta_fraccion_i, hasta_fraccion_ii]
+    citas: [{ley: CFF, articulo: "108"}]
+    que_dice: "La pena de la defraudación fiscal depende del monto defraudado en un mismo ejercicio: hasta 2,531,920 es la fracción I, de ahí hasta 3,797,870 la II y arriba de eso la III."
+    correcto_si: "Los topes son los vigentes en la fecha del hecho; el monto suma las contribuciones defraudadas en el mismo ejercicio aunque sean distintas, sin contar pagos provisionales."
+    valores:
+      - desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        estado: por_confirmar
+        fuente: "CFF art. 108, fracciones I a III (texto de la Cámara de Diputados: cantidades «actualizadas DOF 28-12-2025»). POR CONFIRMAR: la fecha desde la que rigen las cantidades actualizadas (se supone 1-ene-2026) y que son las de la compilación de la RMF; esas cantidades no están en la RMF 2026 de la biblioteca. Los montos anteriores no están en la biblioteca"
+        valor:
+          - ["2531920.00", "3797870.00"]
+  CFF_DEFRAUDACION_PENAS:
+    nombre: "Penas de prisión de la defraudación fiscal, en meses (mínimo y máximo)"
+    tipo: tabla
+    columnas: [tramo, minimo_meses, maximo_meses]
+    citas: [{ley: CFF, articulo: "108"}]
+    que_dice: "Fracción I: de 3 meses a 2 años. Fracción II: de 2 a 5 años. Fracción III: de 3 a 9 años. Sin poder determinar la cuantía: de 3 meses a 6 años."
+    correcto_si: "Los meses salen del artículo 108; el calificado aumenta la pena en una mitad y la restitución inmediata en una sola exhibición puede atenuarla hasta en 50 %."
+    valores:
+      - desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        estado: por_confirmar
+        fuente: "CFF art. 108 (texto de la Cámara de Diputados, sin cotejar con el DOF); las penas no se compararon con ninguna versión anterior"
+        valor:
+          - ["fraccion_i", "3", "24"]
+          - ["fraccion_ii", "24", "60"]
+          - ["fraccion_iii", "36", "108"]
+          - ["sin_cuantia", "3", "72"]
+  CFF_DEFRAUDACION_AJUSTES_PCT:
+    nombre: "Ajustes a la pena de defraudación fiscal, % (calificado: aumento; restitución inmediata: atenuación máxima)"
+    tipo: tabla
+    columnas: [ajuste, porcentaje]
+    citas: [{ley: CFF, articulo: "108"}]
+    que_dice: "Si el delito es calificado (documentos falsos, datos falsos para acreditar, omitir contribuciones retenidas, etc.) la pena sube una mitad; si se restituye de inmediato en una sola exhibición, la pena puede bajar hasta la mitad."
+    correcto_si: "El calificado suma 50 % a mínimo y máximo; la atenuación es una facultad del juez («podrá atenuarse hasta»), no un descuento automático."
+    valores:
+      - desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        estado: por_confirmar
+        fuente: "CFF art. 108, penúltimo párrafo del listado de calificados («se aumentará en una mitad») y párrafo de restitución («hasta en un cincuenta por ciento»); texto de la Cámara de Diputados, sin cotejar con el DOF"
+        valor:
+          - ["calificado_aumento", "50"]
+          - ["restitucion_atenuacion_maxima", "50"]
+  CFF_113BIS_PENA:
+    nombre: "Prisión por expedir, enajenar, comprar o adquirir comprobantes que amparan operaciones inexistentes o falsas (en meses)"
+    tipo: tabla
+    columnas: [minimo_meses, maximo_meses]
+    citas: [{ley: CFF, articulo: "113-bis"}]
+    que_dice: "Expedir, vender, comprar o adquirir comprobantes de operaciones inexistentes, falsas o actos simulados se castiga con 2 a 9 años de prisión; dar efectos fiscales a un comprobante falso, también (desde 2026)."
+    correcto_si: "La pena es de 24 a 108 meses; sólo procede por querella de la SHCP; el delito se persigue aunque siga el procedimiento administrativo y puede perseguirse junto con el 400 Bis del Código Penal Federal."
+    valores:
+      - desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        estado: por_confirmar
+        fuente: "CFF art. 113 Bis (texto de la Cámara de Diputados; el segundo párrafo, «dar efectos fiscales a comprobantes fiscales falsos», fue adicionado por el Decreto DOF 07-nov-2025, en vigor el 1-ene-2026); no se leyó el texto anterior a esa reforma"
+        valor:
+          - ["24", "108"]
+  CFF_69B_PLAZOS_DIAS:
+    nombre: "Plazos del procedimiento del artículo 69-B del CFF, en días"
+    tipo: tabla
+    columnas: [concepto, dias]
+    citas: [{ley: CFF, articulo: "69-b"}]
+    que_dice: "El contribuyente señalado tiene 15 días (más 5 de prórroga) para desvirtuar; la autoridad resuelve en 50 días; quien dio efectos fiscales a sus comprobantes tiene 30 días desde la publicación del listado definitivo para acreditar la operación o corregirse."
+    correcto_si: "Los plazos son los del artículo 69-B; los de 15, 5 y 30 son plazos de días del CFF 12 (hábiles); el de 50 días corre a cargo de la autoridad."
+    valores:
+      - desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        estado: por_confirmar
+        fuente: "CFF art. 69-B, párrafos segundo, tercero, cuarto y séptimo (texto de la Cámara de Diputados, sin cotejar con el DOF); el cómputo en días hábiles es el del CFF art. 12 (R-178)"
+        valor:
+          - ["desvirtuar_presunto", "15"]
+          - ["prorroga_presunto", "5"]
+          - ["resolucion_autoridad", "50"]
+          - ["acreditar_o_corregir_receptor", "30"]
   GLOBAL_PERIODICIDAD_POR_REGIMEN:
     nombre: Periodicidades de la factura global por régimen y cómo se detalla
     tipo: lista
