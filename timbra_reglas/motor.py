@@ -34,7 +34,7 @@ def dir_base() -> Path:
         if (c / "parametros.yaml").is_file() and (c / "reglas.yaml").is_file():
             return c
     raise FileNotFoundError("No encontré parametros.yaml y reglas.yaml: " + ", ".join(str(c) for c in candidatas))
-VERSION_MOTOR = "0.8.0"
+VERSION_MOTOR = "0.9.0"
 
 # Estados de un tramo. Los NO_APLICABLES nunca se usan salvo en simulación.
 ESTADOS_APLICABLES = {"vigente", "por_confirmar"}
@@ -1267,6 +1267,116 @@ def calc_efos_efectos_receptor(b, f, monto_sin_iva, iva_acreditado, acredito_mat
     total = isr + red(D(iva_acreditado))
     return {"isr_omitido": str(isr), "iva_omitido": str(red(D(iva_acreditado))), "impuesto_omitido_total": str(total),
             "tramo_cff_108": calc_cff_defraudacion_pena(b, f, str(total))["tramo"]}
+
+
+# ---------- devoluciones, descuentos y bonificaciones por régimen (pedido de Timbra, 25-nov-2026) ----------
+NC_REGIMENES = {
+    # régimen: (fundamento ISR de la nota EMITIDA, fundamento ISR de la nota RECIBIDA)
+    "601": ("LISR 25 fr. I (deducción del ejercicio)", "LISR 25 fr. III (gastos netos de descuentos, bonificaciones o devoluciones)"),
+    "612": ("LISR 103 fr. I (deducción, siempre que se hubiese acumulado el ingreso)", "CRITERIO: LISR 105 fr. I (deducciones efectivamente erogadas); sin fracción expresa"),
+    "626_pm": ("LISR 208 fr. I (deducción, siempre que se hubiese acumulado el ingreso)", "LISR 208 fr. III (gastos netos) y 210 fr. I (efectivamente erogados)"),
+    "606": ("CRITERIO: LISR 114 último párrafo (ingresos en crédito, hasta que se cobren); sin regla expresa", "sin efecto: la deducción es la ciega o el predial (LISR 115), no gastos"),
+    "625_pf": ("RMF 2026 reglas 12.3.16, 12.3.17 y 12.3.18; LISR 113-A y 113-B", "sin efecto: no hay deducciones por la actividad en plataformas (LISR 113-B inciso a)"),
+    "626_pf": ("CRITERIO: R-195 (LISR 113-E, base de caja); sin regla expresa", "sin efecto: sin deducción alguna (LISR 113-E)"),
+}
+
+
+def calc_nc_regimen(b, f, regimen, rol, base, iva, total_base_original, liquidado_original, metodo="ppd",
+                    opto_definitivo="no", iva_retenido_original="no"):
+    """Devolución, descuento o bonificación (la nota de crédito) por régimen, emitida o RECIBIDA. `liquidado_original` es lo ya cobrado (emitida) o
+    ya pagado (recibida) de la factura original, sin IVA; PUE se toma como liquidada. La parte de la nota que cubre el SALDO por cobrar o pagar no
+    toca ISR ni IVA ahora (el pago futuro será menor); sólo el resto sí. 601 es la excepción de ISR: el art. 25 fr. I no exige haber acumulado el
+    ingreso y la nota se deduce completa. LIVA 7: se aplica en la declaración del mes de la nota (y siguientes si no alcanza), sin complementaria,
+    salvo que el IVA se hubiera retenido (1-A, 3 o 18-J): entonces complementaria del mes original. `f` es la fecha de la nota. CRITERIO donde
+    la ley no lo dice (ver el fundamento de cada régimen)."""
+    if regimen not in NC_REGIMENES or rol not in ("emitida", "recibida") or metodo not in ("pue", "ppd"):
+        raise ValueError("regimen: 601, 612, 606, 625_pf, 626_pm o 626_pf; rol: emitida o recibida; metodo: pue o ppd")
+    nc, total = D(base), D(total_base_original)
+    liquidado = total if metodo == "pue" else D(liquidado_original)
+    if nc <= 0 or nc > total or not D(0) <= liquidado <= total:
+        raise ValueError("La nota debe ser mayor que cero y no pasar de la factura; lo liquidado va de 0 al total")
+    parte = max(D(0), nc - (total - liquidado))
+    fundamento = NC_REGIMENES[regimen][0 if rol == "emitida" else 1]
+    if rol == "emitida":
+        if regimen == "601":
+            efecto, monto, via = "deduccion", nc, "declaracion_del_mes_de_la_nota"
+        elif regimen in ("612", "626_pm"):
+            efecto, monto, via = "deduccion", parte, "declaracion_del_mes_de_la_nota"
+        elif regimen in ("606", "626_pf"):
+            efecto, monto, via = "resta_del_cobrado", parte, "declaracion_del_mes_de_la_nota"
+        elif opto_definitivo == "si":
+            efecto, monto, via = "devolucion_de_la_retencion", D(0), "solicitud_de_devolucion_FED (RMF 12.3.17)"
+        else:
+            efecto, monto, via = "resta_en_pagos_provisionales", parte, "pago_provisional_del_mes_de_la_nota (RMF 12.3.18) o complementaria_del_mes_original (RMF 12.3.16)"
+        iva_aplicado, iva_clave = red(D(iva) * parte / nc), "iva_que_resta_de_actos"
+    else:
+        if regimen == "601":
+            efecto, monto = "reduce_gasto_o_costo", nc
+        elif regimen in ("612", "626_pm"):
+            efecto, monto = "reduce_deduccion", parte
+        else:
+            efecto, monto = "sin_efecto", D(0)
+        via = "declaracion_del_mes_de_la_nota"
+        iva_aplicado, iva_clave = red(D(iva) * parte / nc), "iva_que_baja_del_acreditable"
+    via_iva = ("complementaria_del_mes_original (LIVA 7 ultimo parrafo)" if iva_retenido_original == "si"
+               else "declaracion_del_mes_de_la_nota (LIVA 7)")
+    return {"efecto_isr": efecto, "monto_isr": str(red(monto)), "via_isr": via, iva_clave: str(iva_aplicado),
+            "iva_pendiente_en_el_pago_futuro": str(red(D(iva) - iva_aplicado)), "via_iva": via_iva,
+            "ejercicio_de_aplicacion": f[:4], "fundamento_isr": fundamento}
+
+
+def calc_nc_reparto_facturas(b, f, nc_base, nc_iva, facturas, orden="saldo_primero"):
+    """CRITERIO: una nota que corrige varias facturas (o una PPD con varios REP: lo cobrado es la suma de los REP). Ninguna norma de la biblioteca
+    dice contra cuál se aplica ni en qué orden. Se aplica a las facturas en el orden dado; en cada una, `saldo_primero` cubre primero el saldo por
+    cobrar (lo que no resta ahora) y luego lo cobrado; `cobrado_primero` al revés. `facturas` es [[total_base, cobrado_base], ...]. El IVA se reparte
+    en proporción a lo que SÍ resta de lo cobrado."""
+    if orden not in ("saldo_primero", "cobrado_primero"):
+        raise ValueError("orden: saldo_primero o cobrado_primero")
+    resto, nc, iva = D(nc_base), D(nc_base), D(nc_iva)
+    reducciones, aplicado = [], []
+    for total, cobrado in facturas:
+        total, cobrado = D(total), D(cobrado)
+        saldo = total - cobrado
+        usar = min(resto, total)
+        a_cobrado = max(D(0), usar - saldo) if orden == "saldo_primero" else min(usar, cobrado)
+        reducciones.append(a_cobrado)
+        aplicado.append(usar)
+        resto -= usar
+    total_resta = sum(reducciones, D(0))
+    ivas = [red(iva * r / nc) for r in reducciones]
+    return {"resta_del_cobrado_por_factura": "; ".join(f"{i + 1}:{red(r)}" for i, r in enumerate(reducciones)),
+            "aplicado_por_factura": "; ".join(f"{i + 1}:{red(a)}" for i, a in enumerate(aplicado)),
+            "resta_del_cobrado_total": str(red(total_resta)), "iva_que_resta": str(red(sum(ivas, D(0)))),
+            "sobrante_sin_factura": str(red(resto))}
+
+
+def calc_nc_retencion_revertida(b, f, base_que_resta, retencion_en_nota="", cliente="persona_moral"):
+    """CRITERIO (RESICO PF, LISR 113-J). La ley no dice cómo se revierte la retención de 1.25 %: la persona moral la entera y expide el comprobante
+    de retención (113-J). Aquí manda el 1.25 % de lo que sí resta; si la nota trae su propio importe de retención y es distinto, se avisa y no se
+    usa. Si el cliente ya enteró la retención del pago devuelto, cómo la recupera él y cómo la ajusta el contribuyente en su pago mensual NO está
+    en las fuentes: la app debe avisar «por confirmar»."""
+    calc = red(D(base_que_resta) * b.valor("RESICO_PF_RETENCION_PM", f) / 100) if cliente == "persona_moral" else D("0.00")
+    en_nota = "" if retencion_en_nota == "" else str(red(D(retencion_en_nota)))
+    return {"retencion_que_se_revierte": str(calc), "retencion_en_la_nota": en_nota,
+            "coincide": "no_informada" if en_nota == "" else ("si" if D(en_nota) == calc else "no"), "usa": "1.25_por_ciento_de_lo_que_resta"}
+
+
+def calc_nc_moneda_extranjera(b, f, nc_moneda, tc_factura, tc_nota):
+    """CRITERIO sobre CFF 20 (tercer párrafo): se convierte al tipo de cambio al que se adquirió la moneda y, sin adquisición, al que Banxico publicó
+    en el DOF el día anterior a aquel en que se causa la contribución. La nota resta en pesos al tipo de cambio del día anterior a la nota (no el
+    de la factura); la diferencia contra el de la factura es utilidad o pérdida cambiaria, que se trata aparte. `tc_nota` ya es el de CFF 20."""
+    usd, tcf, tcn = D(nc_moneda), D(tc_factura), D(tc_nota)
+    return {"resta_en_pesos_al_tc_de_la_nota": str(red(usd * tcn)), "al_tc_de_la_factura": str(red(usd * tcf)),
+            "diferencia_cambiaria": str(red(usd * (tcn - tcf)))}
+
+
+def calc_cfdi_egreso_efecto(b, f, tipo_relacion):
+    """Efecto de un CFDI de egreso según su TipoRelacion. Los valores salen de CFDI_EGRESO_TIPO_RELACION (por_confirmar: el Anexo 20 no está en la
+    biblioteca). Sólo 01 y 03 restan; 07 aplica un anticipo ya cobrado y no resta ingreso."""
+    tabla = {c: (e, n) for c, e, n in b.valor("CFDI_EGRESO_TIPO_RELACION", f)}
+    if tipo_relacion not in tabla:
+        raise SinValor(f"CFDI_EGRESO_TIPO_RELACION: la base no trae el tipo de relación {tipo_relacion}")
+    return {"resta_ingreso": tabla[tipo_relacion][0], "nombre": tabla[tipo_relacion][1]}
 
 
 CALC = {k[5:]: v for k, v in globals().items() if k.startswith("calc_")}

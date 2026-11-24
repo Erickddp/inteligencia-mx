@@ -16,7 +16,7 @@
 #    pero marcado ARRASTRADO (estimación en pantalla), para que enero no se quede en blanco.
 #    hasta con fecha = vence de verdad (estímulos con plazo, LIF anual): después da SinValor.
 
-version_base: "0.8.0"
+version_base: "0.9.0"
 fecha_corte: "2026-11-05"
 
 parametros:
@@ -4025,6 +4025,22 @@ parametros:
           - ["prorroga_presunto", "5"]
           - ["resolucion_autoridad", "50"]
           - ["acreditar_o_corregir_receptor", "30"]
+  CFDI_EGRESO_TIPO_RELACION:
+    nombre: "Tipos de relación del CFDI de egreso que importan a una nota: cuáles restan ingreso"
+    tipo: lista
+    columnas: [tipo_relacion, resta_ingreso, nombre]
+    que_dice: "Una nota de crédito (01) y una devolución (03) restan ingreso cobrado; la aplicación de un anticipo (07) no resta porque el anticipo ya se acumuló al cobrarse."
+    correcto_si: "El tipo de relación viene del CFDI de egreso; 01 y 03 restan; 07 no resta; cualquier otro tipo no está cargado y la app avisa."
+    valores:
+      - desde: "2026-01-01"
+        hasta: null
+        confirmado_hasta: "2026-12-31"
+        estado: por_confirmar
+        fuente: "CRITERIO. Los nombres son los del catálogo c_TipoRelacion del Anexo 20 en su uso común; el Anexo 20 y su guía de llenado NO están en la biblioteca (no se pudo descargar). Que 07 no reste se apoya en RMF 2026 regla 3.2.24 (anticipos: el CFDI de egresos vinculado), leída en la biblioteca. Una persona debe cotejar con el catálogo vigente del SAT"
+        valor:
+          - ["01", "si", "Nota de crédito de los documentos relacionados"]
+          - ["03", "si", "Devolución de mercancía sobre facturas o traslados previos"]
+          - ["07", "no", "CFDI por aplicación de anticipo"]
   GLOBAL_PERIODICIDAD_POR_REGIMEN:
     nombre: Periodicidades de la factura global por régimen y cómo se detalla
     tipo: lista
