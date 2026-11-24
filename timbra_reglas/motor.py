@@ -1204,6 +1204,71 @@ def calc_nc_resico_pf(b, f, nc_base, nc_iva, metodo, total_base_original, cobrad
             "rebasa_tope_con_nota": "si" if D(ingresos_acumulados) - reduccion > tope else "no"}
 
 
+# ---------- derecho fiscal-penal (CFF 108, 113 Bis, 69-B) ----------
+def _meses(x):
+    return format(x.normalize(), "f")
+
+
+def calc_cff_defraudacion_pena(b, f, monto="", calificado="no"):
+    """CFF 108: pena de la defraudación fiscal según el monto defraudado en un mismo ejercicio (sin contar pagos provisionales). Sin monto
+    determinable: de 3 meses a 6 años. Calificado (documentos falsos, datos falsos para acreditar, omitir contribuciones retenidas, etc.):
+    la pena sube una mitad. La restitución inmediata en una sola exhibición PUEDE atenuarla hasta 50 %: es facultad del juez y no se calcula.
+    Describe la pena que la ley prevé; que haya delito lo decide una autoridad (se requiere engaño o aprovechamiento de error)."""
+    penas = {t: (D(a), D(c)) for t, a, c in b.valor("CFF_DEFRAUDACION_PENAS", f)}
+    tope1, tope2 = b.valor("CFF_DEFRAUDACION_TOPES", f)[0]
+    if monto == "":
+        tramo = "sin_cuantia"
+    elif D(monto) <= tope1:
+        tramo = "fraccion_i"
+    elif D(monto) <= tope2:
+        tramo = "fraccion_ii"
+    else:
+        tramo = "fraccion_iii"
+    mn, mx = penas[tramo]
+    ajustes = {a: D(v) for a, v in b.valor("CFF_DEFRAUDACION_AJUSTES_PCT", f)}
+    if calificado == "si":
+        factor = 1 + ajustes["calificado_aumento"] / 100
+        mn, mx = mn * factor, mx * factor
+    return {"tramo": tramo, "prision_minima_meses": _meses(mn), "prision_maxima_meses": _meses(mx),
+            "atenuacion_maxima_pct": _meses(ajustes["restitucion_atenuacion_maxima"])}
+
+
+def calc_cff_113bis_pena(b, f, conducta, comprobante):
+    """CFF 113 Bis: 2 a 9 años de prisión por expedir, enajenar, comprar o adquirir comprobantes que amparan operaciones inexistentes, falsas
+    o actos simulados; el segundo párrafo (DOF 07-nov-2025) agrega «dar efectos fiscales» a comprobantes FALSOS. Sólo con querella de la SHCP."""
+    if conducta not in ("expedir", "enajenar", "comprar", "adquirir", "dar_efectos"):
+        raise ValueError("conducta: expedir, enajenar, comprar, adquirir o dar_efectos")
+    if comprobante not in ("operaciones_inexistentes", "falso"):
+        raise ValueError("comprobante: operaciones_inexistentes o falso")
+    mn, mx = b.valor("CFF_113BIS_PENA", f)[0]
+    tipificado = conducta != "dar_efectos" or comprobante == "falso"
+    return {"tipificada_esa_conducta": "si" if tipificado else "no", "prision_minima_meses": str(mn.normalize()) if tipificado else "",
+            "prision_maxima_meses": str(mx.normalize()) if tipificado else "", "requiere_querella_shcp": "si" if tipificado else ""}
+
+
+def calc_efos_plazo_receptor(b, f, publicacion_listado):
+    """CFF 69-B, séptimo párrafo (el de «treinta días»): quien dio efectos fiscales a comprobantes de un contribuyente en el listado DEFINITIVO
+    tiene 30 días siguientes a la publicación para acreditar la operación o corregir su situación con complementarias. Se cuentan como días
+    del CFF 12 (hábiles; R-178). Después, la autoridad determina créditos y las operaciones se consideran actos simulados para los delitos."""
+    dias = {c: int(d) for c, d in b.valor("CFF_69B_PLAZOS_DIAS", f)}["acreditar_o_corregir_receptor"]
+    return {"vence": calc_plazo_dias_habiles(b, f, publicacion_listado, dias)["vence"], "dias_habiles": str(dias)}
+
+
+def calc_efos_efectos_receptor(b, f, monto_sin_iva, iva_acreditado, acredito_materialidad, regimen="pm"):
+    """CRITERIO. Si quien deduce y acredita con comprobantes de un 69-B DEFINITIVO no acredita la operación ni se corrige, la autoridad determina
+    créditos: aquí una estimación del impuesto omitido, sin actualización ni recargos ni multas (ISR de personas morales a la tasa del art. 9 sobre lo
+    deducido, más el IVA acreditado). Con eso se ve en qué fracción del CFF 108 caería el monto SI se configurara defraudación (para eso hace falta
+    engaño; la presunción es del 69-B y no de este cálculo). Personas físicas: la tarifa progresiva depende del resto de sus ingresos, no se calcula."""
+    if regimen != "pm":
+        raise ValueError("Sólo se estima para personas morales: en personas físicas el ISR omitido depende de la tarifa y del resto de sus ingresos")
+    if acredito_materialidad == "si":
+        return {"isr_omitido": "0.00", "iva_omitido": "0.00", "impuesto_omitido_total": "0.00", "tramo_cff_108": ""}
+    isr = red(D(monto_sin_iva) * b.valor("ISR_PM_TASA", f) / 100)
+    total = isr + red(D(iva_acreditado))
+    return {"isr_omitido": str(isr), "iva_omitido": str(red(D(iva_acreditado))), "impuesto_omitido_total": str(total),
+            "tramo_cff_108": calc_cff_defraudacion_pena(b, f, str(total))["tramo"]}
+
+
 CALC = {k[5:]: v for k, v in globals().items() if k.startswith("calc_")}
 
 

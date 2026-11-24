@@ -1,6 +1,11 @@
 origen_tipo,origen_id,ley,anio,articulo,existe_en_biblioteca
 parametro,AUTO_TOPE_DEDUCCION_ELECTRICO,LISR,,36,si
 parametro,AVION_TOPE_DEDUCCION,LISR,,36,si
+parametro,CFF_113BIS_PENA,CFF,,113-bis,si
+parametro,CFF_69B_PLAZOS_DIAS,CFF,,69-b,si
+parametro,CFF_DEFRAUDACION_AJUSTES_PCT,CFF,,108,si
+parametro,CFF_DEFRAUDACION_PENAS,CFF,,108,si
+parametro,CFF_DEFRAUDACION_TOPES,CFF,,108,si
 parametro,CFF_DIAS_INHABILES,CFF,,12,si
 parametro,DEPRECIACION_TASAS_ART33,LISR,,33,si
 parametro,DEPRECIACION_TASAS_ART34,LISR,,34,si
@@ -215,6 +220,14 @@ regla,R-195,LISR,,113-j,si
 regla,R-195,LIVA,,1-b,si
 regla,R-195,LIVA,,7,si
 regla,R-195,RMF,2026,2.7.1.35,si
+regla,R-196,CFF,,108,si
+regla,R-197,CFF,,108,si
+regla,R-197,CFF,,113-bis,si
+regla,R-198,CFF,,12,si
+regla,R-198,CFF,,69-b,si
+regla,R-199,CFF,,108,si
+regla,R-199,CFF,,69-b,si
+regla,R-199,LISR,,9,si
 regla,R-20,LISR,,106,si
 regla,R-22,LISR,,113-e,si
 regla,R-22,LISR,,113-j,si
