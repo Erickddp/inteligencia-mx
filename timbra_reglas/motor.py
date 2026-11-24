@@ -1180,6 +1180,30 @@ def calc_poliza_nomina_desglosada(b, f, percepciones, isr_retenido="0", imss_obr
                     ("H", "infonavit_por_pagar", infonavit_patron)])
 
 
+# ---------- nota de crédito emitida de una persona física RESICO (pedido de Timbra, NC) ----------
+def calc_nc_resico_pf(b, f, nc_base, nc_iva, metodo, total_base_original, cobrado_original, cobrado_mes, cliente="otro",
+                      ingresos_acumulados="0"):
+    """CRITERIO (la ley no regula la nota de crédito del RESICO PF; ver R-195). Base de caja: la ISR del 113-E y el IVA del 1-B se causan al
+    COBRAR, así que una nota de crédito sólo resta lo que ya se había cobrado. Se aplica primero al saldo por cobrar de la factura original
+    (no cambia lo cobrado; el cobro futuro será menor) y sólo el excedente se resta de lo cobrado, en el mes de la nota. PUE = ya cobrada.
+    Todos los importes van sin IVA salvo `nc_iva`. `f` es la fecha de emisión de la nota."""
+    nc, total = D(nc_base), D(total_base_original)
+    cobrado = total if metodo == "pue" else D(cobrado_original)
+    if metodo not in ("pue", "ppd") or nc <= 0 or nc > total or not D(0) <= cobrado <= total:
+        raise ValueError("Revisa metodo (pue o ppd), que la nota no pase de la factura y que lo cobrado esté entre 0 y el total")
+    reduccion = max(D(0), nc - (total - cobrado))
+    neto = D(cobrado_mes) - reduccion
+    isr = calc_resico_pf_mensual(b, f, max(neto, D(0))) if neto > 0 else "0.00"
+    tope = b.valor("RESICO_PF_TOPE_ANUAL", f)
+    iva_restado = red(D(nc_iva) * reduccion / nc)
+    return {"reduccion_del_cobrado": str(red(reduccion)), "cobrado_neto_del_mes": str(red(max(neto, D(0)))),
+            "isr_del_mes": str(isr), "excedente_sin_aplicar": str(red(max(-neto, D(0)))),
+            "iva_que_se_resta": str(iva_restado), "iva_que_baja_el_cobro_futuro": str(red(D(nc_iva) - iva_restado)),
+            "retencion_que_se_revierte": str(red(reduccion * b.valor("RESICO_PF_RETENCION_PM", f) / 100)) if cliente == "persona_moral" else "0.00",
+            "rebasa_tope_sin_nota": "si" if D(ingresos_acumulados) > tope else "no",
+            "rebasa_tope_con_nota": "si" if D(ingresos_acumulados) - reduccion > tope else "no"}
+
+
 CALC = {k[5:]: v for k, v in globals().items() if k.startswith("calc_")}
 
 

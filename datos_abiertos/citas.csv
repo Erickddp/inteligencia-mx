@@ -207,6 +207,14 @@ regla,R-194,CFF,,28,si
 regla,R-194,LISR,,96,si
 regla,R-194,NIF-D-3,,,referencia
 regla,R-194,RMF,2026,2.8.1.5,si
+regla,R-195,CFF,,29,si
+regla,R-195,CFF,,29-a,si
+regla,R-195,LISR,,113-e,si
+regla,R-195,LISR,,113-f,si
+regla,R-195,LISR,,113-j,si
+regla,R-195,LIVA,,1-b,si
+regla,R-195,LIVA,,7,si
+regla,R-195,RMF,2026,2.7.1.35,si
 regla,R-20,LISR,,106,si
 regla,R-22,LISR,,113-e,si
 regla,R-22,LISR,,113-j,si
